@@ -1,0 +1,73 @@
+<div class="d-flex justify-content-end pt-3">
+  <button
+    *ngIf="!isNew"
+    mdbBtn type="button"
+    color="danger"
+    rounded="true"
+    mdbWavesEffect
+    (click)="deletePostCategory()"
+  >
+    Удалить
+  </button>
+</div>
+
+<h3 >{{isNew ? 'Добавить' : 'Редактировать'}} категорию</h3>
+<app-alert></app-alert>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="md-form">
+    <input
+      formControlName="name"
+      mdbInput
+      type="text"
+      id="name"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
+    >
+
+    <label for="name" class="">Название категории</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('name').invalid && form.get('name').touched"
+    >
+  <span *ngIf="form.get('name').errors['required']">
+    Имя категории не может быть пустым
+  </span>
+  </span>
+  </div>
+
+
+
+  <!--  <div class="file-field md-form">-->
+  <!--    <h6>Загрузить картинку</h6>-->
+  <!--    <div>-->
+  <!--      <input-->
+  <!--        type="file"-->
+  <!--        class="d-none"-->
+  <!--        #input-->
+  <!--        (change)="onFileUpload($event)"-->
+  <!--      >-->
+  <!--      -->
+  <!--      <button-->
+  <!--        (click)="triggerClick()"-->
+  <!--        [disabled]="form.disabled"-->
+  <!--        type="button"-->
+  <!--        mdbBtn-->
+  <!--        color="orange"-->
+  <!--        mdbWavesEffect-->
+  <!--      >-->
+  <!--        Загрузить изображение-->
+  <!--      </button>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+
+  <button
+    [disabled]="form.invalid || form.disabled"
+    type="submit"
+    mdbBtn color="primary"
+    mdbWavesEffect
+  >
+    Сохранить изминения
+  </button>
+</form>
+

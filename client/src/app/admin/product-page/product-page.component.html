@@ -1,0 +1,72 @@
+<div  class="container pb-5">
+
+  <div *ngIf="!loading; else loader" >
+  <div *ngIf="products.length !== 0; else empty" class="pt-5">
+    <div class="pb-3">
+      <input class="form-control" type="text" placeholder="Найти пост...">
+    </div>
+    <table  mdbTable class="z-depth-1" >
+      <thead class="black white-text">
+      <tr >
+        <th>#</th>
+        <th>Название</th>
+        <th>Дата</th>
+        <th>Категория</th>
+        <th>Действие</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr  *ngFor="let product of products  let idx = index">
+        <td>{{idx + 1}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.date  | date:'medium': null: 'ru' }}</td>
+        <div *ngFor="let category of categorys">
+        <td  *ngIf="category._id == product.subcategory" >{{category.name}}</td>
+        </div>
+
+<!--        <div *ngFor="let cassss of casaS">-->
+<!--          <div *ngIf="cassss._id == product.casa">-->
+<!--            {{cassss.name}} + {{cassss.price}} Lei.-->
+<!--          </div>-->
+<!--        </div>-->
+
+        <td>
+          <a
+            class="btn-primary text-white btn-link mr-3"
+            [routerLink]="['/admin/create-product',  product._id]"
+          >
+            Открыть
+          </a>
+          <a  class="red-text" (click)="deleteProduct(product._id)" >Удалить</a>
+        </td>
+
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #empty>
+    <p class="text-center">В категории позиции нет</p>
+  </ng-template>
+  </div>
+<ng-template #loader >
+  <app-loader></app-loader>
+</ng-template>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

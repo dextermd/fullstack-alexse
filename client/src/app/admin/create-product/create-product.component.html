@@ -1,0 +1,342 @@
+<div class="pt-4">
+  <h3>{{isNew ? 'Добавить' : 'Редактировать'}} продукт</h3>
+  <app-alert></app-alert>
+
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="md-form">
+      <input
+        formControlName="name"
+        mdbInput
+        type="text"
+        id="name"
+        class="form-control"
+        [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
+      >
+
+      <label for="name" class="">Название продукта</label>
+      <span
+        class="helper-text red-text"
+        *ngIf="form.get('name').invalid && form.get('name').touched"
+      >
+  <span *ngIf="form.get('name').errors['required']">
+    Имя продукта не может быть пустым
+  </span>
+  </span>
+    </div>
+
+
+    <div class="pt-4">
+
+      <label for="content" class="">Описание</label>
+
+      <textarea
+        formControlName="content"
+        mdbInput
+        type="textarea"
+        id="content"
+        class="form-control"
+        [ngClass]="{'invalid': form.get('content').invalid && form.get('content').touched }"
+      ></textarea>
+      <span
+        class="helper-text red-text"
+        *ngIf="form.get('content').invalid && form.get('content').touched"
+      >
+  <span *ngIf="form.get('content').errors['required']">
+    Описание не может быть пустым
+  </span>
+  </span>
+    </div>
+
+
+    <div class="pt-4">
+      <label>Характеристики</label>
+      <quill-editor formControlName="spec"></quill-editor>
+    </div>
+
+
+    <div class="pt-5">
+      <div class="row">
+        <div class="col">
+          <div class="flex-center">
+            <img
+              class="responsive-img"
+              style="height: 200px"
+              [src]="imagePreview"
+              *ngIf="imagePreview"
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="flex-center">
+            <img
+              class="responsive-img"
+              style="height: 200px"
+              [src]="imageOnePreview"
+              *ngIf="imageOnePreview"
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="flex-center">
+            <img
+              class="responsive-img"
+              style="height: 200px"
+              [src]="imageTwoPreview"
+              *ngIf="imageTwoPreview"
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="flex-center">
+            <img
+              class="responsive-img"
+              style="height: 200px"
+              [src]="imageThreePreview"
+              *ngIf="imageThreePreview"
+            >
+          </div>
+        </div>
+        <div class="col">
+          <div class="flex-center">
+            <img
+              class="responsive-img"
+              style="height: 200px"
+              [src]="imageFourPreview"
+              *ngIf="imageFourPreview"
+            >
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <div class="file-field md-form">
+            <input
+              type="file"
+              class="d-none"
+              #input
+              (change)="onFileUpload($event)"
+            >
+            <button
+              (click)="triggerClick()"
+              [disabled]="form.disabled"
+              type="button"
+              mdbBtn
+              color="orange"
+              mdbWavesEffect
+            >
+              Загрузить изображение
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="file-field md-form">
+            <input
+              type="file"
+              class="d-none"
+              #inputOne
+              (change)="onFileOneUpload($event)"
+            >
+            <button
+              (click)="triggerOneClick()"
+              [disabled]="form.disabled"
+              type="button"
+              mdbBtn
+              color="green"
+              mdbWavesEffect
+            >
+              Загрузить изображение №1
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="file-field md-form">
+            <input
+              type="file"
+              class="d-none"
+              #inputTwo
+              (change)="onFileTwoUpload($event)"
+            >
+            <button
+              (click)="triggerTwoClick()"
+              [disabled]="form.disabled"
+              type="button"
+              mdbBtn
+              color="green"
+              mdbWavesEffect
+            >
+              Загрузить изображение №2
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="file-field md-form">
+            <input
+              type="file"
+              class="d-none"
+              #inputThree
+              (change)="onFileThreeUpload($event)"
+            >
+            <button
+              (click)="triggerThreeClick()"
+              [disabled]="form.disabled"
+              type="button"
+              mdbBtn
+              color="green"
+              mdbWavesEffect
+            >
+              Загрузить изображение №3
+            </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="file-field md-form">
+            <input
+              type="file"
+              class="d-none"
+              #inputFour
+              (change)="onFileFourUpload($event)"
+            >
+            <button
+              (click)="triggerFourClick()"
+              [disabled]="form.disabled"
+              type="button"
+              mdbBtn
+              color="green"
+              mdbWavesEffect
+            >
+              Загрузить изображение №4
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="subcategory">Выбрать подкатегорию</label>
+      </div>
+      <select  [(ngModel)]="whyCategory" class="form-control" id="subcategory" formControlName="subcategory">
+        <option *ngFor="let category of categories" [ngValue]="category._id" ngDefaultControl>{{category.name}}</option>
+      </select>
+    </div>
+
+
+    <div class="pt-3">
+      <div class="row">
+        <div class="col">
+
+          <div class="md-form">
+            <input
+              class="form-control"
+              id="pos-cost"
+              type="number"
+              min="1"
+              mdbInput
+              formControlName="cost"
+              [ngClass]="{'invalid': form.get('cost').invalid && form.get('cost').touched }"
+            >
+            <label for="pos-cost">Цена</label>
+            <span
+              class="helper-text red-text"
+              *ngIf="form.get('cost').invalid && form.get('cost').touched"
+            >
+
+    Введите корректную цену. Минимальное значение 1
+
+  </span>
+          </div>
+
+        </div>
+        <div class="col">
+
+          <div class="md-form">
+            <input
+              class="form-control"
+              id="pos-oldCost"
+              type="number"
+              min="1"
+              mdbInput
+              formControlName="oldCost"
+              [ngClass]="{'invalid': form.get('oldCost').invalid && form.get('oldCost').touched }"
+            >
+            <label for="pos-oldCost">Старая цена</label>
+            <span
+              class="helper-text red-text"
+              *ngIf="form.get('oldCost').invalid && form.get('oldCost').touched"
+            >
+
+    Введите корректную цену. Минимальное значение 1
+
+  </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="casa">Выбрать Опции</label>
+      </div>
+      <select
+        class="form-control" id="casa" formControlName="casa" multiple="multiple"
+
+              (ngModelChange)="setOptions($event)">
+        <option  *ngFor="let cas of lcasa" [ngValue]="cas._id" ngDefaultControl>{{cas.name}} + {{cas.price}} Lei</option>
+      </select>
+
+    </div>
+
+
+
+<!--    <div *ngIf="whyCategory === '5f133744c804af2228fbbf83' || whyCategory === '5f1336e1707a9a3bf4490e2c'">-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="indicator">Выбрать Индикатора</label>
+      </div>
+      <select class="form-control" id="indicator" formControlName="indicator" multiple="multiple"
+              (ngModelChange)="setOptions($event)">
+        <option *ngFor="let indicat of lindicator" [ngValue]="indicat._id" ngDefaultControl>{{indicat.name}}
+          + {{indicat.price}} Lei
+        </option>
+      </select>
+
+    </div>
+
+
+
+    <div  class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="pandus">Выбрать Пандус</label>
+      </div>
+      <select class="form-control" id="pandus" formControlName="pandus" multiple="multiple"
+              (ngModelChange)="setOptions($event)">
+        <option *ngFor="let pand of lpandus" [ngValue]="pand._id" ngDefaultControl>{{pand.name}}
+          + {{pand.price}} Lei
+        </option>
+      </select>
+
+    </div>
+<!--    </div>-->
+
+
+    <div class="py-5 flex-center">
+      <button
+        [disabled]="form.invalid || form.disabled"
+        type="submit"
+        mdbBtn color="primary"
+        mdbWavesEffect
+      >
+        Сохранить изминения
+      </button>
+    </div>
+
+
+  </form>
+
+</div>

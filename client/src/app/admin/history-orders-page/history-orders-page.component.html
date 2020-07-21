@@ -1,0 +1,184 @@
+<div class="py-5">
+  <h4 class="text-center">История Заказов</h4>
+  <div class="row">
+    <div class="col-md-12 mx-auto">
+      <div class="md-form">
+        <input
+          type="text"
+          [(ngModel)]="searchText"
+          class="form-control"
+          id="search"
+          mdbInput
+        />
+        <label for="search">Поиск</label>
+      </div>
+      <app-history-filter *ngIf="isFilterVisible"></app-history-filter>
+
+      <div class="pb-3">
+        <button
+          (click)="isFilterVisible = !isFilterVisible"
+          class="btn btn-small"
+          [ngClass]="{
+          'active': isFilterVisible
+          }"
+          mdbBtn
+          mdbTooltip="Открыть фильтр" placement="right"
+          mdbWavesEffect
+        >
+          <i class="fas fa-filter"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div *ngIf="!reloading; else reloadingBlock">
+    <div *ngIf="orders.length > 0; else empty">
+      <table mdbTable class="">
+        <thead>
+        <tr>
+          <th
+            *ngFor="let head of headElements; let i = index"
+            scope="col"
+          >
+            {{head}}
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let ord of orders; let i = index">
+          <th scope="row">{{ord.order}}</th>
+          <td class="">{{ord.date | date: 'dd.MM.yyy'}}</td>
+          <td>{{ord.date | date: 'HH:mm:ss'}}</td>
+          <td>{{computePrice(ord) | number}} Lei</td>
+          <td>{{ord.c_name}}</td>
+          <td>{{ord.c_phone}}</td>
+          <td>{{ord.c_type_shipping}}</td>
+          <td>{{ord.c_email}}</td>
+          <td>{{ord.c_address_shipping}}</td>
+          <td>{{ord.c_company_name}}</td>
+          <td>
+            <div (click)="selectOrder(ord)">
+              <button
+                type="button"
+                mdbBtn color="primary"
+                class="waves-light"
+                data-toggle="modal"
+                data-target="#basicExample"
+                (click)="frame.show()"
+
+                mdbWavesEffect
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </button>
+            </div>
+
+
+
+
+
+
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div
+    class="flex-center
+    pt-4"
+    *ngIf="!noMoreOrders"
+  >
+    <button
+      mdbBtn
+      mdbWavesEffect
+      color="default"
+      (click)="loadMore()"
+      *ngIf="!loading; else loader"
+    >
+      Загрузить еще
+    </button>
+
+    <ng-template #loader>
+      <app-loader></app-loader>
+    </ng-template>
+  </div>
+
+
+</div>
+
+
+<ng-template #reloadingBlock>
+  <app-loader></app-loader>
+</ng-template>
+
+<ng-template #empty>
+  <div class="text-center">Заказов пока нет.</div>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" *ngIf="selectedOrder">
+      <!--Header-->
+      <div class="modal-header">
+        <div class="flex-center">
+        <h4 class="modal-title" id="myModalLabel">Заказ № {{selectedOrder.order}}</h4>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <!--Body-->
+      <div class="modal-body">
+
+        <table class="table table-hover">
+          <thead>
+          <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th>Цена</th>
+            <th>Кол-во</th>
+            <th>Опции</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of selectedOrder.list">
+            <th scope="row"><img style="height: 50px" src="{{item.img}}" alt="" class="img-fluid z-depth-0"></th>
+            <td>{{item.name}}</td>
+            <td>{{item.cost}}</td>
+            <td>{{item.quantity}}</td>
+            <td>{{item.casa[0].name}}</td>
+
+          </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <!--Footer-->
+      <div class="pl-5 pr-5 pb-5 pt-5">
+        <h5 class="text-center">Коментарий покупателя</h5>
+      <textarea disabled formControlName="contactFormMessage" class="form-control rounded-0" mdbInput id="exampleFormControlTextarea2"
+                rows="3" placeholder="Message">{{selectedOrder.c_comment}}</textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" mdbBtn color="primary" outline="true" class="waves-light" mdbWavesEffect data-dismiss="modal" (click)="frame.hide()">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>

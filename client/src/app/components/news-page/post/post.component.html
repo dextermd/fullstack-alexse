@@ -1,0 +1,77 @@
+<div  class="mt-0">
+<nav  aria-label="breadcrumb">
+  <ol class="breadcrumb grey lighten-4 mask pattern- ">
+    <div *ngIf="category$ | async as category " class="d-flex container">
+      <p class="d-flex flex-center pr-2" > Фильтр</p>
+      <select  [(ngModel)]="selected" (change)="onSelect(selected)"  class="browser-default custom-select" style="width: 300px">
+        <option  value="Все">Все</option>
+        <option *ngFor="let categor of category" [value]="categor._id ">
+          {{categor.name}}
+        </option>
+      </select>
+
+
+    </div>
+  </ol>
+</nav>
+</div>
+
+
+
+<div class="container mt-0 wow zoomIn " data-wow-delay="0.6s">
+
+  <!--Section: Content-->
+  <div *ngIf="posts$ | async as posts; else loading">
+
+    <!-- Grid row -->
+    <div  class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-md-12 mb-lg-0 mb-4 pb-5"  *ngFor="let post of selectedData | paginate: { itemsPerPage: 10, currentPage: page }">
+
+        <!-- Card -->
+        <div class="card hoverable">
+
+          <!-- Card image -->
+          <img class="card-img-top"  src="{{post.img}}" alt="Card image cap">
+          <!-- Card content -->
+          <div class="card-body">
+
+            <!-- Title -->
+            <a class="black-text font-weight-bold ">{{post.title}} </a>
+          </div>
+
+            <!-- Text -->
+            <div class="pl-1 ">
+<!--              {{post.content}}-->
+
+              <quill-view-html [content]="post.preview" ></quill-view-html>
+<!--              <quill-view-html [content]="(post.content.length > 6) ? (post.content | slice:0:150) +'..':(post.content)" format ="text" theme = "snow" ></quill-view-html>-->
+            </div>
+            <div class="d-flex justify-content-between pt-3 card-body">
+              <a [routerLink]="['post', post._id]"  type="button" class=" text-primary p-0 mx-0">Читать далее<i class="fa fa-angle-right ml-2"></i></a><a class="d-flex justify-content-end red-text font-weight-bold">{{post.date | date:'dd.MM.yyyy'}}</a>
+            </div>
+
+
+        </div>
+        <!-- Card -->
+
+      </div>
+      <!-- Grid column -->
+
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <div class="flex-center">
+  <pagination-controls (pageChange)="page = $event"></pagination-controls>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p class="text-center">Загружаю посты...</p>
+</ng-template>
+
+
+

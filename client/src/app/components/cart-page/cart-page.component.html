@@ -1,0 +1,422 @@
+<div class="container gotop  pb-5">
+  <!--Section: Content-->
+  <!--  <div class="pt-3">-->
+  <!--  <app-alerting></app-alerting>-->
+  <!--  </div>-->
+  <!--  <section *ngIf="order.list !== null; else orderItems" class="dark-grey-text pt-3">-->
+
+  <!--    &lt;!&ndash; Shopping Cart table &ndash;&gt;-->
+  <!--    <div class="table-responsive">-->
+
+  <!--      <table class="table product-table mb-0">-->
+
+  <!--        &lt;!&ndash; Table head &ndash;&gt;-->
+  <!--        <thead class="mdb-color lighten-5">-->
+  <!--        <tr>-->
+  <!--          <th></th>-->
+  <!--          <th class="font-weight-bold">-->
+  <!--            <strong>Название</strong>-->
+  <!--          </th>-->
+  <!--          <th></th>-->
+  <!--          <th class="font-weight-bold">-->
+  <!--            <strong>Цена</strong>-->
+  <!--          </th>-->
+  <!--          <th class="font-weight-bold">-->
+  <!--            <strong>Количество</strong>-->
+  <!--          </th>-->
+  <!--          <th class="font-weight-bold">-->
+
+  <!--          </th>-->
+  <!--          <th></th>-->
+  <!--        </tr>-->
+  <!--        </thead>-->
+  <!--        &lt;!&ndash; /.Table head &ndash;&gt;-->
+
+  <!--        &lt;!&ndash; Table body &ndash;&gt;-->
+  <!--        <tbody>-->
+
+  <!--        &lt;!&ndash; First row &ndash;&gt;-->
+  <!--        <tr *ngFor="let item of order.list">-->
+
+  <!--          <th scope="row">-->
+  <!--            <img style="height: 50px" src="{{item.img}}" alt="" class="img-fluid z-depth-0">-->
+  <!--          </th>-->
+  <!--          <td>-->
+  <!--            <h5 class="mt-0">-->
+  <!--              <strong>{{item.name}}</strong>-->
+  <!--            </h5>-->
+  <!--            <p class="text-muted"></p>-->
+  <!--          </td>-->
+  <!--          <td></td>-->
+  <!--          <td>{{item.cost}} Lei</td>-->
+  <!--          <td><p>{{item.quantity}}</p></td>-->
+  <!--          <td class="font-weight-bold">-->
+
+
+  <!--          </td>-->
+  <!--          <td>-->
+  <!--            <button (click)="removePosition(item)" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"-->
+  <!--                    title="Remove item">X-->
+  <!--            </button>-->
+  <!--          </td>-->
+  <!--        </tr>-->
+  <!--        &lt;!&ndash; /.First row &ndash;&gt;-->
+
+  <!--        &lt;!&ndash; Fourth row &ndash;&gt;-->
+  <!--        <tr>-->
+  <!--          <td colspan="3"></td>-->
+  <!--          <td>-->
+  <!--            <h4 class="mt-2">-->
+  <!--              <strong>Общая стоимость </strong>-->
+  <!--            </h4>-->
+  <!--          </td>-->
+  <!--          <td class="text-right">-->
+  <!--            <h4 class="mt-2">-->
+  <!--              <strong>{{order.price}} Lei</strong>-->
+  <!--            </h4>-->
+  <!--          </td>-->
+  <!--          <td colspan="3" class="text-right">-->
+  <!--            <button-->
+  <!--              [disabled]="panding"-->
+  <!--              (click)="submit()"-->
+  <!--              type="button"-->
+  <!--              class="btn btn-primary btn-rounded"-->
+  <!--            >-->
+  <!--              Заверщить заказ-->
+  <!--            </button>-->
+  <!--          </td>-->
+  <!--        </tr>-->
+  <!--        &lt;!&ndash; Fourth row &ndash;&gt;-->
+
+  <!--        </tbody>-->
+  <!--        &lt;!&ndash; /.Table body &ndash;&gt;-->
+
+  <!--      </table>-->
+
+  <!--    </div>-->
+  <!--    &lt;!&ndash; /.Shopping Cart table &ndash;&gt;-->
+
+  <!--  </section>-->
+  <!--  &lt;!&ndash;Section: Content&ndash;&gt;-->
+
+
+  <!--</div>-->
+
+
+  <!--Section: Content-->
+  <section *ngIf="order.list; else orderItems" class="dark-grey-text pt-3">
+
+    <div class="card">
+      <div class="card-body">
+
+        <!--Grid row-->
+        <div class="row">
+
+          <!--Grid column-->
+          <div class="col-lg-8">
+
+            <!-- Shopping Cart table -->
+            <div class="table-responsive">
+
+              <table class="table product-table mb-0">
+
+                <!-- Table head -->
+                <thead class="mdb-color lighten-5">
+                <tr>
+                  <th></th>
+                  <th class="font-weight-bold">
+                    <strong>Название</strong>
+                  </th>
+                  <th></th>
+                  <th class="font-weight-bold">
+                    <strong>Цена</strong>
+                  </th>
+                  <th class="font-weight-bold">
+                    <strong>Количество</strong>
+                  </th>
+                  <th class="font-weight-bold">
+                    <strong>Опции</strong>
+                  </th>
+                  <th class="font-weight-bold">
+
+                  </th>
+                  <th></th>
+                </tr>
+                </thead>
+                <!-- /.Table head -->
+
+                <!-- Table body -->
+                <tbody>
+
+                <!-- First row -->
+                <tr *ngFor="let item of order.list">
+
+                  <th scope="row">
+                    <img style="height: 50px" src="{{item.img}}" alt="" class="img-fluid z-depth-0">
+                  </th>
+                  <td>
+                    <h5 class="mt-0">
+                      <strong>{{item.name}}</strong>
+                    </h5>
+                    <p class="text-muted"></p>
+                  </td>
+                  <td></td>
+                  <td>{{item.cost  | number}} Lei</td>
+                  <td><p>{{item.quantity}}</p></td>
+                  <td class="font-weight-bold">
+                    {{item.casa[0].name}} {{item.casa[0].price | currency: 'MDL ' }}<p>
+                    {{item.indicator[0].name}} {{item.indicator[0].price | currency: 'MDL ' }}<p>
+                    {{item.pandus[0].name}} {{item.pandus[0].price | currency: 'MDL ' }}<p>
+                  </td>
+                  <td>
+                    <button (click)="removePosition(item)" type="button" class="btn btn-sm btn-primary"
+                            data-toggle="tooltip" data-placement="top"
+                            title="Remove item">X
+                    </button>
+                  </td>
+                </tr>
+                <!-- /.First row -->
+
+
+                </tbody>
+                <!-- /.Table body -->
+              </table>
+
+
+            </div>
+            <!-- /.Shopping Cart table -->
+
+          </div>
+          <!--Grid column-->
+
+
+          <!--Grid column-->
+          <div class="col-lg-4 mb-4 ">
+
+            <!--Card-->
+            <div style="border: 2px solid #FFD400;" class="card z-depth-0  rounded-0">
+
+              <!--Card content-->
+              <div class="card-body" style="background-color: #FFF6CC;">
+                <h6 class="mb-4 mt-1 h6 text-center font-weight-bold">Итого</h6>
+                <h1 class="mb-4 mt-1 h2 text-center font-weight-bold">{{order.price | number}} Lei</h1>
+
+                <hr>
+
+                <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+                  <div class=" mb-3">
+                    <input
+                      mdbInput
+                      formControlName="c_name"
+                      id="c_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Имя"
+                      [ngClass]="{'invalid': form.get('c_name').invalid && form.get('c_name').touched }"
+                    >
+                    <span
+                      class="helper-text red-text"
+                      *ngIf="form.get('c_name').invalid && form.get('c_name').touched"
+                    >
+                    <span *ngIf="form.get('c_name').errors['required']">
+                      Имя не может быть пустым
+                    </span>
+                    </span>
+                  </div>
+
+
+
+
+
+                  <div class=" mb-3">
+                    <input
+                      mdbInput
+                      formControlName="c_phone"
+                      id="c_phone"
+                      type="text"
+                      class="form-control"
+                      placeholder="Телефон"
+                      [ngClass]="{'invalid': form.get('c_phone').invalid && form.get('c_phone').touched }"
+                    >
+                    <span
+                      class="helper-text red-text"
+                      *ngIf="form.get('c_phone').invalid && form.get('c_phone').touched"
+                    >
+                    <span *ngIf="form.get('c_phone').errors['required']">
+                      Телефон не может быть пустым
+                    </span>
+                    </span>
+                  </div>
+
+
+                  <div class="input-group mb-3">
+                    <input formControlName="c_email" id="c_email" type="mail" class="form-control"
+                           placeholder="Электронная почта">
+                  </div>
+
+
+                  <div class="form-group mb-2 pl-4">
+                    <input formControlName="c_type_shipping" class="form-check-input" type="radio" id="gender1"
+                           (click)="register('Забрать самостоятельно')" name="c_type_shipping"
+                           value='Забрать самостоятельно'>
+                    <label for="gender1" class="form-check-label dark-grey-text"> Забрать самостоятельно</label>
+                  </div>
+
+                  <div class="form-group mb-2 pl-4">
+                    <input formControlName="c_type_shipping" class="form-check-input" type="radio" id="gender2"
+                           (click)="register('по Кишиневу')" name="c_type_shipping" value='по Кишиневу'>
+                    <label for="gender2" class="form-check-label dark-grey-text"> по Кишиневу:
+                      <strong>Бесплатно</strong></label>
+                  </div>
+
+                  <div class="form-group mb-3 pl-4">
+                    <input formControlName="c_type_shipping" class="form-check-input" type="radio" id="gender3"
+                           (click)="register('по Молдове')" name="c_type_shipping" value='по Молдове'>
+                    <label for="gender3" class="form-check-label dark-grey-text"> по Молдове: <strong>от 80 лей</strong></label>
+                  </div>
+
+
+
+                  <div class=" mb-3">
+                    <input
+                      mdbInput
+                      formControlName="c_address_shipping"
+                      id="c_address_shipping"
+                      type="text"
+                      class="form-control"
+                      placeholder="Адрес доставки"
+                      [ngClass]="{'invalid': form.get('c_address_shipping').invalid && form.get('c_address_shipping').touched }"
+                    >
+                    <span
+                      class="helper-text red-text"
+                      *ngIf="form.get('c_address_shipping').invalid && form.get('c_address_shipping').touched"
+                    >
+                    <span *ngIf="form.get('c_address_shipping').errors['required']">
+                      Адрес не может быть пустым
+                    </span>
+                    </span>
+                  </div>
+
+
+
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" (change)="triggerSomeEvent()" class="custom-control-input"
+                           id="defaultChecked2">
+                    <label class="custom-control-label" for="defaultChecked2">Юредическое лицо</label>
+                  </div>
+
+
+
+                  <div class=" mb-3">
+                    <input
+                      mdbInput
+                      formControlName="c_company_name"
+                      id="c_company_name"
+                      type="text"
+                      class="form-control"
+                      placeholder="Название"
+                      [ngClass]="{'invalid': form.get('c_company_name').invalid && form.get('c_company_name').touched }"
+                    >
+                    <span
+                      class="helper-text red-text"
+                      *ngIf="form.get('c_company_name').invalid && form.get('c_company_name').touched"
+                    >
+                    <span *ngIf="form.get('c_company_name').errors['required']">
+                      Название компании не может быть пустым
+                    </span>
+                    </span>
+                  </div>
+
+
+                  <div class="input-group ">
+                    <textarea formControlName="c_comment" id="c_comment" class="form-control"
+                              placeholder="Комментарий"></textarea>
+                  </div>
+
+                  <hr>
+                  <div
+
+                  >
+                    <button
+                      [disabled]="form.invalid || form.disabled"
+                      data-toggle="modal"
+                      data-target="#basicExample"
+                      (click)="frame.show()"
+                      class="btn btn-primary btn-lg btn-block"
+                      type="submit">
+                      Заказать
+                    </button>
+
+                  </div>
+                </form>
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+    </div>
+
+  </section>
+  <!--Section: Content-->
+</div>
+
+
+<ng-template #orderItems>
+  <div class="container my-5 py-5 ">
+    <!--Section: Content-->
+    <section class="text-center px-md-5 mx-md-5 dark-grey-text">
+
+      <a routerLink="/products"><h3 class="font-weight-bold"><i class="fas fa-2x fa-shopping-cart"></i> Корзина пуста
+      </h3></a>
+      <p>
+      <div class="pt-3">
+        <h5><a routerLink="/products">Вернуться в магазин</a></h5>
+      </div>
+    </section>
+  </div>
+  <div class="flex-center py-5 my-5">
+    <strong class=""><h3> У вас нет товаров в корзине</h3></strong>
+  </div>
+</ng-template>
+
+
+<div
+  mdbModal
+  #frame="mdbModal"
+  class="modal fade top"
+  id="frameModalTop"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+  (open)="onOpen($event)"
+  [config]='{backdrop: false, ignoreBackdropClick: true}'
+>
+
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content container pt-4">
+      <h3 class="text-center">Спасибо за покупку!</h3>
+
+      <p>
+      <h2 class="text-center mb-3 font-weight-bold">Ваш заказ успешно принят.</h2>
+
+
+      <p class="text-center text-muted">Скоро наш консультант свяжется с вами для подтверждения заказа.</p>
+
+      <a class="btn btn-info btn-md ml-0 mb-5 ql-color-yellow" (click)="reloadCart()" routerLink="/products"
+         role="button">Вернуться в магазин<i class="fa fa-magic ml-2"></i></a>
+
+    </div>
+    <!--/.Content-->
+  </div>
+</div>

@@ -1,0 +1,66 @@
+<div class="d-flex justify-content-end pt-3">
+  <button
+    *ngIf="!isNew"
+    mdbBtn type="button"
+    color="danger"
+    rounded="true"
+    mdbWavesEffect
+    (click)="deleteCategory()"
+  >
+    Удалить
+  </button>
+</div>
+
+<h3 >{{isNew ? 'Добавить' : 'Редактировать'}} подкатегорию</h3>
+<app-alert></app-alert>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+<div class="md-form">
+  <input
+    formControlName="name"
+    mdbInput
+    type="text"
+    id="name"
+    class="form-control"
+    [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
+  >
+
+  <label for="name" class="">Название категории</label>
+  <span
+    class="helper-text red-text"
+    *ngIf="form.get('name').invalid && form.get('name').touched"
+  >
+  <span *ngIf="form.get('name').errors['required']">
+    Имя категории не может быть пустым
+  </span>
+  </span>
+</div>
+
+  <div class="flex-center">
+    <img
+      class="responsive-img"
+      style="height: 200px"
+      [src]="imagePreview"
+      *ngIf="imagePreview"
+    >
+  </div>
+
+  <div   class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="category">Выбрать категорию</label>
+    </div>
+    <select  class="form-control" id="category" formControlName="category">
+      <option *ngFor="let category of categories"  [ngValue]="category._id" ngDefaultControl>{{category.name}}</option>
+    </select>
+  </div>
+
+
+<button
+  [disabled]="form.invalid || form.disabled"
+  type="submit"
+  mdbBtn color="primary"
+  mdbWavesEffect
+>
+  Сохранить изминения
+</button>
+</form>
+

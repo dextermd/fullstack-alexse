@@ -1,0 +1,32 @@
+<div class="card-title pt-2 text-center">
+  <h2>Подкатегории</h2>
+</div>
+
+<div
+  class="list-group pt-4"
+  *ngIf="categories$ | async as categories; else loader"
+>
+  <div  *ngIf="categories.length !==0; else empty">
+    <a
+      *ngFor="let category of categories "
+      [routerLink]="['/admin/create-subcategory',  category._id]"
+      class="list-group-item list-group-item-action waves-light d-flex justify-content-between"
+      mdbWavesEffect
+    >
+      <div>Подкатегория: <strong style="color: red" class="pl-3"> {{category.name}}</strong></div>
+      <div *ngFor="let categor of categorys">
+        <span *ngIf="categor._id == category.category" > Категория: {{categor.name}}</span>
+      </div>
+    </a>
+  </div>
+</div>
+
+<ng-template #loader>
+  <app-loader></app-loader>
+</ng-template>
+
+<ng-template #empty>
+  <div class="flex-center">
+    У вас нет ни одной категории
+  </div>
+</ng-template>

@@ -1,0 +1,102 @@
+<app-alert></app-alert>
+<!--Navbar-->
+<mdb-navbar  *ngIf="auth.isAuth()" SideClass="navbar navbar-expand-md navbar-light grey lighten-4  pl-5 pr-5 font-weight-bolder" [containerInside]="false">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand style="height: 55px;"><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item pr-3"  routerLinkActive="active">
+        <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/admin', 'dashboard']">Главная</a>
+      </li>
+
+      <li class="nav-item pr-3"  >
+        <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/admin', 'history-orders']">История заказов</a>
+      </li>
+
+
+      <li class="nav-item dropdown pr-3" dropdown routerLinkActive="active">
+        <a routerLink="/admin/post" dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light " mdbWavesEffect>
+          Посты<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary " role="menu">
+          <a [routerLink]="['/admin', 'create-post']" class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Создать</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown pr-3" dropdown routerLinkActive="active">
+        <a routerLink="/admin/post-category" dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light " mdbWavesEffect>
+          Категории постов<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary " role="menu">
+          <a [routerLink]="['/admin', 'create-post-category']" class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Создать</a>
+        </div>
+      </li>
+
+      <div>
+        <li class="nav-item dropdown pr-3"  dropdown>
+          <a routerLink="/admin/product" dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"  mdbWavesEffect>
+            Товары<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a [routerLink]="['/admin', 'create-product']" class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Создать</a>
+          </div>
+        </li>
+      </div>
+
+
+
+      <div>
+        <li class="nav-item dropdown pr-3"  dropdown>
+          <a routerLink="/admin/subcategory" dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"  mdbWavesEffect>
+            Подкатегории<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a [routerLink]="['/admin', 'create-subcategory']" class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Создать</a>
+          </div>
+        </li>
+      </div>
+
+
+      <div>
+        <li class="nav-item dropdown pr-3"  dropdown>
+          <a routerLink="/admin/category" dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"  mdbWavesEffect>
+            Категории<span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a [routerLink]="['/admin', 'create-category']" class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Создать</a>
+          </div>
+        </li>
+      </div>
+
+
+      <div>
+        <li class="nav-item dropdown pr-3"  dropdown>
+          <a  dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"  mdbWavesEffect>
+            Опции <span class="caret"></span></a>
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+            <a [routerLink]="['/admin', 'indicator-page']" class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Индикаторы</a>
+            <a [routerLink]="['/admin', 'pandus-page']" class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Пандусы</a>
+            <a [routerLink]="['/admin', 'casa-page']" class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Кассовые</a>
+          </div>
+        </li>
+      </div>
+
+
+    </ul>
+    <!-- Links -->
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item pr-3">
+        <a class="nav-link waves-light" href="#" (click)="logout($event)" mdbWavesEffect >Выйти</a>
+      </li>
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+</mdb-navbar>
+<!--/.Navbar-->
+
+<div class="container">
+  <router-outlet></router-outlet>
+
+</div>

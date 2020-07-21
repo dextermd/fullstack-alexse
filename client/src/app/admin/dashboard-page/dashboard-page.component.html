@@ -1,0 +1,93 @@
+<!--<div class="container pb-5">-->
+
+
+<!--  <div *ngIf="posts.length; else loading" class="pt-5">-->
+<!--    <div class="pb-3">-->
+<!--      <input class="form-control" type="text" placeholder="Найти пост..." [(ngModel)]="searchStr">-->
+<!--    </div>-->
+<!--  <table mdbTable class="z-depth-1" >-->
+<!--    <thead class="black white-text">-->
+<!--    <tr>-->
+<!--      <th>#</th>-->
+<!--      <th>Название</th>-->
+<!--      <th>Дата</th>-->
+<!--      <th>Категория</th>-->
+<!--      <th>Действие</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr *ngFor="let post of posts | searchPosts: searchStr; let idx = index">-->
+<!--      <td>{{idx + 1}}</td>-->
+<!--      <td>{{post.title}}</td>-->
+<!--      <td>{{post.date  | date:'medium': null: 'ru' }}</td>-->
+<!--      <td>Будет категория</td>-->
+<!--      <td>-->
+<!--        <button-->
+<!--          class="btn-primary text-white btn-link mr-3"-->
+
+<!--          [routerLink]="['/admin', 'post', post.id, 'edit']"-->
+<!--        >-->
+<!--          Открыть-->
+<!--        </button>-->
+<!--        <a  class="red-text" (click)="remove(post.id)">Удалить</a>-->
+<!--      </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--  </table>-->
+<!--  </div>-->
+
+<!--  <div *ngIf="productss.length; else loading" class="pt-5">-->
+<!--    <div class="pb-3">-->
+<!--      <input class="form-control" type="text" placeholder="Найти пост..." [(ngModel)]="searchStr">-->
+<!--    </div>-->
+<!--    <table mdbTable class="z-depth-1" >-->
+<!--      <thead class="black white-text">-->
+<!--      <tr>-->
+<!--        <th>#</th>-->
+<!--        <th>Название</th>-->
+<!--        <th>Дата</th>-->
+<!--        <th>Категория</th>-->
+<!--        <th>Действие</th>-->
+<!--      </tr>-->
+<!--      </thead>-->
+<!--      <tbody>-->
+<!--      <tr *ngFor="let product of productss  let idx = index">-->
+<!--        <td>{{idx + 1}}</td>-->
+<!--        <td>{{product.title}}</td>-->
+<!--        <td>{{product.created  | date:'medium': null: 'ru' }}</td>-->
+<!--        <td>Будет категория</td>-->
+<!--        <td>-->
+<!--          <button-->
+<!--            class="btn-primary text-white btn-link mr-3"-->
+
+<!--            [routerLink]="['/admin', 'product', product.id, 'edit']"-->
+<!--          >-->
+<!--            Открыть-->
+<!--          </button>-->
+<!--                <a  class="red-text" (click)="premove(product.id)">Удалить</a>-->
+<!--        </td>-->
+<!--      </tr>-->
+<!--      </tbody>-->
+<!--    </table>-->
+<!--  </div>-->
+
+
+
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<ng-template #loading>-->
+<!--  <p class="text-center"> Идет загрузка...</p>-->
+<!--</ng-template>-->

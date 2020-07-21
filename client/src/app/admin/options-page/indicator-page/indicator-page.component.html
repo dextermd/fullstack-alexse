@@ -1,0 +1,64 @@
+<div class="d-flex justify-content-end pt-3">
+  <button
+    mdbBtn type="button"
+    color="green"
+    rounded="true"
+    mdbWavesEffect
+    [routerLink]="['/admin', 'indicator-create-page']"
+  >
+    Создать
+  </button>
+</div>
+
+<div class="flex-center">
+  <h3>Индикаторы</h3>
+</div>
+
+
+
+<div  class="container pb-5">
+
+  <div >
+    <div  class="pt-5">
+      <table  mdbTable class="z-depth-1" >
+        <thead class="black white-text">
+        <tr >
+          <th>#</th>
+          <th>Название</th>
+          <th>Цена</th>
+          <th>Действие</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr  *ngFor="let indicat of indicator  let idx = index">
+          <td>{{idx + 1}}</td>
+          <td>{{indicat.name}}</td>
+
+          <td>{{indicat.price}}</td>
+
+          <td>
+            <a
+              class="btn-primary text-white btn-link mr-3"
+              [routerLink]="['/admin/indicator-create-page',  indicat._id]"
+            >
+              Открыть
+            </a>
+            <a  class="red-text" (click)="delete(indicat._id)" >Удалить</a>
+          </td>
+
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <ng-template #empty>
+      <p class="text-center">В категории позиции нет</p>
+    </ng-template>
+  </div>
+  <ng-template #loader >
+    <app-loader></app-loader>
+  </ng-template>
+
+
+</div>

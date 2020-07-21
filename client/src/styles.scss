@@ -1,0 +1,345 @@
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.snow.css";
+
+/* You can add global styles to this file, and also import other style files */
+.navbar {
+  box-shadow: none !important;
+  z-index: 1040;
+}
+
+
+.carousel-inner {
+  max-height: 600px;
+  img {
+    max-height: 600px;
+  }
+}
+
+.carousel-indicators img {
+  max-width: 100px;
+}
+.navbartop {
+   background-color: #ffffff;
+   height: 66px;
+ }
+
+.navbarbottom {
+  height: 66px;
+}
+
+.navbarmidle {
+  background-color: #2991d6;
+  height: 95px;
+}
+
+.gotop {
+  padding-top: 230px;
+}
+
+.bginfo {
+  /* The image used */
+  background-image: url("assets/0.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgabout {
+  /* The image used */
+  background-image: url("assets/about-slider-bg.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgprograms {
+  /* The image used */
+  background-image: url("assets/programs/1bg_tech.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+.bginfoprog {
+  /* The image used */
+  background-image: url("assets/programs/bg-blue-0093d0-1.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bginfolist{
+  /* The image used */
+  background-image: url("assets/programs/BgSlide-Tech.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgwhy {
+  /* The image used */
+  background-image: url("assets/bg-blue-01.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgdivert {
+  /* The image used */
+  background-color: #1288ba;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgdivflag {
+  /* The image used */
+  background-color: #019e85;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgdivb {
+  /* The image used */
+  background-image: url("assets/b52/bg-text4-1-scaled.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgdivautores {
+  /* The image used */
+  background-image: url("assets/auto/restourant/laptop-1280536_1920.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgdivfit {
+  /* The image used */
+  background-image: url("assets/auto/fitnes/smartphone-3149992_1920.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgdivhotel {
+  /* The image used */
+  background-color: #f6e9d4;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.bgcomplect1 {
+  /* The image used */
+  background-image: url("assets/alexmarket/complectSuper.png") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 287px;
+
+}
+
+.bgcomplect2 {
+  /* The image used */
+  background-image: url("assets/alexmarket/complectAlimentara.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 287px;
+}
+
+
+.bgcomplect3 {
+  /* The image used */
+  background-image: url("assets/alexmarket/complectButik.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 287px;
+}
+
+
+.bgcomplectflag1 {
+  /* The image used */
+  background-image: url("assets/flagman/horeca-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: 80%;
+  height: 287px;
+}
+
+.bgcomplectflag2 {
+  /* The image used */
+  background-image: url("assets/flagman/horeca-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  height: 287px;
+}
+
+.bgpos {
+  /* The image used */
+  background-image: url("assets/complect/butik300х605.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+.bgsuper {
+  /* The image used */
+  background-image: url("assets/complect/super300х605.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgalim {
+  /* The image used */
+  background-image: url("assets/complect/alimentara300х605.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgcomplectflagone {
+  /* The image used */
+  background-image: url("assets/flagman/HoReCa1.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgcomplectflagtwo {
+  /* The image used */
+  background-image: url("assets/flagman/HoReCa2.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgadventage {
+  /* The image used */
+  background-image: url("assets/alexmarket/ecommerce-35.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgquest {
+  /* The image used */
+  background-image: url("assets/bg2.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgquestprog {
+  /* The image used */
+  background-image: url("assets/bg2.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgalex {
+  /* The image used */
+  background-color: #1288ba;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgautores {
+  /* The image used */
+  background-image: url("assets/auto/restourant/fon_shp_conecto1.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgautofit {
+  /* The image used */
+  background-image: url("assets/auto/fitnes/fon_shp_conecto2.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgautohotel {
+  /* The image used */
+  background-image: url("assets/auto/hotel/fon_shp_conecto.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgflaghead {
+  /* The image used */
+  background-color: #009e85;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgbhead {
+  /* The image used */
+  background-image: url("assets/b52/bg1.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgalexthree{
+  /* The image used */
+  background-image: url("assets/alexmarket/showroom.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgcomplecthead {
+  /* The image used */
+  background-color: #009e85;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgflagtree {
+  /* The image used */
+  background-image: url("assets/flagman/bg-avtomatizacia.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1300px;
+}
+
+.containervideo {
+  max-width: 1500px;
+}
+
+.containermid{
+  max-width: 1850px;
+}
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+
+}
+
+.pone{
+  padding-top: 120px;
+}

@@ -1,0 +1,111 @@
+<div class="d-flex justify-content-end pt-3">
+
+</div>
+
+<h3 >{{isNew ? 'Добавить' : 'Редактировать'}} пост</h3>
+<app-alert></app-alert>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="md-form">
+    <input
+      formControlName="title"
+      mdbInput
+      type="text"
+      id="title"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('title').invalid && form.get('title').touched }"
+    >
+
+    <label for="title" class="">Название продукта</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('title').invalid && form.get('title').touched"
+    >
+  <span *ngIf="form.get('title').errors['required']">
+    Имя продукта не может быть пустым
+  </span>
+  </span>
+  </div>
+
+  <div class="flex-center">
+    <img
+      class="responsive-img"
+      style="height: 200px"
+      [src]="imagePreview"
+      *ngIf="imagePreview"
+    >
+  </div>
+
+  <div class="file-field md-form">
+    <h6>Загрузить картинку</h6>
+    <div>
+      <input
+        type="file"
+        class="d-none"
+        #input
+        (change)="onFileUpload($event)"
+      >
+
+
+      <button
+        (click)="triggerClick()"
+        [disabled]="form.disabled"
+        type="button"
+        mdbBtn
+        color="orange"
+        mdbWavesEffect
+      >
+        Загрузить изображение
+      </button>
+    </div>
+  </div>
+
+  <div   class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="subcategory">Выбрать категорию</label>
+    </div>
+    <select  class="form-control" id="subcategory" formControlName="category">
+      <option *ngFor="let category of categories"  [ngValue]="category._id" ngDefaultControl>{{category.name}}</option>
+    </select>
+  </div>
+
+
+
+  <div class="md-form">
+    <textarea
+      formControlName="preview"
+      mdbInput
+      type="textarea"
+      id="preview"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('preview').invalid && form.get('preview').touched }"
+    ></textarea>
+
+    <label for="preview" class="">preview</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('preview').invalid && form.get('preview').touched"
+    >
+  <span *ngIf="form.get('preview').errors['required']">
+    preview не может быть пустым
+  </span>
+  </span>
+  </div>
+
+
+  <div>
+    <label>Контент поста</label>
+    <quill-editor formControlName="content"></quill-editor>
+  </div>
+
+
+  <button
+    [disabled]="form.invalid || form.disabled"
+    type="submit"
+    mdbBtn color="primary"
+    mdbWavesEffect
+  >
+    Сохранить изминения
+  </button>
+</form>
+
+preview
