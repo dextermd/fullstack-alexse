@@ -4,8 +4,8 @@ import {SubCategory, Product, CasaOption} from '../shared/interfaces';
 import {AlertService} from '../shared/services/alert.service';
 import {Subscription} from 'rxjs';
 import {SubcategoryService} from '../../shared/subcategory.service';
-import {CasaService} from "../../shared/casa.service";
-import {FormGroup} from "@angular/forms";
+import {CasaService} from '../../shared/casa.service';
+import {FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-product-page',

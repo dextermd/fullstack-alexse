@@ -164,9 +164,28 @@
                   <td>{{item.cost  | number}} Lei</td>
                   <td><p>{{item.quantity}}</p></td>
                   <td class="font-weight-bold">
-                    {{item.casa[0].name}} {{item.casa[0].price | currency: 'MDL ' }}<p>
-                    {{item.indicator[0].name}} {{item.indicator[0].price | currency: 'MDL ' }}<p>
-                    {{item.pandus[0].name}} {{item.pandus[0].price | currency: 'MDL ' }}<p>
+
+                    <button *ngIf="item.casa[0].name" class="mr-2" style="color: darkgreen"
+                      ngbPopover="{{item.casa[0].name}} {{item.casa[0].price | currency: 'MDL ' }}"
+                    >
+                      <i class="fas fa-check"></i>
+                    </button>
+
+                    <button *ngIf="item.indicator[0].name" class="mr-2" style="color: darkgreen"
+                      ngbPopover="{{item.indicator[0].name}} {{item.indicator[0].price | currency: 'MDL ' }}"
+                    >
+                      <i class="fas fa-check"></i>
+                    </button>
+                    <button *ngIf="item.pandus[0].name" class="mr-2" style="color: darkgreen"
+                            ngbPopover="{{item.pandus[0].name}} {{item.pandus[0].price | currency: 'MDL ' }}"
+                    >
+                      <i class="fas fa-check"></i>
+                    </button>
+<!--                    {{item.casa[0].name}} {{item.casa[0].price | currency: 'MDL ' }}<p>-->
+<!--                    {{item.indicator[0].name}} {{item.indicator[0].price | currency: 'MDL ' }}-->
+<!--                    <p>-->
+<!--                      {{item.pandus[0].name}} {{item.pandus[0].price | currency: 'MDL ' }}-->
+<!--                    <p>-->
                   </td>
                   <td>
                     <button (click)="removePosition(item)" type="button" class="btn btn-sm btn-primary"
@@ -226,9 +245,6 @@
                   </div>
 
 
-
-
-
                   <div class=" mb-3">
                     <input
                       mdbInput
@@ -250,11 +266,27 @@
                   </div>
 
 
-                  <div class="input-group mb-3">
-                    <input formControlName="c_email" id="c_email" type="mail" class="form-control"
-                           placeholder="Электронная почта">
+                  <div class="mb-3">
+                    <input
+                      formControlName="c_email"
+                      id="c_email"
+                      type="mail"
+                      class="form-control"
+                      placeholder="Электронная почта"
+                      [ngClass]="{'invalid': form.get('c_email').invalid && form.get('c_email').touched }"
+                    >
+                    <div
+                      class="red-text "
+                      *ngIf="form.get('c_email').touched && form.get('c_email').invalid"
+                    >
+                      <small *ngIf="form.get('c_email').errors.required">
+                        Email не может быть пустым
+                      </small>
+                      <small *ngIf="form.get('c_email').errors.email">
+                        Пожалуйста. введите правильный Email адрес
+                      </small>
+                    </div>
                   </div>
-
 
                   <div class="form-group mb-2 pl-4">
                     <input formControlName="c_type_shipping" class="form-check-input" type="radio" id="gender1"
@@ -275,7 +307,6 @@
                            (click)="register('по Молдове')" name="c_type_shipping" value='по Молдове'>
                     <label for="gender3" class="form-check-label dark-grey-text"> по Молдове: <strong>от 80 лей</strong></label>
                   </div>
-
 
 
                   <div class=" mb-3">
@@ -299,13 +330,11 @@
                   </div>
 
 
-
                   <div class="custom-control custom-checkbox mb-3">
                     <input type="checkbox" (change)="triggerSomeEvent()" class="custom-control-input"
                            id="defaultChecked2">
                     <label class="custom-control-label" for="defaultChecked2">Юредическое лицо</label>
                   </div>
-
 
 
                   <div class=" mb-3">

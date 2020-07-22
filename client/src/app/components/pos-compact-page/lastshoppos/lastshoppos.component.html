@@ -1,5 +1,6 @@
 <div class="container my-5 py-5 ">
-  <h3 class="font-weight-bold black-text mb-4 pb-2 text-center wow zoomIn" data-wow-delay="0.6s">Вы также можете расширить комплект дополнительным оборудованием
+  <h3 class="font-weight-bold black-text mb-4 pb-2 text-center wow zoomIn" data-wow-delay="0.6s">Вы также можете
+    расширить комплект дополнительным оборудованием
   </h3>
 
 
@@ -10,75 +11,23 @@
     <!--Grid row-->
     <div class="row py-5 my-5">
 
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4">
+        <!--Grid column-->
+      <ng-container *ngFor="let prod of products; let index = index">
+        <div *ngIf="index % 3 == 0" class="col-lg-3 col-md-6 mb-4">
 
-        <a href="" class="waves-effect waves-light"><img
-          src="assets/complect/22c02097e4438bd2f2f3fe4a6a3ab0e1_L.jpg" style="height: 200px" class="img-fluid"
-          alt=""></a>
+          <a [routerLink]="['products/item', prod._id]" class="waves-effect waves-light"><img
+            src="{{prod.img[0].path}}" style="height: 200px" class="img-fluid"
+            alt=""></a>
 
-        <p class="mb-1"><a href="" class="font-weight-bold black-text">Samsung CT-567</a></p>
+          <p class="mb-1"><a [routerLink]="['products/item', prod._id]" class="font-weight-bold black-text">{{prod.name}}</a></p>
 
-        <p class="mb-1"><small class="mr-1"><s>1,700.00 lei</s></small><strong>1,400.00 lei</strong></p>
-
-
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4">
-
-        <a href="" class="waves-effect waves-light"><img
-          src="assets/complect/90701d02ae3da0e5a21abbd900c25748_XL.jpg" style="height: 200px" class="img-fluid"
-          alt=""></a>
-
-        <p class="mb-1"><a href="" class="font-weight-bold black-text">Dell V-964i</a> </p>
-
-        <p class="mb-1"><small class="mr-1"><s>1,700.00 lei</s></small><strong>1,400.00 lei</strong></p>
+          <p class="mb-1"><small class="mr-1"></small><strong>{{prod.cost}}</strong></p>
 
 
-      </div>
-      <!--Grid column-->
+        </div>
+        <!--Grid column-->
 
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-12 mb-4">
-
-        <a href="" class="waves-effect waves-light"><img
-          src="assets/complect/620466077c427f141effa294382f5fba_S.jpg"  style="height: 200px" class="img-fluid"
-          alt=""></a>
-
-        <p class="mb-1"><a href="" class="font-weight-bold black-text">Sony TV-675</a></p>
-
-        <p class="mb-1"><small class="mr-1"><s>1,700.00 lei</s></small><strong>1,400.00 lei</strong></p>
-
-
-
-
-      </div>
-      <!--Grid column-->
-
-
-
-
-
-      <!--Grid column-->
-      <div class="col-lg-3 col-md-6 mb-4">
-
-        <a href="" class="waves-effect waves-light"><img
-          src="assets/complect/ALEX-PRINT-1.jpg" style="height: 200px" class="img-fluid"
-          alt=""></a>
-
-        <p class="mb-1"><a href="" class="font-weight-bold black-text">Dell V-964i</a> </p>
-
-        <p class="mb-1"><small class="mr-1"><s>1,700.00 lei</s></small><strong>1,400.00 lei</strong></p>
-
-
-      </div>
-      <!--Grid column-->
-
-
-
-
+      </ng-container>
 
 
     </div>
@@ -87,12 +36,14 @@
 
   </section>
   <!--Section: Content-->
-<div class="flex-center">
-  <div class="btn-group py-5 " role="group" aria-label="Basic example">
+  <div class="flex-center">
+    <div class="btn-group py-5 " role="group" aria-label="Basic example">
 
-    <button routerLink="/products" mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Перейти в магазин</button>
+      <button routerLink="/products" mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Перейти в
+        магазин
+      </button>
 
+    </div>
   </div>
-</div>
 
 </div>

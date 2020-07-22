@@ -154,6 +154,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TokenInterceptor} from './classes/token.interceptor';
 import { AlertingComponent } from './components/alerting/alerting.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData(roLocale, 'ro');
@@ -315,7 +316,8 @@ registerLocaleData(roLocale, 'ro');
     SharedModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
 
   ],
   // providers: [INTERCEPTOR_PROVIDER],

@@ -1,111 +1,97 @@
 <div *ngIf="product$ | async as product; else loading ">
 
-<div class="container gotop">
-  <!--Section: Content-->
-  <section class="text-center">
+  <div class="container gotop">
+    <!--Section: Content-->
+    <section class="text-center">
 
-    <div class="pt-2"><app-alerting ></app-alerting></div>
-    <!-- Section heading -->
+      <div class="pt-2">
+        <app-alerting></app-alerting>
+      </div>
+      <!-- Section heading -->
 
-    <div class="row pt-4">
+      <div class="row pt-4">
 
-      <div class="col-lg-6">
+        <div class="col-lg-6">
 
-        <!--Carousel Wrapper-->
-        <div id="carousel-thumb1" class="carousel slide carousel-fade carousel-thumbnails mb-1 pb-1" data-ride="carousel">
+          <!--Carousel Wrapper-->
+          <div id="carousel-thumb1" class="carousel slide carousel-fade carousel-thumbnails mb-1 pb-1"
+               data-ride="carousel">
 
-          <mdb-carousel [isControls]="true" [animation]="'slide'">
-            <!--First slide-->
+            <mdb-carousel [isControls]="true" [animation]="'slide'">
+              <!--First slide-->
 
-            <mdb-slide>
-              <img  src="{{product.img[0].path}}"
-                   lightbox backgroundColor="white"
-                   alt="First slide" class="img-fluid">
-
-
-            </mdb-slide>
-
-          </mdb-carousel>
+              <mdb-slide>
+                <img src="{{product.img[0].path}}"
+                     lightbox backgroundColor="white"
+                     alt="First slide" class="img-fluid">
 
 
-        </div>
-        <!--/.Carousel Wrapper-->
-        <div lightbox-group  class="row mb-1 ">
-          <div class="flex-center">
-          <figure class="col-md-2  mr-3">
-            <img src="{{product.imgOne[0].path}}"
-                 lightbox
-                 class="img-fluid">
-          </figure>
-          <figure class="col-md-2  mr-3">
-            <img src="{{product.imgTwo[0].path}}"
-                 lightbox
-                 class="img-fluid">
-          </figure>
-          <figure class="col-md-2  mr-3">
+              </mdb-slide>
 
-            <img src="{{product.imgThree[0].path}}"
-                 lightbox
-                 class="img-fluid">
-          </figure>
-          <figure class="col-md-2  mr-3">
-            <img src="{{product.imgFour[0].path}}"
-                 lightbox
-                 class="img-fluid">
-          </figure>
+            </mdb-carousel>
+
+
+          </div>
+          <!--/.Carousel Wrapper-->
+          <div lightbox-group class="row mb-1 ">
+            <div class="flex-center">
+              <figure class="col-md-2  mr-3">
+                <img src="{{product.imgOne[0].path}}"
+                     lightbox
+                     class="img-fluid">
+              </figure>
+              <figure class="col-md-2  mr-3">
+                <img src="{{product.imgTwo[0].path}}"
+                     lightbox
+                     class="img-fluid">
+              </figure>
+              <figure class="col-md-2  mr-3">
+
+                <img src="{{product.imgThree[0].path}}"
+                     lightbox
+                     class="img-fluid">
+              </figure>
+              <figure class="col-md-2  mr-3">
+                <img src="{{product.imgFour[0].path}}"
+                     lightbox
+                     class="img-fluid">
+              </figure>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div class="col-lg-6 text-center text-md-left">
+        <div class="col-lg-6 text-center text-md-left">
 
-        <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.name}}</h2>
-        <hr>
+          <h2
+            class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.name}}</h2>
+          <hr>
 
-        <h3 class="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4">
+          <h3 class="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4">
           <span class="red-text font-weight-bold">
             <strong class="pr-3">{{product.cost | number}} Lei</strong>
           </span>
-          <span class="grey-text">
+            <span class="grey-text">
             <small>
               <s>{{+product.oldCost | currency: 'Lei '}}</s>
             </small>
           </span>
-        </h3>
+          </h3>
 
-        <div class="font-weight-normal">
+          <div class="font-weight-normal">
 
-          <p class="ml-xl-0 ml-4">{{product.content}}</p>
+            <p class="ml-xl-0 ml-4">{{product.content}}</p>
 
 
-
-          <div *ngIf="product.subcategory === '5f05c3df6d77ce3e4c59a8b2'"  class="input-group mb-3">
-            <div class="input-group-prepend">
-              <label class="input-group-text" for="casa">Выбрать Опции</label>
-                <select  [(ngModel)]="selected" (change)="onSelectCasa(selected)" class="browser-default custom-select" id="casa">
+            <div *ngIf="product.subcategory === '5f05c3df6d77ce3e4c59a8b2'" class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="casa">Выбрать Опции</label>
+                <select [(ngModel)]="selected" (change)="onSelectCasa(selected)" class="browser-default custom-select"
+                        id="casa">
                   <option value="Без аккумулятора">Без аккумулятора</option>
                   <ng-container *ngFor="let cassss of casaS let inx = index">
-                  <ng-container *ngIf="cassss._id == product.casa[inx]">
-                    <option [value]="cassss.name" >{{cassss.name}} + {{cassss.price}} Lei</option>
-                  </ng-container>
-                  </ng-container>
-
-                </select>
-            </div>
-          </div>
-
-
-          <div *ngIf="product.subcategory === '5f133744c804af2228fbbf83' || product.subcategory === '5f1336e1707a9a3bf4490e2c'">
-
-            <div   class="input-group mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="indicator">Выбрать Индикатор</label>
-                <select  [(ngModel)]="selectedIndicator" (change)="onSelectInd(selectedIndicator)" class="browser-default custom-select" id="indicator">
-                  <option value="MERAV2000">MERAV2000</option>
-                  <ng-container *ngFor="let indicat of indicatorS let inx = index">
-                    <ng-container *ngIf="indicat._id == product.indicator[inx]">
-                      <option [value]="indicat.name" >{{indicat.name}} + {{indicat.price}} Lei</option>
+                    <ng-container *ngIf="cassss._id == product.casa[inx]">
+                      <option [value]="cassss.name">{{cassss.name}} + {{cassss.price}} Lei</option>
                     </ng-container>
                   </ng-container>
 
@@ -114,68 +100,105 @@
             </div>
 
 
+            <div
+              *ngIf="product.subcategory === '5f133744c804af2228fbbf83' || product.subcategory === '5f1336e1707a9a3bf4490e2c'">
 
-
-            <div  class="input-group mb-3">
-              <div class="input-group-prepend">
-                <label class="input-group-text" for="pandus">Выбрать Пандус</label>
-                <select  [(ngModel)]="selectedPandus" (change)="onSelectPand(selectedPandus)" class="browser-default custom-select" id="pandus">
-                  <option value="Без пандуса">Без пандуса</option>
-                  <ng-container *ngFor="let pand of pandusS let inx = index">
-                    <ng-container *ngIf="pand._id == product.pandus[inx]">
-                      <option [value]="pand.name" >{{pand.name}} + {{pand.price}} Lei</option>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="indicator">Выбрать Индикатор</label>
+                  <select [(ngModel)]="selectedIndicator" (change)="onSelectInd(selectedIndicator)"
+                          class="browser-default custom-select" id="indicator">
+                    <option value="MERAV2000">MERAV2000</option>
+                    <ng-container *ngFor="let indicat of indicatorS let inx = index">
+                      <ng-container *ngIf="indicat._id == product.indicator[inx]">
+                        <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} Lei</option>
+                      </ng-container>
                     </ng-container>
-                  </ng-container>
 
-                </select>
+                  </select>
+                </div>
               </div>
+
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="pandus">Выбрать Пандус</label>
+                  <select [(ngModel)]="selectedPandus" (change)="onSelectPand(selectedPandus)"
+                          class="browser-default custom-select" id="pandus">
+                    <option value="Без пандуса">Без пандуса</option>
+                    <ng-container *ngFor="let pand of pandusS let inx = index">
+                      <ng-container *ngIf="pand._id == product.pandus[inx]">
+                        <option [value]="pand.name">{{pand.name}} + {{pand.price}} Lei</option>
+                      </ng-container>
+                    </ng-container>
+
+                  </select>
+                </div>
+              </div>
+
             </div>
 
-          </div>
 
+            <div class="mt-5">
+              <div class="row mt-3 mb-4">
+                <div class="col-md-12 text-center text-md-left">
+                  <li class="list-group-item">Количество: <input type="number" value="1" min="1"
+                                                                 [(ngModel)]="product.quantity"></li>
 
-
-          <div class="mt-5">
-            <div class="row mt-3 mb-4">
-              <div class="col-md-12 text-center text-md-left">
-                <li class="list-group-item">Количество: <input type="number" value="1" min="1" [(ngModel)]="product.quantity"></li>
-
-                <div *ngIf="product.subcategory === '5f05c3df6d77ce3e4c59a8b2'" class="pt-5">
-                <button [disabled]="!product.quantity" (click)="addToOrderCasa(product, selected, priceCasa)" class="btn btn-primary btn-rounded">
-                <i class="fas fa-cart-plus mr-2"  aria-hidden="true"></i> В Корзину</button>
-                </div>
-
-
-                <div *ngIf="product.subcategory === '5f133744c804af2228fbbf83' || product.subcategory === '5f1336e1707a9a3bf4490e2c'" class="pt-5">
-                  <button [disabled]="!product.quantity" (click)="addToOrderIndAndPand(product, selectedIndicator, priceIndicator, selectedPandus, pricePandus)" class="btn btn-primary btn-rounded">
-                    <i class="fas fa-cart-plus mr-2"  aria-hidden="true"></i> В Корзину</button>
-                </div>
-
-
-
-
-                  <div *ngIf="product.subcategory !== '5f05c3df6d77ce3e4c59a8b2' &&  product.subcategory !== '5f133744c804af2228fbbf83' &&  product.subcategory !== '5f1336e1707a9a3bf4490e2c'" class="pt-5">
-                    <button [disabled]="!product.quantity" (click)="addToOrder(product)" class="btn btn-primary btn-rounded">
-                      <i class="fas fa-cart-plus mr-2"  aria-hidden="true"></i> В Корзину</button>
+                  <div *ngIf="product.subcategory === '5f05c3df6d77ce3e4c59a8b2'" class="pt-5">
+                    <button [disabled]="!product.quantity" (click)="addToOrderCasa(product, selected, priceCasa)"
+                            class="btn btn-primary btn-rounded">
+                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> В Корзину
+                    </button>
                   </div>
 
 
+                  <div
+                    *ngIf="product.subcategory === '5f133744c804af2228fbbf83' || product.subcategory === '5f1336e1707a9a3bf4490e2c'"
+                    class="pt-5">
+                    <button [disabled]="!product.quantity"
+                            (click)="addToOrderIndAndPand(product, selectedIndicator, priceIndicator, selectedPandus, pricePandus)"
+                            class="btn btn-primary btn-rounded">
+                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> В Корзину
+                    </button>
+                  </div>
+
+
+                  <div
+                    *ngIf="product.subcategory !== '5f05c3df6d77ce3e4c59a8b2' &&  product.subcategory !== '5f133744c804af2228fbbf83' &&  product.subcategory !== '5f1336e1707a9a3bf4490e2c'"
+                    class="pt-5">
+                    <button [disabled]="!product.quantity" (click)="addToOrder(product)"
+                            class="btn btn-primary btn-rounded">
+                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> В Корзину
+                    </button>
+                  </div>
+
+
+                </div>
               </div>
             </div>
+
           </div>
 
         </div>
-
       </div>
-    </div>
-
-  </section>
-  <!--Section: Content-->
 
 
+        <ngb-tabset  [destroyOnHide]="false">
+          <ngb-tab title="Технические параметры">
+            <ng-template  ngbTabContent>
+                <quill-view-html [content]="product.spec"></quill-view-html>
+            </ng-template>
+          </ngb-tab>
+        </ngb-tabset>
+
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
 </div>
-</div>
-
 
 
 <ng-template #loading>

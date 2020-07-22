@@ -8,6 +8,7 @@ import {AlertService} from '../../admin/shared/services/alert.service';
 import {BehaviorSubject, Subscription} from 'rxjs';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {LocalService} from '../../shared/local.service';
+import {NgbPopoverConfig} from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -36,6 +37,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
   orderNumber = 'Отсчет заказов';
 
   constructor(
+    config: NgbPopoverConfig,
     private productService: ProductService,
     private cartService: CartService,
     public order: OrderService,
@@ -43,7 +45,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
     private alert: AlertService,
     private localService: LocalService
   ) {
-
+    config.triggers = 'hover';
   }
 
 
@@ -62,7 +64,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
     this.form = new FormGroup({
       c_name: new FormControl(null, Validators.required),
       c_phone: new FormControl(null, Validators.required),
-      c_email: new FormControl(null),
+      c_email: new FormControl(null, [Validators.required , Validators.email]),
       c_type_shipping: new FormControl(this.typeShip, Validators.required),
       c_address_shipping: new FormControl({value: '', disabled: true}, Validators.required),
       c_company_name: new FormControl({value: '', disabled: true}, Validators.required),

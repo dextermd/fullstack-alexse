@@ -87,6 +87,8 @@ export class CreateProductComponent implements OnInit {
       casa: new FormControl(),
       pandus: new FormControl(),
       indicator: new FormControl(),
+      option: new FormControl(false),
+
 
     });
 
@@ -115,6 +117,7 @@ export class CreateProductComponent implements OnInit {
               casa: products.casa,
               pandus: products.pandus,
               indicator: products.indicator,
+              option: products.option,
               image: products.img,
               imageOne: products.imgOne,
               imageTwo: products.imgTwo,
@@ -239,6 +242,7 @@ export class CreateProductComponent implements OnInit {
         this.form.value.casa,
         this.form.value.pandus,
         this.form.value.indicator,
+        this.form.value.option,
         this.image,
         this.imageOne,
         this.imageTwo,
@@ -263,6 +267,7 @@ export class CreateProductComponent implements OnInit {
           this.form.value.casa,
           this.form.value.pandus,
           this.form.value.indicator,
+          this.form.value.option,
           this.image,
           this.imageOne,
           this.imageTwo,

@@ -3,6 +3,8 @@ import {ProductService} from '../../shared/product.service';
 import {CartService} from '../../shared/cart.service';
 import {OrderService} from '../../shared/order.service';
 import {LocalService} from '../../shared/local.service';
+import {AuthService} from '../../shared/auth.service';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-main-layout',
@@ -10,10 +12,13 @@ import {LocalService} from '../../shared/local.service';
   styleUrls: ['./main-layout.component.scss']
 })
 export class MainLayoutComponent implements OnInit {
-
+  title = 'AL';
   card = [];
   cartItems = 0;
   constructor(
+    private auth: AuthService,
+    private titleService: Title,
+
     private productService: ProductService,
     private cartService: CartService,
     public order: OrderService,
@@ -27,6 +32,8 @@ export class MainLayoutComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.titleService.setTitle(this.title);
+
     // this.order.cartItems = JSON.parse(localStorage.getItem('cartItems'));
     this.order.cartItems = this.localService.getJsonValue('cartItems');
   }

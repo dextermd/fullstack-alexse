@@ -49,7 +49,7 @@ export class OrderService {
 
     console.log(this.localService.getJsonValue('list'));
 
-    if (this.localService.getJsonValue('list').length === 0) {
+    if (this.localService.getJsonValue('list') === null || this.localService.getJsonValue('list').length === 0 ) {
       this.list = [];
       this.price = 0;
       this.cartItems = 0;
@@ -108,7 +108,7 @@ export class OrderService {
     });
 
 
-    if (this.localService.getJsonValue('list').length === 0) {
+    if (this.localService.getJsonValue('list') === null || this.localService.getJsonValue('list').length === 0) {
       this.list = [];
       this.price = 0;
       this.cartItems = 0;
@@ -167,7 +167,7 @@ export class OrderService {
     });
 
 
-    if (this.localService.getJsonValue('list').length === 0) {
+    if (this.localService.getJsonValue('list') === null || this.localService.getJsonValue('list').length === 0) {
       this.list = [];
       this.price = 0;
       this.cartItems = 0;

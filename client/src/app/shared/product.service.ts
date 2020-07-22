@@ -36,6 +36,7 @@ export class ProductService {
          casa: any,
          pandus: any,
          indicator: any,
+         option: any,
          image?: File,
          imageOne?: File,
          imageTwo?: File,
@@ -73,6 +74,7 @@ export class ProductService {
     fd.append('casa', casa);
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
+    fd.append('option', option);
 
 
 
@@ -90,6 +92,7 @@ export class ProductService {
          casa: any,
          pandus: any,
          indicator: any,
+         option: any,
          image?: File,
          imageOne?: File,
          imageTwo?: File,
@@ -121,6 +124,8 @@ export class ProductService {
     fd.append('casa', casa);
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
+    fd.append('option', option);
+
 
     return this.http.patch<Product>(`/api/position/${id}`, fd);
   }

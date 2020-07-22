@@ -6,7 +6,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
-var bodyParser = require('body-parser');
 
 var indexRouter = require('./routes/index');
 var sendmailRouter = require('./routes/sendmail');
@@ -27,12 +26,29 @@ var indicatorRouter = require('./routes/indicator');
 const keys = require('./config/keys');
 var app = express();
 
-mongoose.connect(keys.mongoURI).then( () => console.log('MongoDB connected.'))
+mongoose.connect(keys.mongoURI)
+    .then( () => console.log('MongoDB connected.'))
     .catch(error => console.log(error));
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+app.use(express.static('client/dist/alexse'));
+
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/dist/alexse'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(
+        path.resolve(
+            __dirname, 'client', 'dist', 'alexse', 'index.html'
+        )
+    )
+  })
+}
+
+
+// // view engine setup
+// app.set('client', path.join(__dirname, 'client'));
+// app.set('view engine', 'pug');
 
 app.use(passport.initialize());
 require('./middleware/passport')(passport);
@@ -43,7 +59,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/api/sendmail', sendmailRouter);
@@ -77,16 +93,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/dist/alexse'))
-
-  app.get('*', (req, res) => {
-    res.sendFile(
-        path.resolve(
-            __dirname, 'client', 'dist', 'alexse', 'index.html'
-        )
-    )
-  })
-}
 
 module.exports = app;
