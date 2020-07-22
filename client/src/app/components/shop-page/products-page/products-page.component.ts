@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, NgModule, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
 import {CasaOption, IndicatorOption, PandusOption, Product} from '../../../admin/shared/interfaces';
 import {ActivatedRoute, Params} from '@angular/router';
@@ -13,6 +13,9 @@ import {AlertService} from '../../../admin/shared/services/alert.service';
 import {CasaService} from '../../../shared/casa.service';
 import {PandusService} from '../../../shared/pandus.service';
 import {IndicatorService} from '../../../shared/indicator.service';
+
+
+
 
 @Component({
   selector: 'app-products-page',

@@ -63,9 +63,9 @@ const routes: Routes = [
       {path: 'cart', component: CartPageComponent},
       {path: 'checkout', component: CheckoutPageComponent},
       {path: 'thankyou', component: ThankyouPageComponent},
-      // {path: 'account/signup', component: SignUpComponent },
+      {path: 'account/signup', component: SignUpComponent},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
-      {path: 'account/login', component: LoginComponent },
+      {path: 'account/login', component: LoginComponent},
     ]
   },
   {

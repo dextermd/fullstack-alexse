@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, NgModule, OnDestroy, OnInit} from '@angular/core';
 import {ProductService} from '../../shared/product.service';
 import {CartService} from '../../shared/cart.service';
 import {OrderService} from '../../shared/order.service';
@@ -8,7 +8,7 @@ import {AlertService} from '../../admin/shared/services/alert.service';
 import {BehaviorSubject, Subscription} from 'rxjs';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {LocalService} from '../../shared/local.service';
-import {NgbPopoverConfig} from '@ng-bootstrap/ng-bootstrap';
+import { NgbPopoverConfig} from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -16,6 +16,7 @@ import {NgbPopoverConfig} from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './cart-page.component.html',
   styleUrls: ['./cart-page.component.scss'],
   providers: [OrderService]
+
 })
 export class CartPageComponent implements OnInit, OnDestroy {
 
@@ -175,3 +176,5 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
 
 }
+
+

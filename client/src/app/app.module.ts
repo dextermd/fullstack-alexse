@@ -317,7 +317,6 @@ registerLocaleData(roLocale, 'ro');
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgbModule
 
   ],
   // providers: [INTERCEPTOR_PROVIDER],

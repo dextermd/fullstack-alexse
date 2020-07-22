@@ -6,6 +6,7 @@ import {FormsModule} from '@angular/forms';
 import {CKEditorModule} from '@ckeditor/ckeditor5-angular';
 import {NgxPaginationModule} from 'ngx-pagination';
 import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
     FormsModule,
     NgxPaginationModule,
     CrystalLightboxModule,
-
+    NgbModule
 
 
 
@@ -30,6 +31,8 @@ import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
     FormsModule,
     NgxPaginationModule,
     CrystalLightboxModule,
+    NgbModule
+
   ],
 })
 
