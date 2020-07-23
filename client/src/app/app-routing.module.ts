@@ -66,13 +66,14 @@ const routes: Routes = [
       {path: 'account/signup', component: SignUpComponent},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
       {path: 'account/login', component: LoginComponent},
-      { path: '**', redirectTo: '/', pathMatch: 'full' },
 
     ]
   },
   {
     path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
-  }
+},
+  { path: '**', redirectTo: '/', pathMatch: 'full' },
+
     ];
 
 @NgModule({
