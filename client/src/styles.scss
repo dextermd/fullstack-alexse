@@ -1,12 +1,13 @@
 @import "~quill/dist/quill.core.css";
 @import "~quill/dist/quill.snow.css";
 
+
+
 /* You can add global styles to this file, and also import other style files */
 .navbar {
   box-shadow: none !important;
   z-index: 1040;
 }
-
 
 .carousel-inner {
   max-height: 600px;
@@ -319,6 +320,7 @@
 }
 
 
+
 .container {
   max-width: 1300px;
 }
@@ -345,5 +347,3 @@
   padding-top: 120px;
 }
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';

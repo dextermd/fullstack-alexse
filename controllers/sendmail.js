@@ -40,7 +40,7 @@ module.exports.sendMail = async function (order, callback) {
                 "  document.getElementById(\"requestContainer\").innerHTML += index + \":\" + item + \"<br>\";\n" +
                 "}\n" +
                 "  </script>\n" +
-                "  <div class=\"container mt-3\">\n" +
+                "  <div class=\"containergo>\n" +
                 "    <div class=\"row\">\n" +
                 "      <div class=\"col-sm\">\n" +
                 "        <div class=\"card\">\n" +

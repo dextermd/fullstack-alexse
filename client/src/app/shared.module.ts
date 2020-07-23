@@ -11,13 +11,13 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   imports: [
     HttpClientModule,
-    MDBBootstrapModule.forRoot(),
+    NgbModule,
     QuillModule.forRoot(),
     CKEditorModule,
     FormsModule,
     NgxPaginationModule,
     CrystalLightboxModule,
-    NgbModule
+    MDBBootstrapModule.forRoot(),
 
 
 
