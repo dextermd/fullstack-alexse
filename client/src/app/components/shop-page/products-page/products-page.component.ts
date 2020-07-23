@@ -24,6 +24,14 @@ import {IndicatorService} from '../../../shared/indicator.service';
 })
 export class ProductsPageComponent implements OnInit {
 
+  casaProd = '5f1969d676c3a79a254c89a1' ;
+  platProd = '5f196f77f3a94c9b3367d03f';
+  platgoProd = '5f1971e41ba1129b53134c3a';
+
+  casaDev = '5f05c3df6d77ce3e4c59a8b2';
+  platDev = '5f133744c804af2228fbbf83';
+  platgoDev = '5f1336e1707a9a3bf4490e2c';
+
   product$: Observable<Product>;
   public items: Product[] = [];
   casaS: CasaOption[] = [];

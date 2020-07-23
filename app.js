@@ -31,6 +31,7 @@ mongoose.connect(keys.mongoURI)
     .catch(error => console.log(error));
 
 
+app.use(express.static('client/dist/alexse'));
 
 // // view engine setup
 // app.set('client', path.join(__dirname, 'client'));
