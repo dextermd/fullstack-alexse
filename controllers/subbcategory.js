@@ -42,7 +42,7 @@ module.exports.create = async function (req, res) {
     });
     try {
         await  subcategory.save();
-        res.status(201).json(subategory)
+        res.status(201).json(subcategory)
     } catch (e) {
         errorHandler(res, e)
     }

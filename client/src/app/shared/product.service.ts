@@ -15,7 +15,7 @@ export class ProductService {
   }
 
   getAllProduct(): Observable<Product[]> {
-    return this.http.get<Product[]>('/api/position');
+    return this.http.get<Product[]>('/api/position', )
   }
 
   getByIdProduct(id: string): Observable<Product> {
@@ -75,7 +75,6 @@ export class ProductService {
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
     fd.append('option', option);
-
 
 
     return this.http.post<Product>('/api/position', fd);
