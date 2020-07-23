@@ -167,7 +167,7 @@
 
 
                   <div
-                    *ngIf="product.subcategory !== '5f05c3df6d77ce3e4c59a8b2' &&  product.subcategory !== '5f133744c804af2228fbbf83' &&  product.subcategory !== '5f1336e1707a9a3bf4490e2c'"
+                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platProd &&  product.subcategory !== platgoProd"
                     class="pt-5">
                     <button [disabled]="!product.quantity" (click)="addToOrder(product)"
                             class="btn btn-primary btn-rounded">
