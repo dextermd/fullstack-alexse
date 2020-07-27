@@ -19,10 +19,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     CrystalLightboxModule,
     MDBBootstrapModule.forRoot(),
 
-
-
-
   ],
+
   exports: [
     HttpClientModule,
     MDBBootstrapModule,
@@ -31,7 +29,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     NgxPaginationModule,
     CrystalLightboxModule,
-    NgbModule
+    NgbModule,
+
 
   ],
 })

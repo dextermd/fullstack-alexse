@@ -16,6 +16,7 @@ export class ProductPageComponent implements OnInit, OnDestroy {
   // tslint:disable-next-line:no-input-rename
   @Input('categoryId') categoryId: string;
 
+  searchStr ;
   loading = false;
   products: Product[] = [];
   categorys: SubCategory[] = [];

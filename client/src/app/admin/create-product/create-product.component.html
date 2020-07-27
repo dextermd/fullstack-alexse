@@ -275,7 +275,9 @@
         class="form-control" id="casa" formControlName="casa" multiple="multiple"
 
               (ngModelChange)="setOptions($event)">
-        <option  *ngFor="let cas of lcasa" [ngValue]="cas._id" ngDefaultControl>{{cas.name}} + {{cas.price}} Lei</option>
+        <ng-container *ngFor="let cas of lcasa" >
+        <option *ngIf="cas.name !== 'Без аккумулятора'"  [ngValue]="cas._id" ngDefaultControl>{{cas.name}} + {{cas.price}} Lei</option>
+        </ng-container>
       </select>
 
     </div>
@@ -287,11 +289,13 @@
       <div class="input-group-prepend">
         <label class="input-group-text" for="indicator">Выбрать Индикатора</label>
       </div>
-      <select class="form-control" id="indicator" formControlName="indicator" multiple="multiple"
+      <select  class="form-control" id="indicator" formControlName="indicator" multiple="multiple"
               (ngModelChange)="setOptions($event)">
-        <option *ngFor="let indicat of lindicator" [ngValue]="indicat._id" ngDefaultControl>{{indicat.name}}
+        <ng-container *ngFor="let indicat of lindicator" >
+        <option *ngIf="indicat.name !== 'MERAV2000'"  [ngValue]="indicat._id" ngDefaultControl>{{indicat.name}}
           + {{indicat.price}} Lei
         </option>
+        </ng-container>
       </select>
 
     </div>
@@ -304,9 +308,12 @@
       </div>
       <select class="form-control" id="pandus" formControlName="pandus" multiple="multiple"
               (ngModelChange)="setOptions($event)">
-        <option *ngFor="let pand of lpandus" [ngValue]="pand._id" ngDefaultControl>{{pand.name}}
+        <ng-container *ngFor="let pand of lpandus" >
+        <option *ngIf="pand.name !== 'Без пандуса'" [ngValue]="pand._id" ngDefaultControl>{{pand.name}}
           + {{pand.price}} Lei
         </option>
+        </ng-container>
+
       </select>
 
     </div>

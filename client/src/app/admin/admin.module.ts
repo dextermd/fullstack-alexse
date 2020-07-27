@@ -28,6 +28,7 @@ import { PandusCreatePageComponent } from './options-page/pandus-create-page/pan
 import { PandusPageComponent } from './options-page/pandus-page/pandus-page.component';
 import { CasaPageComponent } from './options-page/casa-page/casa-page.component';
 import { CasaCreatePageComponent } from './options-page/casa-create-page/casa-create-page.component';
+import {SearchProductPipe} from './shared/pipes/searchProduct.pipe';
 
 
 // @ts-ignore
@@ -55,7 +56,7 @@ import { CasaCreatePageComponent } from './options-page/casa-create-page/casa-cr
     PandusCreatePageComponent,
     PandusPageComponent,
     CasaPageComponent,
-    CasaCreatePageComponent
+    CasaCreatePageComponent,
 
   ],
   imports: [

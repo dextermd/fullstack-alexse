@@ -4,12 +4,11 @@
 
       <!--Section: Products v.3-->
       <section class="text-center pb-3 my-5">
-
         <!--Grid row-->
         <div class="row" *ngIf="products$ | async as products; else loading">
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4"
-               *ngFor="let prod of products | paginate: { itemsPerPage: 10, currentPage: page }">
+               *ngFor="let prod of products  | paginate: { itemsPerPage: 10, currentPage: page } | searchProduct: searchStr;">
 
             <!--Card-->
             <mdb-card class="align-items-center">
@@ -63,11 +62,11 @@
     <div class="col-sm-3 order-1 border-right">
 
       <!-- Search form -->
-      <form class="form-inline md-form form-sm active-cyan-2 border pl-3">
-        <input class="form-control form-control-sm mr-1 w-75 pl-3" type="text" placeholder="Поиск" aria-label="Search"
+      <div class="form-inline md-form form-sm active-cyan-2 border pl-3">
+        <input class="form-control form-control-sm mr-1 w-75 pl-3" type="text" placeholder="Найти товар..." [(ngModel)]="searchStr" aria-label="Search"
                mdbInput>
         <mdb-icon fas icon="search" aria-hidden="true"></mdb-icon>
-      </form>
+      </div>
 
       <hr>
 

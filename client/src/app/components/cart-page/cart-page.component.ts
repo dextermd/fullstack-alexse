@@ -131,7 +131,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
           }
         );
 
-        // this.localService.clearToken();
+        this.localService.clearToken();
 
         // localStorage.removeItem('list');
         // localStorage.removeItem('price');

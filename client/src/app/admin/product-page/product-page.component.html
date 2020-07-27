@@ -3,7 +3,7 @@
   <div *ngIf="!loading; else loader" >
   <div *ngIf="products.length !== 0; else empty" class="pt-5">
     <div class="pb-3">
-      <input class="form-control" type="text" placeholder="Найти пост...">
+      <input class="form-control" type="text" placeholder="Найти пост..." [(ngModel)]="searchStr">
     </div>
     <table  mdbTable class="z-depth-1" >
       <thead class="black white-text">

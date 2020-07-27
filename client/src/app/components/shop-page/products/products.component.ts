@@ -12,6 +12,7 @@ import {ActivatedRoute, Params} from '@angular/router';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit, OnDestroy {
+  searchStr ;
   page = 1;
   products$: Observable<Product[]>;
   subproductCategory$: Observable<SubCategory[]>;
