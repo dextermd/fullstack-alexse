@@ -29,6 +29,7 @@ import {SignUpComponent} from './user/sign-up/sign-up.component';
 import {LoginComponent} from './user/login/login.component';
 import {ProfileComponent} from './user/profile/profile.component';
 import {AuthGuard} from './classes/auth.guard';
+import {CreateCategoryPageComponent} from "./admin/create-category-page/create-category-page.component";
 
 
 
@@ -63,7 +64,7 @@ const routes: Routes = [
       {path: 'cart', component: CartPageComponent},
       {path: 'checkout', component: CheckoutPageComponent},
       {path: 'thankyou', component: ThankyouPageComponent},
-      {path: 'account/signup', component: SignUpComponent},
+      {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
       {path: 'account/login', component: LoginComponent},
 
