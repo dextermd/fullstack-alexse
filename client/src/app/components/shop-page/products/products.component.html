@@ -1,4 +1,15 @@
-<div class="container">
+<div class="bc-icons-2">
+  <mdb-breadcrumb customClass="white">
+    <div class="container">
+
+      <mdb-breadcrumb-item>
+        <mdb-breadcrumb-item [routerLink]="'/'">Главная</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item class="active">Продукты</mdb-breadcrumb-item>
+      </mdb-breadcrumb-item>
+    </div>
+  </mdb-breadcrumb>
+</div>
+  <div class="container">
   <div class="row pt-0 pb-0">
     <div class="col-sm-9 order-2">
 
@@ -73,7 +84,7 @@
       <div>
         <div class="list-group my-2 py-2">
           <a routerLink="/products" class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
-            Все категории
+            Все товары
           </a>
         </div>
       </div>
@@ -84,7 +95,7 @@
             {{pcategory.name}}
           </a>
           <!--          [isCollapsed]="false"-->
-          <div mdbCollapse [isCollapsed]="false" #test="bs-collapse">
+          <div  mdbCollapse  #test="bs-collapse">
             <div *ngIf="subproductCategory$ | async as productSubCategory">
               <ng-container *ngFor="let psubcategory of productSubCategory">
                 <ng-container *ngIf="pcategory._id === psubcategory.category">

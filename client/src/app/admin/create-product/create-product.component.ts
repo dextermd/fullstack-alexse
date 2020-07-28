@@ -11,6 +11,7 @@ import {CasaService} from '../../shared/casa.service';
 import {OrderService} from '../../shared/order.service';
 import {PandusService} from '../../shared/pandus.service';
 import {IndicatorService} from '../../shared/indicator.service';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 
 @Component({
@@ -19,7 +20,7 @@ import {IndicatorService} from '../../shared/indicator.service';
   styleUrls: ['./create-product.component.scss']
 })
 export class CreateProductComponent implements OnInit {
-
+  public Editor = ClassicEditor;
 
   products: Product;
   form: FormGroup;

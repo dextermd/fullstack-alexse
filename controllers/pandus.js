@@ -36,8 +36,10 @@ module.exports.create = async function (req, res) {
     console.log(req.user);
     const pandu = new Pandus({
         name: req.body.name,
+        content: req.body.content,
         price: req.body.price,
         user: req.user.id,
+        img: req.file ? req.file.path: ''
 
     });
     try {
@@ -51,8 +53,12 @@ module.exports.create = async function (req, res) {
 module.exports.update = async function (req, res) {
     const updated = {
         name: req.body.name,
+        content: req.body.content,
         price: req.body.price,
     };
+    if (req.file){
+        updated.img = req.file.path
+    }
     try {
         const  pandu = await Pandus.findOneAndUpdate(
             {_id: req.params.id},

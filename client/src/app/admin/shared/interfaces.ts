@@ -116,12 +116,16 @@ export interface CasaOption {
 
 export interface IndicatorOption {
   name: string;
+  img: string;
+  content: string;
   price: number;
   _id?: string;
 }
 
 export interface PandusOption {
   name: string;
+  img: string;
+  content: string;
   price: number;
   _id?: string;
 }

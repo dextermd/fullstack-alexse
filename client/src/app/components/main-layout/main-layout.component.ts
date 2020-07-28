@@ -15,6 +15,8 @@ export class MainLayoutComponent implements OnInit {
   title = 'AL';
   card = [];
   cartItems = 0;
+  hide = false;
+
   constructor(
     private auth: AuthService,
     private titleService: Title,
@@ -38,4 +40,7 @@ export class MainLayoutComponent implements OnInit {
     this.order.cartItems = this.localService.getJsonValue('cartItems');
   }
 
+  @HostListener('window:scroll', ['$event']) onScroll($event){
+    this.hide = pageYOffset >= 170;
+  }
 }

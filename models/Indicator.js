@@ -6,6 +6,14 @@ const indicatorSchema = new Schema({
         type: String,
         required: true
     },
+    img: {
+        type: String,
+        default: '',
+
+    },
+    content: {
+        type: String,
+    },
     price: {
         type: Number,
         required: true

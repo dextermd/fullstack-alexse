@@ -1,279 +1,401 @@
-<body class="fixed-sn light-blue-skin">
+<body (window:scroll)="onScroll($event)" class="fixed-sn light-blue-skin">
 
 <header>
-<!--Navbar-->
-  <div class="fixed-top">
-  <div class="">
-
-    <!--Navbar -->
-    <nav class=" navbar navbartop navbar-expand-lg navbar-light white lighten-1">
-      <span class="font-weight-bolder" style="color: #000000; font-size: 10pt;"><strong>Program de lucru: Lu-Vi 08:30 18:00 Tel:(+37322) 244-572 E-mail: office@alex-se.com</strong></span>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-        <ul class="navbar-nav mr-auto">
-
-        </ul>
-        <ul class="navbar-nav ml-auto nav-flex-icons">
-          <li class="nav-item">
-            <ul class="navbar-nav nav-flex-icons ml-auto">
-              <li class="nav-item d-none d-md-block">
-                <a type="button" mdbBtn floating="true" size="lg" color="fb" class="waves-light" ><mdb-icon class="indigo-text" fab icon="facebook-f"></mdb-icon></a>
-              </li>
-              <li class="nav-item d-none d-md-block">
-                <a type="button" mdbBtn floating="true" size="lg" color="yt" class="waves-light" ><mdb-icon class="red-text" fab icon="youtube"></mdb-icon></a>
-              </li>
-              <li class="nav-item d-none d-md-block">
-                <a type="button" mdbBtn floating="true" size="lg" color="ins" class="waves-light" ><mdb-icon class="orange-text" fab icon="instagram"></mdb-icon></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!--/.Navbar -->
-
-
-
-
-
-  </div>
-<!--/.Navbar-->
-
-
-<!--Navbar-->
-<mdb-navbar SideClass="navbar navbarmidle navbar-expand-lg navbar-dark pl-5 pr-5"  [containerInside]="false" >
-  <!-- Navbar brand -->
-  <a href="/" >
-  <img src="assets/Logoru-ru-1.png" height="50" alt="" class="pr-5">
-  </a>
-  <!-- Collapsible content -->
-  <links>
-    <form class="form-inline">
-      <input  class="form-control d-none d-md-block" type="text" placeholder="Поиск" aria-label="Search">
-    </form>
-
-
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item d-none d-md-block">
-        <img src="assets/060.png"  alt="" class="pr-5">
-<!--        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="envelope" size="1x"></mdb-icon> office@alex-se.com</a>-->
-      </li>
-      <li class="nav-item d-none d-md-block">
-        <img src="assets/060001103-1NEW.png"  alt="" class="pr-3">
-        <!--        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="phone" size="1x"></mdb-icon> +37360001103</a>-->
-      </li>
-      <li class="nav-item d-none d-md-block">
-        <img src="assets/069900989-1NEW.png"  alt="" class="pr-5">
-<!--        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="phone" size="1x"></mdb-icon> +37369900989</a>-->
-      </li>
-
-
-
-    </ul>
-
-  </links>
-
-</mdb-navbar>
-
-
-
-
   <!--Navbar-->
-  <mdb-navbar SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder" [containerInside]="false">
 
-    <!-- Navbar brand -->
-    <mdb-navbar-brand style="height: 55px;"><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
+  <div class="">
+    <div class="">
+      <!--Navbar -->
+      <nav class=" navbar navbartop navbar-expand-lg navbar-light white lighten-1">
+        <span class="font-weight-bolder" style="color: #000000; font-size: 10pt;"><strong>Program de lucru: Lu-Vi 08:30 18:00 Tel:(+37322) 244-572 E-mail: office@alex-se.com</strong></span>
 
-    <!-- Collapsible content -->
-    <links>
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown pr-3" dropdown>
-          <a  routerLink="/products"  type="button" class="nav-link  waves-light " mdbWavesEffect>
-            Продукция<span class="caret"></span></a>
-<!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary " role="menu">-->
-<!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Торговое</a>-->
-<!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Промышленное</a>-->
-<!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Видео наблюдение</a>-->
-<!--          </div>-->
-        </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+          <ul class="navbar-nav mr-auto">
 
-        <div>
-          <li class="nav-item dropdown pr-3"  dropdown>
-          <a  routerLink="/programs"  dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"  mdbWavesEffect>
-            Программы<span class="caret"></span></a>
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Alex Market</a>
-            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/flagman">Flagman</a>
-            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/b52">B52</a>
-          </div>
-        </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <ul class="navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item d-none d-md-block">
+                  <a type="button" mdbBtn floating="true" size="lg" color="fb" class="waves-light">
+                    <mdb-icon class="indigo-text" fab icon="facebook-f"></mdb-icon>
+                  </a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a type="button" mdbBtn floating="true" size="lg" color="yt" class="waves-light">
+                    <mdb-icon class="red-text" fab icon="youtube"></mdb-icon>
+                  </a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a type="button" mdbBtn floating="true" size="lg" color="ins" class="waves-light">
+                    <mdb-icon class="orange-text" fab icon="instagram"></mdb-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--/.Navbar -->
+
+
+    </div>
+    <!--/.Navbar-->
+
+
+    <!--Navbar-->
+    <mdb-navbar SideClass="navbar navbarmidle navbar-expand-lg navbar-dark pl-5 pr-5" [containerInside]="false">
+      <!-- Navbar brand -->
+      <a href="/">
+        <img src="assets/Logoru-ru-1.png" height="50" alt="" class="pr-5">
+      </a>
+      <!-- Collapsible content -->
+      <links>
+        <form class="form-inline">
+          <input class="form-control d-none d-md-block" type="text" placeholder="Поиск" aria-label="Search">
+        </form>
+
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item d-none d-md-block">
+            <img src="assets/060.png" alt="" class="pr-5">
+            <!--        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="envelope" size="1x"></mdb-icon> office@alex-se.com</a>-->
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <img src="assets/060001103-1NEW.png" alt="" class="pr-3">
+            <!--        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="phone" size="1x"></mdb-icon> +37360001103</a>-->
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <img src="assets/069900989-1NEW.png" alt="" class="pr-5">
+            <!--        <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="phone" size="1x"></mdb-icon> +37369900989</a>-->
+          </li>
+
+
+        </ul>
+
+      </links>
+
+    </mdb-navbar>
+
+
+
+  <div class="fixed-top">
+    <div >
+      <!--Navbar-->
+      <mdb-navbar SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder"
+                  [containerInside]="false">
+
+        <div >
+          <a href="/">
+            <img src="assets/Logo_blue_256_ru.png" height="50" alt="" class="pr-5">
+          </a>
         </div>
 
+        <!-- Navbar brand -->
+        <mdb-navbar-brand style="height: 55px;"><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
 
-<!--        <li class="nav-item pr-3">-->
-<!--          <a class="nav-link waves-light" mdbWavesEffect>Решения</a>-->
-<!--        </li>-->
-        <li class="nav-item pr-3">
-          <a class="nav-link waves-light" mdbWavesEffect routerLink="/support-service">Поддержка</a>
-        </li>
+        <!-- Collapsible content -->
+        <links>
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown pr-3" dropdown>
+              <a routerLink="/products" type="button" class="nav-link  waves-light " mdbWavesEffect>
+                Продукция<span class="caret"></span></a>
+              <!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary " role="menu">-->
+              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Торговое</a>-->
+              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Промышленное</a>-->
+              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Видео наблюдение</a>-->
+              <!--          </div>-->
+            </li>
 
-        <li class="nav-item pr-3">
-          <a class="nav-link waves-light" mdbWavesEffect routerLink="/about">О компании</a>
-        </li>
-
-<!--        &lt;!&ndash; Dropdown &ndash;&gt;-->
-<!--        <li class="nav-item dropdown pr-3" dropdown>-->
-<!--          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>-->
-<!--            О компании<span class="caret"></span></a>-->
-<!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">-->
-<!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">История комнапии</a>-->
-<!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Сертификаты</a>-->
-<!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Вакансии</a>-->
-<!--          </div>-->
-<!--        </li>-->
-
-        <li class="nav-item pr-3">
-          <a class="nav-link waves-light" mdbWavesEffect routerLink="/contacts">Контакты</a>
-        </li>
-
-
-        <li class="nav-item pr-3">
-          <a class="nav-link waves-light" mdbWavesEffect routerLink="/news">Новости</a>
-        </li>
-
-      </ul>
-      <!-- Links -->
+            <div>
+              <li class="nav-item dropdown pr-3" dropdown>
+                <a routerLink="/programs" dropdownToggle mdbWavesEffect type="button"
+                   class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                  Программы<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Alex
+                    Market</a>
+                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect
+                     routerLink="/flagman">Flagman</a>
+                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/b52">B52</a>
+                </div>
+              </li>
+            </div>
 
 
+            <!--        <li class="nav-item pr-3">-->
+            <!--          <a class="nav-link waves-light" mdbWavesEffect>Решения</a>-->
+            <!--        </li>-->
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/support-service">Поддержка</a>
+            </li>
 
-      <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item pr-3">
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/about">О компании</a>
+            </li>
 
-        <li class="nav-item">
-        <a routerLink="/cart" class="nav-link waves-effect">
+            <!--        &lt;!&ndash; Dropdown &ndash;&gt;-->
+            <!--        <li class="nav-item dropdown pr-3" dropdown>-->
+            <!--          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>-->
+            <!--            О компании<span class="caret"></span></a>-->
+            <!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">-->
+            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">История комнапии</a>-->
+            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Сертификаты</a>-->
+            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Вакансии</a>-->
+            <!--          </div>-->
+            <!--        </li>-->
+
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/contacts">Контакты</a>
+            </li>
+
+
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/news">Новости</a>
+            </li>
+
+          </ul>
+          <!-- Links -->
+
+
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item pr-3">
+
+            <li class="nav-item">
+              <a routerLink="/cart" class="nav-link waves-effect">
           <span class="badge red z-depth-1 mr-1">
           </span><i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart">
-        </i>
-          <mdb-badge *ngIf="order.cartItems !== null; else cartNull" danger="true">{{order.cartItems}}</mdb-badge>
-          <ng-template #cartNull><mdb-badge danger="true">{{cartItems}}</mdb-badge></ng-template>
-          <span class="sr-only"> Cart </span>
-        </a>
-        </li>
+              </i>
+                <mdb-badge *ngIf="order.cartItems !== null; else cartNull" danger="true">{{order.cartItems}}</mdb-badge>
+                <ng-template #cartNull>
+                  <mdb-badge danger="true">{{cartItems}}</mdb-badge>
+                </ng-template>
+                <span class="sr-only"> Cart </span>
+              </a>
+            </li>
 
-<!--        <li class="nav-item dropdown">-->
-<!--          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"-->
-<!--             aria-haspopup="true" aria-expanded="false">-->
-<!--            <i class="fas fa-user"></i>  </a>-->
-<!--          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">-->
-<!--            <a routerLink="/account/login" class="dropdown-item" href="#">Вход</a>-->
-<!--            <a routerLink="/account/signup" class="dropdown-item" href="#">Регистрация</a>-->
-<!--          </div>-->
-<!--        </li>-->
+            <!--        <li class="nav-item dropdown">-->
+            <!--          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"-->
+            <!--             aria-haspopup="true" aria-expanded="false">-->
+            <!--            <i class="fas fa-user"></i>  </a>-->
+            <!--          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">-->
+            <!--            <a routerLink="/account/login" class="dropdown-item" href="#">Вход</a>-->
+            <!--            <a routerLink="/account/signup" class="dropdown-item" href="#">Регистрация</a>-->
+            <!--          </div>-->
+            <!--        </li>-->
 
-      </ul>
-    </links>
-    <!-- Collapsible content -->
-  </mdb-navbar>
-
+          </ul>
+        </links>
+        <!-- Collapsible content -->
+      </mdb-navbar>
+    </div>
+  </div>
 
     <!--/.Navbar-->
   </div>
+
+
+
+
+
+
+
+    <div  >
+    <div  class="">
+      <!--Navbar-->
+      <mdb-navbar [ngClass]="{'navbar': hide}"  SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder" [containerInside]="false">
+
+        <!-- Navbar brand -->
+        <mdb-navbar-brand ><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
+
+
+        <!-- Collapsible content -->
+        <links [ngClass]="{'d-none': hide}">
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown pr-3" dropdown>
+              <a  routerLink="/products"  type="button" class="nav-link  waves-light " mdbWavesEffect>
+                Продукция<span class="caret"></span></a>
+              <!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary " role="menu">-->
+              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Торговое</a>-->
+              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Промышленное</a>-->
+              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Видео наблюдение</a>-->
+              <!--          </div>-->
+            </li>
+
+            <div>
+              <li class="nav-item dropdown pr-3"  dropdown>
+                <a  routerLink="/programs"  dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"  mdbWavesEffect>
+                  Программы<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Alex Market</a>
+                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/flagman">Flagman</a>
+                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/b52">B52</a>
+                </div>
+              </li>
+            </div>
+
+
+            <!--        <li class="nav-item pr-3">-->
+            <!--          <a class="nav-link waves-light" mdbWavesEffect>Решения</a>-->
+            <!--        </li>-->
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/support-service">Поддержка</a>
+            </li>
+
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/about">О компании</a>
+            </li>
+
+            <!--        &lt;!&ndash; Dropdown &ndash;&gt;-->
+            <!--        <li class="nav-item dropdown pr-3" dropdown>-->
+            <!--          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>-->
+            <!--            О компании<span class="caret"></span></a>-->
+            <!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">-->
+            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">История комнапии</a>-->
+            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Сертификаты</a>-->
+            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Вакансии</a>-->
+            <!--          </div>-->
+            <!--        </li>-->
+
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/contacts">Контакты</a>
+            </li>
+
+
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect routerLink="/news">Новости</a>
+            </li>
+
+          </ul>
+          <!-- Links -->
+
+
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item pr-3">
+
+            <li class="nav-item">
+              <a routerLink="/cart" class="nav-link waves-effect">
+            <span class="badge red z-depth-1 mr-1">
+            </span><i id="navbar-static-cart1" alt="Cart" class="fas fa-shopping-cart">
+              </i>
+                <mdb-badge *ngIf="order.cartItems !== null; else cartNull" danger="true">{{order.cartItems}}</mdb-badge>
+                <ng-template #cartNull><mdb-badge danger="true">{{cartItems}}</mdb-badge></ng-template>
+                <span class="sr-only"> Cart </span>
+              </a>
+            </li>
+
+            <!--        <li class="nav-item dropdown">-->
+            <!--          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"-->
+            <!--             aria-haspopup="true" aria-expanded="false">-->
+            <!--            <i class="fas fa-user"></i>  </a>-->
+            <!--          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">-->
+            <!--            <a routerLink="/account/login" class="dropdown-item" href="#">Вход</a>-->
+            <!--            <a routerLink="/account/signup" class="dropdown-item" href="#">Регистрация</a>-->
+            <!--          </div>-->
+            <!--        </li>-->
+
+          </ul>
+        </links>
+        <!-- Collapsible content -->
+      </mdb-navbar>
+    </div>
+    </div>
+
+
 </header>
+
 <router-outlet></router-outlet>
 
 
 <!-- Footer -->
-<div  class="bgwhy">
+<div class="bgwhy">
 
-<footer class="page-footer font-small">
+  <footer class="page-footer font-small">
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
 
-    <!-- Grid row -->
-    <div class="row">
+      <!-- Grid row -->
+      <div class="row">
 
-      <!-- Grid column -->
-      <div class="col-md-2 mx-auto pt-5">
-        <!-- Links -->
-        <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН КИШИНЕВ</strong>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">ул. Ион Прункул, 4/1</a>
-          </li>
-          <li>
-            <a href="#!">tel:(+37322) 244-572</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto pt-5">
+          <!-- Links -->
+          <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН КИШИНЕВ</strong>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">ул. Ион Прункул, 4/1</a>
+            </li>
+            <li>
+              <a href="#!">tel:(+37322) 244-572</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
 
-      <hr class="clearfix w-100 d-md-none">
-
-
+        <hr class="clearfix w-100 d-md-none">
 
 
-      <div class="col-md-2 mx-auto pt-5">
+        <div class="col-md-2 mx-auto pt-5">
 
-        <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН БЕЛЬЦЫ</strong>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">ул. Киев, 145</a>
-          </li>
-          <li>
-            <a href="#!">tel:(+373231) 40-456</a>
-          </li>
-        </ul>
-      </div>
+          <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН БЕЛЬЦЫ</strong>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">ул. Киев, 145</a>
+            </li>
+            <li>
+              <a href="#!">tel:(+373231) 40-456</a>
+            </li>
+          </ul>
+        </div>
 
-      <hr class="clearfix w-100 d-md-none">
-      <div class="col-md-2 mx-auto pt-5">
-        <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН ТИРАСПОЛЬ</strong>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">ул. Профсоюзов 60, оф.101</a>
-          </li>
-          <li>
-            <a href="#!">tel:(533) 675 40</a>
-          </li>
-        </ul>
-      </div>
-      <hr class="clearfix w-100 d-md-none">
-      <div class="col-md-2 mx-auto pt-5">
-        <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН КОМРАТ</strong>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">ул. Победы 43</a>
-          </li>
-          <li>
-            <a href="#!">tel:(+373 298) 805-33</a>
-          </li>
-        </ul>
-      </div>
-      <hr class="clearfix w-100 d-md-none">
-      <div class="col-md-2 mx-auto pt-5">
-        <!-- Links -->
-        <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН ДРОКИЯ</strong>
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">(Piaţa nouă), бут. 20</a>
-          </li>
-          <li>
-            <a href="#!">tel:(+373) 68650707</a>
-          </li>
-        </ul>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto pt-5">
+          <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН ТИРАСПОЛЬ</strong>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">ул. Профсоюзов 60, оф.101</a>
+            </li>
+            <li>
+              <a href="#!">tel:(533) 675 40</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto pt-5">
+          <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН КОМРАТ</strong>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">ул. Победы 43</a>
+            </li>
+            <li>
+              <a href="#!">tel:(+373 298) 805-33</a>
+            </li>
+          </ul>
+        </div>
+        <hr class="clearfix w-100 d-md-none">
+        <div class="col-md-2 mx-auto pt-5">
+          <!-- Links -->
+          <strong class="font-weight-bold text-uppercase mt-3 mb-4">МАГАЗИН ДРОКИЯ</strong>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">(Piaţa nouă), бут. 20</a>
+            </li>
+            <li>
+              <a href="#!">tel:(+373) 68650707</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="footer-copyright text-center mt-2 py-3">© 2015 Copyright:
-    <a href="http://alex-se.com/"> www.alex-se.com</a>
-  </div>
+    <div class="footer-copyright text-center mt-2 py-3">© 2015 Copyright:
+      <a href="http://alex-se.com/"> www.alex-se.com</a>
+    </div>
 
 
-
-
-</footer>
+  </footer>
 </div>
 </body>
 

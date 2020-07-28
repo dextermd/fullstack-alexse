@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {IndicatorOption, PandusOption} from '../../shared/interfaces';
 import {ActivatedRoute, Params, Router} from '@angular/router';
@@ -18,6 +18,10 @@ export class PandusCreatePageComponent implements OnInit {
   isNew = true;
   pandus: PandusOption;
 
+  @ViewChild('input') inputRef: ElementRef;
+  image: File;
+  imagePreview: string | ArrayBuffer = '';
+
   constructor(
     private route: ActivatedRoute,
     private pandusService: PandusService,
@@ -30,6 +34,7 @@ export class PandusCreatePageComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
+      content: new FormControl(null, Validators.required),
       price: new FormControl(null, Validators.required),
     });
 
@@ -51,8 +56,10 @@ export class PandusCreatePageComponent implements OnInit {
             this.pandus = pandus;
             this.form.patchValue({
               name: pandus.name,
+              content: pandus.content,
               price: pandus.price
             });
+            this.imagePreview = pandus.img;
           }
           this.form.enable();
         },
@@ -60,6 +67,25 @@ export class PandusCreatePageComponent implements OnInit {
       );
 
   }
+
+
+  onFileUpload(event: any) {
+    const file = event.target.files[0];
+    this.image = file;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      this.imagePreview = reader.result;
+    };
+
+    reader.readAsDataURL(file);
+  }
+
+  triggerClick() {
+    this.inputRef.nativeElement.click();
+
+  }
+
 
 
   delete() {
@@ -79,9 +105,20 @@ export class PandusCreatePageComponent implements OnInit {
     let obs$;
     this.form.disable();
     if (this.isNew) {
-      obs$ = this.pandusService.create(this.form.value.name, this.form.value.price);
+      obs$ = this.pandusService.create(
+        this.form.value.name,
+        this.form.value.content,
+        this.form.value.price,
+        this.image
+      );
     } else {
-      obs$ = this.pandusService.update(this.pandus._id, this.form.value.name, this.form.value.price);
+      obs$ = this.pandusService.update(
+        this.pandus._id,
+        this.form.value.name,
+        this.form.value.content,
+        this.form.value.price,
+        this.image
+      );
 
     }
     obs$.subscribe(

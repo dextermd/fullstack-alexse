@@ -35,12 +35,16 @@ export class OrderService {
       indicator:
         [{
           name: null,
+          content: null,
+          img: '',
           price: null
         }]
       ,
       pandus:
         [{
           name: null,
+          content: null,
+          img: '',
           price: null
         }]
       ,
@@ -95,12 +99,16 @@ export class OrderService {
       indicator:
         [{
           name: null,
+          content: null,
+          img: '',
           price: null
         }]
       ,
       pandus:
         [{
           name: null,
+          content: null,
+          img: '',
           price: null
         }]
       ,
@@ -154,12 +162,16 @@ export class OrderService {
       indicator:
         [{
           name: casaName,
+          content: null,
+          img: '',
           price: casaPrice
         }]
       ,
       pandus:
         [{
           name: indicatorName,
+          content: null,
+          img: '',
           price: indicatorPrice
         }]
       ,

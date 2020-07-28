@@ -18,20 +18,28 @@ export class PandusService {
     return this.http.get<PandusOption>(`/api/pandus/${id}`);
   }
 
-  create(name: string, price: any): Observable<PandusOption>  {
+  create(name: string, content: string, price: any, image?: File): Observable<PandusOption>  {
     const fd = new FormData();
+    if (image) {
+      fd.append('image', image, image.name);
+    }
     fd.append('name', name);
+    fd.append('content', content);
     fd.append('price', price);
 
     return this.http.post<PandusOption>('/api/pandus', fd);
   }
 
 
-  update(id: string, name: string, price: any): Observable<PandusOption>  {
+  update(id: string, name: string, content: string, price: any, image?: File): Observable<PandusOption>  {
     const fd = new FormData();
-
+    if (image) {
+      fd.append('image', image, image.name);
+    }
     fd.append('name', name);
+    fd.append('content', content);
     fd.append('price', price);
+
 
     return this.http.patch<PandusOption>(`/api/pandus/${id}`, fd);
   }

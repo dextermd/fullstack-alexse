@@ -1,3 +1,16 @@
+<div class="bc-icons-2">
+  <mdb-breadcrumb  customClass="white">
+    <div class="container">
+
+      <mdb-breadcrumb-item>
+        <mdb-breadcrumb-item [routerLink]="'/'">Главная</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item [routerLink]="'/products'">Магазин</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item class="active">Продукт</mdb-breadcrumb-item>
+      </mdb-breadcrumb-item>
+    </div>
+  </mdb-breadcrumb>
+</div>
+
 <div *ngIf="product$ | async as product; else loading ">
 
   <div class="container gotop">
@@ -9,7 +22,7 @@
       </div>
       <!-- Section heading -->
 
-      <div class="row pt-4">
+      <div class="row pt-0">
 
         <div class="col-lg-6">
 
@@ -103,7 +116,7 @@
 
 
             <div
-              *ngIf="product.subcategory === platProd || product.subcategory === platgoProd">
+              *ngIf="product.subcategory === platDev || product.subcategory === platgoProd">
 
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -116,9 +129,40 @@
                         <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} Lei</option>
                       </ng-container>
                     </ng-container>
-
                   </select>
                 </div>
+
+                <ng-container *ngFor="let indicat of indicatorS">
+                  <ng-container *ngIf="selectedIndicator === indicat.name ">
+                    <div class="container pt-3">
+                      <!--Section: Content-->
+                      <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                          <!--Grid column-->
+                          <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                            <!--Image-->
+                            <div class="view overlay z-depth-1-half">
+                              <img src="{{indicat.img}}" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-md-6 mb-4 mb-md-0">
+                            <p class="text-muted">{{indicat.content}}</p>
+                            <div *ngIf="indicat.price !== 0">
+                              <strong>{{indicat.price | currency: 'MDL '}}</strong>
+                            </div>
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                      </section>
+                      <!--Section: Content-->
+                    </div>
+                  </ng-container>
+                </ng-container>
+
               </div>
 
 
@@ -137,7 +181,33 @@
                   </select>
                 </div>
               </div>
-
+              <ng-container *ngFor="let pand of pandusS">
+                <ng-container *ngIf="selectedPandus === pand.name">
+                  <div class="container pt-3">
+                    <!--Section: Content-->
+                    <section class="">
+                      <!--Grid row-->
+                      <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                          <!--Image-->
+                          <div class="view overlay z-depth-1-half">
+                            <img src="{{pand.img}}" class="img-fluid" alt="">
+                          </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-6 mb-4 mb-md-0">
+                          <p class="text-muted">{{pand.content}}</p>
+                        </div>
+                        <!--Grid column-->
+                      </div>
+                      <!--Grid row-->
+                    </section>
+                    <!--Section: Content-->
+                  </div>
+                </ng-container>
+              </ng-container>
             </div>
 
 
@@ -167,7 +237,7 @@
 
 
                   <div
-                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platProd &&  product.subcategory !== platgoProd"
+                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platDev &&  product.subcategory !== platgoProd"
                     class="pt-5">
                     <button [disabled]="!product.quantity" (click)="addToOrder(product)"
                             class="btn btn-primary btn-rounded">
