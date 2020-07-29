@@ -12,12 +12,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   imports: [
     HttpClientModule,
     NgbModule,
-    QuillModule.forRoot({
-      modules: {
-        syntax: true,
-        table: true,
-      }
-    }),
+    QuillModule.forRoot(),
     CKEditorModule,
     FormsModule,
     NgxPaginationModule,
