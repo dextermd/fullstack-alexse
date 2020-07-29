@@ -68,25 +68,9 @@
 
 
 
-    <div class="md-form">
-    <textarea
-      formControlName="content"
-      mdbInput
-      type="textarea"
-      id="content"
-      class="form-control"
-      [ngClass]="{'invalid': form.get('content').invalid && form.get('content').touched }"
-    ></textarea>
-
-      <label for="content" class="">content</label>
-      <span
-        class="helper-text red-text"
-        *ngIf="form.get('content').invalid && form.get('content').touched"
-      >
-  <span *ngIf="form.get('content').errors['required']">
-    content не может быть пустым
-  </span>
-  </span>
+    <div class="pt-4">
+      <label>Описание</label>
+      <quill-editor formControlName="content"></quill-editor>
     </div>
 
 
