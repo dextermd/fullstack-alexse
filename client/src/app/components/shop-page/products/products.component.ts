@@ -15,10 +15,11 @@ export class ProductsComponent implements OnInit, OnDestroy {
   searchStr ;
   page = 1;
   products$: Observable<Product[]>;
+  sort = '-date';
   subproductCategory$: Observable<SubCategory[]>;
   productCategory$: Observable<Category[]>;
   subcategoryId: string;
-
+  sortData: Product[] = [];
   dSub: Subscription;
   i = 0;
 
@@ -53,6 +54,9 @@ export class ProductsComponent implements OnInit, OnDestroy {
       this.dSub.unsubscribe();
     }
   }
+
+
+
 
 
 }

@@ -155,6 +155,8 @@ import {TokenInterceptor} from './classes/token.interceptor';
 import { AlertingComponent } from './components/alerting/alerting.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import {SearchProductPipe} from './admin/shared/pipes/searchProduct.pipe';
+import {SortPipe} from "./admin/shared/pipes/sort.pipe";
+import {NgPipesModule} from "ngx-pipes";
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData(roLocale, 'ro');
@@ -307,6 +309,7 @@ registerLocaleData(roLocale, 'ro');
     AlertingComponent,
     LoaderComponent,
     SearchProductPipe,
+    SortPipe,
 
   ],
   imports: [
@@ -317,6 +320,7 @@ registerLocaleData(roLocale, 'ro');
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    NgPipesModule,
 
   ],
   // providers: [INTERCEPTOR_PROVIDER],

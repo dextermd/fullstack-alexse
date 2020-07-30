@@ -9,17 +9,27 @@
     </div>
   </mdb-breadcrumb>
 </div>
+
+
   <div class="container">
   <div class="row pt-0 pb-0">
     <div class="col-sm-9 order-2">
-
+      <div class="d-flex justify-content-end">
+      <select class="browser-default"  [(ngModel)]="sort">
+        <option value="-date">Recently Added</option>
+        <option value="cost">Price (low to high)</option>
+        <option value="-cost">Price (high to low)</option>
+        <option value="name">Name A-Z</option>
+        <option value="-name">Name Z-A</option>
+      </select>
+      </div>
       <!--Section: Products v.3-->
       <section class="text-center pb-3 my-5">
         <!--Grid row-->
-        <div class="row" *ngIf="products$ | async as products; else loading">
+        <div class="row" *ngIf="products$ | async  as products; else loading">
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4"
-               *ngFor="let prod of products  | paginate: { itemsPerPage: 10, currentPage: page } | searchProduct: searchStr;">
+               *ngFor="let prod of products | orderBy: sort | paginate: { itemsPerPage: 24, currentPage: page } | searchProduct: searchStr;">
 
             <!--Card-->
             <mdb-card class="align-items-center">
