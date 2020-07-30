@@ -134,13 +134,13 @@
 
                 <ng-container *ngFor="let indicat of indicatorS">
                   <ng-container *ngIf="selectedIndicator === indicat.name ">
-                    <div class="container pt-3">
+                    <div  class="container pt-3 pb-5">
                       <!--Section: Content-->
                       <section class="">
                         <!--Grid row-->
                         <div class="row">
                           <!--Grid column-->
-                          <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                          <div class="col-lg-4 col-md-3 mb-4 mb-md-0">
                             <!--Image-->
                             <div class="view overlay z-depth-1-half">
                               <img lightbox src="{{indicat.img}}" class="img-fluid" alt="">
@@ -148,10 +148,10 @@
                           </div>
                           <!--Grid column-->
                           <!--Grid column-->
-                          <div class="col-md-6 mb-4 mb-md-0">
-                            <quill-view-html [content]="indicat.content"></quill-view-html>
+                          <div class="col-md-7 mb-2 mb-md-0">
+                            <quill-view [content]="indicat.content"></quill-view>
                             <div *ngIf="indicat.price !== 0">
-                              <strong>{{indicat.price | currency: 'MDL '}}</strong>
+                              <strong >{{indicat.price | currency: 'MDL '}}</strong>
                             </div>
                           </div>
                           <!--Grid column-->
@@ -190,7 +190,7 @@
                       <!--Grid row-->
                       <div class="row">
                         <!--Grid column-->
-                        <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+                        <div class="col-lg-4 col-md-3 mb-4 mb-md-0">
                           <!--Image-->
                           <div class="view overlay z-depth-1-half">
                             <img lightbox src="{{pand.img}}" class="img-fluid" alt="">
@@ -198,8 +198,11 @@
                         </div>
                         <!--Grid column-->
                         <!--Grid column-->
-                        <div class="col-md-6 mb-4 mb-md-0">
-                          <quill-view-html [content]="pand.content"></quill-view-html>
+                        <div class="col-md-7 mb-4 mb-md-0">
+                          <quill-view [content]="pand.content"></quill-view>
+                          <div *ngIf="pand.price !== 0">
+                            <strong>{{pand.price | currency: 'MDL '}}</strong>
+                          </div>
                         </div>
                         <!--Grid column-->
                       </div>
