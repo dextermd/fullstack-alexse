@@ -143,13 +143,13 @@
                           <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
                             <!--Image-->
                             <div class="view overlay z-depth-1-half">
-                              <img src="{{indicat.img}}" class="img-fluid" alt="">
+                              <img lightbox src="{{indicat.img}}" class="img-fluid" alt="">
                             </div>
                           </div>
                           <!--Grid column-->
                           <!--Grid column-->
                           <div class="col-md-6 mb-4 mb-md-0">
-                            <p class="text-muted">{{indicat.content}}</p>
+                            <quill-view-html [content]="indicat.content"></quill-view-html>
                             <div *ngIf="indicat.price !== 0">
                               <strong>{{indicat.price | currency: 'MDL '}}</strong>
                             </div>
@@ -181,6 +181,7 @@
                   </select>
                 </div>
               </div>
+
               <ng-container *ngFor="let pand of pandusS">
                 <ng-container *ngIf="selectedPandus === pand.name">
                   <div class="container pt-3">
@@ -192,13 +193,13 @@
                         <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
                           <!--Image-->
                           <div class="view overlay z-depth-1-half">
-                            <img src="{{pand.img}}" class="img-fluid" alt="">
+                            <img lightbox src="{{pand.img}}" class="img-fluid" alt="">
                           </div>
                         </div>
                         <!--Grid column-->
                         <!--Grid column-->
                         <div class="col-md-6 mb-4 mb-md-0">
-                          <p class="text-muted">{{pand.content}}</p>
+                          <quill-view-html [content]="pand.content"></quill-view-html>
                         </div>
                         <!--Grid column-->
                       </div>
@@ -208,6 +209,7 @@
                   </div>
                 </ng-container>
               </ng-container>
+
             </div>
 
 
