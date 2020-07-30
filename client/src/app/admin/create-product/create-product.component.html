@@ -318,7 +318,7 @@
       <select class="form-control" id="pandus" formControlName="pandus" multiple="multiple"
               (ngModelChange)="setOptions($event)">
         <ng-container *ngFor="let pand of lpandus" >
-        <option *ngIf="pand.name !== 'Без пандуса'" [ngValue]="pand._id" ngDefaultControl>{{pand.name}}
+        <option *ngIf="pand.name !== 'Без пандусов'" [ngValue]="pand._id" ngDefaultControl>{{pand.name}}
           + {{pand.price}} Lei
         </option>
         </ng-container>

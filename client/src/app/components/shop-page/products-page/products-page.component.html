@@ -116,7 +116,7 @@
 
 
             <div
-              *ngIf="product.subcategory === platDev || product.subcategory === platgoProd">
+              *ngIf="product.subcategory === platProd || product.subcategory === platgoProd">
 
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -171,7 +171,7 @@
                   <label class="input-group-text" for="pandus">Выбрать Пандус</label>
                   <select [(ngModel)]="selectedPandus" (change)="onSelectPand(selectedPandus)"
                           class="browser-default custom-select" id="pandus">
-                    <option value="Без пандуса">Без пандуса</option>
+                    <option value="Без пандусов">Без пандусов</option>
                     <ng-container *ngFor="let pand of pandusS let inx = index">
                       <ng-container *ngIf="pand._id == product.pandus[inx]">
                         <option [value]="pand.name">{{pand.name}} + {{pand.price}} Lei</option>
@@ -237,7 +237,7 @@
 
 
                   <div
-                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platDev &&  product.subcategory !== platgoProd"
+                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platProd &&  product.subcategory !== platgoProd"
                     class="pt-5">
                     <button [disabled]="!product.quantity" (click)="addToOrder(product)"
                             class="btn btn-primary btn-rounded">

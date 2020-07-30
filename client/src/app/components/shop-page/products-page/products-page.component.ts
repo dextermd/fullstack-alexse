@@ -39,7 +39,7 @@ export class ProductsPageComponent implements OnInit {
   indicatorS: IndicatorOption[] = [];
   selected = 'Без аккумулятора';
   selectedIndicator = 'MERAV2000';
-  selectedPandus = 'Без пандуса';
+  selectedPandus = 'Без пандусов';
   price = 0;
   priceId;
   priceCasa = 0;
