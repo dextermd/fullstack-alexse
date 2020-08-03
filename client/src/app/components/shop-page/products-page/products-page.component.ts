@@ -85,6 +85,7 @@ export class ProductsPageComponent implements OnInit {
         }
         ),
         map((products: any) => {
+          console.log(products);
           products.quantity = 1;
           return products;
         })
