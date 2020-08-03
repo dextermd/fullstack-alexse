@@ -191,7 +191,11 @@ export class OrderService {
       this.localService.getJsonValue('cartItems');
 
     }
-    const candidateIndicatorAndPandus = this.list.find(p => p._id === orderPosition._id && p.indicator[0].name === orderPosition.indicator[0].name && p.pandus[0].name === orderPosition.pandus[0].name);
+    const candidateIndicatorAndPandus = this.list.find(
+      p => p._id === orderPosition._id &&
+        p.indicator[0].name === orderPosition.indicator[0].name &&
+        p.pandus[0].name === orderPosition.pandus[0].name
+    );
     if (candidateIndicatorAndPandus) {
       candidateIndicatorAndPandus.quantity += orderPosition.quantity;
       this.cartItems += orderPosition.quantity;

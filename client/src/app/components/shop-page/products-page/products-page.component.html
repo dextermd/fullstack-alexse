@@ -1,5 +1,5 @@
 <div class="bc-icons-2">
-  <mdb-breadcrumb  customClass="white">
+  <mdb-breadcrumb customClass="white">
     <div class="container">
 
       <mdb-breadcrumb-item>
@@ -35,9 +35,9 @@
 
               <mdb-slide>
                 <div class=" pl-5">
-                <img src="{{product.img[0].path}}"
-                     lightbox backgroundColor="white"
-                     alt="First slide" class="img-fluid">
+                  <img src="{{product.img[0].path}}"
+                       lightbox backgroundColor="white"
+                       alt="First slide" class="img-fluid">
 
                 </div>
               </mdb-slide>
@@ -94,7 +94,8 @@
 
           <div class="font-weight-normal">
 
-            <p class="ml-xl-0 ml-4"><quill-view-html [content]="product.content"></quill-view-html>
+            <p class="ml-xl-0 ml-4">
+              <quill-view-html [content]="product.content"></quill-view-html>
             </p>
 
 
@@ -134,7 +135,7 @@
 
                 <ng-container *ngFor="let indicat of indicatorS">
                   <ng-container *ngIf="selectedIndicator === indicat.name ">
-                    <div  class="container pt-3 pb-5">
+                    <div class="container pt-3 pb-5">
                       <!--Section: Content-->
                       <section class="">
                         <!--Grid row-->
@@ -142,7 +143,7 @@
                           <!--Grid column-->
                           <div class="col-lg-4 col-md-3 mb-4 mb-md-0">
                             <!--Image-->
-<!--                            <div class="view overlay z-depth-1-half">-->
+                            <!--                            <div class="view overlay z-depth-1-half">-->
                             <div class="">
                               <img lightbox src="{{indicat.img}}" class="img-fluid" alt="">
                             </div>
@@ -152,7 +153,7 @@
                           <div class="col-md-8 mb-2 mb-md-0">
                             <quill-view [content]="indicat.content"></quill-view>
                             <div *ngIf="indicat.price !== 0">
-                              <strong >{{indicat.price | currency: 'MDL '}}</strong>
+                              <strong>{{indicat.price | currency: 'MDL '}}</strong>
                             </div>
                           </div>
                           <!--Grid column-->
@@ -165,54 +166,55 @@
                 </ng-container>
 
               </div>
-
-
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <label class="input-group-text" for="pandus">Выбрать Пандус</label>
-                  <select [(ngModel)]="selectedPandus" (change)="onSelectPand(selectedPandus)"
-                          class="browser-default custom-select" id="pandus">
-                    <option value="Без пандусов">Без пандусов</option>
-                    <ng-container *ngFor="let pand of pandusS let inx = index">
-                      <ng-container *ngIf="pand._id == product.pandus[inx]">
-                        <option [value]="pand.name">{{pand.name}} + {{pand.price}} Lei</option>
+              <div *ngIf="product.pandus[0] !== pandusNoHaveProd">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="pandus">Выбрать Пандус</label>
+                    <select [(ngModel)]="selectedPandus" (change)="onSelectPand(selectedPandus)"
+                            class="browser-default custom-select" id="pandus">
+                      <option value="Без пандусов">Без пандусов</option>
+                      <ng-container *ngFor="let pand of pandusS let inx = index">
+                        <ng-container *ngIf="pand._id == product.pandus[inx]">
+                          <option [value]="pand.name">{{pand.name}} + {{pand.price}} Lei</option>
+                        </ng-container>
                       </ng-container>
-                    </ng-container>
 
-                  </select>
+                    </select>
+                  </div>
                 </div>
+
+                <ng-container *ngFor="let pand of pandusS">
+                  <ng-container *ngIf="selectedPandus === pand.name">
+                    <div class="container pt-3">
+                      <!--Section: Content-->
+                      <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-3 mb-4 mb-md-0">
+                            <!--Image-->
+                            <div class="">
+                              <img lightbox src="{{pand.img}}" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-md-8 mb-4 mb-md-0">
+                            <quill-view [content]="pand.content"></quill-view>
+                            <div *ngIf="pand.price !== 0">
+                              <strong>{{pand.price | currency: 'MDL '}}</strong>
+                            </div>
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                      </section>
+                      <!--Section: Content-->
+                    </div>
+                  </ng-container>
+                </ng-container>
               </div>
 
-              <ng-container *ngFor="let pand of pandusS">
-                <ng-container *ngIf="selectedPandus === pand.name">
-                  <div class="container pt-3">
-                    <!--Section: Content-->
-                    <section class="">
-                      <!--Grid row-->
-                      <div class="row">
-                        <!--Grid column-->
-                        <div class="col-lg-4 col-md-3 mb-4 mb-md-0">
-                          <!--Image-->
-                          <div class="">
-                            <img lightbox src="{{pand.img}}" class="img-fluid" alt="">
-                          </div>
-                        </div>
-                        <!--Grid column-->
-                        <!--Grid column-->
-                        <div class="col-md-8 mb-4 mb-md-0">
-                          <quill-view [content]="pand.content"></quill-view>
-                          <div *ngIf="pand.price !== 0">
-                            <strong>{{pand.price | currency: 'MDL '}}</strong>
-                          </div>
-                        </div>
-                        <!--Grid column-->
-                      </div>
-                      <!--Grid row-->
-                    </section>
-                    <!--Section: Content-->
-                  </div>
-                </ng-container>
-              </ng-container>
 
             </div>
 
@@ -262,13 +264,13 @@
       </div>
 
 
-        <ngb-tabset  [destroyOnHide]="false">
-          <ngb-tab title="Технические параметры">
-            <ng-template  ngbTabContent>
-                <quill-view-html [content]="product.spec"></quill-view-html>
-            </ng-template>
-          </ngb-tab>
-        </ngb-tabset>
+      <ngb-tabset [destroyOnHide]="false">
+        <ngb-tab title="Технические параметры">
+          <ng-template ngbTabContent>
+            <quill-view-html [content]="product.spec"></quill-view-html>
+          </ng-template>
+        </ngb-tab>
+      </ngb-tabset>
 
 
     </section>

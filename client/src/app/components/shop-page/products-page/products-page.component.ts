@@ -27,7 +27,10 @@ export class ProductsPageComponent implements OnInit {
   casaProd = '5f1e87661c902614531f7ece' ;
   platProd = '5f1e882a1c902614531f7ecf';
   platgoProd = '5f1e8ce51c902614531f7ed0';
+  pandusNoHaveProd = '5f27b107fe44ee3bbbb84496';
 
+
+  pandusNoHaveDev = '5f27b834431d83214c667f4d';
   casaDev = '5f05c3df6d77ce3e4c59a8b2';
   platDev = '5f133744c804af2228fbbf83';
   platgoDev = '5f1336e1707a9a3bf4490e2c';
@@ -87,6 +90,7 @@ export class ProductsPageComponent implements OnInit {
         })
       );
 
+
     this.productService.getAllProduct().subscribe((data: any[]) => {
       this.items = data;
     });
@@ -103,7 +107,7 @@ export class ProductsPageComponent implements OnInit {
     this.orderService.addCasa(product, casaName, casaPrice);
   }
 
-  addToOrderIndAndPand(product: Product, selectedIndicator, priceIndicator, selectedPandus, pricePandus) {
+  addToOrderIndAndPand(product: Product, selectedIndicator, priceIndicator, selectedPandus?, pricePandus?) {
     this.alert.success(`Добавлено x${product.quantity}`);
     this.orderService.addInd(product, selectedIndicator, priceIndicator, selectedPandus, pricePandus );
   }

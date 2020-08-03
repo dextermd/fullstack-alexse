@@ -1,107 +1,4 @@
 <div class="container gotop  pb-5">
-  <!--Section: Content-->
-  <!--  <div class="pt-3">-->
-  <!--  <app-alerting></app-alerting>-->
-  <!--  </div>-->
-  <!--  <section *ngIf="order.list !== null; else orderItems" class="dark-grey-text pt-3">-->
-
-  <!--    &lt;!&ndash; Shopping Cart table &ndash;&gt;-->
-  <!--    <div class="table-responsive">-->
-
-  <!--      <table class="table product-table mb-0">-->
-
-  <!--        &lt;!&ndash; Table head &ndash;&gt;-->
-  <!--        <thead class="mdb-color lighten-5">-->
-  <!--        <tr>-->
-  <!--          <th></th>-->
-  <!--          <th class="font-weight-bold">-->
-  <!--            <strong>Название</strong>-->
-  <!--          </th>-->
-  <!--          <th></th>-->
-  <!--          <th class="font-weight-bold">-->
-  <!--            <strong>Цена</strong>-->
-  <!--          </th>-->
-  <!--          <th class="font-weight-bold">-->
-  <!--            <strong>Количество</strong>-->
-  <!--          </th>-->
-  <!--          <th class="font-weight-bold">-->
-
-  <!--          </th>-->
-  <!--          <th></th>-->
-  <!--        </tr>-->
-  <!--        </thead>-->
-  <!--        &lt;!&ndash; /.Table head &ndash;&gt;-->
-
-  <!--        &lt;!&ndash; Table body &ndash;&gt;-->
-  <!--        <tbody>-->
-
-  <!--        &lt;!&ndash; First row &ndash;&gt;-->
-  <!--        <tr *ngFor="let item of order.list">-->
-
-  <!--          <th scope="row">-->
-  <!--            <img style="height: 50px" src="{{item.img}}" alt="" class="img-fluid z-depth-0">-->
-  <!--          </th>-->
-  <!--          <td>-->
-  <!--            <h5 class="mt-0">-->
-  <!--              <strong>{{item.name}}</strong>-->
-  <!--            </h5>-->
-  <!--            <p class="text-muted"></p>-->
-  <!--          </td>-->
-  <!--          <td></td>-->
-  <!--          <td>{{item.cost}} Lei</td>-->
-  <!--          <td><p>{{item.quantity}}</p></td>-->
-  <!--          <td class="font-weight-bold">-->
-
-
-  <!--          </td>-->
-  <!--          <td>-->
-  <!--            <button (click)="removePosition(item)" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top"-->
-  <!--                    title="Remove item">X-->
-  <!--            </button>-->
-  <!--          </td>-->
-  <!--        </tr>-->
-  <!--        &lt;!&ndash; /.First row &ndash;&gt;-->
-
-  <!--        &lt;!&ndash; Fourth row &ndash;&gt;-->
-  <!--        <tr>-->
-  <!--          <td colspan="3"></td>-->
-  <!--          <td>-->
-  <!--            <h4 class="mt-2">-->
-  <!--              <strong>Общая стоимость </strong>-->
-  <!--            </h4>-->
-  <!--          </td>-->
-  <!--          <td class="text-right">-->
-  <!--            <h4 class="mt-2">-->
-  <!--              <strong>{{order.price}} Lei</strong>-->
-  <!--            </h4>-->
-  <!--          </td>-->
-  <!--          <td colspan="3" class="text-right">-->
-  <!--            <button-->
-  <!--              [disabled]="panding"-->
-  <!--              (click)="submit()"-->
-  <!--              type="button"-->
-  <!--              class="btn btn-primary btn-rounded"-->
-  <!--            >-->
-  <!--              Заверщить заказ-->
-  <!--            </button>-->
-  <!--          </td>-->
-  <!--        </tr>-->
-  <!--        &lt;!&ndash; Fourth row &ndash;&gt;-->
-
-  <!--        </tbody>-->
-  <!--        &lt;!&ndash; /.Table body &ndash;&gt;-->
-
-  <!--      </table>-->
-
-  <!--    </div>-->
-  <!--    &lt;!&ndash; /.Shopping Cart table &ndash;&gt;-->
-
-  <!--  </section>-->
-  <!--  &lt;!&ndash;Section: Content&ndash;&gt;-->
-
-
-  <!--</div>-->
-
 
   <!--Section: Content-->
   <section *ngIf="order.list; else orderItems" class="dark-grey-text pt-3">
@@ -176,16 +73,14 @@
                     >
                       <i class="fas fa-check"></i>
                     </button>
+                    <ng-container *ngIf="item.pandus[0].name !== 'Без пандусов'">
                     <button *ngIf="item.pandus[0].name" class="mr-2" style="color: darkgreen"
                             ngbPopover="{{item.pandus[0].name}} {{item.pandus[0].price | currency: 'MDL ' }}"
                     >
                       <i class="fas fa-check"></i>
                     </button>
-<!--                    {{item.casa[0].name}} {{item.casa[0].price | currency: 'MDL ' }}<p>-->
-<!--                    {{item.indicator[0].name}} {{item.indicator[0].price | currency: 'MDL ' }}-->
-<!--                    <p>-->
-<!--                      {{item.pandus[0].name}} {{item.pandus[0].price | currency: 'MDL ' }}-->
-<!--                    <p>-->
+                    </ng-container>
+
                   </td>
                   <td>
                     <button (click)="removePosition(item)" type="button" class="btn btn-sm btn-primary"
