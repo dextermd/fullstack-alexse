@@ -13,6 +13,7 @@ import {ActivatedRoute, Params} from '@angular/router';
 })
 export class ProductsComponent implements OnInit, OnDestroy {
   searchStr ;
+  colapsee = true;
   page = 1;
   products$: Observable<Product[]>;
   sort = '-date';
@@ -56,7 +57,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   }
 
 
-
-
-
+  colapse() {
+   return this.colapsee = false;
+  }
 }

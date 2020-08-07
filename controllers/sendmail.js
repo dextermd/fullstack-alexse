@@ -27,14 +27,17 @@ module.exports.sendMail = async function (order, callback) {
     };
 
     transporter.use('compile', hbs(handlebarOptions));
-
         let mailOptions = {
-            from: '"Fred Foo 👻" <alexsetestone@gmail.com>', // sender address
+            from: '"Ваша покупка на AlexSE" <no-reply@alex-se.com>', // sender address
             to: order.body.c_email, // list of receivers
-            subject: "Hello ✔", // Subject line
+            subject: "Ваша покупка на AlexSE ✔", // Subject line
             template: 'index',
             context: {
                 name: order.body.c_name,
+                order: order.body.order,
+                price: this.price,
+                c_address_shipping: order.body.c_address_shipping,
+                date: order.body.date,
                 items: order.body.list,
 
             }, // send extra values to template
