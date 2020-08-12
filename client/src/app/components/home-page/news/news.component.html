@@ -11,8 +11,8 @@
     <div  class="row">
 
       <!-- Grid column -->
-      <ng-container *ngFor="let post of posts">
-      <div *ngIf="post.category === '5f0ca00d9bb62329046df6f0'" class="col-lg-3 col-md-12 mb-lg-0 mb-4">
+      <ng-container *ngFor="let post of posts | slice:0:4">
+      <div *ngIf="post.category === '5f1e83701c902614531f7ec8'" class="col-lg-3 col-md-12 mb-lg-0 mb-4">
 
         <!-- Card -->
         <div class="card hoverable">

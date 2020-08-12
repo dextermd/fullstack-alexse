@@ -49,23 +49,23 @@
           <!--/.Carousel Wrapper-->
           <div lightbox-group class="row mb-1 ">
             <div class="flex-center">
-              <figure class="col-md-2  mr-3">
+              <figure class="col-md-2  border mr-3">
                 <img src="{{product.imgOne[0].path}}"
                      lightbox
                      class="img-fluid">
               </figure>
-              <figure class="col-md-2  mr-3">
+              <figure class="col-md-2 border mr-3">
                 <img src="{{product.imgTwo[0].path}}"
                      lightbox
                      class="img-fluid">
               </figure>
-              <figure class="col-md-2  mr-3">
+              <figure class="col-md-2 border  mr-3">
 
                 <img src="{{product.imgThree[0].path}}"
                      lightbox
                      class="img-fluid">
               </figure>
-              <figure class="col-md-2  mr-3">
+              <figure class="col-md-2  border  mr-3">
                 <img src="{{product.imgFour[0].path}}"
                      lightbox
                      class="img-fluid">
@@ -144,7 +144,7 @@
                           <div class="col-md-8 mb-2 mb-md-0">
                             <quill-view [content]="indicat.content"></quill-view>
                             <div *ngIf="indicat.price !== 0">
-                              <strong>{{indicat.price | currency: 'MDL '}}</strong>
+                              <strong> + {{indicat.price | currency: 'MDL '}}</strong>
                             </div>
                           </div>
                           <!--Grid column-->
@@ -195,7 +195,7 @@
                           <div class="col-md-8 mb-4 mb-md-0">
                             <quill-view [content]="pand.content"></quill-view>
                             <div *ngIf="pand.price !== 0">
-                              <strong>{{pand.price | currency: 'MDL '}}</strong>
+                              <strong> + {{pand.price | currency: 'MDL '}}</strong>
                             </div>
                           </div>
                           <!--Grid column-->

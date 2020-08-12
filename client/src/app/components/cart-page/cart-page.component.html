@@ -54,6 +54,17 @@
                   <td>
                     <h5 class="mt-0">
                       <strong>{{item.name}}</strong>
+                        <p *ngIf="item.casa[0].name">
+                          <small>{{item.casa[0].name}} <small class="red-text font-weight-bold"> + {{item.casa[0].price | currency: 'MDL ' }}</small></small>
+                        </p>
+                        <p *ngIf="item.indicator[0].name">
+                          <small>{{item.indicator[0].name}} <small class="red-text font-weight-bold"> + {{item.indicator[0].price | currency: 'MDL ' }}</small></small>
+                        </p>
+                        <p *ngIf="item.pandus[0].name">
+                          <small>{{item.pandus[0].name}} <small class="red-text font-weight-bold"> + {{item.pandus[0].price | currency: 'MDL ' }}</small></small>
+                        </p>
+
+
                     </h5>
                     <p class="text-muted"></p>
                   </td>
@@ -63,19 +74,19 @@
                   <td class="font-weight-bold">
 
                     <button *ngIf="item.casa[0].name" class="mr-2" style="color: darkgreen"
-                      ngbPopover="{{item.casa[0].name}} {{item.casa[0].price | currency: 'MDL ' }}"
+                      ngbPopover="{{item.casa[0].name}} + {{item.casa[0].price | currency: 'MDL ' }}"
                     >
                       <i class="fas fa-check"></i>
                     </button>
 
                     <button *ngIf="item.indicator[0].name" class="mr-2" style="color: darkgreen"
-                      ngbPopover="{{item.indicator[0].name}} {{item.indicator[0].price | currency: 'MDL ' }}"
+                      ngbPopover="{{item.indicator[0].name}} + {{item.indicator[0].price | currency: 'MDL ' }}"
                     >
                       <i class="fas fa-check"></i>
                     </button>
                     <ng-container *ngIf="item.pandus[0].name !== 'Без пандусов'">
                     <button *ngIf="item.pandus[0].name" class="mr-2" style="color: darkgreen"
-                            ngbPopover="{{item.pandus[0].name}} {{item.pandus[0].price | currency: 'MDL ' }}"
+                            ngbPopover="{{item.pandus[0].name}} + {{item.pandus[0].price | currency: 'MDL ' }}"
                     >
                       <i class="fas fa-check"></i>
                     </button>
