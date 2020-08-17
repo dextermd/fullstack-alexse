@@ -55,10 +55,13 @@ module.exports.create = async function (req, res) {
     try {
         const position = await new Position({
             name: req.body.name,
+            code: req.body.code,
             cost: req.body.cost,
             oldCost: req.body.oldCost,
             content: req.body.content,
             spec: req.body.spec,
+            certificate: req.body.certificate,
+            functions: req.body.functions,
             option: req.body.option,
             subcategory: req.body.subcategory,
             casa: req.body.casa.split(','),
@@ -83,10 +86,13 @@ module.exports.create = async function (req, res) {
 module.exports.update = async function (req, res) {
     const updated = {
         name: req.body.name,
+        code: req.body.code,
         cost: req.body.cost,
         oldCost: req.body.oldCost,
         content: req.body.content,
         spec: req.body.spec,
+        certificate: req.body.certificate,
+        functions: req.body.functions,
         option: req.body.option,
         subcategory: req.body.subcategory,
         casa: req.body.casa.split(','),

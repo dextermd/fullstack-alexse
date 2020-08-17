@@ -4,6 +4,7 @@
 
 
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
     <div class="md-form">
       <input
         formControlName="name"
@@ -29,6 +30,20 @@
 
 
 
+    <div class="md-form">
+      <input
+        formControlName="code"
+        mdbInput
+        type="text"
+        id="code"
+        class="form-control"
+        [ngClass]="{'invalid': form.get('code').invalid && form.get('code').touched }"
+      >
+
+      <label for="name" class="">Код продукта</label>
+    </div>
+
+
 
     <div class="pt-4">
       <label>Описание</label>
@@ -40,11 +55,6 @@
       <label>Характеристики</label>
       <quill-editor formControlName="spec"></quill-editor>
     </div>
-
-
-
-
-
 
 
     <div class="pt-5">
@@ -211,7 +221,7 @@
       <div class="input-group-prepend">
         <label class="input-group-text" for="subcategory">Выбрать подкатегорию</label>
       </div>
-      <select  [(ngModel)]="whyCategory" class="form-control" id="subcategory" formControlName="subcategory">
+      <select [(ngModel)]="whyCategory" class="form-control" id="subcategory" formControlName="subcategory">
         <option *ngFor="let category of categories" [ngValue]="category._id" ngDefaultControl>{{category.name}}</option>
       </select>
     </div>
@@ -272,7 +282,9 @@
 
 
     <div class="form-group mb-2 pl-4 py-4">
-    <mdb-checkbox formControlName="option" [checked]="false" [default]="false"  class="form-check-label green-text font-weight-bold"> Установить как новый продукт</mdb-checkbox>
+      <mdb-checkbox formControlName="option" [checked]="false" [default]="false"
+                    class="form-check-label green-text font-weight-bold"> Установить как новый продукт
+      </mdb-checkbox>
     </div>
 
 
@@ -283,50 +295,50 @@
       <select
         class="form-control" id="casa" formControlName="casa" multiple="multiple"
 
-              (ngModelChange)="setOptions($event)">
-        <ng-container *ngFor="let cas of lcasa" >
-        <option *ngIf="cas.name !== 'Без аккумулятора'"  [ngValue]="cas._id" ngDefaultControl>{{cas.name}} + {{cas.price}} Lei</option>
+        (ngModelChange)="setOptions($event)">
+        <ng-container *ngFor="let cas of lcasa">
+          <option *ngIf="cas.name !== 'Без аккумулятора'" [ngValue]="cas._id" ngDefaultControl>{{cas.name}}
+            + {{cas.price}} Lei
+          </option>
         </ng-container>
       </select>
 
     </div>
 
 
-
-<!--    <div *ngIf="whyCategory === '5f133744c804af2228fbbf83' || whyCategory === '5f1336e1707a9a3bf4490e2c'">-->
+    <!--    <div *ngIf="whyCategory === '5f133744c804af2228fbbf83' || whyCategory === '5f1336e1707a9a3bf4490e2c'">-->
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <label class="input-group-text" for="indicator">Выбрать Индикатора</label>
       </div>
-      <select  class="form-control" id="indicator" formControlName="indicator" multiple="multiple"
+      <select class="form-control" id="indicator" formControlName="indicator" multiple="multiple"
               (ngModelChange)="setOptions($event)">
-        <ng-container *ngFor="let indicat of lindicator" >
-        <option *ngIf="indicat.name !== 'MERAV2000'"  [ngValue]="indicat._id" ngDefaultControl>{{indicat.name}}
-          + {{indicat.price}} Lei
-        </option>
+        <ng-container *ngFor="let indicat of lindicator">
+          <option *ngIf="indicat.name !== 'MERAV2000'" [ngValue]="indicat._id" ngDefaultControl>{{indicat.name}}
+            + {{indicat.price}} Lei
+          </option>
         </ng-container>
       </select>
 
     </div>
 
 
-
-    <div  class="input-group mb-3">
+    <div class="input-group mb-3">
       <div class="input-group-prepend">
         <label class="input-group-text" for="pandus">Выбрать Пандус</label>
       </div>
       <select class="form-control" id="pandus" formControlName="pandus" multiple="multiple"
               (ngModelChange)="setOptions($event)">
-        <ng-container *ngFor="let pand of lpandus" >
-        <option *ngIf="pand.name !== 'Без пандусов'" [ngValue]="pand._id" ngDefaultControl>{{pand.name}}
-          + {{pand.price}} Lei
-        </option>
+        <ng-container *ngFor="let pand of lpandus">
+          <option *ngIf="pand.name !== 'Без пандусов'" [ngValue]="pand._id" ngDefaultControl>{{pand.name}}
+            + {{pand.price}} Lei
+          </option>
         </ng-container>
 
       </select>
 
     </div>
-<!--    </div>-->
+    <!--    </div>-->
 
 
     <div class="py-5 flex-center">

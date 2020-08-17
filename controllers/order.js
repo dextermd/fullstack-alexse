@@ -56,6 +56,7 @@ module.exports.create = async function (req, res) {
             c_address_shipping: req.body.c_address_shipping,
             c_company_name: req.body.c_company_name,
             c_comment: req.body.c_comment,
+            total_cost: req.body.total_cost,
             order_number: req.body.order_number,
             order: maxOrder + 1
         }).save();

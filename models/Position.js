@@ -8,6 +8,11 @@ const positionSchema = new Schema({
             required: true
         },
 
+        code: {
+            type: String,
+            unique: true,
+        },
+
         img: {
             type: Array,
             default: '',
@@ -65,12 +70,20 @@ const positionSchema = new Schema({
             default: false
         },
 
+        certificate: {
+            type: String,
+            default: ''
+        },
+        functions: {
+            type: String,
+            default: ''
+        },
 
         casa: [
             {
                 type: Schema.Types.ObjectId,
                 ref: 'casas',
-
+                default: []
 }
         ],
 
@@ -78,7 +91,7 @@ const positionSchema = new Schema({
             {
                 type: Schema.Types.ObjectId,
                 ref: 'pandus',
-
+                default: []
             }
         ],
 
@@ -86,7 +99,7 @@ const positionSchema = new Schema({
             {
                 type: Schema.Types.ObjectId,
                 ref: 'indicators',
-
+                default: []
             }
         ],
 

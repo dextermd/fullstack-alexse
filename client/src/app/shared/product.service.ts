@@ -28,11 +28,14 @@ export class ProductService {
 
 
   create(name: string,
+         code: string,
          subcategory: string,
          cost: any,
          oldCost: any,
          content: string,
          spec: string,
+         certificate: string,
+         functions: string,
          casa: any,
          pandus: any,
          indicator: any,
@@ -66,11 +69,14 @@ export class ProductService {
 
 
     fd.append('name', name);
+    fd.append('code', code);
     fd.append('subcategory', subcategory);
     fd.append('cost', cost);
     fd.append('oldCost', oldCost);
     fd.append('content', content);
     fd.append('spec', spec);
+    fd.append('certificate', certificate);
+    fd.append('functions', functions);
     fd.append('casa', casa);
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
@@ -83,11 +89,14 @@ export class ProductService {
 
   update(id: string,
          name: string,
+         code: string,
          subcategory: string,
          cost: any,
          oldCost: any,
          content: string,
          spec: string,
+         certificate: string,
+         functions: string,
          casa: any,
          pandus: any,
          indicator: any,
@@ -115,11 +124,14 @@ export class ProductService {
       fd.append('imageFour', imageFour, imageFour.name);
     }
     fd.append('name', name);
+    fd.append('code', code);
     fd.append('subcategory', subcategory);
     fd.append('cost', cost);
     fd.append('oldCost', oldCost);
     fd.append('content', content);
     fd.append('spec', spec);
+    fd.append('certificate', certificate);
+    fd.append('functions', functions);
     fd.append('casa', casa);
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);

@@ -47,6 +47,10 @@ const orderSchema = new Schema({
 
     },
 
+    total_cost: {
+        type: Number
+    },
+
     list: [
         {
             name: {

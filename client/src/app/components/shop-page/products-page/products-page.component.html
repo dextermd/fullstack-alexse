@@ -210,7 +210,7 @@
 
 
             </div>
-
+{{product.img[0].path}}
 
             <div class="mt-5">
               <h3 class="h3-responsive text-center text-md-left mb-2 ml-xl-0 ml-4">
@@ -219,7 +219,7 @@
           </span>
                 <span class="grey-text">
             <small>
-              <s>{{+product.oldCost | currency: 'Lei '}}</s>
+              <s>{{+product.oldCost | currency: 'Lei '}}</s> <small class="pl-5 grey-text">Код продукта: {{product.code}}</small>
             </small>
           </span>
               </h3>

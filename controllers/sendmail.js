@@ -35,7 +35,7 @@ module.exports.sendMail = async function (order, callback) {
             context: {
                 name: order.body.c_name,
                 order: order.body.order,
-                price: this.price,
+                total_cost: order.body.total_cost,
                 c_address_shipping: order.body.c_address_shipping,
                 date: order.body.date,
                 items: order.body.list,

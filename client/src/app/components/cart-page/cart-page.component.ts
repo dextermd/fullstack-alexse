@@ -110,6 +110,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
       c_address_shipping: this.form.value.c_address_shipping,
       c_company_name: this.form.value.c_company_name,
       c_comment: this.form.value.c_comment,
+      total_cost: this.order.price,
       order_number: this.orderNumber,
       list: this.order.list.map(item => {
         delete item._id;
