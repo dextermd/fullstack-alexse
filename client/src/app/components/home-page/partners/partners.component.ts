@@ -53,7 +53,7 @@ export class PartnersComponent implements OnInit {
     },
     {
 
-      img: 'assets/partners/zernoff.png'
+      img: 'assets/partners/zernoff.jpg'
     },
   ];
   slides: any = [[]];

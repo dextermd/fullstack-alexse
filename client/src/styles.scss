@@ -262,7 +262,15 @@
 
 .bgautores {
   /* The image used */
-  background-image: url("assets/auto/restourant/fon_shp_conecto1.jpg");
+  background-image: url("assets/auto/банер ресторан.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bgautobill {
+  /* The image used */
+  background-image: url("assets/auto/банер бильярд.jpg");
   /* Center and scale the image nicely */
   background-position: center;
   background-size: cover;
@@ -270,7 +278,7 @@
 
 .bgautofit {
   /* The image used */
-  background-image: url("assets/auto/fitnes/fon_shp_conecto2.jpg");
+  background-image: url("assets/auto/банер fitnes.jpg");
   /* Center and scale the image nicely */
   background-position: center;
   background-size: cover;
@@ -278,7 +286,7 @@
 
 .bgautohotel {
   /* The image used */
-  background-image: url("assets/auto/hotel/fon_shp_conecto.jpg");
+  background-image: url("assets/auto/банер гостиница.jpg");
   /* Center and scale the image nicely */
   background-position: center;
   background-size: cover;
@@ -286,7 +294,7 @@
 
 .bgflaghead {
   /* The image used */
-  background-color: #019e85;
+  background-image: url("assets/flagman/Flagman fon.jpg");
   /* Center and scale the image nicely */
   background-position: center;
   background-size: cover;
@@ -294,7 +302,7 @@
 
 .bgbhead {
   /* The image used */
-  background-image: url("assets/b52/bg1.jpg");
+  background-image: url("assets/b52/fonb52.jpg");
 
   /* Center and scale the image nicely */
   background-position: center;
