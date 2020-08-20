@@ -2,8 +2,8 @@
   <div class="container text-center">
 
     <!--Section heading-->
-    <h2 class="text-center h1 py-3">
-      <strong>Сертификаты</strong>
+    <h2 class="h2 py-3 wow fadeInDown font-weight-bold" data-wow-delay="0.6s">
+      <strong>{{ 'HOME.CERTIFICATE.Title' | translate}}</strong>
     </h2>
 
 
@@ -98,7 +98,7 @@
     </div>
     <!--Grid row-->
     <div class="pt-3">
-    <button [routerLink]="'/certifications'" class=" " mdbBtn type="button" color="primary"  mdbWavesEffect>Посмотреть все сертификаты</button>
+    <button [routerLink]="'/certifications'" class=" " mdbBtn type="button" color="primary"  mdbWavesEffect>{{'BUTTONS.AllCert' | translate}}</button>
     </div>
   </div>
 </section>

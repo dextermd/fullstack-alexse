@@ -4,18 +4,16 @@
       <div style="padding-top: 100px" class="float-right">
         <div class="col-lg-11 col-xl-11 ">
           <div class="black-text" style="font-family: 'Times New Roman'">
-            <h2 class="pl-5 h2-responsive wow fadeInLeft font-weight-bold"  data-wow-delay="0.3s">НЕМНОГО О КОМПАНИИ ALEX S&E</h2>
-            <h5 class="wow fadeInLeft" data-wow-delay="0.3s">Компания начала свою деятельность по производству торговых весов,
-              дозаторов <br> и автоматизированных систем учета для промышленных и торговых предприятий  в 1993 году.</h5>
-            <br>
-            <h5 class="wow fadeInLeft" data-wow-delay="0.3s">Сегодня «Alex S&E» является одной из крупнейших инжиниринговых компаний
-              <br> Молдовы и стран СНГ. Производственные площади и сервисный центр компании
-              <br> расположились на территории более 1300 кв.м.,а численность сотрудников.
-              <br> превысила 100 человек.
+            <h3 class="pl-5 h3-responsive wow fadeInLeft font-weight-bold"  data-wow-delay="0.3s">{{ 'HOME.INFO_SHORT.Title' | translate}}</h3>
+            <h5 class="wow fadeInLeft" data-wow-delay="0.3s">
+              <div [innerHTML]="'HOME.INFO_SHORT.ContentTop'  | translate"></div>
             </h5>
-
-            <a mdbBtn color="red" routerLink="/about" outline="true" class="wow fadeInLeft" data-wow-delay="0.3s">О НАС</a>
-            <a mdbBtn color="blue" routerLink="/products" outline="true" class="wow fadeInLeft" data-wow-delay="0.3s">ПРОДУКЦИЯ
+            <br>
+            <h5 class="wow fadeInLeft" data-wow-delay="0.3s">
+              <div [innerHTML]="'HOME.INFO_SHORT.ContentBottom'  | translate"></div>
+            </h5>
+            <a mdbBtn color="red" routerLink="/about" outline="true" class="wow fadeInLeft" data-wow-delay="0.3s">{{ 'BUTTONS.AboutUs' | translate}}</a>
+            <a mdbBtn color="blue" routerLink="/products" outline="true" class="wow fadeInLeft" data-wow-delay="0.3s">{{ 'BUTTONS.Products' | translate}}
             </a>
           </div>
         </div>

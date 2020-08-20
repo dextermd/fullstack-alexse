@@ -5,6 +5,7 @@ import {OrderService} from '../../shared/order.service';
 import {LocalService} from '../../shared/local.service';
 import {AuthService} from '../../shared/auth.service';
 import {Title} from '@angular/platform-browser';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-layout',
@@ -16,6 +17,7 @@ export class MainLayoutComponent implements OnInit {
   card = [];
   cartItems = 0;
   hide = false;
+  lang;
 
   constructor(
     private auth: AuthService,
@@ -24,7 +26,9 @@ export class MainLayoutComponent implements OnInit {
     private productService: ProductService,
     private cartService: CartService,
     public order: OrderService,
-    private localService: LocalService
+    private localService: LocalService,
+
+    public translate: TranslateService
 
 ) {
     this.cartService.cart$.subscribe((data) => {
@@ -34,6 +38,7 @@ export class MainLayoutComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.lang = this.translate.currentLang;
     this.titleService.setTitle(this.title);
 
     // this.order.cartItems = JSON.parse(localStorage.getItem('cartItems'));

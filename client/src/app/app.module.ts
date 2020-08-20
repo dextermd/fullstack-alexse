@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 import {NgModule, Provider} from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -155,8 +155,9 @@ import {TokenInterceptor} from './classes/token.interceptor';
 import { AlertingComponent } from './components/alerting/alerting.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import {SearchProductPipe} from './admin/shared/pipes/searchProduct.pipe';
-import {SortPipe} from "./admin/shared/pipes/sort.pipe";
-import {NgPipesModule} from "ngx-pipes";
+import {SortPipe} from './admin/shared/pipes/sort.pipe';
+import {NgPipesModule} from 'ngx-pipes';
+import {TranslateModule} from '@ngx-translate/core';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData(roLocale, 'ro');
@@ -321,6 +322,7 @@ registerLocaleData(roLocale, 'ro');
     FormsModule,
     HttpClientModule,
     NgPipesModule,
+    TranslateModule,
 
   ],
   // providers: [INTERCEPTOR_PROVIDER],

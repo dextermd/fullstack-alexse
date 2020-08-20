@@ -5,12 +5,12 @@
         <!--Title-->
         <mdb-card-title>
           <h3>
-            <strong class="white-text">Есть вопросы ?</strong>
+            <strong class="white-text">{{ 'HOME.QUESTIONS.Title' | translate }}</strong>
           </h3>
         </mdb-card-title>
 
         <mdb-card-text class="white-text">
-          <h5>Оставьте заявку, чтобы получить бесплатную консультацию для своего бизнеса.</h5>
+          <h5>{{ 'HOME.QUESTIONS.Text' | translate }}</h5>
         </mdb-card-text>
 
 
@@ -18,19 +18,19 @@
         <form class="form-inline flex-center">
           <!-- Default input -->
           <label class="sr-only" for="inlineFormInputName2">Name</label>
-          <input mdbInput type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Ваше имя">
+          <input mdbInput type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="{{ 'HOME.QUESTIONS.Name' | translate }}">
           <!-- Default input -->
           <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
           <div class="input-group mb-2 mr-sm-2">
             <div class="input-group-prepend">
               <div class="input-group-text">@</div>
             </div>
-            <input mdbInput type="text" class="form-control py-0" id="inlineFormInputGroupUsername2" placeholder="Ваш Email">
+            <input mdbInput type="text" class="form-control py-0" id="inlineFormInputGroupUsername2" placeholder="{{ 'HOME.QUESTIONS.Email' | translate }}">
           </div>
           <label class="sr-only" for="inlineFormInputName2">Name</label>
-          <input mdbInput type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="+(__) __ _ __">
+          <input mdbInput type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="{{ 'HOME.QUESTIONS.Phone' | translate }}">
 
-          <button type="submit" mdbBtn color="primary" class="mt-0">Получить консультацию</button>
+          <button type="submit" mdbBtn color="primary" class="mt-0">{{ 'BUTTONS.Question' | translate}}</button>
         </form>
         <!-- Default inline form -->
 

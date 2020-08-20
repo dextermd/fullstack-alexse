@@ -1,0 +1,126 @@
+{
+  "SELECT": {
+    "LANG": {
+      "RU": "Russian",
+      "EN": "English",
+      "RO": "Romanian"
+    }
+  },
+
+  "MAIN": {
+    "NAVIGATION": {
+      "Product": "Products",
+      "Programs": "Programs",
+      "Support": "Support",
+      "About": "About company",
+      "Contacts": "Contacts",
+      "News": "News",
+      "Price": "Price list"
+    },
+    "FOOTER": {
+      "CHISINAU": {
+        "Name": "CHISINAU SHOP",
+        "Adress": "MD-2005, Republic of Moldova, Kishinev Municipality,\n4/1, Ion Pruncul Str. \n",
+        "Phone": "tel:(+37322) 244-572"
+      },
+      "BALTI": {
+        "Name": "BALTI SHOP",
+        "Adress": "MD-3121, Republic of Moldova,\nBalti Municipality, 145, Kiev Str. \n",
+        "Phone": "tel:(+373231) 40-456"
+      },
+      "TIRASPOL": {
+        "Name": "TIRASPOL SHOP",
+        "Adress": "MD-3300, TMR, Tiraspol City,\n60, Profsoyuzov Str., office 101\n",
+        "Phone": "tel:(533) 675 40"
+      },
+      "COMRAT": {
+        "Name": "COMRAT SHOP",
+        "Adress": "MD-3805, Republic of Moldova,\nATU Gagauzia, Comrat Municipality,\n43, Victory Str. \n",
+        "Phone": "tel:(+373 298) 805-33"
+      },
+      "DROCHIA": {
+        "Name": "DROCHIA SHOP",
+        "Adress": "MD-5202, Republic of Moldova,\nDrochia City,  Gudanov Str., (New Market),\nBoutique No. 20",
+        "Phone": "tel:(+373) 68650707"
+      }
+    },
+    "INDEX": {
+      "Search": "Search",
+      "Support": "Opening hours: Mon-Fri 08:30 18:00 Tel:(+37322) 244-572 E-mail: office@alex-se.com"
+    }
+  },
+  "BUTTONS": {
+    "AboutUs": "ABOUT US",
+    "Products": "PRODUCTS",
+    "Certificate": "CERTIFICATES",
+    "Support": "SUPPORT",
+    "AllCert": "SEE ALL CERTIFICATES",
+    "Question": "GET CONSULTATION"
+  },
+  "HOME": {
+    "INFO_SHORT":{
+      "Title": "A LITTLE ABOUT ALEX S&E COMPANY",
+      "ContentTop": "The company began its activity in 1993 by producing the commercial scales,<br> batching counters and automated accounting systems for industrial and commercial enterprises.",
+      "ContentBottom": "Nowadays Alex S&E is one of the largest engineering companies in Moldova and<br> the CIS countries. Production area and service center of the company is located on the<br> territory of more than 1300 square meters, and the number of employees exceeded 100 persons."
+    },
+    "WHY": {
+      "Title": "WHY WE",
+      "Text": "The largest manufacturer and distributor of <br> weighing equipment for industry and trade in Moldova."
+    },
+    "QUALITIES": {
+      "ONE": {
+        "Title": "we are first",
+        "Text": "27 years on the market"
+      },
+      "TWO": {
+        "Title": "500 000+",
+        "Text": "electronic scales"
+      },
+      "THREE": {
+        "Title": "150 000+",
+        "Text": "truck scales"
+      },
+      "FOUR": {
+        "Title": "500+",
+        "Text": "catering automation"
+      },
+      "FIVE": {
+        "Title": "150+",
+        "Text": "industrial enterprises"
+      },
+      "LEFT": {
+        "Title": "Only certified products"
+      },
+      "RIGHT": {
+        "Title": "365/7 Free technical support"
+      }
+    },
+    "SHOP": {
+      "Title": "OUR NEW PRODUCTS",
+      "Text": "All products are certified"
+    },
+    "PARTNERS": {
+      "Title": "WE ARE TRUSTED"
+    },
+    "CERTIFICATE": {
+      "Title": "CERTIFICATES"
+    },
+    "QUESTIONS": {
+      "Title": "Have questions?",
+      "Text": "Leave a request to get a free consultation for your business.",
+      "Name": "Name:",
+      "Email": "Email:",
+      "Phone": "+(__) __ _ __"
+    },
+    "NEWS": {
+      "Title": "NEWS",
+      "See": "Read more"
+    },
+    "VIDEO": {
+      "Title": "VIDEO",
+      "Close": "Close"
+    }
+
+  }
+
+}

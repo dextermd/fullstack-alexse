@@ -1,0 +1,129 @@
+{
+  "SELECT": {
+    "LANG": {
+      "RU": "Russian",
+      "EN": "English",
+      "RO": "Romanian"
+    }
+  },
+
+  "MAIN": {
+    "NAVIGATION": {
+      "Product": "Produse",
+      "Programs": "Programe",
+      "Support": "Suport",
+      "About": "Despre companie",
+      "Contacts": "Contacte",
+      "News": "Știri",
+      "Price": "Listă de prețuri"
+    },
+    "FOOTER": {
+      "CHISINAU": {
+        "Name": "MAGAZIN CHIȘINĂU",
+        "Adress": "MD-2005, Republica Moldova, mun. Chișinău,\nStr. Ion Pruncul, 4/1\n",
+        "Phone": "tel:(+37322) 244-572"
+      },
+      "BALTI": {
+        "Name": "MAGAZIN BĂLȚI",
+        "Adress": "MD-3121, Republica Moldova,\nmun. Balti, str. Kiev 145\n",
+        "Phone": "tel:(+373231) 40-456"
+      },
+      "TIRASPOL": {
+        "Name": "MAGAZIN TIRASPOL",
+        "Adress": "MD-3300, Transnistria, or. Tiraspol,\nStr. Sindicatele 60, birou 101\n",
+        "Phone": "tel:(533) 675 40"
+      },
+      "COMRAT": {
+        "Name": "MAGAZIN COMRAT",
+        "Adress": "MD-3805, Republica Moldova,\nATU Găgăuzia, mun. Comrat,\nStr. Victoriei 43\n",
+        "Phone": "tel:(+373 298) 805-33"
+      },
+      "DROCHIA": {
+        "Name": "MAGAZIN DROCHIA",
+        "Adress": "MD-5202, Republica Moldova,\nDrochia, str. Gudanov (Piața nouă),\nGhereta Nr. 20",
+        "Phone": "tel:(+373) 68650707"
+      }
+    },
+    "INDEX": {
+      "Search": "Căutare",
+      "Support": "Program de lucru: Lu-Vi 08:30 18:00 Tel:(+37322) 244-572 E-mail: office@alex-se.com"
+    }
+  },
+
+  "BUTTONS": {
+    "AboutUs": "DESPRE NOI",
+    "Products": "PRODUSE",
+    "Certificate": "CERTIFICATE",
+    "Support": "SUPPORT",
+    "AllCert": "VEZI TOATE CERTIFICATII",
+    "Question": "CONSULTĂ-TE"
+  },
+  "HOME": {
+    "INFO_SHORT":{
+      "Title": "PE SCURT DESPRE SOCIETATEA ALEX S&E",
+      "ContentTop": "The company began its activity in 1993 by producing the commercial scales,<br> batching counters and automated accounting systems for industrial and commercial enterprises.",
+      "ContentBottom": "Nowadays Alex S&E is one of the largest engineering companies in Moldova and<br> the CIS countries. Production area and service center of the company is located on the <br> territory of more than 1300 square meters, and the number of employees exceeded 100 persons."
+    },
+    "WHY": {
+      "Title": "DE CE NOI",
+      "Text": "Cel mai mare producător și distribuitor din Moldova <br> a echipamentelor de cântărit pentru industrie și comerț."
+    },
+    "QUALITIES": {
+      "ONE": {
+        "Title": "suntem primii",
+        "Text": "27 de ani pe piață"
+      },
+      "TWO": {
+        "Title": "500 000+",
+        "Text": "cântare electronice"
+      },
+      "THREE": {
+        "Title": "150 000+",
+        "Text": "cântare pentru autovehicule"
+      },
+      "FOUR": {
+        "Title": "500+",
+        "Text": "automatizare catering"
+      },
+      "FIVE": {
+        "Title": "150+",
+        "Text": "Întreprinderi industriale"
+      },
+      "LEFT": {
+        "Title": " Doar produse certificate"
+      },
+      "RIGHT": {
+        "Title": "365/7 Asistență tehnică gratuită"
+      }
+
+    },
+    "SHOP": {
+      "Title": "PRODUSE NOI",
+      "Text": "Toate produsele sunt certificate"
+    },
+    "PARTNERS": {
+      "Title": "SUNTEM DE ÎNCREDERE"
+    },
+    "CERTIFICATE": {
+      "Title": "CERTIFICATE"
+    },
+    "QUESTIONS": {
+      "Title": "Aveți întrebări?",
+      "Text": "Lasăți o solicitare pentru a primi o consultație gratuită pentru afacerea dvs.",
+      "Name": "Nume:",
+      "Email": "Email:",
+      "Phone": "+(__) __ _ __"
+    },
+    "NEWS": {
+      "Title": "ȘTIRI",
+      "See": "Citeste mai mult"
+    },
+    "VIDEO": {
+      "Title": "VIDEO",
+      "Close": "Închide"
+    }
+
+
+  }
+
+}
