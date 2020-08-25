@@ -41,7 +41,6 @@ module.exports.sendMail = async function (order, callback) {
                 items: order.body.list,
 
             }, // send extra values to template
-            text: "Hello world?", // plain text body
         };
 
 
@@ -96,7 +95,6 @@ module.exports.sendQuestion = async function (question, callback) {
             message: question.body.message,
 
         }, // send extra values to template
-        text: "Hello world?", // plain text body
     };
 
 
@@ -141,7 +139,7 @@ module.exports.sendCallBack = async function (call, callback) {
 
     transporter.use('compile', hbs(handlebarOptions));
     let mailOptions = {
-        from: '"[CALLBACK] ОБРАТНЫЙ ЗВОНОК" "на номер"'  + ' ' + call.body.phone, // sender address
+        from: '"[CALLBACK] ОБРАТНЫЙ ЗВОНОК" "на номер"'  + " " + call.body.phone, // sender address
         to: 'reception@alex-se.com', // list of receivers
         subject: '[CALLBACK] ОБРАТНЫЙ ЗВОНОК' + call.body.phone, // Subject line
         template: 'callback',
@@ -151,7 +149,6 @@ module.exports.sendCallBack = async function (call, callback) {
             phone: call.body.phone,
 
         }, // send extra values to template
-        text: "Hello world?", // plain text body
     };
 
 
