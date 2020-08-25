@@ -1,6 +1,6 @@
 <div class="container gotop mt-5">
   <section class="dark-grey-text mb-5">
-
+<app-alerting></app-alerting>
     <!-- Grid row -->
     <div class="row">
 
@@ -22,35 +22,108 @@
             <p class=" wow zoomIn" data-wow-delay="0.6s">Не стесняйтесь задавать нам вопросы</p>
             <br>
 
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <!--Body-->
             <div class="md-form">
               <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
-              <input mdbInput type="text" id="form3" class="form-control">
-              <label for="form3">Your name</label>
+              <input
+                mdbInput
+                formControlName="name"
+                type="text"
+                id="name"
+                class="form-control"
+                [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
+              >
+              <span
+                class="helper-text red-text"
+                *ngIf="form.get('name').invalid && form.get('name').touched"
+              >
+                    <span *ngIf="form.get('name').errors['required']">
+                      Имя не может быть пустым
+                    </span>
+                    </span>
+              <label for="name">Ваше имя</label>
+
             </div>
 
             <div class="md-form">
               <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
-              <input mdbInput type="text" id="form2" class="form-control">
-              <label for="form2">Your email</label>
+              <input
+                mdbInput
+                formControlName="email"
+                type="text"
+                id="email"
+                class="form-control"
+                [ngClass]="{'invalid': form.get('email').invalid && form.get('email').touched }"
+              >
+              <span
+                class="red-text "
+                *ngIf="form.get('email').touched && form.get('email').invalid"
+              >
+                <span *ngIf="form.get('email').errors.required">
+                  Email не может быть пустым
+                </span>
+                <span *ngIf="form.get('email').errors.email">
+                  Пожалуйста. введите правильный Email адрес
+                </span>
+              </span>
+              <label for="email">Ваш email</label>
             </div>
 
             <div class="md-form">
               <mdb-icon fas icon="tag" class="prefix grey-text"></mdb-icon>
-              <input mdbInput type="text" id="form32" class="form-control">
-              <label for="form34">Subject</label>
+              <input
+                mdbInput
+                formControlName="subject"
+                type="text"
+                id="subject"
+                class="form-control"
+                [ngClass]="{'invalid': form.get('subject').invalid && form.get('subject').touched }"
+              >
+              <span
+                class="helper-text red-text"
+                *ngIf="form.get('subject').invalid && form.get('subject').touched"
+              >
+                    <span *ngIf="form.get('subject').errors['required']">
+                      Тема не может быть пустой
+                    </span>
+                    </span>
+              <label for="subject">Тема</label>
             </div>
 
             <div class="md-form">
               <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
-              <textarea mdbInput type="text" id="form8" class="md-textarea"></textarea>
-              <label for="form8">Message</label>
+              <textarea
+                mdbInput
+                formControlName="message"
+                type="text"
+                id="message"
+                class="md-textarea"
+                [ngClass]="{'invalid': form.get('message').invalid && form.get('message').touched }"
+              >
+              </textarea>
+              <span
+                class="helper-text red-text"
+                *ngIf="form.get('message').invalid && form.get('message').touched"
+              >
+                    <span *ngIf="form.get('message').errors['required']">
+                      Сообщение не может быть пустым
+                    </span>
+                    </span>
+              <label for="message">Сообщение</label>
             </div>
-
             <div class="text-center">
-              <button mdbBtn color="light-blue" class="waves-light" mdbWavesEffect>Submit</button>
+              <button
+                [disabled]="form.invalid || form.disabled"
+                data-toggle="modal"
+                data-target="#basicExample"
+                class="btn btn-primary btn-lg btn-block"
+                type="submit"
+              >
+                Отправить
+              </button>
             </div>
-
+            </form>
           </mdb-card-body>
 
         </mdb-card>

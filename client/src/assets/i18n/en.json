@@ -6,7 +6,6 @@
       "RO": "Romanian"
     }
   },
-
   "MAIN": {
     "NAVIGATION": {
       "Product": "Products",
@@ -20,27 +19,27 @@
     "FOOTER": {
       "CHISINAU": {
         "Name": "CHISINAU SHOP",
-        "Adress": "MD-2005, Republic of Moldova, Kishinev Municipality,\n4/1, Ion Pruncul Str. \n",
+        "Adress": "MD-2005, Republic of Moldova, Kishinev Municipality, 4/1, Ion Pruncul Str.",
         "Phone": "tel:(+37322) 244-572"
       },
       "BALTI": {
         "Name": "BALTI SHOP",
-        "Adress": "MD-3121, Republic of Moldova,\nBalti Municipality, 145, Kiev Str. \n",
+        "Adress": "MD-3121, Republic of Moldova, Balti Municipality, 145, Kiev Str.",
         "Phone": "tel:(+373231) 40-456"
       },
       "TIRASPOL": {
         "Name": "TIRASPOL SHOP",
-        "Adress": "MD-3300, TMR, Tiraspol City,\n60, Profsoyuzov Str., office 101\n",
+        "Adress": "MD-3300, TMR, Tiraspol City, 60, Profsoyuzov Str., office 101 ",
         "Phone": "tel:(533) 675 40"
       },
       "COMRAT": {
         "Name": "COMRAT SHOP",
-        "Adress": "MD-3805, Republic of Moldova,\nATU Gagauzia, Comrat Municipality,\n43, Victory Str. \n",
+        "Adress": "MD-3805, Republic of Moldova, ATU Gagauzia, Comrat Municipality, 43, Victory Str.",
         "Phone": "tel:(+373 298) 805-33"
       },
       "DROCHIA": {
         "Name": "DROCHIA SHOP",
-        "Adress": "MD-5202, Republic of Moldova,\nDrochia City,  Gudanov Str., (New Market),\nBoutique No. 20",
+        "Adress": "MD-5202, Republic of Moldova, Drochia City,  Gudanov Str., (New Market), Boutique No. 20",
         "Phone": "tel:(+373) 68650707"
       }
     },
@@ -120,7 +119,6 @@
       "Title": "VIDEO",
       "Close": "Close"
     }
-
   }
 
 }

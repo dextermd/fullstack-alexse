@@ -36,6 +36,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
   typeShip: string;
   isDisableAdr = true;
   orderNumber = 'Отсчет заказов';
+  orderState = false;
 
   constructor(
     config: NgbPopoverConfig,
@@ -60,11 +61,15 @@ export class CartPageComponent implements OnInit, OnDestroy {
     this.order.list = this.localService.getJsonValue('list');
     this.order.price = this.localService.getJsonValue('price');
     console.log(this.order.list);
-
+    if (this.order.list.length !== 0){
+      this.orderState = true;
+    } else {
+      this.orderState = false;
+    }
 
     this.form = new FormGroup({
       c_name: new FormControl(null, Validators.required),
-      c_phone: new FormControl(null, Validators.required),
+      c_phone: new FormControl(null, [Validators.required , Validators.pattern('^[0-9]*$')]),
       c_email: new FormControl(null, [Validators.required , Validators.email]),
       c_type_shipping: new FormControl(this.typeShip, Validators.required),
       c_address_shipping: new FormControl({value: '', disabled: true}, Validators.required),
@@ -132,11 +137,11 @@ export class CartPageComponent implements OnInit, OnDestroy {
           }
         );
 
-        this.localService.clearToken();
 
-        // localStorage.removeItem('list');
-        // localStorage.removeItem('price');
-        // localStorage.removeItem('cartItems');
+        this.localService.clearToken();
+        this.orderState = false;
+
+
 
         this.panding = false;
 

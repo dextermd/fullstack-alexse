@@ -5,14 +5,15 @@
       <mdb-breadcrumb-item>
         <mdb-breadcrumb-item [routerLink]="'/'">Главная</mdb-breadcrumb-item>
         <mdb-breadcrumb-item [routerLink]="'/products'">Магазин</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item [routerLink]="'/products/subcategory/'+ this.subcategoryId">{{this.subcategoryName}}</mdb-breadcrumb-item>
         <mdb-breadcrumb-item class="active">Продукт</mdb-breadcrumb-item>
       </mdb-breadcrumb-item>
+
     </div>
   </mdb-breadcrumb>
 </div>
 
 <div *ngIf="product$ | async as product; else loading ">
-
   <div class="container gotop">
     <!--Section: Content-->
     <section class="text-center">
@@ -32,7 +33,6 @@
 
             <mdb-carousel class="flex-center" [isControls]="true" [animation]="'slide'">
               <!--First slide-->
-
               <mdb-slide>
                 <div class=" pl-5">
                   <img src="{{product.img[0].path}}"
@@ -266,11 +266,25 @@
 
 
       <ngb-tabset [destroyOnHide]="false">
+
         <ngb-tab title="Технические параметры">
           <ng-template ngbTabContent>
             <quill-view-html [content]="product.spec"></quill-view-html>
           </ng-template>
         </ngb-tab>
+
+        <ngb-tab title="Функциональные возможности">
+          <ng-template ngbTabContent>
+            <quill-view-html [content]="product.functions"></quill-view-html>
+          </ng-template>
+        </ngb-tab>
+
+        <ngb-tab title="Сертификаты">
+          <ng-template ngbTabContent>
+            <quill-view-html [content]="product.certificate"></quill-view-html>
+          </ng-template>
+        </ngb-tab>
+
       </ngb-tabset>
 
 

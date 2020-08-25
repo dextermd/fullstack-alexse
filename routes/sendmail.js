@@ -7,6 +7,8 @@ const router = express.Router();
 
 
 router.post('/', controller.sendMail);
+router.post('/question', controller.sendQuestion);
+router.post('/callback', controller.sendCallBack);
 
 
 

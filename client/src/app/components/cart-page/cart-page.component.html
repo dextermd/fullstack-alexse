@@ -1,7 +1,7 @@
 <div class="container gotop  pb-5">
 
   <!--Section: Content-->
-  <section *ngIf="order.list; else orderItems" class="dark-grey-text pt-3">
+  <section *ngIf="this.orderState; else orderItems" class="dark-grey-text pt-3">
 
     <div class="card">
       <div class="card-body">
@@ -161,14 +161,17 @@
                       placeholder="Телефон"
                       [ngClass]="{'invalid': form.get('c_phone').invalid && form.get('c_phone').touched }"
                     >
-                    <span
-                      class="helper-text red-text"
-                      *ngIf="form.get('c_phone').invalid && form.get('c_phone').touched"
+                    <div
+                      class="red-text "
+                      *ngIf="form.get('c_phone').touched && form.get('c_phone').invalid"
                     >
-                    <span *ngIf="form.get('c_phone').errors['required']">
-                      Телефон не может быть пустым
-                    </span>
-                    </span>
+                      <small *ngIf="form.get('c_phone').errors.required">
+                        Телефон не может быть пустым
+                      </small>
+                      <small *ngIf="form.get('c_phone').errors.pattern">
+                        Пожалуйста. введите правильный Телефон
+                      </small>
+                    </div>
                   </div>
 
 

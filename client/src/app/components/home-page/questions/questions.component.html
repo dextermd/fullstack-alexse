@@ -13,26 +13,100 @@
           <h5>{{ 'HOME.QUESTIONS.Text' | translate }}</h5>
         </mdb-card-text>
 
+        <app-alerting></app-alerting>
+
 
         <!-- Default inline form -->
-        <form class="form-inline flex-center">
+        <form class="form-inline flex-center" [formGroup]="form" (ngSubmit)="onSubmit()">
           <!-- Default input -->
-          <label class="sr-only" for="inlineFormInputName2">Name</label>
-          <input mdbInput type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="{{ 'HOME.QUESTIONS.Name' | translate }}">
-          <!-- Default input -->
-          <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-          <div class="input-group mb-2 mr-sm-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">@</div>
+
+          <div class="row">
+            <div class="col-md-4">
+                            <span
+                              class="helper-text red-text"
+                              *ngIf="form.get('name').invalid && form.get('name').touched"
+                            >
+                    <span *ngIf="form.get('name').errors['required']">
+                      Имя не может быть пустым
+                    </span>
+                    </span>
+              <input
+                mdbInput
+                type="text"
+                class="form-control mb-2 mr-sm-2"
+                formControlName="name"
+                id="name"
+                placeholder="{{ 'HOME.QUESTIONS.Name' | translate }}"
+                [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
+              >
             </div>
-            <input mdbInput type="text" class="form-control py-0" id="inlineFormInputGroupUsername2" placeholder="{{ 'HOME.QUESTIONS.Email' | translate }}">
-          </div>
-          <label class="sr-only" for="inlineFormInputName2">Name</label>
-          <input mdbInput type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="{{ 'HOME.QUESTIONS.Phone' | translate }}">
+            <div class="col-md-4">
 
-          <button type="submit" mdbBtn color="primary" class="mt-0">{{ 'BUTTONS.Question' | translate}}</button>
+              <!-- Default input -->
+              <span
+                class="red-text "
+                *ngIf="form.get('email').touched && form.get('email').invalid"
+              >
+                <span *ngIf="form.get('email').errors.required">
+                  Email не может быть пустым
+                </span>
+                <span *ngIf="form.get('email').errors.email">
+                  Пожалуйста. введите правильный Email адрес
+                </span>
+              </span>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">@</div>
+                </div>
+                <input
+                  mdbInput
+                  type="text"
+                  formControlName="email"
+                  class="form-control py-0"
+                  id="email"
+                  placeholder="{{ 'HOME.QUESTIONS.Email' | translate }}"
+                  [ngClass]="{'invalid': form.get('email').invalid && form.get('email').touched }"
+                >
+              </div>
+
+            </div>
+            <div class="col-md-4">
+              <div
+                class="red-text "
+                *ngIf="form.get('phone').touched && form.get('phone').invalid"
+              >
+                <small *ngIf="form.get('phone').errors.required">
+                  Телефон не может быть пустым
+                </small>
+                <small *ngIf="form.get('phone').errors.pattern">
+                  Пожалуйста. введите правильный Телефон
+                </small>
+              </div>
+              <input
+                mdbInput
+                type="text"
+                class="form-control mb-2 mr-sm-2"
+                formControlName="phone"
+                id="phone"
+                placeholder="{{ 'HOME.QUESTIONS.Phone' | translate }}"
+                [ngClass]="{'invalid': form.get('phone').invalid && form.get('phone').touched }"
+              >
+            </div>
+          </div>
+
+
+          <button
+            [disabled]="form.invalid || form.disabled"
+            data-toggle="modal"
+            data-target="#basicExample"
+            type="submit"
+            mdbBtn
+            color="primary"
+            class="mt-0"
+          >
+            {{ 'BUTTONS.Question' | translate}}
+          </button>
         </form>
-        <!-- Default inline form -->
 
 
       </mdb-card-body>

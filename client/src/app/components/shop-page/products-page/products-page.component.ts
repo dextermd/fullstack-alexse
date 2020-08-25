@@ -13,6 +13,7 @@ import {AlertService} from '../../../admin/shared/services/alert.service';
 import {CasaService} from '../../../shared/casa.service';
 import {PandusService} from '../../../shared/pandus.service';
 import {IndicatorService} from '../../../shared/indicator.service';
+import {SubcategoryService} from "../../../shared/subcategory.service";
 
 
 
@@ -51,6 +52,10 @@ export class ProductsPageComponent implements OnInit {
   priceCas;
   priceInd;
   pricePan;
+  subcategory;
+  subcategoryName;
+  subcategoryId;
+
 
   constructor(
     private route: ActivatedRoute,
@@ -62,11 +67,16 @@ export class ProductsPageComponent implements OnInit {
     private casaService: CasaService,
     private pandusService: PandusService,
     private indicatorService: IndicatorService,
+    private subcategoryService: SubcategoryService
   ) {
   }
 
 
   ngOnInit() {
+    this.subcategoryService.getAllCategory().subscribe( subcategory => {
+      this.subcategory = subcategory;
+    });
+
     this.casaService.getAll().subscribe(casa => {
       this.casaS = casa;
     });
@@ -79,13 +89,23 @@ export class ProductsPageComponent implements OnInit {
       this.indicatorS = indicator;
     });
 
+
+
     this.product$ = this.route.params
       .pipe(switchMap((params: Params) => {
           return this.productService.getByIdProduct(params['id']);
-        }
-        ),
+        }),
         map((products: any) => {
           console.log(products);
+          for (const i in this.subcategory) {
+            if (products.subcategory === this.subcategory[i]._id){
+              this.subcategoryId = this.subcategory[i]._id;
+              this.subcategoryName = this.subcategory[i].name;
+            }
+          }
+
+          console.log(products.subcategory);
+          console.log(this.subcategory);
           products.quantity = 1;
           return products;
         })

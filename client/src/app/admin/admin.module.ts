@@ -112,6 +112,7 @@ import {SearchProductPipe} from './shared/pipes/searchProduct.pipe';
   ],
   exports: [
     RouterModule,
+    AlertComponent,
 
   ],
   providers: [
