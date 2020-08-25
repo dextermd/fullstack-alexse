@@ -58,6 +58,7 @@ export interface Product {
   certificate?: string;
   functions?: string;
   option?: boolean;
+  sale?: boolean;
   user?: string;
   date: Date;
   subcategory: string;

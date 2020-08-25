@@ -69,7 +69,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
     this.form = new FormGroup({
       c_name: new FormControl(null, Validators.required),
-      c_phone: new FormControl(null, [Validators.required , Validators.pattern('^[0-9]*$')]),
+      c_phone: new FormControl(null, [Validators.required , Validators.pattern('^[0-9]*$'), Validators.minLength(9)]),
       c_email: new FormControl(null, [Validators.required , Validators.email]),
       c_type_shipping: new FormControl(this.typeShip, Validators.required),
       c_address_shipping: new FormControl({value: '', disabled: true}, Validators.required),

@@ -35,9 +35,9 @@
             <mdb-card class="align-items-center">
 
               <!--Card image-->
-              <div class="view overlay waves-light" mdbWavesEffect>
-
+              <div class="view overlay waves-light  view" mdbWavesEffect>
                 <mdb-card-img src="{{prod.img[0].path}}" alt=""></mdb-card-img>
+                <mdb-badge *ngIf="prod.sale" pill="true" danger="true">Распродажа!</mdb-badge>
 
 
                 <a [routerLink]="['item', prod._id]">
@@ -54,6 +54,7 @@
                 <h5>
                   <strong>
                     <a [routerLink]="['item', prod._id]" href="" class="dark-grey-text">{{prod.name}}
+
                     </a>
                   </strong>
                 </h5>

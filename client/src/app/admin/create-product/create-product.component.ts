@@ -92,6 +92,7 @@ export class CreateProductComponent implements OnInit {
       pandus: new FormControl(),
       indicator: new FormControl(),
       option: new FormControl(false),
+      sale: new FormControl(false),
 
 
     });
@@ -125,6 +126,7 @@ export class CreateProductComponent implements OnInit {
               pandus: products.pandus,
               indicator: products.indicator,
               option: products.option,
+              sale: products.sale,
               image: products.img,
               imageOne: products.imgOne,
               imageTwo: products.imgTwo,
@@ -209,26 +211,29 @@ export class CreateProductComponent implements OnInit {
 
   triggerClick() {
     this.inputRef.nativeElement.click();
+    this.imagePreview = '';
+
 
   }
 
   triggerOneClick() {
     this.inputOneRef.nativeElement.click();
-
+    this.imageOnePreview = '';
   }
 
   triggerTwoClick() {
     this.inputTwoRef.nativeElement.click();
-
+    this.imageTwoPreview = '';
   }
 
   triggerThreeClick() {
     this.inputThreeRef.nativeElement.click();
-
+    this.imageThreePreview = '';
   }
 
   triggerFourClick() {
     this.inputFourRef.nativeElement.click();
+    this.imageFourPreview = '';
 
   }
 
@@ -253,6 +258,7 @@ export class CreateProductComponent implements OnInit {
         this.form.value.pandus,
         this.form.value.indicator,
         this.form.value.option,
+        this.form.value.sale,
         this.image,
         this.imageOne,
         this.imageTwo,
@@ -281,6 +287,7 @@ export class CreateProductComponent implements OnInit {
           this.form.value.pandus,
           this.form.value.indicator,
           this.form.value.option,
+          this.form.value.sale,
           this.image,
           this.imageOne,
           this.imageTwo,

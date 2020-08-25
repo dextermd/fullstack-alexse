@@ -70,6 +70,11 @@ const positionSchema = new Schema({
             default: false
         },
 
+        sale: {
+            type: Boolean,
+            default: false
+        },
+
         certificate: {
             type: String,
             default: ''

@@ -15,7 +15,7 @@ export class ProductService {
   }
 
   getAllProduct(): Observable<Product[]> {
-    return this.http.get<Product[]>('/api/position', )
+    return this.http.get<Product[]>('/api/position', );
   }
 
   getByIdProduct(id: string): Observable<Product> {
@@ -40,6 +40,7 @@ export class ProductService {
          pandus: any,
          indicator: any,
          option: any,
+         sale: any,
          image?: File,
          imageOne?: File,
          imageTwo?: File,
@@ -81,6 +82,7 @@ export class ProductService {
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
     fd.append('option', option);
+    fd.append('sale', sale);
 
 
     return this.http.post<Product>('/api/position', fd);
@@ -101,6 +103,7 @@ export class ProductService {
          pandus: any,
          indicator: any,
          option: any,
+         sale: any,
          image?: File,
          imageOne?: File,
          imageTwo?: File,
@@ -136,6 +139,7 @@ export class ProductService {
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
     fd.append('option', option);
+    fd.append('sale', sale);
 
 
     return this.http.patch<Product>(`/api/position/${id}`, fd);

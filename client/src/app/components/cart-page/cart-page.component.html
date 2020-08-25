@@ -171,6 +171,9 @@
                       <small *ngIf="form.get('c_phone').errors.pattern">
                         Пожалуйста. введите правильный Телефон
                       </small>
+                      <span *ngIf="form.get('c_phone').errors.minlength">
+                  Минимальная длина 9 цифр
+                </span>
                     </div>
                   </div>
 
