@@ -29,7 +29,7 @@
         <div class="row" *ngIf="products$ | async  as products; else loading">
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4"
-               *ngFor="let prod of products | orderBy: sort | paginate: { itemsPerPage: 24, currentPage: page } | searchProduct: searchStr;">
+               *ngFor="let prod of products | orderBy: sort | paginate: { itemsPerPage: 1, currentPage: page } | searchProduct: searchStr;">
 
             <!--Card-->
             <mdb-card class="align-items-center">
@@ -94,7 +94,7 @@
 
       <div>
         <div class="list-group my-2 py-2">
-          <a routerLink="/products" class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
+          <a (click)="defaultPage()" routerLink="/products" class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
             Все товары
           </a>
         </div>
@@ -114,7 +114,7 @@
             <div *ngIf="subproductCategory$ | async as productSubCategory">
               <ng-container *ngFor="let psubcategory of productSubCategory">
                 <ng-container *ngIf="pcategory._id === psubcategory.category">
-                  <a (click)="colapse()"  [routerLink]="['/products/subcategory', psubcategory._id]"
+                  <a (click)="colapse()" (click)="defaultPage()"  [routerLink]="['/products/subcategory', psubcategory._id]"
                      class="list-group-item list-group-item-action waves-light "> {{psubcategory.name}}</a>
                 </ng-container>
               </ng-container>
@@ -129,8 +129,14 @@
   </div>
 
   <div class="flex-center">
-    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    <pagination-controls
+      (pageChange)="pageChanged($event)"
+      (pageChange)="page = $event"
+    >
+
+    </pagination-controls>
   </div>
+
   <ng-template #loading>
     <p class="text-center">Загружаю продукты...</p>
   </ng-template>

@@ -5,6 +5,7 @@ import {ProductService} from '../../../shared/product.service';
 import {SubcategoryService} from '../../../shared/subcategory.service';
 import {CategoryService} from '../../../shared/category.service';
 import {ActivatedRoute, Params} from '@angular/router';
+import {LocalService} from '../../../shared/local.service';
 
 @Component({
   selector: 'app-products',
@@ -29,13 +30,15 @@ export class ProductsComponent implements OnInit, OnDestroy {
     private subcategoryService: SubcategoryService,
     private categoryService: CategoryService,
     private route: ActivatedRoute,
+    private localService: LocalService
+
   ) {
   }
 
 
 
   ngOnInit(): void {
-
+    this.page = this.localService.getJsonValue('productPage');
     this.dSub = this.route.params.subscribe((params: Params) => {
       if (params['id']) {
         this.products$ = this.productService.getByCatIdProductAll(params['id']);
@@ -48,6 +51,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.subproductCategory$ = this.subcategoryService.getAllCategory();
     this.productCategory$ = this.categoryService.getAllCategory();
 
+    this.pageChanged(this.page);
   }
 
   ngOnDestroy(): void {
@@ -59,5 +63,14 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
   colapse() {
    return this.colapsee = false;
+  }
+
+  pageChanged(page: number) {
+    this.localService.setJsonValue('productPage', page);
+  }
+
+  defaultPage() {
+    this.localService.setJsonValue('productPage', 1);
+    this.page = 1;
   }
 }

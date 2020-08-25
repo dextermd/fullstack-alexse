@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LocalService} from '../../shared/local.service';
 
 @Component({
   selector: 'app-home-page',
@@ -8,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private localService: LocalService
+
+  ) { }
 
   ngOnInit(): void {
+    this.localService.setJsonValue('productPage', 1);
+
   }
 
 }
