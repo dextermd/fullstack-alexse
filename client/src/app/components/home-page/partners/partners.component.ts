@@ -55,6 +55,10 @@ export class PartnersComponent implements OnInit {
 
       img: 'assets/partners/zernoff.jpg'
     },
+    {
+
+      img: 'assets/partners/Compliment.jpg'
+    },
   ];
   slides: any = [[]];
   chunk(arr, chunkSize) {

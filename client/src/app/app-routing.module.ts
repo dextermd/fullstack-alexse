@@ -27,9 +27,7 @@ import {CheckoutPageComponent} from './components/checkout-page/checkout-page.co
 import {ThankyouPageComponent} from './components/thankyou-page/thankyou-page.component';
 import {SignUpComponent} from './user/sign-up/sign-up.component';
 import {LoginComponent} from './user/login/login.component';
-import {ProfileComponent} from './user/profile/profile.component';
 import {AuthGuard} from './classes/auth.guard';
-import {CreateCategoryPageComponent} from "./admin/create-category-page/create-category-page.component";
 
 
 
@@ -62,7 +60,7 @@ const routes: Routes = [
       {path: 'products/subcategory/:id/item/:id', component: ProductsPageComponent},
       {path: 'products/item/:id', component: ProductsPageComponent},
       {path: 'cart', component: CartPageComponent},
-      {path: 'checkout', component: CheckoutPageComponent},
+      {path: 'price-list', component: CheckoutPageComponent},
       {path: 'certifications', component: ThankyouPageComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },

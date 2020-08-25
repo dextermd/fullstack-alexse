@@ -1,1 +1,27 @@
-<p>checkout-page works!</p>
+<div class="pl-5 pr-5 py-5 my-5">
+  <div class="d-print-none">
+  <button (click)="onPrint()">Распечатать прайс-лист</button>
+  </div>
+<div  class="flex-center ">
+<table mdbTable bordered="true" >
+  <thead>
+  <tr>
+    <th *ngFor="let head of headElements" scope="col" class=""> <h5>{{head}}</h5> </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr  *ngFor="let prod of products">
+    <th  scope="row">{{prod.code}}</th>
+    <td>
+      <img style="height: 100px" src="{{prod.img[0].path}}" alt="" class="img-fluid z-depth-0">
+    </td>
+
+    <td ><div class="d-flex justify-content-center"> {{prod.name}}  </div></td>
+
+    <td><span class="text-danger font-weight-bold">{{prod.cost | currency: ' '}}</span></td>
+    <td><quill-view-html [content]="prod.content"></quill-view-html></td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</div>
