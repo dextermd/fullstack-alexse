@@ -29,7 +29,7 @@
         <div class="row" *ngIf="products$ | async  as products; else loading">
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4"
-               *ngFor="let prod of products | orderBy: sort | paginate: { itemsPerPage: 1, currentPage: page } | searchProduct: searchStr;">
+               *ngFor="let prod of products | orderBy: sort | paginate: { itemsPerPage: 24, currentPage: page } | searchProduct: searchStr;">
 
             <!--Card-->
             <mdb-card class="align-items-center">
