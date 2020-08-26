@@ -71,7 +71,7 @@ export class ProductsPageComponent implements OnInit {
     private pandusService: PandusService,
     private indicatorService: IndicatorService,
     private subcategoryService: SubcategoryService,
-    private  productPage: ProductsComponent,
+    public  productPage: ProductsComponent,
     config: NgbTabsetConfig
   ) {
     config.type = 'pills';
