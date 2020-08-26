@@ -29,6 +29,21 @@ import { PandusPageComponent } from './options-page/pandus-page/pandus-page.comp
 import { CasaPageComponent } from './options-page/casa-page/casa-page.component';
 import { CasaCreatePageComponent } from './options-page/casa-create-page/casa-create-page.component';
 import {SearchProductPipe} from './shared/pipes/searchProduct.pipe';
+import {FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
+
+// Import all Froala Editor plugins.
+import 'froala-editor/js/plugins.pkgd.min.js';
+
+// Import a single Froala Editor plugin.
+import 'froala-editor/js/plugins/align.min.js';
+
+// Import a Froala Editor language file.
+import 'froala-editor/js/languages/de.js';
+
+// Import a third-party plugin.
+import 'froala-editor/js/third_party/image_tui.min';
+import 'froala-editor/js/third_party/spell_checker.min';
+import 'froala-editor/js/third_party/embedly.min';
 
 
 // @ts-ignore
@@ -64,6 +79,8 @@ import {SearchProductPipe} from './shared/pipes/searchProduct.pipe';
     ReactiveFormsModule,
     CommonModule,
     SharedModule,
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot(),
     RouterModule.forChild([
       {
         path: '', component: AdminLayoutComponent, canActivate: [AuthGuard], children: [

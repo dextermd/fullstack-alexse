@@ -9,6 +9,7 @@ import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -18,11 +19,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     HttpClientModule,
     NgbModule,
-    QuillModule.forRoot({
-      modules: {
-        table: true,
-      }
-    }),
+    QuillModule.forRoot(),
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot(),
     CKEditorModule,
     FormsModule,
     NgxPaginationModule,

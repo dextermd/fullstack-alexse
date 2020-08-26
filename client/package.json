@@ -33,6 +33,7 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "@types/chart.js": "^2.7.40",
     "angular-bootstrap-md": "^9.3.0",
+    "angular-froala-wysiwyg": "^3.2.1-1",
     "animate.css": "~3.7.2",
     "bootstrap": "^4.4.0",
     "chart.js": "^2.7.2",

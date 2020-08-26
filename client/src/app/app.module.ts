@@ -158,6 +158,7 @@ import {SearchProductPipe} from './admin/shared/pipes/searchProduct.pipe';
 import {SortPipe} from './admin/shared/pipes/sort.pipe';
 import {NgPipesModule} from 'ngx-pipes';
 import {TranslateModule} from '@ngx-translate/core';
+import {FERootModule, FroalaViewModule} from "angular-froala-wysiwyg";
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData(roLocale, 'ro');
@@ -323,6 +324,8 @@ registerLocaleData(roLocale, 'ro');
     HttpClientModule,
     NgPipesModule,
     TranslateModule,
+    FroalaViewModule,
+    FERootModule,
 
   ],
   // providers: [INTERCEPTOR_PROVIDER],
