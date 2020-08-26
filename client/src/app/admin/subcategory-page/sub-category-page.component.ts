@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {SubcategoryService} from '../../shared/subcategory.service';
 import {Category, SubCategory} from '../shared/interfaces';
 import {Observable} from 'rxjs';
-import {CategoryService} from "../../shared/category.service";
+import {CategoryService} from '../../shared/category.service';
 
 
 

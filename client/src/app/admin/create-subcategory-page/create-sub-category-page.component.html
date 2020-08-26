@@ -15,6 +15,7 @@
 <app-alert></app-alert>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
 <div class="md-form">
+  <div>
   <input
     formControlName="name"
     mdbInput
@@ -33,6 +34,27 @@
     Имя категории не может быть пустым
   </span>
   </span>
+  </div>
+<div>
+  <input
+    formControlName="num"
+    mdbInput
+    type="number"
+    id="num"
+    class="form-control"
+    placeholder="Порядковый номер"
+    [ngClass]="{'invalid': form.get('num').invalid && form.get('num').touched }"
+  >
+  <span
+    class="helper-text red-text"
+    *ngIf="form.get('num').invalid && form.get('num').touched"
+  >
+  <span *ngIf="form.get('num').errors['required']">
+    Поле не может быть пустым
+  </span>
+  </span>
+</div>
+
 </div>
 
   <div class="flex-center">

@@ -4,7 +4,7 @@ const errorHandler = require('../utils/errorHandler');
 
 module.exports.getAll = async function (req, res) {
     try {
-        const categories = await  SubCategory.find({ }); // user: req.user.id
+        const categories = await  SubCategory.find({ }).sort({num: 1}); // user: req.user.id
         res.status(200).json(categories)
     } catch (e) {
         errorHandler(res, e)
@@ -36,6 +36,7 @@ module.exports.create = async function (req, res) {
     console.log(req.user);
     const subcategory = new SubCategory({
         name: req.body.name,
+        num: req.body.num,
         category: req.body.category,
         user: req.user.id,
 
@@ -51,6 +52,7 @@ module.exports.create = async function (req, res) {
 module.exports.update = async function (req, res) {
     const updated = {
         name: req.body.name,
+        num: req.body.num,
         category: req.body.category,
     };
 

@@ -37,6 +37,7 @@ export interface Category {
 export interface SubCategory {
   _id?: string;
   name: string;
+  num: number;
   category: string;
   imageSrc?: string;
   user?: string;

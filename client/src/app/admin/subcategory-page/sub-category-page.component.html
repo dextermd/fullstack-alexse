@@ -13,7 +13,7 @@
       class="list-group-item list-group-item-action waves-light d-flex justify-content-between"
       mdbWavesEffect
     >
-      <div>Подкатегория: <strong style="color: red" class="pl-3"> {{category.name}}</strong></div>
+      <div>Подкатегория: <strong style="color: red" class="pl-3">Номер: {{category.num}} ---- {{category.name}}</strong></div>
       <div *ngFor="let categor of categorys">
         <span *ngIf="categor._id == category.category" > Категория: {{categor.name}}</span>
       </div>
