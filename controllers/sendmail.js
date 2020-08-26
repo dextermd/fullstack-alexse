@@ -29,7 +29,7 @@ module.exports.sendMail = async function (order, callback) {
     transporter.use('compile', hbs(handlebarOptions));
         let mailOptions = {
             from: '"Ваша покупка на Alex S&E SRL" <no-reply@alex-se.com>', // sender address
-            to: order.body.c_email, // list of receivers
+            to: `${order.body.c_email} , reception@alex-se.com`,
             subject: "Ваша покупка на AlexSE ✔", // Subject line
             template: 'index',
             context: {
