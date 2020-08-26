@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, Injectable, OnDestroy, OnInit} from '@angular/core';
 import {Observable, Subscription} from 'rxjs';
 import {SubCategory, Product, Category} from '../../../admin/shared/interfaces';
 import {ProductService} from '../../../shared/product.service';
@@ -7,6 +7,7 @@ import {CategoryService} from '../../../shared/category.service';
 import {ActivatedRoute, Params} from '@angular/router';
 import {LocalService} from '../../../shared/local.service';
 
+@Injectable({providedIn: 'root'})
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -30,7 +31,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
     private subcategoryService: SubcategoryService,
     private categoryService: CategoryService,
     private route: ActivatedRoute,
-    private localService: LocalService
+    private localService: LocalService,
 
   ) {
   }
@@ -70,5 +71,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
   defaultPage() {
     this.localService.setJsonValue('productPage', 1);
     this.page = 1;
+    console.log(this.page);
   }
 }

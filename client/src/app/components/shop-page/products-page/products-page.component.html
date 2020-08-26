@@ -3,9 +3,9 @@
     <div class="container">
 
       <mdb-breadcrumb-item>
-        <mdb-breadcrumb-item [routerLink]="'/'">Главная</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item [routerLink]="'/products'">Магазин</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item [routerLink]="'/products/subcategory/'+ this.subcategoryId">{{this.subcategoryName}}</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/'">Главная</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products'">Магазин</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products/subcategory/'+ this.subcategoryId">{{this.subcategoryName}}</mdb-breadcrumb-item>
         <mdb-breadcrumb-item class="active">{{this.productName}}</mdb-breadcrumb-item>
       </mdb-breadcrumb-item>
 

@@ -15,6 +15,7 @@ import {PandusService} from '../../../shared/pandus.service';
 import {IndicatorService} from '../../../shared/indicator.service';
 import {SubcategoryService} from '../../../shared/subcategory.service';
 import {NgbTabsetConfig} from '@ng-bootstrap/ng-bootstrap';
+import {ProductsComponent} from '../products/products.component';
 
 
 
@@ -70,6 +71,7 @@ export class ProductsPageComponent implements OnInit {
     private pandusService: PandusService,
     private indicatorService: IndicatorService,
     private subcategoryService: SubcategoryService,
+    private  productPage: ProductsComponent,
     config: NgbTabsetConfig
   ) {
     config.type = 'pills';
