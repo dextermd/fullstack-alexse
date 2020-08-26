@@ -6,7 +6,7 @@
         <mdb-breadcrumb-item [routerLink]="'/'">Главная</mdb-breadcrumb-item>
         <mdb-breadcrumb-item [routerLink]="'/products'">Магазин</mdb-breadcrumb-item>
         <mdb-breadcrumb-item [routerLink]="'/products/subcategory/'+ this.subcategoryId">{{this.subcategoryName}}</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item class="active">Продукт</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item class="active">{{this.productName}}</mdb-breadcrumb-item>
       </mdb-breadcrumb-item>
 
     </div>
@@ -267,13 +267,13 @@
 
       <ngb-tabset [destroyOnHide]="false">
 
-        <ngb-tab title="Технические параметры">
+        <ngb-tab  title="Технические параметры">
           <ng-template ngbTabContent>
             <quill-view-html [content]="product.spec"></quill-view-html>
           </ng-template>
         </ngb-tab>
 
-        <ngb-tab title="Функциональные возможности">
+        <ngb-tab  title="Функциональные возможности">
           <ng-template ngbTabContent>
             <quill-view-html [content]="product.functions"></quill-view-html>
           </ng-template>

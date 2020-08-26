@@ -1,0 +1,13 @@
+::ng-deep .nav-pills a.nav-link,
+::ng-deep .nav-pills .show > a.nav-link {
+  color: #fff;
+  border-radius: 0;
+  background-color: dodgerblue;
+}
+
+::ng-deep .nav-pills a.nav-link.active,
+::ng-deep .nav-pills .show > a.nav-link {
+  color: #fff;
+  border-radius: 0;
+  background-color: blue;
+}

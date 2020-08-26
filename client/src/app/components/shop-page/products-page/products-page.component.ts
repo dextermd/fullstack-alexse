@@ -13,7 +13,8 @@ import {AlertService} from '../../../admin/shared/services/alert.service';
 import {CasaService} from '../../../shared/casa.service';
 import {PandusService} from '../../../shared/pandus.service';
 import {IndicatorService} from '../../../shared/indicator.service';
-import {SubcategoryService} from "../../../shared/subcategory.service";
+import {SubcategoryService} from '../../../shared/subcategory.service';
+import {NgbTabsetConfig} from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -55,6 +56,7 @@ export class ProductsPageComponent implements OnInit {
   subcategory;
   subcategoryName;
   subcategoryId;
+  productName;
 
 
   constructor(
@@ -67,8 +69,10 @@ export class ProductsPageComponent implements OnInit {
     private casaService: CasaService,
     private pandusService: PandusService,
     private indicatorService: IndicatorService,
-    private subcategoryService: SubcategoryService
+    private subcategoryService: SubcategoryService,
+    config: NgbTabsetConfig
   ) {
+    config.type = 'pills';
   }
 
 
@@ -97,6 +101,7 @@ export class ProductsPageComponent implements OnInit {
         }),
         map((products: any) => {
           console.log(products);
+          this.productName = products.name;
           for (const i in this.subcategory) {
             if (products.subcategory === this.subcategory[i]._id){
               this.subcategoryId = this.subcategory[i]._id;

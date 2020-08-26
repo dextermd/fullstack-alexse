@@ -18,7 +18,11 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     HttpClientModule,
     NgbModule,
-    QuillModule.forRoot(),
+    QuillModule.forRoot({
+      modules: {
+        table: true,
+      }
+    }),
     CKEditorModule,
     FormsModule,
     NgxPaginationModule,
