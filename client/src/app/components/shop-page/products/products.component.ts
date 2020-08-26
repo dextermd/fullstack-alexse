@@ -61,9 +61,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   }
 
 
-  colapse() {
-   return this.colapsee = false;
-  }
+
 
   pageChanged(page: number) {
     this.localService.setJsonValue('productPage', page);

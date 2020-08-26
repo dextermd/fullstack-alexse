@@ -116,7 +116,7 @@
             <div *ngIf="subproductCategory$ | async as productSubCategory">
               <ng-container *ngFor="let psubcategory of productSubCategory">
                 <ng-container *ngIf="pcategory._id === psubcategory.category">
-                  <a (click)="colapse()" (click)="defaultPage()"  [routerLink]="['/products/subcategory', psubcategory._id]"
+                  <a (click)="defaultPage()"  [routerLink]="['/products/subcategory', psubcategory._id]"
                      class="list-group-item list-group-item-action waves-light "> {{psubcategory.name}}</a>
                 </ng-container>
               </ng-container>
