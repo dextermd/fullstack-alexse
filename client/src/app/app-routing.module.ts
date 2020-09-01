@@ -28,7 +28,8 @@ import {ThankyouPageComponent} from './components/thankyou-page/thankyou-page.co
 import {SignUpComponent} from './user/sign-up/sign-up.component';
 import {LoginComponent} from './user/login/login.component';
 import {AuthGuard} from './classes/auth.guard';
-import {IndustrialComponent} from "./components/industrial/industrial.component";
+import {IndustrialComponent} from './components/industrial/industrial.component';
+import {StaticAutoPageComponent} from './components/industrial/category-page/static-auto-page/static-auto-page.component';
 
 
 
@@ -64,6 +65,7 @@ const routes: Routes = [
       {path: 'price-list', component: CheckoutPageComponent},
       {path: 'certifications', component: ThankyouPageComponent},
       {path: 'industrial', component: IndustrialComponent},
+      {path: 'static-auto', component: StaticAutoPageComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
       {path: 'account/login', component: LoginComponent},

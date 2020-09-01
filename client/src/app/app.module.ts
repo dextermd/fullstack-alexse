@@ -164,6 +164,8 @@ import { CategoryPageComponent } from './components/industrial/category-page/cat
 import { IconListComponent } from './components/industrial/category-page/icon-list/icon-list.component';
 import { SupportIndusComponent } from './components/industrial/category-page/support-indus/support-indus.component';
 import { TextIndusComponent } from './components/industrial/category-page/text-indus/text-indus.component';
+import { StaticAutoPageComponent } from './components/industrial/category-page/static-auto-page/static-auto-page.component';
+import { HeaderAutoComponent } from './components/industrial/category-page/static-auto-page/header-auto/header-auto.component';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData(roLocale, 'ro');
@@ -322,6 +324,8 @@ registerLocaleData(roLocale, 'ro');
     IconListComponent,
     SupportIndusComponent,
     TextIndusComponent,
+    StaticAutoPageComponent,
+    HeaderAutoComponent,
 
   ],
   imports: [
