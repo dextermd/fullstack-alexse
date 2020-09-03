@@ -3,10 +3,10 @@
   <div class="flex-center">
 
 <div class="btn-group pb-4">
-  <label  mdbBtn color="primary" [(ngModel)]="radioModel" mdbRadio="Left" mdbWavesEffect>
+  <label  mdbBtn color="{{this.color}}" (click)="changeColor()"  [(ngModel)]="radioModel" mdbRadio="Left" mdbWavesEffect>
     Бетонные автомобильные весы
   </label>
-  <label mdbBtn color="primary" [(ngModel)]="radioModel" mdbRadio="Right" mdbWavesEffect>
+  <label  mdbBtn color="{{this.colorTwo}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="Right" mdbWavesEffect>
     Металические автомобильные весы
   </label>
 </div>
@@ -14,6 +14,52 @@
 
 
 <div *ngIf="radioModel == 'Left'" class="container">
+  <div class="pb-3" style="font-family: 'Times New Roman'">
+    <h5 class="black-text">
+      Конструкция железобетонных весов представляет собой металлический каркас с арматурной сеткой, который заливается бетоном на месте установки.
+      Благодаря высокой стойкости к коррозии, воздействию солей, кислот и щелочей, весы имеют повышенный срок эксплуатации и хорошо зарекомендовали себя на предприятиях со сложными условиями эксплуатации.
+    </h5>
+  </div>
+
+  <div class="pb-3">
+  <h1 class="h2 text-center">Дополнительно могут комплектоваться</h1>
+  </div>
+  <div class="flex-center">
+    <div class="row">
+      <div class="col">
+        <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="Выносное индикаторное табло" container="body"  class="pr-5 pb-2">
+      </div>
+      <div class="col">
+        <img src="assets/industrial/icons/Border.png" ngbTooltip="Ограждения" container="body"  class="pr-5 pb-2">
+      </div>
+      <div class="col">
+        <img src="assets/industrial/icons/DisplayShockProtection.png" ngbTooltip="Защита от молний индикаторного блока" container="body"  class="pr-5 pb-2">
+      </div>
+      <div class="col">
+        <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="Цифровые датчики" container="body"  class="pr-5 pb-2">
+      </div>
+      <div class="col">
+        <img src="assets/industrial/icons/lights.png" ngbTooltip="Система управления потоком - светофоры" container="body"  class="pr-5 pb-2">
+      </div>
+      <div class="col">
+        <img src="assets/industrial/icons/barrier.png" ngbTooltip="Система управления потоком – шлагбаумы" container="body"  class="pr-5 pb-2">
+      </div>
+      <div class="col">
+        <img src="assets/industrial/icons/Photo.png" ngbTooltip="Система регистрации изображения взвешиваемого автомобиля" container="body"  class="pr-5 pb-2">
+      </div>
+      <div class="col">
+        <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="Система идентификации транспорта RFID" container="body"  class="pr-5 pb-2">
+      </div>
+      <div class="col">
+        <img src="assets/industrial/icons/Automatic.png" ngbTooltip="Управление весами и регистрация взвешивания без участия оператора" container="body"  class="pr-5 pb-2">
+      </div>
+
+    </div>
+  </div>
+
+
+
+
   <div lightbox-group class=" ">
   <div class="row ">
     <div class="col-4 py-1 my-1">
@@ -91,47 +137,9 @@
   </div>
 </div>
 
-  <div class="pt-3 pb-3" style="font-family: 'Times New Roman'">
-    <h5 class="black-text">
-      Конструкция железобетонных весов представляет собой металлический каркас с арматурной сеткой, который заливается бетоном на месте установки.
-      Благодаря высокой стойкости к коррозии, воздействию солей, кислот и щелочей, весы имеют повышенный срок эксплуатации и хорошо зарекомендовали себя на предприятиях со сложными условиями эксплуатации.
-    </h5>
-  </div>
 
-  <h1 class="h2 text-center">Дополнительно могут комплектоваться</h1>
 
-  <div class="flex-center pt-2 pb-2">
-    <div class="row">
-      <div class="col">
-        <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="Выносное индикаторное табло" container="body"  class="pr-5 pb-5">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/Border.png" ngbTooltip="Ограждения" container="body"  class="pr-5 pb-5">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/DisplayShockProtection.png" ngbTooltip="Защита от молний индикаторного блока" container="body"  class="pr-5 pb-5">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="Цифровые датчики" container="body"  class="pr-5 pb-5">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/lights.png" ngbTooltip="Система управления потоком - светофоры" container="body"  class="pr-5 pb-5">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/barrier.png" ngbTooltip="Система управления потоком – шлагбаумы" container="body"  class="pr-5 pb-5">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/Photo.png" ngbTooltip="Система регистрации изображения взвешиваемого автомобиля" container="body"  class="pr-5 pb-5">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="Система идентификации транспорта RFID" container="body"  class="pr-5 pb-5">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/Automatic.png" ngbTooltip="Управление весами и регистрация взвешивания без участия оператора" container="body"  class="pr-5 pb-5">
-      </div>
 
-    </div>
-  </div>
   <!--Grid row-->
   <div class="py-2 my-2">
     <div class="row flex-center">
@@ -172,48 +180,19 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
   <div *ngIf="radioModel == 'Right'" class="container">
-    <div lightbox-group class=" ">
-      <div class="row ">
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery1.png" alt="">
-        </div>
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery2.png" alt="">
 
-        </div>
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery3.png" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery4.png" alt="">
-        </div>
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery5.jpg" alt="">
-        </div>
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery6.jpg" alt="">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery7.jpg" alt="">
-
-        </div>
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery8.jpg" alt="">
-
-        </div>
-        <div class="col-4 py-1 my-1">
-          <img lightbox class="img-fluid" src="assets/gallery/gollery9.jpg" alt="">
-
-        </div>
-      </div>
-    </div>
-
-    <div class="pt-3 pb-3" style="font-family: 'Times New Roman'">
+    <div class="pt-0 pb-3" style="font-family: 'Times New Roman'">
       <h5 class="black-text">
         Платформа весов полностью состоит из металла, конструктивно выполнена из параллельных секций, которые образуют две колеи.
         Суммарный вес платформ не превышает 8 тонн, что позволяет перевозить весы на новое место установки стандартным грузовым транспортом.
@@ -263,6 +242,48 @@
         </div>
       </div>
     </div>
+
+    <div lightbox-group class=" ">
+      <div class="row ">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery1.png" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery2.png" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery3.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery4.png" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery5.jpg" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery6.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery7.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery8.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gollery9.jpg" alt="">
+
+        </div>
+      </div>
+    </div>
+
+
 
     <!--Grid row-->
     <div class="py-2 my-2">
