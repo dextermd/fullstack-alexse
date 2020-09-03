@@ -233,9 +233,9 @@
                     </button>
                   </div>
 
-
+                  <!--|| product.subcategory === platgoProd-->
                   <div
-                    *ngIf="product.subcategory === platProd || product.subcategory === platgoProd"
+                    *ngIf="product.subcategory === platProd"
                     class="pt-1">
                     <button [disabled]="!product.quantity"
                             (click)="addToOrderIndAndPand(product, selectedIndicator, priceIndicator, selectedPandus, pricePandus)"
@@ -244,9 +244,9 @@
                     </button>
                   </div>
 
-
+                <!--&&  product.subcategory !== platgoProd-->
                   <div
-                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platProd &&  product.subcategory !== platgoProd"
+                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platProd"
                     class="pt-1">
                     <button [disabled]="!product.quantity" (click)="addToOrder(product)"
                             class="btn btn-primary btn-rounded">
