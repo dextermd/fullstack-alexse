@@ -29,7 +29,7 @@ export class ProductsPageComponent implements OnInit {
 
   casaProd = '5f1e87661c902614531f7ece' ;
   platProd = '5f1e882a1c902614531f7ecf';
-  platgoProd = '5f1e8ce51c902614531f7ed0';
+  platgoProd = '5f1e8ce51c902614531f7ed011';
   pandusNoHaveProd = '5f27b107fe44ee3bbbb84496';
 
 

@@ -104,11 +104,9 @@
               </div>
             </div>
 
-<!--
-            || product.subcategory === platgoProd
--->
+
             <div
-              *ngIf="product.subcategory === platProd">
+              *ngIf="product.subcategory === platProd || product.subcategory === platgoProd">
 
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -235,9 +233,9 @@
                     </button>
                   </div>
 
-                  <!--|| product.subcategory === platgoProd-->
+
                   <div
-                    *ngIf="product.subcategory === platProd"
+                    *ngIf="product.subcategory === platProd || product.subcategory === platgoProd"
                     class="pt-1">
                     <button [disabled]="!product.quantity"
                             (click)="addToOrderIndAndPand(product, selectedIndicator, priceIndicator, selectedPandus, pricePandus)"
@@ -246,9 +244,9 @@
                     </button>
                   </div>
 
-                <!--&&  product.subcategory !== platgoProd-->
+
                   <div
-                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platProd"
+                    *ngIf="product.subcategory !== casaProd &&  product.subcategory !== platProd &&  product.subcategory !== platgoProd"
                     class="pt-1">
                     <button [disabled]="!product.quantity" (click)="addToOrder(product)"
                             class="btn btn-primary btn-rounded">
