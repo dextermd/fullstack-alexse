@@ -102,6 +102,14 @@
         </div>
       </div>
 
+      <div>
+        <div class="list-group my-2 py-2">
+          <a (click)="defaultPage()" [routerLink]="'/industrial'"  class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
+            Промышленное
+          </a>
+        </div>
+      </div>
+
 
 
       <ng-container *ngIf="productCategory$ | async as productCategory">

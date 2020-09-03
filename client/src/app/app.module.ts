@@ -166,6 +166,8 @@ import { SupportIndusComponent } from './components/industrial/category-page/sup
 import { TextIndusComponent } from './components/industrial/category-page/text-indus/text-indus.component';
 import { StaticAutoPageComponent } from './components/industrial/category-page/static-auto-page/static-auto-page.component';
 import { HeaderAutoComponent } from './components/industrial/category-page/static-auto-page/header-auto/header-auto.component';
+import { TextFirstAutoComponent } from './components/industrial/category-page/static-auto-page/text-first-auto/text-first-auto.component';
+import { ImagesFirstAutoComponent } from './components/industrial/category-page/static-auto-page/images-first-auto/images-first-auto.component';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData(roLocale, 'ro');
@@ -326,6 +328,8 @@ registerLocaleData(roLocale, 'ro');
     TextIndusComponent,
     StaticAutoPageComponent,
     HeaderAutoComponent,
+    TextFirstAutoComponent,
+    ImagesFirstAutoComponent,
 
   ],
   imports: [

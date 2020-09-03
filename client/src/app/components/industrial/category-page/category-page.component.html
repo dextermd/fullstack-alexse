@@ -1,5 +1,9 @@
 <!--Section: Content-->
-<section class="text-center pt-5">
+<section class="container pt-2">
+  <mdb-breadcrumb-item>
+    <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
+    <mdb-breadcrumb-item class="active">Автомобильные весы</mdb-breadcrumb-item>
+  </mdb-breadcrumb-item>
 
   <h1 class="text-center font-weight-bold mb-4 pb-2 wow zoomIn" data-wow-delay="0.3s">Автомобильные весы</h1>
 
@@ -15,7 +19,7 @@
       <!-- Image -->
       <div class="view overlay rounded z-depth-1-half mb-4 wow fadeInLeft" data-wow-delay="0.3s">
         <img class="img-fluid font-weight-bold" style="width: 700px;max-height: 330px" src="assets/industrial/1.png" alt="Sample image">
-        <a [routerLink]="'/'">
+        <a [routerLink]="'/static-auto'">
           <div class="mask rgba-white-slight waves-light" mdbWavesEffect></div>
         </a>
 
