@@ -25,6 +25,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   sortData: Product[] = [];
   dSub: Subscription;
   i = 0;
+  colapse = true;
 
   constructor(
     private productService: ProductService,
@@ -43,6 +44,8 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.dSub = this.route.params.subscribe((params: Params) => {
       if (params['id']) {
         this.products$ = this.productService.getByCatIdProductAll(params['id']);
+        this.colapse = false;
+
       } else {
         this.products$ = this.productService.getAllProduct();
 

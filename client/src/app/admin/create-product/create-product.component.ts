@@ -62,6 +62,8 @@ export class CreateProductComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+
     this.categoryService.getAllCategory().subscribe(categories => {
       this.categories = categories;
     });
@@ -133,14 +135,13 @@ export class CreateProductComponent implements OnInit {
               imageThree: products.imgThree,
               imageFour: products.imgFour,
             });
-
             this.imagePreview = products.img[0].path;
             this.imageOnePreview = products.imgOne[0].path;
             this.imageTwoPreview = products.imgTwo[0].path;
             this.imageThreePreview = products.imgThree[0].path;
             this.imageFourPreview = products.imgFour[0].path;
+
           }
-          console.log(this.imageOnePreview);
           this.form.enable();
         },
         error => this.alert.warning(error.error.message)
@@ -151,6 +152,7 @@ export class CreateProductComponent implements OnInit {
 
   onFileUpload(event: any) {
     const file = event.target.files[0];
+
     this.image = file;
 
     const reader = new FileReader();
@@ -161,8 +163,11 @@ export class CreateProductComponent implements OnInit {
     reader.readAsDataURL(file);
   }
 
+
+
   onFileOneUpload(event: any) {
     const file = event.target.files[0];
+
     this.imageOne = file;
     const reader = new FileReader();
     reader.onload = () => {
@@ -170,6 +175,7 @@ export class CreateProductComponent implements OnInit {
     };
 
     reader.readAsDataURL(file);
+
   }
 
 
@@ -211,29 +217,24 @@ export class CreateProductComponent implements OnInit {
 
   triggerClick() {
     this.inputRef.nativeElement.click();
-    this.imagePreview = '';
 
 
   }
 
   triggerOneClick() {
     this.inputOneRef.nativeElement.click();
-    this.imageOnePreview = '';
   }
 
   triggerTwoClick() {
     this.inputTwoRef.nativeElement.click();
-    this.imageTwoPreview = '';
   }
 
   triggerThreeClick() {
     this.inputThreeRef.nativeElement.click();
-    this.imageThreePreview = '';
   }
 
   triggerFourClick() {
     this.inputFourRef.nativeElement.click();
-    this.imageFourPreview = '';
 
   }
 
@@ -264,8 +265,8 @@ export class CreateProductComponent implements OnInit {
         this.imageTwo,
         this.imageThree,
         this.imageFour,
-
       );
+
 
     this.form.disable();
     if (this.isNew) {
@@ -295,6 +296,7 @@ export class CreateProductComponent implements OnInit {
           this.imageFour,
         );
 
+
     }
     obs$.subscribe(
       product => {
@@ -315,5 +317,182 @@ export class CreateProductComponent implements OnInit {
     console.log(casa);
 
   }
+
+
+  deleteClick() {
+    this.imagePreview = '';
+    // this.image = null;
+    // console.log(this.image);
+
+    let obs$;
+    console.log('lol' , this.form.value.casa);
+
+    if (this.isNew) {
+      console.log(this.form.value.casa);
+    } else {
+      obs$ = this.productService
+        .updateImage(
+          this.products._id,
+          this.image,
+        );
+    }
+
+
+    obs$.subscribe(
+      product => {
+        this.products = product;
+        this.alert.success('Изминения сохранены.');
+
+        this.form.enable();
+      },
+      error => {
+        this.alert.danger(error.error.message);
+        this.form.enable();
+      },
+      () => this.router.navigate(['/admin/product'])
+    );
+
+  }
+
+
+  deleteOneClick() {
+    this.imageOnePreview = '';
+    // this.imageOne = null;
+    // console.log(this.imageOne);
+
+    let obs$;
+    console.log('lol' , this.form.value.casa);
+
+    if (this.isNew) {
+      console.log(this.form.value.casa);
+    } else {
+      obs$ = this.productService
+        .updateImageOne(
+          this.products._id,
+          this.imageOne,
+        );
+    }
+
+
+    obs$.subscribe(
+      product => {
+        this.products = product;
+        this.alert.success('Изминения сохранены.');
+
+        this.form.enable();
+      },
+      error => {
+        this.alert.danger(error.error.message);
+        this.form.enable();
+      },
+      () => this.router.navigate(['/admin/product'])
+    );
+
+    }
+
+
+
+  deleteTwoClick() {
+    this.imageTwoPreview = '';
+    // this.imageTwo = null;
+
+    let obs$;
+    console.log('lol' , this.form.value.casa);
+
+    if (this.isNew) {
+      console.log(this.form.value.casa);
+    } else {
+      obs$ = this.productService
+        .updateImageTwo(
+          this.products._id,
+          this.imageTwo,
+        );
+    }
+
+
+    obs$.subscribe(
+      product => {
+        this.products = product;
+        this.alert.success('Изминения сохранены.');
+
+        this.form.enable();
+      },
+      error => {
+        this.alert.danger(error.error.message);
+        this.form.enable();
+      },
+      () => this.router.navigate(['/admin/product'])
+    );
+
+  }
+
+  deleteThreeClick() {
+    this.imageThreePreview = '';
+    // this.imageThree = null;
+
+    let obs$;
+    console.log('lol' , this.form.value.casa);
+
+    if (this.isNew) {
+      console.log(this.form.value.casa);
+    } else {
+      obs$ = this.productService
+        .updateImageThree(
+          this.products._id,
+          this.imageThree,
+        );
+    }
+
+
+    obs$.subscribe(
+      product => {
+        this.products = product;
+        this.alert.success('Изминения сохранены.');
+
+        this.form.enable();
+      },
+      error => {
+        this.alert.danger(error.error.message);
+        this.form.enable();
+      },
+      () => this.router.navigate(['/admin/product'])
+    );
+
+  }
+
+  deleteFourClick() {
+    this.imageFourPreview = '';
+    // this.imageFour = null;
+
+    let obs$;
+    console.log('lol' , this.form.value.casa);
+
+    if (this.isNew) {
+      console.log(this.form.value.casa);
+    } else {
+      obs$ = this.productService
+        .updateImageFour(
+          this.products._id,
+          this.imageFour,
+        );
+    }
+
+
+    obs$.subscribe(
+      product => {
+        this.products = product;
+        this.alert.success('Изминения сохранены.');
+
+        this.form.enable();
+      },
+      error => {
+        this.alert.danger(error.error.message);
+        this.form.enable();
+      },
+      () => this.router.navigate(['/admin/product'])
+    );
+  }
+
+
 }
 

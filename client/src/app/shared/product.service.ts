@@ -5,8 +5,10 @@ import {Message, Product} from '../admin/shared/interfaces';
 
 
 @Injectable({providedIn: 'root'})
+
 export class ProductService {
 
+  lol: File;
 
   httpHeaders = new HttpHeaders({'Content-type': 'application-json'});
 
@@ -114,6 +116,7 @@ export class ProductService {
     if (image) {
       fd.append('image', image, image.name);
     }
+
     if (imageOne) {
       fd.append('imageOne', imageOne, imageOne.name);
     }
@@ -150,5 +153,51 @@ export class ProductService {
     return this.http.delete<Message>(`/api/position/${id}`);
   }
 
+
+
+
+  updateImage(id: string, image?: File): Observable<Product> {
+    const fd = new FormData();
+    if (image) {
+      fd.append('image', image, image.name);
+    }
+    return this.http.patch<Product>(`/api/position/image/${id}`, fd);
+  }
+
+
+  updateImageOne(id: string, imageOne?: File,): Observable<Product> {
+    const fd = new FormData();
+    if (imageOne) {
+      fd.append('imageOne', imageOne, imageOne.name);
+    }
+    return this.http.patch<Product>(`/api/position/imageOne/${id}`, fd);
+  }
+
+
+  updateImageTwo(id: string, imageTwo?: File): Observable<Product> {
+    const fd = new FormData();
+    if (imageTwo) {
+      fd.append('imageTwo', imageTwo, imageTwo.name);
+    }
+    return this.http.patch<Product>(`/api/position/imageTwo/${id}`, fd);
+  }
+
+
+  updateImageThree(id: string, imageThree?: File): Observable<Product> {
+    const fd = new FormData();
+    if (imageThree) {
+      fd.append('imageThree', imageThree, imageThree.name);
+    }
+    return this.http.patch<Product>(`/api/position/imageThree/${id}`, fd);
+  }
+
+
+  updateImageFour(id: string, imageFour?: File): Observable<Product> {
+    const fd = new FormData();
+    if (imageFour) {
+      fd.append('imageFour', imageFour, imageFour.name);
+    }
+    return this.http.patch<Product>(`/api/position/imageFour/${id}`, fd);
+  }
 
 }

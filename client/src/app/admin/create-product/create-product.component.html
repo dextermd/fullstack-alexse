@@ -146,13 +146,29 @@
               Загрузить изображение
             </button>
           </div>
+
+          <div class="pl-5 file-field md-form">
+            <button
+              (click)="deleteClick()"
+              type="button"
+              mdbBtn
+              color="danger"
+              mdbWavesEffect
+            >
+              Убрать
+            </button>
+          </div>
         </div>
+
+
+
         <div class="col">
           <div class="file-field md-form">
             <input
               type="file"
               class="d-none"
               #inputOne
+              id="inputOne"
               (change)="onFileOneUpload($event)"
             >
             <button
@@ -166,7 +182,26 @@
               Загрузить изображение №1
             </button>
           </div>
+
+
+
+          <div class="pl-5 file-field md-form">
+            <button
+              (click)="deleteOneClick()"
+              type="button"
+              mdbBtn
+              color="yellow"
+              mdbWavesEffect
+            >
+             Убрать
+            </button>
+          </div>
+
         </div>
+
+
+
+
         <div class="col">
           <div class="file-field md-form">
             <input
@@ -186,7 +221,20 @@
               Загрузить изображение №2
             </button>
           </div>
+          <div class="pl-5 file-field md-form">
+            <button
+              (click)="deleteTwoClick()"
+              type="button"
+              mdbBtn
+              color="danger"
+              mdbWavesEffect
+            >
+              Убрать
+            </button>
+          </div>
         </div>
+
+
         <div class="col">
           <div class="file-field md-form">
             <input
@@ -206,7 +254,21 @@
               Загрузить изображение №3
             </button>
           </div>
+
+          <div class="pl-5 file-field md-form">
+            <button
+              (click)="deleteThreeClick()"
+              type="button"
+              mdbBtn
+              color="danger"
+              mdbWavesEffect
+            >
+              Убрать
+            </button>
+          </div>
         </div>
+
+
         <div class="col">
           <div class="file-field md-form">
             <input
@@ -224,6 +286,18 @@
               mdbWavesEffect
             >
               Загрузить изображение №4
+            </button>
+          </div>
+
+          <div class="pl-5 file-field md-form">
+            <button
+              (click)="deleteFourClick()"
+              type="button"
+              mdbBtn
+              color="danger"
+              mdbWavesEffect
+            >
+              Убрать
             </button>
           </div>
         </div>
