@@ -171,7 +171,17 @@
   </div>
   <div class="py-3 my-3">
     <h1 class="h2 text-center">Характеристики</h1>
-    <img lightbox backgroundColor="white" src="assets/gallery/tti.png" class="img-fluid" alt="">
+<!--    <img lightbox backgroundColor="white" src="assets/gallery/tti.png" class="img-fluid" alt="">-->
+    <table mdbTable striped="true" bordered="true">
+      <thead>
+      </thead>
+      <tbody>
+      <tr mdbTableCol *ngFor="let el of elements">
+        <td class="font-weight-bold">{{el.first}}</td>
+        <td class="font-weight-bold">{{el.last}}</td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
@@ -316,8 +326,20 @@
     </div>
     <div class="py-3 my-3">
     <h1 class="h2 text-center">Характеристики</h1>
-    <img lightbox backgroundColor="white" src="assets/gallery/tti.png" class="img-fluid" alt="">
+<!--    <img lightbox backgroundColor="white" src="assets/gallery/tti.png" class="img-fluid" alt="">-->
+      <table mdbTable striped="true" bordered="true">
+        <thead>
+        </thead>
+        <tbody>
+        <tr mdbTableCol *ngFor="let el of elements">
+          <td class="font-weight-bold">{{el.first}}</td>
+          <td class="font-weight-bold">{{el.last}}</td>
+        </tr>
+        </tbody>
+      </table>
     </div>
+
+
 
   </div>
 

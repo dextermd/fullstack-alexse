@@ -385,7 +385,7 @@
 
           <!--Image-->
           <div class="view overlay z-depth-1-half">
-            <img lightbox backgroundColor="white" src="assets/cert/bsn.jpg" class="img-fluid" alt="">
+            <img lightbox backgroundColor="white" src="assets/cert/bsaa.jpg" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -407,8 +407,18 @@
     </div>
     <div class="py-3 my-3">
       <h1 class="h2 text-center">Характеристики</h1>
-      <div class="text-center">
-        <img lightbox backgroundColor="white" src="assets/industrial/modern/buble.png" class="img-fluid" alt="">
+      <div class="container">
+<!--        <img lightbox backgroundColor="white" src="assets/industrial/modern/buble.png" class="img-fluid" alt="">-->
+        <table mdbTable striped="true" bordered="true">
+          <thead>
+          </thead>
+          <tbody>
+          <tr mdbTableCol *ngFor="let el of elements">
+            <td class="font-weight-bold">{{el.first}}</td>
+            <td class="font-weight-bold">{{el.last}}</td>
+          </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
