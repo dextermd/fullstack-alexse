@@ -168,6 +168,13 @@ import { StaticAutoPageComponent } from './components/industrial/category-page/s
 import { HeaderAutoComponent } from './components/industrial/category-page/static-auto-page/header-auto/header-auto.component';
 import { TextFirstAutoComponent } from './components/industrial/category-page/static-auto-page/text-first-auto/text-first-auto.component';
 import { ImagesFirstAutoComponent } from './components/industrial/category-page/static-auto-page/images-first-auto/images-first-auto.component';
+import { MovingFermerPageComponent } from './components/industrial/moving-fermer-page/moving-fermer-page.component';
+import { PerenosnieNagruzkaPageComponent } from './components/industrial/perenosnie-nagruzka-page/perenosnie-nagruzka-page.component';
+import { StaticNagrizkaPageComponent } from './components/industrial/static-nagrizka-page/static-nagrizka-page.component';
+import { BortSystemPageComponent } from './components/industrial/bort-system-page/bort-system-page.component';
+import { ModernAutoPageComponent } from './components/industrial/modern-auto-page/modern-auto-page.component';
+import { HeaderMovComponent } from './components/industrial/moving-fermer-page/header-mov/header-mov.component';
+import { TextFirstMovComponent } from './components/industrial/moving-fermer-page/text-first-mov/text-first-mov.component';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData(roLocale, 'ro');
@@ -330,6 +337,13 @@ registerLocaleData(roLocale, 'ro');
     HeaderAutoComponent,
     TextFirstAutoComponent,
     ImagesFirstAutoComponent,
+    MovingFermerPageComponent,
+    PerenosnieNagruzkaPageComponent,
+    StaticNagrizkaPageComponent,
+    BortSystemPageComponent,
+    ModernAutoPageComponent,
+    HeaderMovComponent,
+    TextFirstMovComponent,
 
   ],
   imports: [

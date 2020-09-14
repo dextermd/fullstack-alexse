@@ -30,6 +30,11 @@ import {LoginComponent} from './user/login/login.component';
 import {AuthGuard} from './classes/auth.guard';
 import {IndustrialComponent} from './components/industrial/industrial.component';
 import {StaticAutoPageComponent} from './components/industrial/category-page/static-auto-page/static-auto-page.component';
+import {MovingFermerPageComponent} from "./components/industrial/moving-fermer-page/moving-fermer-page.component";
+import {PerenosnieNagruzkaPageComponent} from "./components/industrial/perenosnie-nagruzka-page/perenosnie-nagruzka-page.component";
+import {StaticNagrizkaPageComponent} from "./components/industrial/static-nagrizka-page/static-nagrizka-page.component";
+import {BortSystemPageComponent} from "./components/industrial/bort-system-page/bort-system-page.component";
+import {ModernAutoPageComponent} from "./components/industrial/modern-auto-page/modern-auto-page.component";
 
 
 
@@ -65,7 +70,12 @@ const routes: Routes = [
       {path: 'price-list', component: CheckoutPageComponent},
       {path: 'certifications', component: ThankyouPageComponent},
       {path: 'industrial', component: IndustrialComponent},
-      {path: 'static-auto', component: StaticAutoPageComponent},
+      {path: 'stationary-automotive-scales', component: StaticAutoPageComponent},
+      {path: 'mobile-farmer-scales', component: MovingFermerPageComponent},
+      {path: 'portable-for-weighing-axle-loads', component: PerenosnieNagruzkaPageComponent},
+      {path: 'stationary-for-weighing-axle-loads', component: StaticNagrizkaPageComponent},
+      {path: 'on-board-weighing-systems', component: BortSystemPageComponent},
+      {path: 'modernization-of-automotive-scales', component: ModernAutoPageComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
       {path: 'account/login', component: LoginComponent},
