@@ -26,6 +26,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   dSub: Subscription;
   i = 0;
   colapse = true;
+  colapseOne = true;
 
   constructor(
     private productService: ProductService,

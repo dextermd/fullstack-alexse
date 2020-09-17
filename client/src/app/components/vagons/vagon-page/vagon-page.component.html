@@ -2,8 +2,8 @@
   <div class="container pt-2">
     <mdb-breadcrumb-item>
       <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/auto-index'">Автомобильные весы</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item class="active">ПЕРЕДВИЖНЫЕ ВЕСЫ ФЕРМЕР</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/wagon-index'">Вагонные весы</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">ВАГОННЫЕ ВЕСЫ</mdb-breadcrumb-item>
     </mdb-breadcrumb-item>
 
     <!--Section: Content-->
@@ -13,10 +13,10 @@
       <div class="row">
 
         <!-- Grid column -->
-        <div class="col-lg-7 mb-3 align-self-center text-center text-lg-left">
+        <div class="col-lg-8 mb-3 align-self-center text-center text-lg-left">
 
-          <h1 class="h2 mb-5">ПЕРЕДВИЖНЫЕ ВЕСЫ «ФЕРМЕР»</h1>
-          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">Весы предназначены для статического взвешивания малотоннажных грузовых автомобилей с полным заездом на платформу.
+          <h1 class="h2 mb-5">ВАГОННЫЕ ВЕСЫ</h1>
+          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">Вагонные весы предназначены для статического взвешивания железнодорожного транспорта с расцепкой и без и могут состоять из двух или трех платформ, на которые устанавливаются рельсы.
           </h5>
 
 
@@ -28,7 +28,7 @@
 
           <!-- Featured image -->
           <div class="view overlay">
-            <img class="img-fluid rounded-circle mx-auto" src="assets/move/logo.jpg" alt="Sample image">
+            <img class="img-fluid rounded-circle mx-auto" src="assets/industrial/vagon/logo.jpg" alt="Sample image">
 
           </div>
 
@@ -46,9 +46,28 @@
   <section class="container">
     <div style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        Передвижные, малогабаритные автомобильные весы «Фермер» не требуют специального фундамента и могут устанавливаются на горизонтальное дорожное покрытие (асфальт, бетон) или дорожные плиты. Благодаря оригинальной конструкции (вес не более 2,5 тонн, габаритные размеры со снятыми пандусами 6х3м), весы легко перевозятся стандартным грузовым автотранспортом.
+        В зависимости от типов вагонов используемых на предприятии, определяется ширина колеи:
+        <div class="card-body">
+          <ul class="mb-4">
+        <li><h6>«Российская колея» - 1520 мм. </h6></li>
+        <li><h6>«Европейская колея» - 1435 мм.</h6></li>
+        <li><h6>Возможно совмещение двух стандартов.</h6></li>
+          </ul>
+        </div>
       </h5>
     </div>
+
+
+    <div style="font-family: 'Times New Roman'">
+      <h5 class="black-text font-weight-bold">
+        Упрощенный процесс взвешивания экономит время.
+      </h5>
+      <h5 class="black-text">
+        Трехплатформенная конструкция весов, с возможностью отключения одной платформы, позволяют взвешивать практически любые вагоны без расцепки.<br>
+        Платформы весов устанавливаются в приямок небольшой глубины, что позволяет сэкономить на фундаментных работах.
+      </h5>
+    </div>
+
 
   </section>
 
@@ -67,36 +86,37 @@
       <div lightbox-group class=" ">
         <div class="row ">
           <div class="col-4 py-1 my-1">
-            <img lightbox class="img-fluid" src="assets/move/11.JPG" alt="">
+            <img lightbox class="img-fluid" src="assets/industrial/vagon/image003.jpg" alt="">
           </div>
           <div class="col-4 py-1 my-1">
-            <img lightbox class="img-fluid" src="assets/move/22.jpg" alt="">
+            <img lightbox class="img-fluid" src="assets/industrial/vagon/image005.jpg" alt="">
 
           </div>
           <div class="col-4 py-1 my-1">
-            <img lightbox class="img-fluid" src="assets/move/33.jpg" alt="">
+            <img lightbox class="img-fluid" src="assets/industrial/vagon/image007.jpg" alt="">
           </div>
         </div>
         <div class="row">
           <div class="col-4 py-1 my-1">
-            <img lightbox class="img-fluid" src="assets/move/44.jpg" alt="">
+            <img lightbox class="img-fluid" src="assets/industrial/vagon/image009.jpg" alt="">
           </div>
           <div class="col-4 py-1 my-1">
-            <img lightbox class="img-fluid" src="assets/move/55.jpg" alt="">
+            <img lightbox class="img-fluid" src="assets/industrial/vagon/image011.jpg" alt="">
           </div>
           <div class="col-4 py-1 my-1">
-            <img lightbox class="img-fluid" src="assets/move/66.JPG" alt="">
+            <img lightbox class="img-fluid" src="assets/industrial/vagon/image013.jpg" alt="">
           </div>
         </div>
 
 
         <div class="row flex-center">
           <div class="col-4 py-1 my-1">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GpoY0HwvHcw" allowfullscreen></iframe>
-            </div>
+            <img lightbox class="img-fluid" src="assets/industrial/vagon/image015.jpg" alt="">
           </div>
+          <div class="col-4 py-1 my-1">
+            <img lightbox class="img-fluid" src="assets/industrial/vagon/image017.jpg" alt="">
           </div>
+        </div>
 
 
       </div>
@@ -116,9 +136,7 @@
   <section class="container">
     <div style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        Электронный индикаторный блок MERAV 2000 подключается к компьютеру или ноутбуку посредством интерфейса RS232. Для автономной работы, до 72 часов, индикаторный блок имеет встроенный аккумулятор и подсветку дисплея. Если к весам нет возможности провести линию электропитания, индикатор со встроенным аккумулятором легко отсоединить для подзарядки. Показания веса на дисплее свободно читаются с расстояния в несколько метров.<br>
-        Датчики в весах имеют степень защиты от пыли и влаги IP68, что по сути, позволяет им работать даже в воде, и защищены от разрядов молнии. Рабочий температурный диапазон датчиков от -30°С до +45°С.<br>
-        Программное обеспечение для компьютера или ноутбука поставляется бесплатно и позволяет вести учет отвесов с сохранением фотографии момента взвешивания, выписывать весовые талоны и накладные. Поддерживает «двойное взвешивание» (брутто, тара) для вычисления веса нетто. При необходимости, обеспечивает удаленный доступ к данным о взвешиваниях из любой точки мира посредством приложения ScalesControl.<br>
+        Программное обеспечение для компьютера или ноутбука поставляется бесплатно и позволяет вести учет отвесов с сохранением фотографии момента взвешивания, выписывать весовые талоны и накладные. Поддерживает «двойное взвешивание» (брутто, тара) для вычисления веса нетто. При необходимости, обеспечивает удаленный доступ к данным о взвешиваниях из любой точки мира посредством приложения ScalesControl.
       </h5>
     </div>
 
@@ -144,9 +162,6 @@
         </div>
         <div class="col">
           <img src="assets/industrial/icons/RGML14.png" ngbTooltip="Весы соответствуют требованиям стандарта RGML14:2007 " container="body"  class="pr-4 pb-4">
-        </div>
-        <div class="col">
-          <img src="assets/industrial/icons/ramp.png" ngbTooltip="Передвижные металлические/бетонные пандусы" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
           <img src="assets/industrial/icons/Paint.png" ngbTooltip="Специальная окраска грузоприемной платформы для защиты от коррозии" container="body"  class="pr-4 pb-4">
@@ -177,6 +192,9 @@
     <div class="flex-center pt-2 pb-2">
       <div class="row">
         <div class="col">
+          <img src="assets/industrial/icons/plusplus.png" ngbTooltip="Система определения центра тяжести вагонов (в продольном направлении)" container="body"  class="pr-1 pb-1">
+        </div>
+        <div class="col">
           <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="Выносное индикаторное табло" container="body"  class="pr-2 pb-2">
         </div>
         <div class="col">
@@ -196,9 +214,6 @@
         </div>
         <div class="col">
           <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="Система идентификации транспорта RFID" container="body"  class="pr-2 pb-2">
-        </div>
-        <div class="col">
-          <img src="assets/industrial/icons/Automatic.png" ngbTooltip="Управление весами и регистрация взвешивания без участия оператора" container="body"  class="pr-2 pb-2">
         </div>
       </div>
     </div>
@@ -237,7 +252,7 @@
     <div class="py-3 my-3">
       <h1 class="h2 text-center">Характеристики</h1>
       <div class="">
-<!--      <img lightbox backgroundColor="white" src="assets/move/tech.png" class="img-fluid" alt="">-->
+        <!--      <img lightbox backgroundColor="white" src="assets/industrial/vagon/tech.png" class="img-fluid" alt="">-->
         <table mdbTable striped="true" bordered="true">
           <thead>
           </thead>

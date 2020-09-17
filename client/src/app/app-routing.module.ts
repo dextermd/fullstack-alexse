@@ -30,11 +30,19 @@ import {LoginComponent} from './user/login/login.component';
 import {AuthGuard} from './classes/auth.guard';
 import {IndustrialComponent} from './components/industrial/industrial.component';
 import {StaticAutoPageComponent} from './components/industrial/category-page/static-auto-page/static-auto-page.component';
-import {MovingFermerPageComponent} from "./components/industrial/moving-fermer-page/moving-fermer-page.component";
-import {PerenosnieNagruzkaPageComponent} from "./components/industrial/perenosnie-nagruzka-page/perenosnie-nagruzka-page.component";
-import {StaticNagrizkaPageComponent} from "./components/industrial/static-nagrizka-page/static-nagrizka-page.component";
-import {BortSystemPageComponent} from "./components/industrial/bort-system-page/bort-system-page.component";
-import {ModernAutoPageComponent} from "./components/industrial/modern-auto-page/modern-auto-page.component";
+import {MovingFermerPageComponent} from './components/industrial/moving-fermer-page/moving-fermer-page.component';
+import {PerenosnieNagruzkaPageComponent} from './components/industrial/perenosnie-nagruzka-page/perenosnie-nagruzka-page.component';
+import {StaticNagrizkaPageComponent} from './components/industrial/static-nagrizka-page/static-nagrizka-page.component';
+import {BortSystemPageComponent} from './components/industrial/bort-system-page/bort-system-page.component';
+import {ModernAutoPageComponent} from './components/industrial/modern-auto-page/modern-auto-page.component';
+import {VagonIndexPageComponent} from './components/vagons/vagon-index-page/vagon-index-page.component';
+import {VagonPageComponent} from './components/vagons/vagon-page/vagon-page.component';
+import {VagonModernPageComponent} from './components/vagons/vagon-modern-page/vagon-modern-page.component';
+import {DozatorIndexPageComponent} from './components/bunker/dozator-index-page/dozator-index-page.component';
+import {DozatorOpenPageComponent} from './components/bunker/dozator-open-page/dozator-open-page.component';
+import {DozatorViboiPageComponent} from './components/bunker/dozator-viboi-page/dozator-viboi-page.component';
+import {DozatorTablePageComponent} from './components/bunker/dozator-table-page/dozator-table-page.component';
+import {DozatorModernPageComponent} from './components/bunker/dozator-modern-page/dozator-modern-page.component';
 
 
 
@@ -69,13 +77,21 @@ const routes: Routes = [
       {path: 'cart', component: CartPageComponent},
       {path: 'price-list', component: CheckoutPageComponent},
       {path: 'certifications', component: ThankyouPageComponent},
-      {path: 'industrial', component: IndustrialComponent},
+      {path: 'auto-index', component: IndustrialComponent},
       {path: 'stationary-automotive-scales', component: StaticAutoPageComponent},
       {path: 'mobile-farmer-scales', component: MovingFermerPageComponent},
       {path: 'portable-for-weighing-axle-loads', component: PerenosnieNagruzkaPageComponent},
       {path: 'stationary-for-weighing-axle-loads', component: StaticNagrizkaPageComponent},
       {path: 'on-board-weighing-systems', component: BortSystemPageComponent},
       {path: 'modernization-of-automotive-scales', component: ModernAutoPageComponent},
+      {path: 'wagon-index', component: VagonIndexPageComponent},
+      {path: 'wagon-scales', component: VagonPageComponent},
+      {path: 'wagon-modern', component: VagonModernPageComponent},
+      {path: 'bunker-index', component: DozatorIndexPageComponent},
+      {path: 'bunker-scales', component: DozatorOpenPageComponent},
+      {path: 'dozator-table', component: DozatorTablePageComponent},
+      {path: 'filling-batcher', component: DozatorViboiPageComponent},
+      {path: 'modern-bunker-scales', component: DozatorModernPageComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
       {path: 'account/login', component: LoginComponent},

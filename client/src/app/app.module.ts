@@ -175,6 +175,14 @@ import { BortSystemPageComponent } from './components/industrial/bort-system-pag
 import { ModernAutoPageComponent } from './components/industrial/modern-auto-page/modern-auto-page.component';
 import { HeaderMovComponent } from './components/industrial/moving-fermer-page/header-mov/header-mov.component';
 import { TextFirstMovComponent } from './components/industrial/moving-fermer-page/text-first-mov/text-first-mov.component';
+import { VagonIndexPageComponent } from './components/vagons/vagon-index-page/vagon-index-page.component';
+import { VagonPageComponent } from './components/vagons/vagon-page/vagon-page.component';
+import { VagonModernPageComponent } from './components/vagons/vagon-modern-page/vagon-modern-page.component';
+import { DozatorModernPageComponent } from './components/bunker/dozator-modern-page/dozator-modern-page.component';
+import { DozatorIndexPageComponent } from './components/bunker/dozator-index-page/dozator-index-page.component';
+import { DozatorOpenPageComponent } from './components/bunker/dozator-open-page/dozator-open-page.component';
+import { DozatorTablePageComponent } from './components/bunker/dozator-table-page/dozator-table-page.component';
+import { DozatorViboiPageComponent } from './components/bunker/dozator-viboi-page/dozator-viboi-page.component';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData(roLocale, 'ro');
@@ -344,6 +352,14 @@ registerLocaleData(roLocale, 'ro');
     ModernAutoPageComponent,
     HeaderMovComponent,
     TextFirstMovComponent,
+    VagonIndexPageComponent,
+    VagonPageComponent,
+    VagonModernPageComponent,
+    DozatorModernPageComponent,
+    DozatorIndexPageComponent,
+    DozatorOpenPageComponent,
+    DozatorTablePageComponent,
+    DozatorViboiPageComponent,
 
   ],
   imports: [
