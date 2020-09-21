@@ -216,7 +216,7 @@
           <tbody>
           <tr mdbTableCol *ngFor="let el of elements">
             <td>{{el.one}}</td>
-            <td>{{el.two}}</td>
+            <td><div [innerHTML]="el.two"></div></td>
             <td>{{el.three}}</td>
             <td>{{el.four}}</td>
             <td>{{el.five}}</td>
