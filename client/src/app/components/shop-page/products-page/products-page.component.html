@@ -89,7 +89,58 @@
 
 
             <div *ngIf="product.subcategory === casaProd" class="input-group mb-3">
-              <div class="input-group-prepend">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="indicator1">Выбрать Индикатор</label>
+                  <select [(ngModel)]="selectedIndicator" (change)="onSelectInd(selectedIndicator)"
+                          class="browser-default custom-select" id="indicator1">
+                    <option value="MERAV2000">MERAV2000</option>
+                    <ng-container *ngFor="let indicat of indicatorS">
+                      <ng-container *ngFor="let indi of product.indicator">
+                        <ng-container *ngIf="indicat._id == indi">
+                          <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} Lei</option>
+                        </ng-container>
+                      </ng-container>
+                    </ng-container>
+                  </select>
+                </div>
+
+                <ng-container *ngFor="let indicat of indicatorS">
+                  <ng-container *ngIf="selectedIndicator === indicat.name ">
+                    <div class="container pt-3 pb-1">
+                      <!--Section: Content-->
+                      <section class="">
+                        <!--Grid row-->
+                        <div class="row">
+                          <!--Grid column-->
+                          <div class="col-lg-4 col-md-3 mb-4 mb-md-0">
+                            <!--Image-->
+                            <!--                            <div class="view overlay z-depth-1-half">-->
+                            <div class="">
+                              <img lightbox src="{{indicat.img}}" class="img-fluid" alt="">
+                            </div>
+                          </div>
+                          <!--Grid column-->
+                          <!--Grid column-->
+                          <div class="col-md-8 mb-2 mb-md-0">
+                            <quill-view [content]="indicat.content"></quill-view>
+                            <div *ngIf="indicat.price !== 0">
+                              <strong> + {{indicat.price | currency: 'MDL '}}</strong>
+                            </div>
+                          </div>
+                          <!--Grid column-->
+                        </div>
+                        <!--Grid row-->
+                      </section>
+                      <!--Section: Content-->
+                    </div>
+                  </ng-container>
+                </ng-container>
+
+              </div>
+
+
+                            <div class="input-group-prepend">
                 <label class="input-group-text" for="casa">Выбрать Опции</label>
                 <select [(ngModel)]="selected" (change)="onSelectCasa(selected)" class="browser-default custom-select"
                         id="casa">
@@ -227,7 +278,7 @@
                                                                  [(ngModel)]="product.quantity"></li>
 
                   <div *ngIf="product.subcategory === casaProd" class="pt-1">
-                    <button [disabled]="!product.quantity" (click)="addToOrderCasa(product, selected, priceCasa)"
+                    <button [disabled]="!product.quantity" (click)="addToOrderCasa(product, selected, priceCasa , selectedIndicator, priceIndicator)"
                             class="btn btn-primary btn-rounded">
                       <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> В Корзину
                     </button>

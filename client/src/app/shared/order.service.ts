@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {OrderProduct} from '../admin/shared/interfaces';
+import {OrderProduct, Product} from '../admin/shared/interfaces';
 import {LocalService} from './local.service';
 
 @Injectable({providedIn: 'root'})
@@ -84,7 +84,7 @@ export class OrderService {
   }
 
 
-  addCasa(position, casaName?, casaPrice?) {
+  addCasa(position, casaName?, casaPrice?, selectedIndicator?, priceIndicator?) {
     const orderPosition: OrderProduct = Object.assign({}, {
       name: position.name,
       img: position.img[0].path,
@@ -98,10 +98,10 @@ export class OrderService {
       ,
       indicator:
         [{
-          name: null,
+          name: selectedIndicator,
           content: null,
           img: '',
-          price: null
+          price: priceIndicator
         }]
       ,
       pandus:
@@ -128,7 +128,7 @@ export class OrderService {
       this.localService.getJsonValue('cartItems');
     }
 
-    const candidateCasaName = this.list.find(p => p._id === orderPosition._id && p.casa[0].name === orderPosition.casa[0].name);
+    const candidateCasaName = this.list.find(p => p._id === orderPosition._id && p.casa[0].name === orderPosition.casa[0].name && p.indicator[0].name === orderPosition.indicator[0].name);
     if (candidateCasaName) {
       candidateCasaName.quantity += orderPosition.quantity;
       this.cartItems += orderPosition.quantity;

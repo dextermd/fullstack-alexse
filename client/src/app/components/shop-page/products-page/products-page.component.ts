@@ -27,7 +27,7 @@ import {ProductsComponent} from '../products/products.component';
 })
 export class ProductsPageComponent implements OnInit {
 
-  casaProd = '5f1e87661c902614531f7ece11' ;
+  casaProd = '5f1fd24877bb31183d7fd10e' ;
   platProd = '5f1e882a1c902614531f7ecf';
   platgoProd = '5f1e8ce51c902614531f7ed011';
   platgogoProd = '5f1fd24877bb31183d7fd10e';
@@ -131,9 +131,9 @@ export class ProductsPageComponent implements OnInit {
     this.orderService.add(product);
   }
 
-  addToOrderCasa(product: Product, casaName?, casaPrice?) {
+  addToOrderCasa(product: Product, casaName?, casaPrice?, selectedIndicator?, priceIndicator?) {
     this.alert.success(`Добавлено x${product.quantity}`);
-    this.orderService.addCasa(product, casaName, casaPrice);
+    this.orderService.addCasa(product, casaName, casaPrice, selectedIndicator, priceIndicator);
   }
 
   addToOrderIndAndPand(product: Product, selectedIndicator, priceIndicator, selectedPandus?, pricePandus?) {
