@@ -44,7 +44,7 @@ export class ProductsPageComponent implements OnInit {
   casaS: CasaOption[] = [];
   pandusS: PandusOption[] = [];
   indicatorS: IndicatorOption[] = [];
-  selected = 'Без аккумулятора';
+  selected = 'Без колес';
   selectedIndicator = 'MERAV2000';
   selectedPandus = 'Без пандусов';
   price = 0;
