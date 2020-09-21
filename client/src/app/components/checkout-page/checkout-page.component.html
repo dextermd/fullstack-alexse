@@ -13,7 +13,7 @@
   <tr  *ngFor="let prod of products">
     <th  scope="row">{{prod.code}}</th>
     <td>
-      <img style="height: 100px" src="{{prod.img[0].path}}" alt="" class="img-fluid z-depth-0">
+      <a [routerLink]="'/products/item/'+ prod._id" ><img style="height: 100px" src="{{prod.img[0].path}}" alt="" class="img-fluid z-depth-0"></a>
     </td>
 
     <td ><div class="d-flex justify-content-center"> {{prod.name}}  </div></td>
