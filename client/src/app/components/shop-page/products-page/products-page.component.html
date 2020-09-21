@@ -144,7 +144,7 @@
                 <label class="input-group-text" for="casa">Выбрать Опции</label>
                 <select [(ngModel)]="selected" (change)="onSelectCasa(selected)" class="browser-default custom-select"
                         id="casa">
-                  <option value="Без колес">Без аккумулятора</option>
+                  <option value="Без колес">Без колес</option>
                   <ng-container *ngFor="let cassss of casaS let inx = index">
                     <ng-container *ngIf="cassss._id == product.casa[inx]">
                       <option [value]="cassss.name">{{cassss.name}} + {{cassss.price}} Lei</option>
