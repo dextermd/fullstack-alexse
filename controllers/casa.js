@@ -23,7 +23,7 @@ module.exports.getById = async function (req, res) {
 module.exports.remove = async function (req, res) {
     try {
         await Casa.remove({_id: req.params.id});
-        await Position.remove({casa: req.params.id});
+        // await Position.remove({casa: req.params.id});
         res.status(200).json({
             message: 'Опция удалена.'
         })
