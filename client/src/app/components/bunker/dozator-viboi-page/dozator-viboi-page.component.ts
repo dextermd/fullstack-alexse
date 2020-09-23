@@ -9,7 +9,7 @@ export class DozatorViboiPageComponent implements OnInit {
 
 
   elements: any = [
-    {first: 'Производительность по зерну*, т/ч:', last: '9 / 9'},
+    {first: 'Производительность по зерну*, т/ч:', last: '4 / 5'},
     {first: 'Вес дозы, кг:', last: '20-50 / 20-50'},
     {first: 'Цена поверочного деления (е), г:', last: '0,05 / 0,05'},
     {first: 'Дискретность отсчета (d), г:', last: '0,05 / 0,05'},
