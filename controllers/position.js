@@ -103,26 +103,38 @@ module.exports.update = async function (req, res) {
     if (req.files['image']){
         updated.img = req.files['image'];
     }
+
     if (req.files['imageOne']){
         updated.imgOne = req.files['imageOne'];
     } else if (req.files['imageOne'] === null) {
         updated.imgOne = '';
     }
+
+
     if (req.files['imageTwo']){
         updated.imgTwo = req.files['imageTwo'];
-    } else {
+    } else if (req.files['imageTwo'] === null) {
         updated.imgTwo = '';
     }
+
     if (req.files['imageThree']){
         updated.imgThree = req.files['imageThree'];
-    } else {
+    } else if (req.files['imageThree'] === null) {
         updated.imgThree = '';
     }
+
     if (req.files['imageFour']){
         updated.imgFour = req.files['imageFour'];
-    } else {
+    } else if (req.files['imageFour'] === null) {
         updated.imgFour = '';
     }
+
+    if (req.files['imageOne']){
+        updated.imgOne = req.files['imageOne'];
+    } else if (req.files['imageOne'] === null) {
+        updated.imgOne = '';
+    }
+
     try {
         const  product = await Position.findOneAndUpdate(
             {_id: req.params.id},
