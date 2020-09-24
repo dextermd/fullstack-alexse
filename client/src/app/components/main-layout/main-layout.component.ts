@@ -39,6 +39,7 @@ export class MainLayoutComponent implements OnInit {
 
   ngOnInit(): void {
     this.lang = this.translate.currentLang;
+    console.log(this.lang);
     this.titleService.setTitle(this.title);
 
     // this.order.cartItems = JSON.parse(localStorage.getItem('cartItems'));

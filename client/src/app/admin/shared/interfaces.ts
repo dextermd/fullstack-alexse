@@ -46,6 +46,8 @@ export interface SubCategory {
 export interface Product {
   _id?: string;
   name: string;
+  nameRo: string;
+  nameEn: string;
   code?: string;
   cost: number;
   oldCost?: number;
@@ -55,9 +57,15 @@ export interface Product {
   imgThree?: any;
   imgFour?: any;
   content?: string;
+  contentRo?: string;
+  contentEn?: string;
   spec?: string;
+  specRo?: string;
+  specEn?: string;
   certificate?: string;
   functions?: string;
+  functionsRo?: string;
+  functionsEn?: string;
   option?: boolean;
   sale?: boolean;
   user?: string;

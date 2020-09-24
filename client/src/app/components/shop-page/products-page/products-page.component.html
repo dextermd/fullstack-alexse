@@ -6,7 +6,20 @@
         <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/'">Главная</mdb-breadcrumb-item>
         <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products'">Магазин</mdb-breadcrumb-item>
         <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products/subcategory/'+ this.subcategoryId">{{this.subcategoryName}}</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item class="active">{{this.productName}}</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item class="active">
+          <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+            {{this.productName}}
+          </ng-container>
+
+          <ng-container *ngIf="translate.currentLang == 'ro'">
+            {{this.productNameRo}}
+          </ng-container>
+
+          <ng-container *ngIf="translate.currentLang == 'en'">
+            {{this.productNameEn}}
+          </ng-container>
+
+        </mdb-breadcrumb-item>
       </mdb-breadcrumb-item>
 
     </div>
@@ -76,15 +89,32 @@
 
 
         <div class="col-lg-6 text-center text-md-left">
+          <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+          <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.name}}</h2><hr>
+          </ng-container>
 
-          <h2
-            class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.name}}</h2>
-          <hr>
+          <ng-container *ngIf="translate.currentLang == 'ro'">
+            <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.nameRo}}</h2><hr>
+          </ng-container>
+
+          <ng-container *ngIf="translate.currentLang == 'en'">
+            <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.nameEn}}</h2><hr>
+          </ng-container>
 
           <div class="font-weight-normal">
 
             <p class="ml-xl-0 ml-4">
-              <quill-view-html [content]="product.content"></quill-view-html>
+              <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+                <quill-view-html [content]="product.content"></quill-view-html>
+              </ng-container>
+
+              <ng-container *ngIf="translate.currentLang == 'ro'">
+                <quill-view-html [content]="product.contentRo"></quill-view-html>
+              </ng-container>
+
+              <ng-container *ngIf="translate.currentLang == 'en'">
+                <quill-view-html [content]="product.contentEn"></quill-view-html>
+              </ng-container>
             </p>
 
 
@@ -122,10 +152,10 @@
                           </div>
                           <!--Grid column-->
                           <!--Grid column-->
-                          <div class="col-md-8 mb-2 mb-md-0">
+                          <div class="col-md-8 mb-2">
                             <quill-view [content]="indicat.content"></quill-view>
                             <div *ngIf="indicat.price !== 0">
-                              <strong> + {{indicat.price | currency: 'MDL '}}</strong>
+                              <strong class="text-danger"> + {{indicat.price | currency: 'MDL '}}</strong>
                             </div>
                           </div>
                           <!--Grid column-->
@@ -154,6 +184,28 @@
                 </select>
               </div>
             </div>
+
+            <ng-container *ngFor="let cassss of casaS">
+              <ng-container *ngIf="selected === cassss.name ">
+                <div class="container pt-0 pb-1">
+                  <!--Section: Content-->
+                  <section class="">
+                    <div class="row">
+
+                      <div class="col-md-11 mb-2 mb-md-0">
+                        <div *ngIf="cassss.price !== 0">
+                          <strong class="d-flex justify-content-center text-danger"> + {{cassss.price | currency: 'MDL '}}</strong>
+                        </div>
+                      </div>
+                      <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                  </section>
+                  <!--Section: Content-->
+                </div>
+              </ng-container>
+            </ng-container>
+
 
 
             <div
@@ -195,7 +247,7 @@
                           <div class="col-md-8 mb-2 mb-md-0">
                             <quill-view [content]="indicat.content"></quill-view>
                             <div *ngIf="indicat.price !== 0">
-                              <strong> + {{indicat.price | currency: 'MDL '}}</strong>
+                              <strong class="text-danger"> + {{indicat.price | currency: 'MDL '}}</strong>
                             </div>
                           </div>
                           <!--Grid column-->
@@ -246,7 +298,7 @@
                           <div class="col-md-8 mb-2 mb-md-0">
                             <quill-view [content]="pand.content"></quill-view>
                             <div *ngIf="pand.price !== 0">
-                              <strong> + {{pand.price | currency: 'MDL '}}</strong>
+                              <strong class="text-danger"> + {{pand.price | currency: 'MDL '}}</strong>
                             </div>
                           </div>
                           <!--Grid column-->
@@ -320,14 +372,37 @@
 
         <ngb-tab  title="Технические параметры">
           <ng-template ngbTabContent>
-            <div [froalaView]="product.spec"></div>
+            <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+              <div [froalaView]="product.spec"></div>
+            </ng-container>
+
+            <ng-container *ngIf="translate.currentLang == 'ro'">
+              <div [froalaView]="product.specRo"></div>
+            </ng-container>
+
+            <ng-container *ngIf="translate.currentLang == 'en'">
+              <div [froalaView]="product.specEn"></div>
+            </ng-container>
+<!--            <div [froalaView]="product.spec"></div>-->
 <!--            <quill-view-html [content]="product.spec"></quill-view-html>-->
           </ng-template>
         </ngb-tab>
 
         <ngb-tab  title="Функциональные возможности">
           <ng-template ngbTabContent>
-            <quill-view-html [content]="product.functions"></quill-view-html>
+            <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+              <quill-view-html [content]="product.functions"></quill-view-html>
+            </ng-container>
+
+            <ng-container *ngIf="translate.currentLang == 'ro'">
+              <quill-view-html [content]="product.functionsRo"></quill-view-html>
+            </ng-container>
+
+            <ng-container *ngIf="translate.currentLang == 'en'">
+              <quill-view-html [content]="product.functionsEn"></quill-view-html>
+            </ng-container>
+
+<!--            <quill-view-html [content]="product.functions"></quill-view-html>-->
           </ng-template>
         </ngb-tab>
 

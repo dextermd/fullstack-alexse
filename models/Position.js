@@ -7,6 +7,16 @@ const positionSchema = new Schema({
             unique: true,
             required: true
         },
+        nameRo: {
+            type: String,
+            unique: true,
+            required: true
+        },
+        nameEn: {
+            type: String,
+            unique: true,
+            required: true
+        },
 
         code: {
             type: String,
@@ -55,8 +65,24 @@ const positionSchema = new Schema({
             type: String,
             default: ''
         },
+        contentRo: {
+            type: String,
+            default: ''
+        },
+        contentEn: {
+            type: String,
+            default: ''
+        },
 
         spec: {
+            type: String,
+            default: ''
+        },
+        specRo: {
+            type: String,
+            default: ''
+        },
+        specEn: {
             type: String,
             default: ''
         },
@@ -83,13 +109,21 @@ const positionSchema = new Schema({
             type: String,
             default: ''
         },
+        functionsRo: {
+            type: String,
+            default: ''
+        },
+        functionsEn: {
+            type: String,
+            default: ''
+        },
 
         casa: [
             {
                 type: Schema.Types.ObjectId,
                 ref: 'casas',
                 default: []
-}
+            }
         ],
 
         pandus: [

@@ -15,7 +15,7 @@
         [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
       >
 
-      <label for="name" class="">Название продукта</label>
+      <label for="name" class="">Название продукта на Русском</label>
       <span
         class="helper-text red-text"
         *ngIf="form.get('name').invalid && form.get('name').touched"
@@ -26,6 +26,50 @@
   </span>
     </div>
 
+    <div class="md-form">
+      <input
+        formControlName="nameRo"
+        mdbInput
+        type="text"
+        id="nameRo"
+        class="form-control"
+        [ngClass]="{'invalid': form.get('nameRo').invalid && form.get('nameRo').touched }"
+      >
+
+      <label for="nameRo" class="">Название продукта на Румынском</label>
+      <span
+        class="helper-text red-text"
+        *ngIf="form.get('nameRo').invalid && form.get('nameRo').touched"
+      >
+  <span *ngIf="form.get('nameRo').errors['required']">
+    Имя продукта не может быть пустым
+  </span>
+  </span>
+    </div>
+
+
+
+
+    <div class="md-form">
+      <input
+        formControlName="nameEn"
+        mdbInput
+        type="text"
+        id="nameEn"
+        class="form-control"
+        [ngClass]="{'invalid': form.get('nameEn').invalid && form.get('nameEn').touched }"
+      >
+
+      <label for="nameEn" class="">Название продукта на Английском</label>
+      <span
+        class="helper-text red-text"
+        *ngIf="form.get('nameEn').invalid && form.get('nameEn').touched"
+      >
+  <span *ngIf="form.get('nameEn').errors['required']">
+    Имя продукта не может быть пустым
+  </span>
+  </span>
+    </div>
 
 
 
@@ -46,22 +90,48 @@
 
 
     <div class="pt-4">
-      <label>Описание</label>
+      <label>Описание на Русском</label>
       <quill-editor formControlName="content"></quill-editor>
     </div>
 
     <div class="pt-4">
-      <label>Характеристика</label>
-    <div [froalaEditor] formControlName="spec" > </div>
+      <label>Описание на Румынсоком</label>
+      <quill-editor formControlName="contentRo"></quill-editor>
     </div>
-<!--    <div class="pt-4">-->
-<!--      <label>Характеристики</label>-->
-<!--      <quill-editor formControlName="spec"></quill-editor>-->
-<!--    </div>-->
 
     <div class="pt-4">
-      <label>Функциональные возможности</label>
+      <label>Описание на Английском</label>
+      <quill-editor formControlName="contentEn"></quill-editor>
+    </div>
+
+    <div class="pt-4">
+      <label>Характеристика на Русском</label>
+    <div [froalaEditor] formControlName="spec"></div>
+    </div>
+
+    <div class="pt-4">
+      <label>Характеристика на Румынском</label>
+      <div [froalaEditor] formControlName="specRo"></div>
+    </div>
+    <div class="pt-4">
+      <label>Характеристика Английском</label>
+      <div [froalaEditor] formControlName="specEn"></div>
+    </div>
+
+    <div class="pt-4">
+      <label>Функциональные возможности на Русском</label>
       <quill-editor formControlName="functions"></quill-editor>
+    </div>
+
+    <div class="pt-4">
+      <label>Функциональные возможности на Румынском</label>
+      <quill-editor formControlName="functionsRo"></quill-editor>
+    </div>
+
+
+    <div class="pt-4">
+      <label>Функциональные возможности на Английском</label>
+      <quill-editor formControlName="functionsEn"></quill-editor>
     </div>
 
 

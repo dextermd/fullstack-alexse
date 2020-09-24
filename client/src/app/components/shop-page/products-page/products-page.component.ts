@@ -16,8 +16,7 @@ import {IndicatorService} from '../../../shared/indicator.service';
 import {SubcategoryService} from '../../../shared/subcategory.service';
 import {NgbTabsetConfig} from '@ng-bootstrap/ng-bootstrap';
 import {ProductsComponent} from '../products/products.component';
-
-
+import {TranslateService} from "@ngx-translate/core";
 
 
 @Component({
@@ -27,7 +26,7 @@ import {ProductsComponent} from '../products/products.component';
 })
 export class ProductsPageComponent implements OnInit {
 
-  casaProd = '5f1fd24877bb31183d7fd10e' ;
+  casaProd = '5f1fd24877bb31183d7fd10e';
   platProd = '5f1e882a1c902614531f7ecf';
   platgoProd = '5f1e8ce51c902614531f7ed011';
   platgogoProd = '5f1fd24877bb31183d7fd10e00';
@@ -59,7 +58,9 @@ export class ProductsPageComponent implements OnInit {
   subcategoryName;
   subcategoryId;
   productName;
-
+  productNameRo;
+  productNameEn;
+  lang;
 
   constructor(
     private route: ActivatedRoute,
@@ -73,6 +74,7 @@ export class ProductsPageComponent implements OnInit {
     private indicatorService: IndicatorService,
     private subcategoryService: SubcategoryService,
     public  productPage: ProductsComponent,
+    public translate: TranslateService,
     config: NgbTabsetConfig
   ) {
     config.type = 'pills';
@@ -80,7 +82,9 @@ export class ProductsPageComponent implements OnInit {
 
 
   ngOnInit() {
-    this.subcategoryService.getAllCategory().subscribe( subcategory => {
+    this.lang = this.translate.currentLang;
+
+    this.subcategoryService.getAllCategory().subscribe(subcategory => {
       this.subcategory = subcategory;
     });
 
@@ -97,7 +101,6 @@ export class ProductsPageComponent implements OnInit {
     });
 
 
-
     this.product$ = this.route.params
       .pipe(switchMap((params: Params) => {
           return this.productService.getByIdProduct(params['id']);
@@ -105,8 +108,10 @@ export class ProductsPageComponent implements OnInit {
         map((products: any) => {
           console.log(products);
           this.productName = products.name;
+          this.productNameRo = products.nameRo;
+          this.productNameEn = products.nameEn;
           for (const i in this.subcategory) {
-            if (products.subcategory === this.subcategory[i]._id){
+            if (products.subcategory === this.subcategory[i]._id) {
               this.subcategoryId = this.subcategory[i]._id;
               this.subcategoryName = this.subcategory[i].name;
             }
@@ -138,7 +143,7 @@ export class ProductsPageComponent implements OnInit {
 
   addToOrderIndAndPand(product: Product, selectedIndicator, priceIndicator, selectedPandus?, pricePandus?) {
     this.alert.success(`Добавлено x${product.quantity}`);
-    this.orderService.addInd(product, selectedIndicator, priceIndicator, selectedPandus, pricePandus );
+    this.orderService.addInd(product, selectedIndicator, priceIndicator, selectedPandus, pricePandus);
   }
 
   onSelectCasa(val) {
@@ -156,7 +161,7 @@ export class ProductsPageComponent implements OnInit {
     this.priceInd = this.indicatorS.filter(x => x.name === val);
     if (this.priceInd) {
       this.priceIndicator = this.priceInd[0].price;
-    } else if (val === this.selectedIndicator){
+    } else if (val === this.selectedIndicator) {
       this.priceIndicator = 0;
     }
     console.log(this.priceIndicator);

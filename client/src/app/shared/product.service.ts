@@ -17,7 +17,7 @@ export class ProductService {
   }
 
   getAllProduct(): Observable<Product[]> {
-    return this.http.get<Product[]>('/api/position', );
+    return this.http.get<Product[]>('/api/position',);
   }
 
   getByIdProduct(id: string): Observable<Product> {
@@ -29,25 +29,34 @@ export class ProductService {
   }
 
 
-  create(name: string,
-         code: string,
-         subcategory: string,
-         cost: any,
-         oldCost: any,
-         content: string,
-         spec: string,
-         certificate: string,
-         functions: string,
-         casa: any,
-         pandus: any,
-         indicator: any,
-         option: any,
-         sale: any,
-         image?: File,
-         imageOne?: File,
-         imageTwo?: File,
-         imageThree?: File,
-         imageFour?: File
+  create(
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    code: string,
+    subcategory: string,
+    cost: any,
+    oldCost: any,
+    content: string,
+    contentRo: string,
+    contentEn: string,
+    spec: string,
+    specRo: string,
+    specEn: string,
+    certificate: string,
+    functions: string,
+    functionsRo: string,
+    functionsEn: string,
+    casa: any,
+    pandus: any,
+    indicator: any,
+    option: any,
+    sale: any,
+    image?: File,
+    imageOne?: File,
+    imageTwo?: File,
+    imageThree?: File,
+    imageFour?: File
   ): Observable<Product> {
     const fd = new FormData();
     console.log(image);
@@ -72,14 +81,22 @@ export class ProductService {
 
 
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('code', code);
     fd.append('subcategory', subcategory);
     fd.append('cost', cost);
     fd.append('oldCost', oldCost);
     fd.append('content', content);
+    fd.append('contentRo', contentRo);
+    fd.append('contentEn', contentEn);
     fd.append('spec', spec);
+    fd.append('specRo', specRo);
+    fd.append('specEn', specEn);
     fd.append('certificate', certificate);
     fd.append('functions', functions);
+    fd.append('functionsRo', functionsRo);
+    fd.append('functionsEn', functionsEn);
     fd.append('casa', casa);
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
@@ -93,14 +110,22 @@ export class ProductService {
 
   update(id: string,
          name: string,
+         nameRo: string,
+         nameEn: string,
          code: string,
          subcategory: string,
          cost: any,
          oldCost: any,
          content: string,
+         contentRo: string,
+         contentEn: string,
          spec: string,
+         specRo: string,
+         specEn: string,
          certificate: string,
          functions: string,
+         functionsRo: string,
+         functionsEn: string,
          casa: any,
          pandus: any,
          indicator: any,
@@ -130,14 +155,22 @@ export class ProductService {
       fd.append('imageFour', imageFour, imageFour.name);
     }
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('code', code);
     fd.append('subcategory', subcategory);
     fd.append('cost', cost);
     fd.append('oldCost', oldCost);
     fd.append('content', content);
+    fd.append('contentRo', contentRo);
+    fd.append('contentEn', contentEn);
     fd.append('spec', spec);
+    fd.append('specRo', specRo);
+    fd.append('specEn', specEn);
     fd.append('certificate', certificate);
     fd.append('functions', functions);
+    fd.append('functionsRo', functionsRo);
+    fd.append('functionsEn', functionsEn);
     fd.append('casa', casa);
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
@@ -152,8 +185,6 @@ export class ProductService {
   delete(id: string): Observable<Message> {
     return this.http.delete<Message>(`/api/position/${id}`);
   }
-
-
 
 
   updateImage(id: string, image?: File): Observable<Product> {
