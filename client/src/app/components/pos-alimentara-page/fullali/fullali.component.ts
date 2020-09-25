@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-fullali',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullaliComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public translate: TranslateService,
+
+  ) { }
 
   ngOnInit(): void {
   }

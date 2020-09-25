@@ -16,7 +16,9 @@ import {IndicatorService} from '../../../shared/indicator.service';
 import {SubcategoryService} from '../../../shared/subcategory.service';
 import {NgbTabsetConfig} from '@ng-bootstrap/ng-bootstrap';
 import {ProductsComponent} from '../products/products.component';
-import {TranslateService} from "@ngx-translate/core";
+import {TranslateService} from '@ngx-translate/core';
+import {LocalService} from '../../../shared/local.service';
+import {MainLayoutComponent} from '../../main-layout/main-layout.component';
 
 
 @Component({
@@ -61,7 +63,6 @@ export class ProductsPageComponent implements OnInit {
   productNameRo;
   productNameEn;
   lang;
-
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
@@ -75,6 +76,8 @@ export class ProductsPageComponent implements OnInit {
     private subcategoryService: SubcategoryService,
     public  productPage: ProductsComponent,
     public translate: TranslateService,
+    private localService: LocalService,
+    public main: MainLayoutComponent,
     config: NgbTabsetConfig
   ) {
     config.type = 'pills';
@@ -82,8 +85,6 @@ export class ProductsPageComponent implements OnInit {
 
 
   ngOnInit() {
-    this.lang = this.translate.currentLang;
-
     this.subcategoryService.getAllCategory().subscribe(subcategory => {
       this.subcategory = subcategory;
     });
@@ -103,7 +104,7 @@ export class ProductsPageComponent implements OnInit {
 
     this.product$ = this.route.params
       .pipe(switchMap((params: Params) => {
-          return this.productService.getByIdProduct(params['id']);
+          return this.productService.getByIdProduct(params.id);
         }),
         map((products: any) => {
           console.log(products);
@@ -116,9 +117,6 @@ export class ProductsPageComponent implements OnInit {
               this.subcategoryName = this.subcategory[i].name;
             }
           }
-
-          console.log(products.subcategory);
-          console.log(this.subcategory);
           products.quantity = 1;
           return products;
         })
@@ -178,4 +176,8 @@ export class ProductsPageComponent implements OnInit {
   }
 
 
+  changeLang(lang) {
+    this.lang = lang;
+
+  }
 }

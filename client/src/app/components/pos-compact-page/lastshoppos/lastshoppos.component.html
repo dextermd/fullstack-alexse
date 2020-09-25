@@ -1,6 +1,6 @@
 <div class="container my-5 py-5 ">
-  <h3 class="font-weight-bold black-text mb-4 pb-2 text-center wow zoomIn" data-wow-delay="0.6s">Вы также можете
-    расширить комплект дополнительным оборудованием
+  <h3 class="font-weight-bold black-text mb-4 pb-2 text-center wow zoomIn" data-wow-delay="0.6s">
+    {{'PosCompact.LastShop.Title' | translate}}
   </h3>
 
 
@@ -19,9 +19,23 @@
             src="{{prod.img[0].path}}" style="height: 200px" class="img-fluid"
             alt=""></a>
 
-          <p class="mb-1"><a [routerLink]="['products/item', prod._id]" class="font-weight-bold black-text">{{prod.name}}</a></p>
+          <p class="mb-1"><a [routerLink]="['products/item', prod._id]" class="font-weight-bold black-text">
+            <ng-container *ngIf="this.main.lang == 'ru'">
+              {{prod.name}}
+            </ng-container>
 
-          <p class="mb-1"><small class="mr-1"></small><strong>{{prod.cost}}</strong></p>
+            <ng-container *ngIf="this.main.lang == 'ro'">
+              {{prod.nameRo}}
+            </ng-container>
+
+            <ng-container *ngIf="this.main.lang == 'en'">
+              {{prod.nameEn}}
+            </ng-container>
+          </a></p>
+
+          <p class="mb-1"><small class="mr-1"></small><strong>
+            {{prod.cost}}
+          </strong></p>
 
 
         </div>
@@ -39,8 +53,8 @@
   <div class="flex-center">
     <div class="btn-group py-5 " role="group" aria-label="Basic example">
 
-      <button routerLink="/products" mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Перейти в
-        магазин
+      <button routerLink="/products" mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>
+        {{'BUTTONS.GoShop' | translate}}
       </button>
 
     </div>

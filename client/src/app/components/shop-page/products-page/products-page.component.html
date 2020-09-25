@@ -7,15 +7,15 @@
         <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products'">Магазин</mdb-breadcrumb-item>
         <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products/subcategory/'+ this.subcategoryId">{{this.subcategoryName}}</mdb-breadcrumb-item>
         <mdb-breadcrumb-item class="active">
-          <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+          <ng-container *ngIf="this.main.lang == 'ru'">
             {{this.productName}}
           </ng-container>
 
-          <ng-container *ngIf="translate.currentLang == 'ro'">
+          <ng-container *ngIf="this.main.lang == 'ro'">
             {{this.productNameRo}}
           </ng-container>
 
-          <ng-container *ngIf="translate.currentLang == 'en'">
+          <ng-container *ngIf="this.main.lang == 'en'">
             {{this.productNameEn}}
           </ng-container>
 
@@ -89,30 +89,30 @@
 
 
         <div class="col-lg-6 text-center text-md-left">
-          <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+          <ng-container   *ngIf="this.main.lang == 'ru'">
           <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.name}}</h2><hr>
           </ng-container>
 
-          <ng-container *ngIf="translate.currentLang == 'ro'">
+          <ng-container *ngIf="this.main.lang  == 'ro'">
             <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.nameRo}}</h2><hr>
           </ng-container>
 
-          <ng-container *ngIf="translate.currentLang == 'en'">
+          <ng-container *ngIf="this.main.lang  == 'en'">
             <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.nameEn}}</h2><hr>
           </ng-container>
 
           <div class="font-weight-normal">
 
             <p class="ml-xl-0 ml-4">
-              <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+              <ng-container *ngIf="this.main.lang == 'ru'">
                 <quill-view-html [content]="product.content"></quill-view-html>
               </ng-container>
 
-              <ng-container *ngIf="translate.currentLang == 'ro'">
+              <ng-container *ngIf="this.main.lang == 'ro'">
                 <quill-view-html [content]="product.contentRo"></quill-view-html>
               </ng-container>
 
-              <ng-container *ngIf="translate.currentLang == 'en'">
+              <ng-container *ngIf="this.main.lang == 'en'">
                 <quill-view-html [content]="product.contentEn"></quill-view-html>
               </ng-container>
             </p>
@@ -372,15 +372,15 @@
 
         <ngb-tab  title="Технические параметры">
           <ng-template ngbTabContent>
-            <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+            <ng-container *ngIf="this.main.lang == 'ru'">
               <div [froalaView]="product.spec"></div>
             </ng-container>
 
-            <ng-container *ngIf="translate.currentLang == 'ro'">
+            <ng-container *ngIf="this.main.lang == 'ro'">
               <div [froalaView]="product.specRo"></div>
             </ng-container>
 
-            <ng-container *ngIf="translate.currentLang == 'en'">
+            <ng-container *ngIf="this.main.lang == 'en'">
               <div [froalaView]="product.specEn"></div>
             </ng-container>
 <!--            <div [froalaView]="product.spec"></div>-->
@@ -390,15 +390,15 @@
 
         <ngb-tab  title="Функциональные возможности">
           <ng-template ngbTabContent>
-            <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+            <ng-container *ngIf="this.main.lang == 'ru'">
               <quill-view-html [content]="product.functions"></quill-view-html>
             </ng-container>
 
-            <ng-container *ngIf="translate.currentLang == 'ro'">
+            <ng-container *ngIf="this.main.lang == 'ro'">
               <quill-view-html [content]="product.functionsRo"></quill-view-html>
             </ng-container>
 
-            <ng-container *ngIf="translate.currentLang == 'en'">
+            <ng-container *ngIf="this.main.lang == 'en'">
               <quill-view-html [content]="product.functionsEn"></quill-view-html>
             </ng-container>
 

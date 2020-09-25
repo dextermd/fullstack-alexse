@@ -54,7 +54,10 @@
     "Certificate": "CERTIFICATES",
     "Support": "SUPPORT",
     "AllCert": "SEE ALL CERTIFICATES",
-    "Question": "GET CONSULTATION"
+    "Question": "GET CONSULTATION",
+    "TehSpec": "TECHNICAL CHARACTERISTICS",
+    "Order": "ORDER",
+    "GoShop": "Go to store"
   },
   "HOME": {
     "INFO_SHORT":{
@@ -118,6 +121,136 @@
     "VIDEO": {
       "Title": "VIDEO",
       "Close": "Close"
+    }
+  },
+
+  "PosAlimentara": {
+    "Header": {
+      "TitleTop": "SOFTWARE FOR STORE",
+      "TitleBottom": "Pos Alimentara",
+      "IconOne": "Boutiques",
+      "IconTwo": "Departments in shopping centers",
+      "IconThree": "Shops",
+      "IconFour": "Small shops"
+    },
+    "FullAli": {
+      "TitleTop": "Trade automation set POS-Alimentara",
+      "TitleBottom": "POS-Alimentara",
+      "ComplectTitle": "SET COMPOSITION:",
+      "ComplectOne": "Software Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "ComplectThree": "Price computing scale BSN 6/15 kg D1.3 T2 230×290 с RS-232",
+      "ComplectFour": "Cash machine Datecs DP-150SD battery",
+      "ComplectFive": "SCANNER laser hand-held Mindeo MD2000AT 1D",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiable",
+      "ComplectGiveThree": "Powerful",
+      "ComplectPrice": "Price:"
+    },
+    "MicroPos": {
+      "TitleTop": "Stylish MicroPOS",
+      "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "SpecTitleOne": "Touchpad",
+      "SpecTextOne": "Touchscreen with HD-resolution 1366 × 768 and instant sensor response",
+      "SpecTitleTwo": "Speed",
+      "SpecTextTwo": "The terminal is equipped with a new generation J1900 processor with high performance and low power consumption",
+      "SpecTitleThree": "Fast data storage",
+      "SpecTextThree": "4GB DDR3 memory and modern fast 64GB SSD hard drive",
+      "SpecTitleFour": "Large set of interfaces",
+      "SpecTextFour": "6 USB ports for peripheral equipment, Ethernet for direct Internet connection, RS232 and others"
+    },
+    "ScalesRS": {
+      "TitleTop": "Price computing scale with RS",
+      "TitleBottom": "Price computing scale BSN 6/15 kg D1.3 T2 230x290 с RS-232",
+      "SpecTitleOne": "High contrast LCD display",
+      "SpecTextOne": "The seller and buyer displays are equipped with bright backlight with clear readings. Display weight, price, cost",
+      "SpecTitleTwo": "Keyboard - 20 keys",
+      "SpecTextTwo": "Allows comfortably using of all apabilities of the scales, including using the built-in calculator",
+      "SpecTitleThree": "PC connection",
+      "SpecTextThree": "Connection to PC via reliable RS-232 interface",
+      "SpecTitleFour": "Built-in battery",
+      "SpecTextFour": "Built-in battery provides up to 120 hours of autonomous operation of the scale"
+    },
+    "DatecsDPSD": {
+      "TitleTop": "Cash machine",
+      "TitleBottom": "Datecs DP-150 SD battery",
+      "SpecTitleOne": "Large set of interfaces",
+      "SpecTextOne": "2 x RS-232C port for connection: 1 x USB class device via mini-USB (optional) 1 x Box Control",
+      "SpecTitleTwo": "Work speed",
+      "SpecTextTwo": "up to 12 lines per second",
+      "SpecTitleThree": "Fiscal memory",
+      "SpecTextThree": "Non-volatile, can support up to 1825 daily reports",
+      "SpecTitleFour": "Battery powered",
+      "SpecTextFour": "Does not require a socket"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Barcode Scanner",
+      "TitleBottom": "SCANNER laser handheld Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Work speed",
+      "SpecTextOne": "Scanning at a speed of 200 scans / sec.",
+      "SpecTitleTwo": "Ergonomic",
+      "SpecTextTwo": "The scanner has a convenient handle for comfortable and fast work",
+      "SpecTitleThree": "Reliability",
+      "SpecTextThree": "The resource of button operations is over 50,000,000 times. Stable work in intensive mode.",
+      "SpecTitleFour": "Durability",
+      "SpecTextFour": "Support over 30 drops from 2 meters onto concrete"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Trading automation software Alex-Market",
+      "TitleBottom": "The program interface and its main features:",
+      "SpecTitleOne": "Easy installation and setup",
+      "SpecTextOne": "The accounting program is easy to install and extremely quickly to implement",
+      "SpecTitleTwo": "Item entry",
+      "SpecTextTwo": "Items are entered both manually using a code and through a barcode scanner",
+      "SpecTitleThree": "Any goods",
+      "SpecTextThree": "The system is suitable for working with all types of goods: both piece and weight goods.",
+      "SpecTitleFour": "Payment Methods",
+      "SpecTextFour": "Accept payments both in cash and with payment cards",
+      "SpecTitleFive": "Visual interface",
+      "SpecTextFive": "Intuitive interface allows you to place sales in a few seconds",
+      "SpecTitleSix": "Printing",
+      "SpecTextSix": "You can print a paper price tag or a self-adhesive label directly from the program"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Trading automation software Alex-Market",
+      "TitleBottom": "The program interface and its main features:",
+      "SpecTitleOne": "Complete inventory control",
+      "SpecTextOne": "Control of stock balances at any time, as well as warehouse reports for any date",
+      "SpecTitleTwo": "Cash control",
+      "SpecTextTwo": "Online access to statistics - control your business from anywhere with access to the Internet",
+      "SpecTitleThree": "Safety",
+      "SpecTextThree": "All user actions are recorded and displayed in reports",
+      "SpecTitleFour": "Differentiation of rights",
+      "SpecTextFour": "Setting access rights individually for each employee to avoid abuse",
+      "SpecTitleFive": "Working with invoices",
+      "SpecTextFive": "Any types of invoices - all operations with the goods are carried out quickly and clearly",
+      "SpecTitleSix": "Analytics",
+      "SpecTextSix": "Reports on sales, movement of goods, season fluctuations, employees, etc."
+    }
+
+  },
+
+
+  "PosCompact": {
+    "DivThreeAll": {
+      "TitleOne": "Warranty – 1 year",
+      "TextOne": "We guarantee quality and offer only certified products.",
+      "TitleTwo": "On-line support",
+      "TextTwo": "Our Service Support works every day, without days off and holidays."
+    },
+    "MorePos": {
+      "TitleOne": "WHAT PC IS NECESSARY FOR THE ALEX MARKET SOFTWARE?",
+      "TextOne": "Any OS Windows desktop or laptop",
+      "TitleTwo": "IS IT POSSIBLE TO SUPPLEMENT THE SET?",
+      "TextTwo": "Of course, we will help you find all the necessary POS equipment (cash box, fiscal register, etc.)",
+      "TitleThree": "IS THE SOFTWARE INCLUDED IN THE PRICE?",
+      "TextThree": "Yes, the package price includes a full purchase of the software forever.",
+      "TitleFour": "CAN YOU HELP WITH INSTALLATION AND SETUP?",
+      "TextFour": "Yes we can. Contact us to discuss the possibility of installation in more detail."
+    },
+    "LastShop": {
+      "Title": "You can also expand the set with additional equipment"
     }
   }
 

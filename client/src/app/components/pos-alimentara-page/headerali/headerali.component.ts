@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-headerali',
@@ -8,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderaliComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public translate: TranslateService,
+
+  ) { }
 
   ngOnInit(): void {
   }

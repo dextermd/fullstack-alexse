@@ -2,6 +2,8 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Product} from '../../../admin/shared/interfaces';
 import {Subscription} from 'rxjs';
 import {ProductService} from '../../../shared/product.service';
+import {TranslateService} from '@ngx-translate/core';
+import {MainLayoutComponent} from '../../main-layout/main-layout.component';
 
 
 @Component({
@@ -16,7 +18,10 @@ export class LastshopposComponent implements OnInit, OnDestroy {
 
   constructor(
     private productService: ProductService,
-  ) {
+    public translate: TranslateService,
+    public main: MainLayoutComponent,
+
+) {
   }
 
   ngOnInit(): void {

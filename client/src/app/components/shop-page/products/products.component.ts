@@ -6,6 +6,8 @@ import {SubcategoryService} from '../../../shared/subcategory.service';
 import {CategoryService} from '../../../shared/category.service';
 import {ActivatedRoute, Params} from '@angular/router';
 import {LocalService} from '../../../shared/local.service';
+import {TranslateService} from '@ngx-translate/core';
+import {MainLayoutComponent} from '../../main-layout/main-layout.component';
 
 @Injectable({providedIn: 'root'})
 @Component({
@@ -28,12 +30,16 @@ export class ProductsComponent implements OnInit, OnDestroy {
   colapse = true;
   colapseOne = true;
 
+
   constructor(
     private productService: ProductService,
     private subcategoryService: SubcategoryService,
     private categoryService: CategoryService,
     private route: ActivatedRoute,
     private localService: LocalService,
+    public translate: TranslateService,
+    public main: MainLayoutComponent,
+
 
   ) {
   }
@@ -41,10 +47,11 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
+
     this.page = this.localService.getJsonValue('productPage');
     this.dSub = this.route.params.subscribe((params: Params) => {
-      if (params['id']) {
-        this.products$ = this.productService.getByCatIdProductAll(params['id']);
+      if (params.id) {
+        this.products$ = this.productService.getByCatIdProductAll(params.id);
         this.colapse = false;
 
       } else {

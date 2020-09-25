@@ -172,15 +172,15 @@
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
                  aria-haspopup="true" aria-expanded="false">
 
-                <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru' ">
+                <ng-container *ngIf="lang == 'ru' ">
                   <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
                 </ng-container>
 
-                <ng-container *ngIf="translate.currentLang == 'en'">
+                <ng-container *ngIf="lang == 'en'">
                   <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
                 </ng-container>
 
-                <ng-container *ngIf="translate.currentLang == 'ro'">
+                <ng-container *ngIf="lang == 'ro'">
                   <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
                 </ng-container>
 
@@ -188,9 +188,9 @@
 
               <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-5">
 
-                <a (click)="translate.use('ru')" class="dropdown-item">  <img height="30px" src="assets/lang/russia.png"> Russian</a>
-                <a (click)="translate.use('en')" class="dropdown-item">  <img height="30px" src="assets/lang/en.png"> English</a>
-                <a (click)="translate.use('ro')" class="dropdown-item">  <img height="30px" src="assets/lang/romania.png"> Romanian</a>
+                <a (click)="changeLang('ru')" class="dropdown-item">  <img height="30px" src="assets/lang/russia.png"> Russian</a>
+                <a (click)="changeLang('en')" class="dropdown-item">  <img height="30px" src="assets/lang/en.png"> English</a>
+                <a (click)="changeLang('ro')" class="dropdown-item">  <img height="30px" src="assets/lang/romania.png"> Romanian</a>
               </div>
 
             </li>
@@ -321,15 +321,15 @@
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
                  aria-haspopup="true" aria-expanded="false">
 
-                <ng-container *ngIf="translate.currentLang == lang || translate.currentLang == 'ru'">
+                <ng-container *ngIf="lang == 'ru'">
                 <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
                 </ng-container>
 
-                <ng-container *ngIf="translate.currentLang == 'en'">
+                <ng-container *ngIf="lang == 'en'">
                 <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
                 </ng-container>
 
-                <ng-container *ngIf="translate.currentLang == 'ro'">
+                <ng-container *ngIf="lang == 'ro'">
                   <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
                 </ng-container>
 
@@ -337,9 +337,9 @@
 
               <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
 
-                <a (click)="translate.use('ru')" class="dropdown-item">  <img height="30px" src="assets/lang/russia.png"> Russian</a>
-                <a (click)="translate.use('en')" class="dropdown-item">  <img height="30px" src="assets/lang/en.png"> English</a>
-                <a (click)="translate.use('ro')" class="dropdown-item">  <img height="30px" src="assets/lang/romania.png"> Romanian</a>
+                <a (click)="changeLang('ru')" class="dropdown-item">  <img height="30px" src="assets/lang/russia.png"> Russian</a>
+                <a (click)="changeLang('en')" class="dropdown-item">  <img height="30px" src="assets/lang/en.png"> English</a>
+                <a (click)="changeLang('ro')" class="dropdown-item">  <img height="30px" src="assets/lang/romania.png"> Romanian</a>
               </div>
 
             </li>

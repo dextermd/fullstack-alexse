@@ -38,8 +38,7 @@ export class MainLayoutComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.lang = this.translate.currentLang;
-    console.log(this.lang);
+    this.lang = this.translate.getBrowserLang();
     this.titleService.setTitle(this.title);
 
     // this.order.cartItems = JSON.parse(localStorage.getItem('cartItems'));
@@ -49,4 +48,11 @@ export class MainLayoutComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) onScroll($event){
     this.hide = pageYOffset >= 170;
   }
+
+  changeLang(lang: string) {
+    this.translate.use(lang);
+    this.lang = lang;
+    this.localService.setJsonValue('lang', lang);
+  }
+
 }

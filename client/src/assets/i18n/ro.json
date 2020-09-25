@@ -56,7 +56,10 @@
     "Certificate": "CERTIFICATE",
     "Support": "SUPPORT",
     "AllCert": "VEZI TOATE CERTIFICATII",
-    "Question": "CONSULTĂ-TE"
+    "Question": "CONSULTĂ-TE",
+    "TehSpec": "CARACTERISTICI TEHNICE",
+    "Order": "Comandă",
+    "GoShop": "Merge la magazin"
   },
   "HOME": {
     "INFO_SHORT":{
@@ -124,6 +127,136 @@
     }
 
 
+  },
+
+  "PosAlimentara": {
+    "Header": {
+      "TitleTop": "SOFT PENTRU MAGAZIN",
+      "TitleBottom": "Pos Alimentara",
+      "IconOne": "Buticuri",
+      "IconTwo": "Departamente în centre comerciale",
+      "IconThree": "Magazine",
+      "IconFour": "Magazine mici"
+    },
+    "FullAli": {
+      "TitleTop": "Set pentru automatizarea comerțului",
+      "TitleBottom": "POS-Alimentara",
+      "ComplectTitle": "Componența setului:",
+      "ComplectOne": "Soft Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "ComplectThree": "Cântar comercial BSN 6/15 kg D1.3 T2 230×290 с RS-232",
+      "ComplectFour": "Casă de marcat Datecs DP-150SD battery",
+      "ComplectFive": "Cititor cod de bare laser manual Mindeo MD2000AT 1D",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiabil",
+      "ComplectGiveThree": "Durabil",
+      "ComplectPrice": "Preț:"
+    },
+    "MicroPos": {
+      "TitleTop": "MicroPOS elegant",
+      "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "SpecTitleOne": "Panou senzorial",
+      "SpecTextOne": "Ecran tactil cu rezoluție HD 1366 × 768 și răspuns instantaneu al senzorului",
+      "SpecTitleTwo": "Viteză",
+      "SpecTextTwo": "Terminalul este echipat cu un procesor J1900 de nouă generație cu performanțe ridicate și consum redus de energie",
+      "SpecTitleThree": "Stocare rapidă a datelor",
+      "SpecTextThree": "Memorie DDR3 de 4 GB și hard disk SSD modern de 64 GB",
+      "SpecTitleFour": "Set mare de interfețe",
+      "SpecTextFour": "6 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, RS232 și altele"
+    },
+    "ScalesRS": {
+      "TitleTop": "Cântar comercial cu RS",
+      "TitleBottom": "Cântar comercial BSN 6/15 kg D1.3 T2 230x290 с RS-232",
+      "SpecTitleOne": "Ecran LCD cu contrast ridicat",
+      "SpecTextOne": "Afișajele vânzătorului și cumpărătorului sunt dotate cu o lumină de fundal puternică cu citiri clare. Afișează greutatea, prețul, costul",
+      "SpecTitleTwo": "Tastatură - 20 de taste",
+      "SpecTextTwo": "Vă permite utilizarea confortabilă a tuturor funcțiilor cântarului, inclusiv utilizarea calculatorului încorporat",
+      "SpecTitleThree": "Conexiune  PC",
+      "SpecTextThree": "Conexiune la PC printr-o interfață fiabilă RS-232",
+      "SpecTitleFour": "Baterie încorporată",
+      "SpecTextFour": "Bateria încorporată oferă până la 120 de ore de funcționare autonomă a cântarului"
+    },
+    "DatecsDPSD": {
+      "TitleTop": "Casă de marcat",
+      "TitleBottom": "Datecs DP-150 SD battery",
+      "SpecTitleOne": "Număr mare de intefețe",
+      "SpecTextOne": "2 x port RS-232C pentru conectare: 1 x dispozitiv USB de clasă prin mini-USB (opțional) 1 x Box Control",
+      "SpecTitleTwo": "Viteza de lucru",
+      "SpecTextTwo": "până la 12 linii pe secundă",
+      "SpecTitleThree": "Memoria fiscală",
+      "SpecTextThree": "Non-volatilă, poate suporta până la 1825 de rapoarte zilnice",
+      "SpecTitleFour": "Funcționează de la baterie",
+      "SpecTextFour": "Nu necesită priză"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Cititor de bare",
+      "TitleBottom": "Cititor de bare laser manual Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Viteza de lucru",
+      "SpecTextOne": "Scanare la o viteză de 200 scanări / sec.",
+      "SpecTitleTwo": "Ergonomicitate",
+      "SpecTextTwo": "Scanerul are un mâner comod pentru o funcțiobare confortabilă și rapidă",
+      "SpecTitleThree": "Fiabilitate",
+      "SpecTextThree": "Resursa funcționării butonului este de peste 50.000.000 de ori. Lucru stabil în regim intensiv.",
+      "SpecTitleFour": "Durabil",
+      "SpecTextFour": "Rezistă peste 30 de căderi de la 2 metri pe beton"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Instalare și configurare simplă",
+      "SpecTextOne": "Softul de evidență este ușor de instalat și extrem de rapid de implementat",
+      "SpecTitleTwo": "Introducerea articolelor",
+      "SpecTextTwo": "Articolele sunt introduse atât manual folosind un cod, cât și printr-un cititor de coduri de bare",
+      "SpecTitleThree": "Orice articole",
+      "SpecTextThree": "Sistemul este potrivit pentru lucrul cu orice tip de articole: atât la bucată, cât și la greutate",
+      "SpecTitleFour": "Metode de plata",
+      "SpecTextFour": "Primiți plata atât în numerar, cât și cu cardurile de plată",
+      "SpecTitleFive": "Interfață vizuală",
+      "SpecTextFive": "Interfața intuitivă vă permite să plasați vânzările în câteva secunde",
+      "SpecTitleSix": "Imprimarea",
+      "SpecTextSix": "Puteți imprima direct din program o etichetă de preț pe support de hârtie sau o etichetă autoadezivă"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Evidența completă a stocurilor",
+      "SpecTextOne": "Controlul soldurilor stocurilor din depozit în orice moment, precum și rapoartele de depozit pentru orice data",
+      "SpecTitleTwo": "Controlul numerarului",
+      "SpecTextTwo": "Acces online la statistici - controlați-vă afacerea de orice colt as lumii cu acces la Internet",
+      "SpecTitleThree": "Siguranță",
+      "SpecTextThree": "Toate acțiunile utilizatorilor sunt înregistrate și afișate în rapoarte",
+      "SpecTitleFour": "Diferențierea drepturilor",
+      "SpecTextFour": "Setarea drepturilor de acces individual pentru fiecare angajat pentru a evita abuzurile",
+      "SpecTitleFive": "Lucrul cu facturile",
+      "SpecTextFive": "Orice fel de facturi - toate operațiunile cu mărfurile se efectuează rapid și clar",
+      "SpecTitleSix": "Analize",
+      "SpecTextSix": "Rapoarte privind vânzările, circulația mărfurilor, fluctuațiile sezoniere, angajații etc."
+    }
+
+
+  },
+  "PosCompact": {
+    "DivThreeAll": {
+      "TitleOne": "Garanția – 1 an",
+      "TextOne": "Garantăm calitate și oferim numai produse certificate.",
+      "TitleTwo": "Suport on-line",
+      "TextTwo": "Serviciul nostru de asistență activează zilnic, fără zile de odihnă și sărbători."
+    },
+    "MorePos": {
+      "TitleOne": "CE COMPUTER ESTE NECESAR PENTRU SOFTWARE ALEX MARKET?",
+      "TextOne": "Orice desktop sau laptop cu SO Windows",
+      "TitleTwo": "ESTE POSIBILĂ SUPLIMENTAREA SETULUI?",
+      "TextTwo": "Desigur, vă vom ajuta să găsiți toate echipamentele POS necesare (ladă pentru bani, registrator fiscal etc.)",
+      "TitleThree": "SOFTUL  ESTE INCLUS ÎN PREȚ?",
+      "TextThree": "Da, prețul pachetului include o achiziție completă a softului pentru totdeauna.",
+      "TitleFour": "OFERIȚI AJUTOR ÎN INSTALARE ȘI CONFIGURARE?",
+      "TextFour": "Da, oferim. Contactați-ne pentru a discuta mai detaliat posibilitatea instalării."
+    },
+    "LastShop": {
+      "Title": "De asemenea, puteți extinde setul cu echipamente suplimentare"
+    }
   }
+
 
 }

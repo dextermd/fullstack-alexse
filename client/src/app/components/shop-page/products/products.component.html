@@ -55,8 +55,18 @@
                 </a>
                 <h5>
                   <strong>
-                    <a [routerLink]="['item', prod._id]" href="" class="dark-grey-text">{{prod.name}}
+                    <a [routerLink]="['item', prod._id]" href="" class="dark-grey-text">
+                      <ng-container *ngIf="this.main.lang == 'ru'">
+                        {{prod.name}}
+                      </ng-container>
 
+                      <ng-container *ngIf="this.main.lang == 'ro'">
+                        {{prod.nameRo}}
+                      </ng-container>
+
+                      <ng-container *ngIf="this.main.lang == 'en'">
+                        {{prod.nameEn}}
+                      </ng-container>
                     </a>
                   </strong>
                 </h5>
