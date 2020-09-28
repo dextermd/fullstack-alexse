@@ -4,8 +4,8 @@
   <section class="text-center px-md-5 mx-md-5 dark-grey-text wow bounceIn" data-wow-delay="0.6s">
 
     <img src="assets/dd11.png" class="img-fluid wow fadeInRight" data-wow-delay="0.6s" alt="smaple image">
-    <h1 class="font-weight-bold blue-text">ПОЛНАЯ АВТОМАТИЗАЦИЯ ПОД КЛЮЧ </h1>
-    <h6 class="font-weight-bold grey-text">POS-комплекты для торговли и учёта — настроенные, протестированные, с установленной программой</h6>
+    <h1 class="font-weight-bold blue-text">{{'AlexMarket.Complect.TitleTop' | translate}}</h1>
+    <h6 class="font-weight-bold grey-text">{{'AlexMarket.Complect.TitleBottom' | translate}}</h6>
 
   </section>
   <!--Section: Content-->
@@ -31,13 +31,12 @@
           <div class="text-white text-center d-flex align-items-center  py-5 px-4 px-md-5 rounded ">
             <div>
               <h5 class="py-3 font-weight-bold">
-                <strong>КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ </strong><p>
-                <h2><strong>POS-Compact</strong></h2>
+                <strong>{{'AlexMarket.Complect.ComTitleTop' | translate}} </strong><p>
+                <h2><strong>{{'AlexMarket.Complect.ComTitleBottom' | translate}}</strong></h2>
               </h5>
-              <p class="pb-0">Бюджетный вариант для ведения торгового учета <p>
-                небольших торговых точек и бутиков.
-              </p>
-              <a routerLink="/pos-compact" class="btn btn-white btn-rounded btn-md black-text"><i class="fas fa-clone left"></i> Выбрать комплект POS-Compact
+              <p class="pb-0"><div [innerHTML]="'AlexMarket.Complect.ComText'  | translate"></div>
+              <a routerLink="/pos-compact" class="btn btn-white btn-rounded btn-md black-text"><i class="fas fa-clone left"></i>
+                {{'AlexMarket.Complect.ComButton' | translate}}
               </a>
             </div>
           </div>
@@ -74,13 +73,13 @@
         <div class="text-white text-center d-flex align-items-center  py-5 px-4 px-md-5 rounded">
           <div>
             <h5 class="py-3 font-weight-bold">
-              <strong>КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ</strong>
-                <p><h2><strong>POS-Alimentara</strong></h2>
+              <strong>{{'AlexMarket.Complect.AliTitleTop' | translate}}</strong>
+                <p><h2><strong>{{'AlexMarket.Complect.AliTitleBottom' | translate}}</strong></h2>
             </h5>
-            <p class="pb-0">Бюджетный вариант для ведения торгового учета <p>
-              магазинов и торговых точек с весами.
-            </p>
-            <a routerLink="/pos-alimentara" class="btn btn-white btn-rounded btn-md black-text"><i class="fas fa-clone left"></i>   Выбрать комплект POS-Alimentara
+            <p class="pb-0"><div [innerHTML]="'AlexMarket.Complect.AliText'  | translate"></div>
+
+            <a routerLink="/pos-alimentara" class="btn btn-white btn-rounded btn-md black-text"><i class="fas fa-clone left"></i>
+              {{'AlexMarket.Complect.AliButton' | translate}}
 
             </a>
           </div>
@@ -125,12 +124,13 @@
           <div class="text-white text-center d-flex align-items-center  py-5 px-4 px-md-5 rounded ">
             <div>
               <h5 class="py-3 font-weight-bold">
-                <strong>КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ</strong>
-                <p> <h2><strong>POS-Market</strong></h2>
+                <strong>{{'AlexMarket.Complect.MarkTitleTop' | translate}}</strong>
+                <p> <h2><strong>{{'AlexMarket.Complect.MarkTitleBottom' | translate}}</strong></h2>
               </h5>
-              <p class="pb-0">Вариант для ведения торгового учета маркетах с весами
+              <p class="pb-0">{{'AlexMarket.Complect.MarkText' | translate}}
             </p>
-              <a routerLink="/pos-market" class="btn btn-white btn-rounded btn-md black-text"><i class="fas fa-clone left"></i> Выбрать комплект POS-Market
+              <a routerLink="/pos-market" class="btn btn-white btn-rounded btn-md black-text"><i class="fas fa-clone left"></i>
+                {{'AlexMarket.Complect.MarkButton' | translate}}
               </a>
             </div>
           </div>

@@ -1,12 +1,11 @@
 <div class="container gotop mt-5">
   <section class="dark-grey-text mb-5">
-<app-alerting></app-alerting>
+    <app-alerting></app-alerting>
     <!-- Grid row -->
     <div class="row">
 
       <!-- Grid column -->
       <div class="col-lg-5 mb-lg-0 pb-lg-3 mb-4 order-2 wow zoomIn" data-wow-delay="0.6s">
-
 
 
         <!--Form with header-->
@@ -16,50 +15,51 @@
             <!--Header-->
             <div class="form-header ">
               <h3>
-                <mdb-icon fas icon="envelope wow zoomIn" data-wow-delay="0.6s"></mdb-icon> Напишите нам:</h3>
+                <mdb-icon fas icon="envelope wow zoomIn" data-wow-delay="0.6s"></mdb-icon>
+                {{'Contact.SendMessage.Title' |translate}}</h3>
             </div>
 
-            <p class=" wow zoomIn" data-wow-delay="0.6s">Не стесняйтесь задавать нам вопросы</p>
+            <p class=" wow zoomIn" data-wow-delay="0.6s">{{'Contact.SendMessage.Text' |translate}}</p>
             <br>
 
             <form [formGroup]="form" (ngSubmit)="onSubmit()">
-            <!--Body-->
-            <div class="md-form">
-              <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
-              <input
-                mdbInput
-                formControlName="name"
-                type="text"
-                id="name"
-                class="form-control"
-                [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
-              >
-              <span
-                class="helper-text red-text"
-                *ngIf="form.get('name').invalid && form.get('name').touched"
-              >
+              <!--Body-->
+              <div class="md-form">
+                <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
+                <input
+                  mdbInput
+                  formControlName="name"
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
+                >
+                <span
+                  class="helper-text red-text"
+                  *ngIf="form.get('name').invalid && form.get('name').touched"
+                >
                     <span *ngIf="form.get('name').errors['required']">
                       Имя не может быть пустым
                     </span>
                     </span>
-              <label for="name">Ваше имя</label>
+                <label for="name">{{'Contact.SendMessage.Name' |translate}}</label>
 
-            </div>
+              </div>
 
-            <div class="md-form">
-              <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
-              <input
-                mdbInput
-                formControlName="email"
-                type="text"
-                id="email"
-                class="form-control"
-                [ngClass]="{'invalid': form.get('email').invalid && form.get('email').touched }"
-              >
-              <span
-                class="red-text "
-                *ngIf="form.get('email').touched && form.get('email').invalid"
-              >
+              <div class="md-form">
+                <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
+                <input
+                  mdbInput
+                  formControlName="email"
+                  type="text"
+                  id="email"
+                  class="form-control"
+                  [ngClass]="{'invalid': form.get('email').invalid && form.get('email').touched }"
+                >
+                <span
+                  class="red-text "
+                  *ngIf="form.get('email').touched && form.get('email').invalid"
+                >
                 <span *ngIf="form.get('email').errors.required">
                   Email не может быть пустым
                 </span>
@@ -67,62 +67,62 @@
                   Пожалуйста. введите правильный Email адрес
                 </span>
               </span>
-              <label for="email">Ваш email</label>
-            </div>
+                <label for="email">{{'Contact.SendMessage.Email' |translate}}</label>
+              </div>
 
-            <div class="md-form">
-              <mdb-icon fas icon="tag" class="prefix grey-text"></mdb-icon>
-              <input
-                mdbInput
-                formControlName="subject"
-                type="text"
-                id="subject"
-                class="form-control"
-                [ngClass]="{'invalid': form.get('subject').invalid && form.get('subject').touched }"
-              >
-              <span
-                class="helper-text red-text"
-                *ngIf="form.get('subject').invalid && form.get('subject').touched"
-              >
+              <div class="md-form">
+                <mdb-icon fas icon="tag" class="prefix grey-text"></mdb-icon>
+                <input
+                  mdbInput
+                  formControlName="subject"
+                  type="text"
+                  id="subject"
+                  class="form-control"
+                  [ngClass]="{'invalid': form.get('subject').invalid && form.get('subject').touched }"
+                >
+                <span
+                  class="helper-text red-text"
+                  *ngIf="form.get('subject').invalid && form.get('subject').touched"
+                >
                     <span *ngIf="form.get('subject').errors['required']">
                       Тема не может быть пустой
                     </span>
                     </span>
-              <label for="subject">Тема</label>
-            </div>
+                <label for="subject">{{'Contact.SendMessage.Theme' |translate}}</label>
+              </div>
 
-            <div class="md-form">
-              <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
-              <textarea
-                mdbInput
-                formControlName="message"
-                type="text"
-                id="message"
-                class="md-textarea"
-                [ngClass]="{'invalid': form.get('message').invalid && form.get('message').touched }"
-              >
+              <div class="md-form">
+                <mdb-icon fas icon="pencil-alt" class="prefix grey-text"></mdb-icon>
+                <textarea
+                  mdbInput
+                  formControlName="message"
+                  type="text"
+                  id="message"
+                  class="md-textarea"
+                  [ngClass]="{'invalid': form.get('message').invalid && form.get('message').touched }"
+                >
               </textarea>
-              <span
-                class="helper-text red-text"
-                *ngIf="form.get('message').invalid && form.get('message').touched"
-              >
+                <span
+                  class="helper-text red-text"
+                  *ngIf="form.get('message').invalid && form.get('message').touched"
+                >
                     <span *ngIf="form.get('message').errors['required']">
                       Сообщение не может быть пустым
                     </span>
                     </span>
-              <label for="message">Сообщение</label>
-            </div>
-            <div class="text-center">
-              <button
-                [disabled]="form.invalid || form.disabled"
-                data-toggle="modal"
-                data-target="#basicExample"
-                class="btn btn-primary btn-lg btn-block"
-                type="submit"
-              >
-                Отправить
-              </button>
-            </div>
+                <label for="message">{{'Contact.SendMessage.Content' |translate}}</label>
+              </div>
+              <div class="text-center">
+                <button
+                  [disabled]="form.invalid || form.disabled"
+                  data-toggle="modal"
+                  data-target="#basicExample"
+                  class="btn btn-primary btn-lg btn-block"
+                  type="submit"
+                >
+                  {{'BUTTONS.Send' | translate}}
+                </button>
+              </div>
             </form>
           </mdb-card-body>
 
@@ -134,15 +134,14 @@
       <!-- Grid column -->
 
 
-
-
-
       <!-- Grid column -->
       <div class="col-lg-7 order-1">
         <!-- Section heading -->
-        <h3 class="font-weight-bold text-left mb-4 wow fadeInLeft" data-wow-delay="0.6s">ЦЕНТРАЛЬНЫЙ ОФИС</h3>
+        <h3 class="font-weight-bold text-left mb-4 wow fadeInLeft" data-wow-delay="0.6s">{{'Contact.Header.Title' | translate}}</h3>
         <!-- Section description -->
-        <p class="text-left  pb-0 wow fadeInLeft" data-wow-delay="0.6s">MD2005, Республика Молдова, мун. Кишинев, ул. Ион Прункул, 4/1</p>
+        <p class="text-left  pb-0 wow fadeInLeft" data-wow-delay="0.6s">
+          {{'Contact.Header.Text' | translate}}
+        </p>
 
         <!-- Buttons-->
         <div class="row ">
@@ -158,22 +157,22 @@
               </span>
                 </div>
                 <div class="step-excerpt">
-                  <h6 class="font-weight-bold black-text  pt-0">EMAIL</h6>
-                  <p>office@alex-se.com</p>
+                  <h6 class="font-weight-bold black-text  pt-0">{{'Contact.Header.TitleIconOne' | translate}}</h6>
+                  <p>{{'Contact.Header.TextIconOne' | translate}}</p>
                 </div>
               </li>
               <li class="step-element pb-0 wow zoomIn" data-wow-delay="0.6s">
-              <div class="step-number pt-4">
+                <div class="step-number pt-4">
               <span class="fa-stack fa-2x blue  blue-text">
                 <i class="fas fa-square fa-stack-2x"></i>
                 <i class="fas fa-phone fa-stack-1x fa-inverse"></i>
               </span>
-              </div>
-              <div class="step-excerpt pt-0">
-                <h6 class="font-weight-bold black-text  pt-3">ОФИС</h6>
-                <p>(+37322) 244-572</p>
-              </div>
-            </li>
+                </div>
+                <div class="step-excerpt pt-0">
+                  <h6 class="font-weight-bold black-text  pt-3">{{'Contact.Header.TitleIconTwo' | translate}}</h6>
+                  <p>{{'Contact.Header.TextIconTwo' | translate}}</p>
+                </div>
+              </li>
               <li class="step-element pb-0 wow zoomIn" data-wow-delay="0.6s">
                 <div class="step-number pt-4">
               <span class="fa-stack fa-2x blue  blue-text">
@@ -182,18 +181,12 @@
               </span>
                 </div>
                 <div class="step-excerpt pt-0 wow zoomIn" data-wow-delay="0.6s">
-                  <h6 class="font-weight-bold black-text  pt-3">ТЕХПОДДЕРЖКА ПРОМЫШЛЕННОГО ОБОРУДОВАНИЯ</h6>
-                  <p>(+373) 69900989 </p>
+                  <h6 class="font-weight-bold black-text  pt-3">{{'Contact.Header.TitleIconThree' | translate}}</h6>
+                  <p>{{'Contact.Header.TextIconThree' | translate}} </p>
                 </div>
               </li>
             </ol>
           </div>
-
-
-
-
-
-
 
 
           <div class="col-lg-6 mb-4">
@@ -206,8 +199,8 @@
               </span>
                 </div>
                 <div class="step-excerpt">
-                  <h6 class="font-weight-bold black-text  pt-0">ФАКС</h6>
-                  <p>(+37322) 29-67-29</p>
+                  <h6 class="font-weight-bold black-text  pt-0">{{'Contact.Header.TitleIconFour' | translate}}</h6>
+                  <p>{{'Contact.Header.TextIconFour' | translate}}</p>
                 </div>
               </li>
               <li class="step-element pb-0 wow zoomIn" data-wow-delay="0.6s">
@@ -218,8 +211,8 @@
               </span>
                 </div>
                 <div class="step-excerpt pt-3">
-                  <h6 class="font-weight-bold black-text  pt-0">СЕРВИСНЫЙ ЦЕНТР</h6>
-                  <p>(+37322) 24-30-87</p>
+                  <h6 class="font-weight-bold black-text  pt-0">{{'Contact.Header.TitleIconFive' | translate}}</h6>
+                  <p>{{'Contact.Header.TextIconFive' | translate}}</p>
                 </div>
               </li>
               <li class="step-element pb-0 wow zoomIn" data-wow-delay="0.6s">
@@ -230,25 +223,18 @@
               </span>
                 </div>
                 <div class="step-excerpt pt-3">
-                  <h6 class="font-weight-bold black-text  pt-0">ТЕХПОДДЕРЖКА АВТОМАТИЗАЦИИ ТОРГОВЛИ И ОБЩЕПИТА</h6>
-                  <p>(+373) 60001103</p>
+                  <h6 class="font-weight-bold black-text  pt-0">{{'Contact.Header.TitleIconSix' | translate}}</h6>
+                  <p>{{'Contact.Header.TextIconSix' | translate}}</p>
                 </div>
               </li>
             </ol>
           </div>
 
 
-
-
-
-
-
-
-
-
-
         </div>
-        <h3 class="font-weight-bold text-center mb-4 wow fadeInLeft" data-wow-delay="0.6s">ТЕХПОДДЕРЖКА БЕЗ ВЫХОДНЫХ</h3>
+        <h3 class="font-weight-bold text-center mb-4 wow fadeInLeft" data-wow-delay="0.6s">
+          {{'Contact.Header.TextBottom' | translate}}
+        </h3>
       </div>
       <!-- Grid column -->
 
@@ -263,247 +249,237 @@
 <!--Section: Content-->
 
 <div class="container">
-<div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center">
 
-  <div class="col-md-5 col-lg-5 col-xl-3 wow zoomIn" data-wow-delay="1.6s">
-    <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text" href="#">МАГАЗИН ТИРАСПОЛЬ</a></h5>
-    <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino"><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
-    </div>
-      <div class="wpb_single_image wpb_content_element vc_align_left">
-
-        <figure class="wpb_wrapper vc_figure">
-          <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
-        </figure>
-      </div>
-
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>MD-3300, ПМР, г. Тирасполь,<br>
-            ул. Профсоюзов 60, оф 101<br>
-            <span style="color: #ffffff;">.</span></p>
-
+    <div class="col-md-5 col-lg-5 col-xl-3 wow zoomIn" data-wow-delay="1.6s">
+      <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text" href="#">
+        {{'Contact.Office.Tiraspol.Title' | translate}}
+      </a></h5>
+      <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5>
+        <div
+          class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino">
+          <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span
+          class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
         </div>
-      </div>
+        <div class="wpb_single_image wpb_content_element vc_align_left">
 
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>e-mail: office@alex-se.com<br>
-            e-mail: PMR@alex-se.md<br>
-            Телефон: (533) 675 40<br>
-            Моб: (775) 97 555</p>
-
+          <figure class="wpb_wrapper vc_figure">
+            <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
+          </figure>
         </div>
-      </div>
 
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>Режим работы:<br>
-            Пн – Пт с 8-00 до 18-00<br>
-            Сб – Вс и выходные дни</p>
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Tiraspol.Adress'  | translate"></div>
 
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-md-5 col-lg-4 col-xl-3 wow zoomIn" data-wow-delay="1.6s">
-    <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text"
-                                                                            href="#">МАГАЗИН МУН. БЕЛЬЦЫ</a></h5>
-    <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino"><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
-    </div>
-      <div class="wpb_single_image wpb_content_element vc_align_left">
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Tiraspol.Contact'  | translate"></div>
 
-        <figure class="wpb_wrapper vc_figure">
-          <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
-        </figure>
-      </div>
-
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>MD-3121, Республика Молдова,<br>
-            мун. Бельцы, ул. Киев 145<br>
-            <span style="color: #ffffff;">.</span></p>
-
+          </div>
         </div>
-      </div>
 
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>e-mail: nord@alex-se.com<br>
-            Телефон: (+373231) 40-456<br>
-            Факс: (+373231) 44-345<br>
-            Моб: (+373) 69966679, (+373) 68160101</p>
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Tiraspol.Time'  | translate"></div>
 
-        </div>
-      </div>
-
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>Режим работы:<br>
-            Пн – Пт с 8-00 до 18-00<br>
-            Сб – Вс и выходные дни</p>
-
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="col-md-5 col-lg-4 col-xl-3 wow zoomIn" data-wow-delay="1.6s">
-    <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text"
-                                                                            href="#">МАГАЗИН МУН. КОМРАТ</a></h5>
-    <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino"><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
-    </div>
-      <div class="wpb_single_image wpb_content_element vc_align_left">
-
-        <figure class="wpb_wrapper vc_figure">
-          <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
-        </figure>
-      </div>
-
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>MD-3805, Республика Молдова,<br>
-            АТО Гагаузия, мун. Комрат,<br>
-            ул. Победы 43</p>
-
+    <div class="col-md-5 col-lg-4 col-xl-3 wow zoomIn" data-wow-delay="1.6s">
+      <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text">
+        {{'Contact.Office.Balti.Title' | translate}}
+      </a></h5>
+      <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5>
+        <div
+          class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino">
+          <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span
+          class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
         </div>
-      </div>
+        <div class="wpb_single_image wpb_content_element vc_align_left">
 
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>e-mail: nord@alex-se.com<br>
-            Телефон: (+373231) 40-456<br>
-            Факс: (+373231) 44-345<br>
-            Моб: (+373) 69966679, (+373) 68160101</p>
-
+          <figure class="wpb_wrapper vc_figure">
+            <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
+          </figure>
         </div>
-      </div>
 
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>Режим работы:<br>
-            Пн – Пт с 8-00 до 18-00<br>
-            Сб – Вс и выходные дни</p>
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Balti.Adress'  | translate"></div>
 
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Balti.Contact'  | translate"></div>
 
-  <div class="col-md-5 col-lg-4 col-xl-3 wow zoomIn" data-wow-delay="1.6s">
-    <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text"
-                                                                            href="#">МАГАЗИН Г. ДРОКИЯ</a></h5>
-    <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino"><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
-    </div>
-      <div class="wpb_single_image wpb_content_element vc_align_left">
-
-        <figure class="wpb_wrapper vc_figure">
-          <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
-        </figure>
-      </div>
-
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>MD-5202, Республика Молдова,<br>
-            г. Дрокия, ул. Гуданов, (Piaţa nouă),<br>
-            бут. 20</p>
-
+          </div>
         </div>
-      </div>
 
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>e-mail: drochia@alex-se.com<br>
-            Моб.: (+373) 68650707<br>
-            <span style="color: #ffffff;">.</span><br>
-            <span style="color: #ffffff;">.</span></p>
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Balti.Time'  | translate"></div>
 
-        </div>
-      </div>
-
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>Режим работы:<br>
-            Пн – Пт с 8-00 до 18-00<br>
-            Сб – Вс и выходные дни</p>
-
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <div class="col-md-5 col-lg-4 col-xl-3  wow zoomIn" data-wow-delay="1.6s">
-    <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text"
-                                                                            href="#">ФИЛИАЛ УКРАИНА</a></h5>
-    <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino"><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
-    </div>
-      <div class="wpb_single_image wpb_content_element vc_align_left">
-
-        <figure class="wpb_wrapper vc_figure">
-          <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
-        </figure>
-      </div>
-
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>MD-3300, ПМР, г. Тирасполь,<br>
-            ул. Профсоюзов 60, оф 101<br>
-            <span style="color: #ffffff;">.</span></p>
-
+    <div class="col-md-5 col-lg-4 col-xl-3 wow zoomIn" data-wow-delay="1.6s">
+      <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text">
+        {{'Contact.Office.Comrat.Title' | translate}}
+      </a></h5>
+      <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5>
+        <div
+          class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino">
+          <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span
+          class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
         </div>
-      </div>
+        <div class="wpb_single_image wpb_content_element vc_align_left">
 
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>e-mail: office@alex-se.com<br>
-            e-mail: PMR@alex-se.md<br>
-            Телефон: (533) 675 40<br>
-            Моб: (775) 97 555</p>
-
+          <figure class="wpb_wrapper vc_figure">
+            <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
+          </figure>
         </div>
-      </div>
 
-      <div class="wpb_text_column wpb_content_element ">
-        <div class="wpb_wrapper">
-          <p>Режим работы:<br>
-            Пн – Пт с 8-00 до 18-00<br>
-            Сб – Вс и выходные дни</p>
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Comrat.Adress'  | translate"></div>
 
+          </div>
+        </div>
+
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Comrat.Contact'  | translate"></div>
+          </div>
+        </div>
+
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Comrat.Time'  | translate"></div>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="col-md-5 col-lg-4 col-xl-9 wow zoomIn" data-wow-delay="1.6s">
-  <!--Google map-->
-  <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.409922412399!2d28.833268315432562!3d47.03218651284877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c4b32635d1b%3A0x55a41cd8fa072219!2sAlex%20S%26E!5e0!3m2!1sru!2s!4v1576842217558!5m2!1sru!2s" frameborder="0"
-            style="border:0" allowfullscreen></iframe>
-  </div>
+
+    <div class="col-md-5 col-lg-4 col-xl-3 wow zoomIn" data-wow-delay="1.6s">
+      <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text">
+        {{'Contact.Office.Drocia.Title' | translate}}
+      </a></h5>
+      <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5>
+        <div
+          class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino">
+          <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span
+          class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+        </div>
+        <div class="wpb_single_image wpb_content_element vc_align_left">
+
+          <figure class="wpb_wrapper vc_figure">
+            <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
+          </figure>
+        </div>
+
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Drocia.Adress'  | translate"></div>
+
+          </div>
+        </div>
+
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Drocia.Contact'  | translate"></div>
+
+          </div>
+        </div>
+
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Drocia.Time'  | translate"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-5 col-lg-4 col-xl-3  wow zoomIn" data-wow-delay="1.6s">
+      <h5 class="font-weight-bold border-bottom border-secondary pt-4 mb-4"><a class="dark-grey-text">
+        {{'Contact.Office.Ucraina.Title' | translate}}
+      </a></h5>
+      <div class="wpb_wrapper"><h5 style="text-align: left" class="vc_custom_heading"></h5>
+        <div
+          class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_3 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_chino">
+          <span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span
+          class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+        </div>
+        <div class="wpb_single_image wpb_content_element vc_align_left">
+
+          <figure class="wpb_wrapper vc_figure">
+            <div class="vc_single_image-wrapper   vc_box_border_grey"></div>
+          </figure>
+        </div>
+
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Ucraina.Adress'  | translate"></div>
+
+          </div>
+        </div>
+
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+            <div [innerHTML]="'Contact.Office.Ucraina.Contact'  | translate"></div>
+          </div>
+        </div>
+
+        <div class="wpb_text_column wpb_content_element ">
+          <div class="wpb_wrapper">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-5 col-lg-4 col-xl-9 wow zoomIn" data-wow-delay="1.6s">
+      <!--Google map-->
+      <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.409922412399!2d28.833268315432562!3d47.03218651284877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c4b32635d1b%3A0x55a41cd8fa072219!2sAlex%20S%26E!5e0!3m2!1sru!2s!4v1576842217558!5m2!1sru!2s"
+          frameborder="0"
+          style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
   </div>
 
 </div>
 
-</div>
 
+<style>
+  .map-container-section {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
 
-  <style>
-    .map-container-section {
-      overflow:hidden;
-      padding-bottom:56.25%;
-      position:relative;
-      height:0;
-    }
-    .map-container-section iframe {
-      left:0;
-      top:0;
-      height:100%;
-      width:100%;
-      position:absolute;
-    }
-
+  .map-container-section iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 
 
   .fa-play:before {

@@ -59,7 +59,10 @@
     "Question": "CONSULTĂ-TE",
     "TehSpec": "CARACTERISTICI TEHNICE",
     "Order": "Comandă",
-    "GoShop": "Merge la magazin"
+    "GoShop": "Merge la magazin",
+    "Call": "APELEAZĂ",
+    "Write": "SCRIE",
+    "Send": "Trimite mesaj"
   },
   "HOME": {
     "INFO_SHORT":{
@@ -151,7 +154,9 @@
       "ComplectGiveOne": "Compact",
       "ComplectGiveTwo": "Fiabil",
       "ComplectGiveThree": "Durabil",
-      "ComplectPrice": "Preț:"
+      "ComplectPriceTitle": "Preț:",
+      "ComplectPrice": "20 300 MDL",
+      "ComplectOldPrice": "22 490 MDL"
     },
     "MicroPos": {
       "TitleTop": "MicroPOS elegant",
@@ -237,11 +242,103 @@
 
   },
   "PosCompact": {
+    "Header": {
+      "TitleTop": "SET PENTRU AUTOMATIZAREA COMERȚULUI",
+      "TitleBottom": "POS-Compact",
+      "IconOne": "Buticuri",
+      "IconTwo": "Departamente în centre comerciale",
+      "IconThree": "Magazine",
+      "IconFour": "Magazine mici"
+    },
+    "Full": {
+      "TitleTop": "Set pentru automatizarea comerțului",
+      "TitleBottom": "POS-Compact",
+      "ComplectTitle": "Componența setului:",
+      "ComplectOne": "Soft Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Mini PC PiPo X10",
+      "ComplectThree": "Casă de marcat Datecs DP-150SD cu baterie",
+      "ComplectFour": "Cititor cod de bare manual Mindeo MD2000AT 1D",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiabil",
+      "ComplectGiveThree": "Durabil",
+      "ComplectPriceTitle": "Preț:",
+      "ComplectPrice": "13 100 MDL",
+      "ComplectOldPrice": "14 579 MDL"
+    },
     "DivThreeAll": {
       "TitleOne": "Garanția – 1 an",
       "TextOne": "Garantăm calitate și oferim numai produse certificate.",
       "TitleTwo": "Suport on-line",
       "TextTwo": "Serviciul nostru de asistență activează zilnic, fără zile de odihnă și sărbători."
+    },
+    "MiniPos": {
+      "TitleTop": "Tabletă MicroPOS de nouă generație",
+      "TitleBottom": "Mini-PC PiPo X10",
+      "SpecTitleOne": "Panou senzorial",
+      "SpecTextOne": "Ecran de 10,8 cu rezoluție FHD 1920 * 1280 și răspuns instantaneu al senzorului",
+      "SpecTitleTwo": "Stocare rapidă a datelor",
+      "SpecTextTwo": "Memorie DDR3 de 4 GB și hard disk SSD modern și rapid de 64 GB",
+      "SpecTitleThree": "Set mare de interfețe",
+      "SpecTextThree": "4 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, WiFi și altele",
+      "SpecTitleFour": "Funcționează de la baterie",
+      "SpecTextFour": "10000 mAh"
+    },
+    "DatecsDPSD": {
+      "TitleTop": "Casă de marcat",
+      "TitleBottom": "Datecs DP-150 SD battery",
+      "SpecTitleOne": "Număr mare de intefețe",
+      "SpecTextOne": "2 x port RS-232C pentru conectare: 1 x dispozitiv USB de clasă prin mini-USB (opțional) 1 x Box Control",
+      "SpecTitleTwo": "Viteza de lucru",
+      "SpecTextTwo": "până la 12 linii pe secundă",
+      "SpecTitleThree": "Memoria fiscală",
+      "SpecTextThree": "Non-volatilă, poate suporta până la 1825 de rapoarte zilnice",
+      "SpecTitleFour": "Funcționează de la baterie",
+      "SpecTextFour": "Nu necesită priză"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Cititor de bare",
+      "TitleBottom": "Cititor de bare laser manual Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Viteza de lucru",
+      "SpecTextOne": "Scanare la o viteză de 200 scanări / sec.",
+      "SpecTitleTwo": "Ergonomicitate",
+      "SpecTextTwo": "Scanerul are un mâner comod pentru o funcțiobare confortabilă și rapidă",
+      "SpecTitleThree": "Fiabilitate",
+      "SpecTextThree": "Resursa funcționării butonului este de peste 50.000.000 de ori. Lucru stabil în regim intensiv.",
+      "SpecTitleFour": "Durabil",
+      "SpecTextFour": "Rezistă peste 30 de căderi de la 2 metri pe beton"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Instalare și configurare simplă",
+      "SpecTextOne": "Softul de evidență este ușor de instalat și extrem de rapid de implementat",
+      "SpecTitleTwo": "Introducerea articolelor",
+      "SpecTextTwo": "Articolele sunt introduse atât manual folosind un cod, cât și printr-un cititor de coduri de bare",
+      "SpecTitleThree": "Orice articole",
+      "SpecTextThree": "Sistemul este potrivit pentru lucrul cu orice tip de articole: atât la bucată, cât și la greutate",
+      "SpecTitleFour": "Metode de plata",
+      "SpecTextFour": "Primiți plata atât în numerar, cât și cu cardurile de plată",
+      "SpecTitleFive": "Interfață vizuală",
+      "SpecTextFive": "Interfața intuitivă vă permite să plasați vânzările în câteva secunde",
+      "SpecTitleSix": "Imprimarea",
+      "SpecTextSix": "Puteți imprima direct din program o etichetă de preț pe support de hârtie sau o etichetă autoadezivă"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Evidența completă a stocurilor",
+      "SpecTextOne": "Controlul soldurilor stocurilor din depozit în orice moment, precum și rapoartele de depozit pentru orice data",
+      "SpecTitleTwo": "Controlul numerarului",
+      "SpecTextTwo": "Acces online la statistici - controlați-vă afacerea de orice colt as lumii cu acces la Internet",
+      "SpecTitleThree": "Siguranță",
+      "SpecTextThree": "Toate acțiunile utilizatorilor sunt înregistrate și afișate în rapoarte",
+      "SpecTitleFour": "Diferențierea drepturilor",
+      "SpecTextFour": "Setarea drepturilor de acces individual pentru fiecare angajat pentru a evita abuzurile",
+      "SpecTitleFive": "Lucrul cu facturile",
+      "SpecTextFive": "Orice fel de facturi - toate operațiunile cu mărfurile se efectuează rapid și clar",
+      "SpecTitleSix": "Analize",
+      "SpecTextSix": "Rapoarte privind vânzările, circulația mărfurilor, fluctuațiile sezoniere, angajații etc."
     },
     "MorePos": {
       "TitleOne": "CE COMPUTER ESTE NECESAR PENTRU SOFTWARE ALEX MARKET?",
@@ -255,6 +352,262 @@
     },
     "LastShop": {
       "Title": "De asemenea, puteți extinde setul cu echipamente suplimentare"
+    }
+  },
+  "PosMarket": {
+    "Header": {
+      "TitleTop": "SOFT PENTRU MAGAZIN",
+      "TitleBottom": "Pos Market",
+      "IconOne": "Buticuri",
+      "IconTwo": "Departamente în centre comerciale",
+      "IconThree": "Magazine",
+      "IconFour": "Magazine mici"
+    },
+    "Full": {
+      "TitleTop": "Set pentru automatizarea comerțului",
+      "TitleBottom": "POS-Market",
+      "ComplectTitle": "Componența setului:",
+      "ComplectOne": "Soft Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "ComplectThree": "Cititor cod de bare laser manual Mindeo MD2000AT 1D",
+      "ComplectFour": "Printer fiscal FP-700SD",
+      "ComplectFive": "Cântar comercial ALEX PRINT-1 (imprimare etichete)",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiabil",
+      "ComplectGiveThree": "Durabil",
+      "ComplectPriceTitle": "Preț:",
+      "ComplectPrice": "30 100 MDL",
+      "ComplectOldPrice": "33 540 MDL"
+    },
+    "MicroPos": {
+      "TitleTop": "MicroPOS elegant",
+      "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "SpecTitleOne": "Panou senzorial",
+      "SpecTextOne": "Ecran tactil cu rezoluție HD 1366 × 768 și răspuns instantaneu al senzorului",
+      "SpecTitleTwo": "Viteză",
+      "SpecTextTwo": "Terminalul este echipat cu un procesor J1900 de nouă generație cu performanțe ridicate și consum redus de energie",
+      "SpecTitleThree": "Stocare rapidă a datelor",
+      "SpecTextThree": "Memorie DDR3 de 4 GB și hard disk SSD modern de 64 GB",
+      "SpecTitleFour": "Set mare de interfețe",
+      "SpecTextFour": "6 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, RS232 și altele"
+    },
+    "ScalesRSPrint": {
+      "TitleTop": "Cântar comercial cu RS",
+      "TitleBottom": "Cântar comercial BSN 6/15 kg D1.3 T2 230x290 с RS-232",
+      "SpecTitleOne": "Ecran luminos dublu",
+      "SpecTextOne": "Afișează greutatea netă, prețul și numele articolului, precum și informația despre regimurile selectate și starea cântarului",
+      "SpecTitleTwo": "Tastatură mare și comodă",
+      "SpecTextTwo": "112 taste de comandă rapidă vă permit să resetați rapid din memorie articolul droit",
+      "SpecTitleThree": "Conexiune  PC",
+      "SpecTime": "Conexiune la PC printr-o interfață fiabilă RS-232",
+      "SpecTitleFour": "Imprimarea etichetelor",
+      "SpecTextFour": "Formatul etichetei ușor se personalizează și permite tipărirea grafică și codurilor de bare 1D"
+    },
+    "FPrint": {
+      "TitleTop": "Registrator fiscal",
+      "TitleBottom": "IMPRIMANTĂ Fiscală FP-700SD",
+      "SpecTitleOne": "Viteză mare de imprimare",
+      "SpecTextOne": "Imprimantă cu imprimare termică directă pe hârtie termică de 80 mm sau 58 mm lățime",
+      "SpecTitleTwo": "O gamă largă de hârtie termică",
+      "SpecTextTwo": "Imprimantă cu imprimare termică directă pe hârtie termică de 80 mm sau 58 mm lățime",
+      "SpecTitleThree": "Conectarea la un PC și sertar de bani",
+      "SpecTextThree": "Imprimanta are o varietate de interfețe RS-232 pentru conectarea la PC. USB. Ethernet. RJ-11",
+      "SpecTitleFour": "Jurnal electronic încorporat",
+      "SpecTextFour": "Stocarea electronică a benzii de control este asigurată de un jurnal electronic încorporat"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Cititor de bare",
+      "TitleBottom": "Cititor de bare laser manual Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Viteza de lucru",
+      "SpecTextOne": "Scanare la o viteză de 200 scanări / sec.",
+      "SpecTitleTwo": "Ergonomicitate",
+      "SpecTextTwo": "Scanerul are un mâner comod pentru o funcțiobare confortabilă și rapidă",
+      "SpecTitleThree": "Fiabilitate",
+      "SpecTextThree": "Resursa funcționării butonului este de peste 50.000.000 de ori. Lucru stabil în regim intensiv.",
+      "SpecTitleFour": "Durabil",
+      "SpecTextFour": "Rezistă peste 30 de căderi de la 2 metri pe beton"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Instalare și configurare simplă",
+      "SpecTextOne": "Softul de evidență este ușor de instalat și extrem de rapid de implementat",
+      "SpecTitleTwo": "Introducerea articolelor",
+      "SpecTextTwo": "Articolele sunt introduse atât manual folosind un cod, cât și printr-un cititor de coduri de bare",
+      "SpecTitleThree": "Orice articole",
+      "SpecTextThree": "Sistemul este potrivit pentru lucrul cu orice tip de articole: atât la bucată, cât și la greutate",
+      "SpecTitleFour": "Metode de plata",
+      "SpecTextFour": "Primiți plata atât în numerar, cât și cu cardurile de plată",
+      "SpecTitleFive": "Interfață vizuală",
+      "SpecTextFive": "Interfața intuitivă vă permite să plasați vânzările în câteva secunde",
+      "SpecTitleSix": "Imprimarea",
+      "SpecTextSix": "Puteți imprima direct din program o etichetă de preț pe support de hârtie sau o etichetă autoadezivă"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Evidența completă a stocurilor",
+      "SpecTextOne": "Controlul soldurilor stocurilor din depozit în orice moment, precum și rapoartele de depozit pentru orice data",
+      "SpecTitleTwo": "Controlul numerarului",
+      "SpecTextTwo": "Acces online la statistici - controlați-vă afacerea de orice colt as lumii cu acces la Internet",
+      "SpecTitleThree": "Siguranță",
+      "SpecTextThree": "Toate acțiunile utilizatorilor sunt înregistrate și afișate în rapoarte",
+      "SpecTitleFour": "Diferențierea drepturilor",
+      "SpecTextFour": "Setarea drepturilor de acces individual pentru fiecare angajat pentru a evita abuzurile",
+      "SpecTitleFive": "Lucrul cu facturile",
+      "SpecTextFive": "Orice fel de facturi - toate operațiunile cu mărfurile se efectuează rapid și clar",
+      "SpecTitleSix": "Analize",
+      "SpecTextSix": "Rapoarte privind vânzările, circulația mărfurilor, fluctuațiile sezoniere, angajații etc."
+    }
+  },
+  "AlexMarket": {
+    "Header": {
+      "TitleTop": "Sistem profesional pentru automatizarea comerțului și evidenței.",
+      "TitleBottom": "Fiecare afacere este individuală și, prin urmare, abordarea alegerii echipamentelor și software-ului este, de asemenea, diferită. Experții noștri vor dezvolta o soluție individuală care va funcționa în beneficiul afacerii dvs."
+    },
+    "Solution": {
+      "Title": "Soluție pentru:",
+      "IconOne": "Magazine alimentare",
+      "IconTwo": "Magazine specializate",
+      "IconThree": "Lanțuri mici de magazine",
+      "IconFour": "Magazine de materiale de construcții"
+    },
+    "Advantage": {
+      "Title": "Beneficii",
+      "IconOne": "Alex-Market este soluția ideală pentru vânzarea cu amănuntul",
+      "IconTwo": "Automatizarea magazinului în decurs de 1 zi",
+      "IconThree": "Pentru funcționare sunt necesare doar cunoștințe de bază despre PC",
+      "IconFour": "Suport tehnic din partea programatorui de software"
+    },
+    "Divert": {
+      "Title": "Simțiți-vă liber să ne puneți întrebări"
+    },
+    "Features": {
+      "TitleTop": "PROGRAM RETAIL PENTRU ",
+      "TitleBottom": "MAGAZIN – FUNCȚIONAL",
+      "SpecTitleOne": "Loc la casă",
+      "SpecTextOne": "Interfața simplă a softului vă permite să procesați vânzarea în câteva secunde, ceea ce oferă o deservire rapidă",
+      "SpecTitleTwo": "Nomenclatură",
+      "SpecTextTwo": "Număr nelimitat de câmpuri - caracteristici ale produsului: adaos comercial, data intrării, data expirării, soldul minim etc.",
+      "SpecTitleThree": "Lucrul cu soldurile",
+      "SpecTextThree": "Control comod și precis al soldurilor pentru a urmări disponibilitatea actuală a produselor în depozit în orice moment și pentru a emite facturile",
+      "SpecTitleFour": "Analize",
+      "SpecTextFour": "Rapoarte de vânzări defalcate pe chitanțe, bunuri, reduceri etc. pentru orice perioadă. Rapoarte privind liderii/intrușii de vânzări, fluctuațiile sezoniere ale cererii și altele",
+      "SpecTitleFive": "Compatibilitate",
+      "SpecTextFive": "Rapoarte de vânzări defalcate pe chitanțe, bunuri, reduceri etc. pentru orice perioadă. Rapoarte privind liderii/intrușii de vânzări, fluctuațiile sezoniere ale cererii și altele",
+      "SpecTitleSix": "Etichete de preț și etichete",
+      "SpecTextSix": "Imprimarea prețurilor și a etichetelor direct din program, precum și prin conectarea la un  software terță",
+      "SpecTitleSeven": "Programe de reduceri",
+      "SpecTextSeven": "Carduri de reducere, reduceri acumulative, sezoniere și temporare pentru bunuri și categorii. Vânzare în datorie",
+      "SpecTitleEight": "Evidența depozitului",
+      "SpecTextEight": "Programul de evidență a mărfurilor din magazin vă permite să urmăriți stocurile din deposit în timp real, să efectuați inventarierea stocurilor, decontările cu furnizorii"
+    },
+    "Complect": {
+      "TitleTop": "AUTOMATIZARE COMPLETĂ LA CHEIE",
+      "TitleBottom": "Seturi POS pentru comerț și evidență - configurate, testate, cu programul instalat",
+      "ComTitleTop": "SET DE AUTOMATIZARE ÎN COMERȚ",
+      "ComTitleBottom": "POS-Compact",
+      "ComText": "Opțiune bugetară pentru ducerea evidenței comerciale în magazine mici și buticuri.",
+      "ComButton": "ALEGE SET POS-COMPACT",
+      "AliTitleTop": "SET DE AUTOMATIZARE ÎN COMERȚ",
+      "AliTitleBottom": "POS-Alimentara",
+      "AliText": "Opțiune bugetară pentru ducerea evidenței comerciale în magazine și puncte de comerț cu cântare.",
+      "AliButton": "ALEGE SET POS-ALIMENTARA",
+      "MarkTitleTop": "SET DE AUTOMATIZARE ÎN COMERȚ",
+      "MarkTitleBottom": "POS-Market",
+      "MarkText": "Opțiune pentru ducerea evidenței comerciale în magazine cu cântare.",
+      "MarkButton": "ALEGE SET POS-MARKET"
+    }
+  },
+  "About": {
+    "Header": {
+      "Title": "Cel mai mare producător și distribuitor de echipamente de cântărire pentru industrie și comerț din Moldova."
+    },
+    "TextRab": {
+      "Title": "Scurt istoric despre companie",
+      "TextTop": "Compania și-a început activitatea în anul 1993 producând cântare comerciale, dozatoare și sisteme automatizate de evidență pentru întreprinderile industriale și comerciale.",
+      "TextBottom": "În prezent,  „Alex S&E” este una dintre cele mai mari companii de engineering din Moldova și din țările CSI. Zona de producție și centrul de deservire a companiei sunt situate pe o suprafață de peste 1300 de metri pătrați, iar numărul angajaților a depășit 100 de persoane."
+    },
+    "DivAb": {
+      "Title": "Gama de servicii"
+    },
+    "MoreAb": {
+      "IconOne": "Balanțe analitice de un spectru larg",
+      "IconTwo": "Producția de cântare pentru automobile (10t-60t) și vagoane (100t-250t)",
+      "IconThree": "Modernizarea tuturor tipurilor de cântare de la mecanice la electronice, inclusiv pentru automobile și vagoane, cu acces la PC",
+      "IconFour": "Producția de cântare tip platformă de la 1 kg la 5 tone",
+      "IconFive": " Automatizarea complexă a volumului de vânzări și evidența stocurilor în magazine, supermarketuri, cafenele și baruri",
+      "IconSix": "Producerea tuturor tipurilor de dozatoare simple și multi-componente, precum și modernizarea dozatoarelor existente mecanice în electronice",
+      "IconSeven": "Crearea rețelelor APCS și rețelelor locale",
+      "IconEight": "Automatizarea evidenței interne pentru mișcarea materiilor prime, semifabricatelor și a produselor finite prin controlul greutății",
+      "IconNine": "Automatizarea proceselor tehnologice"
+    },
+    "DivTwoAb": {
+      "Title": "Cea mai bună publicitate:",
+      "Text": "Echipamentele care funcționează fiabil și fără probleme pentru clienții noștri!"
+    },
+    "FinalAb": {
+      "TextOne": "<p>Datorită dezvoltării rețelei de reprezentanțe și sucursale, produsele «Alex S&amp;E» au devenit cunoscute nu numai în Moldova, ci și în străinătate.<br>\nSediul principal al companiei este situat în mun. Chișinău. În Moscova (Rusia) și Harkov (Ucraina) operează încă două sucursale.</p>\n<p>Pe parcursul a 27 de ani de activitate, clienții noștri au devenit întreprinderi din diverse industrii, cum ar fi întreprinderi metalurgice, rafinarea petrolului și gazele, mineritul și prelucrarea lui, carnea și produsele lactate, precum și panificația, furajele, extracția uleiului, fermentarea tutunului, fabricile de bere, ceramica, fabricile de porțelan și sticlă, întreprinderile comerciale și rețelele de transport.</p>\n<p>Toate produsele companiei sunt certificate și incluse în registrele de stat din Republica Moldova, Belarus, Ucraina, Kazahstan și Federația Rusă.</p>",
+      "TextTwo": "<p>Inginerii și programatorii<strong>„Alex S&amp;E”</strong> Inginerii și programatorii „Alex S&E” urmăresc în mod constant tendințele în dezvoltarea industriei și a comerțului pentru a oferi clienților noștri echipamente de cântărire care îndeplinesc standardele internaționale. Toți specialiștii sunt instruiți în mod regulat în străinătate.</p>\n<p>Compania a stabilit parteneriate fiabile cu cei mai buni producători străini de echipamente metrologice, de cântărire și de măsurare, precum și componente pentru producția de cântare. Lucrăm cu companii din Olanda, Italia, Franța, Marea Britanie, Israel.</p>\n<p><strong>Principiile de bază pe care le utilizăm:</strong><br>\n • respectarea strictă a intereselor Clientului;<br>\n • utilizarea componentelor numai de la cei mai buni producători străini;<br> • garanție pentru toate componentele, echipamentele și service-ul pe întreaga durată de viață.</p>"
+    }
+  },
+  "Contact": {
+    "SendMessage": {
+      "Title": "Scrie-ne:",
+      "Text": "Nu ezitați să ne puneți întrebări",
+      "Name": "Nume",
+      "Email": "Email",
+      "Theme": "Subiect",
+      "Content": "Mesaj"
+    },
+    "Header": {
+      "Title": "OFICIUL CENTRAL",
+      "Text": "MD2005, Republica Moldova, mun. Chișinău, Str. Ion Pruncul, 4/1",
+      "TitleIconOne": "EMAIL",
+      "TextIconOne": "office@alex-se.com",
+      "TitleIconTwo": "OFICIU",
+      "TextIconTwo": "(+37322) 244-572",
+      "TitleIconThree": "SUPORT TEHNIC AL ECHIPAMENTELOR INDUSTRIALE",
+      "TextIconThree": "(+373) 69900989",
+      "TitleIconFour": "FAX",
+      "TextIconFour": "(+37322) 29-67-29",
+      "TitleIconFive": "CENTRUL DE DESERVIRE ",
+      "TextIconFive": "(+37322) 24-30-87",
+      "TitleIconSix": "SUPORT TEHNIC AUTOMATIZAREA COMERȚULUI ȘI ALIMENTELOR",
+      "TextIconSix": "(+373) 60001103",
+      "TextBottom": "SUPORT TEHNIC FĂRĂ ZILE DE ODIHNĂ"
+    },
+    "Office": {
+      "Tiraspol": {
+        "Title": "MAGAZIN TIRASPOL",
+        "Adress": "<p>MD-3300, Transnistria, or. Tiraspol<br>str. Sindicatelor 60, of 101<br>",
+        "Contact": "<p>E-mail: office@alex-se.com<br>E-mail: PMR@alex-se.md<br>Telefon: (533) 675 40<br>Mob.: (775) 97 555</p>",
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 18-00<br>Sb – Du  zile libere</p>"
+      },
+      "Balti": {
+        "Title": "MAGAZIN MUN. Bălți",
+        "Adress": "<p>MD-3121, Republica Moldova,<br>mun. Bălți, str. Kiev 145<br>",
+        "Contact": "<p>E-mail: nord@alex-se.com<br>Telefon: (+373231) 40-456<br>Факс: (+373231) 44-345<br>Mob.: (+373) 69966679, (+373) 68160101</p>",
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 18-00<br>Sb – Du  zile libere</p>"
+      },
+      "Comrat": {
+        "Title": "MAGAZIN MUN. COMRAT",
+        "Adress": "<p>MD-3805, Republica Moldova,<br>UTA Gagauzia, mun. Comrat,<br>Str. Victoriei 43</p>",
+        "Contact": "<p>E-mail: nord@alex-se.com<br>Telefon: (+373231) 40-456<br>Факс: (+373231) 44-345<br>Mob.: (+373) 69966679, (+373) 68160101</p>",
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 18-00<br>Sb – Du  zile libere</p>"
+      },
+      "Drocia": {
+        "Title": "МАГАЗИН Г. ДРОКИЯ",
+        "Adress": "<p>MD-5202, Republica Moldova,<br>Or. Drochia, str. Gudanov, (Piaţa nouă),but. 20</p>",
+        "Contact": "<p>E-mail: drochia@alex-se.com<br>Mob.: (+373) 68650707<br>",
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 18-00<br>Sb – Du  zile libere</p>"
+      },
+      "Ucraina": {
+        "Title": "ФИЛИАЛ УКРАИНА",
+        "Adress": "<p>ДП «АЛЕКС ВЕСЫ И ОБОРУДОВАНИЕ»<br>ул. Профсоюзов 60, оф 101<br>or. Harikov, str. Romena Rollana, 12.</p>",
+        "Contact": "<p>E-mail: alex_vio@mail.ru<br>Telefon: + 380 (57) 719 48 33<br>Telefon: + 380 (57) 759 11 24</p>"
+      }
     }
   }
 

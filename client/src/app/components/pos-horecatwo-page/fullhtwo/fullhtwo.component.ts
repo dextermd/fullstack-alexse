@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MainLayoutComponent} from '../../main-layout/main-layout.component';
 
 @Component({
   selector: 'app-fullhtwo',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FullhtwoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public main: MainLayoutComponent
+  ) { }
 
   ngOnInit(): void {
   }

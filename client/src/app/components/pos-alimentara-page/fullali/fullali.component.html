@@ -89,10 +89,21 @@
               <img src="assets/alexmarket/313131-check-30x30.png"><span>  {{'PosAlimentara.FullAli.ComplectGiveThree' | translate}}</span>
             </div>
           </div>
+          <ng-container *ngIf="this.main.lang == 'ru'">
           <div class="py-1">
-            <img src="assets/alexmarket/techpod.jpg" style="height: 130px;">
+            <img src="assets/banner/techpod.jpg" style="height: 130px;">
           </div>
-
+          </ng-container>
+          <ng-container *ngIf="this.main.lang == 'en'">
+            <div class="py-1">
+              <img src="assets/banner/techpodEn.jpg" style="height: 130px;">
+            </div>
+          </ng-container>
+          <ng-container *ngIf="this.main.lang == 'ro'">
+            <div class="py-1">
+              <img src="assets/banner/techpodRo.jpg" style="height: 130px;">
+            </div>
+          </ng-container>
 
 
           <h3 class="h3-responsive text-center text-md-left mb-2 ml-xl-0 ml-4 mt-3">

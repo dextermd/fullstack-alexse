@@ -57,10 +57,13 @@
     "Question": "GET CONSULTATION",
     "TehSpec": "TECHNICAL CHARACTERISTICS",
     "Order": "ORDER",
-    "GoShop": "Go to store"
+    "GoShop": "Go to store",
+    "Call": "CALL",
+    "Write": "WRITE",
+    "Send": "Send message"
   },
   "HOME": {
-    "INFO_SHORT":{
+    "INFO_SHORT": {
       "Title": "A LITTLE ABOUT ALEX S&E COMPANY",
       "ContentTop": "The company began its activity in 1993 by producing the commercial scales,<br> batching counters and automated accounting systems for industrial and commercial enterprises.",
       "ContentBottom": "Nowadays Alex S&E is one of the largest engineering companies in Moldova and<br> the CIS countries. Production area and service center of the company is located on the<br> territory of more than 1300 square meters, and the number of employees exceeded 100 persons."
@@ -123,7 +126,6 @@
       "Close": "Close"
     }
   },
-
   "PosAlimentara": {
     "Header": {
       "TitleTop": "SOFTWARE FOR STORE",
@@ -134,7 +136,7 @@
       "IconFour": "Small shops"
     },
     "FullAli": {
-      "TitleTop": "Trade automation set POS-Alimentara",
+      "TitleTop": "Trade automation set",
       "TitleBottom": "POS-Alimentara",
       "ComplectTitle": "SET COMPOSITION:",
       "ComplectOne": "Software Alex-Market",
@@ -146,7 +148,9 @@
       "ComplectGiveOne": "Compact",
       "ComplectGiveTwo": "Fiable",
       "ComplectGiveThree": "Powerful",
-      "ComplectPrice": "Price:"
+      "ComplectPriceTitle": "Price:",
+      "ComplectPrice": "20 300 MDL",
+      "ComplectOldPrice": "22 490 MDL"
     },
     "MicroPos": {
       "TitleTop": "Stylish MicroPOS",
@@ -228,16 +232,105 @@
       "SpecTitleSix": "Analytics",
       "SpecTextSix": "Reports on sales, movement of goods, season fluctuations, employees, etc."
     }
-
   },
-
-
   "PosCompact": {
+    "Header": {
+      "TitleTop": "TRADE AUTOMATION SET",
+      "TitleBottom": "POS-Compact",
+      "IconOne": "Boutiques",
+      "IconTwo": "Departments in shopping centers",
+      "IconThree": "Shops",
+      "IconFour": "Small shops"
+    },
+    "Full": {
+      "TitleTop": "Trade automation set",
+      "TitleBottom": "POS-Compact",
+      "ComplectTitle": "SET COMPOSITION:",
+      "ComplectOne": "Software Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Mini PC PiPo X10",
+      "ComplectThree": "Cash register Datecs DP-150SD with battery",
+      "ComplectFour": "SCANNER laser hand-held Mindeo MD2000AT 1D",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiable",
+      "ComplectGiveThree": "Powerful",
+      "ComplectPriceTitle": "Price:",
+      "ComplectPrice": "13 100 MDL",
+      "ComplectOldPrice": "14 579 MDL"
+    },
     "DivThreeAll": {
       "TitleOne": "Warranty – 1 year",
       "TextOne": "We guarantee quality and offer only certified products.",
       "TitleTwo": "On-line support",
       "TextTwo": "Our Service Support works every day, without days off and holidays."
+    },
+    "MiniPos": {
+      "TitleTop": "New Generation MicroPOS Tablet",
+      "TitleBottom": "Mini-PC PiPo X10",
+      "SpecTitleOne": "Touchpad",
+      "SpecTextOne": "10.8 screen with FHD-resolution 1920 * 1280 and instant sensor response",
+      "SpecTitleTwo": "Fast data storage",
+      "SpecTextTwo": "4GB DDR3 memory and modern fast 64GB SSD hard drive",
+      "SpecTitleThree": "Large set of interfaces",
+      "SpecTextThree": "4 USB ports for peripheral equipment, Ethernet for direct Internet connection, WiFi and others",
+      "SpecTitleFour": "Battery powered",
+      "SpecTextFour": "10000 mAh"
+    },
+    "DatecsDPSD": {
+      "TitleTop": "Cash machine",
+      "TitleBottom": "Datecs DP-150 SD battery",
+      "SpecTitleOne": "Large set of interfaces",
+      "SpecTextOne": "2 x RS-232C port for connection: 1 x USB class device via mini-USB (optional) 1 x Box Control",
+      "SpecTitleTwo": "Work speed",
+      "SpecTextTwo": "up to 12 lines per second",
+      "SpecTitleThree": "Fiscal memory",
+      "SpecTextThree": "Non-volatile, can support up to 1825 daily reports",
+      "SpecTitleFour": "Battery powered",
+      "SpecTextFour": "Does not require a socket"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Barcode Scanner",
+      "TitleBottom": "SCANNER laser handheld Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Work speed",
+      "SpecTextOne": "Scanning at a speed of 200 scans / sec.",
+      "SpecTitleTwo": "Ergonomic",
+      "SpecTextTwo": "The scanner has a convenient handle for comfortable and fast work",
+      "SpecTitleThree": "Reliability",
+      "SpecTextThree": "The resource of button operations is over 50,000,000 times. Stable work in intensive mode.",
+      "SpecTitleFour": "Durability",
+      "SpecTextFour": "Support over 30 drops from 2 meters onto concrete"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Trading automation software Alex-Market",
+      "TitleBottom": "The program interface and its main features:",
+      "SpecTitleOne": "Easy installation and setup",
+      "SpecTextOne": "The accounting program is easy to install and extremely quickly to implement",
+      "SpecTitleTwo": "Item entry",
+      "SpecTextTwo": "Items are entered both manually using a code and through a barcode scanner",
+      "SpecTitleThree": "Any goods",
+      "SpecTextThree": "The system is suitable for working with all types of goods: both piece and weight goods.",
+      "SpecTitleFour": "Payment Methods",
+      "SpecTextFour": "Accept payments both in cash and with payment cards",
+      "SpecTitleFive": "Visual interface",
+      "SpecTextFive": "Intuitive interface allows you to place sales in a few seconds",
+      "SpecTitleSix": "Printing",
+      "SpecTextSix": "You can print a paper price tag or a self-adhesive label directly from the program"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Trading automation software Alex-Market",
+      "TitleBottom": "The program interface and its main features:",
+      "SpecTitleOne": "Complete inventory control",
+      "SpecTextOne": "Control of stock balances at any time, as well as warehouse reports for any date",
+      "SpecTitleTwo": "Cash control",
+      "SpecTextTwo": "Online access to statistics - control your business from anywhere with access to the Internet",
+      "SpecTitleThree": "Safety",
+      "SpecTextThree": "All user actions are recorded and displayed in reports",
+      "SpecTitleFour": "Differentiation of rights",
+      "SpecTextFour": "Setting access rights individually for each employee to avoid abuse",
+      "SpecTitleFive": "Working with invoices",
+      "SpecTextFive": "Any types of invoices - all operations with the goods are carried out quickly and clearly",
+      "SpecTitleSix": "Analytics",
+      "SpecTextSix": "Reports on sales, movement of goods, season fluctuations, employees, etc."
     },
     "MorePos": {
       "TitleOne": "WHAT PC IS NECESSARY FOR THE ALEX MARKET SOFTWARE?",
@@ -252,6 +345,261 @@
     "LastShop": {
       "Title": "You can also expand the set with additional equipment"
     }
+  },
+  "PosMarket": {
+    "Header": {
+      "TitleTop": "SOFTWARE FOR STORE",
+      "TitleBottom": "Pos Market",
+      "IconOne": "Boutiques",
+      "IconTwo": "Departments in shopping centers",
+      "IconThree": "Shops",
+      "IconFour": "Small shops"
+    },
+    "Full": {
+      "TitleTop": "Trade automation set",
+      "TitleBottom": "POS-Market",
+      "ComplectTitle": "SET COMPOSITION:",
+      "ComplectOne": "Software Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "ComplectThree": "SCANNER laser hand-held Mindeo MD2000AT 1D",
+      "ComplectFour": "Fiscal printer FP-700SD",
+      "ComplectFive": "Label printing scale ALEX PRINT-1",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiable",
+      "ComplectGiveThree": "Powerful",
+      "ComplectPriceTitle": "Price:",
+      "ComplectPrice": "30 100 MDL",
+      "ComplectOldPrice": "33 540 MDL"
+    },
+    "MicroPos": {
+      "TitleTop": "Stylish MicroPOS",
+      "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "SpecTitleOne": "Touchpad",
+      "SpecTextOne": "Touchscreen with HD-resolution 1366 × 768 and instant sensor response",
+      "SpecTitleTwo": "Speed",
+      "SpecTextTwo": "The terminal is equipped with a new generation J1900 processor with high performance and low power consumption",
+      "SpecTitleThree": "Fast data storage",
+      "SpecTextThree": "4GB DDR3 memory and modern fast 64GB SSD hard drive",
+      "SpecTitleFour": "Large set of interfaces",
+      "SpecTextFour": "6 USB ports for peripheral equipment, Ethernet for direct Internet connection, RS232 and others"
+    },
+    "ScalesRSPrint": {
+      "TitleTop": "Price computing scale with RS",
+      "TitleBottom": "Price computing scale BSN 6/15 kg D1.3 T2 230x290 с RS-232",
+      "SpecTitleOne": "Bright two-sided display",
+      "SpecTextOne": "Displays net weight, price and product name, as well as information about selected modes and condition of scales",
+      "SpecTitleTwo": "Large and comfortable keyboard",
+      "SpecTextTwo": "112 shortcut keys allow you to quickly recall the desired article",
+      "SpecTitleThree": "PC connection",
+      "SpecTime": "Connection to a computer via reliable RS-232 interface",
+      "SpecTitleFour": "Printing labels",
+      "SpecTextFour": "Easily customizable label format supports graphics and 1D barcode printing"
+    },
+    "FPrint": {
+      "TitleTop": "Fiscal register",
+      "TitleBottom": "Fiscal PRINTER FP-700SD",
+      "SpecTitleOne": "High printing speed",
+      "SpecTextOne": "Direct thermal printer on 80mm or 58mm wide thermal paper",
+      "SpecTitleTwo": "Wide range of thermal papers",
+      "SpecTextTwo": "Direct thermal printer on 80mm or 58mm wide thermal paper",
+      "SpecTitleThree": "Connecting to a computer and cash drawer",
+      "SpecTextThree": "The printer has a variety of RS-232 interfaces for connecting to a computer. USB. Ethernet. RJ-11",
+      "SpecTitleFour": "Built-in electronic journal",
+      "SpecTextFour": "Electronic control tape storage is provided by an embedded electronic journal"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Barcode Scanner",
+      "TitleBottom": "SCANNER laser handheld Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Work speed",
+      "SpecTextOne": "Scanning at a speed of 200 scans / sec.",
+      "SpecTitleTwo": "Ergonomic",
+      "SpecTextTwo": "The scanner has a convenient handle for comfortable and fast work",
+      "SpecTitleThree": "Reliability",
+      "SpecTextThree": "The resource of button operations is over 50,000,000 times. Stable work in intensive mode.",
+      "SpecTitleFour": "Durability",
+      "SpecTextFour": "Support over 30 drops from 2 meters onto concrete"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Trading automation software Alex-Market",
+      "TitleBottom": "The program interface and its main features:",
+      "SpecTitleOne": "Easy installation and setup",
+      "SpecTextOne": "The accounting program is easy to install and extremely quickly to implement",
+      "SpecTitleTwo": "Item entry",
+      "SpecTextTwo": "Items are entered both manually using a code and through a barcode scanner",
+      "SpecTitleThree": "Any goods",
+      "SpecTextThree": "The system is suitable for working with all types of goods: both piece and weight goods.",
+      "SpecTitleFour": "Payment Methods",
+      "SpecTextFour": "Accept payments both in cash and with payment cards",
+      "SpecTitleFive": "Visual interface",
+      "SpecTextFive": "Intuitive interface allows you to place sales in a few seconds",
+      "SpecTitleSix": "Printing",
+      "SpecTextSix": "You can print a paper price tag or a self-adhesive label directly from the program"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Trading automation software Alex-Market",
+      "TitleBottom": "The program interface and its main features:",
+      "SpecTitleOne": "Complete inventory control",
+      "SpecTextOne": "Control of stock balances at any time, as well as warehouse reports for any date",
+      "SpecTitleTwo": "Cash control",
+      "SpecTextTwo": "Online access to statistics - control your business from anywhere with access to the Internet",
+      "SpecTitleThree": "Safety",
+      "SpecTextThree": "All user actions are recorded and displayed in reports",
+      "SpecTitleFour": "Differentiation of rights",
+      "SpecTextFour": "Setting access rights individually for each employee to avoid abuse",
+      "SpecTitleFive": "Working with invoices",
+      "SpecTextFive": "Any types of invoices - all operations with the goods are carried out quickly and clearly",
+      "SpecTitleSix": "Analytics",
+      "SpecTextSix": "Reports on sales, movement of goods, season fluctuations, employees, etc."
+    }
+  },
+  "AlexMarket": {
+    "Header": {
+      "TitleTop": "Professional system for automation of trade and accounting.",
+      "TitleBottom": "Each business is individual and therefore the approach to the choice of equipment and software is also different. Our experts will develop an individual solution that will work for the benefit of your business."
+    },
+    "Solution": {
+      "Title": "Solution for:",
+      "IconOne": "Grocery stores",
+      "IconTwo": "Specialized stores",
+      "IconThree": "Small store chains",
+      "IconFour": "Building materials stores"
+    },
+    "Advantage": {
+      "Title": "Benefits",
+      "IconOne": "Alex-Market is the ideal solution for retial",
+      "IconTwo": "Store automation in 1 day",
+      "IconThree": "Only basic computer knowledge is required to work",
+      "IconFour": "Technical support from the software developer"
+    },
+    "Divert": {
+      "Title": "Feel free to ask us questions"
+    },
+    "Features": {
+      "TitleTop": "SOFTWARE FOR RETAIL",
+      "TitleBottom": "STORE - FUNCTIONAL",
+      "SpecTitleOne": "Cash place",
+      "SpecTextOne": "The simple interface of the software allows to register the sales in a few seconds, which provides fast service",
+      "SpecTitleTwo": "Nomenclature",
+      "SpecTextTwo": "Unlimited number of product characteristics fields: margin, arrival date, expiration date, minimum balance, etc.",
+      "SpecTitleThree": "Working with leftovers",
+      "SpecTextThree": "Convenient and accurate control of leftovers to track the current availability of products in the warehouse at any time and issue invoices",
+      "SpecTitleFour": "Analytics",
+      "SpecTextFour": "Sales reports broken down by receipts, goods, discounts, etc. for any period. Reports on sales leaders / outsiders, seasonal demand fluctuations and others",
+      "SpecTitleFive": "Compatibility",
+      "SpecTextFive": "Sales reports broken down by receipts, goods, discounts, etc. for any period. Reports on sales leaders / outsiders, seasonal demand fluctuations and others",
+      "SpecTitleSix": "Price tags and labels",
+      "SpecTextSix": "Printing price tags and labels directly from the program, as well as by connecting to third-party software",
+      "SpecTitleSeven": "Discount programs",
+      "SpecTextSeven": "Discount cards, accumulative, seasonal and temporary discounts for goods and categories. Sale on credit",
+      "SpecTitleEight": "Inventory control",
+      "SpecTextEight": "The software or accounting of goods in the store allows to track the warehouse stocks in real time, conduct inventories, settlements with suppliers"
+    },
+    "Complect": {
+      "TitleTop": "FULL TURNKEY AUTOMATION",
+      "TitleBottom": "POS-sets for trading and accounting - configured, tested, with the software installed",
+      "ComTitleTop": "TRADE AUTOMATION SET",
+      "ComTitleBottom": "POS-Compact",
+      "ComText": "Budget option for conducting trade accounting in small retail shops and boutiques.",
+      "ComButton": "CHOOSE POS-COMPACT SET",
+      "AliTitleTop": "TRADE AUTOMATION SET",
+      "AliTitleBottom": "POS-Alimentara",
+      "AliText": "Budget option for conducting trade accounting in stores and outlets with scales.",
+      "AliButton": "CHOOSE POS-ALIMENTARA SET",
+      "MarkTitleTop": "TRADE AUTOMATION SET",
+      "MarkTitleBottom": "POS-Market",
+      "MarkText": "Option for conducting trade accounting in markets with scales",
+      "MarkButton": "CHOOSE POS-MARKET SET"
+    }
+  },
+  "About": {
+    "Header": {
+      "Title": "The largest manufacturer and distributor of weighing equipment for industry and trade in Moldova"
+    },
+    "TextRab": {
+      "Title": "Brief history of the company",
+      "TextTop": "The company began its activity in 1993 as the manufacture of commercial scales, batchers and automated accounting systems for industrial and commercial enterprises.",
+      "TextBottom": "Nowadays “Alex S&E” is one of the largest engineering companies in Moldova and the CIS countries. The production area and service center of the company are located on an area of more than 1300 square meters, and the number of employees exceeded 100 people."
+    },
+    "DivAb": {
+      "Title": "Range of service"
+    },
+    "MoreAb": {
+      "IconOne": "Analytical balances of a wide range",
+      "IconTwo": "Production of vehicles (10t-60t) and wagon (100t-250t) scales",
+      "IconThree": "Modernization of all types of scales from mechanical to electronic, including vehicle and wagon scales, with access to PC",
+      "IconFour": "Production of platform scales from 1 kg to 5 tons",
+      "IconFive": "Complex  automation of goods turnover and warehouse accounting in shops, supermarkets, cafes and bars",
+      "IconSix": "Production of all types of straight and multi-component batchers, as well as the modernization of existing batchers from mechanical to electronic",
+      "IconSeven": "Creation of APCS and local networks",
+      "IconEight": "Automation of internal accounting for the movement of raw materials, semi-finished products and finished products through weight control",
+      "IconNine": "Automation of technological processes"
+    },
+    "DivTwoAb": {
+      "Title": "Our best advertisement:",
+      "Text": "Equipment that well-functioning and has trouble-free operation for our customers!"
+    },
+    "FinalAb": {
+      "TextOne": "<p>Thanks to the development of the network of representative offices and branches, the products of  «Alex S&amp;E» became known not only in Moldova, but also abroad.<br>\nThe main office of the company is located in Chisinau. Two more branches operate in Moscow (Russia) and Kharkov (Ukraine).</p>\n<p>During 27 years of activity, our clients have become enterprises of various industries, such as metallurgy, oil refining and gas, mining and processing, meat and dairy, as well as bakery, feed, oil extraction, tobacco ferment, breweries, ceramics, porcelain and glass factories, trade enterprises and transport network.</p>\n<p>All products of the company are certified and entered in the State Registers of the Republic of Moldova, Belarus, Ukraine, Kazakhstan and the Russian Federation.</p>\n",
+      "TextTwo": "<p><strong>„Alex S&amp;E”</strong>  engineers and programmers constantly follow the trends in the development of industry and trade in order to offer our customers weighing equipment that meets international standards. All specialists are regularly trained abroad.</p><p>The company has established the reliable partnerships with the best foreign manufacturers of metrological, weighing and measuring equipment, as well as components for the production of scales. We work with companies from Holland, Italy, France, Great Britain and Israel.</p><p><strong>The main principles that we adhere to:</strong><br> • strict observance of the interests of the Customer;<br> • use of components only from the best foreign manufacturers;<br> • warranty for all components, equipment and service for the entire lifetime.</p>"
+    }
+  },
+  "Contact": {
+    "SendMessage": {
+      "Title": "Write to us:",
+      "Text": "Feel free to ask us questions",
+      "Name": "Name",
+      "Email": "Email",
+      "Theme": "Subject",
+      "Content": "Message"
+    },
+    "Header": {
+      "Title": "HEAD OFFICE",
+      "Text": "MD2005, Republic of Moldova, mun. Chisinau, 4/1, Ion Pruncul Str.",
+      "TitleIconOne": "EMAIL",
+      "TextIconOne": "office@alex-se.com",
+      "TitleIconTwo": "OFFICE",
+      "TextIconTwo": "(+37322) 244-572",
+      "TitleIconThree": "TECHNICAL SUPPORT OF INDUSTRIAL EQUIPMENT",
+      "TextIconThree": "(+373) 69900989",
+      "TitleIconFour": "FAX",
+      "TextIconFour": "(+37322) 29-67-29",
+      "TitleIconFive": "SERVICE CENTER",
+      "TextIconFive": "(+37322) 24-30-87",
+      "TitleIconSix": "TECHNICAL SUPPORT OF AUTOMATION OF TRADE AND FOOD",
+      "TextIconSix": "(+373) 60001103",
+      "TextBottom": "TECHNICAL SUPPORT WITHOUT WEEKEND"
+    },
+    "Office": {
+      "Tiraspol": {
+        "Title": "SHOP TIRASPOL",
+        "Adress": "<p>MD-3300, PMR, Tiraspol,<br>60, Trade Union Str., Office 101,<br>",
+        "Contact": "<p>E-mail: office@alex-se.com<br>E-mail: PMR@alex-se.md<br>Phone: (533) 675 40<br>Mobile: (775) 97 555</p>",
+        "Time": "<p>Working hours:<br>Mon - Fri from 8-00 A.M. to<br>Sat - Sun days off</p>"
+      },
+      "Balti": {
+        "Title": "SHOP MUN. BALTI",
+        "Adress": "<p>MD-3121, Republic of Moldova,<br>mun. Balti, 145, Kiev Str.<br>",
+        "Contact": "<p>E-mail: nord@alex-se.com<br>Phone: (+373231) 40-456<br>Факс: (+373231) 44-345<br>Mobile: (+373) 69966679, (+373) 68160101</p>",
+        "Time": "<p>Working hours:<br>Mon - Fri from 8-00 A.M. to<br>Sat - Sun days off</p>"
+      },
+      "Comrat": {
+        "Title": "SHOP MUN. COMRAT",
+        "Adress": "<p>MD-3805, Republic of Moldova,<br>UTA Gagauzia, mun. Comrat,<br>43, Victory Str. </p>",
+        "Contact": "<p>E-mail: nord@alex-se.com<br>Phone: (+373231) 40-456<br>Факс: (+373231) 44-345<br>Mobile: (+373) 69966679, (+373) 68160101</p>",
+        "Time": "<p>Working hours:<br>Mon - Fri from 8-00 A.M. to<br>Sat - Sun days off</p>"
+      },
+      "Drocia": {
+        "Title": "МАГАЗИН Г. ДРОКИЯ",
+        "Adress": "<p>MD-5202, Republic of Moldova,<br>Drochia, Gudanov Str., (New Market),<br>Boutique 20</p>",
+        "Contact": "<p>E-mail: drochia@alex-se.com<br>Mobile.: (+373) 68650707<br>",
+        "Time": "<p>Working hours:<br>Mon - Fri from 8-00 A.M. to<br>Sat - Sun days off</p>"
+      },
+      "Ucraina": {
+        "Title": "ФИЛИАЛ УКРАИНА",
+        "Adress": "<p>ДП «АЛЕКС ВЕСЫ И ОБОРУДОВАНИЕ»<br>61058, 12  Romen Rollan Str., Kharkov, Ukraine<br>",
+        "Contact": "<p>E-mail: alex_vio@mail.ru<br>Phone: + 380 (57) 719 48 33<br>Phone: + 380 (57) 759 11 24</p>"
+      }
+    }
   }
-
 }
