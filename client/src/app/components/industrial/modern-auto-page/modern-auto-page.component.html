@@ -1,9 +1,9 @@
 <div class="">
   <div class="container pt-2">
     <mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/auto-index'">Автомобильные весы</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item class="active">МОДЕРНИЗАЦИЯ АВТОМОБИЛЬНЫХ ВЕСОВ</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/auto-index'">{{'CarWeights.Category.Title' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">{{'CarWeights.AutoModern.Title' | translate}}</mdb-breadcrumb-item>
     </mdb-breadcrumb-item>
 
     <!--Section: Content-->
@@ -15,8 +15,9 @@
         <!-- Grid column -->
         <div class="col-lg-8 mb-3 align-self-center text-center text-lg-left">
 
-          <h1 class="h2 mb-5">МОДЕРНИЗАЦИЯ АВТОМОБИЛЬНЫХ ВЕСОВ</h1>
-          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">Модернизация механических автомобильных весов позволяет добиться уменьшения расходов на эксплуатацию, продления срока службы и улучшения функциональных возможностей, за счёт замены механической системы измерения веса на электронную и внедрения автоматизированного учета.
+          <h1 class="h2 mb-5">{{'CarWeights.AutoModern.Title' | translate}}</h1>
+          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
+            {{'CarWeights.AutoModern.SubTitle' | translate}}
           </h5>
 
 
@@ -46,7 +47,7 @@
   <section class="container">
     <div style="font-family: 'Times New Roman'">
       <h4 class="black-text">
-        При модернизации весов рычажная измерительная система меняется на тензометрическую.
+        {{'CarWeights.AutoModern.ImageTextOne' | translate}}
       </h4>
 
       <!-- Featured image -->
@@ -65,8 +66,7 @@
   <section class="container pt-3">
     <div style="font-family: 'Times New Roman'">
       <h4 class="black-text">
-        В зависимости от состояния настила и длины транспорта который необходимо взвешивать, платформу весов можно заменить, удлинить или оставить существующую.
-      </h4>
+        {{'CarWeights.AutoModern.ImageTextTwo' | translate}}      </h4>
     </div>
 
     <!-- Featured image -->
@@ -80,7 +80,7 @@
   <section class="container pt-3">
     <div style="font-family: 'Times New Roman'">
       <h4 class="black-text">
-        Стрелочный индикатор при этом заменяется на электронный индикаторный блок, с возможностью подключения к компьютеру.
+        {{'CarWeights.AutoModern.ImageTextThree' | translate}}
       </h4>
     </div>
 
@@ -98,10 +98,8 @@
   <section class="container pt-3">
     <div style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        Для модернизации автомобильных весов, мы используем самые надежные, проверенные временем комплектующие.<br>
-        Электронный индикаторный блок MERAV 2000 подключается к компьютеру посредством интерфейса RS232. Для автономной работы, при перебоях с электропитанием, индикаторный блок имеет встроенный аккумулятор и подсветку дисплея. Показания веса на дисплее легко читаются с расстояния в несколько метров.<br>
-        Датчики в весах имеют степень защиты от пыли и влаги IP68, что по сути, позволяет им работать даже в воде, и защищены от разрядов молнии. Рабочий температурный диапазон датчиков от -30°С до +45°С. При необходимости устанавливать весы на значительном удалении от операторской применяются цифровые датчики.<br>
-        Программное обеспечение для компьютера или ноутбука поставляется бесплатно и позволяет вести учет отвесов с сохранением фотографии момента взвешивания, выписывать весовые талоны и накладные. Поддерживает «двойное взвешивание» (брутто, тара) для вычисления веса нетто. При необходимости, обеспечивает удаленный доступ к данным о взвешиваниях из любой точки мира посредством приложения ScalesControl.<br>
+        <div [innerHTML]="'CarWeights.AutoModern.Text'  | translate"></div>
+
       </h5>
     </div>
 
@@ -138,13 +136,13 @@
 
 
   <section class="pt-0">
-    <h4 style="font-family: 'Times New Roman'" class="font-weight-bold flex-center pb-2">Оцените преимущества электронных автомобильных весов</h4>
+    <h4 style="font-family: 'Times New Roman'" class="font-weight-bold flex-center pb-2">{{'CarWeights.AutoModern.Table.Title' | translate}}</h4>
       <div class="container">
         <div class="row">
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="font-weight-bold flex-center black-text">
-                Старые механические весы
+                {{'CarWeights.AutoModern.Table.Old.Title' | translate}}
               </h5>
             </div>
           </div>
@@ -155,7 +153,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="font-weight-bold flex-center black-text">
-                Модернизированные электронные весы
+                {{'CarWeights.AutoModern.Table.New.Title' | translate}}
               </h5>
             </div>
 
@@ -166,7 +164,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Износ рычажной системы и призм. Следствие - проблемы с точностью (результат взвешивания не соответствует фактическому весу).
+                {{'CarWeights.AutoModern.Table.Old.One' | translate}}
               </h5>
             </div>
           </div>
@@ -185,7 +183,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Отсутствие механических узлов - гарантия точности взвешивания на протяжении всего срока эксплуатации.
+                {{'CarWeights.AutoModern.Table.New.One' | translate}}
               </h5>
             </div>
 
@@ -204,7 +202,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Зависимость точности показаний от температурных колебаний окружающей среды.
+                {{'CarWeights.AutoModern.Table.Old.Two' | translate}}
               </h5>
             </div>
           </div>
@@ -223,7 +221,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Высокая точность и стабильность измерения, независящие от температурных колебаний окружающей среды.
+                {{'CarWeights.AutoModern.Table.New.Two' | translate}}
               </h5>
             </div>
 
@@ -237,7 +235,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Частое техобслуживание и сложный ремонт весов.
+                {{'CarWeights.AutoModern.Table.Old.Three' | translate}}
               </h5>
             </div>
           </div>
@@ -256,7 +254,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Простота обслуживания и надежность системы за счёт отсутствия изнашивающихся деталей.
+                {{'CarWeights.AutoModern.Table.New.Three' | translate}}
               </h5>
             </div>
 
@@ -270,7 +268,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Действие природных факторов (грунтовые воды, обледенение, коррозия механических элементов)
+                {{'CarWeights.AutoModern.Table.Old.Four' | translate}}
               </h5>
             </div>
           </div>
@@ -289,7 +287,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Герметичная и защищенная конструкция электронных компонентов.
+                {{'CarWeights.AutoModern.Table.New.Four' | translate}}
               </h5>
             </div>
 
@@ -303,7 +301,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Низкая производительность измерений (более 2-х минут).
+                {{'CarWeights.AutoModern.Table.Old.Five' | translate}}
               </h5>
             </div>
           </div>
@@ -322,7 +320,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Высокая производительность измерений (от 3-х секунд).
+                {{'CarWeights.AutoModern.Table.New.Five' | translate}}
               </h5>
             </div>
 
@@ -336,7 +334,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Ошибки оператора при взвешивании и учете измерений.
+                {{'CarWeights.AutoModern.Table.Old.Six' | translate}}
               </h5>
             </div>
           </div>
@@ -355,7 +353,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Автоматическая регистрация и учет измерений.
+                {{'CarWeights.AutoModern.Table.New.Six' | translate}}
               </h5>
             </div>
 
@@ -370,7 +368,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                «Ручной» весовой учёт на предприятии.
+                {{'CarWeights.AutoModern.Table.Old.Seven' | translate}}
               </h5>
             </div>
           </div>
@@ -389,7 +387,7 @@
           <div class="col-md-5 border">
             <div style="font-family: 'Times New Roman'">
               <h5 class="black-text">
-                Возможность организации полной автоматизации взвешивания с последующим экспортом данных в бухгалтерские программы
+                {{'CarWeights.AutoModern.Table.New.Seven' | translate}}
               </h5>
             </div>
 
@@ -418,8 +416,9 @@
         <div class="col-md-6 mb-4 mb-md-0">
 
 
-          <h6 class="">Автомобильные весы Alex S&E типа - BSA соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания».
-            Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова. </h6>
+          <h6 class="">
+            {{'Certificates.BSA' | translate}}
+          </h6>
 
 
         </div>
@@ -428,17 +427,68 @@
       </div>
       <!--Grid row-->
     </div>
-    <h1 class="h2 text-center">Характеристики</h1>
+    <h1 class="h2 text-center">{{'CarWeights.Tables.Title' | translate}}</h1>
     <div class="flex-center pb-2">
       <div class="col-lg-5">
-        <!--      <img lightbox backgroundColor="white" src="assets/industrial/vagon/tech.png" class="img-fluid" alt="">-->
         <table mdbTable striped="true" bordered="true">
           <thead>
           </thead>
           <tbody>
-          <tr mdbTableCol *ngFor="let el of elements">
-            <td class="">{{el.first}}</td>
-            <td class="">{{el.last}}</td>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.AutoModernLastOne' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.AutoModernLastTwo' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.AutoModernLastThree' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFour' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.AutoModernLastFour' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFive' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.AutoModernLastFive' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstSix' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.AutoModernLastSix' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstSeven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.AutoModernLastSeven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstEight' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastEight' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstNine' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastNine' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastTen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstEleven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastEleven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTwelve' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastTwelve' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstThirteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastThirteen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFourteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastFourteen' | translate}}</td>
           </tr>
           </tbody>
         </table>

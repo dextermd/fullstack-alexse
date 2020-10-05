@@ -613,18 +613,32 @@
       "First": {
         "FirstOne": "Maximum capacity, t:",
         "LastOne": "30 /60 / 80",
+        "AutoModernLastOne": "30 /60 / 80",
+        "FarmerLastOne": "10 /20 / 30",
         "FirstTwo": "Minimum capacity, kg:",
         "LastTwo": "200 / 400",
+        "AutoModernLastTwo": "200 / 400",
+        "FarmerLastTwo": "100 / 100 / 200",
         "FirstThree": "Verification scale interval (е), kg:",
         "LastThree": "10 /20 / 20",
+        "AutoModernLastThree": "10 /20 / 20",
+        "FarmerLastThree": "5 / 5 / 10",
         "FirstFour": "Actual scale interval (d), kg:",
         "LastFour": "10 /20 / 20",
+        "AutoModernLastFour": "10 /20 / 20",
+        "FarmerLastFour": "5 / 5 / 10",
         "FirstFive": "Number of sensors, pcs:",
         "LastFive": "3",
+        "AutoModernLastFive": "1/2",
+        "FarmerLastFive": "1",
         "FirstSix": "Load weighing platform length, m:",
         "LastSix": "16 / 18",
+        "AutoModernLastSix": "12 / 16 / 18",
+        "FarmerLastSix": "6",
         "FirstSeven": "Number of sensors, pcs:",
         "LastSeven": "8",
+        "AutoModernLastSeven": "4/6",
+        "FarmerLastSeven": "4",
         "FirstEight": "Dust and waterproof (platform):",
         "LastEight": "IP 68",
         "FirstNine": "Dust and waterproof (indicator) MERAV2000:",
@@ -640,6 +654,52 @@
         "FirstFourteen": "Accuracy class:",
         "LastFourteen": "Medium (III)"
 
+      },
+      "Two": {
+        "FirstOne": "Maximum capacity, t:",
+        "LastOne": "15 (20)",
+        "FirstTwo": "Minimum capacity, kg:",
+        "LastTwo": "1000",
+        "FirstThree": "Verification scale interval (е), kg:",
+        "LastThree": "20",
+        "FirstFour": "Actual scale interval (d), kg:",
+        "LastFour": "20",
+        "FirstFive": "Number of sensors, pcs:",
+        "LastFive": "1",
+        "FirstSix": "Number of sensors, pcs:",
+        "LastSix": "4",
+        "FirstSeven": "Dust and waterproof (platform):",
+        "LastSeven": "IP 66",
+        "FirstEight": "Dust and waterproof (controller)",
+        "LastEight": "IP 54",
+        "FirstNine": "Operation temperature range (indicator), С:",
+        "LastNine": "From -30 To +45",
+        "FirstTen": "Power supply:",
+        "LastTen": "220V(+10%;-15%); 50 Hz +/-2%"
+      },
+      "Three": {
+        "FirstOne": "Maximum capacity, t:",
+        "LastOne": "15",
+        "FirstTwo": "Minimum capacity, kg:",
+        "LastTwo": "100",
+        "FirstThree": "Verification scale interval (е), kg:",
+        "LastThree": "5",
+        "FirstFour": "Actual scale interval (d), kg:",
+        "LastFour": "5",
+        "FirstFive": "Number of sensors, pcs:",
+        "LastFive": "2",
+        "FirstSix": "Dust and waterproof (platform):",
+        "LastSix": "IP 66",
+        "FirstSeven": "Dust and waterproof (controller):",
+        "LastSeven": "IP 54",
+        "FirstEight": "PC connection:",
+        "LastEight": "RS232",
+        "FirstNine": "Operation temperature range (indicator), С:",
+        "LastNine": "From -5 To +35",
+        "FirstTen": "Power supply:",
+        "LastTen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstEleven": "Accuracy class:",
+        "LastEleven": "IB"
       }
     },
     "Icons": {
@@ -702,6 +762,66 @@
       "SubTitle": "Scales are designed for static weighing of light-duty trucks with full drive onto the platform.",
       "Text": "Portable, small-sized truck scales Farmer do not require a special foundation and can be installed on a horizontal road surface (asphalt, concrete) or road slabs. Thanks to the original design (weight no more than 2.5 tons, overall dimensions with removed ramps 6x3m), the scales are easily transported by standard trucks.",
       "TextTwo": "The electronic display unit MERAV 2000 is connected to a computer or laptop via an RS232 interface. For autonomous operation, up to 72 hours, the indicator unit has a built-in battery and display backlight. If it is not possible to connect a power line to the balance, the indicator with a built-in battery can be easily disconnected for recharging. Weight readings on the display are readable from a distance of several meters. <br>The sensors in the scales have a degree of protection against dust and moisture IP68, which, in fact, allows them to work even in water, and are protected from lightning discharges. The operating temperature range of the sensors is from -30 ° С to + 45 ° С. If it is necessary to install the scales at a considerable distance from the operator's room, digital sensors are used.<br>Software for a computer or laptop is supplied free of charge and allows you to keep track of plumb lines with saving a photo of the moment of weighing, write out weight coupons and waybills. Supports \"double weighing\" (gross, tare) for calculating net weight. If necessary, provides remote access to weighing data from anywhere in the world using the ScalesControl application.<br>"
+    },
+    "StaticOc": {
+      "Breadcrumb": "STATIONARY FOR WEIGHING AXLE LOADS",
+      "Title": "STATIONARY FOR WEIGHING <br> AXLE LOADS",
+      "SubTitle": "Stationary electronic truck scales BDA-15D1,4S, are designed to determine the load on the roadway created by a separate axle and to determine the total weight of goods transported by road, by adding axles.",
+      "Text": "The weighing process can be performed both statically and dynamically. When weighing in motion, the scales additionally determine the vehicle speed.<br>Installation of the platform on a strong foundation level with the road surface, with the provided access roads, eliminates the influence of the height difference on the weight reading, achieves high measurement accuracy and ensures a long period of trouble-free operation at high loads. Stationary truck scales BDA-15D1.4S have an increased service life and have proven themselves in enterprises with difficult operating conditions.<br>",
+      "SubText": "The measurement results are stored in a non-volatile memory area (at least 400 last measurements). Weighing results can be printed out on a printer (weight coupon printing / weighing protocol) and exported to the company's accounting system.<br>The RS232 interface is used to connect a computer and expand the system.<br>",
+      "FuncTitle": "Functional capabilities:",
+      "FuncText": "<li><h5>weighing in statics and in dynamics while driving</h5></li> <li><h5>sample of tare weight </h5></li>      <li><h5>automatic and manual modes of weighing in motion</h5></li>      <li><h5>determination of the total mass of the vehicle<h5></li>      <li><h5>determination of the load on each axle<h5></li>      <li><h5>determination of vehicle speed<h5></li>     <li><h5>the ability to enter license plates for registration of a car</h5></li>     <li><h5>archiving weighing results - date and time of weighing, total vehicle weight, load value on each axle, vehicle speed, vehicle license plates</h5></li>       <li><h5>printing of the current weighing result on a thermal printer</h5></li>      <li><h5>the ability to view the weighing archive<h5></li>     <li><h5>the ability to export the weighing archive</h5></li>"
+    },
+    "MoveOc": {
+      "Breadcrumb": "PORTABLE FOR WEIGHING AXLE LOADS",
+      "Title": "PORTABLE FOR WEIGHING<br> AXLE LOADS",
+      "SubTitle": "Portable electronic truck scales BDA-15D1.4 Ap, are designed to determine the load on the roadway created by a separate axle and determine the total mass of goods transported by road, by adding axes. The weighing process can be performed both statically and dynamically. When weighing in motion, the scales additionally determine the vehicle speed.",
+      "Text": "Load-receiving platforms are installed flush with the road surface, with the provided access roads, which eliminates the influence of the height difference on the weight reading. The platforms are lightweight and compact, making them easy to transport and install in a new location.<br>Weighing terminal, receipt printer and battery are installed in a convenient case. Installation and connection of scales is done in a matter of minutes. The built-in battery will provide operation without external power sources for at least 16 hours, while the measurement results are stored in non-volatile memory (at least 400 last measurements). Weighing results can be printed out on the built-in printer (weight coupon printing / weighing protocol) and exported to the company's accounting system.<br>The RS232 interface is used to connect a computer and expand the system.<br>",
+      "FuncTitle": "Функциональные возможности:",
+      "FuncText": "<li><h5>weighing in statics and in dynamics while driving</h5></li><li><h5>sample of tare weight</h5></li><li><h5>automatic and manual modes of weighing in motion<h5></li><li><h5>determination of the total mass of the vehicle</h5></li><li><h5>determination of the load on each axle</h5></li><li><h5>determination of vehicle speed</h5></li><li><h5>the ability to enter license plates for registration of a car<h5></li><li><h5>archiving weighing results - date and time of weighing, total vehicle weight, load value on each axle, vehicle speed, vehicle license plates</h5></li><li><h5>printing of the current weighing result on a thermal printer<h5></li><li><h5>the ability to view the weighing archive<h5></li><li><h5>the ability to export the weighing archive<h5></li>"
+    },
+    "OnBoard": {
+      "Title": "ON-BOARD WEIGHING SYSTEMS",
+      "SubTitle": "On-board weighing systems allow you to determine the load on an axis or a group of axles and the total mass of the load in the car body. Depending on the suspension configuration, the accuracy is 3-5%.",
+      "Text": "The versatility of the system allows you to install it on trucks and trailers in a matter of hours, including dump trucks and semi-trailers, both with pneumatic and with mechanical suspension.<br>After installation, the system, in real time, displays the current mass of cargo in the car body, easily connects to any smartphone via Bluetooth, and notifies the driver about overload if necessary<br>",
+      "ImageTitleOne": "",
+      "ImageTextOne": "",
+      "ImageTitleTwo": "",
+      "ImageTextTwo": "",
+      "ImageTitleThree": "",
+      "ImageTextThree": ""
+    },
+    "AutoModern": {
+      "Title": "MODERNIZATION OF VEHICLE SCALES",
+      "SubTitle": "Modernization of mechanical vehicle scales allows to reduce operating costs, extend service life and improve functionality, by replacing a mechanical weighing system with an electronic one and introducing automated accounting.",
+      "ImageTextOne": "When upgrading the scales, the lever measuring system is changed to a strain gauge.",
+      "ImageTextTwo": "Depending on the condition of the deck and the length of the transport to be weighed, the weighing platform can be replaced, lengthened or left existing.",
+      "ImageTextThree": "In this case, the dial indicator is replaced by an electronic indicator unit, with the ability to connect to a computer.",
+      "Text": "For the modernization of truck scales, we use the most reliable, time-tested components.<br>The electronic display unit MERAV 2000 is connected to the computer via the RS232 interface. For autonomous operation, in case of power outages, the indicator unit has a built-in battery and display backlight. The weight on the display is easy to read from a distance of several meters.<br>The sensors in the scales have a degree of protection against dust and moisture IP68, which, in fact, allows them to work even in water, and are protected from lightning discharges. The operating temperature range of the sensors is from -30 ° С to + 45 ° С. If it is necessary to install the scales at a considerable distance from the operator's room, digital sensors are used.<br>Software for a computer or laptop is supplied free of charge and allows you to keep track of plumb lines with saving a photo of the moment of weighing, write out weight coupons and waybills. Supports \"double weighing\" (gross, tare) for calculating net weight. If necessary, provides remote access to weighing data from anywhere in the world using the ScalesControl application.<br>",
+      "Table": {
+        "Title": "Enjoy the benefits of electronic truck scales",
+        "Old": {
+          "Title":"Old mechanical scales",
+          "One": "Wear of the lever system and prisms. Consequence - problems with accuracy (weighing result does not correspond to the actual weight).",
+          "Two": "Dependence of the accuracy of readings on temperature fluctuations in the environment.",
+          "Three": "Frequent maintenance and complex repairs of the scales.",
+          "Four": "Influence of natural factors (groundwater, icing, corrosion of mechanical elements)",
+          "Five": "Low measurement performance (more than 2 minutes).",
+          "Six": "Operator errors when weighing and recording measurements.",
+          "Seven": "Manual weight accounting at the enterprise"
+        },
+        "New": {
+          "Title":"Upgraded electronic scales",
+          "One": "Lack of mechanical assemblies - guarantee of weighing accuracy throughout the entire service life.",
+          "Two": "High accuracy and stability of measurement, independent of temperature fluctuations in the environment.",
+          "Three": "Ease of maintenance and system reliability due to the absence of wearing parts.",
+          "Four": "Sealed and protected design of electronic components - IP68",
+          "Five": "High performance of measurements (from 3 seconds).",
+          "Six": "Automatic registration and accounting of measurements.",
+          "Seven": "Possibility of organizing full automation of weighing with subsequent export of data to accounting software"
+        }
+      }
     }
+
   }
 }

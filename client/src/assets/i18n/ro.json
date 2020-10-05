@@ -621,18 +621,32 @@
       "First": {
         "FirstOne": "Capacitatea maximă de cântărire, t:",
         "LastOne": "30 /60 / 80",
+        "AutoModernLastOne": "30 /60 / 80",
+        "FarmerLastOne": "10 /20 / 30",
         "FirstTwo": "Capacitatea minimă de cântărire, kg:",
         "LastTwo": "200 / 400",
+        "AutoModernLastTwo": "200 / 400",
+        "FarmerLastTwo": "100 / 100 / 200",
         "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
         "LastThree": "10 /20 / 20",
+        "AutoModernLastThree": "10 /20 / 20",
+        "FarmerLastThree": "5 / 5 / 10",
         "FirstFour": "Valoarea diviziunii reale (d), kg:",
         "LastFour": "10 /20 / 20",
+        "AutoModernLastFour": "10 /20 / 20",
+        "FarmerLastFour": "5 / 5 / 10",
         "FirstFive": "Numărul platformelor, buc:",
         "LastFive": "3",
+        "AutoModernLastFive": "1/2",
+        "FarmerLastFive": "1",
         "FirstSix": "Lungimea platformei de încărcare, m:",
         "LastSix": "16 / 18",
+        "AutoModernLastSix": "12 / 16 / 18",
+        "FarmerLastSix": "6",
         "FirstSeven": "Numărul de senzori, piese:",
         "LastSeven": "8",
+        "AutoModernLastSeven": "4/6",
+        "FarmerLastSeven": "4",
         "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
         "LastEight": "IP 68",
         "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
@@ -647,7 +661,52 @@
         "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
         "FirstFourteen": "Clasa de exactitate a balanţei:",
         "LastFourteen": "Medium (III)"
-
+      },
+      "Two": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "15 (20)",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "1000",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "20",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "20",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "1",
+        "FirstSix": "Numărul de senzori, piese:",
+        "LastSix": "4",
+        "FirstSeven": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastSeven": "IP 66",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastEight": "IP 54",
+        "FirstNine": "Temperatură de funcționare (platforma), C:",
+        "LastNine": "De La -30 Pînă +45",
+        "FirstTen": "Tensiunea de alimentare de la reţea:",
+        "LastTen": "220V(+10%;-15%); 50 Hz +/-2%"
+      },
+      "Three": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "15",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "100",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "5",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "5",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "2",
+        "FirstSix": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastSix": "IP 66",
+        "FirstSeven": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastSeven": "IP 54",
+        "FirstEight": "Conectare la calculator:",
+        "LastEight": "RS232",
+        "FirstNine": "Temperatură de funcționare (indicator), C:",
+        "LastNine": "De La -5 Pînă +35",
+        "FirstTen": "Tensiunea de alimentare de la reţea:",
+        "LastTen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstEleven": "Clasa de exactitate a balanţei:",
+        "LastEleven": "IB"
       }
     },
     "Icons": {
@@ -710,7 +769,67 @@
       "SubTitle": "Cântarele sunt destinate pentru cântărirea statică a camioanelor ușoare cu deplasare completă pe platformă.",
       "Text": "Cântarele mobile Fermier pentru camioane de dimensiuni mici nu necesită un fundament special și pot fi instalate pe o suprafață orizontală a drumului (asfalt, beton) sau plăci de drum. Datorită designului original (greutatea nu depășește 2,5 tone, dimensiunile totale cu rampele îndepărtate de 6x3m), cântarele sunt ușor de transportat cu camioane standard.<br>Indicatorul electronic MERAV 2000 este conectat la un computer sau laptop printr-o interfață RS232. Pentru funcționare autonomă, până la 72 de ore, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Dacă nu este posibilă conectarea cântarului la o linie de alimentare, indicatorul cu o baterie încorporată poate fi ușor deconectat pentru reîncărcare. Indicii de greutate de pe afișaj pot fi ușor citite de la o distanță de câțiva metri.",
       "TextTwo": "Electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. <br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl<br>"
+    },
+    "StaticOc": {
+      "Breadcrumb": "STAȚIONARE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
+      "Title": "STAȚIONARE PENTRU CÂNTĂRIREA<br> SARCINILOR PE AXII",
+      "SubTitle": "Cântarelele auto staționare BDA-15D1,4S, sunt destinate pentru a determina sarcina pe carosabil creată de o axă separată și pentru a determina greutatea totală a mărfurilor transportate pe drum, prin metoda însumării axelor.",
+      "Text": "Procesul de cântărire poate fi realizat atât static, cât și dinamic. . În timpul cântăririi în dinamică, cântarul determină suplimentar și viteza vehiculului.<br>Instalarea platformei pe un fundament puternic la nivelul suprafeței carosabilului, cu drumuri de acces prevăzute, elimină influența diferenței de înălțime asupra determinării greutății, atinge o precizie mare de măsurare și asigură o perioadă lungă de funcționare fără probleme la sarcini mari. Cântarele auto stationare BDA-15D1.4S au o durată de viață mai mare și s-au doveditfiabilitatea în întreprinderlei cu condiții de funcționare dificile.<br>",
+      "SubText": "Rezultatele măsurărilor sunt stocate într-o zonă de memorie nevolatilă (cel puțin 400 de măsurări). Rezultatele cântăririi pot fi tipărite pe o imprimantă (tipărirea unui talon de greutate / protocol de cântărire) și exportate în sistemul contabil al companiei.<br>Interfața RS232 este utilizată pentru a conecta un computer și a extinde sistemul.<br>",
+      "FuncTitle": "Posibilități funcționale:",
+      "FuncText": "<li><h5>cântărirea în statică și dinamică în timpul mișcării vehiculului</h5></li> <li><h5>selectarea greutății tarei </h5></li>      <li><h5>gimuri automate și manuale de cântărire în dinamică</h5></li>      <li><h5>determinarea greutății totale a vehiculului </h5></li>      <li><h5>determinarea sarcinii pe fiecare osie<h5></li>      <li><h5>determinarea vitezei vehiculului<h5></li>     <li><h5>posibilitatea introducerii numerelor de înmatriculare pentru înregistrarea vehiculului</h5></li>     <li><h5>arhivarea rezultatelor cântăririi - data și ora cântăririi, greutatea totală a vehiculului, valoarea sarcinii pe fiecare osie, viteza vehiculului, numărul de înmatriculare a vehiculului </h5></li>       <li><h5>imprimarea rezultatului de cântărire curent pe o imprimantă termică</h5></li>      <li><h5>capacitatea de a vizualiza arhiva de cântărire<h5></li>     <li><h5>capacitatea de a exporta arhiva de cântărire.</h5></li>"
+    },
+    "MoveOc": {
+      "Breadcrumb": "PORTABILE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
+      "Title": "PORTABILE PENTRU CÂNTĂRIREA<br> SARCINILOR PE AXII",
+      "SubTitle": "Cântarele auto portabile BDA-15D1.4 sunt destinate pentru a determina sarcina pe carosabil creată de o axă separată și pentru a determina greutatea totală a mărfurilor transportate pe șosea, prin metoda însumării axelor. Procesul de cântărire poate fi realizat atât static, cât și dinamic. În timpul cântăririi în dinamică, cântarul determină suplimentar și viteza vehiculului.",
+      "Text": "Platformele de cântărire sunt instalate la același nivel cu suprafața carosabilului, cu drumuri de acces prevăzute, ceea ce elimină influența diferenței de înălțime asupra determinării greutății. Platformele sunt ușoare și compacte, ceea ce le face ușor de transportat și instalat într-o locație nouă.<br>Terminalul de cântărire, imprimanta și bateria sunt instalate într-o valiză confortabilă. Instalarea și conectarea cântarului se face în câteva minute. Bateria încorporată vă oferă funcționare fără surse de alimentare externe timp de cel puțin 16 ore, totodată stocând rezultatele măsurărilor în memoria non-volatilă (cel puțin 400 de măsurări). Rezultatele cântăririi pot fi tipărite pe imprimanta încorporată (tipărirea unui talon de cântărire / protocol de cântărire) și exportate în sistemul contabil al companiei.<br>Interfața RS232 este utilizată pentru a conecta un computer și a extinde sistemul.<br>",
+      "FuncTitle": "Функциональные возможности:",
+      "FuncText": "<li><h5>cântărirea în statică și dinamică în timpul mișcării vehiculului</h5></li><li><h5>selectarea greutății tarei</h5></li><li><h5>regimuri automate și manuale de cântărire în dinamică<h5></li><li><h5>determinarea greutății totale a vehiculului</h5></li><li><h5>determinarea sarcinii pe fiecare osie</h5></li><li><h5>determinarea vitezei vehiculului</h5></li><li><h5>posibilitatea introducerii numerelor de înmatriculare pentru înregistrarea vehiculului<h5></li><li><h5>arhivarea rezultatelor cântăririi - data și ora cântăririi, greutatea totală a vehiculului, valoarea sarcinii pe fiecare osie, viteza vehiculului, numărul de înmatriculare a vehiculului</h5></li><li><h5>imprimarea rezultatului de cântărire curent pe o imprimantă termică<h5></li><li><h5>capacitatea de a vizualiza arhiva de cântărire<h5></li><li><h5>capacitatea de a exporta arhiva de cântărire</h5></li>"
+    },
+    "OnBoard": {
+      "Title": "SISTEMELE DE CÂNTĂRIRE DE BORD",
+      "SubTitle": "Sistemele de cântărire de bord vă permit să determinați sarcina pe o axă sau un grup de oxe și masa totală a sarcinii din caroseria mașinii. În funcție de configurația suspensiei, precizia este de 3-5%.",
+      "Text": "",
+      "ImageTitleOne": "CARACTERISTICILE MODULULUI:",
+      "ImageTextOne": "<li><h6> Instalare și calibrare simplificată</h6></li><li><h6>Afișează sarcina pe o axă sau un grup de axe</h6></li><li><h6>Măsoară greutatea în timpul deplasării</h6></li><li><h6>Posibilitatea de a seta regimul securizat – PIN code, pentru a accesa sistemul</h6></li><li><h6>Posibilitatea instalării la exterior a indicatorului</h6></li><li><h6>Ecranul se stinge automat după 30 de minute de inactivitate, în timp ce datele continuă să se acumuleze</h6></li><li><h6>Transfer de date prin Bluetooth</h6></li>",
+      "ImageTitleTwo": "APLICAȚIA GRATUITĂ RIGHT WEIGH:",
+      "ImageTextTwo": "<li><h6> Regim Demo</h6></li><li><h6>Multi-lingvă</h6></li><li><h6>Notificare despre suprasarcină</h6></li>",
+      "ImageTitleThree": "CARACTERISTICELE TEHNICE:",
+      "ImageTextThree": "<li><h6> Precizia determinării greutății: 3 - 5 %</h6></li><li><h6>Sursă de alimentare de bord 9V... 32V</h6></li><li><h6>Temperatura de operare -30 °С... +60°С</h6></li><li><h6>Transfer de date prin Bluetooth</h6></li>"
+    },
+    "AutoModern": {
+      "Title": "MODERNIZAREA CÂNTARELOR AUTO",
+      "SubTitle": "Modernizarea cântarelor auto mecanice permite reducerea costurilor de operare, prelungirea duratei de viață și îmbunătățirea funcționalității, prin înlocuirea unui sistem mecanic de cântărire cu unul electronic și introducerea contabilității automate.",
+      "ImageTextOne": "La modernizarea cântarului, sistemul de măsurare de pârghie se schimbă pe sistem de senzori.",
+      "ImageTextTwo": "În funcție de starea pardoselii și de lungimea unității de transport care necesită cântărire, platforma de cântărire poate fi înlocuită, prelungită sau lăsată existentă.",
+      "ImageTextThree": "În acest caz, indicatorul cu arcuri este înlocuit cu un indicator electronic, cu posibilitatea de a fi conectat la un computer.",
+      "Text": "Pentru modernizarea cântarelor feroviare, folosim cele mai fiabile componente testate în timp.. <br>Indicatorul electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. Dacă este necesară instalarea cântarului la o distanță considerabilă de camera operatorului, se utilizează senzori digitali.<br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl.<br>",
+      "Table": {
+        "Title": "Evaluați avantajele cântarelor auto",
+        "Old": {
+          "Title":"Old mechanical scales",
+          "One": "Uzura sistemului de pârghii și a prismelor. Consecință - probleme de precizie (rezultatul cântăririi nu corespunde cu greutatea reală).",
+          "Two": "Dependența preciziei cântăririlor în dependență de fluctuațiile de temperatură din mediu.",
+          "Three": "Întreținere tehnică frecventă și reparații complexe ale cântarelor",
+          "Four": "Acțiunea factorilor naturali (apele subterane, îngheț, coroziunea elementelor mecanice)",
+          "Five": "Performanță scăzută de măsurare (mai mult de 2 minute).",
+          "Six": "Erori ale operatorului la cântărire și înregistrare a măsurărilor.",
+          "Seven": "Contabilitatea „manuală” a cântăririi la întreprindere."
+        },
+        "New": {
+          "Title":"Upgraded electronic scales",
+          "One": "Lipsa joncțiunilor mecanice - garantează precizia cântăririi pe toată durata de viață.",
+          "Two": "Precizie ridicată și stabilitate de măsurare, independent de fluctuațiile de temperatură din mediu.",
+          "Three": "Simplitate în întreținere și fiabilitatea sistemului datorită absenței pieselor uzate.",
+          "Four": "Proiectare sigilată și protejată a componentelor electronice - IP68",
+          "Five": "Performanță ridicată a măsurătorilor (de la 3 secunde).",
+          "Six": "Înregistrarea automată și contabilizarea măsurătorilor.",
+          "Seven": "Capacitatea de a organiza automatizarea completă a cântăririi cu exportul ulterior de date către software de contabilitate"
+        }
+      }
     }
+
 
   }
 

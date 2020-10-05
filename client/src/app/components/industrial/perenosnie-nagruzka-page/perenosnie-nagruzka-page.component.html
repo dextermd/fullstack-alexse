@@ -1,9 +1,9 @@
 <div class="">
   <div class="container pt-2">
     <mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/auto-index'">Автомобильные весы</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item class="active">ПЕРЕНОСНЫЕ ДЛЯ ВЗВЕШИВАНИЯ НАГРУЗКИ НА ОСЬ</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/auto-index'">{{'CarWeights.Category.Title' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">{{'CarWeights.MoveOc.Breadcrumb'  | translate}}</mdb-breadcrumb-item>
     </mdb-breadcrumb-item>
 
     <!--Section: Content-->
@@ -12,8 +12,12 @@
       <div class="row">
         <!-- Grid column -->
         <div class="col-lg-7 mb-3 align-self-center text-center text-lg-left">
-          <h1 class="h2 mb-5">ПЕРЕНОСНЫЕ ДЛЯ ВЗВЕШИВАНИЯ<br> И НАГРУЗКИ НА ОСЬ</h1>
-          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">Весы электронные автомобильные переносные ВDA-15D1.4 Ап, предназначены для определения нагрузки на дорожное полотно, создаваемое отдельной осью и определения общей массы грузов, перевозимых автомобильным транспортом, методом суммирования осей. Процесс взвешивания можно производить как в статике, так и в динамике. При взвешивании в движении, весы дополнительно определяют скорость проезда автомобиля.
+          <h1 class="h2 mb-5">
+            <div [innerHTML]="'CarWeights.MoveOc.Title'  | translate"></div>
+
+          </h1>
+          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
+            {{'CarWeights.MoveOc.SubTitle'  | translate}}
           </h5>
         </div>
         <!-- Grid column -->
@@ -36,9 +40,7 @@
   <section class="container">
     <div style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        Грузоприемные платформы устанавливаются вровень с дорожным покрытием, с предусмотренными подъездными путями, что позволяет исключить влияние перепада высоты на показание веса. Платформы легкие и компактные, благодаря этому их легко перевозить и устанавливать на новом месте.<br>
-        Весовой терминал, принтер чеков и аккумулятор установлены в удобном чемоданчике. Монтаж и подключение весов производится за считаные минуты. Встроенный аккумулятор обеспечит функционирование без внешних источников питания в течение минимум 16 часов, при этом, результаты измерений сохраняются в энергонезависимой памяти (минимум 400 последних измерений). Результаты взвешивания можно распечатывать на встроенном принтере (печать весового талона/протокола взвешивания) и экспортировать данные в учетную систему предприятия.<br>
-
+        <div [innerHTML]="'CarWeights.MoveOc.Text'  | translate"></div>
       </h5>
     </div>
 
@@ -48,24 +50,11 @@
   <section class="container">
 
     <div class="flex-center">
-    <h3 class="pt-3 mb-3">Функциональные возможности:</h3>
+    <h3 class="pt-3 mb-3">{{'CarWeights.MoveOc.FuncTitle' | translate}}</h3>
     </div>
 <div class="d-flex justify-content-center">
-        <ul class="mb-4">
-          <li><h5>Взвешивание в статике и в динамике во время движения автомобиля</h5></li>
-          <li><h5>Выборка массы тары</h5></li>
-          <li><h5>Автоматический и ручной режимы взвешивания в движении</h5></li>
-
-          <li><h5>Определение общей массы автомобиля</h5></li>
-          <li><h5>Определение нагрузки на каждую ось</h5></li>
-          <li><h5>Определение скорости движения автомобиля</h5></li>
-          <li><h5>Возможность введения номерных знаков для регистрации автомобиля</h5></li>
-          <li><h5>Архивирование результатов взвешивания – дата и время взвешивания,<br> общая масса автомобиля, значение нагрузки на каждую ось,<br> скорость движения автомобиля,<br> номерные знаки автомобиля</h5></li>
-          <li><h5>Печать текущего результата взвешивания на термопринтере</h5></li>
-          <li><h5>Возможность просматривать архив взвешиваний</h5></li>
-          <li><h5>Возможность экспорта архива взвешиваний</h5></li>
-
-
+        <ul class="mb-4 col-7">
+          <div [innerHTML]="'CarWeights.MoveOc.FuncText'  | translate"></div>
 
         </ul>
 </div>
@@ -79,7 +68,6 @@
 
           <!--Image-->
           <div class="view overlay z-depth-1-half">
-<!--            <img lightbox backgroundColor="white" src="assets/cert/bsn.jpg" class="img-fluid" alt="">-->
           </div>
 
         </div>
@@ -89,8 +77,10 @@
         <div class="col-md-8 mb-4 mb-md-0">
 
 
-          <h5 class="">Автомобильные весы Alex S&E соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания».
-            Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.</h5>
+          <h5 class="">
+            {{'Certificates.BDA' | translate}}
+
+          </h5>
 
 
         </div>
@@ -99,17 +89,56 @@
       </div>
       <!--Grid row-->
     </div>
-    <h1 class="h2 text-center">Характеристики</h1>
+    <h1 class="h2 text-center">{{'CarWeights.Tables.Title' | translate}}</h1>
     <div class="flex-center pb-2">
       <div class="col-lg-7">
-        <!--      <img lightbox backgroundColor="white" src="assets/industrial/vagon/tech.png" class="img-fluid" alt="">-->
         <table mdbTable striped="true" bordered="true">
           <thead>
           </thead>
           <tbody>
-          <tr mdbTableCol *ngFor="let el of elements">
-            <td class="">{{el.first}}</td>
-            <td class="">{{el.last}}</td>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastOne' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastTwo' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastThree' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstFour' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastFour' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstFive' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastFive' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstSix' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastSix' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstSeven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastSeven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstEight' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastEight' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstNine' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastNine' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstTen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastTen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Three.FirstEleven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Three.LastEleven' | translate}}</td>
           </tr>
           </tbody>
         </table>

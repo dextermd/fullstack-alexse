@@ -1,9 +1,9 @@
 <div class="">
   <div class="container pt-2">
     <mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/auto-index'">Автомобильные весы</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item class="active">БОРТОВЫЕ СИСТЕМЫ ВЗВЕШИВАНИЯ</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item [routerLink]="'/auto-index'">{{'CarWeights.Category.Title' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">{{'CarWeights.OnBoard.Title' | translate}}</mdb-breadcrumb-item>
     </mdb-breadcrumb-item>
 
     <!--Section: Content-->
@@ -15,8 +15,9 @@
         <!-- Grid column -->
         <div class="col-lg-8 mb-3 align-self-center text-center text-lg-left">
 
-          <h1 class="h2 mb-5">БОРТОВЫЕ СИСТЕМЫ ВЗВЕШИВАНИЯ</h1>
-          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">Бортовые системы взвешивания позволяют определить нагрузку на ось или группу осей и полную массу груза в кузове автомобиля. В зависимости от конфигурации подвески, точность составляет 3-5%.
+          <h1 class="h2 mb-5">{{'CarWeights.OnBoard.Title' | translate}}</h1>
+          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
+            {{'CarWeights.OnBoard.SubTitle' | translate}}
           </h5>
 
 
@@ -46,8 +47,7 @@
   <section class="container">
     <div style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        Универсальность системы позволяет в считанные часы устанавливать ее на грузовые автомобили и прицепы, в том числе на самосвалы и полуприцепы, как с пневматической, так и с механической подвеской.<br>
-        После установки, система, в режиме реального времени, отображает текущую массу груза в кузове автомобиля, легко подключается к любому смартфону через Bluetooth, и оповестит водителя о перегрузе в случае необходимости.<br>
+        <div [innerHTML]="'CarWeights.OnBoard.Text'  | translate"></div>
       </h5>
     </div>
 
@@ -63,17 +63,11 @@
           <div class="col-lg-6 col-md-6">
             <div class="">
               <div class="card-header white">
-                <h4 class="font-weight-bold mb-0">Характеристики модуля:</h4>
+                <h4 class="font-weight-bold mb-0">{{'CarWeights.OnBoard.ImageTitleOne' | translate}}</h4>
               </div>
               <div class="card-body">
                 <ul class="mb-4">
-                  <li><h6>Простой монтаж и калибровка</h6></li>
-                  <li><h6>Отображает нагрузку на ось или группу осей</h6></li>
-                  <li><h6>Измеряет вес во время движения</h6></li>
-                  <li><h6>Возможность установить защищенный режим - PIN-код,<br>  для доступа к системе</h6></li>
-                  <li><h6>Возможность наружной установки индикатора</h6></li>
-                  <li><h6>Дисплей автоматически гаснет после 30 минут бездействия,<br> в это время данные продолжают накапливаться</h6></li>
-                  <li><h6>Передача данных по Bluetooth</h6></li>
+                  <div [innerHTML]="'CarWeights.OnBoard.ImageTextOne'  | translate"></div>
                 </ul>
               </div>
             </div>
@@ -81,7 +75,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="view overlay rounded">
               <img src="assets/industrial/board/module.jpg" class="img-fluid"
-                   alt="Sample project image" />
+                   alt="Sample project image"/>
               <a href="#">
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -92,7 +86,7 @@
           <div class="col-md-6 col-lg-4">
             <div class="view overlay rounded">
               <img src="assets/industrial/board/222.jpg" class="img-fluid"
-                   alt="Sample project image" />
+                   alt="Sample project image"/>
               <a href="#">
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -101,13 +95,11 @@
           <div class="col-lg-6 col-md-6">
             <div class="">
               <div class="card-header white">
-                <h4 class="font-weight-bold mb-0">Бесплатное приложение RIGHT WEIGH:</h4>
+                <h4 class="font-weight-bold mb-0">{{'CarWeights.OnBoard.ImageTitleTwo' | translate}}</h4>
               </div>
               <div class="card-body">
                 <ul class="mb-4">
-                  <li><h6>Демо-режим</h6></li>
-                  <li><h6>Мультиязычность</h6></li>
-                  <li><h6>Предупреждение о перегрузе</h6></li>
+                  <div [innerHTML]="'CarWeights.OnBoard.ImageTextTwo'  | translate"></div>
                 </ul>
               </div>
             </div>
@@ -117,14 +109,11 @@
           <div class="col-lg-6 col-md-6">
             <div class="">
               <div class="card-header white">
-                <h4 class="font-weight-bold mb-0">Технические характеристики:</h4>
+                <h4 class="font-weight-bold mb-0">{{'CarWeights.OnBoard.ImageTitleThree' | translate}}</h4>
               </div>
               <div class="card-body">
                 <ul class="mb-4">
-                  <li><h6>Точность определения массы груза – 3-5%</h6></li>
-                  <li><h6>Питание от бортовой сети: 9-32 V</h6></li>
-                  <li><h6>Рабочая температура: -30°С - +60°С</h6></li>
-                  <li><h6>Передача данных по BLUETOOTH</h6></li>
+                  <div [innerHTML]="'CarWeights.OnBoard.ImageTextThree'  | translate"></div>
                 </ul>
               </div>
             </div>
@@ -132,7 +121,7 @@
           <div class="col-md-6 col-lg-5">
             <div class="view overlay rounded">
               <img src="assets/industrial/board/333.jpg" class="img-fluid"
-                   alt="Sample project image" />
+                   alt="Sample project image"/>
               <a href="#">
                 <div class="mask rgba-white-slight"></div>
               </a>
@@ -143,15 +132,7 @@
     </div>
 
 
-
-
-
-
-
-
-
   </section>
-
 
 
 </div>
