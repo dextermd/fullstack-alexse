@@ -1,9 +1,9 @@
 <div class="bgindustrial">
 <div class="container pt-2">
   <mdb-breadcrumb-item>
-    <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-    <mdb-breadcrumb-item  [routerLink]="'/auto-index'">Автомобильные весы</mdb-breadcrumb-item>
-    <mdb-breadcrumb-item class="active">Стационарные автомобильные весы</mdb-breadcrumb-item>
+    <mdb-breadcrumb-item  [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+    <mdb-breadcrumb-item  [routerLink]="'/auto-index'">{{'CarWeights.Category.Title' | translate}}</mdb-breadcrumb-item>
+    <mdb-breadcrumb-item class="active">{{'CarWeights.StaticAuto.Title' | translate}}</mdb-breadcrumb-item>
   </mdb-breadcrumb-item>
 
   <!--Section: Content-->
@@ -15,8 +15,10 @@
       <!-- Grid column -->
       <div class="col-lg-7 mb-3 align-self-center text-center text-lg-left">
 
-        <h1 class="h2 mb-5">Стационарные автомобильные весы</h1>
-        <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">Весы предназначены для статического взвешивания большегрузных автомобилей с полным заездом на платформу при интенсивном потоке, в том числе в сложных условиях эксплуатации.</h5>
+        <h1 class="h2 mb-5">{{'CarWeights.StaticAuto.Title' | translate}}</h1>
+        <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
+          {{'CarWeights.StaticAuto.SubTitle' | translate}}
+        </h5>
 
       </div>
       <!-- Grid column -->

@@ -540,7 +540,7 @@
       "Text": "Equipment that well-functioning and has trouble-free operation for our customers!"
     },
     "FinalAb": {
-      "TextOne": "<p>Thanks to the development of the network of representative offices and branches, the products of  «Alex S&amp;E» became known not only in Moldova, but also abroad.<br>\nThe main office of the company is located in Chisinau. Two more branches operate in Moscow (Russia) and Kharkov (Ukraine).</p>\n<p>During 27 years of activity, our clients have become enterprises of various industries, such as metallurgy, oil refining and gas, mining and processing, meat and dairy, as well as bakery, feed, oil extraction, tobacco ferment, breweries, ceramics, porcelain and glass factories, trade enterprises and transport network.</p>\n<p>All products of the company are certified and entered in the State Registers of the Republic of Moldova, Belarus, Ukraine, Kazakhstan and the Russian Federation.</p>\n",
+      "TextOne": "<p>Thanks to the development of the network of representative offices and branches, the products of  «Alex S&amp;E» became known not only in Moldova, but also abroad.<br>The main office of the company is located in Chisinau. Two more branches operate in Moscow (Russia) and Kharkov (Ukraine).</p><p>During 27 years of activity, our clients have become enterprises of various industries, such as metallurgy, oil refining and gas, mining and processing, meat and dairy, as well as bakery, feed, oil extraction, tobacco ferment, breweries, ceramics, porcelain and glass factories, trade enterprises and transport network.</p><p>All products of the company are certified and entered in the State Registers of the Republic of Moldova, Belarus, Ukraine, Kazakhstan and the Russian Federation.</p>",
       "TextTwo": "<p><strong>„Alex S&amp;E”</strong>  engineers and programmers constantly follow the trends in the development of industry and trade in order to offer our customers weighing equipment that meets international standards. All specialists are regularly trained abroad.</p><p>The company has established the reliable partnerships with the best foreign manufacturers of metrological, weighing and measuring equipment, as well as components for the production of scales. We work with companies from Holland, Italy, France, Great Britain and Israel.</p><p><strong>The main principles that we adhere to:</strong><br> • strict observance of the interests of the Customer;<br> • use of components only from the best foreign manufacturers;<br> • warranty for all components, equipment and service for the entire lifetime.</p>"
     }
   },
@@ -600,6 +600,108 @@
         "Adress": "<p>ДП «АЛЕКС ВЕСЫ И ОБОРУДОВАНИЕ»<br>61058, 12  Romen Rollan Str., Kharkov, Ukraine<br>",
         "Contact": "<p>E-mail: alex_vio@mail.ru<br>Phone: + 380 (57) 719 48 33<br>Phone: + 380 (57) 759 11 24</p>"
       }
+    }
+  },
+  "Certificates": {
+    "BSA": "Truck scales Alex S&E type - BSA, comply with RGML14: 2007 Scales for non-automatic weighing. Certified and entered in the State Register of Measuring Instruments of the Republic of Moldova",
+    "BDA": "Truck scales Alex S&E type - BDA, comply with SM STB 1845: 2011 Electronic strain gauge scales for weighing vehicles in motion. Certified and included in the State Register of Measuring Instruments of the Republic of Moldova."
+  },
+  "CarWeights": {
+    "BreadcrumbProduct": "Products",
+    "Tables": {
+      "Title": "Additional Info",
+      "First": {
+        "FirstOne": "Maximum capacity, t:",
+        "LastOne": "30 /60 / 80",
+        "FirstTwo": "Minimum capacity, kg:",
+        "LastTwo": "200 / 400",
+        "FirstThree": "Verification scale interval (е), kg:",
+        "LastThree": "10 /20 / 20",
+        "FirstFour": "Actual scale interval (d), kg:",
+        "LastFour": "10 /20 / 20",
+        "FirstFive": "Number of sensors, pcs:",
+        "LastFive": "3",
+        "FirstSix": "Load weighing platform length, m:",
+        "LastSix": "16 / 18",
+        "FirstSeven": "Number of sensors, pcs:",
+        "LastSeven": "8",
+        "FirstEight": "Dust and waterproof (platform):",
+        "LastEight": "IP 68",
+        "FirstNine": "Dust and waterproof (indicator) MERAV2000:",
+        "LastNine": "IP 67",
+        "FirstTen": "PC connection:",
+        "LastTen": "RS232",
+        "FirstEleven": "Operation temperature range (platform), С:",
+        "LastEleven": "From -30 To +45",
+        "FirstTwelve": "Operation temperature range (indicator), С:",
+        "LastTwelve": "From -5 To +35",
+        "FirstThirteen": "Power supply:",
+        "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstFourteen": "Accuracy class:",
+        "LastFourteen": "Medium (III)"
+
+      }
+    },
+    "Icons": {
+      "DefaultTitle": "Standard complete set",
+      "IconTemp": "Operating temperature range of sensors from -30 to +45 ° C",
+      "IconSensor": "Protection of sensors against dust and moisture according to IP68 standard",
+      "IconRGML": "The balance complies with the requirements of the RGML14: 2007 standard",
+      "IconPaint": "Special painting of the load receptacle to protect against corrosion",
+      "IconRS": "RS232 interface for communication with a computer",
+      "IconShock": "Lightning strike protection for sensors",
+      "IconDisplay": "Protection of the indicator from dust and moisture according to IP67 standard",
+      "IconSoft": "Special software AlexScales for working with scales, documentation and reports.",
+      "IconScales": "Mobile application for remote control of weighing results ScalesControl",
+      "ModernTitle": "Additionally can be completed",
+      "IconAddDisplay": "Remote indicating display panel",
+      "IconBorder": "Fences",
+      "IconDisplayProtect": "Lightning protection of the indicator unit",
+      "IconDigital": "Digital sensors",
+      "IconLights": "Flow control system - signal lights",
+      "IconBarrier": "Flow control system - barriers",
+      "IconPhoto": "System of registration of the image of the weighed vehicle.",
+      "IconRFID": "RFID vehicle identification system",
+      "IconAutomatic": "Scales control and registration of weighing without operator participation",
+      "IconShield": "Shields for closing the inter-track space",
+      "IconRamp": "Mobile metal / concrete ramps",
+      "IconFrame": "Weighing base frame"
+    },
+
+    "Category": {
+      "Title": "Truck scales",
+      "CatOne": "STATIONARY TRUCK SCALES",
+      "CatTwo": "PORTABLE TRUCK SCALES FARMER",
+      "CatThree": "PORTABLE FOR WEIGHING AXLE LOADS",
+      "CatFour": "STATIONARY FOR WEIGHING AXLE LOADS",
+      "CatFive": "ON-BOARD WEIGHING SYSTEMS",
+      "CatSix": "MODERNIZATION OF VEHICLE SCALES",
+      "Text": "Truck scales are something that you cannot do without at any enterprise where transport is used to receive, release or transport goods. Weighing a car on a scale practically eliminates losses in product accounting.<br>Alex S&E, for more than 27 years, has been producing truck scales with concrete and metal platforms, stationary and mobile, for weighing, both in static and in motion. The dimensions, type and equipment of the scales may differ depending on the task, the place of installation and the transport to be weighed.<br>The software supplied with the scales will serve as an irreplaceable assistant to the operator or will allow the vehicle to be weighed in automatic mode, without the operator's participation, which will eliminate human errors.<br>When designing and manufacturing scales, we pay great attention to the reliability and quality of products. The absence of equipment failures allows our customers to work profitably, without the cost of downtime, repairs or the purchase of new scales.<br>Many enterprises in Moldova, Ukraine, Russia, Kazakhstan have been successfully using scales manufactured by Alex S&E for more than 25 years. Our products are used in warehouses, metal warehouses, reinforced concrete products, mining and processing plants, elevators, quarries, at temporary points, for example, in the manufacture of roads, to control the axle load and, accordingly, the load on the roadbed.<br>At Alex S&E you can always buy a scale for weighing trucks at the best price. Our experts will quickly and professionally advise you on the choice of vehicle scales, give recommendations and help determine the optimal place for installing the scales.<br>",
+      "IconTitleOne": "27 years",
+      "IconTextOne": "Of experience",
+      "IconTitleTwo": "More than 500",
+      "IconTextTwo": "Truck scales",
+      "IconTitleThree": "More than  100",
+      "IconTextThree": "Rail scales"
+    },
+    "StaticAuto": {
+      "Title": "STATIONARY AUTOMOTIVE SCALES",
+      "SubTitle": "Scales are designed for static weighing of heavy-duty vehicles with full drive onto the platform under heavy traffic, including in difficult operating conditions.",
+      "HeaderText": "They can be installed both in the ground position with ramps for entry and exit, and in a pit, to save space on the territory of the enterprise.<br>In the manufacture of truck scales, we use the most reliable, time-tested components.<br>The electronic display unit MERAV 2000 is connected to the computer via the RS232 interface. For autonomous operation, in case of power outages, the indicator unit has a built-in battery and display backlight. The weight on the display is easy to read from a distance of several meters.<br>The sensors in the scales have a degree of protection against dust and moisture IP68, which, in fact, allows them to work even in water, and are protected from lightning discharges. The operating temperature range of the sensors is from -30 ° С to + 45 ° С. If it is necessary to install the scales at a considerable distance from the operator's room, digital sensors are used.<br>Software for a computer or laptop is supplied free of charge and allows you to keep track of plumb lines with saving a photo of the moment of weighing, write out weight coupons and waybills. Supports \"double weighing\" (gross, tare) for calculating net weight. If necessary, provides remote access to weighing data from anywhere in the world using the ScalesControl application.<br>",
+      "Beton": {
+        "Title": "CONCRETE SCALES TRUCK",
+        "Text": "The construction of reinforced concrete scales is a metal frame with a reinforcing mesh, which is poured with concrete at the installation site.<br>Due to its high resistance to corrosion, the effects of salts, acids and alkalis, the scales have an increased service life and have proven themselves in enterprises with difficult operating conditions.<br>"
+      },
+      "Metal": {
+        "Title": "PITLESS TYPE TRUCK SCALES",
+        "Text": "The weighing platform consists entirely of metal, structurally made of parallel sections that form two tracks. The total weight of the platforms does not exceed 8 tons, which allows the scales to be transported to a new installation site by standard freight transport. Ideal for temporary accommodation such as seasonal work or temporary / rented areas"
+      }
+    },
+    "MoveFarmer": {
+      "Title": "PORTABLE SCALES «FARMER»",
+      "SubTitle": "Scales are designed for static weighing of light-duty trucks with full drive onto the platform.",
+      "Text": "Portable, small-sized truck scales Farmer do not require a special foundation and can be installed on a horizontal road surface (asphalt, concrete) or road slabs. Thanks to the original design (weight no more than 2.5 tons, overall dimensions with removed ramps 6x3m), the scales are easily transported by standard trucks.",
+      "TextTwo": "The electronic display unit MERAV 2000 is connected to a computer or laptop via an RS232 interface. For autonomous operation, up to 72 hours, the indicator unit has a built-in battery and display backlight. If it is not possible to connect a power line to the balance, the indicator with a built-in battery can be easily disconnected for recharging. Weight readings on the display are readable from a distance of several meters. <br>The sensors in the scales have a degree of protection against dust and moisture IP68, which, in fact, allows them to work even in water, and are protected from lightning discharges. The operating temperature range of the sensors is from -30 ° С to + 45 ° С. If it is necessary to install the scales at a considerable distance from the operator's room, digital sensors are used.<br>Software for a computer or laptop is supplied free of charge and allows you to keep track of plumb lines with saving a photo of the moment of weighing, write out weight coupons and waybills. Supports \"double weighing\" (gross, tare) for calculating net weight. If necessary, provides remote access to weighing data from anywhere in the world using the ScalesControl application.<br>"
     }
   }
 }

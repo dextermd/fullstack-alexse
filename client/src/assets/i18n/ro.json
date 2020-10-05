@@ -20,27 +20,27 @@
     "FOOTER": {
       "CHISINAU": {
         "Name": "MAGAZIN CHIȘINĂU",
-        "Adress": "MD-2005, Republica Moldova, mun. Chișinău,\nStr. Ion Pruncul, 4/1\n",
+        "Adress": "MD-2005, Republica Moldova, mun. Chișinău,Str. Ion Pruncul, 4/1",
         "Phone": "tel:(+37322) 244-572"
       },
       "BALTI": {
         "Name": "MAGAZIN BĂLȚI",
-        "Adress": "MD-3121, Republica Moldova,\nmun. Balti, str. Kiev 145\n",
+        "Adress": "MD-3121, Republica Moldova,mun. Balti, str. Kiev 145",
         "Phone": "tel:(+373231) 40-456"
       },
       "TIRASPOL": {
         "Name": "MAGAZIN TIRASPOL",
-        "Adress": "MD-3300, Transnistria, or. Tiraspol,\nStr. Sindicatele 60, birou 101\n",
+        "Adress": "MD-3300, Transnistria, or. Tiraspol,Str. Sindicatele 60, birou 101",
         "Phone": "tel:(533) 675 40"
       },
       "COMRAT": {
         "Name": "MAGAZIN COMRAT",
-        "Adress": "MD-3805, Republica Moldova,\nATU Găgăuzia, mun. Comrat,\nStr. Victoriei 43\n",
+        "Adress": "MD-3805, Republica Moldova,ATU Găgăuzia, mun. Comrat,Str. Victoriei 43",
         "Phone": "tel:(+373 298) 805-33"
       },
       "DROCHIA": {
         "Name": "MAGAZIN DROCHIA",
-        "Adress": "MD-5202, Republica Moldova,\nDrochia, str. Gudanov (Piața nouă),\nGhereta Nr. 20",
+        "Adress": "MD-5202, Republica Moldova,Drochia, str. Gudanov (Piața nouă),Ghereta Nr. 20",
         "Phone": "tel:(+373) 68650707"
       }
     },
@@ -548,8 +548,8 @@
       "Text": "Echipamentele care funcționează fiabil și fără probleme pentru clienții noștri!"
     },
     "FinalAb": {
-      "TextOne": "<p>Datorită dezvoltării rețelei de reprezentanțe și sucursale, produsele «Alex S&amp;E» au devenit cunoscute nu numai în Moldova, ci și în străinătate.<br>\nSediul principal al companiei este situat în mun. Chișinău. În Moscova (Rusia) și Harkov (Ucraina) operează încă două sucursale.</p>\n<p>Pe parcursul a 27 de ani de activitate, clienții noștri au devenit întreprinderi din diverse industrii, cum ar fi întreprinderi metalurgice, rafinarea petrolului și gazele, mineritul și prelucrarea lui, carnea și produsele lactate, precum și panificația, furajele, extracția uleiului, fermentarea tutunului, fabricile de bere, ceramica, fabricile de porțelan și sticlă, întreprinderile comerciale și rețelele de transport.</p>\n<p>Toate produsele companiei sunt certificate și incluse în registrele de stat din Republica Moldova, Belarus, Ucraina, Kazahstan și Federația Rusă.</p>",
-      "TextTwo": "<p>Inginerii și programatorii<strong>„Alex S&amp;E”</strong> Inginerii și programatorii „Alex S&E” urmăresc în mod constant tendințele în dezvoltarea industriei și a comerțului pentru a oferi clienților noștri echipamente de cântărire care îndeplinesc standardele internaționale. Toți specialiștii sunt instruiți în mod regulat în străinătate.</p>\n<p>Compania a stabilit parteneriate fiabile cu cei mai buni producători străini de echipamente metrologice, de cântărire și de măsurare, precum și componente pentru producția de cântare. Lucrăm cu companii din Olanda, Italia, Franța, Marea Britanie, Israel.</p>\n<p><strong>Principiile de bază pe care le utilizăm:</strong><br>\n • respectarea strictă a intereselor Clientului;<br>\n • utilizarea componentelor numai de la cei mai buni producători străini;<br> • garanție pentru toate componentele, echipamentele și service-ul pe întreaga durată de viață.</p>"
+      "TextOne": "<p>Datorită dezvoltării rețelei de reprezentanțe și sucursale, produsele «Alex S&amp;E» au devenit cunoscute nu numai în Moldova, ci și în străinătate.<br>Sediul principal al companiei este situat în mun. Chișinău. În Moscova (Rusia) și Harkov (Ucraina) operează încă două sucursale.</p><p>Pe parcursul a 27 de ani de activitate, clienții noștri au devenit întreprinderi din diverse industrii, cum ar fi întreprinderi metalurgice, rafinarea petrolului și gazele, mineritul și prelucrarea lui, carnea și produsele lactate, precum și panificația, furajele, extracția uleiului, fermentarea tutunului, fabricile de bere, ceramica, fabricile de porțelan și sticlă, întreprinderile comerciale și rețelele de transport.</p><p>Toate produsele companiei sunt certificate și incluse în registrele de stat din Republica Moldova, Belarus, Ucraina, Kazahstan și Federația Rusă.</p>",
+      "TextTwo": "<p>Inginerii și programatorii<strong>„Alex S&amp;E”</strong> Inginerii și programatorii „Alex S&E” urmăresc în mod constant tendințele în dezvoltarea industriei și a comerțului pentru a oferi clienților noștri echipamente de cântărire care îndeplinesc standardele internaționale. Toți specialiștii sunt instruiți în mod regulat în străinătate.</p><p>Compania a stabilit parteneriate fiabile cu cei mai buni producători străini de echipamente metrologice, de cântărire și de măsurare, precum și componente pentru producția de cântare. Lucrăm cu companii din Olanda, Italia, Franța, Marea Britanie, Israel.</p><p><strong>Principiile de bază pe care le utilizăm:</strong><br> • respectarea strictă a intereselor Clientului;<br> • utilizarea componentelor numai de la cei mai buni producători străini;<br> • garanție pentru toate componentele, echipamentele și service-ul pe întreaga durată de viață.</p>"
     }
   },
   "Contact": {
@@ -609,6 +609,109 @@
         "Contact": "<p>E-mail: alex_vio@mail.ru<br>Telefon: + 380 (57) 719 48 33<br>Telefon: + 380 (57) 759 11 24</p>"
       }
     }
+  },
+  "Certificates": {
+    "BSA": "Cântarele pentru vehicule Alex S&E, tip - BSA, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
+    "BDA": "Cântarele pentru vehicule Alex S&E, tip - BDA, corespund standardului SM STB 1845: 2011 \"Cântar electronic de presiune pentru cântărirea vehiculelor în dinamică\". Sunt certificate și incluse în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova."
+  },
+  "CarWeights": {
+    "BreadcrumbProduct": "Produse",
+    "Tables": {
+      "Title": "Caracteristici",
+      "First": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "30 /60 / 80",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "200 / 400",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "10 /20 / 20",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "10 /20 / 20",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "3",
+        "FirstSix": "Lungimea platformei de încărcare, m:",
+        "LastSix": "16 / 18",
+        "FirstSeven": "Numărul de senzori, piese:",
+        "LastSeven": "8",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastEight": "IP 68",
+        "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastNine": "IP 67",
+        "FirstTen": "Conectare la calculator:",
+        "LastTen": "RS232",
+        "FirstEleven": "Temperatură de funcționare (platforma), C:",
+        "LastEleven": "De La -30 Pînă +45",
+        "FirstTwelve": "Temperatură de funcționare (indicator), C:",
+        "LastTwelve": "De La -5 Pînă +35",
+        "FirstThirteen": "Tensiunea de alimentare de la reţea:",
+        "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstFourteen": "Clasa de exactitate a balanţei:",
+        "LastFourteen": "Medium (III)"
+
+      }
+    },
+    "Icons": {
+      "DefaultTitle": "Configurație standardă",
+      "IconTemp": "Temperatură de funcționare (senzori) de la -30 pînă +45 °С",
+      "IconSensor": "Operating temperature range of sensors from -30 to +45 ° C",
+      "IconRGML": "Corespund standardului RGML14: 2007",
+      "IconPaint": "Vopsirea specială a recipientului de sarcina pentru a proteja împotriva coroziunii",
+      "IconRS": "Interfaţa RS 232 pentru conectarea la calculator",
+      "IconShock": "Protecția senzorilor împotriva fulgerului",
+      "IconDisplay": "Gradul de protecție împotriva prafului și a apei (indicator) IP67",
+      "IconSoft": "Software special AlexScales pentru lucrul cu cântare, documentație și rapoarte",
+      "IconScales": "Aplicație mobilă pentru controlul de la distanță a rezultatelor cântăririi ScalesControl",
+      "ModernTitle": "Suplimentar pot fi completate:",
+      "IconAddDisplay": "Panou afișare portabil",
+      "IconBorder": "Garduri",
+      "IconDisplayProtect": "Protecția împotriva fulgerului a indicatorului",
+      "IconDigital": "Senzori digitali",
+      "IconLights": "Sistem de control a fluxului - semafoare",
+      "IconBarrier": "Sistem de control a fluxului - bariere",
+      "IconPhoto": "Sistem de înregistrare a imaginii vehiculului cântărit.",
+      "IconRFID": "Sistem de identificare a vehiculului RFID",
+      "IconAutomatic": "Controlul cântarelor și înregistrarea cântăririi fără participarea operatorului",
+      "IconShield": "Scuturi pentru închiderea spațiului căii de rulare",
+      "IconRamp": "Rampe mobile din metal / beton",
+      "IconFrame": "Cadrul de bază de cântărire"
+    },
+
+    "Category": {
+      "Title": "Cântare pentru vehicule",
+      "CatOne": "CÂNTARE STAȚIONARE PENTRU VECHICULE",
+      "CatTwo": "CÂNTARE PORTABILE «FERMIER»",
+      "CatThree": "PORTABILE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
+      "CatFour": "STAȚIONARE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
+      "CatFive": "SISTEMELE DE CÂNTĂRIRE DE BORD",
+      "CatSix": "MODERNIZAREA CÂNTARELOR AUTO",
+      "Text": "Cântarele pentru vehicule sunt produse de care nu puteți duce lipsă la nicio întreprindere în care transportul este utilizat pentru a primi, elibera sau transporta mărfurile. Cântărirea unei mașini pe cântar practic elimină pierderile din evidența produselor.<br>Alex S&E, de mai bine de 27 de ani, produce cântare pentru vehicule cu platforme de beton și metal, staționare și mobile, pentru cântărire, atât în regim static, cât și în regim dinamic. Dimensiunile, tipul și structura cântarului pot fi diferite în funcție de sarcină, locul de instalare și vehiculul care necesită cântărirea.<br>Software-ul furnizat în set cu cântarul va servi ca un asistent indispensabil operatorului sau va permite cântărirea vehiculului în modul automat, fără participarea operatorului, ceea ce va diminua erorile umane la zero.<br>La proiectarea și producerea cântarelor, se acordă o mare atenție fiabilității și calității produselor. Lipsa defecțiunilor echipamentelor în procesul de funcționare le permite clienților noștri să lucreze profitabil, fără costuri de nefuncționare, reparații sau achiziționarea de cântare noi.<br>Multe întreprinderi din Moldova, Ucraina, Rusia, Kazahstan folosesc cu succes cântarele fabricate de Alex S&E de mai bine de 25 de ani. Produsele noastre sunt folosite în depozite, baze metalice, întreprinderile producătoare de beton armat, uzinele de minerit, elevatoare, cariere, în puncte temporare, cum ar fi, la fabricarea drumurilor, pentru a controla sarcina pe osie și, în consecință, sarcina pe terasamentul de drum.<br>Compania Alex S&E vă oferă cântare pentru cântărirea camioanelor la cel mai bun preț. Experții noștri într-un mod rapid și profesionist vă vor oferi consultații cu privire la alegerea cântarului auto potrivit, vă vor oferi recomandări și vă vor ajuta să determinați locul optim pentru instalarea cântarelor.<br>",
+      "IconTitleOne": "27 ani",
+      "IconTextOne": "Experiență",
+      "IconTitleTwo": "Mai mult de 500",
+      "IconTextTwo": "Cântarelor auto",
+      "IconTitleThree": "Mai mult de  100",
+      "IconTextThree": "Cântarelor feroviare"
+    },
+    "StaticAuto": {
+      "Title": "CÂNTARE STAȚIONARE PENTRU VECHICULE",
+      "SubTitle": "Cântarele sunt destinate pentru cântărirea statică a vehiculelor grele, cu deplasare completă pe platformă, în condiții de trafic intens, inclusiv în condiții dificile de funcționare.",
+      "HeaderText": "Ele pot fi instalate atât în poziția la sol cu rampe de intrare și ieșire, cât și în groapă, pentru a economisi spațiu pe teritoriul întreprinderii.<br>>La fabricarea cântarelor pentru camioane, folosim cele mai fiabile componente testate în timp.<br>>Indicatorul electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. Dacă este necesară instalarea cântarului la o distanță considerabilă de camera operatorului, se utilizează senzori digitali.<br>>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl. <br>>",
+      "Beton": {
+        "Title": "CÂNTARE AUTO BETON",
+        "Text": "Construcția cântarelor de beton armat reprerzintă un cadru metalic cu o plasă de armare, care este turnat cu beton la locul de instalare.<br>>Datorită rezistenței sale ridicate la coroziune, efectelor sărurilor, acizilor și alcalinilor, cântarele au o durată de viață sporită și s-au dovedit fialbilitatea în întreprinderile cu condiții dificile de funcționare.<br>>"
+      },
+      "Metal": {
+        "Title": "CÂNTARE AUTO METALICE",
+        "Text": "Platforma de cântărire este formată în întregime din metal, realizată structural din secțiuni paralele care formează două căi de rulare. Greutatea totală a platformelor nu depășește 8 tone, ceea ce permite ca cântarele să fie transportate către un nou loc de instalare cu ajutorul transportului standard de marfă. Ideal pentru instalare temporară, cum ar fi lucrări sezoniere sau zone temporare / închiriate"
+      }
+    },
+    "MoveFarmer": {
+      "Title": "CÂNTARE PORTABILE «FERMIER»",
+      "SubTitle": "Cântarele sunt destinate pentru cântărirea statică a camioanelor ușoare cu deplasare completă pe platformă.",
+      "Text": "Cântarele mobile Fermier pentru camioane de dimensiuni mici nu necesită un fundament special și pot fi instalate pe o suprafață orizontală a drumului (asfalt, beton) sau plăci de drum. Datorită designului original (greutatea nu depășește 2,5 tone, dimensiunile totale cu rampele îndepărtate de 6x3m), cântarele sunt ușor de transportat cu camioane standard.<br>Indicatorul electronic MERAV 2000 este conectat la un computer sau laptop printr-o interfață RS232. Pentru funcționare autonomă, până la 72 de ore, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Dacă nu este posibilă conectarea cântarului la o linie de alimentare, indicatorul cu o baterie încorporată poate fi ușor deconectat pentru reîncărcare. Indicii de greutate de pe afișaj pot fi ușor citite de la o distanță de câțiva metri.",
+      "TextTwo": "Electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. <br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl<br>"
+    }
+
   }
 
 

@@ -2,254 +2,310 @@
 <section class="container">
   <div class="flex-center">
 
-<div class="btn-group pb-4">
-  <label  mdbBtn color="{{this.color}}" (click)="changeColor()"  [(ngModel)]="radioModel" mdbRadio="Left" mdbWavesEffect>
-    Бетонные автомобильные весы
-  </label>
-  <label  mdbBtn color="{{this.colorTwo}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="Right" mdbWavesEffect>
-    Металические автомобильные весы
-  </label>
-</div>
-  </div>
-
-
-<div *ngIf="radioModel == 'Left'" class="container">
-  <div class="pb-3" style="font-family: 'Times New Roman'">
-    <h5 class="black-text">
-      Конструкция железобетонных весов представляет собой металлический каркас с арматурной сеткой, который заливается бетоном на месте установки.<br>
-      Благодаря высокой стойкости к коррозии, воздействию солей, кислот и щелочей, весы имеют повышенный срок эксплуатации и хорошо зарекомендовали себя на предприятиях со сложными условиями эксплуатации.<br>
-    </h5>
-  </div>
-
-  <div class="pb-3">
-  <h1 class="h2 text-center">Дополнительно могут комплектоваться</h1>
-  </div>
-  <div class="flex-center">
-    <div class="row">
-      <div class="col">
-        <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="Выносное индикаторное табло" container="body"  class="pr-5 pb-2">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/Border.png" ngbTooltip="Ограждения" container="body"  class="pr-5 pb-2">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/DisplayShockProtection.png" ngbTooltip="Защита от молний индикаторного блока" container="body"  class="pr-5 pb-2">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="Цифровые датчики" container="body"  class="pr-5 pb-2">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/lights.png" ngbTooltip="Система управления потоком - светофоры" container="body"  class="pr-5 pb-2">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/barrier.png" ngbTooltip="Система управления потоком – шлагбаумы" container="body"  class="pr-5 pb-2">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/Photo.png" ngbTooltip="Система регистрации изображения взвешиваемого автомобиля" container="body"  class="pr-5 pb-2">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="Система идентификации транспорта RFID" container="body"  class="pr-5 pb-2">
-      </div>
-      <div class="col">
-        <img src="assets/industrial/icons/Automatic.png" ngbTooltip="Управление весами и регистрация взвешивания без участия оператора" container="body"  class="pr-5 pb-2">
-      </div>
-
+    <div class="btn-group pb-4">
+      <label mdbBtn color="{{this.color}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="Left"
+             mdbWavesEffect>
+        {{'CarWeights.StaticAuto.Beton.Title' | translate}}
+      </label>
+      <label mdbBtn color="{{this.colorTwo}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="Right"
+             mdbWavesEffect>
+        {{'CarWeights.StaticAuto.Metal.Title' | translate}}
+      </label>
     </div>
   </div>
 
 
-
-
-  <div lightbox-group class=" ">
-  <div class="row ">
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery1.png" alt="">
-
+  <div *ngIf="radioModel == 'Left'" class="container">
+    <div class="pb-3" style="font-family: 'Times New Roman'">
+      <h5 class="black-text">
+        <div [innerHTML]="'CarWeights.StaticAuto.Beton.Text'  | translate"></div>
+      </h5>
     </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery2.jpg" alt="">
 
+    <div class="pb-3">
+      <h1 class="h2 text-center">{{'CarWeights.Icons.ModernTitle' | translate}}</h1>
     </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery3.jpg" alt="">
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery4.jpg" alt="">
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery5.jpg" alt="">
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery6.jpg" alt="">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery7.jpg" alt="">
-
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery8.png" alt="">
-
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery9.png" alt="">
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery10.jpg" alt="">
-
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery11.jpg" alt="">
-
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery12.jpg" alt="">
-
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery13.jpg" alt="">
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery14.jpg" alt="">
-
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery15.jpg" alt="">
-
-    </div>
-  </div>
-  <div class="row flex-center">
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery16.jpg" alt="">
-    </div>
-    <div class="col-4 py-1 my-1">
-      <img lightbox class="img-fluid" src="assets/gallery/gallery17.jpg" alt="">
-    </div>
-  </div>
-</div>
-
-
-
-
-  <!--Grid row-->
-  <div class="py-2 my-2">
-    <div class="row flex-center">
-
-      <!--Grid column-->
-      <div class="col-md-6 col-lg-2 mb-4 mb-md-0">
-
-        <!--Image-->
-        <div class="view overlay z-depth-1-half">
-          <img lightbox backgroundColor="white" src="assets/cert/bsaa.jpg" class="img-fluid" alt="">
+    <div class="flex-center">
+      <div class="row">
+        <div class="col">
+          <img src="assets/industrial/icons/AddDisplay.png"
+               ngbTooltip="{{'CarWeights.Icons.IconAddDisplay' | translate}}" container="body" class="pr-5 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Border.png" ngbTooltip="{{'CarWeights.Icons.IconBorder' | translate}}"
+               container="body" class="pr-5 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/DisplayShockProtection.png"
+               ngbTooltip="{{'CarWeights.Icons.IconDisplayProtect' | translate}}" container="body" class="pr-5 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/DigitalSensors.png"
+               ngbTooltip="{{'CarWeights.Icons.IconDigital' | translate}}" container="body" class="pr-5 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/lights.png" ngbTooltip="{{'CarWeights.Icons.IconLights' | translate}}"
+               container="body" class="pr-5 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/barrier.png" ngbTooltip="{{'CarWeights.Icons.IconBarrier' | translate}}"
+               container="body" class="pr-5 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Photo.png" ngbTooltip="{{'CarWeights.Icons.IconPhoto' | translate}}"
+               container="body" class="pr-5 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/RFIDidentification.png"
+               ngbTooltip="{{'CarWeights.Icons.IconRFID' | translate}}" container="body" class="pr-5 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Automatic.png" ngbTooltip="{{'CarWeights.Icons.IconAutomatic' | translate}}"
+               container="body" class="pr-5 pb-2">
         </div>
 
       </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-6 mb-4 mb-md-0">
+    </div>
 
 
-        <h6 class="">Автомобильные весы Alex S&E соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания».
-          Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.</h6>
+    <div lightbox-group class=" ">
+      <div class="row ">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery1.png" alt="">
 
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery2.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery3.jpg" alt="">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery4.jpg" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery5.jpg" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery6.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery7.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery8.png" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery9.png" alt="">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery10.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery11.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery12.jpg" alt="">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery13.jpg" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery14.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery15.jpg" alt="">
+
+        </div>
+      </div>
+      <div class="row flex-center">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery16.jpg" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/gallery/gallery17.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+    <!--Grid row-->
+    <div class="py-2 my-2">
+      <div class="row flex-center">
+
+        <!--Grid column-->
+        <div class="col-md-6 col-lg-2 mb-4 mb-md-0">
+
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img lightbox backgroundColor="white" src="assets/cert/bsaa.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0">
+
+
+          <h6 class="">
+            {{'Certificates.BSA' | translate}}
+          </h6>
+
+
+        </div>
+        <!--Grid column-->
 
       </div>
-      <!--Grid column-->
-
+      <!--Grid row-->
     </div>
-    <!--Grid row-->
-  </div>
-  <h1 class="h2 text-center">Характеристики</h1>
-  <div class="flex-center pb-2">
-    <div class="col-lg-7">
-      <!--      <img lightbox backgroundColor="white" src="assets/industrial/vagon/tech.png" class="img-fluid" alt="">-->
-      <table mdbTable striped="true" bordered="true">
-        <thead>
-        </thead>
-        <tbody>
-        <tr mdbTableCol *ngFor="let el of elements">
-          <td class="">{{el.first}}</td>
-          <td class="">{{el.last}}</td>
-        </tr>
-        </tbody>
-      </table>
+    <h1 class="h2 text-center">{{'CarWeights.Tables.Title' | translate}}</h1>
+    <div class="flex-center pb-2">
+      <div class="col-lg-7">
+        <table mdbTable striped="true" bordered="true">
+          <thead>
+          </thead>
+          <tbody>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastOne' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastTwo' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastThree' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFour' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastFour' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFive' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastFive' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstSix' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastSix' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstSeven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastSeven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstEight' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastEight' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstNine' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastNine' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastTen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstEleven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastEleven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTwelve' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastTwelve' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstThirteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastThirteen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFourteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastFourteen' | translate}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
   </div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   <div *ngIf="radioModel == 'Right'" class="container">
 
     <div class="pt-0 pb-3" style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        Платформа весов полностью состоит из металла, конструктивно выполнена из параллельных секций, которые образуют две колеи. Суммарный вес платформ не превышает 8 тонн, что позволяет перевозить весы на новое место установки стандартным грузовым транспортом. Идеально подходят для временного размещения, например, при выполнении сезонных работ или на временных/арендованных территориях.
+        {{'CarWeights.StaticAuto.Metal.Text' | translate}}
       </h5>
     </div>
 
-    <h1 class="h2 text-center">Дополнительно могут комплектоваться</h1>
+    <h1 class="h2 text-center">{{'CarWeights.Icons.ModernTitle' | translate}}</h1>
 
     <div class="flex-center pt-2 pb-2">
       <div class="row">
         <div class="col">
-          <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="Выносное индикаторное табло" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="{{'CarWeights.Icons.IconAddDisplay' | translate}}" container="body"
+               class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/Border.png" ngbTooltip="Ограждения" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/Border.png" ngbTooltip="{{'CarWeights.Icons.IconBorder' | translate}}" container="body" class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/Sheld.png" ngbTooltip="Щиты для закрытия межколлейного пространства" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/Sheld.png" ngbTooltip="{{'CarWeights.Icons.IconShield' | translate}}"
+               container="body" class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/ramp.png" ngbTooltip="Передвижные металлические/бетонные пандусы" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/ramp.png" ngbTooltip="{{'CarWeights.Icons.IconRamp' | translate}}"
+               container="body" class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/frame.png" ngbTooltip="Опорная рама весов" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/frame.png" ngbTooltip="{{'CarWeights.Icons.IconFrame' | translate}}" container="body"
+               class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/DisplayShockProtection.png" ngbTooltip="Защита от молний индикаторного блока" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/DisplayShockProtection.png"
+               ngbTooltip="{{'CarWeights.Icons.IconDisplayProtect' | translate}}" container="body" class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="Цифровые датчики" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="{{'CarWeights.Icons.IconDigital' | translate}}" container="body"
+               class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/lights.png" ngbTooltip="Система управления потоком - светофоры" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/lights.png" ngbTooltip="{{'CarWeights.Icons.IconLights' | translate}}"
+               container="body" class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/barrier.png" ngbTooltip="Система управления потоком – шлагбаумы" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/barrier.png" ngbTooltip="{{'CarWeights.Icons.IconBarrier' | translate}}"
+               container="body" class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/Photo.png" ngbTooltip="Система регистрации изображения взвешиваемого автомобиля" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/Photo.png"
+               ngbTooltip="{{'CarWeights.Icons.IconPhoto' | translate}}" container="body" class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="Система идентификации транспорта RFID" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="{{'CarWeights.Icons.IconRFID' | translate}}"
+               container="body" class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/Automatic.png" ngbTooltip="Управление весами и регистрация взвешивания без участия оператора" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/Automatic.png"
+               ngbTooltip="{{'CarWeights.Icons.IconAutomatic' | translate}}" container="body"
+               class="pr-2 pb-2">
         </div>
       </div>
     </div>
@@ -295,47 +351,98 @@
     </div>
 
 
-
     <!--Grid row-->
     <div class="py-2 my-2">
-    <div class="row flex-center">
+      <div class="row flex-center">
 
-      <!--Grid column-->
-      <div class="col-md-6 col-lg-2 mb-4 mb-md-0">
+        <!--Grid column-->
+        <div class="col-md-6 col-lg-2 mb-4 mb-md-0">
 
-        <!--Image-->
-        <div class="view overlay z-depth-1-half">
-          <img lightbox backgroundColor="white" src="assets/cert/bsaa.jpg" class="img-fluid" alt="">
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img lightbox backgroundColor="white" src="assets/cert/bsaa.jpg" class="img-fluid" alt="">
+          </div>
+
         </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0">
+
+
+          <h6 class="">
+            {{'Certificates.BSA' | translate}}
+          </h6>
+
+
+        </div>
+        <!--Grid column-->
 
       </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-6 mb-4 mb-md-0">
-
-
-        <h6 class="">Автомобильные весы Alex S&E соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания».
-          Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.</h6>
-
-
-      </div>
-      <!--Grid column-->
-
+      <!--Grid row-->
     </div>
-    <!--Grid row-->
-    </div>
-    <h1 class="h2 text-center">Характеристики</h1>
+    <h1 class="h2 text-center">{{'CarWeights.Tables.Title' | translate}}</h1>
     <div class="flex-center pb-2">
       <div class="col-lg-7">
-        <!--      <img lightbox backgroundColor="white" src="assets/industrial/vagon/tech.png" class="img-fluid" alt="">-->
         <table mdbTable striped="true" bordered="true">
           <thead>
           </thead>
           <tbody>
-          <tr mdbTableCol *ngFor="let el of elements">
-            <td class="">{{el.first}}</td>
-            <td class="">{{el.last}}</td>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastOne' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastTwo' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastThree' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFour' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastFour' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFive' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastFive' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstSix' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastSix' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstSeven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastSeven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstEight' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastEight' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstNine' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastNine' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastTen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstEleven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastEleven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstTwelve' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastTwelve' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstThirteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastThirteen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.First.FirstFourteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.First.LastFourteen' | translate}}</td>
           </tr>
           </tbody>
         </table>
@@ -343,9 +450,7 @@
     </div>
 
 
-
   </div>
-
 
 
 </section>
