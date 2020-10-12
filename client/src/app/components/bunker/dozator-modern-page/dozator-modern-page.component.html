@@ -1,9 +1,9 @@
 <div class="">
   <div class="container pt-2">
     <mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/bunker-index'">Бункерные весы</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item class="active">МОДЕРНИЗАЦИЯ БУНКЕРНЫХ ВЕСОВ</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/bunker-index'">{{'Bunker.Index.Breadcrumb' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">{{'Bunker.Modern.Title' | translate}}</mdb-breadcrumb-item>
     </mdb-breadcrumb-item>
 
     <!--Section: Content-->
@@ -15,8 +15,9 @@
         <!-- Grid column -->
         <div class="col-lg-8 mb-3 align-self-center text-center text-lg-left">
 
-          <h1 class="h2 mb-5">МОДЕРНИЗАЦИЯ БУНКЕРНЫХ ВЕСОВ</h1>
-          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">Модернизация механических бункерных весов позволяет добиться уменьшения расходов на эксплуатацию, продления срока службы и улучшения функциональных возможностей, за счёт замены механической системы измерения веса на электронную и внедрения автоматизированного управления и учета.
+          <h1 class="h2 mb-5">{{'Bunker.Modern.Title' | translate}}</h1>
+          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
+            {{'Bunker.Modern.SubTitle' | translate}}
           </h5>
 
 
@@ -45,7 +46,7 @@
 
   <section class="container">
     <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
-      При модернизации весов рычажная измерительная система меняется на тензометрическую с сохранением существующего весового бункера, при этом, для заполнения и разгрузки устанавливаются исполнительные механизмы, которые управляются весовым контроллером в автоматическом режиме.
+      {{'Bunker.Modern.Text' | translate}}
     </h5>
 
     <div class="row mb-5 d-flex align-items-center justify-content-end">
@@ -61,8 +62,8 @@
       <div class="col-lg-8 col-md-6">
         <div class="">
           <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
-            Весовой терминал бункерных весов отображает текущий вес набранной дозы, количество отвесов и суммарный вес отгруженного материала, сохраняет историю отвесов с привязкой к дате и времени. Имеет удобное управление и широкие возможности по встройке в технологические линии и интеграции в информационные системы. Обеспечивает автоматическое управление системами загрузки, выгрузки и другими исполнительными механизмами. Для подключения к компьютеру используется промышленный интерфейс RS-232.<br>
-            Информация о взвешиваниях сохраняется в памяти контроллера даже при внезапном отключении электроэнергии и недоступна для изменения вручную.
+            <div [innerHTML]="'Bunker.Modern.Image'  | translate"></div>
+
           </h5>
         </div>
       </div>
@@ -72,15 +73,14 @@
 
 
   <section class="pt-4">
-    <h5 class="font-weight-bold flex-center black-text pb-2">
-      Оцените преимущества электронных бункерных весов
-    </h5>
+    <h4 style="font-family: 'Times New Roman'"
+        class="font-weight-bold flex-center pb-2">{{'CarWeights.AutoModern.Table.Title' | translate}}</h4>
     <div class="container">
       <div class="row">
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="font-weight-bold flex-center black-text">
-              Старые механические весы
+              {{'CarWeights.AutoModern.Table.Old.Title' | translate}}
             </h5>
           </div>
         </div>
@@ -91,7 +91,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="font-weight-bold flex-center black-text">
-              Модернизированные электронные весы
+              {{'CarWeights.AutoModern.Table.New.Title' | translate}}
             </h5>
           </div>
 
@@ -102,7 +102,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Износ рычажной системы и призм. Следствие - проблемы с точностью (результат взвешивания не соответствует фактическому весу).
+              {{'CarWeights.AutoModern.Table.Old.One' | translate}}
             </h5>
           </div>
         </div>
@@ -121,7 +121,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Отсутствие механических узлов - гарантия точности взвешивания на протяжении всего срока эксплуатации.
+              {{'CarWeights.AutoModern.Table.New.One' | translate}}
             </h5>
           </div>
 
@@ -129,18 +129,11 @@
       </div>
 
 
-
-
-
-
-
-
-
       <div class="row">
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Зависимость точности показаний от температурных колебаний окружающей среды.
+              {{'CarWeights.AutoModern.Table.Old.Two' | translate}}
             </h5>
           </div>
         </div>
@@ -159,7 +152,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Высокая точность и стабильность измерения, независящие от температурных колебаний окружающей среды.
+              {{'CarWeights.AutoModern.Table.New.Two' | translate}}
             </h5>
           </div>
 
@@ -167,13 +160,11 @@
       </div>
 
 
-
-
       <div class="row">
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Частое техобслуживание и сложный ремонт весов.
+              {{'CarWeights.AutoModern.Table.Old.Three' | translate}}
             </h5>
           </div>
         </div>
@@ -192,7 +183,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Простота обслуживания и надежность системы за счёт отсутствия изнашивающихся деталей.
+              {{'CarWeights.AutoModern.Table.New.Three' | translate}}
             </h5>
           </div>
 
@@ -200,13 +191,11 @@
       </div>
 
 
-
-
       <div class="row">
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Действие природных факторов (грунтовые воды, обледенение, коррозия механических элементов)
+              {{'CarWeights.AutoModern.Table.Old.Four' | translate}}
             </h5>
           </div>
         </div>
@@ -225,7 +214,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Герметичная и защищенная конструкция электронных компонентов.
+              {{'CarWeights.AutoModern.Table.New.Four' | translate}}
             </h5>
           </div>
 
@@ -233,13 +222,11 @@
       </div>
 
 
-
-
       <div class="row">
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Низкая производительность измерений (более 2-х минут).
+              {{'CarWeights.AutoModern.Table.Old.Five' | translate}}
             </h5>
           </div>
         </div>
@@ -258,7 +245,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Высокая производительность измерений (от 3-х секунд).
+              {{'CarWeights.AutoModern.Table.New.Five' | translate}}
             </h5>
           </div>
 
@@ -266,13 +253,11 @@
       </div>
 
 
-
-
       <div class="row">
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Ошибки оператора при взвешивании и учете измерений.
+              {{'CarWeights.AutoModern.Table.Old.Six' | translate}}
             </h5>
           </div>
         </div>
@@ -291,7 +276,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Автоматическая регистрация и учет измерений.
+              {{'CarWeights.AutoModern.Table.New.Six' | translate}}
             </h5>
           </div>
 
@@ -299,14 +284,11 @@
       </div>
 
 
-
-
-
       <div class="row">
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              «Ручной» весовой учёт на предприятии.
+              {{'CarWeights.AutoModern.Table.Old.Seven' | translate}}
             </h5>
           </div>
         </div>
@@ -325,7 +307,7 @@
         <div class="col-md-5 border">
           <div style="font-family: 'Times New Roman'">
             <h5 class="black-text">
-              Возможность организации полной автоматизации взвешивания с последующим экспортом данных в бухгалтерские программы
+              {{'CarWeights.AutoModern.Table.New.Seven' | translate}}
             </h5>
           </div>
 
@@ -352,7 +334,7 @@
         </div>
         <div class="text-center mt-4">
           <p class="font-weight-bold mb-lg-0">
-            Бункерные весы Alex S&E типа – BXN, соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания». Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.
+            {{'Certificates.BXN' | translate}}
           </p>
         </div>
       </div>
@@ -371,7 +353,7 @@
         </div>
         <div class="text-center mt-4">
           <p class="font-weight-bold mb-lg-0">
-            Бункерные весы Alex S&E типа – BSN, соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания». Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.
+            {{'Certificates.BSN' | translate}}
           </p>
         </div>
       </div>

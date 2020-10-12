@@ -1,9 +1,11 @@
 <div class="">
   <div class="container pt-2">
     <mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/bunker-index'">Бункерные весы</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item class="active">БУНКЕРНЫЕ ВЕСЫ</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item
+        [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item
+        [routerLink]="'/bunker-index'">{{'Bunker.Index.Breadcrumb' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">{{'Bunker.Scales.Title' | translate}}</mdb-breadcrumb-item>
     </mdb-breadcrumb-item>
 
     <!--Section: Content-->
@@ -15,19 +17,9 @@
         <!-- Grid column -->
         <div class="col-lg-12 mb-3 align-self-center text-center text-lg-left">
 
-          <h1 class="h2 mb-5">БУНКЕРНЫЕ ВЕСЫ</h1>
+          <h1 class="h2 mb-5">{{'Bunker.Scales.Title' | translate}}</h1>
           <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
-            Бункерные весы для взвешивания в потоке – идеальное решение для учета сыпучих материалов, незаменимы на предприятиях, где для производства необходимо соблюдение рецептурной дозировки. Они предназначены для автоматического взвешивания в потоке и суммарного учета сыпучего продукта (зерно, отруби, крупа, семена и другие продукты).<br>
-            Весы применяются в технологических процессах автономно или в составе дозировочно смесительных линий в сельскохозяйственной, химической, металлургической, стекольной промышленности и в других отраслях.<br>
-            В зависимости от условий эксплуатации бункерные весы могут быть открытого и закрытого типа.<br>
-            Для загрузки и выгрузки весового бункера используются различные исполнительные механизмы:<br>
-            •	Заслонки с пневматическим или электромагнитным приводом – для хорошо сыпучих продуктов.<br>
-            •	Шнековые питатели –  для трудно сыпучих продуктов.<br>
-            •	Вибрационные питатели – для гранулированных и крупнозернистых продуктов.<br>
-            Металлоконструкции весов покрываются акриловым грунтом/эмалью или порошковой эпоксидной краской (ПЭП). В некоторых случаях (пищевое, химическое и др. производство) металлоконструкции весов изготавливаются из нержавеющей стали.<br>
-            При внезапном отключении электроэнергии или  падении давления воздуха в системе, работа весов будет заблокирована для предотвращения потери продукта.<br>
-
-
+            <div [innerHTML]="'Bunker.Scales.SubTitle'  | translate"></div>
           </h5>
 
 
@@ -44,15 +36,13 @@
   </div>
 
 
-
-
   <section class="container">
 
     <div class="row mb-5 d-flex align-items-center justify-content-end">
       <div class="col-md-4 col-lg-4">
         <div class="view overlay rounded">
           <img src="assets/industrial/bunker/cv.png" class="img-fluid"
-               alt="Sample project image" />
+               alt="Sample project image"/>
           <a>
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -61,8 +51,7 @@
       <div class="col-lg-8 col-md-6">
         <div class="">
           <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
-            Весовой терминал бункерных весов отображает текущий вес набранной дозы, количество отвесов и суммарный вес отгруженного материала, сохраняет историю отвесов с привязкой к дате и времени. Имеет удобное управление и широкие возможности по встройке в технологические линии и интеграции в информационные системы. Обеспечивает автоматическое управление системами загрузки, выгрузки и другими исполнительными механизмами. Для подключения к компьютеру используется промышленный интерфейс RS-232.<br>
-            Информация о взвешиваниях сохраняется в памяти контроллера даже при внезапном отключении электроэнергии и недоступна для изменения вручную.
+            <div [innerHTML]="'Bunker.Scales.Image'  | translate"></div>
           </h5>
         </div>
       </div>
@@ -70,25 +59,18 @@
 
 
     <section class="">
-    <div  class="" style="font-family: 'Times New Roman'">
-      <h3 class="blue-text font-weight-bold">
-        Функционал бункерных весов:
-      </h3>
+      <div class="" style="font-family: 'Times New Roman'">
+        <h3 class="blue-text font-weight-bold">
+          {{'Bunker.Scales.FuncTitle' | translate}}
+        </h3>
         <div class="card-body">
           <ul class="mb-4">
-            <li><h5>Отображение и запись в энергонезависимую память контроллера состояний текущей загрузки бункера, количества пропущенного продукта с привязкой к дате и времени.</h5></li>
-            <li><h5>Наличие встроенных часов для контроля и учета времени работы</h5></li>
-            <li><h5>Передача данных на ПК по промышленному интерфейсу RS232</h5></li>
-            <li><h5>Возможность задавать дозу/рецепт с помощью контроллера или программы.</h5></li>
-            <li><h5>Возможность объединения нескольких весов в дозировочно смесительную линию с управлением персональным компьютером.</h5></li>
-            <li><h5>Возможность подключения дополнительных исполнительных механизмов к контроллеру.</h5></li>
-            <li><h5>Сбор и хранение данных в контроллере и компьютере.</h5></li>
-            <li><h5>Формирование и печать отчетов за произвольный период времени.</h5></li>
-            <li><h5>Ведение журнала событий, в том числе аварии, внештатные ситуации.</h5></li>
-            <li><h5>Назначение индивидуального уровня доступа и защита от несанкционированного доступа.</h5></li>
+            <h5>
+              <div [innerHTML]="'Bunker.Scales.FuncText'  | translate"></div>
+            </h5>
           </ul>
         </div>
-    </div>
+      </div>
 
     </section>
 
@@ -98,14 +80,13 @@
           <div class="col-lg-8 col-md-6">
             <div class="">
               <div class="card-header white">
-                <h4 class="font-weight-bold mb-0">Бункерные весы открытого типа</h4>
+                <h4 class="font-weight-bold mb-0">{{'Bunker.Scales.IconTitleOne' | translate}}</h4>
               </div>
               <div class="card-body">
                 <ul class="mb-4">
-                  <li><h6>Используются в производственных помещениях</h6></li>
-                  <li><h6>Работа с продуктами склонными к налипанию</h6></li>
-                  <li><h6>Легкий доступ ко всем узлам и компонентам для обслуживания</h6></li>
-                  <li><h6>Экономичная модель, за счет более низкой металлоемкости изделия</h6></li>
+                  <h6>
+                    <div [innerHTML]="'Bunker.Scales.IconTextOne'  | translate"></div>
+                  </h6>
                 </ul>
               </div>
             </div>
@@ -113,8 +94,8 @@
           <div class="col-md-4 col-lg-4">
             <div class="view overlay rounded">
               <img src="assets/industrial/bunker/cv1.jpg" class="img-fluid"
-                   alt="Sample project image" />
-              <a >
+                   alt="Sample project image"/>
+              <a>
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -124,8 +105,8 @@
           <div class="col-md-4 col-lg-4">
             <div class="view overlay rounded">
               <img src="assets/industrial/bunker/cv2.jpg" class="img-fluid"
-                   alt="Sample project image" />
-              <a >
+                   alt="Sample project image"/>
+              <a>
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -133,14 +114,13 @@
           <div class="col-lg-8 col-md-6">
             <div class="">
               <div class="card-header white">
-                <h4 class="font-weight-bold mb-0">Бункерные весы закрытого типа</h4>
+                <h4 class="font-weight-bold mb-0">{{'Bunker.Scales.IconTitleTwo' | translate}}</h4>
               </div>
               <div class="card-body">
                 <ul class="mb-4">
-                  <li><h6>Весы могут использоваться на открытом воздухе</h6></li>
-                  <li><h6>Узлы и компоненты защищены от атмосферных осадков и прямых солнечных лучей.</h6></li>
-                  <li><h6>В базовую комплектацию входит надвесовой бункер,  который служит для накопления дозируемого материала</h6></li>
-
+                  <h6>
+                    <div [innerHTML]="'Bunker.Scales.IconTextTwo'  | translate"></div>
+                  </h6>
                 </ul>
               </div>
             </div>
@@ -148,10 +128,6 @@
         </div>
       </section>
     </div>
-
-
-
-
 
 
     <div class="row pt-0 pb-5 flex-center">
@@ -168,12 +144,10 @@
         </div>
         <div class="text-center mt-4">
           <p class="font-weight-bold mb-lg-0">
-            Бункерные весы Alex S&E типа – BXN, соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания». Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.
+            {{'Certificates.BXN' | translate}}
           </p>
         </div>
       </div>
-
-
 
 
       <div class="col-lg-6 col-md-6 mb-lg-0 mb-4 wow fadeInRight" data-wow-delay="0.3s">
@@ -187,44 +161,131 @@
         </div>
         <div class="text-center mt-4">
           <p class="font-weight-bold mb-lg-0">
-            Бункерные весы Alex S&E типа – BSN, соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания». Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.
+            {{'Certificates.BSN' | translate}}
           </p>
         </div>
       </div>
 
 
-
     </div>
 
 
-
-
-
-
-
-
     <div class="py-3 my-3">
-      <h1 class="h2 text-center">Характеристики</h1>
+      <h1 class="h2 text-center">{{'CarWeights.Tables.Title' | translate}}</h1>
       <div class="">
-        <!--      <img lightbox backgroundColor="white" src="assets/industrial/vagon/tech.png" class="img-fluid" alt="">-->
         <table mdbTable bordered="true">
           <thead>
           <tr>
-            <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+            <th scope="col">{{'BigTable.Header.Head1' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head2' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head3' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head4' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head5' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head6' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head7' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head8' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head9' | translate}}</th>
+            <th scope="col">{{'BigTable.Header.Head10' | translate}}</th>
           </tr>
           </thead>
           <tbody>
-          <tr mdbTableCol *ngFor="let el of elements">
-            <td>{{el.one}}</td>
-            <td><div [innerHTML]="el.two"></div></td>
-            <td>{{el.three}}</td>
-            <td>{{el.four}}</td>
-            <td>{{el.five}}</td>
-            <td>{{el.six}}</td>
-            <td>{{el.seven}}</td>
-            <td>{{el.eight}}</td>
-            <td>{{el.nine}}</td>
-            <td>{{el.ten}}</td>
+          <tr mdbTableCol>
+            <td>{{'BigTable.Data.D1.One' | translate}}</td>
+            <td>
+              <div [innerHTML]="'BigTable.Data.D1.Two'  | translate"></div>
+            </td>
+            <td>{{'BigTable.Data.D1.Three' | translate}}</td>
+            <td>{{'BigTable.Data.D1.Four' | translate}}</td>
+            <td>{{'BigTable.Data.D1.Five' | translate}}</td>
+            <td>{{'BigTable.Data.D1.Six' | translate}}</td>
+            <td>{{'BigTable.Data.D1.Seven' | translate}}</td>
+            <td>{{'BigTable.Data.D1.Eight' | translate}}</td>
+            <td>{{'BigTable.Data.D1.Nine' | translate}}</td>
+            <td>{{'BigTable.Data.D1.Ten' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td>{{'BigTable.Data.D2.One' | translate}}</td>
+            <td>
+              <div [innerHTML]="'BigTable.Data.D2.Two'  | translate"></div>
+            </td>
+            <td>{{'BigTable.Data.D2.Three' | translate}}</td>
+            <td>{{'BigTable.Data.D2.Four' | translate}}</td>
+            <td>{{'BigTable.Data.D2.Five' | translate}}</td>
+            <td>{{'BigTable.Data.D2.Six' | translate}}</td>
+            <td>{{'BigTable.Data.D2.Seven' | translate}}</td>
+            <td>{{'BigTable.Data.D2.Eight' | translate}}</td>
+            <td>{{'BigTable.Data.D2.Nine' | translate}}</td>
+            <td>{{'BigTable.Data.D2.Ten' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td>{{'BigTable.Data.D3.One' | translate}}</td>
+            <td>
+              <div [innerHTML]="'BigTable.Data.D3.Two'  | translate"></div>
+            </td>
+            <td>{{'BigTable.Data.D3.Three' | translate}}</td>
+            <td>{{'BigTable.Data.D3.Four' | translate}}</td>
+            <td>{{'BigTable.Data.D3.Five' | translate}}</td>
+            <td>{{'BigTable.Data.D3.Six' | translate}}</td>
+            <td>{{'BigTable.Data.D3.Seven' | translate}}</td>
+            <td>{{'BigTable.Data.D3.Eight' | translate}}</td>
+            <td>{{'BigTable.Data.D3.Nine' | translate}}</td>
+            <td>{{'BigTable.Data.D3.Ten' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td>{{'BigTable.Data.D4.One' | translate}}</td>
+            <td>
+              <div [innerHTML]="'BigTable.Data.D4.Two'  | translate"></div>
+            </td>
+            <td>{{'BigTable.Data.D4.Three' | translate}}</td>
+            <td>{{'BigTable.Data.D4.Four' | translate}}</td>
+            <td>{{'BigTable.Data.D4.Five' | translate}}</td>
+            <td>{{'BigTable.Data.D4.Six' | translate}}</td>
+            <td>{{'BigTable.Data.D4.Seven' | translate}}</td>
+            <td>{{'BigTable.Data.D4.Eight' | translate}}</td>
+            <td>{{'BigTable.Data.D4.Nine' | translate}}</td>
+            <td>{{'BigTable.Data.D4.Ten' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td>{{'BigTable.Data.D5.One' | translate}}</td>
+            <td>
+              <div [innerHTML]="'BigTable.Data.D5.Two'  | translate"></div>
+            </td>
+            <td>{{'BigTable.Data.D5.Three' | translate}}</td>
+            <td>{{'BigTable.Data.D5.Four' | translate}}</td>
+            <td>{{'BigTable.Data.D5.Five' | translate}}</td>
+            <td>{{'BigTable.Data.D5.Six' | translate}}</td>
+            <td>{{'BigTable.Data.D5.Seven' | translate}}</td>
+            <td>{{'BigTable.Data.D5.Eight' | translate}}</td>
+            <td>{{'BigTable.Data.D5.Nine' | translate}}</td>
+            <td>{{'BigTable.Data.D5.Ten' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td>{{'BigTable.Data.D6.One' | translate}}</td>
+            <td>
+              <div [innerHTML]="'BigTable.Data.D6.Two'  | translate"></div>
+            </td>
+            <td>{{'BigTable.Data.D6.Three' | translate}}</td>
+            <td>{{'BigTable.Data.D6.Four' | translate}}</td>
+            <td>{{'BigTable.Data.D6.Five' | translate}}</td>
+            <td>{{'BigTable.Data.D6.Six' | translate}}</td>
+            <td>{{'BigTable.Data.D6.Seven' | translate}}</td>
+            <td>{{'BigTable.Data.D6.Eight' | translate}}</td>
+            <td>{{'BigTable.Data.D6.Nine' | translate}}</td>
+            <td>{{'BigTable.Data.D6.Ten' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td>{{'BigTable.Data.D7.One' | translate}}</td>
+            <td>
+              <div [innerHTML]="'BigTable.Data.D7.Two'  | translate"></div>
+            </td>
+            <td>{{'BigTable.Data.D7.Three' | translate}}</td>
+            <td>{{'BigTable.Data.D7.Four' | translate}}</td>
+            <td>{{'BigTable.Data.D7.Five' | translate}}</td>
+            <td>{{'BigTable.Data.D7.Six' | translate}}</td>
+            <td>{{'BigTable.Data.D7.Seven' | translate}}</td>
+            <td>{{'BigTable.Data.D7.Eight' | translate}}</td>
+            <td>{{'BigTable.Data.D7.Nine' | translate}}</td>
+            <td>{{'BigTable.Data.D7.Ten' | translate}}</td>
           </tr>
           </tbody>
         </table>
@@ -232,9 +293,7 @@
     </div>
 
 
-
   </section>
-
 
 
 </div>

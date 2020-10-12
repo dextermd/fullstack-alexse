@@ -1,9 +1,9 @@
 <div class="">
   <div class="container pt-2">
     <mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item  [routerLink]="'/wagon-index'">Вагонные весы</mdb-breadcrumb-item>
-      <mdb-breadcrumb-item class="active">ВАГОННЫЕ ВЕСЫ</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/wagon-index'">{{'Rails.Index.Breadcrumb' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">{{'Rails.Scales.BreadcrumbActive' | translate}}</mdb-breadcrumb-item>
     </mdb-breadcrumb-item>
 
     <!--Section: Content-->
@@ -15,8 +15,11 @@
         <!-- Grid column -->
         <div class="col-lg-8 mb-3 align-self-center text-center text-lg-left">
 
-          <h1 class="h2 mb-5">ВАГОННЫЕ ВЕСЫ</h1>
-          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">Вагонные весы предназначены для статического взвешивания железнодорожного транспорта с расцепкой и без и могут состоять из двух или трех платформ, на которые устанавливаются рельсы.
+          <h1 class="h2 mb-5">
+            {{'Rails.Scales.Title' | translate}}
+          </h1>
+          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
+            {{'Rails.Scales.SubTitle' | translate}}
           </h5>
 
 
@@ -46,12 +49,10 @@
   <section class="container">
     <div style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        В зависимости от типов вагонов используемых на предприятии, определяется ширина колеи:
+        {{'Rails.Scales.ContentTitleOne' | translate}}
         <div class="card-body">
           <ul class="mb-4">
-        <li><h5>«Российская колея» - 1520 мм. </h5></li>
-        <li><h5>«Европейская колея» - 1435 мм.</h5></li>
-        <li><h5>Возможно совмещение двух стандартов.</h5></li>
+            <div [innerHTML]="'Rails.Scales.ContentTextOne'  | translate"></div>
           </ul>
         </div>
       </h5>
@@ -60,11 +61,10 @@
 
     <div style="font-family: 'Times New Roman'">
       <h5 class="black-text font-weight-bold">
-        Упрощенный процесс взвешивания экономит время.
+        {{'Rails.Scales.ContentTitleTwo' | translate}}
       </h5>
       <h5 class="black-text">
-        Трехплатформенная конструкция весов, с возможностью отключения одной платформы, позволяют взвешивать практически любые вагоны без расцепки.<br>
-        Платформы весов устанавливаются в приямок небольшой глубины, что позволяет сэкономить на фундаментных работах.
+        <div [innerHTML]="'Rails.Scales.ContentTextTwo'  | translate"></div>
       </h5>
     </div>
 
@@ -136,7 +136,7 @@
   <section class="container">
     <div style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        Программное обеспечение для компьютера или ноутбука поставляется бесплатно и позволяет вести учет отвесов с сохранением фотографии момента взвешивания, выписывать весовые талоны и накладные. Поддерживает «двойное взвешивание» (брутто, тара) для вычисления веса нетто. При необходимости, обеспечивает удаленный доступ к данным о взвешиваниях из любой точки мира посредством приложения ScalesControl.
+        <div [innerHTML]="'Rails.Scales.ContentBottom'  | translate"></div>
       </h5>
     </div>
 
@@ -170,36 +170,36 @@
 
 
 
-    <h1 class="h2 text-center">Стандартная комплектация</h1>
+    <h1 class="h2 text-center">{{'CarWeights.Icons.DefaultTitle' | translate}}</h1>
 
     <div class="flex-center pt-2 pb-2">
       <div class="row">
         <div class="col">
-          <img src="assets/industrial/icons/Temp-30+45.png" ngbTooltip="Рабочий температурный диапазон датчиков от -30 до +45 °С" container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/Temp-30+45.png" ngbTooltip="{{'CarWeights.Icons.IconTemp' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/SensorIPsecure.png" ngbTooltip="Защита датчиков от пыли и влаги по стандарту IP68" container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/SensorIPsecure.png" ngbTooltip="{{'CarWeights.Icons.IconSensor' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/RGML14.png" ngbTooltip="Весы соответствуют требованиям стандарта RGML14:2007 " container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/RGML14.png" ngbTooltip="{{'CarWeights.Icons.IconRGML' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/Paint.png" ngbTooltip="Специальная окраска грузоприемной платформы для защиты от коррозии" container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/Paint.png" ngbTooltip="{{'CarWeights.Icons.IconPaint' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/RS232conection.png" ngbTooltip="Интерфейс RS232 для связи с компьютером" container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/RS232conection.png" ngbTooltip="{{'CarWeights.Icons.IconRS' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/ShockProtection.png" ngbTooltip="Защита датчиков от удара молнии" container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/ShockProtection.png" ngbTooltip="{{'CarWeights.Icons.IconShock' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/DisplayIPsecure.png" ngbTooltip="Защита индикатора от пыли и влаги по стандарту IP67" container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/DisplayIPsecure.png" ngbTooltip="{{'CarWeights.Icons.IconDisplay' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/Soft.png" ngbTooltip="Специальное программное обеспечение AlexScales для работы с весами, документацией и отчетов." container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/Soft.png" ngbTooltip="{{'CarWeights.Icons.IconSoft' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/ScalesControl.png" ngbTooltip="Мобильное приложение для удаленного контроля результатов взвешивания ScalesControl" container="body"  class="pr-4 pb-4">
+          <img src="assets/industrial/icons/ScalesControl.png" ngbTooltip="{{'CarWeights.Icons.IconScales' | translate}}" container="body"  class="pr-4 pb-4">
         </div>
       </div>
     </div>
@@ -207,33 +207,33 @@
 
 
 
-    <h1 class="h2 text-center">Дополнительно могут комплектоваться</h1>
+    <h1 class="h2 text-center">{{'CarWeights.Icons.ModernTitle' | translate}}</h1>
 
     <div class="flex-center pt-2 pb-2">
       <div class="row">
         <div class="col">
-          <img src="assets/industrial/icons/plusplus.png" ngbTooltip="Система определения центра тяжести вагонов (в продольном направлении)" container="body"  class="pr-1 pb-1">
+          <img src="assets/industrial/icons/plusplus.png" ngbTooltip="{{'CarWeights.Icons.IconPlusPlus' | translate}}" container="body"  class="pr-1 pb-1">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="Выносное индикаторное табло" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="{{'CarWeights.Icons.IconAddDisplay' | translate}}" container="body"  class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/DisplayShockProtection.png" ngbTooltip="Защита от молний индикаторного блока" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/DisplayShockProtection.png" ngbTooltip="{{'CarWeights.Icons.IconDisplayProtect' | translate}}" container="body"  class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="Цифровые датчики" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="{{'CarWeights.Icons.IconDigital' | translate}}" container="body"  class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/lights.png" ngbTooltip="Система управления потоком - светофоры" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/lights.png" ngbTooltip="{{'CarWeights.Icons.IconLights' | translate}}" container="body"  class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/barrier.png" ngbTooltip="Система управления потоком – шлагбаумы" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/barrier.png" ngbTooltip="{{'CarWeights.Icons.IconBarrier' | translate}}" container="body"  class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/Photo.png" ngbTooltip="Система регистрации изображения взвешиваемого автомобиля" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/Photo.png" ngbTooltip="{{'CarWeights.Icons.IconPhoto' | translate}}" container="body"  class="pr-2 pb-2">
         </div>
         <div class="col">
-          <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="Система идентификации транспорта RFID" container="body"  class="pr-2 pb-2">
+          <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="{{'CarWeights.Icons.IconRFID' | translate}}" container="body"  class="pr-2 pb-2">
         </div>
       </div>
     </div>
@@ -259,7 +259,9 @@
         <div class="col-md-6 mb-4 mb-md-0">
 
 
-          <h6 class="">Вагонные весы Alex S&E соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания». Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова. </h6>
+          <h6 class="">
+            {{'Certificates.BSA' | translate}}
+          </h6>
 
 
         </div>
@@ -268,17 +270,64 @@
       </div>
       <!--Grid row-->
     </div>
-    <h1 class="h2 text-center">Характеристики</h1>
+    <h1 class="h2 text-center">{{'CarWeights.Tables.Title' | translate}}</h1>
     <div class="flex-center pb-2">
       <div class="col-lg-6">
-        <!--      <img lightbox backgroundColor="white" src="assets/industrial/vagon/tech.png" class="img-fluid" alt="">-->
         <table mdbTable striped="true" bordered="true">
           <thead>
           </thead>
           <tbody>
-          <tr mdbTableCol *ngFor="let el of elements">
-            <td class="">{{el.first}}</td>
-            <td class="">{{el.last}}</td>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastOne' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastTwo' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastThree' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstFour' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastFour' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstFive' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastFive' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstSix' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastSix' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstSeven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastSeven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstEight' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastEight' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstNine' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastNine' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstTen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastTen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstEleven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastEleven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstTwelve' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastTwelve' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Four.FirstThirteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Four.LastThirteen' | translate}}</td>
           </tr>
           </tbody>
         </table>

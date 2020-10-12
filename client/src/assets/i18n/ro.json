@@ -6,7 +6,6 @@
       "RO": "Romanian"
     }
   },
-
   "MAIN": {
     "NAVIGATION": {
       "Product": "Produse",
@@ -49,7 +48,6 @@
       "Support": "Program de lucru: Lu-Vi 08:30 18:00 Tel:(+37322) 244-572 E-mail: office@alex-se.com"
     }
   },
-
   "BUTTONS": {
     "AboutUs": "DESPRE NOI",
     "Products": "PRODUSE",
@@ -65,7 +63,7 @@
     "Send": "Trimite mesaj"
   },
   "HOME": {
-    "INFO_SHORT":{
+    "INFO_SHORT": {
       "Title": "PE SCURT DESPRE SOCIETATEA ALEX S&E",
       "ContentTop": "Compania și-a început activitatea în anul 1993 producînd cântare comerciale,<br> dozatoare și sisteme automate de evidență pentru întreprinderi industriale și comerciale.",
       "ContentBottom": "Astăzi, Alex S&E este una dintre cele mai mari companii de ingineering din <br> Moldova și țările CSI. Halele de producție și centrul de deservire al societății este <br> situat pe  un teritoriu de peste 1300 de metri pătrați, iar numărul angajaților a depășit 100 de persoane."
@@ -101,7 +99,6 @@
       "RIGHT": {
         "Title": "365/7 Asistență tehnică gratuită"
       }
-
     },
     "SHOP": {
       "Title": "PRODUSE NOI",
@@ -128,10 +125,7 @@
       "Title": "VIDEO",
       "Close": "Închide"
     }
-
-
   },
-
   "PosAlimentara": {
     "Header": {
       "TitleTop": "SOFT PENTRU MAGAZIN",
@@ -238,8 +232,6 @@
       "SpecTitleSix": "Analize",
       "SpecTextSix": "Rapoarte privind vânzările, circulația mărfurilor, fluctuațiile sezoniere, angajații etc."
     }
-
-
   },
   "PosCompact": {
     "Header": {
@@ -612,7 +604,9 @@
   },
   "Certificates": {
     "BSA": "Cântarele pentru vehicule Alex S&E, tip - BSA, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
-    "BDA": "Cântarele pentru vehicule Alex S&E, tip - BDA, corespund standardului SM STB 1845: 2011 \"Cântar electronic de presiune pentru cântărirea vehiculelor în dinamică\". Sunt certificate și incluse în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova."
+    "BDA": "Cântarele pentru vehicule Alex S&E, tip - BDA, corespund standardului SM STB 1845: 2011 Cântar electronic de presiune pentru cântărirea vehiculelor în dinamică. Sunt certificate și incluse în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
+    "BSN": "Cântarele de buncăr Alex S&E, tip- BSN, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova ",
+    "BXN": "Cântarele de buncăr Alex S&E, tip- BXN, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova"
   },
   "CarWeights": {
     "BreadcrumbProduct": "Produse",
@@ -707,6 +701,94 @@
         "LastTen": "220V(+10%;-15%); 50 Hz +/-2%",
         "FirstEleven": "Clasa de exactitate a balanţei:",
         "LastEleven": "IB"
+      },
+      "Four": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "120",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "1000",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "50",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "50",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "2 (3)",
+        "FirstSix": "Lungimea platformei de încărcare, m:",
+        "LastSix": "5.5 (4)",
+        "FirstSeven": "Numărul de senzori, piese:",
+        "LastSeven": "8 (12)",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastEight": "IP 68",
+        "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastNine": "IP 67",
+        "FirstTen": "Temperatură de funcționare (platforma), C:",
+        "LastTen": "De La -30 Pînă +45",
+        "FirstEleven": "Temperatură de funcționare (indicator), C:",
+        "LastEleven": "De La -0 Pînă +40",
+        "FirstTwelve": "Tensiunea de alimentare de la reţea:",
+        "LastTwelve": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstThirteen": "Clasa de exactitate a balanţei:",
+        "LastThirteen": "Medium (III)"
+      },
+      "Five": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "120",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "1000",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "50",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "50",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "1",
+        "FirstSix": "Lungimea platformei de încărcare, m:",
+        "LastSix": "15",
+        "FirstSeven": "Numărul de senzori, piese:",
+        "LastSeven": "4",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastEight": "IP 68",
+        "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastNine": "IP 67",
+        "FirstTen": "Temperatură de funcționare (platforma), C:",
+        "LastTen": "De La -30 Pînă +45",
+        "FirstEleven": "Temperatură de funcționare (indicator), C:",
+        "LastEleven": "De La -0 Pînă +40",
+        "FirstTwelve": "Tensiunea de alimentare de la reţea:",
+        "LastTwelve": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstThirteen": "Clasa de exactitate a balanţei:",
+        "LastThirteen": "Medium (III)"
+      },
+      "Six": {
+        "FirstOne": "Performanţa pentru cereale*, t/ora:",
+        "LastOne": "4 / 5",
+        "FirstTwo": "Greutatea dozei, kg:",
+        "LastTwo": "20-50 / 20-50",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "0,05 / 0,05",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "0,05 / 0,05",
+        "FirstFive": "Consumul aerului compresat nu mai mult de, nM3/h:",
+        "LastFive": "- / 2,3",
+        "FirstSix": "Presiunea sistemului, atm:",
+        "LastSix": "- / 4-6",
+        "FirstSeven": "Consumul de energie, nu mai mult, W:",
+        "LastSeven": "45",
+        "FirstEight": "Tensiunea de alimentare de la reţea:",
+        "LastEight": "220В(+10%;-15%); 50 Гц +/-2%",
+        "FirstNine": "Temperatură de funcționare (controler MERAV3001 ), C:",
+        "LastNine": "От 0 До +40",
+        "FirstTen": "Temperatură de funcționare (buncăr), C:",
+        "LastTen": "От -5 До +35",
+        "FirstEleven": "Numărul de senzori, piese:",
+        "LastEleven": "1",
+        "FirstTwelve": "Clasa de exactitate a balanţei:",
+        "LastTwelve": "1 (0,5%)",
+        "FirstThirteen": "Dimensiuni de gabarit, mm:",
+        "LastThirteen": "735 Х 1050 Х 2475 / 850 Х 850 Х 2155",
+        "FirstFourteen": "Gradul de protecție împotriva prafului și a apei (controler MERAV3001):",
+        "LastFourteen": "IP54",
+        "FirstFifteen": "Gradul de protecție împotriva prafului și a apei (senzor):",
+        "LastFifteen": "IP68"
       }
     },
     "Icons": {
@@ -721,6 +803,7 @@
       "IconSoft": "Software special AlexScales pentru lucrul cu cântare, documentație și rapoarte",
       "IconScales": "Aplicație mobilă pentru controlul de la distanță a rezultatelor cântăririi ScalesControl",
       "ModernTitle": "Suplimentar pot fi completate:",
+      "IconPlusPlus": "Sistem pentru determinarea centrului de greutate al vagoanelor (în direcția longitudinală)",
       "IconAddDisplay": "Panou afișare portabil",
       "IconBorder": "Garduri",
       "IconDisplayProtect": "Protecția împotriva fulgerului a indicatorului",
@@ -734,7 +817,6 @@
       "IconRamp": "Rampe mobile din metal / beton",
       "IconFrame": "Cadrul de bază de cântărire"
     },
-
     "Category": {
       "Title": "Cântare pentru vehicule",
       "CatOne": "CÂNTARE STAȚIONARE PENTRU VECHICULE",
@@ -808,7 +890,7 @@
       "Table": {
         "Title": "Evaluați avantajele cântarelor auto",
         "Old": {
-          "Title":"Old mechanical scales",
+          "Title": "Old mechanical scales",
           "One": "Uzura sistemului de pârghii și a prismelor. Consecință - probleme de precizie (rezultatul cântăririi nu corespunde cu greutatea reală).",
           "Two": "Dependența preciziei cântăririlor în dependență de fluctuațiile de temperatură din mediu.",
           "Three": "Întreținere tehnică frecventă și reparații complexe ale cântarelor",
@@ -818,7 +900,7 @@
           "Seven": "Contabilitatea „manuală” a cântăririi la întreprindere."
         },
         "New": {
-          "Title":"Upgraded electronic scales",
+          "Title": "Upgraded electronic scales",
           "One": "Lipsa joncțiunilor mecanice - garantează precizia cântăririi pe toată durata de viață.",
           "Two": "Precizie ridicată și stabilitate de măsurare, independent de fluctuațiile de temperatură din mediu.",
           "Three": "Simplitate în întreținere și fiabilitatea sistemului datorită absenței pieselor uzate.",
@@ -829,9 +911,179 @@
         }
       }
     }
-
-
+  },
+  "Rails": {
+    "Index": {
+      "Breadcrumb": "Cântare feroviare",
+      "Cat1": "Cântare feroviare",
+      "Cat2": "MODERNIZAREA CÂNTARELOR FEROVIARE",
+      "IconTitleOne": "27 ani",
+      "IconTextOne": "experiență",
+      "IconTitleTwo": "Mai mult de 500",
+      "IconTextTwo": "Cântarelor auto",
+      "IconTitleThree": "Mai mult de  100",
+      "IconTextThree": "Cântarelor feroviare",
+      "Content": "Cântarele feroviare sunt produse de care nu puteți duce lipsă la nicio întreprindere unde transportul feroviar este utilizat pentru a primi, elibera sau transporta mărfuri. Cântărirea vagoanelor pe cântar elimină practic pierderile la contabilizarea produselor.<br>De mai bine de 27 de ani, Alex S&E produce și modernizează cântare feroviare cu ecartament european, rusesc și combinat, pentru cântărirea tuturor tipurilor de vagoane cu sau fără decuplare. Dimensiunile, tipul și structura cântarului pot diferi în funcție de sarcini, locul de instalare și vagoanele care trebuie cântărite<br>Software-ul furnizat în set cu cântarul va servi ca un asistent indispensabil operatorului sau va permite cântărirea vehiculului în modul automat, fără participarea operatorului, ceea ce va diminua erorile umane la zero.<br>La proiectarea și producerea cântarelor, se acordă o mare atenție fiabilității și calității produselor. Lipsa defecțiunilor echipamentelor în procesul de funcționare le permite clienților noștri să lucreze profitabil, fără costuri de nefuncționare, reparații sau achiziționarea de cântare noi.<br>Multe întreprinderi din Moldova, Ucraina, Rusia, Kazahstan folosesc cu succes cântarele fabricate de Alex S&E de mai bine de 25 de ani. Produsele noastre sunt folosite în depozite, baze metalice, întreprinderile producătoare de beton armat, uzinele de minerit, elevatoare, cariere și etc..<br>Compania Alex S&E vă oferă cântare pentru cântărirea camioanelor la cel mai bun preț. Experții noștri într-un mod rapid și profesionist vă vor oferi consultații cu privire la alegerea cântarului auto potrivit, vă vor oferi recomandări și vă vor ajuta să determinați locul optim pentru instalarea cântarelor<br>"
+    },
+    "Scales": {
+      "Breadcrumb": "Cântare feroviare",
+      "BreadcrumbActive": "Cântare feroviare",
+      "Title": "Cântare feroviare",
+      "SubTitle": "Cântarele feroviare sunt destinate pentru cântărirea statică a transportului feroviar cu sau fără decuplare și pot conține două sau trei platforme pe care sunt instalate șinele.",
+      "ContentTitleOne": "În funcție de tipurile de vagoane utilizate la întreprindere, se determină dimensiunea căii de rulare:",
+      "ContentTextOne": "<li><h5>„Cale de rulare rusească” - 1520 mm.</h5></li>        <li><h5>„Cale de rulare europeană” - 1435 mm.</h5></li>        <li><h5>Este posibilă combinarea a două standarde.</h5></li>",
+      "ContentTitleTwo": "Procesul simplificat de cântărire economisește timp.",
+      "ContentTextTwo": "Cântarul feroviar cu trei platforme, cu capacitatea de a deconecta o platformă, vă permite să cântăriți aproape orice vagon fără decuplare.<br>Platformele de cântărire sunt instalate într-o groapă de adâncime mică, ceea ce permite economisirea lucrărilor de temelie.<br>",
+      "ContentBottom": "Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl."
+    },
+    "Modern": {
+      "Title": "MODERNIZAREA CÂNTARELOR FEROVIARE",
+      "SubTitle": "Modernizarea cântarelor feroviare mecanice permite reducerea costurilor de operare, prelungirea duratei de viață și îmbunătățirea funcționalității, prin înlocuirea unui sistem mecanic de cântărire cu unul electronic și introducerea contabilității automate.",
+      "ImageOne": "La modernizarea cântarului, sistemul de măsurare de pârghie se schimbă pe sistem de senzori.",
+      "ImageTwo": "În acest caz, indicatorul cu arcuri este înlocuit cu un indicator electronic, cu posibilitatea de a fi conectat la un computer.",
+      "Text": "Pentru modernizarea cântarelor feroviare, folosim cele mai fiabile componente testate în timp.<br>. <br>Indicatorul electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. Dacă este necesară instalarea cântarului la o distanță considerabilă de camera operatorului, se utilizează senzori digitali.<br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl.<br>"
+    }
+  },
+  "Bunker": {
+    "Index": {
+      "Breadcrumb": "CÂNTAR DE BUNCĂR",
+      "Title": "SISTEME DE DOZARE",
+      "Cat1": "CÂNTAR DE DOZARE",
+      "Cat2": "CÂNTAR DE BUNCĂR",
+      "Cat3": "MODERNIZAREA CÂNTARELOR DE BUNCĂR ",
+      "Text": "Fără respectarea strictă a rețetei și tehnologiei, este imposibil să se producă un produs de calitate. De regulă, cântarele de buncăr sunt utilizate pentru cântărirea în vrac, a materialelor cu granulație fină și a componentelor lichide (cereale, furaje granulate, grâne, apă, aditivi chimici) care trec prin cântar, în producția de amestecuri și soluții la fabrici de sticlă, elevatoare etc.<br>De mai bine de 27 de ani, Alex S&E produce cântare de buncăr pentru ambalarea și cântărirea produselor în flux, cu capacitatea maximă de cântărire de la 50 kg la 5 tone, cu o productivitate de la 18 la 800 tone / oră. Dimensiunile, tipul și structura cântarului pot diferi în funcție de sarcină, locul de instalare și produsul ce necesită cântărirea.<br>Cântarele de buncăr pentru cântărirea în flux sunt soluția ideală pentru evidența componentelor în vrac sau lichide, indispensabile în întreprinderi unde producția necesită respectarea rețetei de dozare. Acestea sunt concepute pentru a cântări automat porțiuni de materiale și pentru a măsura masa totală a produsului care a trecut prin cântar.<br>Dozatoare de umplere - concepute pentru umplerea ușoară și rapidă a cantității necesare de produs în saci deschise sau cu supape, saci tip big-bag sau alte recipiente.<br>Software-ul furnizat împreună cu cântarul va servi ca un asistent indispensabil operatorului sau va permite cântărirea produselor în modul automat, fără participarea operatorului, ceea ce la rândul său va reduce la zero erorile asociate factorului uman.<br>La proiectarea și producerea cântarelor, se acordă o mare atenție fiabilității și calității produselor. Lipsa defecțiunilor echipamentelor în procesul de funcționare le permite clienților noștri să lucreze profitabil, fără costuri de nefuncționare, reparații sau achiziționarea de cântare noi.<br>Multe întreprinderi din Moldova, Ucraina, Rusia, Kazahstan folosesc cu succes cântarele fabricate de Alex S&E de mai bine de 25 de ani. Produsele noastre sunt folosite în depozite, baze metalice, întreprinderile producătoare de beton armat, uzinele de minerit, elevatoare, cariere, în puncte temporare, cum ar fi, la fabricarea drumurilor, pentru a controla sarcina pe osie și, în consecință, sarcina pe terasamentul de drum.<br>Compania Alex S&E vă oferă cântare pentru cântărirea vagoanelor la cel mai bun preț. Experții noștri într-un mod rapid și profesionist vă vor oferi consultații cu privire la alegerea cântarului auto potrivit, vă vor oferi recomandări și vă vor ajuta să determinați locul optim pentru instalarea cântarelor.",
+      "IconTitleOne": "27 ani",
+      "IconTextOne": "experiență",
+      "IconTitleTwo": "Mai mult de 200",
+      "IconTextTwo": "Cântarelor de buncăr",
+      "IconTitleThree": "Mai mult de  50",
+      "IconTextThree": "Liniilor de dozare-amestecare"
+    },
+    "PackingDispenser": {
+      "Title": "CÂNTAR DE DOZARE",
+      "SubTitle": "Cântarul de dozare pentru umplerea produselor în vrac este utilizat pentru ambalarea cerealelor, furajelor mixte, tărâțelor, granulelor, îngrășămintelor, semințelor, peletelor, zahărului, făinii și altor materiale similare în saci deschise și pachete cu greutatea de la 20 la 50 kg.<br>Cântarul de dozare este extrem de simplu și ușor în exploatare, sacul cu materialul este cântărit în timpul procesului de umplere, când se atinge greutatea setată, umplerea sacului se oprește automat. După umplere, sacul este înlocuit cu unul nou.<br>",
+      "Image": "Terminalul de cântărire al cântarelor de buncăr afișează greutatea curentă a dozei colectate, numărul de cântăriri și greutatea totală a materialului livrat, salvează istoricul cântăririlor cu referire la dată și oră. Dispune de o sistemă de control convenabilă și numeroase oportunități de integrare în liniile tehnologice și integrare în sistemele informaționale. Oferă control automat al sistemelor de încărcare, descărcare și alte mecanisme executive. O interfață industrială RS-232 este utilizată pentru conectarea la un computer.<br>Informațiile de cântărire sunt salvate în memoria indicatorului chiar și în cazul unei întreruperi bruște de curent și nu sunt disponibile pentru modificări manuale.<br>",
+      "IconTitleOne": "CÂNTAR DE DOZARE SEMI-AUTOMAT",
+      "IconTextOne": "<li><h6>Funcționează fără a utiliza aer comprimat</h6></li><li><h6>Clemă manuală a sacilor.</h6></li><li><h6>La necesitate, se completează cu un transportor cu bandă pentru deplasarea sacilor în direcție orizontală. Facilitează semnificativ munca operatorului</h6></li><li><h6>La necesitate, se completează cu o mașină de cusut pentru a coase sacul după umplere - instalată pe un suport special, controlat de o pedală de picior</h6></li><li><h6>Pentru unele produse, cântarul de dozare poate include: un agitator - pentru a compacta produsul în sac</h6></li><li><h6>Pentru ambalarea produselor alimentare, piesele, care intră în contact cu materialul sunt realizate din oțel inoxidabil</h6></li>",
+      "IconTitleTwo": "CÂNTAR DE DOZARE PNEUMATIC ",
+      "IconTextTwo": "<li><h6>Deschiderea comodă a clapei cu ajutorul unei pedale, ce permite creșterea productivității operatorului.<h6></li><li><h6>Clemă manuală sau pneumatică a sacilor.</h6></li><li><h6>La necesitate, se completează cu un transportor cu bandă pentru deplasarea sacilor în direcție orizontală. Facilitează semnificativ munca operatorului</h6></li><li><h6>La necesitate, se completează cu o mașină de cusut pentru a coase sacul după umplere - instalată pe un suport special, controlat de o pedală de picior</h6></li><li><h6>Pentru ambalarea produselor alimentare, piesele, care intră în contact cu materialul sunt realizate din oțel inoxidabil</h6></li><li><h6>Pentru ambalarea produselor alimentare, piesele în contact cu sculele sunt fabricate din oțel inoxidabil.</h6></li>"
+    },
+    "Scales": {
+      "Title": "CÂNTAR DE BUNCĂR",
+      "SubTitle": "Cântarele de buncăr pentru cântărirea în flux sunt soluția ideală pentru evidența materialelor în vrac, indispensabile în întreprinderile în care este necesară dozarea produselor pe bază de recetă tehnologică. Acestea sunt concepute pentru cântărirea automată în flux și pentru evidența totală a produselor în vrac (cereale, tărâțe, grâne, semințe și alte produse).<br>Cântarele sunt utilizate în procesele tehnologice în mod autonom sau ca parte a liniilor de amestecare de dozare în industria agricolă, chimică, metalurgică, din sticlă și în alte industrii.<br>În funcție de condițiile de funcționare, cântarele de buncăr pot fi deschise și închise.<br>Pentru încărcarea și descărcarea buncărului de cântărire se utilizează diverse mecanizme:<br>• Supapă cu acționare pneumatică sau electromagnetică - pentru produsele în vrac cu curgere ușoară.<br>• Alimentatoare cu bulon - pentru produsele în vrac cu curgere dificilă.<br>• Alimentatoare vibrante - pentru produse granulate și cu granulare mare.<br>Structurile metalice ale cântarelor sunt acoperite cu grund acrilic / smalț sau vopsea epoxidică (PEP). În unele cazuri (producție alimentară, chimică etc.), structurile metalice ale cântarelor sunt realizate din oțel inoxidabil.<br>În cazul unei întreruperi bruște a curentului electric sau a unei scăderi a presiunii aerului în sistem, funcționalitatea cântarului va fi blocată pentru a preveni pierderea produsului<br>",
+      "Image": "Terminalul de cântărire al cântarelor de buncăr afișează greutatea curentă a dozei colectate, numărul de cântăriri și greutatea totală a materialului livrat, salvează istoricul cântăririlor cu referire la dată și oră. Dispune de o sistemă de control convenabilă și numeroase oportunități de integrare în liniile tehnologice și integrare în sistemele informaționale. Oferă control automat al sistemelor de încărcare, descărcare și alte mecanisme executive. O interfață industrială RS-232 este utilizată pentru conectarea la un computer.<br>Informațiile de cântărire sunt salvate în memoria indicatorului chiar și în cazul unei întreruperi bruște de curent și nu sunt disponibile pentru modificări manuale.<br>",
+      "FuncTitle": "Funcționalitatea cântarului de buncăr:",
+      "FuncText": "• Afișarea și înregistrarea în memoria nevolatilă a indicatorului a stărilor de încărcare curentă a buncărului, cantitatea de produs neîncărcat cu referire la dată și oră.<br>• Prezența unui ceas încorporat pentru monitorizarea și înregistrarea timpului de funcționare<br>• Transfer de date către PC prin interfața industrială RS232<br>• Posibilitatea de a seta doza / receta folosind indicatorul sau software.<br>• Posibilitatea de a combina mai multe cântare într-o linie de dozare controlată de un PC<br>• Posibilitatea de a conecta mecanizme suplimentare la indicator.<br>• Colectarea și stocarea datelor în indicator și PC.<br>• Formarea și tipărirea rapoartelor pentru o perioadă de timp arbitrară.<br>• Păstrarea unui jurnal de evenimente, inclusiv accidente, situații de urgență.<br>• Atribuirea unui nivel de acces individual și protecție împotriva accesului neautorizat. <br>",
+      "IconTitleOne": "Cântarul de buncăr de tip deschis",
+      "IconTextOne": "•\tUtilizat în halele de producție<br>•\tLucrul cu produse predispuse la lipire<br>•\tAcces ușor la toate joncțiunile și componentele pentru întreținere<br>•\tModel econom datorită consumului redus de metal al produsului<br>",
+      "IconTitleTwo": "Cântar de buncăr de tip închis",
+      "IconTextTwo": "•\tCântarul poate fi utilizat în aer liber<br>•\tJoncțiunile și componentele sunt protejate de precipitațiile atmosferice și de lumina directă a soarelui.<br>•\tPachetul de bază include un supra-buncăr care servește pentru acumularea materialului dozat.<br>"
+    },
+    "Modern": {
+      "Title": "Modernizarea cântarelor de buncăr",
+      "SubTitle": "Modernizarea cântarelor mecanice de buncăr permite reducerea costurilor de funcționare, prelungirea termenului de exploatare și îmbunătățirea funcționalității prin înlocuirea unui sistem mecanic de cântărire cu unul electronic și prin introducerea controlului și contabilității automate.",
+      "Text": "La modernizarea cântarelor, sistemul de măsurare prin pârghie este schimbat într-un sistem de măsurare prin senzori, menținând în același timp buncărul existent, în timp ce pentru umplere și descărcare sunt instalate mecanisme adiționale, care sunt controlate automat de către indicatorul de greutate.",
+      "Image": "Terminalul de cântărire al cântarelor de buncăr afișează greutatea curentă a dozei colectate, numărul de cântăriri și greutatea totală a materialului livrat, salvează istoricul cântăririlor cu referire la dată și oră. Dispune de o sistemă de control convenabilă și numeroase oportunități de integrare în liniile tehnologice și integrare în sistemele informaționale. Oferă control automat al sistemelor de încărcare, descărcare și alte mecanisme executive. O interfață industrială RS-232 este utilizată pentru conectarea la un computer.<br>Informațiile de cântărire sunt salvate în memoria indicatorului chiar și în cazul unei întreruperi bruște de curent și nu sunt disponibile pentru modificări manuale.<br>"
+    }
+  },
+  "BigTable": {
+    "Header": {
+      "Head1": "Model",
+      "Head2": "Tip/Temperatură de funcționare (buncăr)/Temperatură de funcționare (controler MERAV3001)",
+      "Head3": "Performanţa pentru cereale*, t/ora",
+      "Head4": "Capacitatea maximă de cântărire, kg:",
+      "Head5": "Valoarea diviziunii de verificare (е), kg:",
+      "Head6": "Consumul aerului compresat nu mai mult de, nM3/h: ",
+      "Head7": "Dimensiuni de gabarit, mm: ",
+      "Head8": "Masa, kg:",
+      "Head9": "Conectarea la calculator",
+      "Head10": "Clasa de exactitate a balanţei:"
+    },
+    "Data": {
+      "D1": {
+        "One": "BSN-50D1.3",
+        "Two": "Deschis <br> De la -10 pînă +45 °C <br> De la 0 pînă +40 °C",
+        "Three": "18",
+        "Four": "50",
+        "Five": "0,02",
+        "Six": "2,3",
+        "Seven": "1075х983х 1140",
+        "Eight": "128",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D2": {
+        "One": "BXN-100D1.3",
+        "Two": "Deschis <br> De la -10 pînă +45 °C <br> De la 0 pînă +40 °C",
+        "Three": "30",
+        "Four": "100",
+        "Five": "0,05",
+        "Six": "2,3",
+        "Seven": "1075х983х 1430",
+        "Eight": "169",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D3": {
+        "One": "BXN-200D1.3",
+        "Two": "Deschis <br> De la -10 pînă +45 °C <br> De la 0 pînă +40 °C",
+        "Three": "60",
+        "Four": "200",
+        "Five": "0,1",
+        "Six": "3,6",
+        "Seven": "1150х1075х1390",
+        "Eight": "212",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D4": {
+        "One": "BXN-300D1.3",
+        "Two": "Deschis <br> De la -10 pînă +45 °C <br> De la 0 pînă +40 °C",
+        "Three": "90",
+        "Four": "300",
+        "Five": "0,1",
+        "Six": "5,7",
+        "Seven": "1317х1206х1526",
+        "Eight": "260",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D5": {
+        "One": "BXN-200D1.3",
+        "Two": "Închis <br> De la  -10 pînă +45 °C <br> De la  0 pînă  +40 °C",
+        "Three": "60",
+        "Four": "200",
+        "Five": "0,1",
+        "Six": "5,7",
+        "Seven": "1300x1300x2000",
+        "Eight": "520",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D6": {
+        "One": "BXN-300D1.3",
+        "Two": "Închis <br> De la  -10 pînă +45 °C <br> De la  0 pînă  +40 °C",
+        "Three": "90",
+        "Four": "300",
+        "Five": "0,1",
+        "Six": "5,7",
+        "Seven": "1380x1380x2120",
+        "Eight": "620",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D7": {
+        "One": "BXN-500D1.3",
+        "Two": "Închis <br> De la  -10 pînă +45 °C <br> De la  0 pînă  +40 °C",
+        "Three": "120",
+        "Four": "500",
+        "Five": "0,1",
+        "Six": "5,7",
+        "Seven": "1520x1520x 2710",
+        "Eight": "780",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      }
+    }
   }
-
-
 }

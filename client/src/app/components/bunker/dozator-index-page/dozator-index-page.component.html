@@ -1,11 +1,13 @@
 <!--Section: Content-->
 <section class="container pt-2">
   <mdb-breadcrumb-item>
-    <mdb-breadcrumb-item  [routerLink]="'/products'">Продукция</mdb-breadcrumb-item>
-    <mdb-breadcrumb-item class="active">Бункерные весы</mdb-breadcrumb-item>
+    <mdb-breadcrumb-item  [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+    <mdb-breadcrumb-item class="active">{{'Bunker.Index.Breadcrumb' | translate}}</mdb-breadcrumb-item>
   </mdb-breadcrumb-item>
 
-  <h1 class="text-center font-weight-bold mb-4 pb-2 wow zoomIn" data-wow-delay="0.3s">Дозирующие системы</h1>
+  <h1 class="text-center font-weight-bold mb-4 pb-2 wow zoomIn" data-wow-delay="0.3s">
+    {{'Bunker.Index.Title' | translate}}
+  </h1>
 
 
 </section>
@@ -24,7 +26,7 @@
         </a>
 
         <div class="card-body flex-center">
-          <h5 class="font-weight-bold">ФАСОВОЧНЫЙ ДОЗАТОР</h5>
+          <h5 class="font-weight-bold">{{'Bunker.Index.Cat1' | translate}}</h5>
         </div>
 
       </div>
@@ -40,7 +42,7 @@
         </a>
 
         <div class="card-body flex-center font-weight-bold">
-          <h5 class="font-weight-bold">БУНКЕРНЫЕ ВЕСЫ</h5>
+          <h5 class="font-weight-bold">{{'Bunker.Index.Cat2' | translate}}</h5>
         </div>
 
       </div>
@@ -57,7 +59,7 @@
         </a>
 
         <div class="card-body flex-center font-weight-bold">
-          <h5 class="font-weight-bold">МОДЕРНИЗАЦИЯ БУНКЕРНЫХ ВЕСОВ</h5>
+          <h5 class="font-weight-bold">{{'Bunker.Index.Cat3' | translate}}</h5>
         </div>
 
       </div>
@@ -84,8 +86,12 @@
           <i class="fas fa-star fa-stack-1x fa-inverse"></i>
         </span>
 
-        <h4 class="font-weight-bold mt-4 red-text">27 лет</h4>
-        <p class="font-weight-bold blue-text">Опыт работы</p>
+        <h4 class="font-weight-bold mt-4 red-text">
+          {{'Bunker.Index.IconTitleOne' | translate}}
+        </h4>
+        <p class="font-weight-bold blue-text">
+          {{'Bunker.Index.IconTextOne' | translate}}
+        </p>
       </div>
       <!--Grid column-->
 
@@ -95,8 +101,12 @@
           <i class="fas fa-circle fa-stack-2x" style="color:#1288ba"></i>
           <i class="fas fa-star fa-stack-1x fa-inverse"></i>
         </span>
-        <h4 class="font-weight-bold mt-4 red-text">Больше 200</h4>
-        <p class="font-weight-bold blue-text">Бункерных весов</p>
+        <h4 class="font-weight-bold mt-4 red-text">
+          {{'Bunker.Index.IconTitleTwo' | translate}}
+        </h4>
+        <p class="font-weight-bold blue-text">
+          {{'Bunker.Index.IconTextTwo' | translate}}
+        </p>
       </div>
       <!--Grid column-->
 
@@ -106,8 +116,12 @@
           <i class="fas fa-circle fa-stack-2x" style="color:#1288ba"></i>
           <i class="fas fa-star fa-stack-1x fa-inverse"></i>
         </span>
-        <h4 class="font-weight-bold mt-4 red-text">Больше 50</h4>
-        <p class="font-weight-bold blue-text">Дозировочно смесительных линий</p>
+        <h4 class="font-weight-bold mt-4 red-text">
+          {{'Bunker.Index.IconTitleThree' | translate}}
+        </h4>
+        <p class="font-weight-bold blue-text">
+          {{'Bunker.Index.IconTextThree' | translate}}
+        </p>
       </div>
       <!--Grid column-->
 
@@ -124,14 +138,7 @@
 <!--Section: Features v.1-->
 
 
-<section class="section pt-5">
-
-  <!-- Featured image -->
-  <div class="flex-center wow zoomIn" data-wow-delay="0.6s">
-    <img src="assets/industrial/bg.jpg" class="img-fluid z-depth-1 rounded mb-4"
-         alt="">
-  </div>
-</section>
+<app-support-indus></app-support-indus>
 
 
 
@@ -139,15 +146,7 @@
 <section class="container pt-2 wow zoomIn" data-wow-delay="0.3s">
   <div style="font-family: 'Times New Roman'">
     <h5>
-      Без точного соблюдения рецептуры и технологии невозможно выпустить качественный продукт. Как правило, бункерные весы применяются для взвешивания сыпучих, мелкозернистых материалов и жидких компонентов (зерно, гранулированный комбикорм, крупы, вода, химдобавки), проходящих через весы, на производстве растворов и смесей, стекольных заводах, элеваторах и др.<br>
-      Компания Alex S&E, больше 27 лет, производит бункерные весы для фасовки и для взвешивания продукта в потоке, с наибольшим пределом взвешивания от 50 килограмм до 5 тонн, с производительностью от 18 до 800 тонн/час. Размеры, тип и комплектация весов могут отличаться в зависимости от задач, места установки и продукта, который необходимо взвешивать.<br>
-      Бункерные весы для взвешивания в потоке – идеальное решение для учета сыпучих или жидких компонентов, незаменимы на предприятиях, где для производства необходимо соблюдение рецептуры дозирования. Они предназначены для автоматического взвешивания порций материалов и измерения общей массы продукта, прошедшего через весы.<br>
-      Фасовочные дозаторы – предназначены для легкой и быстрой расфасовки необходимого количества продукта в открытые или клапанные мешки, биг-бэги или другую тару.<br>
-      Программное обеспечение, поставляемое вместе с весами, послужит незаменимым помощником оператору или позволит взвешивать продукцию в автоматическом режиме, без участия оператора, что в свою очередь сведет к нулю ошибки, связанные с человеческим фактором.<br>
-      При проектировании и производстве весов, мы уделяем большое внимание надежности и качеству продукции. Отсутствие сбоев в работе оборудования позволяет нашим клиентам работать с выгодой, без затрат на простои, ремонт или приобретение новых весов.<br>
-      Многие предприятия в Молдове, Украине, России, Казахстане уже более 25 лет с успехом используют весы производства Alex S&E. Наша продукция применяется на складах, металлобазах, ЖБИ, ГОКах, элеваторах, в карьерах, стекольных заводах.<br>
-      В компании Alex S&E вы всегда можете приобрести бункерные весы и дозаторы по лучшей цене. Наши специалисты быстро и профессионально проконсультируют Вас, по поводу выбора автомобильных весов и дадут рекомендации, помогут определить оптимальное место установки весов.<br>
-
+      <div [innerHTML]="'Bunker.Index.Text'  | translate"></div>
     </h5>
   </div>
 
@@ -165,7 +164,7 @@
       </div>
       <div class="text-center mt-4">
         <p class="font-weight-bold mb-lg-0">
-          Бункерные весы Alex S&E типа – BXN, соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания». Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.
+          {{'Certificates.BXN' | translate}}
         </p>
       </div>
     </div>
@@ -184,7 +183,7 @@
       </div>
       <div class="text-center mt-4">
         <p class="font-weight-bold mb-lg-0">
-          Бункерные весы Alex S&E типа – BSN, соответствуют стандарту RGML14:2007 «Весы неавтоматического взвешивания». Сертифицированы и внесены в Государственный реестр средств измерений Республики Молдова.
+          {{'Certificates.BSN' | translate}}
         </p>
       </div>
     </div>
