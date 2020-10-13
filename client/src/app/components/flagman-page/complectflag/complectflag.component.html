@@ -2,20 +2,18 @@
   <div class=" my-1 py-5  grey lighten-5">
     <!--Section: Content-->
     <section class="text-center px-md-5 mx-md-5 dark-grey-text wow bounceIn" data-wow-delay="0.6s">
-      <h1 class="font-weight-bold green-text">ПОЛНАЯ АВТОМАТИЗАЦИЯ ПОД КЛЮЧ </h1>
-      <p class="font-weight-bold grey-text black-text">POS-комплекты для ресторана и кафе — настроенные, протестированные,
-        с установленной программой</p>
+      <h1 class="font-weight-bold green-text">
+        {{'Flagman.ComplectFlag.Title' | translate }}
+      </h1>
+      <p class="font-weight-bold grey-text black-text">
+        {{'Flagman.ComplectFlag.Text' | translate }}
+      </p>
 
     </section>
     <!--Section: Content-->
 
 
   </div>
-
-
-
-
-
 
 
   <div class=" mt-0 mb-0">
@@ -30,12 +28,16 @@
             <div class="text-white text-center d-flex align-items-center  py-5 px-4 px-md-5 rounded ">
               <div>
                 <h5 class="py-3 font-weight-bold">
-                  <strong>КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ <p>HoReCa-1</strong>
+                  <strong>
+                    <div [innerHTML]="'Flagman.ComplectFlag.OneTitle'  | translate"></div>
+                  </strong>
                 </h5>
-                <p class="pb-0">Бюджетный вариант для автоматизации <p>
-                небольших пиццерий и мини-кафе
-              </p>
-                <a routerLink="/pos-horeca-1" class="btn btn-white btn-rounded btn-md black-text"><i class="fas fa-clone left"></i> Выбрать комплект HoReCa-1
+                <p class="pb-0">
+                <div [innerHTML]="'Flagman.ComplectFlag.OneText'  | translate"></div>
+
+                <a routerLink="/pos-horeca-1" class="btn btn-white btn-rounded btn-md black-text">
+                  <i class="fas fa-clone left"></i>
+                    {{'Flagman.ComplectFlag.OneButton' | translate}}
                 </a>
               </div>
             </div>
@@ -56,10 +58,6 @@
     <!-- Section -->
 
 
-
-
-
-
     <!-- Grid row -->
     <div class="row no-gutters  wow fadeInRight" data-wow-delay="0.6s">
 
@@ -71,13 +69,15 @@
           <div class="text-white text-center d-flex align-items-center  py-5 px-4 px-md-5 rounded">
             <div>
               <h5 class="py-3 font-weight-bold">
-                <strong>КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ<p>POS HoReCa-2</strong>
+                <strong>
+                  <div [innerHTML]="'Flagman.ComplectFlag.TwoTitle'  | translate"></div>
+                </strong>
               </h5>
-              <p class="pb-0">Вариант для ведения торгового учета<p>
-              в ресторанах и барах
-              </p>
-              <a routerLink="/pos-horeca-2" class="btn btn-white btn-rounded btn-md black-text"><i class="fas fa-clone left"></i>   Выбрать комплект POS HoReCa-2
-
+              <p class="pb-0">
+              <div [innerHTML]="'Flagman.ComplectFlag.TwoText'  | translate"></div>
+              <a routerLink="/pos-horeca-2" class="btn btn-white btn-rounded btn-md black-text">
+                <i class="fas fa-clone left"></i>
+                {{'Flagman.ComplectFlag.TwoButton' | translate}}
               </a>
             </div>
           </div>
@@ -104,23 +104,6 @@
     </div>
     <!-- Grid row -->
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </div>

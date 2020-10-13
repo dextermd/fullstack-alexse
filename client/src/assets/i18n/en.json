@@ -60,7 +60,8 @@
     "GoShop": "Go to store",
     "Call": "CALL",
     "Write": "WRITE",
-    "Send": "Send message"
+    "Send": "Send message",
+    "Detail": "DETAILED"
   },
   "HOME": {
     "INFO_SHORT": {
@@ -1083,6 +1084,452 @@
         "Eight": "780",
         "Nine": "RS232",
         "Ten": "Medium (III)"
+      }
+    }
+  },
+  "Flagman": {
+    "Header": {
+      "Title": "Flagman - software package for hotels and restaurants"
+    },
+    "SecondFlag": {
+      "Title": "Thanks to the Flagman software <br> You can:",
+      "IconOne": "Build management and warehouse accounting in a restaurant using our program",
+      "IconTwo": "Control staff, increase employee efficiency and eradicate theft",
+      "IconThree": "Protect your internal accounting data from third parties",
+      "IconFour": "Build a loyalty program and return customers over and over again",
+      "IconFive": "Remotely work (for the owner) with the program from anywhere in the world",
+      "IconSix": "Increase the average check and profit of the institution"
+    },
+    "ThreeFlag": {
+      "Title": "We have solutions",
+      "Icon1": "Restaurant automation",
+      "Icon2": "Cafe automation",
+      "Icon3": "Fast food automation",
+      "Icon4": "Restaurant chain automation",
+      "Icon5": "Catering automation",
+      "Icon6": "Corporate catering automation",
+      "Icon7": "Bar automation",
+      "Icon8": "Billiard club automation",
+      "Icon9": "Hotel restaurant automation",
+      "Icon10": "Food delivery automation"
+    },
+    "FourFlag": {
+      "Title": "Full automation of a restaurant or cafe is:",
+      "Icon1": "You get a full-fledged income statement and balance sheet",
+      "Icon2": "Setting up a report block for the owner",
+      "Icon3": "We automate all processes in the kitchen and in customer service",
+      "Icon4": "We set up management, financial and warehouse accounting",
+      "Icon5": "You get a full-fledged income statement and balance sheet",
+      "Icon6": "We set up remote control for the owner from anywhere in the world",
+      "Icon7": "We do integration with accounting and tax reporting",
+      "Icon8": "We set up integration with SIP telephony and the institution's website",
+      "Icon9": "We provide data security and access control",
+      "Icon10": "Seamless integration with a hotel, fitness club or chain of institutions"
+    },
+    "DivFlag": {
+      "Title": "Program features"
+    },
+    "SixFlag": {
+      "IconTitle1": "Fast checkout",
+      "IconText1": "The interface is designed for high-speed order entry. Already in 1 day, employees reduce ordering time by an average of 35%.",
+      "IconTitle2": "Convenient hall map",
+      "IconText2": "A clear graphic diagram of the hall will show free and occupied tables. The color of the table corresponds to the status of the order, which helps to promptly serve guests.",
+      "IconTitle3": "Fast food mode",
+      "IconText3": "All data is stored on your computer. No internet connection required. Disable the hall card if the establishment operates in fast food mode. You can also assign images of dishes to buttons for faster order entry.",
+      "IconTitle4": "STOP list of dishes",
+      "IconText4": "Temporarily unavailable dishes are registered in a STOP list with the possibility of quick activation.",
+      "IconTitle5": "Runners to the kitchen, bar, barbecue",
+      "IconText5": "Avoid personal communication between waiters and cooks and barmen. Modifiers in the order will tell you how to prepare and serve the dish.",
+      "IconTitle6": "Any payment method",
+      "IconText6": "Cash, credit card, non-cash, barter, club card, certificate. The order can be paid in installments.",
+      "IconTitle7": "Splitting a check by guests",
+      "IconText7": "You can easily and quickly split a check into several between people in the company.",
+      "IconTitle8": "Check with the logo of the institution",
+      "IconText8": "On each check you can place your restaurant's logo and address.",
+      "IconTitle9": "Admin Mode - Stop Theft!",
+      "IconText9": "Set an administrator password for actions for which increased security is important: deleting an item after printing a bill, a discount, closing an order without payment.",
+      "IconTitle10": "Reliable work without internet",
+      "IconText10": "The front's work is not tied to the Internet. Data is not lost when the Internet is turned off, and work does not stop for a minute."
+    },
+    "SevenFlag": {
+      "IconTitle1": "Mobile waiter and e-menu",
+      "IconText1": "An alternative solution for waiters and administrators based on a tablet or smartphone. Works in two modes: a mobile waiter and an electronic menu.",
+      "IconTitle2": "How it works?",
+      "IconText2": "In the Mobile waiter mode, it allows a waiter to enter an order without wasting time by communicating with a client without leaving the table and helps to reduce the time spent running or queuing up to the front (checkout).",
+      "IconTitle3": "CHEAT CODE",
+      "IconText3": "Many of our clients organize their work in the following way: they divide the waiters into two groups - the more experienced take orders, instantly sending them from the tablet to the kitchen, while others bring ready meals to the guests."
+    },
+    "Flag": {
+      "IconTitle1": "+ 10% to revenue due to an increase in the average check",
+      "IconText1": "The average bill is increased by 10%, since the customer no longer needs to make an effort to order another cup of coffee or cocktail.",
+      "IconTitle2": "26% savings",
+      "IconText2": "Restaurant owners save on average 26% on waiter salaries because fewer people serve the same area.",
+      "IconTitle3": "5 times cheaper in purchasing a stationary workplace",
+      "IconText3": "In addition, the cost of one mobile waiter in the purchase: a tablet and a program is 5 times cheaper than buying another stationary POS terminal and a license from the Front."
+    },
+    "DivTech": {
+      "Title": "Technical support 365/7",
+      "Text": "Probably one of the most important components in the smooth running of an establishment is a reliable Support Service.<br> We understand very well what a broken printer is on Saturday night! We will become a reliable partner of your establishment<br> so that it can serve your guests without interruptions."
+    },
+    "ComplectFlag": {
+      "Title": "FULL TURNKEY AUTOMATION",
+      "SubTitle": "POS sets for restaurant and cafe - customized, tested, with installed software",
+      "OneTitle": "AUTOMATION SET<p>HoReCa-1",
+      "OneText": "Budget option for automation <br> of small pizzerias and mini-cafes",
+      "OneButton": "CHOOSE HORECA-1 SET",
+      "TwoTitle": "AUTOMATION SET<p>POS HoReCa-2",
+      "TwoText": "Option for conducting trade <br> accounting in restaurants and bars",
+      "TwoButton": "CHOOSE HORECA-2 POS SET"
+    },
+    "Horeca1": {
+      "Header": {
+        "Title": "POS SYSTEM COMPACT SERIES",
+        "One": "Coffee shops",
+        "Two": " Fast-food",
+        "Three": "Bars",
+        "Four": "Cafeterias",
+        "Five": "Minicafe"
+      },
+      "Full": {
+        "TitleTop": "SET FOR TRADE AUTOMATION",
+        "TitleBottom": "HoReCa-1",
+        "ComplectTitle": "SET COMPOSITION:",
+        "ComplectOne": "Software Flagman",
+        "ComplectOneOne": "(Front Office + Back Office)",
+        "ComplectTwo": "Mini PC PiPo X10",
+        "ComplectThree": "Cash register Datecs DP-150SD with battery",
+        "ComplectFour": "Thermo Printer RP58 USB",
+        "ComplectGiveOne": "Compact",
+        "ComplectGiveTwo": "Fiable",
+        "ComplectGiveThree": "Powerful",
+        "ComplectPriceTitle": "Price:",
+        "ComplectPrice": "18 600 MDL",
+        "ComplectOldPrice": "20 704 MDL"
+      },
+      "MiniPos": {
+        "TitleTop": "New Generation MicroPOS Tablet",
+        "TitleBottom": "Mini-PC PiPo X10",
+        "SpecTitleOne": "Touchpad",
+        "SpecTextOne": "10.8 screen with FHD-resolution 1920 * 1280 and instant sensor response",
+        "SpecTitleTwo": "Fast data storage",
+        "SpecTextTwo": "4GB DDR3 memory and modern fast 64GB SSD hard drive",
+        "SpecTitleThree": "Large set of interfaces",
+        "SpecTextThree": "4 USB ports for peripheral equipment, Ethernet for direct Internet connection, WiFi and others",
+        "SpecTitleFour": "Battery powered",
+        "SpecTextFour": "10000 mAh"
+      },
+      "DatecsDPSD": {
+        "TitleTop": "Cash machine",
+        "TitleBottom": "Datecs DP-150 SD battery",
+        "SpecTitleOne": "Large set of interfaces",
+        "SpecTextOne": "2 x RS-232C port for connection: 1 x USB class device via mini-USB (optional) 1 x Box Control",
+        "SpecTitleTwo": "Work speed",
+        "SpecTextTwo": "up to 12 lines per second",
+        "SpecTitleThree": "Fiscal memory",
+        "SpecTextThree": "Non-volatile, can support up to 1825 daily reports",
+        "SpecTitleFour": "Battery powered",
+        "SpecTextFour": "Does not require a socket"
+      },
+      "RP58": {
+        "TitleTop": "USB Thermal POS Receipt Printer",
+        "TitleBottom": "Thermo Printer RP58 USB",
+        "SpecTitleOne": "Work speed",
+        "SpecTextOne": "Fast receipt printing at 100mm / s",
+        "SpecTitleTwo": "High clarity",
+        "SpecTextTwo": "High clarity receipt printing",
+        "SpecTitleThree": "Large diameter tape",
+        "SpecTextThree": "Places a roll with a diameter of 58 mm, you need to change the tape less often",
+        "SpecTitleFour": "Logo and barcode printing",
+        "SpecTextFour": "Printer prints logos and 1D / 2D barcodes",
+        "SpecTitleFive": "Durability",
+        "SpecTextFive": "100 km - Japanese manufacturer's printhead resource",
+        "SpecTitleSix": "Compatibility",
+        "SpecTextSix": "With any operating systems and accounting software"
+      },
+      "Soft": {
+        "TitleTop": "Flagman restaurant automation software",
+        "TitleBottom": "The program interface for restaurants and its main features:",
+        "SpecTitleOne": "MENU AND CHECKOUT PLACE",
+        "SpecTextOne": "Just transfer your standard menu to the program, keeping the categories and subcategories. Instant printout of receipts to customers. Loyalty and discount systems and many other opportunities. Fast work with orders and sales report!",
+        "SpecTitleTwo": "KITCHEN & BAR",
+        "SpecTextTwo": "The slider is printed on the kitchen printer as soon as the waiter places an order. From ordering to serving a meal - a matter of minutes! Satisfied and happy customers and more orders.",
+        "SpecTitleThree": "REPORTS & ANALYTICS",
+        "SpecTextThree": "Reports (customizable) will be sent to your email every day after the close of the shift. Visual analytics charts for any indicator and for any period of time. Analysis is the path to success!"
+      },
+      "Android": {
+        "TitleTop": "Android Application",
+        "TitleBottom": "Mobile Waiter",
+        "SpecTitleOne": "Profit growth by 20%",
+        "SpecTextOne": "Lack of senseless bustle of waiters - more customers served - more profit",
+        "SpecTitleTwo": "Feedback",
+        "SpecTextTwo": "When the order is ready, the cook / barman marks it on the touch screen, and the waiter is instantly notified on the smartphone",
+        "SpecTitleThree": "Works on Android",
+        "SpecTextThree": "The application is installed on any Android tablet or smartphone via the Google Play Market",
+        "SpecTitleFour": "Fast order processing",
+        "SpecTextFour": "Orders placed in the application are instantly transferred to a monitor or printer installed in the kitchen / bar"
+      }
+    },
+    "Horeca2": {
+      "Header": {
+        "Title": "POS SYSTEM COMPACT SERIES",
+        "One": "Coffee shops",
+        "Two": " Fast-food",
+        "Three": "Bars",
+        "Four": "Cafeterias",
+        "Five": "Minicafe"
+      },
+      "Full": {
+        "TitleTop": "SET FOR TRADE AUTOMATION",
+        "TitleBottom": "HoReCa-2",
+        "ComplectTitle": "SET COMPOSITION:",
+        "ComplectOne": "Software Flagman",
+        "ComplectOneOne": "(Front Office + Back Office)",
+        "ComplectTwo": "POS TERMINAL B15 MicroPOS 5-wire resistive",
+        "ComplectThree": "Thermo Printer RP328 (RS-232+USB+Ethernet).",
+        "ComplectGiveOne": "Compact",
+        "ComplectGiveTwo": "Fiable",
+        "ComplectGiveThree": "Powerful",
+        "ComplectPriceTitle": "Price:",
+        "ComplectPrice": "21 600 MDL",
+        "ComplectOldPrice": "24 005 MDL"
+      },
+      "MicroPos": {
+        "TitleTop": "Stylish MicroPOS",
+        "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+        "SpecTitleOne": "Touchpad",
+        "SpecTextOne": "Touchscreen with HD-resolution 1366 × 768 and instant sensor response",
+        "SpecTitleTwo": "Speed",
+        "SpecTextTwo": "The terminal is equipped with a new generation J1900 processor with high performance and low power consumption",
+        "SpecTitleThree": "Fast data storage",
+        "SpecTextThree": "4GB DDR3 memory and modern fast 64GB SSD hard drive",
+        "SpecTitleFour": "Large set of interfaces",
+        "SpecTextFour": "6 USB ports for peripheral equipment, Ethernet for direct Internet connection, RS232 and others"
+      },
+      "RP328": {
+        "TitleTop": "USB Thermal POS Receipt Printer",
+        "TitleBottom": "Thermo Printer RP328 (RS-232+USB+Ethernet)",
+        "SpecTitleOne": "Work speed",
+        "SpecTextOne": "Fast receipt printing at 100mm / s",
+        "SpecTitleTwo": "High clarity",
+        "SpecTextTwo": "High clarity receipt printing",
+        "SpecTitleThree": "Large diameter tape",
+        "SpecTextThree": "Places a roll with a diameter of 58 mm, you need to change the tape less often",
+        "SpecTitleFour": "Logo and barcode printing",
+        "SpecTextFour": "Printer prints logos and 1D / 2D barcodes",
+        "SpecTitleFive": "Durability",
+        "SpecTextFive": "100 km - Japanese manufacturer's printhead resource",
+        "SpecTitleSix": "Compatibility",
+        "SpecTextSix": "With any operating systems and accounting software"
+      }
+    }
+  },
+  "B52": {
+    "Header": {
+      "Title": "Modern software product<p>to manage a hotel, restaurant,<p>fitness center."
+    },
+    "First": {
+      "One": "Automation system for hotels, hostelries, hostels",
+      "Two": "Automation of fitness, spa, beauty salons",
+      "Three": "Restaurant automation system",
+      "Four": "Billiard room automation system"
+    },
+    "Second": {
+      "Title": "B52 will help you",
+      "One": "Improve the quality of services",
+      "Two": "Systematize management accounting",
+      "Three": "Attract more customers",
+      "Four": "Establish control over the business"
+    },
+    "Div": {
+      "Title": "We will complete the entire cycle of work on project installation"
+    },
+    "More": {
+      "One": "We will conduct a survey of the enterprise",
+      "Two": "We will offer an optimal set of equipment and software",
+      "Three": "Install the software and hardware complex",
+      "Four": "We will carry out the configuration according to specific requirements",
+      "Five": "We will train personnel, carry out certification",
+      "Six": "We will offer a convenient service option"
+    },
+    "Hotel": {
+      "Header": {
+        "Title": "SYSTEM <p> AUTOMATION",
+        "SubTitle": "HOTELS, HOSTELRIES, HOSTELS"
+      },
+      "First": {
+        "ImageTitleOne": "Eliminate overbooking",
+        "ImageTextOne": "B52 will not allow you to book the same room twice when booking from the counter, by the managers of the booking department, through the WEB module on the website, through dozens of sales channels.",
+        "ImageTitleTwo": "Cleaning of rooms under control",
+        "ImageTextTwo": "Now the program will fill in the rooms for the maids for you. You will find out about problems during cleaning and react in time.",
+        "ImageTitleThree": "Promotional programs",
+        "ImageTextThree": "Interest guests with all kinds of loyalty programs.",
+        "ImageTitleFour": "Complex accounting",
+        "ImageTextFour": "The implementation of any service (restaurant, spa, minibar) will automatically appear on the guest's personal account. B52 is a complex accounting. No data transfer operations between databases. Everything in a single control system.",
+        "ImageTitleFive": "Room service",
+        "ImageTextFive": "Guests can order additional services from their smartphones. The reception will immediately see and call back if necessary to clarify the details.",
+        "ImageTitleSix": "For management of the companies",
+        "ImageTextSix": "Your managers will book rooms easily by switching between the \"chess\" of the hotels."
+      },
+      "Second": {
+        "OneTop": "Рецепция гостиницы",
+        "OneCenter": "Reception module",
+        "OneBottom": "At the hotel reception, the functional set of the module completely repeats the set of duties of the receptionist for working with guests. It includes an analysis of the available room stock, registration of a guest in a room with entering personal data into the client base, registration of provided standard hotel and additional services, accounting for a mini-bar, issuing periodic bills, tariffing for Internet and telephone services, periodic and final payment of guests.",
+        "TwoTop": "Booking Department",
+        "TwoCenter": "Module for managers of the booking department",
+        "TwoBottom": "When a booking department employee forms an application, the system provides information on the free room stock for the period of the future stay of guests and tourist groups. The application interface assumes the selection of free rooms based on the main parameters: a list of floors, categories, characteristic features of the room. The registered application is automatically visible in the receptionist module as a room reservation. The booking confirmation document is printed.",
+        "ThreeTop": "Housekeeping service",
+        "ThreeCenter": "Maid Service Module",
+        "ThreeBottom": "Registration of rooms entered / removed for renovation or cleaning is maintained. The material part of accounting allows you to register the movement of household goods, their periodic inventory. A special module for the head of the maid service allows you to organize cleaning, distribute them in time according to the list of maids. The ability to create a clear timetable for maids to go to work saves salary fund."
+      },
+      "Three": {
+        "OneTop": "Restaurant",
+        "OneCenter": "Hostess, barman, waiter modules",
+        "OneBottom": "The restaurant at the hotel operates as a service for hotel guests. At the hostess's workplace, a visitor is registered with food payment control. If food is not included in the cost of living, the bill can be paid on the spot by all available means or to close the debt to the room. The restaurant, in addition to serving hotel guests, may be open to outside customers.",
+        "TwoTop": "Booking engine",
+        "TwoCenter": "Booking module for the site",
+        "TwoBottom": "The module allows your guest to independently choose a room, book and pay for it. The system monitors hotel occupancy and prevents overbooking. Promotional programs are supported. The availability calendar will help the guest choose convenient days to stay. The new reservation will automatically go to B52 and will be reflected in the chessboard. Booking confirmation can be immediately sent to the guest by email or pre-processed by the booking manager."
+      },
+      "Four": {
+        "OneTop": "WEB",
+        "OneCenter": "WEB interface for remote control",
+        "OneBottom": "The service allows you to perform all the functions of the booking department using a browser on any available device: personal computer, tablet or smartphone. This allows managers to book rooms without being in the hotel, and the hotel owner to control the load and financial condition.",
+        "TwoTop": "Electronic locks",
+        "TwoCenter": "Connection to the system of electronic locks",
+        "TwoBottom": "Installation of electronic locks makes it possible to control access to hotel rooms. Connecting this service to B52 makes unaccounted settlements impossible. Without the registration of the guest in the program, it will not be possible to encode the electronic key, which reduces the financial losses of the hotel. В52 has integrated more than ten room access control systems."
+      },
+      "Five": {
+        "OneTop": "Chanel manager",
+        "OneCenter": "Sales channels",
+        "OneBottom": "To maximize the occupancy of the hotel's room stock, various sales channels are used, such as booking.com, Airbnb, Expedia. To work with them, it is convenient to connect the Channel manager, which will allow you to synchronize all sales at one point. We can connect B52 of your choice to one of two similar services: Trevelline or YieldPlanet. Tariff plans will be automatically uploaded through the service to all sales channels, and reservations will automatically go to the chessboard in B52."
+      }
+    },
+    "Restaurant": {
+      "Header": {
+        "Title": "RESTAURANT <p> AUTOMATION<p> SYSTEM"
+      },
+      "First": {
+        "ImageTitleOne": "Simple and clear interface",
+        "ImageTextOne": "Waiters and bartenders will start working five minutes after installation. It is desirable for the accountant to have specialized studies, but not necessarily - we will train.",
+        "ImageTitleTwo": "Fiscal printing",
+        "ImageTextTwo": "The program is adapted to work with all fiscal printers from the register of settlement and cash services of the Republic of Moldova. Several legal entities? - not a problem.",
+        "ImageTitleThree": "Identification",
+        "ImageTextThree": "You can choose from all kinds of guest identification options: magnetic stripe, barcode, contactless card, fingerprint identification, by the last digits of the phone number with SMS confirmation.",
+        "ImageTitleFour": "Don't waste your money ",
+        "ImageTextFour": "We will close the places of potential financial losses. Is your staff creative? - we will show you how and where.",
+        "ImageTitleFive": "Receipt printers",
+        "ImageTextFive": "We will create beautiful forms of bills and embeds for you. The program does not limit the choice of printing device. Bluetooth and WiFi - printers interact with mobile terminals",
+        "ImageTitleSix": "Marketing",
+        "ImageTextSix": "Expand your customer base by attracting new guests with loyalty programs."
+      },
+      "Second": {
+        "OneTop": "Restaurant hall",
+        "OneCenter": "Stationary module for waiters / bartenders",
+        "OneBottom": "We are not supporters of universal modules. A fixed POS terminal monitor allows you to create convenient, intuitive interfaces without having to open a separate window for each operation.",
+        "TwoTop": "Restaurant hall",
+        "TwoCenter": "Mobile module for waiters",
+        "TwoBottom": "The module allows you to work with an order on a smartphone or tablet. Synchronization with the central base takes place via WiFi or 3 / 4g. Constant presence in the communication area is not necessary, the device can work autonomously until the moment the order is sent to printer. With the help of mobile devices, you can divide the waiters into talking and serving plates. A waiter with a smartphone is not tied to the restaurant hall, where the stationary station is located, and can serve guests on the open terrace. The presence of an NFC-module in the smartphone allows the guest to be identified by a contactless card."
+      },
+      "Three": {
+        "OneTop": "Restaurant hall",
+        "OneCenter": "Restaurant admin module",
+        "OneBottom": "This is not a separate module, but part of the functionality of the waiter / bartender module. The administrator gains access to these functions by setting the rights for the \"Administrator\" position. Advanced capabilities allow the administrator to monitor the work of the restaurant, reviewing all bills, thereby controlling the quality of the work of waiters and bartenders. Extended rights allow you to re-print bills and invoices, if necessary, with the ability to further control this fact by the management, recalculate the invoice at cost."
+      },
+      "Four": {
+        "OneTop": "Kitchen",
+        "OneCenter": "Cook module",
+        "OneBottom": "In standard delivery, a printer is installed in the kitchen or in each workshop of the kitchen block. Installing a computer with a module for a cook significantly expands the capabilities of the system. The order records that are printed on the printer automatically appear on the computer screen. For each entry, the cook can mark the fact that the order has been accepted for preparing, and, if necessary, create a request to move ingredients from the warehouse. Marking the fact of order completion sends a message about the readiness of the order to the POS terminal. If the waiter who sent the order is equipped with a smartphone, he will receive a message about it on his phone. An additional advantage is the ability to control the speed of order execution."
+      },
+      "Five": {
+        "OneTop": "Delivery",
+        "OneCenter": "Call center module",
+        "OneBottom": "A call-center employee, taking a call, automatically identifies a permanent customer by his phone number. It is possible to substitute one of the previously entered customer delivery addresses or enter a new address. The program will automatically calculate the distance from production to the delivery address and can generate shipping costs. The list of ordered dishes goes into kitchen.",
+        "TwoTop": "Delivery",
+        "TwoCenter": "Order issuance module",
+        "TwoBottom": "The completed order can be identified with a barcode label to prevent confusion when shipped to the customer, and an invoice is printed for payment.",
+        "ThreeTop": "Delivery",
+        "ThreeCenter": "Production module",
+        "ThreeBottom": "The production module allows you to automate the accounting of all production processes, control the balance of ingredients and semi-finished products, write off according to calculation cards at each stage of production. Finished products arrive at the point of the order issuing.",
+        "FourTop": "Delivery",
+        "FourCenter": "Driver agent mobile module",
+        "FourBottom": "The driver scans the label on the completed order, thereby marking the receipt of the order in the mobile module. The module paves the way on the map. The fact of payment for the order is also noted in the program and transmitted via 3 / 4g to the central office."
+      },
+      "Six": {
+        "OneTop": "Accountant",
+        "OneCenter": "Accountant module",
+        "OneBottom": "The system of commodity and financial accounting involves the input of primary documents. Goods receipt documents in the enterprise are divided into deliveries from external organizations and purchases by own employees. In receipt documents, vendor prices are entered, which form the valuation prices of the goods in the enterprise. The valuation price is calculated as a “weighted average” of FIFO scheme. The cost of finished products and semi-finished products is calculated based on the valuated prices for ingredients.",
+        "TwoTop": "Buyer",
+        "TwoCenter": "Buyer's mobile module",
+        "TwoBottom": "For the efficiency of the work of the employee who is engaged in purchases in the market or in stores, there is a specialized module. The accountant forms an order in his module, which is sent via mobile to the buyer's module. The order lists the required assortment with quantity and approximate price. As the purchase progresses, price and quantity adjustments take place. At the end of the purchase, the document goes to the central database in the register of incoming documents."
+      }
+    },
+    "Fitness": {
+      "Header": {
+        "Title": "Automation system <p> for fitness, spa, beauty <p> salons"
+      },
+      "First": {
+        "ImageTitleOne": "Simple and clear interface",
+        "ImageTextOne": "Waiters and bartenders will start working five minutes after installation. It is desirable for the accountant to have specialized studies, but not necessarily - we will train.",
+        "ImageTitleTwo": "Fiscal printing",
+        "ImageTextTwo": "The program is adapted to work with all fiscal printers from the register of settlement and cash services of the Republic of Moldova. Several legal entities? - not a problem.",
+        "ImageTitleThree": "Identification",
+        "ImageTextThree": "You can choose from all kinds of guest identification options: magnetic stripe, barcode, contactless card, fingerprint identification, by the last digits of the phone number with SMS confirmation.",
+        "ImageTitleFour": "Don't waste your money ",
+        "ImageTextFour": "We will close the places of potential financial losses. Is your staff creative? - we will show you how and where.",
+        "ImageTitleFive": "Receipt printers",
+        "ImageTextFive": "We will create beautiful forms of bills and embeds for you. The program does not limit the choice of printing device. Bluetooth and WiFi - printers interact with mobile terminals",
+        "ImageTitleSix": "Marketing",
+        "ImageTextSix": "Expand your customer base by attracting new guests with loyalty programs."
+      },
+      "Three": {
+        "OneTop": "Club reception",
+        "OneCenter": "Reception administrator module",
+        "OneBottom": "The functional set of the module for the reception of the fitness center repeats the set of duties of the club's receptionist. There is a registration of a client's visit, registration for group classes and individual training, sale of service courses and writing them off from the balance.",
+        "TwoTop": "Sales department",
+        "TwoCenter": "Sales and Marketing Module",
+        "TwoBottom": "Marketing managers form service packages, bonus and promotional programs. New and existing members of the club are sold packages and certificates.<br> The CRM system makes it possible to expand the client base, promptly warn club members about the expiration of service packages, send mailings by SMS or email."
+      },
+      "Second": {
+        "OneTop": "Trainer",
+        "OneCenter": "Mobile trainer module",
+        "OneBottom": "The module for a mobile device allows a trainer to mark a visit to a group lesson, register a client for an individual lesson, and sell additional services.",
+        "TwoTop": "Access control",
+        "TwoCenter": "Access Control System",
+        "TwoBottom": "To restrict access to the club premises, the program implements a control system for turnstiles and other electronic access control devices. The system is able to allow access to club members only in those premises in which the service is available, available by subscription or by appointment.",
+        "ThreeTop": "IV. Club members",
+        "ThreeCenter": "WEB - service",
+        "ThreeBottom": "The service allows a club member to independently sign up for group trainings, individual lessons, order additional services. There is an opportunity to control settlements with the club, to see the balance of service courses.",
+        "FourTop": "Accounting department",
+        "FourCenter": "Management accounting module",
+        "FourBottom": "The program makes it possible to maintain full-fledged management material and financial accounting. Material accounting implies the entire cycle of goods turnover: documents for the delivery of goods, transfer, write-off and rediscount. Financial accounting includes the movement of cash and non-cash funds, an advance report. The mechanism for calculating wages has been worked out."
+      }
+    },
+    "Billiard": {
+      "Header": {
+        "Title": "BILLIARD <p> AUTOMATION <p> SYSTEM"
+      },
+      "First": {
+        "ImageTitleOne": "Simple and clear interface",
+        "ImageTextOne": "Waiters and bartenders will start working five minutes after installation. It is desirable for the accountant to have specialized studies, but not necessarily - we will train.",
+        "ImageTitleTwo": "Fiscal printing",
+        "ImageTextTwo": "The program is adapted to work with all fiscal printers from the register of settlement and cash services of the Republic of Moldova. Several legal entities? - not a problem.",
+        "ImageTitleThree": "Identification",
+        "ImageTextThree": "You can choose from all kinds of guest identification options: magnetic stripe, barcode, contactless card, fingerprint identification, by the last digits of the phone number with SMS confirmation.",
+        "ImageTitleFour": "Time counting system",
+        "ImageTextFour": "The table opens for a fixed time or without limitation",
+        "ImageTitleFive": "Don't waste your money ",
+        "ImageTextFive": "We will close the places of potential financial losses. Is your staff creative? - we will show you how and where.",
+        "ImageTitleSix": "Receipt printers",
+        "ImageTextSix": "We will create beautiful forms of bills and embeds for you. The program does not limit the choice of printing device. Bluetooth and WiFi - printers interact with mobile terminals",
+        "ImageTitleSeven": "Marketing",
+        "ImageTextSeven": "Expand your customer base by attracting new guests with loyalty programs.",
+        "ImageTitleEight": "Reservation of tables",
+        "ImageTextEight": "Allows you to increase work efficiency due to prompt and optimal distribution of orders"
+      },
+      "Second": {
+        "OneTop": "Stationary module",
+        "OneBottom": "The stationary POS terminal allows you to display a convenient, well-thought-out, intuitive interface, in which there is no need to open a separate window for each operation.",
+        "TwoTop": "Mobile module for waiters.",
+        "TwoBottom": "The module allows you to work with an order on a smartphone or tablet. Synchronization with the central base takes place via WiFi or 3 / 4g. Constant presence in the communication zone is not necessary, the device can work autonomously. A waiter with a smartphone is not tied to the hall in which the stationary station is located."
       }
     }
   }

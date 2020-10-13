@@ -7,7 +7,8 @@
     <div class="">
       <!--Navbar -->
       <nav class=" navbar navbartop navbar-expand-lg navbar-light white lighten-1">
-        <span class="font-weight-bolder" style="color: #000000; font-size: 10pt;"><strong>{{ 'MAIN.INDEX.Support' | translate}}</strong></span>
+        <span class="font-weight-bolder"
+              style="color: #000000; font-size: 10pt;"><strong>{{ 'MAIN.INDEX.Support' | translate}}</strong></span>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
           <ul class="navbar-nav mr-auto">
@@ -17,17 +18,20 @@
             <li class="nav-item">
               <ul class="navbar-nav nav-flex-icons ml-auto">
                 <li class="nav-item d-none d-md-block">
-                  <a href="https://www.facebook.com/alexse.com.md"  target="_blank" type="button" mdbBtn floating="true" size="lg" color="fb" class="waves-light">
+                  <a href="https://www.facebook.com/alexse.com.md" target="_blank" type="button" mdbBtn floating="true"
+                     size="lg" color="fb" class="waves-light">
                     <mdb-icon class="indigo-text" fab icon="facebook-f"></mdb-icon>
                   </a>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                  <a href="https://www.youtube.com/channel/UCZeEuCodwjhQIwugyqWDBAA"  target="_blank" type="button" mdbBtn floating="true" size="lg" color="yt" class="waves-light">
+                  <a href="https://www.youtube.com/channel/UCZeEuCodwjhQIwugyqWDBAA" target="_blank" type="button"
+                     mdbBtn floating="true" size="lg" color="yt" class="waves-light">
                     <mdb-icon class="red-text" fab icon="youtube"></mdb-icon>
                   </a>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                  <a href="https://www.instagram.com/alex.s_e/"  target="_blank" type="button" mdbBtn floating="true" size="lg" color="ins" class="waves-light">
+                  <a href="https://www.instagram.com/alex.s_e/" target="_blank" type="button" mdbBtn floating="true"
+                     size="lg" color="ins" class="waves-light">
                     <mdb-icon class="orange-text" fab icon="instagram"></mdb-icon>
                   </a>
                 </li>
@@ -46,13 +50,31 @@
     <!--Navbar-->
     <mdb-navbar SideClass="navbar navbarmidle navbar-expand-lg navbar-dark pl-5 pr-5" [containerInside]="false">
       <!-- Navbar brand -->
-      <a [routerLink]="'/'">
-        <img src="assets/Logoru-ru-1.png" height="50" alt="" class="pr-5">
-      </a>
+
+      <div>
+        <ng-container *ngIf="lang == 'ru'">
+          <a [routerLink]="'/'">
+            <img src="assets/logo/White_ru-min.png" height="50" alt="" class="pr-5">
+          </a>
+        </ng-container>
+
+        <ng-container *ngIf="lang == 'en'">
+          <a [routerLink]="'/'">
+            <img src="assets/logo/White_en-min.png" height="50" alt="" class="pr-5">
+          </a>
+        </ng-container>
+
+        <ng-container *ngIf="lang == 'ro'">
+          <a [routerLink]="'/'">
+            <img src="assets/logo/White_ro-min.png" height="50" alt="" class="pr-5">
+          </a>
+        </ng-container>
+      </div>
       <!-- Collapsible content -->
       <links>
         <form class="form-inline">
-          <input class="form-control d-none d-md-block" type="text" placeholder="{{ 'MAIN.INDEX.Search' | translate}}" aria-label="Search">
+          <input class="form-control d-none d-md-block" type="text" placeholder="{{ 'MAIN.INDEX.Search' | translate}}"
+                 aria-label="Search">
         </form>
 
 
@@ -78,41 +100,177 @@
     </mdb-navbar>
 
 
+    <div class="fixed-top">
+      <div>
+        <!--Navbar-->
+        <mdb-navbar SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder"
+                    [containerInside]="false">
 
-  <div class="fixed-top">
-    <div >
+          <div>
+            <ng-container *ngIf="lang == 'ru'">
+              <a [routerLink]="'/'">
+                <img src="assets/logo/Blue_ru-min.png" height="50" alt="" class="pr-5">
+              </a>
+            </ng-container>
+
+            <ng-container *ngIf="lang == 'en'">
+              <a [routerLink]="'/'">
+                <img src="assets/logo/Blue_en-min.png" height="50" alt="" class="pr-5">
+              </a>
+            </ng-container>
+
+            <ng-container *ngIf="lang == 'ro'">
+              <a [routerLink]="'/'">
+                <img src="assets/logo/Blue_ro-min.png" height="50" alt="" class="pr-5">
+              </a>
+            </ng-container>
+          </div>
+
+          <!-- Navbar brand -->
+          <mdb-navbar-brand style="height: 55px;"><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
+
+          <!-- Collapsible content -->
+          <links>
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown pr-3" dropdown>
+                <a routerLink="/products" type="button" class="nav-link  waves-light " mdbWavesEffect>
+                  {{ 'MAIN.NAVIGATION.Product' | translate }}<span class="caret"></span></a>
+              </li>
+
+              <div>
+                <li class="nav-item dropdown pr-3" dropdown>
+                  <a routerLink="/programs" dropdownToggle mdbWavesEffect type="button"
+                     class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    {{ 'MAIN.NAVIGATION.Programs' | translate }}  <span class="caret"></span></a>
+                  <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Alex
+                      Market</a>
+                    <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect
+                       routerLink="/flagman">Flagman</a>
+                    <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/b52">B52</a>
+                  </div>
+                </li>
+              </div>
+
+
+              <li class="nav-item pr-3">
+                <a class="nav-link waves-light" mdbWavesEffect
+                   routerLink="/support-service">{{ 'MAIN.NAVIGATION.Support' | translate }}</a>
+              </li>
+
+              <li class="nav-item pr-3">
+                <a class="nav-link waves-light" mdbWavesEffect
+                   routerLink="/about">{{ 'MAIN.NAVIGATION.About' | translate }}</a>
+              </li>
+
+
+              <li class="nav-item pr-3">
+                <a class="nav-link waves-light" mdbWavesEffect
+                   routerLink="/contacts">{{ 'MAIN.NAVIGATION.Contacts' | translate }}</a>
+              </li>
+
+
+              <li class="nav-item pr-3">
+                <a class="nav-link waves-light" mdbWavesEffect
+                   routerLink="/news">{{ 'MAIN.NAVIGATION.News' | translate }}</a>
+              </li>
+
+              <li class="nav-item pr-3">
+                <a class="nav-link waves-light" mdbWavesEffect
+                   routerLink="/price-list">{{ 'MAIN.NAVIGATION.Price' | translate }}</a>
+              </li>
+
+            </ul>
+            <!-- Links -->
+
+
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+              <li class="nav-item">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+
+                  <ng-container *ngIf="lang == 'ru'">
+                    <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
+                  </ng-container>
+
+                  <ng-container *ngIf="lang == 'en'">
+                    <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
+                  </ng-container>
+
+                  <ng-container *ngIf="lang == 'ro'">
+                    <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
+                  </ng-container>
+
+                </a>
+
+                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-5">
+
+                  <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
+                    Russian</a>
+                  <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
+                    English</a>
+                  <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
+                    Romanian</a>
+                </div>
+
+              </li>
+
+              <li class="nav-item">
+                <a routerLink="/cart" class="nav-link waves-effect">
+          <span class="badge red z-depth-1 mr-1">
+          </span><i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart">
+                </i>
+                  <mdb-badge *ngIf="order.cartItems !== null; else cartNull"
+                             danger="true">{{order.cartItems}}</mdb-badge>
+                  <ng-template #cartNull>
+                    <mdb-badge danger="true">{{cartItems}}</mdb-badge>
+                  </ng-template>
+                  <span class="sr-only"> Cart </span>
+                </a>
+              </li>
+
+
+            </ul>
+          </links>
+          <!-- Collapsible content -->
+        </mdb-navbar>
+      </div>
+    </div>
+
+    <!--/.Navbar-->
+  </div>
+
+
+  <div>
+    <div class="">
       <!--Navbar-->
-      <mdb-navbar SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder"
+      <mdb-navbar [ngClass]="{'navbar': hide}"
+                  SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder"
                   [containerInside]="false">
 
-        <div >
-          <a [routerLink]="'/'">
-            <img src="assets/Logo_blue_256_ru.png" height="50" alt="" class="pr-5">
-          </a>
-        </div>
-
         <!-- Navbar brand -->
-        <mdb-navbar-brand style="height: 55px;"><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
+        <mdb-navbar-brand><a class="navbar-brand" href=""></a></mdb-navbar-brand>
+
 
         <!-- Collapsible content -->
-        <links>
+        <links [ngClass]="{'d-none': hide}">
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown pr-3" dropdown>
               <a routerLink="/products" type="button" class="nav-link  waves-light " mdbWavesEffect>
-                {{ 'MAIN.NAVIGATION.Product' | translate }}<span class="caret"></span></a>
-              <!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary " role="menu">-->
-              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Торговое</a>-->
-              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Промышленное</a>-->
-              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Видео наблюдение</a>-->
-              <!--          </div>-->
+                {{ 'MAIN.NAVIGATION.Product' | translate }}
+                <span class="caret"></span></a>
+
             </li>
 
             <div>
               <li class="nav-item dropdown pr-3" dropdown>
                 <a routerLink="/programs" dropdownToggle mdbWavesEffect type="button"
                    class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                  {{ 'MAIN.NAVIGATION.Programs' | translate }}  <span class="caret"></span></a>
+                  {{ 'MAIN.NAVIGATION.Programs' | translate }}<span class="caret"></span></a>
                 <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
                   <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Alex
                     Market</a>
@@ -123,42 +281,32 @@
               </li>
             </div>
 
-
-            <!--        <li class="nav-item pr-3">-->
-            <!--          <a class="nav-link waves-light" mdbWavesEffect>Решения</a>-->
-            <!--        </li>-->
             <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/support-service">{{ 'MAIN.NAVIGATION.Support' | translate }}</a>
+              <a class="nav-link waves-light" mdbWavesEffect
+                 routerLink="/support-service">{{ 'MAIN.NAVIGATION.Support' | translate }}</a>
             </li>
 
             <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/about">{{ 'MAIN.NAVIGATION.About' | translate }}</a>
-            </li>
-
-
-
-            <!--        &lt;!&ndash; Dropdown &ndash;&gt;-->
-            <!--        <li class="nav-item dropdown pr-3" dropdown>-->
-            <!--          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>-->
-            <!--            О компании<span class="caret"></span></a>-->
-            <!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">-->
-            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">История комнапии</a>-->
-            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Сертификаты</a>-->
-            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Вакансии</a>-->
-            <!--          </div>-->
-            <!--        </li>-->
-
-            <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/contacts">{{ 'MAIN.NAVIGATION.Contacts' | translate }}</a>
+              <a class="nav-link waves-light" mdbWavesEffect
+                 routerLink="/about">{{ 'MAIN.NAVIGATION.About' | translate }}</a>
             </li>
 
 
             <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/news">{{ 'MAIN.NAVIGATION.News' | translate }}</a>
+              <a class="nav-link waves-light" mdbWavesEffect
+                 routerLink="/contacts">{{ 'MAIN.NAVIGATION.Contacts' | translate }}</a>
             </li>
 
+
             <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/price-list">{{ 'MAIN.NAVIGATION.Price' | translate }}</a>
+              <a class="nav-link waves-light" mdbWavesEffect
+                 routerLink="/news">{{ 'MAIN.NAVIGATION.News' | translate }}</a>
+            </li>
+
+
+            <li class="nav-item pr-3">
+              <a class="nav-link waves-light" mdbWavesEffect
+                 routerLink="/price-list">{{ 'MAIN.NAVIGATION.Price' | translate }}</a>
             </li>
 
           </ul>
@@ -166,10 +314,11 @@
 
 
           <ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item">
+
+            <li class="nav-item pr-3">
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
                  aria-haspopup="true" aria-expanded="false">
 
                 <ng-container *ngIf="lang == 'ru'">
@@ -186,160 +335,14 @@
 
               </a>
 
-              <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-5">
-
-                <a (click)="changeLang('ru')" class="dropdown-item">  <img height="30px" src="assets/lang/russia.png"> Russian</a>
-                <a (click)="changeLang('en')" class="dropdown-item">  <img height="30px" src="assets/lang/en.png"> English</a>
-                <a (click)="changeLang('ro')" class="dropdown-item">  <img height="30px" src="assets/lang/romania.png"> Romanian</a>
-              </div>
-
-            </li>
-
-            <li class="nav-item">
-              <a routerLink="/cart" class="nav-link waves-effect">
-          <span class="badge red z-depth-1 mr-1">
-          </span><i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart">
-              </i>
-                <mdb-badge *ngIf="order.cartItems !== null; else cartNull" danger="true">{{order.cartItems}}</mdb-badge>
-                <ng-template #cartNull>
-                  <mdb-badge danger="true">{{cartItems}}</mdb-badge>
-                </ng-template>
-                <span class="sr-only"> Cart </span>
-              </a>
-            </li>
-
-
-
-            <!--        <li class="nav-item dropdown">-->
-            <!--          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"-->
-            <!--             aria-haspopup="true" aria-expanded="false">-->
-            <!--            <i class="fas fa-user"></i>  </a>-->
-            <!--          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">-->
-            <!--            <a routerLink="/account/login" class="dropdown-item" href="#">Вход</a>-->
-            <!--            <a routerLink="/account/signup" class="dropdown-item" href="#">Регистрация</a>-->
-            <!--          </div>-->
-            <!--        </li>-->
-
-          </ul>
-        </links>
-        <!-- Collapsible content -->
-      </mdb-navbar>
-    </div>
-  </div>
-
-    <!--/.Navbar-->
-  </div>
-
-
-
-
-
-
-
-    <div >
-    <div  class="">
-      <!--Navbar-->
-      <mdb-navbar [ngClass]="{'navbar': hide}"  SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder" [containerInside]="false">
-
-        <!-- Navbar brand -->
-        <mdb-navbar-brand ><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
-
-
-        <!-- Collapsible content -->
-        <links [ngClass]="{'d-none': hide}">
-          <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown pr-3" dropdown>
-              <a  routerLink="/products"  type="button" class="nav-link  waves-light " mdbWavesEffect>
-                {{ 'MAIN.NAVIGATION.Product' | translate }}
-                <span class="caret"></span></a>
-              <!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary " role="menu">-->
-              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Торговое</a>-->
-              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Промышленное</a>-->
-              <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Видео наблюдение</a>-->
-              <!--          </div>-->
-            </li>
-
-            <div>
-              <li class="nav-item dropdown pr-3"  dropdown>
-                <a  routerLink="/programs"  dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"  mdbWavesEffect>
-                  {{ 'MAIN.NAVIGATION.Programs' | translate }}<span class="caret"></span></a>
-                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Alex Market</a>
-                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/flagman">Flagman</a>
-                  <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/b52">B52</a>
-                </div>
-              </li>
-            </div>
-
-
-            <!--        <li class="nav-item pr-3">-->
-            <!--          <a class="nav-link waves-light" mdbWavesEffect>Решения</a>-->
-            <!--        </li>-->
-            <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/support-service">{{ 'MAIN.NAVIGATION.Support' | translate }}</a>
-            </li>
-
-            <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/about">{{ 'MAIN.NAVIGATION.About' | translate }}</a>
-            </li>
-
-            <!--        &lt;!&ndash; Dropdown &ndash;&gt;-->
-            <!--        <li class="nav-item dropdown pr-3" dropdown>-->
-            <!--          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>-->
-            <!--            О компании<span class="caret"></span></a>-->
-            <!--          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">-->
-            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">История комнапии</a>-->
-            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Сертификаты</a>-->
-            <!--            <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect href="#">Вакансии</a>-->
-            <!--          </div>-->
-            <!--        </li>-->
-
-            <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/contacts">{{ 'MAIN.NAVIGATION.Contacts' | translate }}</a>
-            </li>
-
-
-            <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/news">{{ 'MAIN.NAVIGATION.News' | translate }}</a>
-            </li>
-
-
-            <li class="nav-item pr-3">
-              <a class="nav-link waves-light" mdbWavesEffect routerLink="/price-list">{{ 'MAIN.NAVIGATION.Price' | translate }}</a>
-            </li>
-
-          </ul>
-          <!-- Links -->
-
-
-          <ul class="navbar-nav ml-auto nav-flex-icons">
-
-            <li class="nav-item pr-3">
-
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-                 aria-haspopup="true" aria-expanded="false">
-
-                <ng-container *ngIf="lang == 'ru'">
-                <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
-                </ng-container>
-
-                <ng-container *ngIf="lang == 'en'">
-                <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
-                </ng-container>
-
-                <ng-container *ngIf="lang == 'ro'">
-                  <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
-                </ng-container>
-
-              </a>
-
               <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
 
-                <a (click)="changeLang('ru')" class="dropdown-item">  <img height="30px" src="assets/lang/russia.png"> Russian</a>
-                <a (click)="changeLang('en')" class="dropdown-item">  <img height="30px" src="assets/lang/en.png"> English</a>
-                <a (click)="changeLang('ro')" class="dropdown-item">  <img height="30px" src="assets/lang/romania.png"> Romanian</a>
+                <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
+                  Russian</a>
+                <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
+                  English</a>
+                <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
+                  Romanian</a>
               </div>
 
             </li>
@@ -350,29 +353,18 @@
             </span><i id="navbar-static-cart1" alt="Cart" class="fas fa-shopping-cart">
               </i>
                 <mdb-badge *ngIf="order.cartItems !== null; else cartNull" danger="true">{{order.cartItems}}</mdb-badge>
-                <ng-template #cartNull><mdb-badge danger="true">{{cartItems}}</mdb-badge></ng-template>
+                <ng-template #cartNull>
+                  <mdb-badge danger="true">{{cartItems}}</mdb-badge>
+                </ng-template>
                 <span class="sr-only"> Cart </span>
               </a>
             </li>
-
-
-
-            <!--        <li class="nav-item dropdown">-->
-            <!--          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"-->
-            <!--             aria-haspopup="true" aria-expanded="false">-->
-            <!--            <i class="fas fa-user"></i>  </a>-->
-            <!--          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">-->
-            <!--            <a routerLink="/account/login" class="dropdown-item" href="#">Вход</a>-->
-            <!--            <a routerLink="/account/signup" class="dropdown-item" href="#">Регистрация</a>-->
-            <!--          </div>-->
-            <!--        </li>-->
-
           </ul>
         </links>
         <!-- Collapsible content -->
       </mdb-navbar>
     </div>
-    </div>
+  </div>
 
 
 </header>
@@ -394,13 +386,14 @@
         <!-- Grid column -->
         <div class="col-md-2 mx-auto pt-5">
           <!-- Links -->
-          <strong class="font-weight-bold text-uppercase mt-3 mb-4 my-translated-paragraph">{{ 'MAIN.FOOTER.CHISINAU.Name' | translate }}</strong>
+          <strong
+            class="font-weight-bold text-uppercase mt-3 mb-4 my-translated-paragraph">{{ 'MAIN.FOOTER.CHISINAU.Name' | translate }}</strong>
           <ul class="list-unstyled">
             <li>
               <div [innerHTML]="'MAIN.FOOTER.CHISINAU.Adress' | translate"></div>
             </li>
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.CHISINAU.Phone' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.CHISINAU.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
@@ -414,23 +407,24 @@
           <strong class="font-weight-bold text-uppercase mt-3 mb-4">{{ 'MAIN.FOOTER.BALTI.Name' | translate }}</strong>
           <ul class="list-unstyled">
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.BALTI.Adress' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.BALTI.Adress' | translate }}</a>
             </li>
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.BALTI.Phone' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.BALTI.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
 
         <hr class="clearfix w-100 d-md-none">
         <div class="col-md-2 mx-auto pt-5">
-          <strong class="font-weight-bold text-uppercase mt-3 mb-4">{{ 'MAIN.FOOTER.TIRASPOL.Name' | translate }}</strong>
+          <strong
+            class="font-weight-bold text-uppercase mt-3 mb-4">{{ 'MAIN.FOOTER.TIRASPOL.Name' | translate }}</strong>
           <ul class="list-unstyled">
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.TIRASPOL.Adress' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.TIRASPOL.Adress' | translate }}</a>
             </li>
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.TIRASPOL.Phone' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.TIRASPOL.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
@@ -439,23 +433,24 @@
           <strong class="font-weight-bold text-uppercase mt-3 mb-4">{{ 'MAIN.FOOTER.COMRAT.Name' | translate }}</strong>
           <ul class="list-unstyled">
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.COMRAT.Adress' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.COMRAT.Adress' | translate }}</a>
             </li>
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.COMRAT.Phone' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.COMRAT.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
         <hr class="clearfix w-100 d-md-none">
         <div class="col-md-2 mx-auto pt-5">
           <!-- Links -->
-          <strong class="font-weight-bold text-uppercase mt-3 mb-4">{{ 'MAIN.FOOTER.DROCHIA.Name' | translate }}</strong>
+          <strong
+            class="font-weight-bold text-uppercase mt-3 mb-4">{{ 'MAIN.FOOTER.DROCHIA.Name' | translate }}</strong>
           <ul class="list-unstyled">
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.DROCHIA.Adress' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.DROCHIA.Adress' | translate }}</a>
             </li>
             <li>
-              <a href="#!">{{ 'MAIN.FOOTER.DROCHIA.Phone' | translate }}</a>
+              <a href="">{{ 'MAIN.FOOTER.DROCHIA.Phone' | translate }}</a>
             </li>
           </ul>
         </div>

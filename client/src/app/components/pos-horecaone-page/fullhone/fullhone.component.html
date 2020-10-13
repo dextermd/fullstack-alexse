@@ -1,7 +1,11 @@
 <div class="container grey lighten-4 py-5">
   <!--Section: Content-->
   <section class="text-center px-md-5 mx-md-5 dark-grey-text wow zoomIn" data-wow-delay="0.6s">
-    <h3 class="font-weight-bold">КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ <span class="blue-text"> HoReCa-1</span></h3>
+    <h3 class="font-weight-bold">
+      {{'Flagman.Horeca1.Full.TitleTop' | translate}}
+      <span class="blue-text">
+        {{'Flagman.Horeca1.Full.TitleBottom' | translate}}
+      </span></h3>
   </section>
 </div>
 
@@ -62,31 +66,33 @@
 
       <div class="col-lg-6 text-center text-md-left wow fadeInRight" data-wow-delay="0.6s">
 
-        <h3 class="h3-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 pb-5">СОСТАВ КОМПЛЕКТА:</h3>
+        <h3 class="h3-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 pb-5">
+          {{'Flagman.Horeca1.Full.ComplectTitle' | translate}}
+        </h3>
 
 
         <div class="font-weight-normal">
 
 
           <h5 class="ml-xl-0 ml-4">
-            <strong>1.</strong><span class="blue-text">Программа Flagman </span> (Front Office + Back Office)</h5>
+            <strong>1.</strong><span class="blue-text">{{'Flagman.Horeca1.Full.ComplectOne' | translate}} </span> {{'Flagman.Horeca1.Full.ComplectOneOne' | translate}}</h5>
           <h5 class="ml-xl-0 ml-4">
-            <strong>2.</strong> Мини-компьютер PiPo X10</h5>
+            <strong>2.</strong>{{'Flagman.Horeca1.Full.ComplectTwo' | translate}}</h5>
           <h5 class="ml-xl-0 ml-4">
-            <strong>3.</strong> Кассовый аппарат Datecs DP-150SD с аккум.</h5>
+            <strong>3.</strong>{{'Flagman.Horeca1.Full.ComplectThree' | translate}}</h5>
           <h5 class="ml-xl-0 ml-4 pb-1">
-            <strong>4.</strong>  Принтер термо RP58 USB</h5>
+            <strong>4.</strong>{{'Flagman.Horeca1.Full.ComplectFour' | translate}}</h5>
           <hr>
 
           <div class="d-flex justify-content-between py-2">
             <div>
-              <img src="assets/alexmarket/313131-check-30x30.png"><span>  Компактный</span>
+              <img src="assets/alexmarket/313131-check-30x30.png"><span>  {{'Flagman.Horeca1.Full.ComplectGiveOne' | translate}}</span>
             </div>
             <div>
-              <img src="assets/alexmarket/313131-check-30x30.png"><span>  Надежный</span>
+              <img src="assets/alexmarket/313131-check-30x30.png"><span>  {{'Flagman.Horeca1.Full.ComplectGiveTwo' | translate}}</span>
             </div>
             <div>
-              <img src="assets/alexmarket/313131-check-30x30.png"><span>  Мощный</span>
+              <img src="assets/alexmarket/313131-check-30x30.png"><span>  {{'Flagman.Horeca1.Full.ComplectGiveThree' | translate}}</span>
             </div>
           </div>
           <ng-container *ngIf="this.main.lang == 'ru'">
@@ -107,11 +113,18 @@
 
           <h3 class="h3-responsive text-center text-md-left mb-3 ml-xl-0 ml-4 pt-3">
           <span class="red-text font-weight-bold">
-            <strong class="pr-3"><span class="black-text">Цена:</span> 18 600 MDL</strong>
+            <strong class="pr-3">
+              <span class="black-text">
+              {{'Flagman.Horeca1.Full.ComplectPriceTitle' | translate}}
+              </span>
+              {{'Flagman.Horeca1.Full.ComplectPrice' | translate}}
+            </strong>
           </span>
             <span class="grey-text">
             <small>
-              <s>20 704 MDL</s>
+              <s>
+                {{'Flagman.Horeca1.Full.ComplectOldPrice' | translate}}
+              </s>
             </small>
           </span>
           </h3>
@@ -120,7 +133,9 @@
             <div class="row  mb-2">
               <div class="col-md-12 text-center text-md-left ">
                 <button class="btn btn-primary btn-rounded">
-                  <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> Заказать</button>
+                  <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i>
+                  {{'BUTTONS.Order' | translate}}
+                </button>
               </div>
             </div>
           </div>

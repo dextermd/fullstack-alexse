@@ -60,7 +60,8 @@
     "GoShop": "Merge la magazin",
     "Call": "APELEAZĂ",
     "Write": "SCRIE",
-    "Send": "Trimite mesaj"
+    "Send": "Trimite mesaj",
+    "Detail": "DETALIAT"
   },
   "HOME": {
     "INFO_SHORT": {
@@ -1083,6 +1084,452 @@
         "Eight": "780",
         "Nine": "RS232",
         "Ten": "Medium (III)"
+      }
+    }
+  },
+  "Flagman": {
+    "Header": {
+      "Title": "Flagman - pachet software pentru hoteluri și restaurante"
+    },
+    "SecondFlag": {
+      "Title": "Mulțumită software-ului „Flagman” <br> Veți putea:",
+      "IconOne": "Construi evidența și administrarea depozitului în restaurant folosind programul nostru",
+      "IconTwo": "Monitoriza personalul, crește eficiența angajaților și eradica furtul",
+      "IconThree": "Proteja datele evidenței contabile de persoanele din afară",
+      "IconFour": "Construi un program de loialitate și de reîntoarcere a clienților",
+      "IconFive": "Lucra de la distanță (pentru proprietar) cu programul de oriunde din lume",
+      "IconSix": "Crește cecul mediu și profitul instituției"
+    },
+    "ThreeFlag": {
+      "Title": "Noi avem soluția",
+      "Icon1": "Automatizarea restaurantului",
+      "Icon2": "Automatizarea cafenelei",
+      "Icon3": "Automatizarea fast-foodului",
+      "Icon4": "Automatizarea rețelei de restaurante",
+      "Icon5": "Automatizarea cateringului",
+      "Icon6": "Automatizarea cateringului corporative",
+      "Icon7": "Automatizarea barului",
+      "Icon8": "Automatizarea clubului de billiard",
+      "Icon9": "Automatizarea restaurantelor hoteliere",
+      "Icon10": "Automatizarea livrării alimentelor"
+    },
+    "FourFlag": {
+      "Title": "Automatizarea completă a restaurantului sau cafenelei este:",
+      "Icon1": "Veți obține o situație completă a veniturilor și cheltuielilor și un bilanț contabil",
+      "Icon2": "Configurarea unui bloc de rapoarte pentru proprietar",
+      "Icon3": "Automatizăm toate procesele din bucătărie și deservirea clienților",
+      "Icon4": "Configurăm contabilitatea de gestiune, financiară și de deposit",
+      "Icon5": "Veți obține o situație completă a veniturilor și cheltuielilor și un bilanț contabil",
+      "Icon6": "Configurăm controlul la distanță pentru proprietar de oriunde din lume",
+      "Icon7": "Integrăm rapoartele contabile și cele fiscale",
+      "Icon8": "Configurăm integrarea telefoniei SIP cu site-ul web al instituției",
+      "Icon9": "Asigurăm securitatea datelor și controlul accesului",
+      "Icon10": "Integrare continuu a hotelului, clubului de fitness sau lanțului de instituții"
+    },
+    "DivFlag": {
+      "Title": "Posibilitățile soft-ului"
+    },
+    "SixFlag": {
+      "IconTitle1": "Procesarea rapidă a comenzii",
+      "IconText1": "Interfața este concepută pentru introducerea rapidă a comenzilor. Deja în decurs de o zi, angajații reduc timpul de procesare a comenzii în mediu cu 35%.",
+      "IconTitle2": "Harta convenabilă a sălilor",
+      "IconText2": "O diagramă grafică vizuală a sălii va arăta mesele libere și cele ocupate. Culoarea mesei va corespunde cu statutul comenzii, ceea ce va ajuta la deservirea operativă a clienților.",
+      "IconTitle3": "Modul fast-food",
+      "IconText3": "Toate datele sunt stocate pe computerul dvs. Nu este necesară conexiunea la Internet. Dezactivați harta sălii dacă unitatea funcționează în regim fast-food. De asemenea, puteți atribui butoanelor imagini cu felurile de mâncare pentru procesarea mai rapidă a comenzilor.",
+      "IconTitle4": "STOP lista felurilor de mâncare",
+      "IconText4": "Felurile de mâncare indisponibile temporar sunt înregistrate într-o listă STOP cu posibilitatea activării rapide.",
+      "IconTitle5": "Glisoare la bucătărie, bar, grătar",
+      "IconText5": "Evitați comunicarea personală dintre ospătari, bucătari și barmani. Modificatorii din comandă vă vor propune cum să pregătiți și să serviți felul de mâncare.",
+      "IconTitle6": "Orice metodă de plată",
+      "IconText6": "Numerar, card de credit, fără numerar, barter, card club, certificat. Comanda poate fi achitată în rate.",
+      "IconTitle7": "Împărțirea contului pe clienți",
+      "IconText7": "Puteți împărți cu ușurință și rapid un cont în mai multe între persoanele din companie.",
+      "IconTitle8": "Cec cu sigla instituției",
+      "IconText8": "Pe fiecare cec puteți plasa sigla și adresa restaurantului.",
+      "IconTitle9": "Modulul administratorului - Stop furturi!",
+      "IconText9": "Setați o parolă de administrator pentru acțiunile pentru care securitatea sporită este importantă: ștergerea unui articol după tipărirea facturii, reducere, închiderea unei comenzi fără plată.",
+      "IconTitle10": "Muncă fiabilă fără internet",
+      "IconText10": "Munca în spațiul front nu este legată de munca internetului. Datele nu se pierd atunci când internetul este deconectat și munca nu se oprește niciun minut."
+    },
+    "SevenFlag": {
+      "IconTitle1": "Chelner mobil și e-meniu",
+      "IconText1": "O soluție alternativă pentru chelneri și administratori bazată pe o tabletă sau smartphone. Funcționează în două moduri: chelner mobil și un meniu electronic.",
+      "IconTitle2": "Cum functioneaza?",
+      "IconText2": "În modul de chelner mobil, permite chelnerului să introducă comanda direct în procesul comunicării cu clientul, fără a părăsi masa și ajută la reducerea timpului petrecut alergând sau  stând la coadă la casă (checkout).",
+      "IconTitle3": "Codul cheat",
+      "IconText3": "Mulți dintre clienții noștri își organizează munca în felul următor: împart chelnerii în două grupuri - cei mai experimentați primesc comenzi, trimițându-le instantaneu de pe tabletă în bucătărie, în timp ce alții servesc bucatele clienților."
+    },
+    "Flag": {
+      "IconTitle1": "+ 10% la venituri datorită creșterii cecului mediu",
+      "IconText1": "Cecul mediu se mărește cu 10%, deoarece clientul nu mai trebuie să facă eforturi pentru a comanda o altă ceașcă de cafea sau cocktail.",
+      "IconTitle2": "26% economii",
+      "IconText2": "Proprietarii de restaurante economisesc în medie 26% din salariile de chelner, deoarece mai puțini oameni deservesc aceeași zonă.",
+      "IconTitle3": "De 5 ori mai ieftin la achiziționarea unui loc de muncă staționar",
+      "IconText3": "În plus, costul unui chelner mobil în cumpărare: o tabletă și un program este de 5 ori mai ieftin decât cumpărarea unui alt terminal POS staționar și a unei licențe partea frontală."
+    },
+    "DivTech": {
+      "Title": "Suport tehnic 365/7",
+      "Text": "Probabil una dintre cele mai importante componente pentru buna funcționare a unei unități este un serviciu de asistență de încredere.<br> Înțelegem foarte bine ce este o imprimantă ieșită din funcțiune sâmbătă seara! Vom deveni un partener de încredere al unității dvs., <br> astfel încât să vă puteți servi oaspeții fără întreruperi."
+    },
+    "ComplectFlag": {
+      "Title": "AUTOMATIZARE COMPLETA LA CHEIE",
+      "SubTitle": "Seturi POS pentru restaurant și cafenea - personalizate, testate, cu software instalat",
+      "OneTitle": "SET DE AUTOMATIZARE<p>HoReCa-1",
+      "OneText": "Variantă bugetară pentru automatizarea <br> pizzeriilor mici  și mini cafenelelor",
+      "OneButton": "ALEGE SETUL HORECA-1",
+      "TwoTitle": "SET DE AUTOMATIZARE<p>POS HoReCa-2",
+      "TwoText": "Opțiune pentru ducerea evidenței <br> comerciale în restaurante și baruri",
+      "TwoButton": "ALEGE SETUL POS HORECA-2"
+    },
+    "Horeca1": {
+      "Header": {
+        "Title": "POS - SISTEMĂ SERIA COMPACT",
+        "One": "Cafenele",
+        "Two": "Fast-food",
+        "Three": "Baruri",
+        "Four": "Bufete",
+        "Five": "Mini cafenele"
+      },
+      "Full": {
+        "TitleTop": "SET PENTRU AUTOMATIZAREA COMERȚULUI",
+        "TitleBottom": "HoReCa-1",
+        "ComplectTitle": "Componența setului:",
+        "ComplectOne": "Soft  Flagman",
+        "ComplectOneOne": "(Front Office + Back Office)",
+        "ComplectTwo": "Mini PC PiPo X10",
+        "ComplectThree": "Casă de marcat Datecs DP-150SD cu baterie",
+        "ComplectFour": "Imprimantă termică RP58 USB",
+        "ComplectGiveOne": "Compact",
+        "ComplectGiveTwo": "Fiabil",
+        "ComplectGiveThree": "Durabil",
+        "ComplectPriceTitle": "Prețul:",
+        "ComplectPrice": "18 600 MDL",
+        "ComplectOldPrice": "20 704 MDL"
+      },
+      "MiniPos": {
+        "TitleTop": "Tabletă MicroPOS de nouă generație",
+        "TitleBottom": "Mini-PC PiPo X10",
+        "SpecTitleOne": "Panou senzorial",
+        "SpecTextOne": "Ecran de 10,8 cu rezoluție FHD 1920 * 1280 și răspuns instantaneu al senzorului",
+        "SpecTitleTwo": "Stocare rapidă a datelor",
+        "SpecTextTwo": "Memorie DDR3 de 4 GB și hard disk SSD modern și rapid de 64 GB",
+        "SpecTitleThree": "Set mare de interfețe",
+        "SpecTextThree": "4 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, WiFi și altele",
+        "SpecTitleFour": "Funcționează de la baterie",
+        "SpecTextFour": "10000 mAh"
+      },
+      "DatecsDPSD": {
+        "TitleTop": "Casă de marcat",
+        "TitleBottom": "Datecs DP-150 SD battery",
+        "SpecTitleOne": "Număr mare de intefețe",
+        "SpecTextOne": "2 x port RS-232C pentru conectare: 1 x dispozitiv USB de clasă prin mini-USB (opțional) 1 x Box Control",
+        "SpecTitleTwo": "Viteza de lucru",
+        "SpecTextTwo": "până la 12 linii pe secundă",
+        "SpecTitleThree": "Memoria fiscală",
+        "SpecTextThree": "Non-volatilă, poate suporta până la 1825 de rapoarte zilnice",
+        "SpecTitleFour": "Funcționează de la baterie",
+        "SpecTextFour": "Nu necesită priză"
+      },
+      "RP58": {
+        "TitleTop": "POS Imprimantă termică USB",
+        "TitleBottom": "Imprimantă termică RP58 USB",
+        "SpecTitleOne": "Viteza de lucru",
+        "SpecTextOne": "Imprimare rapidă a cecurilor la 100 mm / s",
+        "SpecTitleTwo": "Claritate înaltă",
+        "SpecTextTwo": "Tipărirea cecurilor de înaltă claritate",
+        "SpecTitleThree": "Bandă de diametru mare",
+        "SpecTextThree": "Se potrivește o rolă cu diametrul de 58 mm, nu trebuie să schimbați banda des",
+        "SpecTitleFour": "Imprimare logouri și coduri de bare",
+        "SpecTextFour": "Imprimanta imprimă logouri și coduri de bare 1D / 2D",
+        "SpecTitleFive": "Durabilitate",
+        "SpecTextFive": "100 km - resursa capului de imprimare al producătorului japonez",
+        "SpecTitleSix": "Compatibilitate",
+        "SpecTextSix": "Cu orice sisteme de operare și programe de evidență"
+      },
+      "Soft": {
+        "TitleTop": "Soft-ul de automatizare a restaurantelor Flagman",
+        "TitleBottom": "Interfața programului pentru restaurante și principalele sale caracteristici:",
+        "SpecTitleOne": "MENIUL ȘI LOCUL CASEI",
+        "SpecTextOne": "Doar transferați meniul standard în program, păstrând categoriile și subcategoriile. Imprimarea instantanee a cecurilor clienților. Sisteme de loialitate și reducere și multe alte oportunități. Lucru rapid cu comenzile și raport de vânzări!",
+        "SpecTitleTwo": "BUCATARIE & BAR",
+        "SpecTextTwo": "Glisorul este imprimat pe imprimanta din bucătărie imediat ce chelnerul plasează o comandă. De la comandă la servirea mesei – doar câteva minute! Clienți mulțumiți și fericiți și mai multe comenzi.",
+        "SpecTitleThree": "RAPOARTE ȘI ANALIZE",
+        "SpecTextThree": "Rapoartele (personalizate) vor fi trimise la e-mailul dvs. în fiecare zi după închiderea schimbului. Diagramele de analiză vizuală pentru orice indicator și pentru orice perioadă de timp. Analiza este calea spre succes!"
+      },
+      "Android": {
+        "TitleTop": "Aplicație Android",
+        "TitleBottom": "Chelner mobil",
+        "SpecTitleOne": "Creșterea profitului cu 20%",
+        "SpecTextOne": "Lipsa agitației fără sens a chelnerilor - mai mulți clienți deserviți - mai mult profit",
+        "SpecTitleTwo": "Feedback",
+        "SpecTextTwo": "Când comanda este gata, bucătarul / barmanul o marchează pe ecranul tactil, iar chelnerul este instantaneu notificat pe smartphone",
+        "SpecTitleThree": "Funcționează pe Android",
+        "SpecTextThree": "Aplicația este instalată pe orice tabletă sau smartphone Android prin Google Play Market",
+        "SpecTitleFour": "Procesare rapidă a comenzilor",
+        "SpecTextFour": "Comenzile plasate în aplicație sunt transferate instantaneu pe un monitor sau o imprimantă instalată în bucătărie / bar"
+      }
+    },
+    "Horeca2": {
+      "Header": {
+        "Title": "POS - SISTEMĂ SERIA COMPACT",
+        "One": "Cafenele",
+        "Two": "Fast-food",
+        "Three": "Baruri",
+        "Four": "Bufete",
+        "Five": "Mini cafenele"
+      },
+      "Full": {
+        "TitleTop": "SET PENTRU AUTOMATIZAREA COMERȚULUI",
+        "TitleBottom": "HoReCa-2",
+        "ComplectTitle": "Componența setului:",
+        "ComplectOne": "Soft  Flagman",
+        "ComplectOneOne": "(Front Office + Back Office)",
+        "ComplectTwo": "TERMINAL POS B15 MicroPOS 5-wire resistive",
+        "ComplectThree": "Imprimantă termică RP328 (RS-232+USB+Ethernet).",
+        "ComplectGiveOne": "Compact",
+        "ComplectGiveTwo": "Fiabil",
+        "ComplectGiveThree": "Durabil",
+        "ComplectPriceTitle": "Prețul:",
+        "ComplectPrice": "21 600 MDL",
+        "ComplectOldPrice": "24 005 MDL"
+      },
+      "MicroPos": {
+        "TitleTop": "MicroPOS elegant",
+        "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+        "SpecTitleOne": "Panou senzorial",
+        "SpecTextOne": "Ecran tactil cu rezoluție HD 1366 × 768 și răspuns instantaneu al senzorului",
+        "SpecTitleTwo": "Viteză",
+        "SpecTextTwo": "Terminalul este echipat cu un procesor J1900 de nouă generație cu performanțe ridicate și consum redus de energie",
+        "SpecTitleThree": "Stocare rapidă a datelor",
+        "SpecTextThree": "Memorie DDR3 de 4 GB și hard disk SSD modern de 64 GB",
+        "SpecTitleFour": "Set mare de interfețe",
+        "SpecTextFour": "6 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, RS232 și altele"
+      },
+      "RP328": {
+        "TitleTop": "POS Imprimantă termică USB",
+        "TitleBottom": "Imprimantă termică RP328 (RS-232+USB+Ethernet)",
+        "SpecTitleOne": "Viteza de lucru",
+        "SpecTextOne": "Imprimare rapidă a cecurilor la 100 mm / s",
+        "SpecTitleTwo": "Claritate înaltă",
+        "SpecTextTwo": "Tipărirea cecurilor de înaltă claritate",
+        "SpecTitleThree": "Bandă de diametru mare",
+        "SpecTextThree": "Se potrivește o rolă cu diametrul de 58 mm, nu trebuie să schimbați banda des",
+        "SpecTitleFour": "Imprimare logouri și coduri de bare",
+        "SpecTextFour": "Imprimanta imprimă logouri și coduri de bare 1D / 2D",
+        "SpecTitleFive": "Durabilitate",
+        "SpecTextFive": "100 km - resursa capului de imprimare al producătorului japonez",
+        "SpecTitleSix": "Compatibilitate",
+        "SpecTextSix": "Cu orice sisteme de operare și programe de evidență"
+      }
+    }
+  },
+  "B52": {
+    "Header": {
+      "Title": "Produs software modern<p>pentru gestionarea unui hotel, restaurant,<br> sală de fitness."
+    },
+    "First": {
+      "One": "Sistem de automatizare pentru hoteluri, hanuri, pensiuni",
+      "Two": "Automatizarea saloanelor de fitness, spa, saloanelor de înfrumusețare",
+      "Three": "Sistem de automatizare a restaurantului",
+      "Four": "Sistem de automatizare a camerei de billiard"
+    },
+    "Second": {
+      "Title": "B52 vă va ajuta",
+      "One": "Îmbunătăți calitatea serviciilor",
+      "Two": "Sistematiza contabilitatea de gestiune",
+      "Three": "Atrage mai mulți clienți",
+      "Four": "Stabili controlul asupra afacerii"
+    },
+    "Div": {
+      "Title": "Vom efectua întreg ciclu de lucrări legate de instalarea proiectului"
+    },
+    "More": {
+      "One": "Vom efectua o analiză al întreprinderii",
+      "Two": "Vom oferi un set optim de echipamente și software",
+      "Three": "Vom instala complexul software și hardware",
+      "Four": "Vom efectua ajustarea conform cerințelor specifice",
+      "Five": "Vom instrui personalul, vom realiza certificarea",
+      "Six": "Vom oferi o opțiune de deservire convenabilă"
+    },
+    "Hotel": {
+      "Header": {
+        "Title": "SISTEM <p> AUTOMATIZARE",
+        "SubTitle": "HOTELURI, HANURI, PENSIUNI"
+      },
+      "First": {
+        "ImageTitleOne": "Eliminați supra-rezervarea",
+        "ImageTextOne": "B52 nu vă va permite să rezervați aceeași cameră de două ori la rezervarea de la ghișeu, de către managerii departamentului de rezervări, prin modulul WEB de pe site, prin zeci de canale de vânzare.",
+        "ImageTitleTwo": "Curățarea camerelor sub control",
+        "ImageTextTwo": "Acum programul va completa camerele pentru femeile de serviciu pentru dvs. Veți afla despre problemele apărute în timpul curățeniei și veți reacționa la timp.",
+        "ImageTitleThree": "Programe promoționale",
+        "ImageTextThree": "Interesați oaspeții cu tot felul de programe de loialitate.",
+        "ImageTitleFour": "Evidență complexă",
+        "ImageTextFour": "Implementarea oricărui serviciu (restaurant, spa, minibar) va apărea automat în contul personal al oaspetelui. B52 este o evidență complexă. Nu există operațiuni de transfer de date între bazele de date. Totul într-un singur sistem de control.",
+        "ImageTitleFive": "Room service",
+        "ImageTextFive": "Oaspeții pot comanda servicii suplimentare de pe smartphone-urile lor. Recepția va vedea imediat și va suna înapoi dacă este necesar pentru a clarifica detaliile.",
+        "ImageTitleSix": "Pentru administratorii companiilor",
+        "ImageTextSix": "Managerii dvs. vor rezerva camere cu ușurință, comutând între „șahurile” hotelurilor."
+      },
+      "Second": {
+        "OneTop": "Recepția hotelului",
+        "OneCenter": "Modul de recepție",
+        "OneBottom": "La recepția hotelului, setul funcțional al modulului repetă complet setul de sarcini al recepționerului pentru lucrul cu oaspeții. Include o analiză a numărului disponibil de camere, înregistrarea oaspetelui în cameră cu introducerea datelor personale în baza de clienți, înregistrarea serviciilor hoteliere standard oferite și a serviciilor suplimentare, evidența mini-barului, emiterea facturilor periodice, tarifarea serviciilor de internet și telefonie, plata periodică și finală a oaspeților.",
+        "TwoTop": "Departamentul rezervări",
+        "TwoCenter": "Modul pentru managerii departamentului de rezervări",
+        "TwoBottom": "Atunci când o cerere este formată de un angajat al serviciului de rezervare, sistemul furnizează informații despre stocul disponibil de camere pentru perioada viitorului sejur al oaspeților și grupurilor turistice. Interfața comenzii presupune alegerea camerelor libere pe baza parametrilor principali: lista etajelor, categorii, trăsăturile caracteristice ale camerei. Comanda înregistrată este vizibilă automat în modulul de recepție ca rezervare de cameră. Documentul de confirmare a rezervării este tipărit.",
+        "ThreeTop": "Serviciu de menaj",
+        "ThreeCenter": "Modul servicii de menaj",
+        "ThreeBottom": "Este menținută introducerea / eliminarea camerelor pentru renovare sau curățenie. Partea materială a evidenței vă permite să înregistrați circulația bunurilor de uz casnic, inventarul lor periodic. Un modul special pentru șeful serviciului de menaj permite organizarea curățeniei, distribuirea în timp, conform listei menajerelor. Posibilitatea de a crea un program de ieșiri la lucru pentru menajere economisește fondul de salarizare."
+      },
+      "Three": {
+        "OneTop": "Restaurant",
+        "OneCenter": "Module hostess, barman, chelner",
+        "OneBottom": "Restaurantul hotelului funcționează în regimul deservirii oaspeților hotelului. Înregistrarea unui vizitator are loc la locul de muncă al hostesului, cu controlul plății alimentelor. Dacă mâncarea nu este inclusă în costul șederii, factura poate fi plătită pe loc prin toate mijloacele disponibile sau pentru a închide datoria către cameră. Restaurantul, pe lângă faptul că servește oaspeții hotelului, poate fi deschis clienților externi.",
+        "TwoTop": "Sistem rezervări",
+        "TwoCenter": "Modul rezervare pentru site",
+        "TwoBottom": "Modulul permite oaspetelui dvs. să aleagă independent o cameră, să rezerve și să plătească pentru aceasta. Sistemul monitorizează ocuparea hotelului și previne supra-rezervarea. Programele promoționale sunt acceptate. Calendarul de disponibilitate îi va ajuta pe oaspeți să aleagă zilele convenabile. Noua rezervare va fi expediată automat la B52 și va fi reflectată în tabla de șah. Confirmarea rezervării poate fi trimisă imediat oaspeților prin e-mail sau pre-procesată de către managerul rezervării."
+      },
+      "Four": {
+        "OneTop": "WEB",
+        "OneCenter": "Interfața WEB pentru comanda de la distanță",
+        "OneBottom": "Serviciul vă permite să efectuați toate funcțiile departamentului de rezervări utilizând un browser de pe orice dispozitiv disponibil: computer personal, tabletă sau smartphone. Acest lucru face posibil ca managerii să rezerve camere fără a fi în hotel, iar proprietarul hotelului poate controla gradul de ocupare și situația financiară.",
+        "TwoTop": "Încuietori electronice",
+        "TwoCenter": "Conexiune la sistemul de chei electronice",
+        "TwoBottom": "Instalarea cheilor electronice face posibilă controlul accesului la camerele hotelului. Conectarea acestui serviciu la B52 face imposibile găszduirile nedeclarate. Fără înregistrarea oaspetelui în program, nu va fi posibilă codificarea cheii electronice, ceea ce reduce pierderile financiare ale hotelului. În programul B 52 sunt integrate mai mult de zece sisteme de control al accesului camerei."
+      },
+      "Five": {
+        "OneTop": "Chanel manager",
+        "OneCenter": "Canalele de vânzări",
+        "OneBottom": "Pentru a maximiza ocuparea stocului de camere ale hotelului, sunt utilizate diferite canale de vânzare, cum ar fi booking.com, Airbnb, Expedia. Pentru a lucra cu ei, este convenabil să conectați Channel manager, care vă va permite să sincronizați toate vânzările într-un punct. Putem conecta B52 la alegere la unul dintre cele două servicii similare: Trevelline sau YieldPlanet. Planurile tarifare vor fi încărcate automat prin intermediul serviciului către toate canalele de vânzare, iar rezervările vor merge automat la table de șah în B52."
+      }
+    },
+    "Restaurant": {
+      "Header": {
+        "Title": "SISTEM DE <p> AUTOMATIZARE<p> RESTAURANTE"
+      },
+      "First": {
+        "ImageTitleOne": "Interfață simplă și сlară",
+        "ImageTextOne": "Chelnerii și barmanii vor începe să lucreze la cinci minute după instalare. Este de dorit ca contabilul să aibă studii  specializate, dar nu neapărat – îl vom instrui.",
+        "ImageTitleTwo": "Imprimarea fiscală",
+        "ImageTextTwo": "Programul este adaptat pentru funcționarea cu toate imprimantele fiscale din registrul serviciilor de decontare și numerar din Republica Moldova. Mai multe persoane juridice? - nici o problemă.",
+        "ImageTitleThree": "Identificare",
+        "ImageTextThree": "Tot felul de opțiuni de identificare a oaspeților la alegere: bandă magnetică, cod de bare, card fără contact, identificare cu amprentă, după ultimele cifre ale numărului de telefon cu confirmare prin SMS.",
+        "ImageTitleFour": "Nu-ți pierde banii",
+        "ImageTextFour": "Vom închide locurile potențiale de pierderi financiare. Personalul dvs. este creativ? - vă vom arăta cum și unde.",
+        "ImageTitleFive": "Imprimante de cecuri",
+        "ImageTextFive": "Vom crea forme frumoase de facturi și încorporări pentru dvs. Programul nu limitează alegerea dispozitivului de imprimare. Bluetooth și WiFi - imprimantele interacționează cu terminalele mobile.",
+        "ImageTitleSix": "Marketing",
+        "ImageTextSix": "Extindeți-vă baza de clienți atrăgând noi oaspeți cu programe de fidelizare."
+      },
+      "Second": {
+        "OneTop": "Sala restaurantului",
+        "OneCenter": "Modul staționar pentru chelneri / barmani",
+        "OneBottom": "Nu suntem susținători ai modulelor universale. Un monitor fix de terminal POS vă permite să creați interfețe convenabile și intuitive fără a fi nevoie să deschideți o fereastră separată pentru fiecare operație.",
+        "TwoTop": "Sala restaurantului",
+        "TwoCenter": "Modul mobil pentru chelneri",
+        "TwoBottom": "Modulul vă permite să lucrați cu o comandă pe un smartphone sau tabletă. Sincronizarea cu baza centrală are loc prin WiFi sau 3 / 4g. Prezența constantă în zona de comunicație nu este necesară, dispozitivul poate funcționa autonom până în momentul trimiterii comenzii la imprimare. Cu ajutorul dispozitivelor mobile, puteți împărți chelnerii în „vorbitori” și cei care servesc masa. Un chelner cu un smartphone nu este legat de sala restaurantului, unde se află stația staționară, și poate deservi oaspeții pe terasa deschisă. Prezența unui modul NFC în smartphone permite oaspeților să fie identificați printr-un card fără contact."
+      },
+      "Three": {
+        "OneTop": "Sala restaurantului",
+        "OneCenter": "Modulul pentru administratorul restaurantului",
+        "OneBottom": "Acesta nu este un modul separat, ci o parte din funcționalitatea modulului chelner / barman. Administratorul obține acces la aceste funcții prin setarea drepturilor pentru poziția „Administrator”. Funcțiile avansate permit administratorului să monitorizeze activitatea restaurantului, examinând toate facturile, controlând astfel calitatea muncii chelnerilor și barmanilor. Drepturile extinse vă permit să re-imprimați facturile, dacă este necesar, cu posibilitatea de a controla în continuare acest fapt din partea conducerii, recalculând factura la cost."
+      },
+      "Four": {
+        "OneTop": "Bucătărie",
+        "OneCenter": "Modulul bucătarului",
+        "OneBottom": "În livrarea standard, o imprimantă este instalată în bucătărie sau în fiecare încăpere al blocului alimentar. Instalarea unui computer cu un modul pentru bucătar extinde semnificativ capacitățile sistemului. Înregistrările comenzilor care sunt tipărite pe imprimanta apar automat pe ecranul computerului. Pentru fiecare intrare, bucătarul poate marca faptul că comanda a fost acceptată pentru preparare și, dacă este necesar, poate crea o cerere de transfer a ingredientelor din depozit. Marcarea faptului de îndeplinire a comenzii se trimite sub forma unui mesaj despre finalizarea comenzii către terminalul POS. Dacă chelnerul care a trimis comanda este echipat cu un smartphone, va primi un mesaj despre aceasta pe telefonul său. Un avantaj suplimentar este capacitatea de a controla viteza de execuție a comenzii."
+      },
+      "Five": {
+        "OneTop": "Livrare",
+        "OneCenter": "Modul pentru call centru",
+        "OneBottom": "Un angajat al call centrului, atunci când primește un apel, identifică automat un client permanent după numărul său de telefon. Este posibil să înlocuiți una dintre adresele de livrare a clienților introduse anterior sau să introduceți o nouă adresă. Programul va calcula automat distanța de la preparare la adresa de livrare și poate genera costuri de expediere. Lista bucatelor comandate merg la bucătărie.",
+        "TwoTop": "Livrare",
+        "TwoCenter": "Modulul de emitere a comenzilor",
+        "TwoBottom": "Comanda finalizată poate fi identificată cu o etichetă de cod de bare pentru a preveni confuzia atunci când este expediată către client, și o factură este tipărită pentru plată.",
+        "ThreeTop": "Livrare",
+        "ThreeCenter": "Modulul de producție",
+        "ThreeBottom": "Modulul de producție vă permite să automatizați contabilitatea tuturor proceselor de producție, să controlați rămășițele ingredientelor și a produselor semifabricate, să decontați conform fișelor de calcul la fiecare etapă a producției. Produsele finite ajung la locul emiterii comenzii.",
+        "FourTop": "Livrare",
+        "FourCenter": "Modulul mobil al agentului-șoferului",
+        "FourBottom": "Șoferul scanează eticheta de pe comanda finalizată, marcând astfel primirea comenzii în modulul mobil. Modulul trasează calea pe hartă. Faptul de plată pentru comandă este, de asemenea, notat în program și transmis prin 3 / 4g la oficiul central."
+      },
+      "Six": {
+        "OneTop": "Contabil",
+        "OneCenter": "Modulul contabilului",
+        "OneBottom": "Sistemul de contabilitate a mărfurilor și financiar implică introducerea documentelor primare. Documentele de primire a mărfurilor în întreprindere sunt împărțite în livrări de la organizații externe și achiziții de către angajații proprii. În documentele de intrări de marfă, sunt introduse prețurile furnizorilor, care formează prețurile de evidență a mărfurilor din întreprindere. Prețul de evidență este calculat ca „medie ponderată” conform schemei FIFO. Costul produselor finite și al semifabricatelor se calculează pe baza prețurilor de evidență pentru ingrediente.",
+        "TwoTop": "Cumpărător",
+        "TwoCenter": "Modulul mobil al cumpărătorului",
+        "TwoBottom": "Pentru eficiența muncii angajatului care face achiziții pe piață sau în magazine, există un modul specializat. Contabilul formează o comandă în modulul său, care este trimis prin mobil către modulul cumpărătorului. Comanda listează sortimentul necesar cu cantitatea și prețul aproximativ. Pe măsură ce achiziția progresează, au loc ajustări de preț și cantitate. La sfârșitul achiziției, documentul merge la baza de date centrală din registrul de documente primite."
+      }
+    },
+    "Fitness": {
+      "Header": {
+        "Title": "Sistem de automatizare  <p> fitness, spa, saloane <p> de frumuseţe"
+      },
+      "First": {
+        "ImageTitleOne": "Interfață simplă și сlară",
+        "ImageTextOne": "Chelnerii și barmanii vor începe să lucreze la cinci minute după instalare. Este de dorit ca contabilul să aibă studii  specializate, dar nu neapărat – îl vom instrui.",
+        "ImageTitleTwo": "Imprimarea fiscală",
+        "ImageTextTwo": "Programul este adaptat pentru funcționarea cu toate imprimantele fiscale din registrul serviciilor de decontare și numerar din Republica Moldova. Mai multe persoane juridice? - nici o problemă.",
+        "ImageTitleThree": "Identificare",
+        "ImageTextThree": "Tot felul de opțiuni de identificare a oaspeților la alegere: bandă magnetică, cod de bare, card fără contact, identificare cu amprentă, după ultimele cifre ale numărului de telefon cu confirmare prin SMS.",
+        "ImageTitleFour": "Nu-ți pierde banii",
+        "ImageTextFour": "Vom închide locurile potențiale de pierderi financiare. Personalul dvs. este creativ? - vă vom arăta cum și unde.",
+        "ImageTitleFive": "Imprimante de cecuri",
+        "ImageTextFive": "Vom crea forme frumoase de facturi și încorporări pentru dvs. Programul nu limitează alegerea dispozitivului de imprimare. Bluetooth și WiFi - imprimantele interacționează cu terminalele mobile.",
+        "ImageTitleSix": "Marketing",
+        "ImageTextSix": "Extindeți-vă baza de clienți atrăgând noi oaspeți cu programe de fidelizare."
+      },
+      "Three": {
+        "OneTop": "Recepția clubului",
+        "OneCenter": "Modulul administratorului recepției",
+        "OneBottom": "Setul funcțional al modulului pentru recepția centrului de fitness repetă setul de atribuții al recepționerului clubului. Se efectuează o înregistrare a vizitei clientului, înregistrarea pentru vizitele de grup și instruire individuală, vânzarea pachetelor de servicii și eliminarea acestora din sold.",
+        "TwoTop": "Departamentul de vanzari",
+        "TwoCenter": "Modul de vânzări și marketing",
+        "TwoBottom": "Managerii de marketing formează pachete de servicii, bonusuri și programe promoționale. Pachetele și certificatele sunt vândute membrilor noi și existenți ai clubului. <br> Sistemul CRM face posibilă extinderea bazei de clienți, avertizează prompt membrii clubului despre expirarea pachetelor de servicii, trimite mesaje prin SMS sau e-mail."
+      },
+      "Second": {
+        "OneTop": "Antrenor",
+        "OneCenter": "Modulul mobil al antrenorului",
+        "OneBottom": "Modulul pentru un dispozitiv mobil permite unui antrenor să marcheze o vizită la o lecție de grup, să înregistreze un client pentru o lecție individuală și să vândă servicii suplimentare.",
+        "TwoTop": "Controlul accesului",
+        "TwoCenter": "Sistemul de control al accesului",
+        "TwoBottom": "Pentru a restricționa accesul la sediul clubului, programul implementează un sistem de control pentru turnicheti și alte dispozitive electronice de control al accesului. Sistemul este capabil să permită accesul membrilor clubului doar la acele spații în care este disponibil serviciul, disponibile prin abonament sau prin programare.",
+        "ThreeTop": "IV. Membrilor clubului",
+        "ThreeCenter": "WEB - service",
+        "ThreeBottom": "Serviciul permite unui membru al clubului să se înscrie independent pentru antrenamente de grup, lecții individuale, să comande servicii suplimentare. Există posibilitatea de a controla decontările cu clubul, de a vedea soldul cursurilor.",
+        "FourTop": "Departamentul de contabilitate",
+        "FourCenter": "Modulul contabilitatea de gestiune",
+        "FourBottom": "Programul face posibilă menținerea unei evidențe de management complet și a unei contabilități financiare. Contabilitatea materială implică întregul ciclu de rulare a mărfurilor: documente pentru livrarea mărfurilor, transfer, decontare și reevaluare. Contabilitatea financiară include mișcarea fondurilor de numerar și non-numerar, un raport de avans. A fost elaborat de asemenea și un mecanism de calcul al salariilor."
+      }
+    },
+    "Billiard": {
+      "Header": {
+        "Title": "SISTEM <p> AUTOMATIZARE <p> BILIARD"
+      },
+      "First": {
+        "ImageTitleOne": "Interfață simplă și сlară",
+        "ImageTextOne": "Chelnerii și barmanii vor începe să lucreze la cinci minute după instalare. Este de dorit ca contabilul să aibă studii  specializate, dar nu neapărat – îl vom instrui.",
+        "ImageTitleTwo": "Imprimarea fiscală",
+        "ImageTextTwo": "Programul este adaptat pentru funcționarea cu toate imprimantele fiscale din registrul serviciilor de decontare și numerar din Republica Moldova. Mai multe persoane juridice? - nici o problemă.",
+        "ImageTitleThree": "Identificare",
+        "ImageTextThree": "Tot felul de opțiuni de identificare a oaspeților la alegere: bandă magnetică, cod de bare, card fără contact, identificare cu amprentă, după ultimele cifre ale numărului de telefon cu confirmare prin SMS.",
+        "ImageTitleFour": "Sistem de numărare a timpului",
+        "ImageTextFour": "Deschiderea mesei pentru o perioadă de timp fix sau nelimitat",
+        "ImageTitleFive": "Nu-ți pierde banii",
+        "ImageTextFive": "Vom închide locurile potențiale de pierderi financiare. Personalul dvs. este creativ? - vă vom arăta cum și unde.",
+        "ImageTitleSix": "Imprimante de cecuri",
+        "ImageTextSix": "Vom crea forme frumoase de facturi și încorporări pentru dvs. Programul nu limitează alegerea dispozitivului de imprimare. Bluetooth și WiFi - imprimantele interacționează cu terminalele mobile.",
+        "ImageTitleSeven": "Marketing",
+        "ImageTextSeven": "Extindeți-vă baza de clienți atrăgând noi oaspeți cu programe de fidelizare.",
+        "ImageTitleEight": "Rezervarea meselor",
+        "ImageTextEight": "Vă permite să măriți eficiența muncii datorită distribuției rapide și optime a comenzilor"
+      },
+      "Second": {
+        "OneTop": "Modul staționar",
+        "OneBottom": "Terminalul POS staționar vă permite să afișați o interfață convenabilă, bine gândită, intuitivă, în care nu este nevoie să deschideți o fereastră separată pentru fiecare operație.",
+        "TwoTop": "Modul mobil pentru chelneri",
+        "TwoBottom": "Modulul vă permite să lucrați cu o comandă pe un smartphone sau tabletă. Sincronizarea cu baza centrală are loc prin WiFi sau 3 / 4g. Prezența constantă în zona de comunicație nu este necesară, dispozitivul poate funcționa autonom. Un chelner cu un smartphone nu este legat de holul în care se află stația staționară"
       }
     }
   }

@@ -1,33 +1,38 @@
 <div class="container pt-5 pb-5">
-  <h3 class="font-weight-bold black-text mb-4 pb-2 text-center wow zoomIn" data-wow-delay="0.6s">USB-термопринтер чеков POS</h3>
-  <p class="font-weight-bold lead text-muted mx-auto mt-4 pt-2 mb-5 text-center wow zoomIn" data-wow-delay="1.6s">ПРИНТЕР термо RP328 (RS-232+USB+Ethernet)</p>
+  <h3 class="font-weight-bold black-text mb-4 pb-2 text-center wow zoomIn" data-wow-delay="0.6s">
+    {{'Flagman.Horeca2.RP328.TitleTop' | translate}}
+  </h3>
+  <p class="font-weight-bold lead text-muted mx-auto mt-4 pt-2 mb-5 text-center wow zoomIn" data-wow-delay="1.6s">
+    {{'Flagman.Horeca2.RP328.TitleBottom' | translate}}
+  </p>
   <div class="row flex-center">
 
     <div class="col order-2 wow fadeInRight" data-wow-delay="0.6s">
       <div class="pb-5">
         <h6 class="font-weight-bold mb-3">
           <i class="fas fa-rocket fa-2x green-text pr-2"></i>
-          Скорость работы
+          {{'Flagman.Horeca2.RP328.SpecTitleOne' | translate}}
         </h6>
         <p class="text-muted">
-          Быстрая печать чеков со скоростью 100 мм/с
+          {{'Flagman.Horeca2.RP328.SpecTextOne' | translate}}
         </p>
       </div>
       <div class="pb-5">
         <h6 class="font-weight-bold mb-3">
-          <i class="fas fa-search-plus fa-2x green-text pr-2"></i> Высокая четкость
+          <i class="fas fa-search-plus fa-2x green-text pr-2"></i>
+          {{'Flagman.Horeca2.RP328.SpecTitleTwo' | translate}}
         </h6>
         <p class="text-muted">
-          Печать чека высокой четкости
+          {{'Flagman.Horeca2.RP328.SpecTextTwo' | translate}}
         </p>
       </div>
 
       <h6 class="font-weight-bold mb-3">
         <i class="fas fa-chart-area fa-2x green-text pr-2"></i>
-        Лента большого диаметра
+        {{'Flagman.Horeca2.RP328.SpecTitleThree' | translate}}
       </h6>
       <p class="text-muted">
-        Помещается рулон диаметром 58 мм, менять ленту нужно реже
+        {{'Flagman.Horeca2.RP328.SpecTextThree' | translate}}
       </p>
 
     </div>
@@ -39,60 +44,60 @@
     </div>
 
 
-
     <div class="col order-3 wow fadeInRight" data-wow-delay="1.2s">
       <div class="pb-5">
         <h6 class="font-weight-bold mb-3">
           <i class="fas fa-power-off fa-2x green-text pr-2"></i>
-          Печать лого и штрих-кода
+          {{'Flagman.Horeca2.RP328.SpecTitleFour' | translate}}
         </h6>
         <p class="text-muted">
-          Принтер печатает логотипы и 1D/2D баркоды
+          {{'Flagman.Horeca2.RP328.SpecTextFour' | translate}}
         </p>
       </div>
       <div class="pb-5">
         <h6 class="font-weight-bold mb-3">
-          <i class="fas fa-clock fa-2x green-text pr-2"></i> Долговечность
+          <i class="fas fa-clock fa-2x green-text pr-2"></i>
+          {{'Flagman.Horeca2.RP328.SpecTitleFive' | translate}}
         </h6>
         <p class="text-muted">
-          100 км – ресурс печатающей головки японского производителя
+          {{'Flagman.Horeca2.RP328.SpecTextFive' | translate}}
         </p>
       </div>
 
       <h6 class="font-weight-bold mb-3">
-        <i class="fas fa-cog fa-2x green-text pr-2"></i>Совместимость
+        <i class="fas fa-cog fa-2x green-text pr-2"></i>
+        {{'Flagman.Horeca2.RP328.SpecTitleSix' | translate}}
       </h6>
       <p class="text-muted">
-        С любыми операционными системами и программами учета
+        {{'Flagman.Horeca2.RP328.SpecTextSix' | translate}}
       </p>
-
-
 
 
     </div>
 
   </div>
 
-  <button mdbBtn color="primary" class="waves-light mt-0 text-center wow fadeInLeft" data-wow-delay="0.6s" type="button" (click)="test.toggle()" mdbWavesEffect>
+  <button mdbBtn color="primary" class="waves-light mt-0 text-center wow fadeInLeft" data-wow-delay="0.6s" type="button"
+          (click)="test.toggle()" mdbWavesEffect>
     <mdb-icon fas icon="arrow-down"></mdb-icon>
-    Тех.Характеристики
+    {{'BUTTONS.TehSpec' | translate}}
     <mdb-icon fas icon="arrow-down"></mdb-icon>
   </button>
 
 
-  <div  mdbCollapse [isCollapsed]="true"  #test="bs-collapse">
+  <div mdbCollapse [isCollapsed]="true" #test="bs-collapse">
     <div class="col-lg-7 text-center text-md-left wow fadeInRight" data-wow-delay="0.6s">
 
       <div class="col py-3 my-3 grey lighten-3 font-weight-normal">
 
-          <p style="text-align: left;"><strong>Способ печати:</strong> Прямая Термопечать<br>
-            <strong>Скорость печати, мм/сек:</strong> 250<br>
-            <strong>Разрешение печати, dpi:</strong> 203<br>
-            <strong>Ширина печати, мм:</strong> 80<br>
-            <strong>Ширина ленты (этикетки),</strong> мм: 58, 80<br>
-            <strong>Интерфейсы:</strong> RS-232, LAN (Ethernet)<br>
-            <strong>Автообрезка:</strong> Есть<br>
-            <strong>Габаритные размеры, мм:</strong> 198*140*130</p>
+        <p style="text-align: left;"><strong>Способ печати:</strong> Прямая Термопечать<br>
+          <strong>Скорость печати, мм/сек:</strong> 250<br>
+          <strong>Разрешение печати, dpi:</strong> 203<br>
+          <strong>Ширина печати, мм:</strong> 80<br>
+          <strong>Ширина ленты (этикетки),</strong> мм: 58, 80<br>
+          <strong>Интерфейсы:</strong> RS-232, LAN (Ethernet)<br>
+          <strong>Автообрезка:</strong> Есть<br>
+          <strong>Габаритные размеры, мм:</strong> 198*140*130</p>
 
 
       </div>

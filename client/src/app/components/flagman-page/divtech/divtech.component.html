@@ -7,18 +7,16 @@
       <!--Title-->
       <mdb-card-title class="">
         <h4>
-          <strong>Техническая поддержка 365/7</strong>
+          <strong>{{'Flagman.DivTech.Title' | translate}}</strong>
         </h4>
       </mdb-card-title>
 
 
       <mdb-card-text class="black-text -align-left">
-        Наверное, одним из самых важных компонентов в бесперебойной работе заведения ― это надежная Служба <p> Поддержки.
-        Нам очень хорошо понятно, что такое сломавшийся принтер в субботу вечером!
-        Мы станем <p> надежным партнером Вашего заведения, чтобы оно могло обслуживать Ваших гостей без сбоев.
+        <div [innerHTML]="'Flagman.DivTech.Text'  | translate"></div>
       </mdb-card-text>
       <div class="mt-5">
-      <button type="button" class="btn btn-primary btn-rounded">Tex.Поддержка</button>
+      <button type="button" class="btn btn-primary btn-rounded">{{'BUTTONS.Support' | translate }}</button>
       </div>
     </mdb-card-body>
 
