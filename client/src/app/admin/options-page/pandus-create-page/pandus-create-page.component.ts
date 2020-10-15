@@ -34,7 +34,11 @@ export class PandusCreatePageComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
+      nameRo: new FormControl(null, Validators.required),
+      nameEn: new FormControl(null, Validators.required),
       content: new FormControl(null, Validators.required),
+      contentRo: new FormControl(null, Validators.required),
+      contentEn: new FormControl(null, Validators.required),
       price: new FormControl(null, Validators.required),
     });
 
@@ -56,7 +60,11 @@ export class PandusCreatePageComponent implements OnInit {
             this.pandus = pandus;
             this.form.patchValue({
               name: pandus.name,
+              nameRo: pandus.nameRo,
+              nameEn: pandus.nameEn,
               content: pandus.content,
+              contentRo: pandus.contentRo,
+              contentEn: pandus.contentEn,
               price: pandus.price
             });
             this.imagePreview = pandus.img;
@@ -107,6 +115,10 @@ export class PandusCreatePageComponent implements OnInit {
     if (this.isNew) {
       obs$ = this.pandusService.create(
         this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+        this.form.value.content,
+        this.form.value.content,
         this.form.value.content,
         this.form.value.price,
         this.image
@@ -115,6 +127,10 @@ export class PandusCreatePageComponent implements OnInit {
       obs$ = this.pandusService.update(
         this.pandus._id,
         this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+        this.form.value.content,
+        this.form.value.content,
         this.form.value.content,
         this.form.value.price,
         this.image

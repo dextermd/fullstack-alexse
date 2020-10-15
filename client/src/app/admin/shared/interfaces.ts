@@ -14,9 +14,15 @@ export  interface Message {
 export interface Post {
   _id: string;
   title: string;
+  titleRo: string;
+  titleEn: string;
   img: string;
   preview: string;
+  previewRo: string;
+  previewEn: string;
   content: string;
+  contentRo: string;
+  contentEn: string;
   category: string;
   date: Date;
 }
@@ -25,11 +31,15 @@ export interface Post {
 export interface PostCategory {
   _id?: string;
   name: string;
+  nameRo: string;
+  nameEn: string;
 }
 
 export interface Category {
   _id?: string;
   name: string;
+  nameRo: string;
+  nameEn: string;
   imageSrc?: string;
   user?: string;
 }
@@ -37,6 +47,8 @@ export interface Category {
 export interface SubCategory {
   _id?: string;
   name: string;
+  nameRo: string;
+  nameEn: string;
   num: number;
   category: string;
   imageSrc?: string;
@@ -124,22 +136,32 @@ export interface OrderProduct {
 export interface CasaOption {
   _id?: string;
   name: string;
+  nameRo?: string;
+  nameEn?: string;
   price: number;
   user?: string;
 }
 
 export interface IndicatorOption {
   name: string;
+  nameRo?: string;
+  nameEn?: string;
   img: string;
   content: string;
+  contentRo?: string;
+  contentEn?: string;
   price: number;
   _id?: string;
 }
 
 export interface PandusOption {
   name: string;
+  nameRo?: string;
+  nameEn?: string;
   img: string;
   content: string;
+  contentRo?: string;
+  contentEn?: string;
   price: number;
   _id?: string;
 }

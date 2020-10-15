@@ -18,26 +18,53 @@ export class PandusService {
     return this.http.get<PandusOption>(`/api/pandus/${id}`);
   }
 
-  create(name: string, content: string, price: any, image?: File): Observable<PandusOption>  {
+  create(
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    content: string,
+    contentRo: string,
+    contentEn: string,
+    price: any,
+    image?: File
+  ): Observable<PandusOption>  {
     const fd = new FormData();
     if (image) {
       fd.append('image', image, image.name);
     }
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('content', content);
+    fd.append('contentRo', contentRo);
+    fd.append('contentEn', contentEn);
     fd.append('price', price);
 
     return this.http.post<PandusOption>('/api/pandus', fd);
   }
 
 
-  update(id: string, name: string, content: string, price: any, image?: File): Observable<PandusOption>  {
+  update(
+    id: string,
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    content: string,
+    contentRo: string,
+    contentEn: string,
+    price: any,
+    image?: File
+  ): Observable<PandusOption>  {
     const fd = new FormData();
     if (image) {
       fd.append('image', image, image.name);
     }
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('content', content);
+    fd.append('contentRo', contentRo);
+    fd.append('contentEn', contentEn);
     fd.append('price', price);
 
 

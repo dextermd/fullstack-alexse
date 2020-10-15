@@ -20,30 +20,33 @@ export class CreateCategoryPageComponent implements OnInit {
   imagePreview: string | ArrayBuffer = '';
   isNew = true;
   categoryy: Category;
+
   constructor(
     private route: ActivatedRoute,
     private categoryServices: CategoryService,
     private alert: AlertService,
     private router: Router
-  ) { }
-
+  ) {
+  }
 
 
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
+      nameRo: new FormControl(null, Validators.required),
+      nameEn: new FormControl(null, Validators.required),
     });
 
     this.form.disable();
 
     this.route.params.pipe(
-      switchMap( (params: Params) => {
+      switchMap((params: Params) => {
         if (params.id) {
           this.isNew = false;
           return this.categoryServices.getByIdCategory(params.id);
         }
 
-        return  of(null);
+        return of(null);
       })
     )
       .subscribe(
@@ -51,7 +54,9 @@ export class CreateCategoryPageComponent implements OnInit {
           if (category) {
             this.categoryy = category;
             this.form.patchValue({
-              name: category.name
+              name: category.name,
+              nameRo: category.nameRo,
+              nameEn: category.nameEn
             });
             this.imagePreview = category.imageSrc;
           }
@@ -63,15 +68,14 @@ export class CreateCategoryPageComponent implements OnInit {
   }
 
 
-
   triggerClick() {
     this.inputRef.nativeElement.click();
   }
 
   deleteCategory() {
-    const  decision = window.confirm(`Вы уверены что хотите удалить категорию "${this.categoryy.name}"`);
+    const decision = window.confirm(`Вы уверены что хотите удалить категорию "${this.categoryy.name}"`);
 
-    if (decision){
+    if (decision) {
       this.categoryServices.delete(this.categoryy._id).subscribe(
         response => this.alert.success(response.message),
         error => this.alert.danger(error.error.message),
@@ -80,7 +84,7 @@ export class CreateCategoryPageComponent implements OnInit {
     }
   }
 
-  onFileUpload( event: any) {
+  onFileUpload(event: any) {
     const file = event.target.files[0];
     this.image = file;
 
@@ -96,9 +100,20 @@ export class CreateCategoryPageComponent implements OnInit {
     let obs$;
     this.form.disable();
     if (this.isNew) {
-      obs$ = this.categoryServices.create(this.form.value.name, this.image);
+      obs$ = this.categoryServices.create(
+        this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+        this.image
+      );
     } else {
-      obs$ = this.categoryServices.update(this.categoryy._id, this.form.value.name, this.image);
+      obs$ = this.categoryServices.update(
+        this.categoryy._id,
+        this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+        this.image
+      );
 
     }
     obs$.subscribe(

@@ -54,8 +54,14 @@ module.exports.create = async function (req, res) {
     try {
         const position = await new Post({
             title: req.body.title,
+            titleRo: req.body.titleRo,
+            titleEn: req.body.titleEn,
             content: req.body.content,
+            contentRo: req.body.contentRo,
+            contentEn: req.body.contentEn,
             preview: req.body.preview,
+            previewRo: req.body.previewRo,
+            previewEn: req.body.previewEn,
             category: req.body.category,
             user: req.user.id,
             img: req.file ? req.file.path: ''
@@ -72,9 +78,14 @@ module.exports.create = async function (req, res) {
 module.exports.update = async function (req, res) {
     const updated = {
         title: req.body.title,
-        category: req.body.category,
+        titleRo: req.body.titleRo,
+        titleEn: req.body.titleEn,
         content: req.body.content,
+        contentRo: req.body.contentRo,
+        contentEn: req.body.contentEn,
         preview: req.body.preview,
+        previewRo: req.body.previewRo,
+        previewEn: req.body.previewEn,
     };
     if (req.file){
         updated.img = req.file.path

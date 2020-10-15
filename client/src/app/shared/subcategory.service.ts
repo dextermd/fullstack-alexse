@@ -18,9 +18,17 @@ export class SubcategoryService {
     return this.http.get<SubCategory>(`/api/subcategory/${id}`);
   }
 
-  create(name: string, num: any, category: string): Observable<SubCategory>  {
+  create(
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    num: any,
+    category: string
+  ): Observable<SubCategory>  {
     const fd = new FormData();
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('num', num);
     fd.append('category', category);
 
@@ -28,9 +36,18 @@ export class SubcategoryService {
   }
 
 
-  update(id: string, name: string, num: any, category: string): Observable<SubCategory>  {
+  update(
+    id: string,
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    num: any,
+    category: string
+  ): Observable<SubCategory>  {
     const fd = new FormData();
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('num', num);
     fd.append('category', category);
 

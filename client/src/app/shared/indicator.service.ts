@@ -18,26 +18,53 @@ export class IndicatorService {
     return this.http.get<IndicatorOption>(`/api/indicator/${id}`);
   }
 
-  create(name: string, content: string, price: any, image?: File): Observable<IndicatorOption>  {
+  create(
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    content: string,
+    contentRo: string,
+    contentEn: string,
+    price: any,
+    image?: File
+  ): Observable<IndicatorOption>  {
     const fd = new FormData();
     if (image) {
       fd.append('image', image, image.name);
     }
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('content', content);
+    fd.append('contentRo', contentRo);
+    fd.append('contentEn', contentEn);
     fd.append('price', price);
 
     return this.http.post<IndicatorOption>('/api/indicator', fd);
   }
 
 
-  update(id: string, name: string, content: string, price: any, image?: File): Observable<IndicatorOption>  {
+  update(
+    id: string,
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    content: string,
+    contentRo: string,
+    contentEn: string,
+    price: any,
+    image?: File
+  ): Observable<IndicatorOption>  {
     const fd = new FormData();
     if (image) {
       fd.append('image', image, image.name);
     }
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('content', content);
+    fd.append('contentRo', contentRo);
+    fd.append('contentEn', contentEn);
     fd.append('price', price);
 
     return this.http.patch<IndicatorOption>(`/api/indicator/${id}`, fd);

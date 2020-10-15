@@ -23,29 +23,66 @@ export class PostsService {
 
 
 
-  create(title: string, category: string, content: string, preview: string, image?: File): Observable<Post>  {
+  create(
+    title: string,
+    titleRo: string,
+    titleEn: string,
+    category: string,
+    content: string,
+    contentRo: string,
+    contentEn: string,
+    preview: string,
+    previewRo: string,
+    previewEn: string,
+    image?: File
+  ): Observable<Post>  {
     const fd = new FormData();
     if (image) {
       fd.append('image', image, image.name);
     }
     fd.append('title', title);
+    fd.append('titleRo', titleRo);
+    fd.append('titleEn', titleEn);
     fd.append('category', category);
     fd.append('content', content);
+    fd.append('contentRo', contentRo);
+    fd.append('contentEn', contentEn);
     fd.append('preview', preview);
+    fd.append('previewRo', previewRo);
+    fd.append('previewEn', previewEn);
 
     return this.http.post<Post>('/api/post', fd);
   }
 
 
-  update(id: string, title: string, category: string, content: string, preview: string, image?: File): Observable<Post>  {
+  update(
+    id: string,
+    title: string,
+    titleRo: string,
+    titleEn: string,
+    category: string,
+    content: string,
+    contentRo: string,
+    contentEn: string,
+    preview: string,
+    previewRo: string,
+    previewEn: string,
+    image?: File
+  ): Observable<Post>  {
     const fd = new FormData();
     if (image) {
       fd.append('image', image, image.name);
     }
     fd.append('title', title);
+    fd.append('titleRo', titleRo);
+    fd.append('titleEn', titleEn);
     fd.append('category', category);
     fd.append('content', content);
+    fd.append('contentRo', contentRo);
+    fd.append('contentEn', contentEn);
     fd.append('preview', preview);
+    fd.append('previewRo', previewRo);
+    fd.append('previewEn', previewEn);
 
     return this.http.patch<Post>(`/api/post/${id}`, fd);
   }

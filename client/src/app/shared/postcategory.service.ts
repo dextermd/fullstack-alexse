@@ -18,17 +18,31 @@ export class PostCategoryService {
     return this.http.get<PostCategory>(`/api/postcategory/${id}`);
   }
 
-  create(name: string): Observable<PostCategory>  {
+  create(
+    name: string,
+    nameRo: string,
+    nameEn: string
+  ): Observable<PostCategory>  {
     const fd = new FormData();
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
 
     return this.http.post<PostCategory>('/api/postcategory', fd);
   }
 
 
-  update(id: string, name: string, image?: File): Observable<PostCategory>  {
+  update(
+    id: string,
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    image?: File
+  ): Observable<PostCategory>  {
     const fd = new FormData();
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
 
     return this.http.patch<PostCategory>(`/api/postcategory/${id}`, fd);
   }

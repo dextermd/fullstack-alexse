@@ -35,6 +35,52 @@
   </span>
   </div>
 
+
+  <div class="md-form">
+    <input
+      formControlName="nameRo"
+      mdbInput
+      type="text"
+      id="nameRo"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('nameRo').invalid && form.get('nameRo').touched }"
+    >
+
+    <label for="nameRo" class="">Название категории Romanian</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('nameRo').invalid && form.get('nameRo').touched"
+    >
+  <span *ngIf="form.get('nameRo').errors['required']">
+    Имя категории не может быть пустым
+  </span>
+  </span>
+  </div>
+
+
+
+  <div class="md-form">
+    <input
+      formControlName="nameEn"
+      mdbInput
+      type="text"
+      id="nameEn"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('nameEn').invalid && form.get('nameEn').touched }"
+    >
+
+    <label for="nameEn" class="">Название категории English</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('nameEn').invalid && form.get('nameEn').touched"
+    >
+  <span *ngIf="form.get('nameEn').errors['required']">
+    Имя категории не может быть пустым
+  </span>
+  </span>
+  </div>
+
+
   <div class="flex-center">
     <img
       class="responsive-img"

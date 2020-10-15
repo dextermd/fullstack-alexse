@@ -18,23 +18,38 @@ export class CategoryService {
     return this.http.get<Category>(`/api/category/${id}`);
   }
 
-  create(name: string, image?: File): Observable<Category>  {
+  create(
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    image?: File
+  ): Observable<Category>  {
     const fd = new FormData();
     if (image) {
       fd.append('image', image, image.name);
     }
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
 
     return this.http.post<Category>('/api/category', fd);
   }
 
 
-  update(id: string, name: string, image?: File): Observable<Category>  {
+  update(
+    id: string,
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    image?: File
+  ): Observable<Category>  {
     const fd = new FormData();
     if (image) {
       fd.append('image', image, image.name);
     }
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
 
     return this.http.patch<Category>(`/api/category/${id}`, fd);
   }

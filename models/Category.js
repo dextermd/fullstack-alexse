@@ -7,6 +7,16 @@ const categorySchema = new Schema({
         required: true,
         unique: true,
     },
+    nameRo: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    nameEn: {
+        type: String,
+        required: true,
+        unique: true,
+    },
     imageSrc: {
         type: String,
         default: ''

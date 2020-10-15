@@ -7,12 +7,28 @@ const indicatorSchema = new Schema({
         unique: true,
         required: true
     },
+    nameRo: {
+        type: String,
+        unique: true,
+        required: true
+    },
+    nameEn: {
+        type: String,
+        unique: true,
+        required: true
+    },
     img: {
         type: String,
         default: '',
 
     },
     content: {
+        type: String,
+    },
+    contentRo: {
+        type: String,
+    },
+    contentEn: {
         type: String,
     },
     price: {

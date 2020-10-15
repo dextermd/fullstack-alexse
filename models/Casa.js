@@ -6,6 +6,14 @@ const casaSchema = new Schema({
         type: String,
         required: true
     },
+    nameRo: {
+        type: String,
+        required: true
+    },
+    nameEn: {
+        type: String,
+        required: true
+    },
     price: {
         type: Number,
         required: true

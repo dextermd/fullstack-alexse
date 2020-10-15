@@ -6,7 +6,14 @@ const postSchema = new Schema({
         type: String,
         required: true
     },
-
+    titleRo: {
+        type: String,
+        required: true
+    },
+    titleEn: {
+        type: String,
+        required: true
+    },
     img: {
         type: String,
         default: '',
@@ -23,7 +30,25 @@ const postSchema = new Schema({
         required: true
 
     },
+    previewRo: {
+        type: String,
+        required: true
+
+    },
+    previewEn: {
+        type: String,
+        required: true
+
+    },
     content: {
+        type: String,
+        required: true
+    },
+    contentRo: {
+        type: String,
+        required: true
+    },
+    contentEn: {
         type: String,
         required: true
     },

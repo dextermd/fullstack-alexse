@@ -36,6 +36,8 @@ module.exports.create = async function (req, res) {
     console.log(req.user);
     const subcategory = new SubCategory({
         name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
         num: req.body.num,
         category: req.body.category,
         user: req.user.id,
@@ -52,6 +54,8 @@ module.exports.create = async function (req, res) {
 module.exports.update = async function (req, res) {
     const updated = {
         name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
         num: req.body.num,
         category: req.body.category,
     };

@@ -36,6 +36,8 @@ module.exports.create = async function (req, res) {
     console.log(req.user);
     const casa = new Casa({
         name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
         price: req.body.price,
         user: req.user.id,
 
@@ -51,6 +53,8 @@ module.exports.create = async function (req, res) {
 module.exports.update = async function (req, res) {
     const updated = {
         name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
         price: req.body.price,
     };
     try {

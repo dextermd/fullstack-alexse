@@ -42,9 +42,15 @@ export class CreatePostPageComponent implements OnInit {
 
     this.form = new FormGroup({
       title: new FormControl(null, Validators.required),
+      titleRo: new FormControl(null, Validators.required),
+      titleEn: new FormControl(null, Validators.required),
       category: new FormControl(null, Validators.required),
       content: new FormControl(null, Validators.required),
+      contentRo: new FormControl(null, Validators.required),
+      contentEn: new FormControl(null, Validators.required),
       preview: new FormControl(null, Validators.required),
+      previewRo: new FormControl(null, Validators.required),
+      previewEn: new FormControl(null, Validators.required),
     });
 
     this.form.disable();
@@ -64,9 +70,15 @@ export class CreatePostPageComponent implements OnInit {
             this.posts = posts;
             this.form.patchValue({
               title: posts.title,
+              titleRo: posts.titleRo,
+              titleEn: posts.titleEn,
               category: posts.category,
               content: posts.content,
-              preview: posts.preview
+              contentRo: posts.contentRo,
+              contentEn: posts.contentEn,
+              preview: posts.preview,
+              previewRo: posts.previewRo,
+              previewEn: posts.previewEn
             });
             this.imagePreview = posts.img;
           }
@@ -103,9 +115,15 @@ export class CreatePostPageComponent implements OnInit {
       obs$ = this.postService
         .create(
           this.form.value.title,
+          this.form.value.titleRo,
+          this.form.value.titleEn,
           this.form.value.category,
           this.form.value.content,
+          this.form.value.contentRo,
+          this.form.value.contentEn,
           this.form.value.preview,
+          this.form.value.previewRo,
+          this.form.value.previewEn,
           this.image
         );
     } else {
@@ -113,9 +131,15 @@ export class CreatePostPageComponent implements OnInit {
         .update(
           this.posts._id,
           this.form.value.title,
+          this.form.value.titleRo,
+          this.form.value.titleEn,
           this.form.value.category,
           this.form.value.content,
+          this.form.value.contentRo,
+          this.form.value.contentEn,
           this.form.value.preview,
+          this.form.value.previewRo,
+          this.form.value.previewEn,
           this.image
         );
 

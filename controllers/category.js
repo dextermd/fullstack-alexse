@@ -36,6 +36,8 @@ module.exports.create = async function (req, res) {
     console.log(req.user);
     const category = new Category({
         name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
         user: req.user.id,
         imageSrc: req.file ? req.file.path: ''
 
@@ -50,7 +52,9 @@ module.exports.create = async function (req, res) {
 
 module.exports.update = async function (req, res) {
     const updated = {
-        name: req.body.name
+        name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
     };
     if (req.file){
         updated.imageSrc = req.file.path

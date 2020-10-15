@@ -5,7 +5,19 @@
       <mdb-breadcrumb-item>
         <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/'">{{'Shop.Breadcrumbs.Home' | translate}}</mdb-breadcrumb-item>
         <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products'">{{'Shop.Breadcrumbs.Market' | translate}}</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products/subcategory/'+ this.subcategoryId">{{this.subcategoryName}}</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products/subcategory/'+ this.subcategoryId">
+          <ng-container *ngIf="this.main.lang == 'ru'">
+            {{this.subcategoryName}}
+          </ng-container>
+
+          <ng-container *ngIf="this.main.lang == 'ro'">
+            {{this.subcategoryNameRo}}
+          </ng-container>
+
+          <ng-container *ngIf="this.main.lang == 'en'">
+            {{this.subcategoryNameEn}}
+          </ng-container>
+        </mdb-breadcrumb-item>
         <mdb-breadcrumb-item class="active">
           <ng-container *ngIf="this.main.lang == 'ru'">
             {{this.productName}}

@@ -36,6 +36,8 @@ module.exports.create = async function (req, res) {
     console.log(req.user);
     const category = new PostCategory({
         name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
 
     });
     try {
@@ -48,7 +50,9 @@ module.exports.create = async function (req, res) {
 
 module.exports.update = async function (req, res) {
     const updated = {
-        name: req.body.name
+        name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
     };
     try {
         const  category = await PostCategory.findOneAndUpdate(

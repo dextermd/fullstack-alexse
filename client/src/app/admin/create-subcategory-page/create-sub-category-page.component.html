@@ -11,51 +11,96 @@
   </button>
 </div>
 
-<h3 >{{isNew ? 'Добавить' : 'Редактировать'}} подкатегорию</h3>
+<h3>{{isNew ? 'Добавить' : 'Редактировать'}} подкатегорию</h3>
 <app-alert></app-alert>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
-<div class="md-form">
-  <div>
-  <input
-    formControlName="name"
-    mdbInput
-    type="text"
-    id="name"
-    class="form-control"
-    [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
-  >
 
-  <label for="name" class="">Название категории</label>
-  <span
-    class="helper-text red-text"
-    *ngIf="form.get('name').invalid && form.get('name').touched"
-  >
+  <div class="md-form">
+    <div>
+      <input
+        formControlName="name"
+        mdbInput
+        type="text"
+        id="name"
+        class="form-control"
+        [ngClass]="{'invalid': form.get('name').invalid && form.get('name').touched }"
+      >
+
+      <label for="name" class="">Название категории</label>
+      <span
+        class="helper-text red-text"
+        *ngIf="form.get('name').invalid && form.get('name').touched"
+      >
   <span *ngIf="form.get('name').errors['required']">
     Имя категории не может быть пустым
   </span>
   </span>
+    </div>
+
   </div>
-<div>
-  <input
-    formControlName="num"
-    mdbInput
-    type="number"
-    id="num"
-    class="form-control"
-    placeholder="Порядковый номер"
-    [ngClass]="{'invalid': form.get('num').invalid && form.get('num').touched }"
-  >
-  <span
-    class="helper-text red-text"
-    *ngIf="form.get('num').invalid && form.get('num').touched"
-  >
+
+  <div class="md-form">
+    <input
+      formControlName="nameRo"
+      mdbInput
+      type="text"
+      id="nameRo"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('nameRo').invalid && form.get('nameRo').touched }"
+    >
+
+    <label for="nameRo" class="">Название категории Romanian</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('nameRo').invalid && form.get('nameRo').touched"
+    >
+  <span *ngIf="form.get('nameRo').errors['required']">
+    Имя категории не может быть пустым
+  </span>
+  </span>
+  </div>
+
+
+  <div class="md-form">
+    <input
+      formControlName="nameEn"
+      mdbInput
+      type="text"
+      id="nameEn"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('nameEn').invalid && form.get('nameEn').touched }"
+    >
+
+    <label for="nameEn" class="">Название категории English</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('nameEn').invalid && form.get('nameEn').touched"
+    >
+  <span *ngIf="form.get('nameEn').errors['required']">
+    Имя категории не может быть пустым
+  </span>
+  </span>
+  </div>
+
+  <div class="mb-5">
+    <input
+      formControlName="num"
+      mdbInput
+      type="number"
+      id="num"
+      class="form-control"
+      placeholder="Порядковый номер"
+      [ngClass]="{'invalid': form.get('num').invalid && form.get('num').touched }"
+    >
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('num').invalid && form.get('num').touched"
+    >
   <span *ngIf="form.get('num').errors['required']">
     Поле не может быть пустым
   </span>
   </span>
-</div>
-
-</div>
+  </div>
 
   <div class="flex-center">
     <img
@@ -66,23 +111,25 @@
     >
   </div>
 
-  <div   class="input-group mb-3">
+  <div class="input-group mb-3">
     <div class="input-group-prepend">
       <label class="input-group-text" for="category">Выбрать категорию</label>
     </div>
-    <select  class="form-control" id="category" formControlName="category">
-      <option *ngFor="let category of categories"  [ngValue]="category._id" ngDefaultControl>{{category.name}}</option>
+    <select class="form-control" id="category" formControlName="category">
+      <option *ngFor="let category of categories" [ngValue]="category._id" ngDefaultControl>
+        {{category.name}}
+      </option>
     </select>
   </div>
 
 
-<button
-  [disabled]="form.invalid || form.disabled"
-  type="submit"
-  mdbBtn color="primary"
-  mdbWavesEffect
->
-  Сохранить изминения
-</button>
+  <button
+    [disabled]="form.invalid || form.disabled"
+    type="submit"
+    mdbBtn color="primary"
+    mdbWavesEffect
+  >
+    Сохранить изминения
+  </button>
 </form>
 

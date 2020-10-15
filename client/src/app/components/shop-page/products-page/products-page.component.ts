@@ -58,6 +58,8 @@ export class ProductsPageComponent implements OnInit {
   pricePan;
   subcategory;
   subcategoryName;
+  subcategoryNameRo;
+  subcategoryNameEn;
   subcategoryId;
   productName;
   productNameRo;
@@ -115,6 +117,8 @@ export class ProductsPageComponent implements OnInit {
             if (products.subcategory === this.subcategory[i]._id) {
               this.subcategoryId = this.subcategory[i]._id;
               this.subcategoryName = this.subcategory[i].name;
+              this.subcategoryNameRo = this.subcategory[i].nameRo;
+              this.subcategoryNameEn = this.subcategory[i].nameEn;
             }
           }
           products.quantity = 1;

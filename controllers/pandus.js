@@ -36,7 +36,11 @@ module.exports.create = async function (req, res) {
     console.log(req.user);
     const pandu = new Pandus({
         name: req.body.name,
+        nameRo: req.body.nameRo,
+        nameEn: req.body.nameEn,
         content: req.body.content,
+        contentRo: req.body.contentRo,
+        contentEn: req.body.contentEn,
         price: req.body.price,
         user: req.user.id,
         img: req.file ? req.file.path: ''

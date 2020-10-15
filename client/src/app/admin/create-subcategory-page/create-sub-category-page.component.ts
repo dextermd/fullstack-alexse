@@ -39,6 +39,8 @@ export class CreateSubCategoryPageComponent implements OnInit {
 
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
+      nameRo: new FormControl(null, Validators.required),
+      nameEn: new FormControl(null, Validators.required),
       num: new FormControl(null, Validators.required),
       category: new FormControl(null, Validators.required),
     });
@@ -62,6 +64,8 @@ export class CreateSubCategoryPageComponent implements OnInit {
 
             this.form.patchValue({
               name: category.name,
+              nameRo: category.nameRo,
+              nameEn: category.nameEn,
               num: category.num,
               category: category.category,
             });
@@ -96,6 +100,8 @@ export class CreateSubCategoryPageComponent implements OnInit {
     if (this.isNew) {
       obs$ = this.subcategoryServices.create(
         this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
         this.form.value.num,
         this.form.value.category
       );
@@ -103,6 +109,8 @@ export class CreateSubCategoryPageComponent implements OnInit {
       obs$ = this.subcategoryServices.update(
         this.categoryy._id,
         this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
         this.form.value.num,
         this.form.value.category
       );

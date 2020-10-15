@@ -30,6 +30,8 @@ export class CasaCreatePageComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
+      nameRo: new FormControl(null, Validators.required),
+      nameEn: new FormControl(null, Validators.required),
       price: new FormControl(null, Validators.required),
     });
 
@@ -51,6 +53,8 @@ export class CasaCreatePageComponent implements OnInit {
             this.casa = casa;
             this.form.patchValue({
               name: casa.name,
+              nameRo: casa.nameRo,
+              nameEn: casa.nameEn,
               price: casa.price
             });
           }
@@ -82,9 +86,20 @@ export class CasaCreatePageComponent implements OnInit {
     let obs$;
     this.form.disable();
     if (this.isNew) {
-      obs$ = this.casaServices.create(this.form.value.name, this.form.value.price);
+      obs$ = this.casaServices.create(
+        this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+        this.form.value.price
+      );
     } else {
-      obs$ = this.casaServices.update(this.casa._id, this.form.value.name, this.form.value.price);
+      obs$ = this.casaServices.update(
+        this.casa._id,
+        this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+        this.form.value.price
+      );
 
     }
     obs$.subscribe(

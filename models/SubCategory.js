@@ -7,6 +7,16 @@ const subcategorySchema = new Schema({
         unique: true,
         required: true
     },
+    nameRo: {
+        type: String,
+        required: true,
+        unique: true,
+    },
+    nameEn: {
+        type: String,
+        required: true,
+        unique: true,
+    },
     num: {
         type: Number,
         unique: true,

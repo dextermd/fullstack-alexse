@@ -30,6 +30,8 @@ export class CreatePostCategoryComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
+      nameRo: new FormControl(null, Validators.required),
+      nameEn: new FormControl(null, Validators.required),
     });
 
     this.form.disable();
@@ -49,7 +51,9 @@ export class CreatePostCategoryComponent implements OnInit {
           if (category) {
             this.categoryy = category;
             this.form.patchValue({
-              name: category.name
+              name: category.name,
+              nameRo: category.nameRo,
+              nameEn: category.nameEn
             });
           }
           this.form.enable();
@@ -83,9 +87,18 @@ export class CreatePostCategoryComponent implements OnInit {
     let obs$;
     this.form.disable();
     if (this.isNew) {
-      obs$ = this.postcategoryServices.create(this.form.value.name);
+      obs$ = this.postcategoryServices.create(
+        this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+      );
     } else {
-      obs$ = this.postcategoryServices.update(this.categoryy._id, this.form.value.name);
+      obs$ = this.postcategoryServices.update(
+        this.categoryy._id,
+        this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+      );
 
     }
     obs$.subscribe(

@@ -18,19 +18,33 @@ export class CasaService {
     return this.http.get<CasaOption>(`/api/casa/${id}`);
   }
 
-  create(name: string, price: any): Observable<CasaOption>  {
+  create(
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    price: any
+  ): Observable<CasaOption>  {
     const fd = new FormData();
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('price', price);
 
     return this.http.post<CasaOption>('/api/casa', fd);
   }
 
 
-  update(id: string, name: string, price: any): Observable<CasaOption>  {
+  update(
+    id: string,
+    name: string,
+    nameRo: string,
+    nameEn: string,
+    price: any
+  ): Observable<CasaOption>  {
     const fd = new FormData();
-
     fd.append('name', name);
+    fd.append('nameRo', nameRo);
+    fd.append('nameEn', nameEn);
     fd.append('price', price);
 
     return this.http.patch<CasaOption>(`/api/casa/${id}`, fd);

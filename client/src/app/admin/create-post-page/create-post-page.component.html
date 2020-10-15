@@ -26,6 +26,48 @@
   </span>
   </div>
 
+  <div class="md-form">
+    <input
+      formControlName="titleRo"
+      mdbInput
+      type="text"
+      id="titleRo"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('titleRo').invalid && form.get('titleRo').touched }"
+    >
+
+    <label for="titleRo" class="">Название продукта Romanian</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('titleRo').invalid && form.get('titleRo').touched"
+    >
+  <span *ngIf="form.get('titleRo').errors['required']">
+    Имя продукта не может быть пустым
+  </span>
+  </span>
+  </div>
+
+  <div class="md-form">
+    <input
+      formControlName="titleEn"
+      mdbInput
+      type="text"
+      id="titleEn"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('titleEn').invalid && form.get('titleEn').touched }"
+    >
+
+    <label for="titleEn" class="">Название продукта English</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('titleEn').invalid && form.get('titleEn').touched"
+    >
+  <span *ngIf="form.get('titleEn').errors['required']">
+    Имя продукта не может быть пустым
+  </span>
+  </span>
+  </div>
+
   <div class="flex-center">
     <img
       class="responsive-img"
@@ -92,11 +134,63 @@
   </div>
 
 
+  <div class="md-form">
+    <textarea
+      formControlName="previewRo"
+      mdbInput
+      type="textarea"
+      id="previewRo"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('previewRo').invalid && form.get('previewRo').touched }"
+    ></textarea>
+
+    <label for="previewRo" class="">preview Ro</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('previewRo').invalid && form.get('previewRo').touched"
+    >
+  <span *ngIf="form.get('previewRo').errors['required']">
+    preview не может быть пустым
+  </span>
+  </span>
+  </div>
+
+
+  <div class="md-form">
+    <textarea
+      formControlName="previewEn"
+      mdbInput
+      type="textarea"
+      id="previewEn"
+      class="form-control"
+      [ngClass]="{'invalid': form.get('previewEn').invalid && form.get('previewEn').touched }"
+    ></textarea>
+
+    <label for="previewEn" class="">preview En</label>
+    <span
+      class="helper-text red-text"
+      *ngIf="form.get('previewEn').invalid && form.get('previewEn').touched"
+    >
+  <span *ngIf="form.get('previewEn').errors['required']">
+    preview не может быть пустым
+  </span>
+  </span>
+  </div>
+
   <div>
     <label>Контент поста</label>
     <quill-editor formControlName="content"></quill-editor>
   </div>
 
+  <div>
+    <label>Контент поста RO</label>
+    <quill-editor formControlName="contentRo"></quill-editor>
+  </div>
+
+  <div>
+    <label>Контент поста EN</label>
+    <quill-editor formControlName="contentEn"></quill-editor>
+  </div>
 
   <button
     [disabled]="form.invalid || form.disabled"
@@ -108,4 +202,3 @@
   </button>
 </form>
 
-preview

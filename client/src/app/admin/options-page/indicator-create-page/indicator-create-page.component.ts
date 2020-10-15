@@ -35,7 +35,11 @@ export class IndicatorCreatePageComponent implements OnInit {
   ngOnInit(): void {
     this.form = new FormGroup({
       name: new FormControl(null, Validators.required),
+      nameRo: new FormControl(null, Validators.required),
+      nameEn: new FormControl(null, Validators.required),
       content: new FormControl(null, Validators.required),
+      contentRo: new FormControl(null, Validators.required),
+      contentEn: new FormControl(null, Validators.required),
       price: new FormControl(null, Validators.required),
     });
 
@@ -57,7 +61,11 @@ export class IndicatorCreatePageComponent implements OnInit {
             this.indicator = indicator;
             this.form.patchValue({
               name: indicator.name,
+              nameRo: indicator.nameRo,
+              nameEn: indicator.nameEn,
               content: indicator.content,
+              contentRo: indicator.contentRo,
+              contentEn: indicator.contentEn,
               price: indicator.price
             });
             this.imagePreview = indicator.img;
@@ -108,6 +116,10 @@ export class IndicatorCreatePageComponent implements OnInit {
     if (this.isNew) {
       obs$ = this.indicatorService.create(
         this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
+        this.form.value.content,
+        this.form.value.content,
         this.form.value.content,
         this.form.value.price,
         this.image
@@ -116,7 +128,11 @@ export class IndicatorCreatePageComponent implements OnInit {
       obs$ = this.indicatorService.update(
         this.indicator._id,
         this.form.value.name,
+        this.form.value.nameRo,
+        this.form.value.nameEn,
         this.form.value.content,
+        this.form.value.contentRo,
+        this.form.value.contentEn,
         this.form.value.price,
         this.image
 
