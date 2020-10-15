@@ -4,6 +4,7 @@ import {Subscription} from 'rxjs';
 import {FormGroup} from '@angular/forms';
 import {SubcategoryService} from '../../shared/subcategory.service';
 import {ProductService} from '../../shared/product.service';
+import {MainLayoutComponent} from '../main-layout/main-layout.component';
 
 
 @Component({
@@ -22,10 +23,10 @@ export class CheckoutPageComponent implements OnInit, OnDestroy {
   dSub: Subscription;
   cSub: Subscription;
   form: FormGroup;
-  headElements = ['ID', 'Изображение', 'Название',  'Цена' , 'Описание'];
   constructor(
     private categoryService: SubcategoryService,
     private productService: ProductService,
+    public main: MainLayoutComponent
   ) { }
 
   ngOnInit(): void {

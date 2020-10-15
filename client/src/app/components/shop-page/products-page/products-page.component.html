@@ -3,8 +3,8 @@
     <div class="container">
 
       <mdb-breadcrumb-item>
-        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/'">Главная</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products'">Магазин</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/'">{{'Shop.Breadcrumbs.Home' | translate}}</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products'">{{'Shop.Breadcrumbs.Market' | translate}}</mdb-breadcrumb-item>
         <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products/subcategory/'+ this.subcategoryId">{{this.subcategoryName}}</mdb-breadcrumb-item>
         <mdb-breadcrumb-item class="active">
           <ng-container *ngIf="this.main.lang == 'ru'">
@@ -121,14 +121,14 @@
             <div *ngIf="product.subcategory === casaProd" class="input-group mb-3">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <label class="input-group-text" for="indicator1">Выбрать Индикатор</label>
+                  <label class="input-group-text" for="indicator1">{{'Shop.Select.Indicator' | translate}}</label>
                   <select [(ngModel)]="selectedIndicator" (change)="onSelectInd(selectedIndicator)"
                           class="browser-default custom-select" id="indicator1">
                     <option value="MERAV2000">MERAV2000</option>
                     <ng-container *ngFor="let indicat of indicatorS">
                       <ng-container *ngFor="let indi of product.indicator">
                         <ng-container *ngIf="indicat._id == indi">
-                          <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} Lei</option>
+                          <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} MDL</option>
                         </ng-container>
                       </ng-container>
                     </ng-container>
@@ -171,13 +171,13 @@
 
 
                             <div class="input-group-prepend">
-                <label class="input-group-text" for="casa">Выбрать Опции</label>
+                <label class="input-group-text" for="casa">{{'Shop.Select.Option' | translate}}</label>
                 <select [(ngModel)]="selected" (change)="onSelectCasa(selected)" class="browser-default custom-select"
                         id="casa">
                   <option value="Без колес">Без колес</option>
                   <ng-container *ngFor="let cassss of casaS let inx = index">
                     <ng-container *ngIf="cassss._id == product.casa[inx]">
-                      <option [value]="cassss.name">{{cassss.name}} + {{cassss.price}} Lei</option>
+                      <option [value]="cassss.name">{{cassss.name}} + {{cassss.price}} MDL</option>
                     </ng-container>
                   </ng-container>
 
@@ -213,14 +213,14 @@
 
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                  <label class="input-group-text" for="indicator">Выбрать Индикатор</label>
+                  <label class="input-group-text" for="indicator">{{'Shop.Select.Indicator' | translate}}</label>
                   <select [(ngModel)]="selectedIndicator" (change)="onSelectInd(selectedIndicator)"
                           class="browser-default custom-select" id="indicator">
                     <option value="MERAV2000">MERAV2000</option>
                     <ng-container *ngFor="let indicat of indicatorS">
                       <ng-container *ngFor="let indi of product.indicator">
                       <ng-container *ngIf="indicat._id == indi">
-                        <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} Lei</option>
+                        <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} MDL</option>
                       </ng-container>
                     </ng-container>
                     </ng-container>
@@ -263,14 +263,14 @@
               <div *ngIf="product.pandus[0] !== pandusNoHaveProd">
                 <div class="input-group mb-1">
                   <div class="input-group-prepend">
-                    <label class="input-group-text" for="pandus">Выбрать Пандус</label>
+                    <label class="input-group-text" for="pandus">{{'Shop.Select.Ramp' | translate}}</label>
                     <select [(ngModel)]="selectedPandus" (change)="onSelectPand(selectedPandus)"
                             class="browser-default custom-select" id="pandus">
                       <option value="Без пандусов">Без пандусов</option>
                       <ng-container *ngFor="let pand of pandusS">
                       <ng-container *ngFor="let pan of product.pandus">
                         <ng-container *ngIf="pand._id === pan">
-                          <option [value]="pand.name">{{pand.name}} + {{pand.price}} Lei</option>
+                          <option [value]="pand.name">{{pand.name}} + {{pand.price}} MDL</option>
                         </ng-container>
                         </ng-container>
                       </ng-container>
@@ -316,23 +316,23 @@
             <div class="mt-3">
               <h3 class="h3-responsive text-center text-md-left mb-2 ml-xl-0 ml-4">
           <span class="red-text font-weight-bold">
-            <strong class="pr-3">{{product.cost | number}} Lei</strong>
+            <strong class="pr-3">{{product.cost | number}} MDL</strong>
           </span>
                 <span class="grey-text">
             <small>
-              <s>{{+product.oldCost | currency: 'MDL '}}</s> <small class="pl-5 grey-text">Код продукта: {{product.code}}</small>
+              <s>{{+product.oldCost | currency: 'MDL '}}</s> <small class="pl-5 grey-text">{{'Shop.Index.Code' | translate}} {{product.code}}</small>
             </small>
           </span>
               </h3>
               <div class="row mt-3 mb-4">
                 <div class="col-md-12 text-center text-md-left">
-                  <li class="list-group-item">Количество: <input type="number" value="1" min="1"
+                  <li class="list-group-item">{{'Shop.Index.Number' | translate}} <input type="number" value="1" min="1"
                                                                  [(ngModel)]="product.quantity"></li>
 
                   <div *ngIf="product.subcategory === casaProd" class="pt-1">
                     <button [disabled]="!product.quantity" (click)="addToOrderCasa(product, selected, priceCasa , selectedIndicator, priceIndicator)"
                             class="btn btn-primary btn-rounded">
-                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> В Корзину
+                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> {{'BUTTONS.AddShop' | translate}}
                     </button>
                   </div>
 
@@ -343,7 +343,7 @@
                     <button [disabled]="!product.quantity"
                             (click)="addToOrderIndAndPand(product, selectedIndicator, priceIndicator, selectedPandus, pricePandus)"
                             class="btn btn-primary btn-rounded">
-                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> В Корзину
+                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> {{'BUTTONS.AddShop' | translate}}
                     </button>
                   </div>
 
@@ -353,7 +353,7 @@
                     class="pt-1">
                     <button [disabled]="!product.quantity" (click)="addToOrder(product)"
                             class="btn btn-primary btn-rounded">
-                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> В Корзину
+                      <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> {{'BUTTONS.AddShop' | translate}}
                     </button>
                   </div>
 
@@ -370,7 +370,7 @@
 
       <ngb-tabset [destroyOnHide]="false">
 
-        <ngb-tab  title="Технические параметры">
+        <ngb-tab  title="{{'Shop.Index.Tech' | translate}}">
           <ng-template ngbTabContent>
             <ng-container *ngIf="this.main.lang == 'ru'">
               <div [froalaView]="product.spec"></div>
@@ -388,7 +388,7 @@
           </ng-template>
         </ngb-tab>
 
-        <ngb-tab  title="Функциональные возможности">
+        <ngb-tab  title="{{'Shop.Index.Func' | translate}}">
           <ng-template ngbTabContent>
             <ng-container *ngIf="this.main.lang == 'ru'">
               <quill-view-html [content]="product.functions"></quill-view-html>
@@ -406,7 +406,7 @@
           </ng-template>
         </ngb-tab>
 
-        <ngb-tab title="Сертификаты">
+        <ngb-tab title="{{'Shop.Index.Cert' | translate}}">
           <ng-template ngbTabContent>
             <quill-view-html [content]="product.certificate"></quill-view-html>
           </ng-template>

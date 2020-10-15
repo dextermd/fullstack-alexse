@@ -3,26 +3,26 @@
     <div class="container">
 
       <mdb-breadcrumb-item>
-        <mdb-breadcrumb-item [routerLink]="'/'">Главная</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item class="active">Продукты</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item [routerLink]="'/'">{{'Shop.Breadcrumbs.Home' | translate}}</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item class="active">{{'Shop.Breadcrumbs.Products' | translate}}</mdb-breadcrumb-item>
       </mdb-breadcrumb-item>
     </div>
   </mdb-breadcrumb>
 </div>
 
 
-  <div class="container">
+<div class="container">
   <div class="row pt-0 pb-0">
     <div class="col-sm-9 order-2">
       <div class="d-flex justify-content-end">
-      <select class="browser-default"  [(ngModel)]="sort">
-        <option value="-date">Новые поступления</option>
-        <option value="cost">Цена (low to high)</option>
-        <option value="-cost">Цена (high to low)</option>
-        <option value="name">Название А-Я</option>
-        <option value="-name">Название Я-А</option>
-        <option value="-sale">Распродажа</option>
-      </select>
+        <select class="browser-default" [(ngModel)]="sort">
+          <option value="-date">{{'Shop.Select.Date' | translate}}</option>
+          <option value="cost">{{'Shop.Select.CostLow' | translate}}</option>
+          <option value="-cost">{{'Shop.Select.CostHigh' | translate}}</option>
+          <option value="name">{{'Shop.Select.NameA' | translate}}</option>
+          <option value="-name">{{'Shop.Select.NameZ' | translate}}</option>
+          <option value="-sale">{{'Shop.Select.Sale' | translate}}</option>
+        </select>
       </div>
       <!--Section: Products v.3-->
       <section class="text-center pb-3 my-5">
@@ -38,7 +38,8 @@
               <div class="view">
                 <img src="{{prod.img[0].path}}" class="img-fluid " alt="zoom">
                 <div class="mask waves-effect">
-                  <p class="white-text"><mdb-badge *ngIf="prod.sale" pill="true" danger="true">Распродажа!</mdb-badge>
+                  <p class="white-text">
+                    <mdb-badge *ngIf="prod.sale" pill="true" danger="true">{{'Shop.Select.Sale' | translate}}</mdb-badge>
                   </p>
                 </div>
 
@@ -97,7 +98,8 @@
 
       <!-- Search form -->
       <div class="form-inline md-form form-sm active-cyan-2 border pl-3">
-        <input class="form-control form-control-sm mr-1 w-75 pl-3" type="text" placeholder="Найти товар..." [(ngModel)]="searchStr" aria-label="Search"
+        <input class="form-control form-control-sm mr-1 w-75 pl-3" type="text" placeholder="{{'Shop.Category.Search' | translate}}"
+               [(ngModel)]="searchStr" aria-label="Search"
                mdbInput>
         <mdb-icon fas icon="search" aria-hidden="true"></mdb-icon>
       </div>
@@ -106,49 +108,49 @@
 
       <div>
         <div class="list-group my-2 py-2">
-          <a (click)="defaultPage()" [routerLink]="'/products'"  class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
-            Все товары
+          <a (click)="defaultPage()" [routerLink]="'/products'"
+             class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
+            {{'Shop.Category.All' | translate}}
           </a>
         </div>
       </div>
 
       <div>
         <div class="list-group my-2 py-2">
-          <a (click)="test2.toggle()"    class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
-            Промышленное
+          <a (click)="test2.toggle()" class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
+            {{'Shop.Category.Industrial' | translate}}
           </a>
           <div mdbCollapse [isCollapsed]="colapseOne" #test2="bs-collapse">
-                  <a (click)="defaultPage()"
-                     [routerLink]="['/auto-index']"
-                     class="list-group-item list-group-item-action waves-light"
-                  >
-                    Автомобильные Весы
-                  </a>
+            <a (click)="defaultPage()"
+               [routerLink]="['/auto-index']"
+               class="list-group-item list-group-item-action waves-light"
+            >
+              {{'Shop.Category.AutoScales' | translate}}
+            </a>
 
-                  <a (click)="defaultPage()"
-                     [routerLink]="['/wagon-index']"
-                     class="list-group-item list-group-item-action waves-light"
-                  >
-                    Вагонные весы
-                  </a>
+            <a (click)="defaultPage()"
+               [routerLink]="['/wagon-index']"
+               class="list-group-item list-group-item-action waves-light"
+            >
+              {{'Shop.Category.WagonScales' | translate}}
+            </a>
 
-                  <a (click)="defaultPage()"
-                     [routerLink]="['/bunker-index']"
-                     class="list-group-item list-group-item-action waves-light"
-                  >
-                    Бункерные весы
-                  </a>
+            <a (click)="defaultPage()"
+               [routerLink]="['/bunker-index']"
+               class="list-group-item list-group-item-action waves-light"
+            >
+              {{'Shop.Category.HopperScales' | translate}}
+            </a>
           </div>
         </div>
       </div>
-
 
 
       <ng-container *ngIf="productCategory$ | async as productCategory">
 
 
         <div *ngFor="let pcategory of productCategory" class="list-group my-2 py-2">
-          <a  (click)="test.toggle()" class="list-group-item active waves-light text-white text-center"  mdbWavesEffect>
+          <a (click)="test.toggle()" class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
             {{pcategory.name}}
           </a>
           <!--          [isCollapsed]="false" -->
@@ -156,7 +158,7 @@
             <div *ngIf="subproductCategory$ | async as productSubCategory">
               <ng-container *ngFor="let psubcategory of productSubCategory">
                 <ng-container *ngIf="pcategory._id === psubcategory.category">
-                  <a (click)="defaultPage()"  [routerLink]="['/products/subcategory', psubcategory._id]"
+                  <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
                      class="list-group-item list-group-item-action waves-light"> {{psubcategory.name}}</a>
                 </ng-container>
               </ng-container>
@@ -182,3 +184,4 @@
   <ng-template #loading>
     <p class="text-center">Загружаю продукты...</p>
   </ng-template>
+</div>

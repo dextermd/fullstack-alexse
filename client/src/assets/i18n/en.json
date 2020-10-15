@@ -61,7 +61,8 @@
     "Call": "CALL",
     "Write": "WRITE",
     "Send": "Send message",
-    "Detail": "DETAILED"
+    "Detail": "DETAILED",
+    "AddShop": "ADD"
   },
   "HOME": {
     "INFO_SHORT": {
@@ -1532,5 +1533,78 @@
         "TwoBottom": "The module allows you to work with an order on a smartphone or tablet. Synchronization with the central base takes place via WiFi or 3 / 4g. Constant presence in the communication zone is not necessary, the device can work autonomously. A waiter with a smartphone is not tied to the hall in which the stationary station is located."
       }
     }
+  },
+  "Programs": {
+    "Header": {
+      "Title": "SOFTWARE",
+      "SubTitle": "Enterprise automation is a well-organized process in which management<br> and control functions are transferred  to specialized equipment and software."
+    },
+    "List": {
+      "AlexTitle": "AlexMarket",
+      "AlexSubTitle": "Professional software for automation<br> of trade and accounting of goods.",
+      "B52Title": "B52",
+      "B52SubTitle": "A modern software product with many configurations for the automation of enterprises in various fields of activity.",
+      "FlagTitle": "Flagman",
+      "FlagSubTitle": "Software for the automation of canteens,<br> cafes, restaurants and hotels.",
+      "Button": "FAMILIARIZE",
+      "Info": "AUTOMATION OF YOUR BUSINESS TOGETHER WITH ALEX S&E"
+    },
+    "InfoList": {
+      "IconTitleOne": "27 years",
+      "IconTextOne": "Of experience",
+      "IconTitleTwo": "More than 500",
+      "IconTextTwo": "Trade enterprises",
+      "IconTitleThree": "More than 500",
+      "IconTextThree": "Catering automation",
+      "IconTitleFour": "More than 150",
+      "IconTextFour": "Industrial enterprises",
+      "Text": "In the modern world, automation systems are used everywhere. The activities of enterprises and organizations of various industries, it is difficult to imagine without them. Every day, more and more managers understand that automation is the key to the successful development of a company. Alex S&E develops and implements software for the automation of enterprises in various fields of activity. The software offered by Alex S&E is reliable and versatile. For more than 27 years, software products created and implemented by the company's specialists have been used in trade and industrial enterprises, in medical centers and hospitals, spa centers, fitness clubs, hotels, restaurants, bars, canteens, for warehouse accounting and management of balances. The automation of any enterprise is a system that works in concert with hardware and software. When automating the entire technological process, a person performs only an observation function, and, therefore, risks associated with the human factor are excluded as much as possible. Automation allows you to combine all divisions of the enterprise into a single, well-coordinated mechanism. Personnel management, control of product leftovers in the sales area, warehouse or at different stages of production, sidki, planning, reservation, reporting and analytics - these are the few things that enterprise automation gives.\nToday, automation of any enterprise is no longer a luxury, but a guarantee of the company's productive work. The right choice of software and hardware will maximize results and minimize the cost of implementing automation systems. Thanks to their experience, Alex S&E specialists will help you find the best solution that suits your business."
+    },
+    "Tech": {
+      "Title": "Technical support 365/7",
+      "SubTitle": "With the introduction of automation systems, you receive not only advanced equipment and software, <br> but also constant technical support. Our specialists work every day, without weekends and holidays ",
+      "BottomTitle": "SERVICE IS AVAILABLE DAILY, INCLUDING HOLIDAYS AND WEEKENDS FROM 9:00 TO 19:00"
+    }
+  },
+  "Shop": {
+    "Breadcrumbs": {
+      "Home": "Home",
+      "Products": "Products",
+      "Market": "Shop"
+    },
+    "Select": {
+      "Date": "New Arrivals",
+      "CostLow": "Price (low to high)",
+      "CostHigh": "Price (high to low)",
+      "NameA": "Name A-Z",
+      "NameZ": "Name Z-A",
+      "Sale": "Sale!",
+      "Indicator": "Select Indicator",
+      "Ramp": "Select Ramp",
+      "Option": "Select Options"
+    },
+    "Category": {
+      "All": "All goods",
+      "Industrial": "Industrial",
+      "AutoScale": "Car weights",
+      "WagonScales": "Wagon scales",
+      "HopperScales": "Hopper scales",
+      "Search": "Find a product ..."
+    },
+    "Index": {
+      "Number": "Number:",
+      "Code": "Code of product:",
+      "Tech": "Technical specifications",
+      "Func": "Functionality",
+      "Cert": "Certificates"
+    }
+  },
+  "PriceList": {
+    "Button": "Print the price list",
+    "Id": "ID",
+    "Image": "Image",
+    "Name": "Name",
+    "Price": "Price",
+    "Spec": "Description"
   }
 }

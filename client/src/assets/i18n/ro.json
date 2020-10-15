@@ -61,7 +61,8 @@
     "Call": "APELEAZĂ",
     "Write": "SCRIE",
     "Send": "Trimite mesaj",
-    "Detail": "DETALIAT"
+    "Detail": "DETALIAT",
+    "AddShop": "Adaugă"
   },
   "HOME": {
     "INFO_SHORT": {
@@ -1532,5 +1533,78 @@
         "TwoBottom": "Modulul vă permite să lucrați cu o comandă pe un smartphone sau tabletă. Sincronizarea cu baza centrală are loc prin WiFi sau 3 / 4g. Prezența constantă în zona de comunicație nu este necesară, dispozitivul poate funcționa autonom. Un chelner cu un smartphone nu este legat de holul în care se află stația staționară"
       }
     }
+  },
+  "Programs": {
+    "Header": {
+      "Title": "SOFTWARE",
+      "SubTitle": "Automatizarea întreprinderii este un proces bine organizat în care funcțiile <br> de management și control sunt transferate echipamentului și softului specializat."
+    },
+    "List": {
+      "AlexTitle": "AlexMarket",
+      "AlexSubTitle": "Soft profesional pentru automatizarea<br> comerțului și evidenței mărfurilor. ",
+      "B52Title": "B52",
+      "B52SubTitle": "Un produs software modern cu multe configurații pentru automatizarea întreprinderilor din diferite domenii de activitate.",
+      "FlagTitle": "Flagman",
+      "FlagSubTitle": "Soft pentru automatizarea cantinelor,<br> cafenelelor, restaurantelor și hotelurilor.",
+      "Button": "FAMILIARIZA",
+      "Info": "AUTOMATIZAREA AFACERII VOASTRE ÎMPREUNĂ CU ALEX S&E"
+    },
+    "InfoList": {
+      "IconTitleOne": "27 de ani",
+      "IconTextOne": "Experiență profesională",
+      "IconTitleTwo": "Peste 500",
+      "IconTextTwo": "De întreprinderi comercială",
+      "IconTitleThree": "Peste 500",
+      "IconTextThree": "Atomatizarea alimentației publice",
+      "IconTitleFour": "Peste 150",
+      "IconTextFour": "De întreprinderi industriale",
+      "Text": "În lumea modernă, sistemele de automatizare sunt folosite pretutindeni. Activitățile întreprinderilor și organizațiilor din diferite sectoare este dificil de imaginat fără acestea. În fiecare zi, tot mai mulți manageri înțeleg că automatizarea este cheia dezvoltării cu succes a unei companii. Alex S&E dezvoltă și implementează software pentru automatizarea întreprinderilor din diferite domenii de activitate. Softul oferit de Alex S&E este fiabil și multifuncțional. De mai bine de 27 de ani, produsele software create și implementate de specialiștii companiei sunt utilizate la întreprinderi comerciale și industriale, la centre medicale și spitale, centre spa, cluburi de fitness, hoteluri, restaurante, baruri, cantine, pentru evidența depozitelor și gestionarea stocurilor. Automatizarea oricărei întreprinderi este un sistem care funcționează împreună cu hardware și software. În cazul automatizării întregului proces tehnologic, persoana îndeplinește doar funcția de supraveghere și, prin urmare, riscurile legate de factorul uman sunt excluse la maxim. Automatizarea face posibilă unirea tuturor departamentelor întreprinderii într-un singur mecanism bine coordonat. Gestionarea personalului, controlul stocurilor de produse rămase în sala de vânzare, la depozit sau la diferite etape de producție, gestionarea reducerilor, planificarea, rezervarea, raportarea și analiza sunt puținele lucruri pe care le oferă automatizarea întreprinderii.\nAstăzi, automatizarea oricărei întreprinderi nu mai este un lux, ci o garanție a activității productive a companiei. Alegerea corectă a software-ului și hardware-ului va maximiza rezultatele și va minimiza costurile implementării sistemelor de automatizare. Datorită experienței lor, specialiștii Alex S&E vă vor ajuta să găsiți cea mai bună soluție care se potrivește afacerii voastre."
+    },
+    "Tech": {
+      "Title": "Suport tehnic 365/7",
+      "SubTitle": "Odată cu introducerea sistemelor de automatizare, beneficiați nu doar de echipamente și software avansate, <br> ci și de asistență tehnică constantă. Specialiștii noștri lucrează în fiecare zi, șapte zile în săptămână și la sărbători",
+      "BottomTitle": "SERVICIU ZILNIC DISPONIBIL, INCLUSIV LA SĂRBĂTORI ȘI ÎN ZILELE DE ODIHNĂ DE LA 9:00 PÂNĂ LA 19:00"
+    }
+  },
+  "Shop": {
+    "Breadcrumbs": {
+      "Home": "Acasă",
+      "Products": "Produse",
+      "Market": "Scor"
+    },
+    "Select": {
+      "Date": "Sosiri noi",
+      "CostLow": "Preț (crescător)",
+      "CostHigh": "Preț (descrescător)",
+      "NameA": "Numele A-Z",
+      "NameZ": "Numele Z-А",
+      "Sale": "Sale!",
+      "Indicator": "Selectați Indicator",
+      "Ramp": "Selectați Ramp",
+      "Option": "Selectati optiunile"
+    },
+    "Category": {
+      "All": "Toate mărfurile",
+      "Industrial": "Industrial",
+      "AutoScale": "Greutăți auto",
+      "WagonScales": "Cântare de vagon",
+      "HopperScales": "Cântar de buncăr",
+      "Search": "Găsiți un produs ..."
+    },
+    "Index": {
+      "Number": "Număr:",
+      "Code": "Codul produsului:",
+      "Tech": "Specificatii tehnice",
+      "Func": "Funcționalitate",
+      "Cert": "Certificate"
+    }
+  },
+  "PriceList": {
+    "Button": "Imprimați lista de prețuri",
+    "Id": "ID",
+    "Image": "Imagine",
+    "Name": "Nume",
+    "Price": "Preț",
+      "Spec": "Descriere"
   }
 }

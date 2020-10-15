@@ -1,27 +1,63 @@
 <div class="pl-5 pr-5 py-5 my-5">
   <div class="d-print-none">
-  <button (click)="onPrint()">Распечатать прайс-лист</button>
+    <button (click)="onPrint()">{{'PriceList.Button' | translate}}</button>
   </div>
-<div  class="flex-center ">
-<table mdbTable bordered="true" >
-  <thead>
-  <tr>
-    <th *ngFor="let head of headElements" scope="col" class=""> <h5>{{head}}</h5> </th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr  *ngFor="let prod of products">
-    <th  scope="row">{{prod.code}}</th>
-    <td>
-      <a [routerLink]="'/products/item/'+ prod._id" ><img style="height: 100px" src="{{prod.img[0].path}}" alt="" class="img-fluid z-depth-0"></a>
-    </td>
+  <div class="flex-center ">
+    <table mdbTable bordered="true">
+      <thead>
+      <tr>
+        <th scope="col" class=""><h5>{{'PriceList.Id' | translate}}</h5></th>
+        <th scope="col" class=""><h5>{{'PriceList.Image' | translate}}</h5></th>
+        <th scope="col" class=""><h5>{{'PriceList.Name' | translate}}</h5></th>
+        <th scope="col" class=""><h5>{{'PriceList.Price' | translate}}</h5></th>
+        <th scope="col" class=""><h5>{{'PriceList.Spec' | translate}}</h5></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let prod of products">
+        <th scope="row">{{prod.code}}</th>
+        <td>
+          <a [routerLink]="'/products/item/'+ prod._id">
+            <img style="height: 100px" src="{{prod.img[0].path}}" alt="" class="img-fluid z-depth-0">
+          </a>
+        </td>
 
-    <td ><div class="d-flex justify-content-center"> {{prod.name}}  </div></td>
+        <td>
+          <div class="d-flex justify-content-center">
+            <ng-container *ngIf="this.main.lang == 'ru'">
+              {{prod.name}}
+            </ng-container>
 
-    <td><span class="text-danger font-weight-bold">{{prod.cost | currency: ' '}}</span></td>
-    <td><quill-view-html [content]="prod.content"></quill-view-html></td>
-  </tr>
-  </tbody>
-</table>
-</div>
+            <ng-container *ngIf="this.main.lang == 'ro'">
+              {{prod.nameRo}}
+            </ng-container>
+
+            <ng-container *ngIf="this.main.lang == 'en'">
+              {{prod.nameEn}}
+            </ng-container>
+          </div>
+        </td>
+
+        <td>
+      <span class="text-danger font-weight-bold">
+        {{prod.cost | currency: ' '}}
+      </span>
+        </td>
+        <td>
+          <ng-container *ngIf="this.main.lang == 'ru'">
+            <quill-view-html [content]="prod.content"></quill-view-html>
+          </ng-container>
+
+          <ng-container *ngIf="this.main.lang == 'ro'">
+            <quill-view-html [content]="prod.contentRo"></quill-view-html>
+          </ng-container>
+
+          <ng-container *ngIf="this.main.lang == 'en'">
+            <quill-view-html [content]="prod.contentEn"></quill-view-html>
+          </ng-container>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
