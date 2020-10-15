@@ -140,7 +140,19 @@
                     <ng-container *ngFor="let indicat of indicatorS">
                       <ng-container *ngFor="let indi of product.indicator">
                         <ng-container *ngIf="indicat._id == indi">
-                          <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} MDL</option>
+                          <option [value]="indicat.name">
+                            <ng-container *ngIf="this.main.lang == 'ru'">
+                              {{indicat.name}} + {{indicat.price}} MDL
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'ro'">
+                              {{indicat.nameRo}} + {{indicat.price}} MDL
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'en'">
+                              {{indicat.nameEn}} + {{indicat.price}} MDL
+                            </ng-container>
+                          </option>
                         </ng-container>
                       </ng-container>
                     </ng-container>
@@ -165,7 +177,17 @@
                           <!--Grid column-->
                           <!--Grid column-->
                           <div class="col-md-8 mb-2">
-                            <quill-view [content]="indicat.content"></quill-view>
+                            <ng-container *ngIf="this.main.lang == 'ru'">
+                              <quill-view [content]="indicat.content"></quill-view>
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'ro'">
+                              <quill-view [content]="indicat.contentRo"></quill-view>
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'en'">
+                              <quill-view [content]="indicat.contentEn"></quill-view>
+                            </ng-container>
                             <div *ngIf="indicat.price !== 0">
                               <strong class="text-danger"> + {{indicat.price | currency: 'MDL '}}</strong>
                             </div>
@@ -189,7 +211,19 @@
                   <option value="Без колес">Без колес</option>
                   <ng-container *ngFor="let cassss of casaS let inx = index">
                     <ng-container *ngIf="cassss._id == product.casa[inx]">
-                      <option [value]="cassss.name">{{cassss.name}} + {{cassss.price}} MDL</option>
+                      <option [value]="cassss.name">
+                        <ng-container *ngIf="this.main.lang == 'ru'">
+                          {{cassss.name}} + {{cassss.price}} MDL
+                        </ng-container>
+
+                        <ng-container *ngIf="this.main.lang == 'ro'">
+                          {{cassss.nameRo}} + {{cassss.price}} MDL
+                        </ng-container>
+
+                        <ng-container *ngIf="this.main.lang == 'en'">
+                          {{cassss.nameEn}} + {{cassss.price}} MDL
+                        </ng-container>
+                      </option>
                     </ng-container>
                   </ng-container>
 
@@ -232,7 +266,19 @@
                     <ng-container *ngFor="let indicat of indicatorS">
                       <ng-container *ngFor="let indi of product.indicator">
                       <ng-container *ngIf="indicat._id == indi">
-                        <option [value]="indicat.name">{{indicat.name}} + {{indicat.price}} MDL</option>
+                        <option [value]="indicat.name">
+                          <ng-container *ngIf="this.main.lang == 'ru'">
+                            {{indicat.name}} + {{indicat.price}} MDL
+                          </ng-container>
+
+                          <ng-container *ngIf="this.main.lang == 'ro'">
+                            {{indicat.nameRo}} + {{indicat.price}} MDL
+                          </ng-container>
+
+                          <ng-container *ngIf="this.main.lang == 'en'">
+                            {{indicat.nameEn}} + {{indicat.price}} MDL
+                          </ng-container>
+                        </option>
                       </ng-container>
                     </ng-container>
                     </ng-container>
@@ -257,7 +303,17 @@
                           <!--Grid column-->
                           <!--Grid column-->
                           <div class="col-md-8 mb-2 mb-md-0">
-                            <quill-view [content]="indicat.content"></quill-view>
+                            <ng-container *ngIf="this.main.lang == 'ru'">
+                              <quill-view [content]="indicat.content"></quill-view>
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'ro'">
+                              <quill-view [content]="indicat.contentRo"></quill-view>
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'en'">
+                              <quill-view [content]="indicat.contentEn"></quill-view>
+                            </ng-container>
                             <div *ngIf="indicat.price !== 0">
                               <strong class="text-danger"> + {{indicat.price | currency: 'MDL '}}</strong>
                             </div>
@@ -282,7 +338,19 @@
                       <ng-container *ngFor="let pand of pandusS">
                       <ng-container *ngFor="let pan of product.pandus">
                         <ng-container *ngIf="pand._id === pan">
-                          <option [value]="pand.name">{{pand.name}} + {{pand.price}} MDL</option>
+                          <option [value]="pand.name">
+                            <ng-container *ngIf="this.main.lang == 'ru'">
+                              {{pand.name}} + {{pand.price}} MDL
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'ro'">
+                              {{pand.nameRo}} + {{pand.price}} MDL
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'en'">
+                              {{pand.nameEn}} + {{pand.price}} MDL
+                            </ng-container>
+                          </option>
                         </ng-container>
                         </ng-container>
                       </ng-container>
@@ -308,7 +376,17 @@
                           <!--Grid column-->
                           <!--Grid column-->
                           <div class="col-md-8 mb-2 mb-md-0">
-                            <quill-view [content]="pand.content"></quill-view>
+                            <ng-container *ngIf="this.main.lang == 'ru'">
+                              <quill-view [content]="pand.content"></quill-view>
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'ro'">
+                              <quill-view [content]="pand.contentRo"></quill-view>
+                            </ng-container>
+
+                            <ng-container *ngIf="this.main.lang == 'en'">
+                              <quill-view [content]="pand.contentEn"></quill-view>
+                            </ng-container>
                             <div *ngIf="pand.price !== 0">
                               <strong class="text-danger"> + {{pand.price | currency: 'MDL '}}</strong>
                             </div>
