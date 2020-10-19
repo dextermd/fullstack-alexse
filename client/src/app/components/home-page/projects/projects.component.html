@@ -1,52 +1,4 @@
-<!--&lt;!&ndash;Projects section v.1&ndash;&gt;-->
-<!--<section>-->
-<!--  <div class="container text-center">-->
-
-<!--    &lt;!&ndash;Section heading&ndash;&gt;-->
-<!--    <h2 class="text-center h1 py-3 wow fadeInDown" data-wow-delay="0.6s">-->
-<!--      <strong>НАШИ ПРОЕКТЫ</strong>-->
-<!--    </h2>-->
-
-
-<!--    &lt;!&ndash;Grid row&ndash;&gt;-->
-<!--    <ng-container *ngFor="let post of posts">-->
-<!--      <div *ngIf="post.category === '5f1809831ef4943e944f0136'" class="row text-center">-->
-
-<!--        &lt;!&ndash;Grid column&ndash;&gt;-->
-<!--        <div class="col-lg-3 col-md-6 mb-3 wow bounceIn" data-wow-delay="0.6s">-->
-
-<!--          &lt;!&ndash;Featured image&ndash;&gt;-->
-<!--          <div class="view overlay rounded z-depth-1 waves-light" mdbWavesEffect>-->
-<!--            <img src="{{post.img}}" class="img-fluid" alt="Sample project image">-->
-<!--            <a>-->
-<!--              <div class="mask rgba-white-slight"></div>-->
-<!--            </a>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash;Excerpt&ndash;&gt;-->
-<!--          <mdb-card-body class="mt-3">-->
-<!--            <h4>-->
-<!--              <strong>{{post.title}}</strong>-->
-<!--            </h4>-->
-<!--            <p class="grey-text">{{post.preview}}-->
-<!--            </p>-->
-<!--            <a [routerLink]="['news/post', post._id]" mdbBtn color="primary" size="sm" class="waves-light" mdbWavesEffect>-->
-<!--              <mdb-icon far icon="clone" class="left"></mdb-icon>-->
-<!--              Смотреть</a>-->
-<!--          </mdb-card-body>-->
-
-<!--        </div>-->
-<!--        &lt;!&ndash;Grid column&ndash;&gt;-->
-
-<!--      </div>-->
-<!--    </ng-container>-->
-
-<!--  </div>-->
-
-<!--</section>-->
-<!--&lt;!&ndash;/Projects section v.1&ndash;&gt;-->
 <div class="container mt-5">
-
 
   <!--Section: Content-->
   <section>
@@ -72,14 +24,14 @@
         <!--News tile -->
         <div class="news-tile view zoom z-depth-1 rounded mb-4">
 
-          <a [routerLink]="'/auto-index'"  class="text-white">
-            <img style="width: 700px; max-height: 330px"src="assets/industrial/111.png"
+          <a [routerLink]="'/auto-index'" class="text-white">
+            <img style="width: 700px; max-height: 330px" src="assets/industrial/111.png"
                  class="img-fluid rounded-bottom" alt="sample image">
             <div class="mask rgba-stylish-light">
               <div class="text-white text-center py-lg-5 py-0 my-0">
                 <div>
                   <h4 class="card-title font-weight-bold pt-2">
-                    <strong>Автомобильные весы</strong>
+                    <strong>{{'Shop.Category.AutoScales' | translate}}</strong>
                   </h4>
 
                   <p class="mx-5 clearfix d-none d-md-block"></p>
@@ -100,14 +52,14 @@
         <!--News tile -->
         <div class="news-tile view zoom z-depth-1 rounded mb-4">
 
-          <a [routerLink]="'/wagon-index'"  class="text-white">
+          <a [routerLink]="'/wagon-index'" class="text-white">
             <img style="width: 700px; max-height: 305px" src="assets/industrial/vagon/1.jpg"
                  class="img-fluid rounded-bottom" alt="sample image">
             <div class="mask rgba-stylish-light">
               <div class="text-white text-center py-lg-5 py-0 my-0">
                 <div>
                   <h4 class="card-title font-weight-bold pt-2">
-                    <strong>Вагонные весы</strong>
+                    <strong>{{'Shop.Category.WagonScales' | translate}}</strong>
                   </h4>
 
                   <p class="mx-5 clearfix d-none d-md-block"></p>
@@ -128,14 +80,14 @@
         <!--News tile -->
         <div class="news-tile view zoom z-depth-1 rounded mb-4">
 
-          <a [routerLink]="'/bunker-index'"  class="text-white">
+          <a [routerLink]="'/bunker-index'" class="text-white">
             <img style="width: 700px; max-height: 305px" src="assets/industrial/bunker/2.jpg"
                  class="img-fluid rounded-bottom" alt="sample image">
             <div class="mask rgba-stylish-light">
               <div class="text-white text-center py-lg-5 py-0 my-0">
                 <div>
                   <h4 class="card-title font-weight-bold pt-2">
-                    <strong>Бункерные весы</strong>
+                    <strong>{{'Shop.Category.HopperScales' | translate}}</strong>
                   </h4>
 
                   <p class="mx-5 clearfix d-none d-md-block"></p>

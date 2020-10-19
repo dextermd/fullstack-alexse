@@ -598,8 +598,8 @@
         "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 18-00<br>Sb – Du  zile libere</p>"
       },
       "Ucraina": {
-        "Title": "ФИЛИАЛ УКРАИНА",
-        "Adress": "<p>ДП «АЛЕКС ВЕСЫ И ОБОРУДОВАНИЕ»<br>ул. Профсоюзов 60, оф 101<br>or. Harikov, str. Romena Rollana, 12.</p>",
+        "Title": "Filiala din Ucraina",
+        "Adress": "<p>ДП «АЛЕКС ВЕСЫ И ОБОРУДОВАНИЕ»<br>Adresa: 61058, Ukraina,<br>or. Harikov, str. Romena Rollana, 12.</p>",
         "Contact": "<p>E-mail: alex_vio@mail.ru<br>Telefon: + 380 (57) 719 48 33<br>Telefon: + 380 (57) 759 11 24</p>"
       }
     }
@@ -1586,7 +1586,7 @@
     "Category": {
       "All": "Toate mărfurile",
       "Industrial": "Industrial",
-      "AutoScale": "Greutăți auto",
+      "AutoScales": "Greutăți auto",
       "WagonScales": "Cântare de vagon",
       "HopperScales": "Cântar de buncăr",
       "Search": "Găsiți un produs ..."

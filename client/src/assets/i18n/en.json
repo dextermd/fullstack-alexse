@@ -598,7 +598,7 @@
         "Time": "<p>Working hours:<br>Mon - Fri from 8-00 A.M. to<br>Sat - Sun days off</p>"
       },
       "Ucraina": {
-        "Title": "ФИЛИАЛ УКРАИНА",
+        "Title": "BRANCH UKRAINE",
         "Adress": "<p>ДП «АЛЕКС ВЕСЫ И ОБОРУДОВАНИЕ»<br>61058, 12  Romen Rollan Str., Kharkov, Ukraine<br>",
         "Contact": "<p>E-mail: alex_vio@mail.ru<br>Phone: + 380 (57) 719 48 33<br>Phone: + 380 (57) 759 11 24</p>"
       }
@@ -1586,7 +1586,7 @@
     "Category": {
       "All": "All goods",
       "Industrial": "Industrial",
-      "AutoScale": "Car weights",
+      "AutoScales": "Car weights",
       "WagonScales": "Wagon scales",
       "HopperScales": "Hopper scales",
       "Search": "Find a product ..."
