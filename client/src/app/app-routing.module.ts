@@ -51,7 +51,7 @@ const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
       {path: '', redirectTo: '/', pathMatch: 'full'},
-      {path: '', component: HomePageComponent},
+      // {path: '', component: HomePageComponent},
       {path: 'programs', component: ProgrammesPageComponent},
       {path: 'alex-market', component: AlexMarketPageComponent},
       {path: 'flagman', component: FlagmanPageComponent},

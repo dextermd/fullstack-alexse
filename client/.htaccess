@@ -1,0 +1,2 @@
+RewriteCond %{REQUEST_URI} ^/ru/price/scales/item/92-0008178/$
+RewriteRule ^.*$ http://185.163.44.58/products/item/5f523279c56ec5257dbc08ca/? [R=301,L]
