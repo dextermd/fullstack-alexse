@@ -50,7 +50,7 @@ import {DozatorModernPageComponent} from './components/bunker/dozator-modern-pag
 const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
-      // {path: '', redirectTo: '/', pathMatch: 'full'},
+      {path: '', redirectTo: '/', pathMatch: 'full'},
       {path: '', component: HomePageComponent},
       {path: 'programs', component: ProgrammesPageComponent},
       {path: 'alex-market', component: AlexMarketPageComponent},
@@ -101,13 +101,13 @@ const routes: Routes = [
   {
     path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
 },
-  { path: '**', redirectTo: '/', pathMatch: 'full' },
+  // { path: '**', redirectTo: '/', pathMatch: 'full' },
 
     ];
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes, {
-    preloadingStrategy: PreloadAllModules,
+    // preloadingStrategy: PreloadAllModules,
     enableTracing: false,
     scrollPositionRestoration: 'top',
   })
