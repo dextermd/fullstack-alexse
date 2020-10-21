@@ -102,13 +102,13 @@ const routes: Routes = [
     path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
 },
   { path: '**', redirectTo: '/', pathMatch: 'full' },
-  { path: 'ru/price/scales/item/92-0008178', redirectTo: '/products/item/5f5232cec56ec5257dbc08cb', pathMatch: 'full' }
+  { path: 'ru/price/scales/item/92-0008178', redirectTo: '/products/item/5f5232cec56ec5257dbc08cb' }
 
     ];
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes, {
-    // preloadingStrategy: PreloadAllModules,
+    preloadingStrategy: PreloadAllModules,
     enableTracing: false,
     scrollPositionRestoration: 'top',
   })
