@@ -19,6 +19,7 @@ import {ProductsComponent} from '../products/products.component';
 import {TranslateService} from '@ngx-translate/core';
 import {LocalService} from '../../../shared/local.service';
 import {MainLayoutComponent} from '../../main-layout/main-layout.component';
+import {Meta, Title} from "@angular/platform-browser";
 
 
 @Component({
@@ -65,6 +66,10 @@ export class ProductsPageComponent implements OnInit {
   productNameRo;
   productNameEn;
   lang;
+
+  title = this.productName;
+  description = '222222';
+  keywords = '333333';
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
@@ -80,6 +85,9 @@ export class ProductsPageComponent implements OnInit {
     public translate: TranslateService,
     private localService: LocalService,
     public main: MainLayoutComponent,
+    private titleService: Title,
+    private meta: Meta,
+
     config: NgbTabsetConfig
   ) {
     config.type = 'pills';
@@ -103,6 +111,9 @@ export class ProductsPageComponent implements OnInit {
       this.indicatorS = indicator;
     });
 
+    this.titleService.setTitle(this.title);
+    this.meta.addTag({name: 'description', content: this.description});
+    this.meta.addTag({name: 'keywords', content: this.keywords});
 
     this.product$ = this.route.params
       .pipe(switchMap((params: Params) => {
