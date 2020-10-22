@@ -30,7 +30,7 @@
         <div class="row" *ngIf="products$ | async  as products; else loading">
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4"
-               *ngFor="let prod of products | orderBy: sort | paginate: { itemsPerPage: 24, currentPage: page } | searchProduct: searchStr;">
+               *ngFor="let prod of products | searchProduct: searchStr | orderBy: sort | paginate: { itemsPerPage: 24, currentPage: page } ">
 
             <!--Card-->
             <mdb-card class="align-items-center">
@@ -99,7 +99,7 @@
       <!-- Search form -->
       <div class="form-inline md-form form-sm active-cyan-2 border pl-3">
         <input class="form-control form-control-sm mr-1 w-75 pl-3" type="text" placeholder="{{'Shop.Category.Search' | translate}}"
-               [(ngModel)]="searchStr" aria-label="Search"
+               [(ngModel)]="searchStr | orderBy: sort | paginate: { itemsPerPage: 24, currentPage: page }" aria-label="Search"
                mdbInput>
         <mdb-icon fas icon="search" aria-hidden="true"></mdb-icon>
       </div>

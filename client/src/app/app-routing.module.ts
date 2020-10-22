@@ -111,7 +111,7 @@ const routes: Routes = [
     preloadingStrategy: PreloadAllModules,
     enableTracing: false,
     scrollPositionRestoration: 'top',
-  })
+  }),
   ],
   exports: [RouterModule]
 })

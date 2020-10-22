@@ -185,7 +185,7 @@ import { DozatorTablePageComponent } from './components/bunker/dozator-table-pag
 import { DozatorViboiPageComponent } from './components/bunker/dozator-viboi-page/dozator-viboi-page.component';
 
 registerLocaleData( ruLocale, 'ru');
-registerLocaleData(roLocale, 'ro');
+registerLocaleData( roLocale, 'ro');
 
 
 

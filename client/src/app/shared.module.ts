@@ -11,6 +11,8 @@ import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 
+
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -47,8 +49,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     NgxPaginationModule,
     CrystalLightboxModule,
     NgbModule,
-
-
   ],
 })
 
