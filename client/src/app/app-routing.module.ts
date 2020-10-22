@@ -43,6 +43,7 @@ import {DozatorOpenPageComponent} from './components/bunker/dozator-open-page/do
 import {DozatorViboiPageComponent} from './components/bunker/dozator-viboi-page/dozator-viboi-page.component';
 import {DozatorTablePageComponent} from './components/bunker/dozator-table-page/dozator-table-page.component';
 import {DozatorModernPageComponent} from './components/bunker/dozator-modern-page/dozator-modern-page.component';
+import {ReguleComponent} from "./components/regule/regule.component";
 
 
 
@@ -93,6 +94,7 @@ const routes: Routes = [
       {path: 'dozator-table', component: DozatorTablePageComponent},
       {path: 'filling-batcher', component: DozatorViboiPageComponent},
       {path: 'modern-bunker-scales', component: DozatorModernPageComponent},
+      {path: 'ru/aboutcompany/scales-control-polzovatelskoe-soglashenie', component: ReguleComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
       {path: 'account/login', component: LoginComponent},

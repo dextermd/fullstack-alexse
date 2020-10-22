@@ -183,6 +183,7 @@ import { DozatorIndexPageComponent } from './components/bunker/dozator-index-pag
 import { DozatorOpenPageComponent } from './components/bunker/dozator-open-page/dozator-open-page.component';
 import { DozatorTablePageComponent } from './components/bunker/dozator-table-page/dozator-table-page.component';
 import { DozatorViboiPageComponent } from './components/bunker/dozator-viboi-page/dozator-viboi-page.component';
+import { ReguleComponent } from './components/regule/regule.component';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData( roLocale, 'ro');
@@ -360,6 +361,7 @@ registerLocaleData( roLocale, 'ro');
     DozatorOpenPageComponent,
     DozatorTablePageComponent,
     DozatorViboiPageComponent,
+    ReguleComponent,
 
   ],
   imports: [
