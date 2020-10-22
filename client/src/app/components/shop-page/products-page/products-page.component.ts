@@ -19,7 +19,7 @@ import {ProductsComponent} from '../products/products.component';
 import {TranslateService} from '@ngx-translate/core';
 import {LocalService} from '../../../shared/local.service';
 import {MainLayoutComponent} from '../../main-layout/main-layout.component';
-import {Meta, Title} from "@angular/platform-browser";
+import {Meta, Title} from '@angular/platform-browser';
 
 
 @Component({
@@ -69,7 +69,7 @@ export class ProductsPageComponent implements OnInit {
 
   title = this.productName;
   description = '222222';
-  keywords = '333333';
+
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
@@ -87,9 +87,9 @@ export class ProductsPageComponent implements OnInit {
     public main: MainLayoutComponent,
     private titleService: Title,
     private meta: Meta,
-
     config: NgbTabsetConfig
-  ) {
+  )
+  {
     config.type = 'pills';
   }
 
@@ -105,15 +105,12 @@ export class ProductsPageComponent implements OnInit {
 
     this.pandusService.getAll().subscribe(pandus => {
       this.pandusS = pandus;
-    });
+  });
 
     this.indicatorService.getAll().subscribe(indicator => {
       this.indicatorS = indicator;
     });
 
-    this.titleService.setTitle(this.title);
-    this.meta.addTag({name: 'description', content: this.description});
-    this.meta.addTag({name: 'keywords', content: this.keywords});
 
     this.product$ = this.route.params
       .pipe(switchMap((params: Params) => {
@@ -124,6 +121,19 @@ export class ProductsPageComponent implements OnInit {
           this.productName = products.name;
           this.productNameRo = products.nameRo;
           this.productNameEn = products.nameEn;
+          console.log(this.lang);
+          if (this.main.lang === 'ru'){
+            this.titleService.setTitle(`${products.name}`);
+            this.meta.addTag({name: 'description', content: `${products.content}`});
+          }
+          if (this.main.lang === 'ro'){
+            this.titleService.setTitle(`${products.nameRo}`);
+            this.meta.addTag({name: 'description', content: `${products.contentRo}`});
+          }
+          if (this.main.lang === 'en'){
+            this.titleService.setTitle(`${products.nameEn}`);
+            this.meta.addTag({name: 'description', content: `${products.contentEn}`});
+          }
           for (const i in this.subcategory) {
             if (products.subcategory === this.subcategory[i]._id) {
               this.subcategoryId = this.subcategory[i]._id;
@@ -141,6 +151,7 @@ export class ProductsPageComponent implements OnInit {
     this.productService.getAllProduct().subscribe((data: any[]) => {
       this.items = data;
     });
+
   }
 
 
