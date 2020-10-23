@@ -31,7 +31,7 @@ mongoose.connect(keys.mongoURI)
     .catch(error => console.log(error));
 
 
-app.use(express.static('client/dist/alexse'));
+app.use(express.static('client/dist/alexse/browser'));
 
 // // view engine setup
 // app.set('client', path.join(__dirname, 'client'));
@@ -65,12 +65,12 @@ app.use('/api/pandus', pandusRouter);
 app.use('/api/indicator', indicatorRouter);
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/dist/alexse'));
+  app.use(express.static('client/dist/alexse/browser'));
 
   app.get('*', (req, res) => {
     res.sendFile(
         path.resolve(
-            __dirname, 'client', 'dist', 'alexse', 'index.html'
+            __dirname, 'client', 'dist', 'alexse', 'browser', 'index.html'
         )
     )
   })
