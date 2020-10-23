@@ -52,6 +52,7 @@ const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
       {path: '', redirectTo: '/', pathMatch: 'full'},
+      {path: '', component: HomePageComponent},
       {path: 'ru/itemlist/category/1-torgovye-vesy', redirectTo: '/products/subcategory/5f1e8d291c902614531f7ed4'},
       {path: 'ru/item/53-0001049', redirectTo: '/products/subcategory/5f1e8d291c902614531f7ed4/item/5f29258cfe44ee3bbbb844d1'},
       {path: 'ru/item/52-0001048', redirectTo: '/products/subcategory/5f1e8d291c902614531f7ed4/item/5f292539fe44ee3bbbb844d0'},
@@ -475,7 +476,6 @@ const routes: Routes = [
       {path: 'en/price', redirectTo: '/price-list'},
       {path: 'en/pricelist', redirectTo: '/price-list'},
       {path: 'en/price/trade-equipment', redirectTo: '/price-list'},
-      {path: '', component: HomePageComponent},
       {path: 'programs', component: ProgrammesPageComponent},
       {path: 'alex-market', component: AlexMarketPageComponent},
       {path: 'flagman', component: FlagmanPageComponent},
