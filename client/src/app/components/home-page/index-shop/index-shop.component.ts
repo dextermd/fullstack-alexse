@@ -3,6 +3,7 @@ import {Observable, Subscription} from 'rxjs';
 import {Product} from '../../../admin/shared/interfaces';
 import {ProductService} from '../../../shared/product.service';
 import {ActivatedRoute, Params} from '@angular/router';
+import {MainLayoutComponent} from '../../main-layout/main-layout.component';
 
 @Component({
   selector: 'app-index-shop',
@@ -17,6 +18,7 @@ export class IndexShopComponent implements OnInit, OnDestroy {
 
   constructor(
     private productService: ProductService,
+    public main: MainLayoutComponent
   ) {
   }
 
