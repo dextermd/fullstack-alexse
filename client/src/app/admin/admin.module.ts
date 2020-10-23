@@ -44,7 +44,7 @@ import 'froala-editor/js/languages/de.js';
 import 'froala-editor/js/third_party/image_tui.min';
 import 'froala-editor/js/third_party/spell_checker.min';
 import 'froala-editor/js/third_party/embedly.min';
-import {NgArrayPipesModule, NgPipesModule} from "ngx-pipes";
+import {NgArrayPipesModule, NgPipesModule} from 'ngx-pipes';
 
 
 // @ts-ignore

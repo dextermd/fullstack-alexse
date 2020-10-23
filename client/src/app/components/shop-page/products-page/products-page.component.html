@@ -3,9 +3,12 @@
     <div class="container">
 
       <mdb-breadcrumb-item>
-        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/'">{{'Shop.Breadcrumbs.Home' | translate}}</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products'">{{'Shop.Breadcrumbs.Market' | translate}}</mdb-breadcrumb-item>
-        <mdb-breadcrumb-item (click)="productPage.defaultPage()" [routerLink]="'/products/subcategory/'+ this.subcategoryId">
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()"
+                             [routerLink]="'/'">{{'Shop.Breadcrumbs.Home' | translate}}</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()"
+                             [routerLink]="'/products'">{{'Shop.Breadcrumbs.Market' | translate}}</mdb-breadcrumb-item>
+        <mdb-breadcrumb-item (click)="productPage.defaultPage()"
+                             [routerLink]="'/products/subcategory/'+ this.subcategoryId">
           <ng-container *ngIf="this.main.lang == 'ru'">
             {{this.subcategoryName}}
           </ng-container>
@@ -86,7 +89,7 @@
               </figure>
               <figure *ngIf="product.imgThree[0].path" class="col-md-2  py-2 border  mr-3">
 
-                <img  src="{{product.imgThree[0].path}}"
+                <img src="{{product.imgThree[0].path}}"
                      lightbox
                      class="img-fluid">
               </figure>
@@ -101,16 +104,22 @@
 
 
         <div class="col-lg-6 text-center text-md-left">
-          <ng-container   *ngIf="this.main.lang == 'ru'">
-          <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.name}}</h2><hr>
+          <ng-container *ngIf="this.main.lang == 'ru'">
+            <h2
+              class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.name}}</h2>
+            <hr>
           </ng-container>
 
           <ng-container *ngIf="this.main.lang  == 'ro'">
-            <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.nameRo}}</h2><hr>
+            <h2
+              class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.nameRo}}</h2>
+            <hr>
           </ng-container>
 
           <ng-container *ngIf="this.main.lang  == 'en'">
-            <h2 class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.nameEn}}</h2><hr>
+            <h2
+              class="h2-responsive text-center text-md-left product-name font-weight-bold dark-grey-text mb-1 ml-xl-0 ml-4 ">{{product.nameEn}}</h2>
+            <hr>
           </ng-container>
 
           <div class="font-weight-normal">
@@ -204,7 +213,7 @@
               </div>
 
 
-                            <div class="input-group-prepend">
+              <div class="input-group-prepend">
                 <label class="input-group-text" for="casa">{{'Shop.Select.Option' | translate}}</label>
                 <select [(ngModel)]="selected" (change)="onSelectCasa(selected)" class="browser-default custom-select"
                         id="casa">
@@ -240,7 +249,8 @@
 
                       <div class="col-md-11 mb-2 mb-md-0">
                         <div *ngIf="cassss.price !== 0">
-                          <strong class="d-flex justify-content-center text-danger"> + {{cassss.price | currency: 'MDL '}}</strong>
+                          <strong class="d-flex justify-content-center text-danger">
+                            + {{cassss.price | currency: 'MDL '}}</strong>
                         </div>
                       </div>
                       <!--Grid column-->
@@ -251,7 +261,6 @@
                 </div>
               </ng-container>
             </ng-container>
-
 
 
             <div
@@ -265,22 +274,22 @@
                     <option value="MERAV2000">MERAV2000</option>
                     <ng-container *ngFor="let indicat of indicatorS">
                       <ng-container *ngFor="let indi of product.indicator">
-                      <ng-container *ngIf="indicat._id == indi">
-                        <option [value]="indicat.name">
-                          <ng-container *ngIf="this.main.lang == 'ru'">
-                            {{indicat.name}} + {{indicat.price}} MDL
-                          </ng-container>
+                        <ng-container *ngIf="indicat._id == indi">
+                          <option [value]="indicat.name">
+                            <ng-container *ngIf="this.main.lang == 'ru'">
+                              {{indicat.name}} + {{indicat.price}} MDL
+                            </ng-container>
 
-                          <ng-container *ngIf="this.main.lang == 'ro'">
-                            {{indicat.nameRo}} + {{indicat.price}} MDL
-                          </ng-container>
+                            <ng-container *ngIf="this.main.lang == 'ro'">
+                              {{indicat.nameRo}} + {{indicat.price}} MDL
+                            </ng-container>
 
-                          <ng-container *ngIf="this.main.lang == 'en'">
-                            {{indicat.nameEn}} + {{indicat.price}} MDL
-                          </ng-container>
-                        </option>
+                            <ng-container *ngIf="this.main.lang == 'en'">
+                              {{indicat.nameEn}} + {{indicat.price}} MDL
+                            </ng-container>
+                          </option>
+                        </ng-container>
                       </ng-container>
-                    </ng-container>
                     </ng-container>
                   </select>
                 </div>
@@ -297,6 +306,7 @@
                             <!--Image-->
                             <!--                            <div class="view overlay z-depth-1-half">-->
                             <div class="">
+
                               <img lightbox src="{{indicat.img}}" class="img-fluid" alt="">
                             </div>
                           </div>
@@ -336,22 +346,22 @@
                             class="browser-default custom-select" id="pandus">
                       <option value="Без пандусов">Без пандусов</option>
                       <ng-container *ngFor="let pand of pandusS">
-                      <ng-container *ngFor="let pan of product.pandus">
-                        <ng-container *ngIf="pand._id === pan">
-                          <option [value]="pand.name">
-                            <ng-container *ngIf="this.main.lang == 'ru'">
-                              {{pand.name}} + {{pand.price}} MDL
-                            </ng-container>
+                        <ng-container *ngFor="let pan of product.pandus">
+                          <ng-container *ngIf="pand._id === pan">
+                            <option [value]="pand.name">
+                              <ng-container *ngIf="this.main.lang == 'ru'">
+                                {{pand.name}} + {{pand.price}} MDL
+                              </ng-container>
 
-                            <ng-container *ngIf="this.main.lang == 'ro'">
-                              {{pand.nameRo}} + {{pand.price}} MDL
-                            </ng-container>
+                              <ng-container *ngIf="this.main.lang == 'ro'">
+                                {{pand.nameRo}} + {{pand.price}} MDL
+                              </ng-container>
 
-                            <ng-container *ngIf="this.main.lang == 'en'">
-                              {{pand.nameEn}} + {{pand.price}} MDL
-                            </ng-container>
-                          </option>
-                        </ng-container>
+                              <ng-container *ngIf="this.main.lang == 'en'">
+                                {{pand.nameEn}} + {{pand.price}} MDL
+                              </ng-container>
+                            </option>
+                          </ng-container>
                         </ng-container>
                       </ng-container>
 
@@ -410,17 +420,20 @@
           </span>
                 <span class="grey-text">
             <small>
-              <s>{{+product.oldCost | currency: 'MDL '}}</s> <small class="pl-5 grey-text">{{'Shop.Index.Code' | translate}} {{product.code}}</small>
+              <s>{{+product.oldCost | currency: 'MDL '}}</s> <small
+              class="pl-5 grey-text">{{'Shop.Index.Code' | translate}} {{product.code}}</small>
             </small>
           </span>
               </h3>
               <div class="row mt-3 mb-4">
                 <div class="col-md-12 text-center text-md-left">
                   <li class="list-group-item">{{'Shop.Index.Number' | translate}} <input type="number" value="1" min="1"
-                                                                 [(ngModel)]="product.quantity"></li>
+                                                                                         [(ngModel)]="product.quantity">
+                  </li>
 
                   <div *ngIf="product.subcategory === casaProd" class="pt-1">
-                    <button [disabled]="!product.quantity" (click)="addToOrderCasa(product, selected, priceCasa , selectedIndicator, priceIndicator)"
+                    <button [disabled]="!product.quantity"
+                            (click)="addToOrderCasa(product, selected, priceCasa , selectedIndicator, priceIndicator)"
                             class="btn btn-primary btn-rounded">
                       <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> {{'BUTTONS.AddShop' | translate}}
                     </button>
@@ -460,7 +473,7 @@
 
       <ngb-tabset [destroyOnHide]="false">
 
-        <ngb-tab  title="{{'Shop.Index.Tech' | translate}}">
+        <ngb-tab title="{{'Shop.Index.Tech' | translate}}">
           <ng-template ngbTabContent>
             <ng-container *ngIf="this.main.lang == 'ru'">
               <div [froalaView]="product.spec"></div>
@@ -473,12 +486,12 @@
             <ng-container *ngIf="this.main.lang == 'en'">
               <div [froalaView]="product.specEn"></div>
             </ng-container>
-<!--            <div [froalaView]="product.spec"></div>-->
-<!--            <quill-view-html [content]="product.spec"></quill-view-html>-->
+            <!--            <div [froalaView]="product.spec"></div>-->
+            <!--            <quill-view-html [content]="product.spec"></quill-view-html>-->
           </ng-template>
         </ngb-tab>
 
-        <ngb-tab  title="{{'Shop.Index.Func' | translate}}">
+        <ngb-tab title="{{'Shop.Index.Func' | translate}}">
           <ng-template ngbTabContent>
             <ng-container *ngIf="this.main.lang == 'ru'">
               <quill-view-html [content]="product.functions"></quill-view-html>
@@ -492,7 +505,7 @@
               <quill-view-html [content]="product.functionsEn"></quill-view-html>
             </ng-container>
 
-<!--            <quill-view-html [content]="product.functions"></quill-view-html>-->
+            <!--            <quill-view-html [content]="product.functions"></quill-view-html>-->
           </ng-template>
         </ngb-tab>
 

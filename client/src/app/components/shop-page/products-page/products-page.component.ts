@@ -1,4 +1,4 @@
-import {Component, Input, NgModule, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
 import {CasaOption, IndicatorOption, PandusOption, Product} from '../../../admin/shared/interfaces';
 import {ActivatedRoute, Params} from '@angular/router';
@@ -117,22 +117,30 @@ export class ProductsPageComponent implements OnInit {
           return this.productService.getByIdProduct(params.id);
         }),
         map((products: any) => {
-          console.log(products);
           this.productName = products.name;
           this.productNameRo = products.nameRo;
           this.productNameEn = products.nameEn;
-          console.log(this.lang);
           if (this.main.lang === 'ru'){
             this.titleService.setTitle(`${products.name}`);
             this.meta.addTag({name: 'description', content: `${products.content}`});
+            this.meta.addTag({property: 'og:type', content: 'website'});
+            this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
+            this.meta.addTag({property: 'og:title', content: `${products.name}`});
+            this.meta.addTag({property: 'og:description', content: `${products.content}`});
           }
           if (this.main.lang === 'ro'){
             this.titleService.setTitle(`${products.nameRo}`);
             this.meta.addTag({name: 'description', content: `${products.contentRo}`});
+            this.meta.addTag({property: 'og:type', content: 'website'});
+            this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
+
           }
           if (this.main.lang === 'en'){
             this.titleService.setTitle(`${products.nameEn}`);
             this.meta.addTag({name: 'description', content: `${products.contentEn}`});
+            this.meta.addTag({property: 'og:type', content: 'website'});
+            this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
+
           }
           for (const i in this.subcategory) {
             if (products.subcategory === this.subcategory[i]._id) {
@@ -171,34 +179,26 @@ export class ProductsPageComponent implements OnInit {
   }
 
   onSelectCasa(val) {
-    console.log(val);
     this.priceCas = this.casaS.filter(x => x.name === val);
     if (this.priceCas) {
       this.priceCasa = this.priceCas[0].price;
     }
-    console.log(this.priceCasa);
   }
 
   onSelectInd(val) {
-
-    console.log(val);
     this.priceInd = this.indicatorS.filter(x => x.name === val);
     if (this.priceInd) {
       this.priceIndicator = this.priceInd[0].price;
     } else if (val === this.selectedIndicator) {
       this.priceIndicator = 0;
     }
-    console.log(this.priceIndicator);
   }
 
   onSelectPand(val) {
-    console.log(val);
     this.pricePan = this.pandusS.filter(x => x.name === val);
     if (this.pricePan) {
       this.pricePandus = this.pricePan[0].price;
     }
-    console.log(this.pricePandus);
-
   }
 
 
