@@ -5,7 +5,6 @@ import {OrderService} from '../../shared/order.service';
 import {LocalService} from '../../shared/local.service';
 import {AuthService} from '../../shared/auth.service';
 import {TranslateService} from '@ngx-translate/core';
-import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-main-layout',
@@ -26,21 +25,12 @@ export class MainLayoutComponent implements OnInit {
     public order: OrderService,
     private localService: LocalService,
     public translate: TranslateService,
-    private titleService: Title,
-    private meta: Meta,
+
 
 ) {
     this.cartService.cart$.subscribe((data) => {
       this.card = data;
     });
-
-    this.translate.get('MAIN.Title').subscribe(res => {
-      this.titleService.setTitle(res);
-    });
-    this.translate.get('MAIN.Desc').subscribe(res => {
-      this.meta.addTag({name: 'description', content: res});
-    });
-
   }
 
 
