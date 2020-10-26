@@ -1568,7 +1568,7 @@
       "IconTextThree": "Catering automation",
       "IconTitleFour": "More than 150",
       "IconTextFour": "Industrial enterprises",
-      "Text": "In the modern world, automation systems are used everywhere. The activities of enterprises and organizations of various industries, it is difficult to imagine without them. Every day, more and more managers understand that automation is the key to the successful development of a company. Alex S&E develops and implements software for the automation of enterprises in various fields of activity. The software offered by Alex S&E is reliable and versatile. For more than 27 years, software products created and implemented by the company's specialists have been used in trade and industrial enterprises, in medical centers and hospitals, spa centers, fitness clubs, hotels, restaurants, bars, canteens, for warehouse accounting and management of balances. The automation of any enterprise is a system that works in concert with hardware and software. When automating the entire technological process, a person performs only an observation function, and, therefore, risks associated with the human factor are excluded as much as possible. Automation allows you to combine all divisions of the enterprise into a single, well-coordinated mechanism. Personnel management, control of product leftovers in the sales area, warehouse or at different stages of production, sidki, planning, reservation, reporting and analytics - these are the few things that enterprise automation gives.\nToday, automation of any enterprise is no longer a luxury, but a guarantee of the company's productive work. The right choice of software and hardware will maximize results and minimize the cost of implementing automation systems. Thanks to their experience, Alex S&E specialists will help you find the best solution that suits your business.\n"
+      "Text": "In the modern world, automation systems are used everywhere. The activities of enterprises and organizations of various industries, it is difficult to imagine without them. Every day, more and more managers understand that automation is the key to the successful development of a company. Alex S&E develops and implements software for the automation of enterprises in various fields of activity. The software offered by Alex S&E is reliable and versatile. For more than 27 years, software products created and implemented by the company's specialists have been used in trade and industrial enterprises, in medical centers and hospitals, spa centers, fitness clubs, hotels, restaurants, bars, canteens, for warehouse accounting and management of balances. The automation of any enterprise is a system that works in concert with hardware and software. When automating the entire technological process, a person performs only an observation function, and, therefore, risks associated with the human factor are excluded as much as possible. Automation allows you to combine all divisions of the enterprise into a single, well-coordinated mechanism. Personnel management, control of product leftovers in the sales area, warehouse or at different stages of production, sidki, planning, reservation, reporting and analytics - these are the few things that enterprise automation gives.<br>Today, automation of any enterprise is no longer a luxury, but a guarantee of the company's productive work. The right choice of software and hardware will maximize results and minimize the cost of implementing automation systems. Thanks to their experience, Alex S&E specialists will help you find the best solution that suits your business.<br>"
     },
     "Tech": {
       "Title": "Technical support 365/7",
@@ -1619,6 +1619,22 @@
   },
   "Support": {
     "Title": "Support",
-    "Desc": "You get not only advanced equipment and ongoing technical support with the installation of trade automation systems, HoReCa or industrial equipment"
+    "Desc": "You get not only advanced equipment and ongoing technical support with the installation of trade automation systems, HoReCa or industrial equipment",
+    "Header": {
+      "Title": "SUPPORT",
+      "Subtitle":"You get not only advanced equipment and ongoing technical support with the installation of trade automation systems, HoReCa or industrial equipment",
+      "Text": "Our specialists work every day, including weekends and holidays.",
+      "TradeTitle": "AUTOMATION SYSTEMS MARKET AND HORECA",
+      "TradeSubtitle": "+37360001103",
+      "PromTitle": "Industrial equipment",
+      "PromSubtitle": "+37369900989"
+    },
+    "DivSupport": {
+      "Title": "TECHNICAL SUPPORT"
+    },
+    "Text": {
+      "Left": "Service and technical support are provided by experienced and fully trained specialists of our company.<br>Company’s specialist will advise you on the phone in the event of faults in the equipment, and will offer an optimal solution to the problem. If a remote solution is not possible, our staff will take your request, and our service team will come as soon as possible, to carry out work on the local point for complex repairs. ",
+      "Right": "Technicians perform maintenance and repair of varying degrees of difficulty, and when necessary, the company attracts engineers and programmers. We use only original spare parts and expendable material.<br>We guarantee our customers rapid technical support and professional advice in any, even the most difficult cases."
+    }
   }
 }

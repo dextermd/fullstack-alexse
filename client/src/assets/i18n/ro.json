@@ -1568,7 +1568,7 @@
       "IconTextThree": "Atomatizarea alimentației publice",
       "IconTitleFour": "Peste 150",
       "IconTextFour": "De întreprinderi industriale",
-      "Text": "În lumea modernă, sistemele de automatizare sunt folosite pretutindeni. Activitățile întreprinderilor și organizațiilor din diferite sectoare este dificil de imaginat fără acestea. În fiecare zi, tot mai mulți manageri înțeleg că automatizarea este cheia dezvoltării cu succes a unei companii. Alex S&E dezvoltă și implementează software pentru automatizarea întreprinderilor din diferite domenii de activitate. Softul oferit de Alex S&E este fiabil și multifuncțional. De mai bine de 27 de ani, produsele software create și implementate de specialiștii companiei sunt utilizate la întreprinderi comerciale și industriale, la centre medicale și spitale, centre spa, cluburi de fitness, hoteluri, restaurante, baruri, cantine, pentru evidența depozitelor și gestionarea stocurilor. Automatizarea oricărei întreprinderi este un sistem care funcționează împreună cu hardware și software. În cazul automatizării întregului proces tehnologic, persoana îndeplinește doar funcția de supraveghere și, prin urmare, riscurile legate de factorul uman sunt excluse la maxim. Automatizarea face posibilă unirea tuturor departamentelor întreprinderii într-un singur mecanism bine coordonat. Gestionarea personalului, controlul stocurilor de produse rămase în sala de vânzare, la depozit sau la diferite etape de producție, gestionarea reducerilor, planificarea, rezervarea, raportarea și analiza sunt puținele lucruri pe care le oferă automatizarea întreprinderii.\nAstăzi, automatizarea oricărei întreprinderi nu mai este un lux, ci o garanție a activității productive a companiei. Alegerea corectă a software-ului și hardware-ului va maximiza rezultatele și va minimiza costurile implementării sistemelor de automatizare. Datorită experienței lor, specialiștii Alex S&E vă vor ajuta să găsiți cea mai bună soluție care se potrivește afacerii voastre.\n"
+      "Text": "În lumea modernă, sistemele de automatizare sunt folosite pretutindeni. Activitățile întreprinderilor și organizațiilor din diferite sectoare este dificil de imaginat fără acestea. În fiecare zi, tot mai mulți manageri înțeleg că automatizarea este cheia dezvoltării cu succes a unei companii. Alex S&E dezvoltă și implementează software pentru automatizarea întreprinderilor din diferite domenii de activitate. Softul oferit de Alex S&E este fiabil și multifuncțional. De mai bine de 27 de ani, produsele software create și implementate de specialiștii companiei sunt utilizate la întreprinderi comerciale și industriale, la centre medicale și spitale, centre spa, cluburi de fitness, hoteluri, restaurante, baruri, cantine, pentru evidența depozitelor și gestionarea stocurilor. Automatizarea oricărei întreprinderi este un sistem care funcționează împreună cu hardware și software. În cazul automatizării întregului proces tehnologic, persoana îndeplinește doar funcția de supraveghere și, prin urmare, riscurile legate de factorul uman sunt excluse la maxim. Automatizarea face posibilă unirea tuturor departamentelor întreprinderii într-un singur mecanism bine coordonat. Gestionarea personalului, controlul stocurilor de produse rămase în sala de vânzare, la depozit sau la diferite etape de producție, gestionarea reducerilor, planificarea, rezervarea, raportarea și analiza sunt puținele lucruri pe care le oferă automatizarea întreprinderii.<br>Astăzi, automatizarea oricărei întreprinderi nu mai este un lux, ci o garanție a activității productive a companiei. Alegerea corectă a software-ului și hardware-ului va maximiza rezultatele și va minimiza costurile implementării sistemelor de automatizare. Datorită experienței lor, specialiștii Alex S&E vă vor ajuta să găsiți cea mai bună soluție care se potrivește afacerii voastre.<br>"
     },
     "Tech": {
       "Title": "Suport tehnic 365/7",
@@ -1619,6 +1619,22 @@
   },
   "Support": {
     "Title": "Suport tenic",
-    "Desc": "Odată cu instalarea sistemelor de automatizare comerciale, HoReCa, veți obține nu numai echipamente avansate, dar și suport tehnic permanent."
+    "Desc": "Odată cu instalarea sistemelor de automatizare comerciale, HoReCa, veți obține nu numai echipamente avansate, dar și suport tehnic permanent.",
+    "Header": {
+      "Title": "SUPORT TEHNIC",
+      "Subtitle":"Odată cu instalarea sistemelor de automatizare comerciale, HoReCa, veți obține nu numai echipamente avansate, dar și suport tehnic permanent.",
+      "Text": "Specialistii nostri lucreaza in fiecare zi, inclusiv în weekend și de sărbători.",
+      "TradeTitle": "SISTEMELOR DE AUTOMATIZARE COMERȚ ȘI HORECA",
+      "TradeSubtitle": "+37360001103",
+      "PromTitle": "ECHIPAMENTUL INDUSRIAL",
+      "PromSubtitle": "+37369900989"
+    },
+    "DivSupport": {
+      "Title": "DESERVIREA TEHNICĂ"
+    },
+    "Text": {
+      "Left": "Deservirea si suportul tehnic este oferit de către specialiști calificaţi şi cu experiență al companiei noastre.<br>În cazul unor defecțiuni al echipamentelor, veţi primi o consultaţie la telefon, și vi se va oferi o soluție optimă a problemei. În cazul în care, soluționarea la distanță nu este posibilă, personalul nostru va prelua cererea Dumneavoastră, și în scurt timp va veni echipa de deservire, pentru efectuarea lucrărilor la locul de faţă. <br>",
+      "Right": "Specialiştii - tehnicieni oferă lucrări de întreținere și reparații al diferitor grade de dificultăţi, iar atunci când este necesar, sunt atraşi şi ingineri de software al companiei. În aceste lucrări, sunt folosite piese de schimb originale si materiale consumabile.<br>Noi garantăm clienților noștri asistență tehnică operativă și consultanţă profesională, la orice întrebare şi în cele mai dificile cazuri.<br>"
+    }
   }
 }
