@@ -127,12 +127,16 @@ export class ProductsPageComponent implements OnInit {
             this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
             this.meta.addTag({property: 'og:title', content: `${products.name}`});
             this.meta.addTag({property: 'og:description', content: `${products.content}`});
+            this.meta.addTag({property: 'og:image', content: `http://185.163.44.58/uploads/${products.product.img[0].path}`});
           }
           if (this.main.lang === 'ro'){
             this.titleService.setTitle(`${products.nameRo}`);
             this.meta.addTag({name: 'description', content: `${products.contentRo}`});
             this.meta.addTag({property: 'og:type', content: 'website'});
             this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
+            this.meta.addTag({property: 'og:title', content: `${products.nameRo}`});
+            this.meta.addTag({property: 'og:description', content: `${products.contentRo}`});
+            this.meta.addTag({property: 'og:image', content: `http://185.163.44.58/uploads/${products.product.img[0].path}`});
 
           }
           if (this.main.lang === 'en'){
@@ -140,6 +144,9 @@ export class ProductsPageComponent implements OnInit {
             this.meta.addTag({name: 'description', content: `${products.contentEn}`});
             this.meta.addTag({property: 'og:type', content: 'website'});
             this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
+            this.meta.addTag({property: 'og:title', content: `${products.nameEn}`});
+            this.meta.addTag({property: 'og:description', content: `${products.contentEn}`});
+            this.meta.addTag({property: 'og:image', content: `http://185.163.44.58/uploads/${products.product.img[0].path}`});
 
           }
           for (const i in this.subcategory) {

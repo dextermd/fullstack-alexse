@@ -7,6 +7,8 @@
     }
   },
   "MAIN": {
+    "Title": "Echipament comercial și automatizarea sistemelor de comerț și contabilitate",
+    "Desc": "Echipamentul și software pentru comerț și contabilitate de la producător la cele mai accesibile prețuri, în magazinele Alex S&E.",
     "NAVIGATION": {
       "Product": "Produse",
       "Programs": "Programe",
@@ -45,7 +47,7 @@
     },
     "INDEX": {
       "Search": "Căutare",
-      "Support": "Program de lucru: Lu-Vi 08:30 18:00 Tel:(+37322) 244-572 E-mail: office@alex-se.com"
+      "Support": "Program de lucru: Lu-Vi 08:30 - 17:30 Tel:(+37322) 244-572 E-mail: office@alex-se.com"
     }
   },
   "BUTTONS": {
@@ -84,15 +86,15 @@
         "Text": "cântare electronice"
       },
       "THREE": {
-        "Title": "150 000+",
-        "Text": "cântare pentru autovehicule"
-      },
+        "Title": "150+",
+        "Text": "automatizare HoReCa"
+    },
       "FOUR": {
         "Title": "500+",
         "Text": "automatizare catering"
       },
       "FIVE": {
-        "Title": "150+",
+        "Title": "1500+",
         "Text": "Întreprinderi industriale"
       },
       "LEFT": {
@@ -456,6 +458,8 @@
     }
   },
   "AlexMarket": {
+    "Title": "AlexMarket",
+    "Desc": "Soft profesional pentru automatizarea comerțului și evidenței mărfurilor.",
     "Header": {
       "TitleTop": "Sistem profesional pentru automatizarea comerțului și evidenței.",
       "TitleBottom": "Fiecare afacere este individuală și, prin urmare, abordarea alegerii echipamentelor și software-ului este, de asemenea, diferită. Experții noștri vor dezvolta o soluție individuală care va funcționa în beneficiul afacerii dvs."
@@ -577,7 +581,7 @@
         "Title": "MAGAZIN TIRASPOL",
         "Adress": "<p>MD-3300, Transnistria, or. Tiraspol<br>str. Sindicatelor 60, of 101<br>",
         "Contact": "<p>E-mail: office@alex-se.com<br>E-mail: PMR@alex-se.md<br>Telefon: (533) 675 40<br>Mob.: (775) 97 555</p>",
-        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 18-00<br>Sb – Du  zile libere</p>"
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 9-00 până 18-00<br>Sb – Du  zile libere</p>"
       },
       "Balti": {
         "Title": "MAGAZIN MUN. Bălți",
@@ -589,13 +593,13 @@
         "Title": "MAGAZIN MUN. COMRAT",
         "Adress": "<p>MD-3805, Republica Moldova,<br>UTA Gagauzia, mun. Comrat,<br>Str. Victoriei 43</p>",
         "Contact": "<p>E-mail: nord@alex-se.com<br>Telefon: (+373231) 40-456<br>Факс: (+373231) 44-345<br>Mob.: (+373) 69966679, (+373) 68160101</p>",
-        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 18-00<br>Sb – Du  zile libere</p>"
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 9-00 până 18-00<br>Sb – Du  zile libere</p>"
       },
       "Drocia": {
-        "Title": "МАГАЗИН Г. ДРОКИЯ",
+        "Title": "MAGAZIN or. DROCHIA",
         "Adress": "<p>MD-5202, Republica Moldova,<br>Or. Drochia, str. Gudanov, (Piaţa nouă),but. 20</p>",
         "Contact": "<p>E-mail: drochia@alex-se.com<br>Mob.: (+373) 68650707<br>",
-        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 18-00<br>Sb – Du  zile libere</p>"
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 15-00<br>Sb – Du  zile libere</p>"
       },
       "Ucraina": {
         "Title": "Filiala din Ucraina",
@@ -1089,6 +1093,8 @@
     }
   },
   "Flagman": {
+    "Title":"Flagman",
+    "Desc": "Automatizarea completă a restaurantului sau cafenelei",
     "Header": {
       "Title": "Flagman - pachet software pentru hoteluri și restaurante"
     },
@@ -1325,6 +1331,8 @@
     }
   },
   "B52": {
+    "Title": "B52",
+    "Desc": "Produs software modern pentru gestionarea unui hotel, restaurant, sală de fitness.",
     "Header": {
       "Title": "Produs software modern<p>pentru gestionarea unui hotel, restaurant,<br> sală de fitness."
     },
@@ -1535,6 +1543,8 @@
     }
   },
   "Programs": {
+    "Title": "Software",
+    "Desc": "Alex S&E dezvoltă și implementează software pentru automatizarea întreprinderilor din diferite domenii de activitate, specialiștii Alex S&E vă vor ajuta să găsiți cea mai bună soluție care se potrivește afacerii voastre.",
     "Header": {
       "Title": "SOFTWARE",
       "SubTitle": "Automatizarea întreprinderii este un proces bine organizat în care funcțiile <br> de management și control sunt transferate echipamentului și softului specializat."
@@ -1558,7 +1568,7 @@
       "IconTextThree": "Atomatizarea alimentației publice",
       "IconTitleFour": "Peste 150",
       "IconTextFour": "De întreprinderi industriale",
-      "Text": "În lumea modernă, sistemele de automatizare sunt folosite pretutindeni. Activitățile întreprinderilor și organizațiilor din diferite sectoare este dificil de imaginat fără acestea. În fiecare zi, tot mai mulți manageri înțeleg că automatizarea este cheia dezvoltării cu succes a unei companii. Alex S&E dezvoltă și implementează software pentru automatizarea întreprinderilor din diferite domenii de activitate. Softul oferit de Alex S&E este fiabil și multifuncțional. De mai bine de 27 de ani, produsele software create și implementate de specialiștii companiei sunt utilizate la întreprinderi comerciale și industriale, la centre medicale și spitale, centre spa, cluburi de fitness, hoteluri, restaurante, baruri, cantine, pentru evidența depozitelor și gestionarea stocurilor. Automatizarea oricărei întreprinderi este un sistem care funcționează împreună cu hardware și software. În cazul automatizării întregului proces tehnologic, persoana îndeplinește doar funcția de supraveghere și, prin urmare, riscurile legate de factorul uman sunt excluse la maxim. Automatizarea face posibilă unirea tuturor departamentelor întreprinderii într-un singur mecanism bine coordonat. Gestionarea personalului, controlul stocurilor de produse rămase în sala de vânzare, la depozit sau la diferite etape de producție, gestionarea reducerilor, planificarea, rezervarea, raportarea și analiza sunt puținele lucruri pe care le oferă automatizarea întreprinderii.\nAstăzi, automatizarea oricărei întreprinderi nu mai este un lux, ci o garanție a activității productive a companiei. Alegerea corectă a software-ului și hardware-ului va maximiza rezultatele și va minimiza costurile implementării sistemelor de automatizare. Datorită experienței lor, specialiștii Alex S&E vă vor ajuta să găsiți cea mai bună soluție care se potrivește afacerii voastre."
+      "Text": "În lumea modernă, sistemele de automatizare sunt folosite pretutindeni. Activitățile întreprinderilor și organizațiilor din diferite sectoare este dificil de imaginat fără acestea. În fiecare zi, tot mai mulți manageri înțeleg că automatizarea este cheia dezvoltării cu succes a unei companii. Alex S&E dezvoltă și implementează software pentru automatizarea întreprinderilor din diferite domenii de activitate. Softul oferit de Alex S&E este fiabil și multifuncțional. De mai bine de 27 de ani, produsele software create și implementate de specialiștii companiei sunt utilizate la întreprinderi comerciale și industriale, la centre medicale și spitale, centre spa, cluburi de fitness, hoteluri, restaurante, baruri, cantine, pentru evidența depozitelor și gestionarea stocurilor. Automatizarea oricărei întreprinderi este un sistem care funcționează împreună cu hardware și software. În cazul automatizării întregului proces tehnologic, persoana îndeplinește doar funcția de supraveghere și, prin urmare, riscurile legate de factorul uman sunt excluse la maxim. Automatizarea face posibilă unirea tuturor departamentelor întreprinderii într-un singur mecanism bine coordonat. Gestionarea personalului, controlul stocurilor de produse rămase în sala de vânzare, la depozit sau la diferite etape de producție, gestionarea reducerilor, planificarea, rezervarea, raportarea și analiza sunt puținele lucruri pe care le oferă automatizarea întreprinderii.\nAstăzi, automatizarea oricărei întreprinderi nu mai este un lux, ci o garanție a activității productive a companiei. Alegerea corectă a software-ului și hardware-ului va maximiza rezultatele și va minimiza costurile implementării sistemelor de automatizare. Datorită experienței lor, specialiștii Alex S&E vă vor ajuta să găsiți cea mai bună soluție care se potrivește afacerii voastre.\n"
     },
     "Tech": {
       "Title": "Suport tehnic 365/7",
@@ -1592,7 +1602,7 @@
       "Search": "Găsiți un produs ..."
     },
     "Index": {
-      "Number": "Număr:",
+      "Number": "Cantitatea :",
       "Code": "Codul produsului:",
       "Tech": "Specificatii tehnice",
       "Func": "Funcționalitate",
@@ -1606,5 +1616,9 @@
     "Name": "Nume",
     "Price": "Preț",
       "Spec": "Descriere"
+  },
+  "Support": {
+    "Title": "Suport tenic",
+    "Desc": "Odată cu instalarea sistemelor de automatizare comerciale, HoReCa, veți obține nu numai echipamente avansate, dar și suport tehnic permanent."
   }
 }
