@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-support-service-page',
   templateUrl: './support-service-page.component.html',
-  styles: [
-  ]
+  styles: []
 })
 export class SupportServicePageComponent implements OnInit {
 
@@ -22,7 +21,6 @@ export class SupportServicePageComponent implements OnInit {
       this.meta.addTag({name: 'description', content: res});
     });
   }
-
   ngOnInit(): void {
   }
 
