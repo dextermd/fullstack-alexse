@@ -68,7 +68,7 @@
   },
   "HOME": {
     "INFO_SHORT": {
-      "Title": "A LITTLE ABOUT ALEX S&E COMPANY",
+      "Title": "A LITTLE ABOUT COMPANY",
       "ContentTop": "The company began its activity in 1993 by producing the commercial scales,<br> batching counters and automated accounting systems for industrial and commercial enterprises.",
       "ContentBottom": "Nowadays Alex S&E is one of the largest engineering companies in Moldova and<br> the CIS countries. Production area and service center of the company is located on the<br> territory of more than 1300 square meters, and the number of employees exceeded 100 persons."
     },
@@ -610,6 +610,7 @@
   },
   "Certificates": {
     "BSA": "Truck scales Alex S&E type - BSA, comply with RGML14: 2007 Scales for non-automatic weighing. Certified and entered in the State Register of Measuring Instruments of the Republic of Moldova",
+    "BSB": "Truck scales Alex S&E type - BSB, comply with RGML14: 2007 Scales for non-automatic weighing. Certified and entered in the State Register of Measuring Instruments of the Republic of Moldova",
     "BDA": "Truck scales Alex S&E type - BDA, comply with SM STB 1845: 2011 Electronic strain gauge scales for weighing vehicles in motion. Certified and included in the State Register of Measuring Instruments of the Republic of Moldova.",
     "BSN": "Hooper scales Alex S&E type - BSN, comply with RGML14: 2007 Scales for non-automatic weighing. Certified and entered in the State Register of Measuring Instruments of the Republic of Moldova",
     "BXN": "Hooper scales Alex S&E type - BXN, comply with RGML14: 2007 Scales for non-automatic weighing. Certified and entered in the State Register of Measuring Instruments of the Republic of Moldova"

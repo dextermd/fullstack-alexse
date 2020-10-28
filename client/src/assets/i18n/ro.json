@@ -68,7 +68,7 @@
   },
   "HOME": {
     "INFO_SHORT": {
-      "Title": "PE SCURT DESPRE SOCIETATEA ALEX S&E",
+      "Title": "PE SCURT DESPRE COMPANIA",
       "ContentTop": "Compania și-a început activitatea în anul 1993 producînd cântare comerciale,<br> dozatoare și sisteme automate de evidență pentru întreprinderi industriale și comerciale.",
       "ContentBottom": "Astăzi, Alex S&E este una dintre cele mai mari companii de ingineering din <br> Moldova și țările CSI. Halele de producție și centrul de deservire al societății este <br> situat pe  un teritoriu de peste 1300 de metri pătrați, iar numărul angajaților a depășit 100 de persoane."
     },
@@ -610,6 +610,7 @@
   },
   "Certificates": {
     "BSA": "Cântarele pentru vehicule Alex S&E, tip - BSA, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
+    "BSB": "Cântarele feroviare Alex S&E, tip - BSB, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
     "BDA": "Cântarele pentru vehicule Alex S&E, tip - BDA, corespund standardului SM STB 1845: 2011 Cântar electronic de presiune pentru cântărirea vehiculelor în dinamică. Sunt certificate și incluse în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
     "BSN": "Cântarele de buncăr Alex S&E, tip- BSN, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova ",
     "BXN": "Cântarele de buncăr Alex S&E, tip- BXN, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova"
@@ -1099,7 +1100,7 @@
       "Title": "Flagman - pachet software pentru hoteluri și restaurante"
     },
     "SecondFlag": {
-      "Title": "Mulțumită software-ului „Flagman” <br> Veți putea:",
+      "Title": "Datorită software-ului „Flagman” <br> Veți putea:",
       "IconOne": "Construi evidența și administrarea depozitului în restaurant folosind programul nostru",
       "IconTwo": "Monitoriza personalul, crește eficiența angajaților și eradica furtul",
       "IconThree": "Proteja datele evidenței contabile de persoanele din afară",

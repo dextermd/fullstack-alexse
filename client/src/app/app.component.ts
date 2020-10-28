@@ -14,7 +14,7 @@ declare var gtag;
 
 
 export class AppComponent implements OnInit {
-  title = 'alexse';
+  title = 'Электронные весы для торговли и складского учета';
   constructor(
     private auth: AuthService,
     router: Router

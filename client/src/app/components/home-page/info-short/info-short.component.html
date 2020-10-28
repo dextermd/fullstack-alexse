@@ -4,7 +4,26 @@
       <div style="padding-top: 100px" class="float-right">
         <div class="col-lg-11 col-xl-11 ">
           <div class="black-text" style="font-family: 'Times New Roman'">
-            <h3 class="flex-center h3-responsive wow fadeInLeft font-weight-bold"  data-wow-delay="0.3s">{{ 'HOME.INFO_SHORT.Title' | translate}}</h3>
+            <h3 class="flex-center h3-responsive wow fadeInLeft font-weight-bold"  data-wow-delay="0.3s">
+              {{ 'HOME.INFO_SHORT.Title' | translate}}
+              <ng-container *ngIf="this.main.lang == 'ru'">
+                <a [routerLink]="'/'">
+                  <img src="assets/logo/Blue_ru-min.png" height="25" alt="" class="pl-2">
+                </a>
+              </ng-container>
+
+              <ng-container *ngIf="this.main.lang == 'en'">
+                <a [routerLink]="'/'">
+                  <img src="assets/logo/Blue_en-min.png" height="25" alt="" class="pl-2">
+                </a>
+              </ng-container>
+
+              <ng-container *ngIf="this.main.lang == 'ro'">
+                <a [routerLink]="'/'">
+                  <img src="assets/logo/Blue_ro-min.png" height="25" alt="" class="pl-2">
+                </a>
+              </ng-container>
+            </h3>
             <div class="pl-2">
             <h5 class="wow fadeInLeft" data-wow-delay="0.3s">
               <div  [innerHTML]="'HOME.INFO_SHORT.ContentTop'  | translate"></div>
