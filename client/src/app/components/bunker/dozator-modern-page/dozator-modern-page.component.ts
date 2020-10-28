@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-dozator-modern-page',
@@ -25,7 +27,18 @@ export class DozatorModernPageComponent implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor(
+    public translate: TranslateService,
+    private titleService: Title,
+    private meta: Meta,
+  ) {
+    this.translate.get('Bunker.Modern.Title').subscribe(res => {
+      this.titleService.setTitle(res);
+    });
+    this.translate.get('Bunker.Modern.SubTitle').subscribe(res => {
+      this.meta.addTag({name: 'description', content: res});
+    });
+  }
 
   ngOnInit(): void {
   }

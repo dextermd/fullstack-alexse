@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-vagon-index-page',
@@ -7,7 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VagonIndexPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public translate: TranslateService,
+    private titleService: Title,
+    private meta: Meta,
+  ) {
+    this.translate.get('Rails.Index.Breadcrumb').subscribe(res => {
+      this.titleService.setTitle(res);
+    });
+    this.translate.get('Rails.Index.Content').subscribe(res => {
+      this.meta.addTag({name: 'description', content: res});
+    });
+  }
 
   ngOnInit(): void {
   }
