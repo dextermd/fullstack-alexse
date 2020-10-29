@@ -376,7 +376,6 @@ registerLocaleData( roLocale, 'ro');
     TranslateModule,
     FroalaViewModule,
     FERootModule,
-
   ],
   // providers: [INTERCEPTOR_PROVIDER],
   providers: [

@@ -16,6 +16,7 @@ import {LocalService} from './shared/local.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
+
 }
 
 @NgModule({
@@ -31,6 +32,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CrystalLightboxModule,
     MDBBootstrapModule.forRoot(),
     HttpClientModule,
+
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -50,6 +52,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NgxPaginationModule,
     CrystalLightboxModule,
     NgbModule,
+
   ],
 })
 

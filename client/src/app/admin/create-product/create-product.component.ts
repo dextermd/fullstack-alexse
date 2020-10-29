@@ -13,12 +13,12 @@ import {PandusService} from '../../shared/pandus.service';
 import {IndicatorService} from '../../shared/indicator.service';
 import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
-
 @Component({
   selector: 'app-create-product',
   templateUrl: './create-product.component.html',
   styleUrls: ['./create-product.component.scss']
 })
+
 export class CreateProductComponent implements OnInit {
   public Editor = ClassicEditor;
 
@@ -55,9 +55,9 @@ export class CreateProductComponent implements OnInit {
     private alert: AlertService,
     private route: ActivatedRoute,
     private router: Router,
-    public order: OrderService,
-  ) {
+    public order: OrderService
 
+  ) {
   }
 
   ngOnInit(): void {
