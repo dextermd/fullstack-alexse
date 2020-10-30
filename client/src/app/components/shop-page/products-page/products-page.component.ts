@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs';
+import {Observable, pipe} from 'rxjs';
 import {CasaOption, IndicatorOption, PandusOption, Product} from '../../../admin/shared/interfaces';
 import {ActivatedRoute, Params} from '@angular/router';
 
@@ -120,30 +120,32 @@ export class ProductsPageComponent implements OnInit {
           this.productName = products.name;
           this.productNameRo = products.nameRo;
           this.productNameEn = products.nameEn;
+          console.log('Name' + '' + this.productName);
+          console.log('Name - tags' + '' + this.productNameRo);
           if (this.main.lang === 'ru'){
             this.titleService.setTitle(`${products.name}`);
-            this.meta.addTag({name: 'description', content: `${products.content}`});
+            this.meta.addTag({name: 'description', content: `${products.content.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
             this.meta.addTag({property: 'og:type', content: 'website'});
             this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
-            this.meta.addTag({property: 'og:title', content: `${products.name}`});
-            this.meta.addTag({property: 'og:description', content: `${products.content}`});
+            this.meta.addTag({property: 'og:title', content: `${products.name.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
+            this.meta.addTag({property: 'og:description', content: `${products.content.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
           }
           if (this.main.lang === 'ro'){
             this.titleService.setTitle(`${products.nameRo}`);
-            this.meta.addTag({name: 'description', content: `${products.contentRo}`});
+            this.meta.addTag({name: 'description', content: `${products.contentRo.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
             this.meta.addTag({property: 'og:type', content: 'website'});
             this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
-            this.meta.addTag({property: 'og:title', content: `${products.nameRo}`});
-            this.meta.addTag({property: 'og:description', content: `${products.contentRo}`});
+            this.meta.addTag({property: 'og:title', content: `${products.nameRo.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
+            this.meta.addTag({property: 'og:description', content: `${products.contentRo.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
 
           }
           if (this.main.lang === 'en'){
             this.titleService.setTitle(`${products.nameEn}`);
-            this.meta.addTag({name: 'description', content: `${products.contentEn}`});
+            this.meta.addTag({name: 'description', content: `${products.contentEn.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
             this.meta.addTag({property: 'og:type', content: 'website'});
             this.meta.addTag({property: 'og:url', content: 'https://www.alex-se.com'});
-            this.meta.addTag({property: 'og:title', content: `${products.nameEn}`});
-            this.meta.addTag({property: 'og:description', content: `${products.contentEn}`});
+            this.meta.addTag({property: 'og:title', content: `${products.nameEn.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
+            this.meta.addTag({property: 'og:description', content: `${products.contentEn.replace(/<\/?[^>]+(>|$)/g, '').slice(0, 250)}`});
 
           }
           for (const i in this.subcategory) {

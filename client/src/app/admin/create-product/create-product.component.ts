@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {SubCategory, Product, CasaOption, PandusOption, IndicatorOption} from '../shared/interfaces';
 import {AlertService} from '../shared/services/alert.service';

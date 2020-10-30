@@ -1,10 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Inject, PLATFORM_ID} from '@angular/core';
 import {AuthService} from './shared/auth.service';
-import { Title, Meta } from '@angular/platform-browser';
 import {NavigationEnd, Router} from '@angular/router';
 import {filter} from 'rxjs/operators';
 import {LocalService} from './shared/local.service';
 import {TranslateService} from '@ngx-translate/core';
+import {isPlatformBrowser, isPlatformServer} from '@angular/common';
 
 declare var gtag;
 
@@ -14,9 +14,9 @@ declare var gtag;
   styleUrls: ['./app.component.scss']
 })
 
-
 export class AppComponent implements OnInit {
   title = 'Электронные весы для торговли и складского учета';
+
   constructor(
     private auth: AuthService,
     router: Router,
@@ -39,13 +39,11 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.localService.getJsonValue('lang') === null)
-    {
+    if (this.localService.getJsonValue('lang') === null) {
       this.localService.setJsonValue('lang', 'ru');
       this.translate.setDefaultLang('ru');
     }
-    // this.titleService.setTitle(this.title);
-    const  potentialToken = localStorage.getItem('auth-token');
+    const potentialToken = localStorage.getItem('auth-token');
     if (potentialToken !== null) {
       this.auth.setToken(potentialToken);
     }
