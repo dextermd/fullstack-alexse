@@ -158,7 +158,7 @@ import {SearchProductPipe} from './admin/shared/pipes/searchProduct.pipe';
 import {SortPipe} from './admin/shared/pipes/sort.pipe';
 import {NgPipesModule} from 'ngx-pipes';
 import {TranslateModule} from '@ngx-translate/core';
-import {FERootModule, FroalaViewModule} from 'angular-froala-wysiwyg';
+import {FERootModule, FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 import { IndustrialComponent } from './components/industrial/industrial.component';
 import { CategoryPageComponent } from './components/industrial/category-page/category-page.component';
 import { IconListComponent } from './components/industrial/category-page/icon-list/icon-list.component';
@@ -375,6 +375,7 @@ registerLocaleData( roLocale, 'ro');
     NgPipesModule,
     TranslateModule,
     FroalaViewModule,
+    FroalaEditorModule,
     FERootModule,
   ],
   // providers: [INTERCEPTOR_PROVIDER],

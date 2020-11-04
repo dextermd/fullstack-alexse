@@ -9,7 +9,7 @@ import {CrystalLightboxModule} from '@crystalui/angular-lightbox';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
+import {FERootModule, FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 import {LocalService} from './shared/local.service';
 
 
@@ -32,6 +32,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CrystalLightboxModule,
     MDBBootstrapModule.forRoot(),
     HttpClientModule,
+    FERootModule,
 
     TranslateModule.forRoot({
       loader: {
