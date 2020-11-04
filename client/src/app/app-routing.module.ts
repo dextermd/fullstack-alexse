@@ -536,7 +536,6 @@ const routes: Routes = [
       {path: 'dozator-table', component: DozatorTablePageComponent},
       {path: 'filling-batcher', component: DozatorViboiPageComponent},
       {path: 'modern-bunker-scales', component: DozatorModernPageComponent},
-      {path: 'ru/aboutcompany/scales-control-polzovatelskoe-soglashenie', component: ReguleComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
       {path: 'account/login', component: LoginComponent}
