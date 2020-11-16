@@ -28,7 +28,6 @@ import { PandusCreatePageComponent } from './options-page/pandus-create-page/pan
 import { PandusPageComponent } from './options-page/pandus-page/pandus-page.component';
 import { CasaPageComponent } from './options-page/casa-page/casa-page.component';
 import { CasaCreatePageComponent } from './options-page/casa-create-page/casa-create-page.component';
-import {SearchProductPipe} from './shared/pipes/searchProduct.pipe';
 import {FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 
 // Import all Froala Editor plugins.
@@ -85,42 +84,42 @@ import {NgArrayPipesModule, NgPipesModule} from 'ngx-pipes';
     RouterModule.forChild([
       {
         path: '', component: AdminLayoutComponent, canActivate: [AuthGuard], children: [
-          {path: 'dashboard', component: DashboardPageComponent, canActivate: [AuthGuard]},
+          {path: 'dashboard', component: DashboardPageComponent},
 
-          {path: 'indicator-page', component: IndicatorPageComponent, canActivate: [AuthGuard]},
-          {path: 'indicator-create-page', component: IndicatorCreatePageComponent, canActivate: [AuthGuard]},
-          {path: 'indicator-create-page/:id', component: IndicatorCreatePageComponent, canActivate: [AuthGuard]},
+          {path: 'indicator-page', component: IndicatorPageComponent},
+          {path: 'indicator-create-page', component: IndicatorCreatePageComponent},
+          {path: 'indicator-create-page/:id', component: IndicatorCreatePageComponent},
 
-          {path: 'casa-page', component: CasaPageComponent, canActivate: [AuthGuard]},
-          {path: 'casa-create-page', component: CasaCreatePageComponent, canActivate: [AuthGuard]},
-          {path: 'casa-create-page/:id', component: CasaCreatePageComponent, canActivate: [AuthGuard]},
+          {path: 'casa-page', component: CasaPageComponent},
+          {path: 'casa-create-page', component: CasaCreatePageComponent},
+          {path: 'casa-create-page/:id', component: CasaCreatePageComponent},
 
-          {path: 'pandus-page', component: PandusPageComponent, canActivate: [AuthGuard]},
-          {path: 'pandus-create-page', component: PandusCreatePageComponent, canActivate: [AuthGuard]},
-          {path: 'pandus-create-page/:id', component: PandusCreatePageComponent, canActivate: [AuthGuard]},
+          {path: 'pandus-page', component: PandusPageComponent},
+          {path: 'pandus-create-page', component: PandusCreatePageComponent},
+          {path: 'pandus-create-page/:id', component: PandusCreatePageComponent},
 
-          {path: 'post-category', component: PostCategoryComponent, canActivate: [AuthGuard]},
-          {path: 'create-post-category', component: CreatePostCategoryComponent, canActivate: [AuthGuard]},
-          {path: 'create-post-category/:id', component: CreatePostCategoryComponent, canActivate: [AuthGuard]},
+          {path: 'post-category', component: PostCategoryComponent},
+          {path: 'create-post-category', component: CreatePostCategoryComponent},
+          {path: 'create-post-category/:id', component: CreatePostCategoryComponent},
 
-          {path: 'post', component: PostPageComponent, canActivate: [AuthGuard]},
-          {path: 'create-post', component: CreatePostPageComponent, canActivate: [AuthGuard]},
-          {path: 'create-post/:id', component: CreatePostPageComponent, canActivate: [AuthGuard]},
+          {path: 'post', component: PostPageComponent},
+          {path: 'create-post', component: CreatePostPageComponent},
+          {path: 'create-post/:id', component: CreatePostPageComponent},
 
-          {path: 'product', component: ProductPageComponent, canActivate: [AuthGuard]},
-          {path: 'create-product', component: CreateProductComponent, canActivate: [AuthGuard]},
-          {path: 'create-product/:id', component: CreateProductComponent, canActivate: [AuthGuard]},
+          {path: 'product', component: ProductPageComponent},
+          {path: 'create-product', component: CreateProductComponent},
+          {path: 'create-product/:id', component: CreateProductComponent},
 
 
-          {path: 'category', component: CategoryPageComponent, canActivate: [AuthGuard]},
-          {path: 'create-category', component: CreateCategoryPageComponent, canActivate: [AuthGuard]},
-          {path: 'create-category/:id', component: CreateCategoryPageComponent, canActivate: [AuthGuard]},
+          {path: 'category', component: CategoryPageComponent},
+          {path: 'create-category', component: CreateCategoryPageComponent},
+          {path: 'create-category/:id', component: CreateCategoryPageComponent},
 
-          {path: 'subcategory', component: SubCategoryPageComponent, canActivate: [AuthGuard]},
-          {path: 'create-subcategory', component: CreateSubCategoryPageComponent, canActivate: [AuthGuard]},
-          {path: 'create-subcategory/:id', component: CreateSubCategoryPageComponent, canActivate: [AuthGuard]},
+          {path: 'subcategory', component: SubCategoryPageComponent},
+          {path: 'create-subcategory', component: CreateSubCategoryPageComponent},
+          {path: 'create-subcategory/:id', component: CreateSubCategoryPageComponent},
 
-          {path: 'history-orders', component: HistoryOrdersPageComponent, canActivate: [AuthGuard]},
+          {path: 'history-orders', component: HistoryOrdersPageComponent},
 
         ]
       }

@@ -8,7 +8,7 @@
       <!--Navbar -->
       <nav class=" navbar navbartop navbar-expand-lg navbar-light white lighten-1">
         <span class="font-weight-bolder"
-              style="color: #000000; font-size: 10pt;"><strong>{{ 'MAIN.INDEX.Support' | translate}}</strong></span>
+              style="color: #000000; font-size: 10pt;"><strong> <a href="tel:+37322244572">{{ 'MAIN.INDEX.Support' | translate}}</a></strong></span>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
           <ul class="navbar-nav mr-auto">
@@ -48,7 +48,7 @@
 
 
     <!--Navbar-->
-    <mdb-navbar SideClass="navbar navbarmidle navbar-expand-lg navbar-dark pl-5 pr-5" [containerInside]="false">
+    <mdb-navbar SideClass="navbar navbarmidle navbar-expand-lg  pl-5 pr-5" [containerInside]="false">
       <!-- Navbar brand -->
 
       <div>
@@ -76,7 +76,6 @@
           <input class="form-control d-none d-md-block" type="text" placeholder="{{ 'MAIN.INDEX.Search' | translate}}"
                  aria-label="Search">
         </form>
-
         <ul class="navbar-nav ml-auto">
           <ng-container *ngIf="lang == 'ru'">
             <li class="nav-item d-none d-md-block">
@@ -414,7 +413,7 @@
               <div [innerHTML]="'MAIN.FOOTER.CHISINAU.Adress' | translate"></div>
             </li>
             <li>
-              <a href="">{{ 'MAIN.FOOTER.CHISINAU.Phone' | translate }}</a>
+              <a href="tel:+37322244572">{{ 'MAIN.FOOTER.CHISINAU.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
@@ -428,10 +427,10 @@
           <strong class="font-weight-bold text-uppercase mt-3 mb-4">{{ 'MAIN.FOOTER.BALTI.Name' | translate }}</strong>
           <ul class="list-unstyled">
             <li>
-              <a href="">{{ 'MAIN.FOOTER.BALTI.Adress' | translate }}</a>
+              {{ 'MAIN.FOOTER.BALTI.Adress' | translate }}
             </li>
             <li>
-              <a href="">{{ 'MAIN.FOOTER.BALTI.Phone' | translate }}</a>
+              <a href="tel:+37323140456">{{ 'MAIN.FOOTER.BALTI.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
@@ -442,10 +441,10 @@
             class="font-weight-bold text-uppercase mt-3 mb-4">{{ 'MAIN.FOOTER.TIRASPOL.Name' | translate }}</strong>
           <ul class="list-unstyled">
             <li>
-              <a href="">{{ 'MAIN.FOOTER.TIRASPOL.Adress' | translate }}</a>
+              {{ 'MAIN.FOOTER.TIRASPOL.Adress' | translate }}
             </li>
             <li>
-              <a href="">{{ 'MAIN.FOOTER.TIRASPOL.Phone' | translate }}</a>
+              <a href="tel:53367540">{{ 'MAIN.FOOTER.TIRASPOL.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
@@ -457,7 +456,7 @@
               {{ 'MAIN.FOOTER.COMRAT.Adress' | translate }}
             </li>
             <li>
-             {{ 'MAIN.FOOTER.COMRAT.Phone' | translate }}
+              <a href="tel:+37329880533 ">{{ 'MAIN.FOOTER.COMRAT.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
@@ -471,14 +470,14 @@
               {{ 'MAIN.FOOTER.DROCHIA.Adress' | translate }}
             </li>
             <li>
-              {{ 'MAIN.FOOTER.DROCHIA.Phone' | translate }}
+              <a href="tel:+37368650707">{{ 'MAIN.FOOTER.DROCHIA.Phone' | translate }}</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright text-center mt-2 py-3">Copiryght © ICS
-      <a href="http://alex-se.com/"> "Alex S&E" SRL 2015</a>
+      <a href="http://alex-se.com/"> "Alex S&E" SRL 2020</a>
     </div>
 
   </footer>

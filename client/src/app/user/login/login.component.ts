@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   onSubmit() {
     this.form.disable();
     this.aSub = this.auth.login(this.form.value).subscribe(
-      () => this.router.navigate(['/admin/dashboard']),
+      () => this.router.navigate(['/admin' , 'dashboard']),
       error => {
         this.alert.success(error.error.message);
         console.warn(error);

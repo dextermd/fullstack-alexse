@@ -3,6 +3,7 @@ import {User} from '../admin/shared/interfaces';
 import {HttpClient} from '@angular/common/http';
 import {Observable, Subject} from 'rxjs';
 import {tap} from 'rxjs/operators';
+import {LocalService} from './local.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,10 @@ export class AuthService {
 
   public error$: Subject<string> = new Subject<string>();
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    private localService: LocalService
+              ) {}
 
   register(user: User): Observable<User> {
     return  this.http.post<User>('/api/auth/register', user);
@@ -24,6 +28,7 @@ export class AuthService {
       .pipe(
         tap(
           ({token}) => {
+            this.localService.setJsonValue('auth-token', token);
             localStorage.setItem('auth-token', token);
             this.setToken(token);
           }
@@ -47,6 +52,8 @@ export class AuthService {
   logout() {
     this.setToken(null);
     localStorage.clear();
+    this.localService.clearToken();
+
   }
 
   getUserPayload() {

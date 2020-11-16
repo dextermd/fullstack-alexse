@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
       this.localService.setJsonValue('lang', 'ru');
       this.translate.setDefaultLang('ru');
     }
-    const potentialToken = localStorage.getItem('auth-token');
+    const potentialToken = this.localService.getJsonValue('auth-token');
     if (potentialToken !== null) {
       this.auth.setToken(potentialToken);
     }

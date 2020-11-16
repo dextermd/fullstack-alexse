@@ -537,7 +537,6 @@ const routes: Routes = [
       {path: 'filling-batcher', component: DozatorViboiPageComponent},
       {path: 'modern-bunker-scales', component: DozatorModernPageComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
-      // {path: 'account/profile', component: ProfileComponent, canActivate: [AuthGuard] },
       {path: 'account/login', component: LoginComponent}
 
     ]
