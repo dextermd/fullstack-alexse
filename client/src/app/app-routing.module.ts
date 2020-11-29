@@ -44,6 +44,7 @@ import {DozatorViboiPageComponent} from './components/bunker/dozator-viboi-page/
 import {DozatorTablePageComponent} from './components/bunker/dozator-table-page/dozator-table-page.component';
 import {DozatorModernPageComponent} from './components/bunker/dozator-modern-page/dozator-modern-page.component';
 import {ReguleComponent} from './components/regule/regule.component';
+import {AutomaticWeightControlSystemComponent} from "./components/automatic-weight-control-system/automatic-weight-control-system.component";
 
 
 
@@ -536,6 +537,7 @@ const routes: Routes = [
       {path: 'dozator-table', component: DozatorTablePageComponent},
       {path: 'filling-batcher', component: DozatorViboiPageComponent},
       {path: 'modern-bunker-scales', component: DozatorModernPageComponent},
+      {path: 'automatic-weight-and-dimension-control-system', component: AutomaticWeightControlSystemComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       {path: 'account/login', component: LoginComponent}
 
