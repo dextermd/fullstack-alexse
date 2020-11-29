@@ -184,6 +184,7 @@ import { DozatorOpenPageComponent } from './components/bunker/dozator-open-page/
 import { DozatorTablePageComponent } from './components/bunker/dozator-table-page/dozator-table-page.component';
 import { DozatorViboiPageComponent } from './components/bunker/dozator-viboi-page/dozator-viboi-page.component';
 import { ReguleComponent } from './components/regule/regule.component';
+import { AutomaticWeightControlSystemComponent } from './components/automatic-weight-control-system/automatic-weight-control-system.component';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData( roLocale, 'ro');
@@ -362,6 +363,7 @@ registerLocaleData( roLocale, 'ro');
     DozatorTablePageComponent,
     DozatorViboiPageComponent,
     ReguleComponent,
+    AutomaticWeightControlSystemComponent,
 
   ],
   imports: [

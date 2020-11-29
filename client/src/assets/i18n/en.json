@@ -1638,5 +1638,81 @@
       "Left": "Service and technical support are provided by experienced and fully trained specialists of our company.<br>Company’s specialist will advise you on the phone in the event of faults in the equipment, and will offer an optimal solution to the problem. If a remote solution is not possible, our staff will take your request, and our service team will come as soon as possible, to carry out work on the local point for complex repairs. ",
       "Right": "Technicians perform maintenance and repair of varying degrees of difficulty, and when necessary, the company attracts engineers and programmers. We use only original spare parts and expendable material.<br>We guarantee our customers rapid technical support and professional advice in any, even the most difficult cases."
     }
+  },
+  "AutomaticSystem": {
+    "Header": {
+      "Title": "Automatic weight and dimension control system",
+      "SubTitle": "The automatic weight and dimensional control system (AWDCS) was developed for quick weighing and measuring the dimensions of vehicles while driving on the road, without reducing the speed of movement. The main purpose of the complex is the preliminary detection in the traffic flow of vehicles moving in excess of the weight and dimensions limits established by the current legislation and regulations.",
+      "FuncTitle": "The system provides:",
+      "FuncText": "<li>Revealing violations of the current legislation in the field of road traffic, violations of transportation of bulky and / or heavy cargo in freight transport.</li><li>Preservation of highways and improvement of transport safety on national highways.</li><li>Elimination of the influence of the human factor on the preliminary selection of freight transport in excess of bulky and / or heavy cargo.</li><li>Seeking additional funds coming into the national budget to finance the maintenance and construction of highways from collecting fines for violations of the rules for transporting bulky and heavy cargo.</li>"
+    },
+    "TableOne": {
+      "TitleOne": "Diagram of the process for measuring the weight and dimensions of vehicles with one stationary checkpoint for the weight and dimensions of vehicles.",
+      "TitleTwo": "Diagram of the process for measuring the weight and dimensions of vehicles with two stationary checkpoints for the weight and dimensions of vehicles.",
+      "DescOne": "Freight transport with excess weight and axle load are shown in red.",
+      "DescTwo": "Oversized freight transport is indicated in yellow."
+    },
+    "ImageList": {
+      "One": "In the open window of the road inspector's tablet, you can see the image of the violator's cargo transport.",
+      "Two": "The road inspector receives information from the automatic weight control point of the AWDCS on a tablet. In the open window, passing vehicles are shown in rows.",
+      "TwoTwo": "The violator is highlighted in yellow. In red font it is written how much the axle load or dimensions exceed.",
+      "Three": "The road inspector has the ability to see the axle load distribution in the extended window.",
+      "FuncTitle": "The uniqueness of the system is that it allows you to determine without reducing the speed of movement:",
+      "FuncText": "<li>Vehicle weight.</li><li>Load on road surface for each axle.</li><li>Vehicle dimensions.</li><li>Number of axles and distance between them.</li><li>Vehicle speed.</li><li>Fixes the state registration number.</li>",
+      "FuncTwoTitle": "Additional features:",
+      "FuncTwoText": "<li>Collecting information on traffic intensity on roads and transport classification.</li><li>Data protection at all stages of processing (collection, storage, transfer).</li><li>Self-diagnosis system for all components.</li>"
+    },
+    "Set": {
+      "Title": "System composition:",
+      "Text": "<li>Piezocrystalline sensors - determine the weight of trucks without reducing the speed.</li>",
+      "TextTwo": "<li>Optical sensors - determine the dimensions of the freight transport.</li>",
+      "TextThree": "<li>Cameras of photo and video fixation - capture the image of a truck and identify the vehicle by the state registration number.</li>",
+      "TextFour": "<li>Control cabinet (with anti-vandal protection) - Control of peripheral equipment, encryption and data transmission.</li>",
+      "TextFive": "<li>Inductive sensors - register the fact of passage and the speed of movement of freight vehicles.</li>",
+      "ImageTitle": "Stationary point for automatic weighing of truck and measurement of dimensions (CHECKPOINT)",
+      "ImageSpec": "1. Field -1000m² for the installation of the weight control and dimension measurement unit CHECKPOINT, 150m² - scales and access roads to them, 850m² - parking.<br><br>2. Scales – for weighing freight transport by axles and determining the total mass.<br><br>3. Barriers – for limiting the arrival of vehicles on the scales.<br><br>4. Photo and video cameras – for registering the freight transport at the time of weighing.<br><br>5. Remote display - display of loads on freight transport axle, total weight of the freight transport, the state registration number of the freight transport.<br><br>6. Control room - the workplace for the operator and traffic inspector. The operator, authorized worker for measuring the weight and dimensions of the freight transport.<br><br>7. Remote display - information about the legal weighing procedure, as well as information on all legislative provisions on violations.<br><br>8. Ethalons for measuring the dimensions of the freight transport.<br><br>"
+    },
+    "Table2": {
+      "Title": "Description of the weight and dimension control process",
+      "One1": "Passage of freight transport through CHECKPOINT",
+      "One2": "Freight transport passes the monitoring area. ",
+      "Two1": "Obtaining freight transport  parameters",
+      "Two2": "The equipment of the automatic weight control unit WIM STATION defines the dimensions, weight parameters, registration number of the freight transport, measures the speed and makes photographic images.",
+      "Three1": "Data transfer to CHECKPOINT",
+      "Three2": "The data obtained are transmitted to a stationary automatic weight control and dimension measurement unit CHECKPOINT.",
+      "Four1": "Transfer of the intruder’s data to the tablet of the traffic inspector no. 1",
+      "Four2": "The processed data is transmitted to the tablet f the traffic inspector no. 1, who obliges the intruder to be tested at the CHECKPOINT.",
+      "Five1": "FT is directed by the traffic inspector no. 2",
+      "Five2": "The traffic inspector no. 2 directs violator’s  cargo transport to weighing and/or dimension measurement, depending on the violation. ",
+      "Six1": "FT passage through CHECKPOINT",
+      "Six2": "Automatic weighing of freight transport and the dimensions measuring. Freight transport passes the scales at a speed of 5km/h. ",
+      "Seven1": "Obtaining the FT parameters and issuing the weighing or measuring certificate",
+      "Seven2": "The operator, after receiving information about automatic weighing of the freight transport and/or dimension measurement of the freight transport issues the measurement certificate.",
+      "Eight1": "Transfer of the certificate of the intruder’s measurement data to the inspector for protocol execution",
+      "Eight2": "Traffic Inspector no.2 receives the measurement certificate of the freight transport. On the basis of this document, he writes out the protocol on violation of the Rules of cargo transportation."
+    },
+    "Schema": {
+      "Title": "Description of the weight and dimension measurement process. Data transfer and their safety on the server."
+    },
+    "Document": {
+      "Title": "Sample certificate of weighing and measurement of freight transport dimensions"
+    },
+    "CertInfo": {
+      "Title": "The measurement certificate is issued by an organization accredited for the measurement",
+      "Text": "<li>Printed on strict reporting forms.</li><li>The road inspector scans the certificate to enter automatically the measurement data as well as the series and number of this document.</li>"
+    },
+    "Last": {
+      "Title": "The advantages of the automatic weight and dimension control system ",
+      "Text1": "Keeping records of all freight transport, which moves along the national roads. ",
+      "Text2": "Creating a database of violators, to further prohibit the movement of the freight transport concerned on the national roads or the deprivation of the license for the activities of economic agents.",
+      "Text3": "Pre-selection of freight transport is carried out in an automatic mode.",
+      "Text4": "Data encoding (encrypting). ",
+      "Text5": "The continuous and uninterrupted operation of the system. ",
+      "Text6": "Measurement of freight transport weight by truck scales in an automatic mode is carried out with an error of less than 1%.",
+      "Text7": "A certificate is issued on the freight transport weighing with a serial number, which is attached to the protocol.",
+      "Text8": "Standardized means for measuring the dimensions of the freight transport . ",
+      "Text9": "Information about the detected exceeding of the permissible freight transport parameters is transferred in the On-line mode to the weight control and dimension measurement units (CHECKPOINT)."
+    }
   }
+
 }
