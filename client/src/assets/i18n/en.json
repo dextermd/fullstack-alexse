@@ -350,6 +350,70 @@
       "Title": "You can also expand the set with additional equipment"
     }
   },
+  "Aurora": {
+    "Header": {
+      "TitleTop": "COMPACT SOLUTION FOR TRADING!",
+      "TitleBottom": "POS SYSTEM WITH BUILT-IN SCALE",
+      "IconOne": "BOUTIQUES",
+      "IconTwo": "DEPARTMENTS IN SHOPPING CENTERS",
+      "IconThree": "SHOPS",
+      "IconFour": "SMALL SHOPS"
+    },
+    "Full": {
+      "TitleTop": "TRADE AUTOMATION SET",
+      "TitleBottom": "AURORA",
+      "ComplectTitle": "SET COMPOSITION:",
+      "ComplectOne": "Alex-Market software ",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "POS system Aurora S1L with built-in scale and two 15 '' displays",
+      "ComplectThree": "FMP-10 fiscal receipt printer",
+      "ComplectFour": "Mindeo MP8600 barcode scanner (1D / 2D)",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiable",
+      "ComplectGiveThree": "Powerful",
+      "ComplectPriceTitle": "Price:",
+      "ComplectPrice": "40 800 MDL",
+      "ComplectOldPrice": "43 099 MDL"
+    },
+    "AuroraS1": {
+      "TitleTop": "AURORA S1L",
+      "TitleBottom": "POS system with built-in scale",
+      "SpecTitleOne": "15'' Touch screen",
+      "SpecTextOne": "Touchscreen display with HD resolution of 1366x768 and instant sensor response",
+      "SpecTitleTwo": "15'' Customer display",
+      "SpecTextTwo": "LCD buyer display with HD resolution 1366x768",
+      "SpecTitleThree": "Speed",
+      "SpecTextThree": "The terminal is equipped with a new generation INTEL processor with high performance and low power consumption",
+      "SpecTitleFour": "Fast data storage",
+      "SpecTextFour": "4GB DDR3 memory and modern 64GB SSD hard drive",
+      "SpecTitleFive": "Large set of interfaces",
+      "SpecTextFive": "1 * RJ11 (cash register), 1 * RS232, 4 * USB Possibility of connecting a barcode scanner, external fiscal printer, cash drawer."
+    },
+    "FMP": {
+      "TitleTop": "FMP-10",
+      "TitleBottom": "Reliable fiscal receipt printer",
+      "SpecTitleOne": "Reliability",
+      "SpecTextOne": "Printer MTBF - 50 km of receipt tape",
+      "SpecTitleTwo": "Work speed",
+      "SpecTextTwo": "Printing speed 50 m / s",
+      "SpecTitleThree": "Fiscal memory",
+      "SpecTextThree": "Certified for use in RM",
+      "SpecTitleFour": "Ergonomic",
+      "SpecTextFour": "Compact size and attractive appearance"
+    },
+    "MP8600": {
+      "TitleTop": "Mindeo MP8600",
+      "TitleBottom": "Multi-plane Barcode Photo Scanner",
+      "SpecTitleOne": "Work speed",
+      "SpecTextOne": "Scanning at a speed of 45 scans / sec",
+      "SpecTitleTwo": "Versatility",
+      "SpecTextTwo": "Scanning 1D and 2D barcodes",
+      "SpecTitleThree": "Convenience",
+      "SpecTextThree": "Sound signal and light indication",
+      "SpecTitleFour": "Strength",
+      "SpecTextFour": "No moving parts Protected against dust and moisture IP 52 Resistant to drops from 1.5 meters"
+    }
+  },
   "PosMarket": {
     "Header": {
       "TitleTop": "SOFTWARE FOR STORE",

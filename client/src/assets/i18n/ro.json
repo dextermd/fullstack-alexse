@@ -350,6 +350,70 @@
       "Title": "De asemenea, puteți extinde setul cu echipamente suplimentare"
     }
   },
+  "Aurora": {
+    "Header": {
+      "TitleTop": "Soluție compactă pentru comerț!",
+      "TitleBottom": "SISTEM POS CU CÂNTAR ÎNCORPORAT",
+      "IconOne": "BUTICURI",
+      "IconTwo": "DEPARTAMENTE ÎN CENTRE COMERCIALE",
+      "IconThree": "MAGAZINE",
+      "IconFour": "MAGAZINE MICI"
+    },
+    "Full": {
+      "TitleTop": "SET PENTRU AUTOMATIZAREA COMERȚULUI",
+      "TitleBottom": "AURORA",
+      "ComplectTitle": "COMPONENȚA SETULUI:",
+      "ComplectOne": "Software Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Sistem POS Aurora S1L cu cântar încorporat și două afișaje de 15",
+      "ComplectThree": "Imprimantă fiscală de bonuri FMP-10",
+      "ComplectFour": "Cititor e coduri de bare Mindeo MP8600 (1D / 2D)",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiabil",
+      "ComplectGiveThree": "Durabil",
+      "ComplectPriceTitle": "Prețul:",
+      "ComplectPrice": "40 800 MDL",
+      "ComplectOldPrice": "43 099 MDL"
+    },
+    "AuroraS1": {
+      "TitleTop": "AURORA S1L",
+      "TitleBottom": "Sistem POS cu cântar încorporat",
+      "SpecTitleOne": "Ecran tactil de 15",
+      "SpecTextOne": "Afișaj cu ecran tactil cu rezoluție HD de 1366x768 și răspuns instant al senzorului",
+      "SpecTitleTwo": "Afișajul clientului de 15",
+      "SpecTextTwo": "Afișaj LCD al cumpărătorului cu rezoluție HD 1366x768",
+      "SpecTitleThree": "Viteză",
+      "SpecTextThree": "Terminalul este echipat cu un procesor INTEL de nouă generație cu performanțe ridicate și consum redus de energie",
+      "SpecTitleFour": "Stocare rapidă a datelor",
+      "SpecTextFour": "Memorie DDR3 de 4 GB și hard disk SSD modern de 64 GB",
+      "SpecTitleFive": "Set mare de interfețe",
+      "SpecTextFive": "1 * RJ11 (casierie), 1 * RS232, 4 * USB Posibilitatea conectării unui cititor de coduri de bare, imprimantă fiscală externă, sertar de numerar."
+    },
+    "FMP": {
+      "TitleTop": "FMP-10",
+      "TitleBottom": "Imprimantă fiscală de bonuri fiabilă",
+      "SpecTitleOne": "Fiabilitate",
+      "SpecTextOne": "MTBF al imprimantei- 50 km de bandă de bonuri",
+      "SpecTitleTwo": "Viteza de lucru",
+      "SpecTextTwo": "Viteza de imprimare 50 m / s",
+      "SpecTitleThree": "Memoria fiscală",
+      "SpecTextThree": "Certificat pentru utilizare în RM",
+      "SpecTitleFour": "Ergonomicitate",
+      "SpecTextFour": "Dimensiune compactă și aspect atractiv"
+    },
+    "MP8600": {
+      "TitleTop": "Mindeo MP8600",
+      "TitleBottom": "Foto cititor de coduri de bare multiplan",
+      "SpecTitleOne": "Viteza de lucru",
+      "SpecTextOne": "Scanare la o viteză de 45 scanări / sec",
+      "SpecTitleTwo": "Versatilitate",
+      "SpecTextTwo": "Scanarea codurilor de bare 1D și 2D",
+      "SpecTitleThree": "Confort",
+      "SpecTextThree": "Semnal sonor și indicație luminoasă",
+      "SpecTitleFour": "Durabilitate",
+      "SpecTextFour": "Lipsa elementelor în mișcare Protecție împotriva prafului și umezelii IP 52 Rezistent la căzături de 1,5 metri înălțime"
+    }
+  },
   "PosMarket": {
     "Header": {
       "TitleTop": "SOFT PENTRU MAGAZIN",
