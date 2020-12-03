@@ -515,7 +515,11 @@
       "MarkTitleTop": "TRADE AUTOMATION SET",
       "MarkTitleBottom": "POS-Market",
       "MarkText": "Option for conducting trade accounting in markets with scales",
-      "MarkButton": "CHOOSE POS-MARKET SET"
+      "MarkButton": "CHOOSE POS-MARKET SET",
+      "AuroraTitleTop": "КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ",
+      "AuroraTitleBottom": "AURORA",
+      "AuroraText": "КОМПАКТНОЕ РЕШЕНИЕ ДЛЯ ТОРГОВЛИ! POS СИСТЕМА СО ВСТРОЕННЫМИ ВЕСАМИ",
+      "AuroraButton": "Выбрать комплект AURORA"
     }
   },
   "About": {

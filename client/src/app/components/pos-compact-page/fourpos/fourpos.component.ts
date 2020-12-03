@@ -10,8 +10,7 @@ import {TranslateService} from '@ngx-translate/core';
 export class FourposComponent implements OnInit {
 
   constructor(
-    public translate: TranslateService
-
+    public translate: TranslateService,
   ) { }
 
   ngOnInit(): void {

@@ -515,7 +515,11 @@
       "MarkTitleTop": "SET DE AUTOMATIZARE ÎN COMERȚ",
       "MarkTitleBottom": "POS-Market",
       "MarkText": "Opțiune pentru ducerea evidenței comerciale în magazine cu cântare.",
-      "MarkButton": "ALEGE SET POS-MARKET"
+      "MarkButton": "ALEGE SET POS-MARKET",
+      "AuroraTitleTop": "КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ",
+      "AuroraTitleBottom": "AURORA",
+      "AuroraText": "КОМПАКТНОЕ РЕШЕНИЕ ДЛЯ ТОРГОВЛИ! POS СИСТЕМА СО ВСТРОЕННЫМИ ВЕСАМИ",
+      "AuroraButton": "Выбрать комплект AURORA"
     }
   },
   "About": {

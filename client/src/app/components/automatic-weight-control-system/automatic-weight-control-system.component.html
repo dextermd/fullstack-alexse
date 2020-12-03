@@ -1,4 +1,4 @@
-<div class="">
+<div class="black-text" style="font-family: 'Times New Roman'">
   <div class="container pt-2">
     <!--    <mdb-breadcrumb-item>-->
     <!--      <mdb-breadcrumb-item  [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>-->
@@ -181,7 +181,7 @@
 
         <!-- Grid column -->
         <div class="col-lg-7 col-md-6 mb-md-0 mb-4 mt-xl-5">
-          <h5 class="font-weight-normal mb-4"><em>{{'AutomaticSystem.ImageList.One' | translate}}</em></h5>
+          <h5 class=" mb-4"><em>{{'AutomaticSystem.ImageList.One' | translate}}</em></h5>
         </div>
         <!-- Grid column -->
 
@@ -220,8 +220,8 @@
 
         <!-- Grid column -->
         <div class="order-1 col-lg-7 col-md-6 mb-md-0 mb-4 mt-xl-5">
-          <h5 class="font-weight-normal mb-5"><em>{{'AutomaticSystem.ImageList.Two' | translate}}</em></h5>
-          <h5 class="font-weight-normal mt-5"><em>{{'AutomaticSystem.ImageList.TwoTwo' | translate}}</em></h5>
+          <h5 class=" mb-5"><em>{{'AutomaticSystem.ImageList.Two' | translate}}</em></h5>
+          <h5 class=" mt-5"><em>{{'AutomaticSystem.ImageList.TwoTwo' | translate}}</em></h5>
         </div>
         <!-- Grid column -->
 
@@ -261,7 +261,7 @@
 
         <!-- Grid column -->
         <div class="col-lg-7 col-md-6 mb-md-0 mb-4 mt-xl-5">
-          <h5 class="font-weight-normal mb-4"><em>{{'AutomaticSystem.ImageList.Three' | translate}}</em></h5>
+          <h5 class=" mb-4"><em>{{'AutomaticSystem.ImageList.Three' | translate}}</em></h5>
         </div>
         <!-- Grid column -->
 
@@ -282,7 +282,7 @@
         <h3 class="mb-3">{{'AutomaticSystem.ImageList.FuncTitle' | translate}}</h3>
 
         <ul class="mb-4">
-          <div [innerHTML]="'AutomaticSystem.ImageList.FuncText'  | translate"></div>
+          <h5><div [innerHTML]="'AutomaticSystem.ImageList.FuncText'  | translate"></div></h5>
         </ul>
       </div>
     </div>
@@ -295,7 +295,7 @@
         <h3 class="mb-3">{{'AutomaticSystem.ImageList.FuncTwoTitle' | translate}}</h3>
 
         <ul class="mb-4">
-          <div class="font-weight-normal" [innerHTML]="'AutomaticSystem.ImageList.FuncTwoText'  | translate"></div>
+          <h5><div class="" [innerHTML]="'AutomaticSystem.ImageList.FuncTwoText'  | translate"></div></h5>
         </ul>
       </div>
     </div>
@@ -343,21 +343,21 @@
 
         <!-- Grid column -->
         <div class="col-lg-8 col-md-6 mb-md-0 mb-4 mt-xl-5">
-          <div class="mb-4 font-weight-normal">
+          <div class="mb-4">
             <ul class="mb-4">
-              <div [innerHTML]="'AutomaticSystem.Set.Text'  | translate"></div>
+              <h5><div [innerHTML]="'AutomaticSystem.Set.Text'  | translate"></div></h5>
             </ul>
             <ul class="mb-4">
-              <div [innerHTML]="'AutomaticSystem.Set.TextTwo'  | translate"></div>
+              <h5><div [innerHTML]="'AutomaticSystem.Set.TextTwo'  | translate"></div></h5>
             </ul>
             <ul class="mb-4">
-              <div [innerHTML]="'AutomaticSystem.Set.TextThree'  | translate"></div>
+              <h5><div [innerHTML]="'AutomaticSystem.Set.TextThree'  | translate"></div></h5>
             </ul>
             <ul class="mb-4">
-              <div [innerHTML]="'AutomaticSystem.Set.TextFour'  | translate"></div>
+              <h5><div [innerHTML]="'AutomaticSystem.Set.TextFour'  | translate"></div></h5>
             </ul>
             <ul class="mb-4">
-              <div [innerHTML]="'AutomaticSystem.Set.TextFive'  | translate"></div>
+              <h5><div [innerHTML]="'AutomaticSystem.Set.TextFive'  | translate"></div></h5>
             </ul>
           </div>
         </div>
@@ -373,9 +373,9 @@
 
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
-      <h6 class="text-center py-3">
+      <h4 class="text-center py-3">
         {{'AutomaticSystem.Set.ImageTitle' | translate}}
-      </h6>
+      </h4>
       <div class="view overlay rounded  mt-1 mb-5">
         <a>
           <ng-container *ngIf="this.main.lang == 'ru'">
@@ -401,15 +401,16 @@
   <div class="container">
     <div class="">
 
-        <div class="font-weight-normal" [innerHTML]="'AutomaticSystem.Set.ImageSpec'  | translate"></div>
+        <h5><div class="" [innerHTML]="'AutomaticSystem.Set.ImageSpec'  | translate"></div></h5>
 
     </div>
   </div>
 
   <div class="container">
-    <h3 class="font-weight-normal mb-4">{{'AutomaticSystem.Table2.Title' | translate}}</h3>
+    <h3 class=" mb-4">{{'AutomaticSystem.Table2.Title' | translate}}</h3>
 
     <table class="table">
+      <h5>
       <tbody>
       <tr>
         <th scope="row">1</th>
@@ -459,6 +460,7 @@
         <td>{{'AutomaticSystem.Table2.Eight2' | translate}}</td>
       </tr>
       </tbody>
+        </h5>
     </table>
   </div>
 
@@ -508,15 +510,15 @@
     <h5 class="mb-3">{{'AutomaticSystem.CertInfo.Title' | translate}}</h5>
 
     <ul class="mb-4">
-      <div class="font-weight-normal" [innerHTML]="'AutomaticSystem.CertInfo.Text'  | translate"></div>
+      <h5><div class="" [innerHTML]="'AutomaticSystem.CertInfo.Text'  | translate"></div></h5>
     </ul>
   </div>
 
   <div class="container">
     <h5 class="mb-3">{{'AutomaticSystem.Last.Title' | translate}}</h5>
 
-    <h5 class="mb-3"></h5>
-     <ul class="fa-ul mb-5 font-weight-normal">
+    <h5 class="mb-3">
+     <ul class="fa-ul mb-5">
         <li class="mb-2"><span class="fa-li"><i class="fas fa-check green-text"></i></span>{{'AutomaticSystem.Last.Text1' | translate}}</li>
         <li class="mb-2"><span class="fa-li"><i class="fas fa-check green-text"></i></span>{{'AutomaticSystem.Last.Text2' | translate}}</li>
         <li class="mb-2"><span class="fa-li"><i class="fas fa-check green-text"></i></span>{{'AutomaticSystem.Last.Text3' | translate}}</li>
@@ -526,8 +528,8 @@
         <li class="mb-2"><span class="fa-li"><i class="fas fa-check green-text"></i></span>{{'AutomaticSystem.Last.Text7' | translate}}</li>
         <li class="mb-2"><span class="fa-li"><i class="fas fa-check green-text"></i></span>{{'AutomaticSystem.Last.Text8' | translate}}</li>
         <li class="mb-2"><span class="fa-li"><i class="fas fa-check green-text"></i></span>{{'AutomaticSystem.Last.Text9' | translate}}</li>
-
       </ul>
+    </h5>
   </div>
 
 </div>
