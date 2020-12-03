@@ -350,6 +350,70 @@
       "Title": "Вы также можете расширить комплект дополнительным оборудованием"
     }
   },
+  "Aurora": {
+    "Header": {
+      "TitleTop": "КОМПАКТНОЕ РЕШЕНИЕ ДЛЯ ТОРГОВЛИ!",
+      "TitleBottom": "POS СИСТЕМА СО ВСТРОЕННЫМИ ВЕСАМИ",
+      "IconOne": "БУТИКИ",
+      "IconTwo": "ОТДЕЛЫ В ТЦ",
+      "IconThree": "МАГАЗИНЫ",
+      "IconFour": "МИНИ МАРКЕТЫ"
+    },
+    "Full": {
+      "TitleTop": "КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ",
+      "TitleBottom": "AURORA",
+      "ComplectTitle": "СОСТАВ КОМПЛЕКТА:",
+      "ComplectOne": "Программа Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "POS система Aurora S1L со встроенными весами и двумя 15’’ дисплеями",
+      "ComplectThree": "Фискальный принтер чеков FMP-10",
+      "ComplectFour": "Сканер штрих кода Mindeo MP8600 (1D/2D)",
+      "ComplectGiveOne": "Компактный",
+      "ComplectGiveTwo": "Надежный",
+      "ComplectGiveThree": "Мощный",
+      "ComplectPriceTitle": "Цена комплекта:",
+      "ComplectPrice": "40 800 MDL",
+      "ComplectOldPrice": "43 099 MDL"
+    },
+    "AuroraS1": {
+      "TitleTop": "AURORA S1L",
+      "TitleBottom": "POS система со встроенными весами",
+      "SpecTitleOne": "15’’ Сенсорный экран",
+      "SpecTextOne": "Сенсорный дисплей с HD разрешением 1366х768 и моментальным откликом сенсора",
+      "SpecTitleTwo": "15’’ Дисплей покупателя",
+      "SpecTextTwo": "Жидкокристаллический дисплей покупателя c HD разрешением 1366х768",
+      "SpecTitleThree": "Быстродействие",
+      "SpecTextThree": "Терминал оснащен процессором INTEL нового поколения с высокой производительностью и низким энергопотреблением",
+      "SpecTitleFour": "Быстрый накопитель данных",
+      "SpecTextFour": "Память DDR3 4 Гб и современный жесткий диск 64 Гб SSD",
+      "SpecTitleFive": "Большой набор интерфейсов",
+      "SpecTextFive": "1*RJ11 (касса), 1*RS232, 4*USB Возможность подключения сканера штрих-кодов, внешнего фискального принтера, денежного ящика."
+    },
+    "FMP": {
+      "TitleTop": "FMP-10",
+      "TitleBottom": "Надежный фискальный принтер чеков",
+      "SpecTitleOne": "Надежность",
+      "SpecTextOne": "Наработка принтера на отказ – 50 км чековой ленты",
+      "SpecTitleTwo": "Скорость работы",
+      "SpecTextTwo": "Скорость печати 50 м/сек",
+      "SpecTitleThree": "Фискальная память",
+      "SpecTextThree": "Сертифицирован для использования в РМ",
+      "SpecTitleFour": "Эргономичность",
+      "SpecTextFour": "Компактные размеры и привлекательный внешний вид"
+    },
+    "MP8600": {
+      "TitleTop": "Mindeo MP8600",
+      "TitleBottom": "Многоплоскостной фотосканер штрих кодов",
+      "SpecTitleOne": "Скорость работы",
+      "SpecTextOne": "Сканирование со скоростью 45 скан/сек",
+      "SpecTitleTwo": "Универсальность",
+      "SpecTextTwo": "Сканирование 1D и 2D штрих кодов",
+      "SpecTitleThree": "Удобство",
+      "SpecTextThree": "Звуковой сигнал и световая индикация",
+      "SpecTitleFour": "Прочность",
+      "SpecTextFour": "Отсутствие подвижных элементов Защита от пыли и влаги IP 52 Устойчивость к падениям с высоты 1,5 метра"
+    }
+  },
   "PosMarket": {
     "Header": {
       "TitleTop": "Комплект для автоматизации торговли в магазине",
@@ -515,7 +579,11 @@
       "MarkTitleTop": "КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ",
       "MarkTitleBottom": "POS-Market",
       "MarkText": "Вариант для ведения торгового учета маркетах с весами",
-      "MarkButton": "Выбрать комплект POS-Market"
+      "MarkButton": "Выбрать комплект POS-Market",
+      "AuroraTitleTop": "КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ",
+      "AuroraTitleBottom": "AURORA",
+      "AuroraText": "КОМПАКТНОЕ РЕШЕНИЕ ДЛЯ ТОРГОВЛИ! POS СИСТЕМА СО ВСТРОЕННЫМИ ВЕСАМИ",
+      "AuroraButton": "Выбрать комплект AURORA"
     }
   },
   "About": {

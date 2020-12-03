@@ -186,6 +186,13 @@
   height: 287px;
 }
 
+.bgcomplect4 {
+  /* The image used */
+  background-image: url("assets/alexmarket/aurora/Untitled-2-min.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 287px;
+}
 
 .bgcomplectflag1 {
   /* The image used */
@@ -224,6 +231,13 @@
 .bgalim {
   /* The image used */
   background-image: url("assets/complect/alimentara300х605.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+.bgaurora {
+  /* The image used */
+  background-image: url("assets/alexmarket/aurora/Aurora-min.jpg");
   /* Center and scale the image nicely */
   background-position: center;
   background-size: cover;

@@ -185,6 +185,15 @@ import { DozatorTablePageComponent } from './components/bunker/dozator-table-pag
 import { DozatorViboiPageComponent } from './components/bunker/dozator-viboi-page/dozator-viboi-page.component';
 import { ReguleComponent } from './components/regule/regule.component';
 import { AutomaticWeightControlSystemComponent } from './components/automatic-weight-control-system/automatic-weight-control-system.component';
+import { HeaderauroraComponent } from './components/aurora/headeraurora/headeraurora.component';
+import { FullauroraComponent } from './components/aurora/fullaurora/fullaurora.component';
+import { ThreeauroraComponent } from './components/aurora/threeaurora/threeaurora.component';
+import { FourauroraComponent } from './components/aurora/fouraurora/fouraurora.component';
+import { FiveauroraComponent } from './components/aurora/fiveaurora/fiveaurora.component';
+import { SixauroraComponent } from './components/aurora/sixaurora/sixaurora.component';
+import { SevenauroraComponent } from './components/aurora/sevenaurora/sevenaurora.component';
+import { EightauroraComponent } from './components/aurora/eightaurora/eightaurora.component';
+import { AuroraComponent } from './components/aurora/aurora.component';
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData( roLocale, 'ro');
@@ -364,6 +373,15 @@ registerLocaleData( roLocale, 'ro');
     DozatorViboiPageComponent,
     ReguleComponent,
     AutomaticWeightControlSystemComponent,
+    HeaderauroraComponent,
+    FullauroraComponent,
+    ThreeauroraComponent,
+    FourauroraComponent,
+    FiveauroraComponent,
+    SixauroraComponent,
+    SevenauroraComponent,
+    EightauroraComponent,
+    AuroraComponent,
 
   ],
   imports: [
