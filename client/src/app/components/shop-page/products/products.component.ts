@@ -64,6 +64,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.productCategory$ = this.categoryService.getAllCategory();
 
     this.pageChanged(this.page);
+    if (window.screen.width === 360) { // 768px portrait
+      this.colapse = true;
+
+    }
   }
 
   ngOnDestroy(): void {

@@ -48,8 +48,9 @@
 
 
     <!--Navbar-->
-    <mdb-navbar SideClass="navbar navbarmidle navbar-expand-lg  pl-5 pr-5" [containerInside]="false">
+    <mdb-navbar  SideClass="navbar navbarmidle navbar-expand-lg  pl-5 pr-5" [containerInside]="false">
       <!-- Navbar brand -->
+
 
       <div>
         <ng-container *ngIf="lang == 'ru'">
@@ -70,21 +71,30 @@
           </a>
         </ng-container>
       </div>
+
+
+
+
+
+
+
+
+
       <!-- Collapsible content -->
       <links>
         <form class="form-inline">
-          <input class="form-control d-none d-md-block" type="text" placeholder="{{ 'MAIN.INDEX.Search' | translate}}"
+          <input class="form-control d-none d-xl-block" type="text" placeholder="{{ 'MAIN.INDEX.Search' | translate}}"
                  aria-label="Search">
         </form>
         <ul class="navbar-nav ml-auto">
           <ng-container *ngIf="lang == 'ru'">
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item d-none d-none d-xl-block navbar-brand">
               <img src="assets/support/060.png" alt="" class="pr-5">
             </li>
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item d-none d-sm-block navbar-brand">
               <a href="tel:+373060001103"> <img src="assets/support/060001103-1NEW.png" alt="" class="pr-3"></a>
             </li>
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item d-none d-sm-block navbar-brand">
               <a href="tel:+373069900989"> <img src="assets/support/069900989-1NEW.png" alt="" class="pr-5"></a>
             </li>
           </ng-container>
@@ -119,164 +129,105 @@
 
     </mdb-navbar>
 
-
-    <div class="fixed-top">
-      <div>
-        <!--Navbar-->
-        <mdb-navbar SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder"
-                    [containerInside]="false">
-
-          <div>
-            <ng-container *ngIf="lang == 'ru'">
-              <a [routerLink]="'/'">
-                <img src="assets/logo/Blue_ru-min.png" height="50" alt="" class="pr-5">
-              </a>
-            </ng-container>
-
-            <ng-container *ngIf="lang == 'en'">
-              <a [routerLink]="'/'">
-                <img src="assets/logo/Blue_en-min.png" height="50" alt="" class="pr-5">
-              </a>
-            </ng-container>
-
-            <ng-container *ngIf="lang == 'ro'">
-              <a [routerLink]="'/'">
-                <img src="assets/logo/Blue_ro-min.png" height="50" alt="" class="pr-5">
-              </a>
-            </ng-container>
-          </div>
-
-          <!-- Navbar brand -->
-          <mdb-navbar-brand style="height: 55px;"><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
-
-          <!-- Collapsible content -->
-          <links>
-            <!-- Links -->
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown pr-3" dropdown>
-                <a routerLink="/products" type="button" class="nav-link  waves-light " mdbWavesEffect>
-                  {{ 'MAIN.NAVIGATION.Product' | translate }}<span class="caret"></span></a>
-              </li>
-
-              <div>
-                <li class="nav-item dropdown pr-3" dropdown>
-                  <a routerLink="/programs" dropdownToggle mdbWavesEffect type="button"
-                     class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-                    {{ 'MAIN.NAVIGATION.Programs' | translate }}  <span class="caret"></span></a>
-                  <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-                    <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/alex-market">Alex
-                      Market</a>
-                    <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect
-                       routerLink="/flagman">Flagman</a>
-                    <a class="dropdown-item waves-light font-weight-bolder" mdbWavesEffect routerLink="/b52">B52</a>
-                  </div>
-                </li>
-              </div>
-
-
-              <li class="nav-item pr-3">
-                <a class="nav-link waves-light" mdbWavesEffect
-                   routerLink="/support-service">{{ 'MAIN.NAVIGATION.Support' | translate }}</a>
-              </li>
-
-              <li class="nav-item pr-3">
-                <a class="nav-link waves-light" mdbWavesEffect
-                   routerLink="/about">{{ 'MAIN.NAVIGATION.About' | translate }}</a>
-              </li>
-
-
-              <li class="nav-item pr-3">
-                <a class="nav-link waves-light" mdbWavesEffect
-                   routerLink="/contacts">{{ 'MAIN.NAVIGATION.Contacts' | translate }}</a>
-              </li>
-
-
-              <li class="nav-item pr-3">
-                <a class="nav-link waves-light" mdbWavesEffect
-                   routerLink="/news">{{ 'MAIN.NAVIGATION.News' | translate }}</a>
-              </li>
-
-              <li class="nav-item pr-3">
-                <a class="nav-link waves-light" mdbWavesEffect
-                   routerLink="/price-list">{{ 'MAIN.NAVIGATION.Price' | translate }}</a>
-              </li>
-
-            </ul>
-            <!-- Links -->
-
-
-            <ul class="navbar-nav ml-auto nav-flex-icons">
-              <li class="nav-item">
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-
-                  <ng-container *ngIf="lang == 'ru'">
-                    <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
-                  </ng-container>
-
-                  <ng-container *ngIf="lang == 'en'">
-                    <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
-                  </ng-container>
-
-                  <ng-container *ngIf="lang == 'ro'">
-                    <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
-                  </ng-container>
-
-                </a>
-
-                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-5">
-
-                  <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
-                    Russian</a>
-                  <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
-                    English</a>
-                  <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
-                    Romanian</a>
-                </div>
-
-              </li>
-
-              <li class="nav-item">
-                <a routerLink="/cart" class="nav-link waves-effect">
-          <span class="badge red z-depth-1 mr-1">
-          </span><i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart">
-                </i>
-                  <mdb-badge *ngIf="order.cartItems !== null; else cartNull"
-                             danger="true">{{order.cartItems}}</mdb-badge>
-                  <ng-template #cartNull>
-                    <mdb-badge danger="true">{{cartItems}}</mdb-badge>
-                  </ng-template>
-                  <span class="sr-only"> Cart </span>
-                </a>
-              </li>
-
-
-            </ul>
-          </links>
-          <!-- Collapsible content -->
-        </mdb-navbar>
-      </div>
-    </div>
-
-    <!--/.Navbar-->
   </div>
 
 
-  <div>
-    <div class="">
-      <!--Navbar-->
-      <mdb-navbar [ngClass]="{'navbar': hide}"
-                  SideClass="navbar navbar-expand-md navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder"
-                  [containerInside]="false">
 
-        <!-- Navbar brand -->
-        <mdb-navbar-brand><a class="navbar-brand" href=""></a></mdb-navbar-brand>
+<!-- Меню верхнее -->
+
+  <div [ngClass]="{'fixed-top': hide}">
+    <div  class="">
+      <!--Navbar-->
+
+        <mdb-navbar SideClass="navbar navbar-expand-lg  navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder " [containerInside]="false">
+          <!-- Navbar brand -->
+          <mdb-navbar-brand><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
+
+        <!-- -------------------------------------------------------------------------- -->
+        <div class="d-flex justify-content-start navbar-nav mr-auto">
+
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+            <ul class="navbar-nav nav-flex-icons ml-auto">
+              <li class="nav-item d-block d-lg-none">
+                <a href="https://www.facebook.com/alexse.com.md" target="_blank" type="button" mdbBtn floating="true"
+                   size="lg" color="fb" class="waves-light">
+                  <mdb-icon class="indigo-text" fab icon="facebook-f"></mdb-icon>
+                </a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a href="https://www.youtube.com/channel/UCZeEuCodwjhQIwugyqWDBAA" target="_blank" type="button"
+                   mdbBtn floating="true" size="lg" color="yt" class="waves-light">
+                  <mdb-icon class="red-text" fab icon="youtube"></mdb-icon>
+                </a>
+              </li>
+              <li class="nav-item d-block d-lg-none">
+                <a href="https://www.instagram.com/alex.s_e/" target="_blank" type="button" mdbBtn floating="true"
+                   size="lg" color="ins" class="waves-light">
+                  <mdb-icon class="orange-text" fab icon="instagram"></mdb-icon>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+
+<div class="d-block d-lg-none navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+
+              <ng-container *ngIf="lang == 'ru'">
+                <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
+              </ng-container>
+
+              <ng-container *ngIf="lang == 'en'">
+                <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
+              </ng-container>
+
+              <ng-container *ngIf="lang == 'ro'">
+                <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
+              </ng-container>
+
+            </a>
+
+            <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-5">
+
+              <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
+                Russian</a>
+              <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
+                English</a>
+              <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
+                Romanian</a>
+            </div>
+
+          </li>
+
+          <li class="nav-item" style="padding-top: 1px">
+            <a routerLink="/cart" class="nav-link waves-effect">
+          <span class="badge red z-depth-1 mr-1">
+          </span><i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart">
+            </i>
+              <mdb-badge *ngIf="order.cartItems !== null; else cartNull"
+                         danger="true">{{order.cartItems}}</mdb-badge>
+              <ng-template #cartNull>
+                <mdb-badge danger="true">{{cartItems}}</mdb-badge>
+              </ng-template>
+              <span class="sr-only"> Cart </span>
+            </a>
+          </li>
+
+
+        </ul>
+</div>
+        <!-- -------------------------------------------------------------------------- -->
 
 
         <!-- Collapsible content -->
-        <links [ngClass]="{'d-none': hide}">
+        <links>
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown pr-3" dropdown>
@@ -306,7 +257,7 @@
                  routerLink="/support-service">{{ 'MAIN.NAVIGATION.Support' | translate }}</a>
             </li>
 
-            <li class="nav-item pr-3">
+            <li class="nav-item pr-3 d-md-none d-lg-none d-xl-block">
               <a class="nav-link waves-light" mdbWavesEffect
                  routerLink="/about">{{ 'MAIN.NAVIGATION.About' | translate }}</a>
             </li>
@@ -324,7 +275,7 @@
             </li>
 
 
-            <li class="nav-item pr-3">
+            <li class="nav-item pr-3 d-md-none d-lg-none d-xl-block">
               <a class="nav-link waves-light" mdbWavesEffect
                  routerLink="/price-list">{{ 'MAIN.NAVIGATION.Price' | translate }}</a>
             </li>
@@ -332,7 +283,7 @@
           </ul>
           <!-- Links -->
 
-
+          <div class="d-none d-lg-block">
           <ul class="navbar-nav ml-auto nav-flex-icons">
 
             <li class="nav-item pr-3">
@@ -380,6 +331,7 @@
               </a>
             </li>
           </ul>
+          </div>
         </links>
         <!-- Collapsible content -->
       </mdb-navbar>
@@ -388,6 +340,10 @@
 
 
 </header>
+
+
+
+
 
 <router-outlet></router-outlet>
 
