@@ -29,6 +29,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   i = 0;
   colapse = true;
   colapseOne = true;
+  screenWidth: any;
 
 
   constructor(
@@ -47,12 +48,12 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
-
+    this.screenWidth = window.innerWidth;
     this.page = this.localService.getJsonValue('productPage');
     this.dSub = this.route.params.subscribe((params: Params) => {
       if (params.id) {
         this.products$ = this.productService.getByCatIdProductAll(params.id);
-        if (window.screen.width === 360) { // 768px portrait
+        if (this.screenWidth === 360) { // 768px portrait
           this.colapse = true;
         } else {
           this.colapse = false;
