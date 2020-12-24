@@ -52,10 +52,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.dSub = this.route.params.subscribe((params: Params) => {
       if (params.id) {
         this.products$ = this.productService.getByCatIdProductAll(params.id);
-        this.colapse = false;
         if (window.screen.width === 360) { // 768px portrait
           this.colapse = true;
-
+        } else {
+          this.colapse = false;
         }
 
       } else {
