@@ -64,7 +64,8 @@
     "Write": "WRITE",
     "Send": "Send message",
     "Detail": "DETAILED",
-    "AddShop": "ADD"
+    "AddShop": "ADD",
+    "AllVideo": "See all videos"
   },
   "HOME": {
     "INFO_SHORT": {
