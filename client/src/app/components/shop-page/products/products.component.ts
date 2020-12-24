@@ -53,6 +53,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
       if (params.id) {
         this.products$ = this.productService.getByCatIdProductAll(params.id);
         this.colapse = false;
+        if (window.screen.width === 360) { // 768px portrait
+          this.colapse = true;
+
+        }
 
       } else {
         this.products$ = this.productService.getAllProduct();
@@ -64,10 +68,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.productCategory$ = this.categoryService.getAllCategory();
 
     this.pageChanged(this.page);
-    if (window.screen.width === 360) { // 768px portrait
-      this.colapse = true;
 
-    }
   }
 
   ngOnDestroy(): void {
