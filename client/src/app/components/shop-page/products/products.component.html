@@ -39,8 +39,10 @@
                 <img src="{{prod.img[0].path}}" class="img-fluid " alt="zoom">
                 <div class="mask waves-effect">
                   <p class="white-text">
-                    <mdb-badge *ngIf="prod.sale" pill="true" danger="true">{{'Shop.Select.Sale' | translate}}</mdb-badge>
-                    <mdb-badge *ngIf="prod.option" pill="true" danger="true">{{'Shop.Select.New' | translate}}</mdb-badge>
+                    <mdb-badge *ngIf="prod.sale" pill="true"
+                               danger="true">{{'Shop.Select.Sale' | translate}}</mdb-badge>
+                    <mdb-badge *ngIf="prod.option" pill="true"
+                               danger="true">{{'Shop.Select.New' | translate}}</mdb-badge>
                   </p>
                 </div>
 
@@ -51,7 +53,7 @@
               <!--Card image-->
 
               <!--Card content-->
-              <mdb-card-body class="text-center">
+              <mdb-card-body id="product" class="text-center">
                 <!--Category & Title-->
                 <a href="" class="grey-text">
                 </a>
@@ -99,7 +101,8 @@
 
       <!-- Search form -->
       <div class="form-inline md-form form-sm active-cyan-2 border pl-3">
-        <input class="form-control form-control-sm mr-1 w-75 pl-3" type="text" placeholder="{{'Shop.Category.Search' | translate}}"
+        <input class="form-control form-control-sm mr-1 w-75 pl-3" type="text"
+               placeholder="{{'Shop.Category.Search' | translate}}"
                [(ngModel)]="searchStr" aria-label="Search"
                mdbInput>
         <mdb-icon fas icon="search" aria-hidden="true"></mdb-icon>
@@ -115,8 +118,6 @@
           </a>
         </div>
       </div>
-
-
 
 
       <div>
@@ -150,128 +151,124 @@
       </div>
 
 
+      <div class="d-none d-sm-block">
+        <ng-container *ngIf="productCategory$ | async as productCategory">
 
+          <div *ngFor="let pcategory of productCategory" class="list-group my-2 py-2">
+            <a (click)="test3.toggle()" class="list-group-item active waves-light text-white text-center"
+               mdbWavesEffect>
 
-
-
-
-
-
-
-
-
-
-
-
-<div class="d-none d-sm-block">
-      <ng-container  *ngIf="productCategory$ | async as productCategory">
-
-        <div *ngFor="let pcategory of productCategory" class="list-group my-2 py-2">
-          <a (click)="test3.toggle()"   class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
-
-            <ng-container *ngIf="this.main.lang == 'ru'">
-              {{pcategory.name}}
-            </ng-container>
-
-            <ng-container *ngIf="this.main.lang == 'ro'">
-              {{pcategory.nameRo}}
-            </ng-container>
-
-            <ng-container *ngIf="this.main.lang == 'en'">
-              {{pcategory.nameEn}}
-            </ng-container>
-          </a>
-          <!--          [isCollapsed]="false" -->
-
-          <ng-container>
-          <div mdbCollapse [isCollapsed]="colapse"    #test3="bs-collapse">
-            <div *ngIf="subproductCategory$ | async as productSubCategory">
-              <ng-container *ngFor="let psubcategory of productSubCategory">
-                <ng-container *ngIf="pcategory._id === psubcategory.category">
-                  <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
-                     class="list-group-item list-group-item-action waves-light">
-                    <ng-container  *ngIf="this.main.lang == 'ru'">
-                      {{psubcategory.name}}
-                    </ng-container>
-
-                    <ng-container *ngIf="this.main.lang == 'ro'">
-                      {{psubcategory.nameRo}}
-                    </ng-container>
-
-                    <ng-container *ngIf="this.main.lang == 'en'">
-                      {{psubcategory.nameEn}}
-                    </ng-container>
-                  </a>
-                </ng-container>
+              <ng-container *ngIf="this.main.lang == 'ru'">
+                {{pcategory.name}}
               </ng-container>
-            </div>
-          </div>
-          </ng-container>
-        </div>
-      </ng-container>
 
-</div>
+              <ng-container *ngIf="this.main.lang == 'ro'">
+                {{pcategory.nameRo}}
+              </ng-container>
 
+              <ng-container *ngIf="this.main.lang == 'en'">
+                {{pcategory.nameEn}}
+              </ng-container>
+            </a>
+            <!--          [isCollapsed]="false" -->
 
+            <ng-container>
+              <div mdbCollapse [isCollapsed]="colapse" #test3="bs-collapse">
+                <div *ngIf="subproductCategory$ | async as productSubCategory">
+                  <ng-container *ngFor="let psubcategory of productSubCategory">
+                    <ng-container *ngIf="pcategory._id === psubcategory.category">
+                      <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
+                         class="list-group-item list-group-item-action waves-light">
+                        <ng-container *ngIf="this.main.lang == 'ru'">
+                          <div (click)="goToProduct()">
+                          {{psubcategory.name}}
+                          </div>
+                        </ng-container>
 
-<div class="d-block d-sm-none">
-      <ng-container *ngIf="productCategory$ | async as productCategory">
+                        <ng-container *ngIf="this.main.lang == 'ro'">
+                          <div (click)="goToProduct()">
+                          {{psubcategory.nameRo}}
+                          </div>
+                        </ng-container>
 
-        <div *ngFor="let pcategory of productCategory" class="list-group my-2 py-2">
-          <a (click)="test4.toggle()"   class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
-
-            <ng-container *ngIf="this.main.lang == 'ru'">
-              {{pcategory.name}}
-            </ng-container>
-
-            <ng-container *ngIf="this.main.lang == 'ro'">
-              {{pcategory.nameRo}}
-            </ng-container>
-
-            <ng-container *ngIf="this.main.lang == 'en'">
-              {{pcategory.nameEn}}
-            </ng-container>
-          </a>
-          <!--          [isCollapsed]="false" -->
-
-          <ng-container>
-            <div mdbCollapse [isCollapsed]="colapseOne"    #test4="bs-collapse">
-              <div *ngIf="subproductCategory$ | async as productSubCategory">
-                <ng-container *ngFor="let psubcategory of productSubCategory">
-                  <ng-container *ngIf="pcategory._id === psubcategory.category">
-                    <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
-                       class="list-group-item list-group-item-action waves-light">
-                      <ng-container  *ngIf="this.main.lang == 'ru'">
-                        <div (click)="test4.toggle()">
-                        {{psubcategory.name}}
-                        </div>
-                      </ng-container>
-
-                      <ng-container *ngIf="this.main.lang == 'ro'">
-                        <div (click)="test4.toggle()">
-                        {{psubcategory.nameRo}}
-                        </div>
-                      </ng-container>
-
-                      <ng-container *ngIf="this.main.lang == 'en'">
-                        <div (click)="test4.toggle()">
-                        {{psubcategory.nameEn}}
-                        </div>
-                      </ng-container>
-                    </a>
+                        <ng-container *ngIf="this.main.lang == 'en'">
+                          <div (click)="goToProduct()">
+                          {{psubcategory.nameEn}}
+                          </div>
+                        </ng-container>
+                      </a>
+                    </ng-container>
                   </ng-container>
-                </ng-container>
+                </div>
               </div>
-            </div>
-          </ng-container>
-        </div>
-      </ng-container>
+            </ng-container>
+          </div>
+        </ng-container>
 
-</div>
-
+      </div>
 
 
+      <div class="d-block d-sm-none">
+        <ng-container *ngIf="productCategory$ | async as productCategory">
 
+          <div *ngFor="let pcategory of productCategory" class="list-group my-2 py-2">
+            <a (click)="test4.toggle()" class="list-group-item active waves-light text-white text-center"
+               mdbWavesEffect>
+
+              <ng-container *ngIf="this.main.lang == 'ru'">
+                {{pcategory.name}}
+              </ng-container>
+
+              <ng-container *ngIf="this.main.lang == 'ro'">
+                {{pcategory.nameRo}}
+              </ng-container>
+
+              <ng-container *ngIf="this.main.lang == 'en'">
+                {{pcategory.nameEn}}
+              </ng-container>
+            </a>
+            <!--          [isCollapsed]="false" -->
+
+            <ng-container>
+              <div mdbCollapse [isCollapsed]="colapseOne" #test4="bs-collapse">
+                <div *ngIf="subproductCategory$ | async as productSubCategory">
+                  <ng-container *ngFor="let psubcategory of productSubCategory">
+                    <ng-container *ngIf="pcategory._id === psubcategory.category">
+                      <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
+                         class="list-group-item list-group-item-action waves-light">
+                        <ng-container *ngIf="this.main.lang == 'ru'">
+                          <div (click)="goToProduct()">
+                          <div (click)="test4.toggle()">
+                            {{psubcategory.name}}
+                          </div>
+                          </div>
+                        </ng-container>
+
+                        <ng-container *ngIf="this.main.lang == 'ro'">
+                          <div (click)="goToProduct()">
+                          <div (click)="test4.toggle()">
+                            {{psubcategory.nameRo}}
+                          </div>
+                          </div>
+                        </ng-container>
+
+                        <ng-container *ngIf="this.main.lang == 'en'">
+                          <div (click)="goToProduct()">
+                          <div (click)="test4.toggle()">
+                            {{psubcategory.nameEn}}
+                          </div>
+                          </div>
+                        </ng-container>
+                      </a>
+                    </ng-container>
+                  </ng-container>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </ng-container>
+
+      </div>
 
 
     </div>

@@ -84,4 +84,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.page = 1;
     console.log(this.page);
   }
+  goToProduct(){
+    document.getElementById('product').scrollIntoView({behavior: 'smooth'});
+  }
 }
