@@ -171,13 +171,16 @@
             </ng-container>
           </a>
           <!--          [isCollapsed]="false" -->
-          <div mdbCollapse [isCollapsed]="true"  #test="bs-collapse">
+
+
+          <ng-container class="d-none d-sm-block">
+          <div mdbCollapse [isCollapsed]="true"    #test="bs-collapse">
             <div *ngIf="subproductCategory$ | async as productSubCategory">
               <ng-container *ngFor="let psubcategory of productSubCategory">
                 <ng-container *ngIf="pcategory._id === psubcategory.category">
                   <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
                      class="list-group-item list-group-item-action waves-light">
-                    <ng-container *ngIf="this.main.lang == 'ru'">
+                    <ng-container  *ngIf="this.main.lang == 'ru'">
                       {{psubcategory.name}}
                     </ng-container>
 
@@ -193,6 +196,54 @@
               </ng-container>
             </div>
           </div>
+          </ng-container>
+
+
+
+
+
+
+
+          <ng-container class="d-block d-sm-none">
+            <div mdbCollapse [isCollapsed]="true"    #test="bs-collapse">
+              <div *ngIf="subproductCategory$ | async as productSubCategory">
+                <ng-container *ngFor="let psubcategory of productSubCategory">
+                  <ng-container *ngIf="pcategory._id === psubcategory.category">
+                    <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
+                       class="list-group-item list-group-item-action waves-light">
+                      <ng-container  *ngIf="this.main.lang == 'ru'">
+                        <div (click)="test.toggle()">
+                          {{psubcategory.name}}
+                        </div>
+                      </ng-container>
+
+                      <ng-container *ngIf="this.main.lang == 'ro'">
+                        <div (click)="test.toggle()">
+                          {{psubcategory.nameRo}}
+                        </div>
+                      </ng-container>
+
+                      <ng-container *ngIf="this.main.lang == 'en'">
+                        <div (click)="test.toggle()">
+                          {{psubcategory.nameEn}}
+                        </div>
+                      </ng-container>
+                    </a>
+                  </ng-container>
+                </ng-container>
+              </div>
+            </div>
+          </ng-container>
+
+
+
+
+
+
+
+
+
+
         </div>
       </ng-container>
 
