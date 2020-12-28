@@ -231,7 +231,7 @@
           <!--          [isCollapsed]="false" -->
 
           <ng-container>
-            <div mdbCollapse [isCollapsed]="colapse"    #test4="bs-collapse">
+            <div mdbCollapse [isCollapsed]="colapseOne"    #test4="bs-collapse">
               <div *ngIf="subproductCategory$ | async as productSubCategory">
                 <ng-container *ngFor="let psubcategory of productSubCategory">
                   <ng-container *ngIf="pcategory._id === psubcategory.category">
