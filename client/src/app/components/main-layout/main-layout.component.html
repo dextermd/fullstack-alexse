@@ -6,9 +6,10 @@
   <div class="">
     <div class="">
       <!--Navbar -->
-      <nav class=" navbar navbartop navbar-expand-lg navbar-light white lighten-1">
+      <nav class="navbar navbartop navbar-expand-lg navbar-light white lighten-1">
         <span class="font-weight-bolder"
-              style="color: #000000; font-size: 10pt;"><strong> <a href="tel:+37322244572">{{ 'MAIN.INDEX.Support' | translate}}</a></strong></span>
+              style="color: #000000; font-size: 10pt;"><strong> <a
+          href="tel:+37322244572">{{ 'MAIN.INDEX.Support' | translate}}</a></strong></span>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
           <ul class="navbar-nav mr-auto">
@@ -48,11 +49,12 @@
 
 
     <!--Navbar-->
-    <mdb-navbar  SideClass="navbar navbarmidle navbar-expand-lg  pl-5 pr-5" [containerInside]="false">
+    <mdb-navbar SideClass="navbar navbarmidle  navbar-expand-lg d-flex justify-content-center"
+                [containerInside]="false">
       <!-- Navbar brand -->
 
 
-      <div>
+      <div class="">
         <ng-container *ngIf="lang == 'ru'">
           <a [routerLink]="'/'">
             <img src="assets/logo/White_ru-min.png" height="50" alt="" class="pr-5">
@@ -73,28 +75,55 @@
       </div>
 
 
+      <ng-container *ngIf="lang == 'ru'">
+        <div class="d-flex flex-row d-block d-md-none pl-3">
+          <li class="nav-item  navbar-brand">
+            <a href="tel:+373060001103"> <img src="assets/support/060001103-1NEW.png" alt="" class="img-fluid"></a>
+          </li>
+          <li class="nav-item  navbar-brand">
+            <a href="tel:+373069900989"> <img src="assets/support/069900989-1NEW.png" alt="" class="img-fluid"></a>
+          </li>
+        </div>
+      </ng-container>
 
+      <ng-container *ngIf="lang == 'ro'">
+        <div class="d-flex flex-row d-block d-md-none pl-3">
+          <li class="nav-item  navbar-brand">
+            <a href="tel:+373060001103"> <img src="assets/support/060001103-1NEW_ro.png" alt="" class="img-fluid"></a>
+          </li>
+          <li class="nav-item  navbar-brand">
+            <a href="tel:+373069900989"> <img src="assets/support/069900989-1NEW_ro.png" alt="" class="img-fluid"></a>
+          </li>
+        </div>
+      </ng-container>
 
-
-
-
+      <ng-container *ngIf="lang == 'en'">
+        <div class="d-flex flex-row d-block d-md-none pl-3">
+          <li class="nav-item  navbar-brand">
+            <a href="tel:+373060001103"> <img src="assets/support/060001103-1NEW_en.png" alt="" class="img-fluid"></a>
+          </li>
+          <li class="nav-item  navbar-brand">
+            <a href="tel:+373069900989"> <img src="assets/support/069900989-1NEW_en.png" alt="" class="img-fluid"></a>
+          </li>
+        </div>
+      </ng-container>
 
 
       <!-- Collapsible content -->
       <links>
-        <form class="form-inline">
-          <input class="form-control d-none d-xl-block" type="text" placeholder="{{ 'MAIN.INDEX.Search' | translate}}"
-                 aria-label="Search">
-        </form>
-        <ul class="navbar-nav ml-auto">
+        <!--        <form class="form-inline">-->
+        <!--          <input class="form-control d-none d-xl-block" type="text" placeholder="{{ 'MAIN.INDEX.Search' | translate}}"-->
+        <!--                 aria-label="Search">-->
+        <!--        </form>-->
+        <ul class="navbar-nav ml-auto d-none d-md-block">
           <ng-container *ngIf="lang == 'ru'">
-            <li class="nav-item d-none d-none d-xl-block navbar-brand">
+            <li class="nav-item  navbar-brand">
               <img src="assets/support/060.png" alt="" class="pr-5">
             </li>
-            <li class="nav-item d-none d-sm-block navbar-brand">
+            <li class="nav-item  navbar-brand">
               <a href="tel:+373060001103"> <img src="assets/support/060001103-1NEW.png" alt="" class="pr-3"></a>
             </li>
-            <li class="nav-item d-none d-sm-block navbar-brand">
+            <li class="nav-item  navbar-brand">
               <a href="tel:+373069900989"> <img src="assets/support/069900989-1NEW.png" alt="" class="pr-5"></a>
             </li>
           </ng-container>
@@ -132,97 +161,98 @@
   </div>
 
 
-
-<!-- Меню верхнее -->
+  <!-- Меню верхнее -->
 
   <div [ngClass]="{'fixed-top': hide}">
-    <div  class="">
+    <div class="">
       <!--Navbar-->
 
-        <mdb-navbar SideClass="navbar navbar-expand-lg  navbar-light grey lighten-3  pl-5 pr-5 font-weight-bolder " [containerInside]="false">
-          <!-- Navbar brand -->
-          <mdb-navbar-brand><a class="navbar-brand" href="#"></a></mdb-navbar-brand>
+      <!--      <nav class="navbar navbar-expand-lg navbar-dark secondary-color">-->
+      <mdb-navbar SideClass="navbar navbar-expand-lg  navbar-light grey lighten-3   font-weight-bolder"
+                  [containerInside]="false">
+        <!-- Navbar brand -->
+        <!--          <mdb-navbar-brand><a class="navbar-brand" href="#"></a></mdb-navbar-brand>-->
 
         <!-- -------------------------------------------------------------------------- -->
-        <div class="d-flex justify-content-start navbar-nav mr-auto">
+        <div style="height: 50px" class="navbar-nav mr-auto">
 
-        <ul class="navbar-nav ml-auto nav-flex-icons">
-          <li class="nav-item">
-            <ul class="navbar-nav nav-flex-icons ml-auto">
-              <li class="nav-item d-block d-lg-none">
-                <a href="https://www.facebook.com/alexse.com.md" target="_blank" type="button" mdbBtn floating="true"
-                   size="lg" color="fb" class="waves-light">
-                  <mdb-icon class="indigo-text" fab icon="facebook-f"></mdb-icon>
-                </a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a href="https://www.youtube.com/channel/UCZeEuCodwjhQIwugyqWDBAA" target="_blank" type="button"
-                   mdbBtn floating="true" size="lg" color="yt" class="waves-light">
-                  <mdb-icon class="red-text" fab icon="youtube"></mdb-icon>
-                </a>
-              </li>
-              <li class="nav-item d-block d-lg-none">
-                <a href="https://www.instagram.com/alex.s_e/" target="_blank" type="button" mdbBtn floating="true"
-                   size="lg" color="ins" class="waves-light">
-                  <mdb-icon class="orange-text" fab icon="instagram"></mdb-icon>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <ul class="navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item d-block d-lg-none">
+                  <a href="https://www.facebook.com/alexse.com.md" target="_blank" type="button" mdbBtn floating="true"
+                     size="lg" color="fb" class="waves-light">
+                    <mdb-icon class="indigo-text" fab icon="facebook-f"></mdb-icon>
+                  </a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a href="https://www.youtube.com/channel/UCZeEuCodwjhQIwugyqWDBAA" target="_blank" type="button"
+                     mdbBtn floating="true" size="lg" color="yt" class="waves-light">
+                    <mdb-icon class="red-text" fab icon="youtube"></mdb-icon>
+                  </a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                  <a href="https://www.instagram.com/alex.s_e/" target="_blank" type="button" mdbBtn floating="true"
+                     size="lg" color="ins" class="waves-light">
+                    <mdb-icon class="orange-text" fab icon="instagram"></mdb-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
 
-<div class="d-block d-lg-none navbar-nav mr-auto">
-        <ul class="navbar-nav ml-auto nav-flex-icons">
-          <li class="nav-item">
+        <div class="d-block d-lg-none navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
-               aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
+                 aria-haspopup="true" aria-expanded="false">
 
-              <ng-container *ngIf="lang == 'ru'">
-                <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
-              </ng-container>
+                <ng-container *ngIf="lang == 'ru'">
+                  <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
+                </ng-container>
 
-              <ng-container *ngIf="lang == 'en'">
-                <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
-              </ng-container>
+                <ng-container *ngIf="lang == 'en'">
+                  <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
+                </ng-container>
 
-              <ng-container *ngIf="lang == 'ro'">
-                <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
-              </ng-container>
+                <ng-container *ngIf="lang == 'ro'">
+                  <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
+                </ng-container>
 
-            </a>
+              </a>
 
-            <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-5">
+              <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-5">
 
-              <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
-                Russian</a>
-              <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
-                English</a>
-              <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
-                Romanian</a>
-            </div>
+                <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
+                  Russian</a>
+                <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
+                  English</a>
+                <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
+                  Romanian</a>
+              </div>
 
-          </li>
+            </li>
 
-          <li class="nav-item" style="padding-top: 1px">
-            <a routerLink="/cart" class="nav-link waves-effect">
+            <li class="nav-item" style="padding-top: 1px">
+              <a routerLink="/cart" class="nav-link waves-effect">
           <span class="badge red z-depth-1 mr-1">
           </span><i id="navbar-static-cart" alt="Cart" class="fas fa-shopping-cart">
-            </i>
-              <mdb-badge *ngIf="order.cartItems !== null; else cartNull"
-                         danger="true">{{order.cartItems}}</mdb-badge>
-              <ng-template #cartNull>
-                <mdb-badge danger="true">{{cartItems}}</mdb-badge>
-              </ng-template>
-              <span class="sr-only"> Cart </span>
-            </a>
-          </li>
+              </i>
+                <mdb-badge *ngIf="order.cartItems !== null; else cartNull"
+                           danger="true">{{order.cartItems}}</mdb-badge>
+                <ng-template #cartNull>
+                  <mdb-badge danger="true">{{cartItems}}</mdb-badge>
+                </ng-template>
+                <span class="sr-only"> Cart </span>
+              </a>
+            </li>
 
 
-        </ul>
-</div>
+          </ul>
+        </div>
         <!-- -------------------------------------------------------------------------- -->
 
 
@@ -257,7 +287,7 @@
                  routerLink="/support-service">{{ 'MAIN.NAVIGATION.Support' | translate }}</a>
             </li>
 
-            <li class="nav-item pr-3 d-md-none d-lg-none d-xl-block">
+            <li class="nav-item pr-3 ">
               <a class="nav-link waves-light" mdbWavesEffect
                  routerLink="/about">{{ 'MAIN.NAVIGATION.About' | translate }}</a>
             </li>
@@ -275,7 +305,7 @@
             </li>
 
 
-            <li class="nav-item pr-3 d-md-none d-lg-none d-xl-block">
+            <li class="nav-item pr-3">
               <a class="nav-link waves-light" mdbWavesEffect
                  routerLink="/price-list">{{ 'MAIN.NAVIGATION.Price' | translate }}</a>
             </li>
@@ -284,53 +314,54 @@
           <!-- Links -->
 
           <div class="d-none d-lg-block">
-          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <ul class="navbar-nav ml-auto nav-flex-icons">
 
-            <li class="nav-item pr-3">
+              <li class="nav-item pr-3">
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-                 aria-haspopup="true" aria-expanded="false">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
 
-                <ng-container *ngIf="lang == 'ru'">
-                  <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
-                </ng-container>
+                  <ng-container *ngIf="lang == 'ru'">
+                    <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
+                  </ng-container>
 
-                <ng-container *ngIf="lang == 'en'">
-                  <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
-                </ng-container>
+                  <ng-container *ngIf="lang == 'en'">
+                    <img class="pr-1" height="28px" src="assets/lang/en.png"> <small class="mt-2">EN</small>
+                  </ng-container>
 
-                <ng-container *ngIf="lang == 'ro'">
-                  <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
-                </ng-container>
+                  <ng-container *ngIf="lang == 'ro'">
+                    <img class="pr-1" height="28px" src="assets/lang/romania.png"> <small class="mt-2">RO</small>
+                  </ng-container>
 
-              </a>
+                </a>
 
-              <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
 
-                <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
-                  Russian</a>
-                <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
-                  English</a>
-                <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
-                  Romanian</a>
-              </div>
+                  <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
+                    Russian</a>
+                  <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
+                    English</a>
+                  <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
+                    Romanian</a>
+                </div>
 
-            </li>
+              </li>
 
-            <li class="nav-item">
-              <a routerLink="/cart" class="nav-link waves-effect">
+              <li class="nav-item">
+                <a routerLink="/cart" class="nav-link waves-effect">
             <span class="badge red z-depth-1 mr-1">
             </span><i id="navbar-static-cart1" alt="Cart" class="fas fa-shopping-cart">
-              </i>
-                <mdb-badge *ngIf="order.cartItems !== null; else cartNull" danger="true">{{order.cartItems}}</mdb-badge>
-                <ng-template #cartNull>
-                  <mdb-badge danger="true">{{cartItems}}</mdb-badge>
-                </ng-template>
-                <span class="sr-only"> Cart </span>
-              </a>
-            </li>
-          </ul>
+                </i>
+                  <mdb-badge *ngIf="order.cartItems !== null; else cartNull"
+                             danger="true">{{order.cartItems}}</mdb-badge>
+                  <ng-template #cartNull>
+                    <mdb-badge danger="true">{{cartItems}}</mdb-badge>
+                  </ng-template>
+                  <span class="sr-only"> Cart </span>
+                </a>
+              </li>
+            </ul>
           </div>
         </links>
         <!-- Collapsible content -->
@@ -340,9 +371,6 @@
 
 
 </header>
-
-
-
 
 
 <router-outlet></router-outlet>
