@@ -116,6 +116,9 @@
         </div>
       </div>
 
+
+
+
       <div>
         <div class="list-group my-2 py-2">
           <a (click)="test2.toggle()" class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
@@ -156,8 +159,8 @@
 
 
 
-
-      <ng-container class="d-none d-sm-block" *ngIf="productCategory$ | async as productCategory">
+<div class="d-none d-sm-block">
+      <ng-container  *ngIf="productCategory$ | async as productCategory">
 
         <div *ngFor="let pcategory of productCategory" class="list-group my-2 py-2">
           <a (click)="test3.toggle()"   class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
@@ -177,7 +180,7 @@
           <!--          [isCollapsed]="false" -->
 
           <ng-container>
-          <div mdbCollapse [isCollapsed]="true"    #test3="bs-collapse">
+          <div mdbCollapse [isCollapsed]="colapse"    #test3="bs-collapse">
             <div *ngIf="subproductCategory$ | async as productSubCategory">
               <ng-container *ngFor="let psubcategory of productSubCategory">
                 <ng-container *ngIf="pcategory._id === psubcategory.category">
@@ -203,12 +206,12 @@
         </div>
       </ng-container>
 
+</div>
 
 
 
-
-
-      <ng-container class="d-block d-sm-none" *ngIf="productCategory$ | async as productCategory">
+<div class="d-block d-sm-none">
+      <ng-container *ngIf="productCategory$ | async as productCategory">
 
         <div *ngFor="let pcategory of productCategory" class="list-group my-2 py-2">
           <a (click)="test4.toggle()"   class="list-group-item active waves-light text-white text-center" mdbWavesEffect>
@@ -228,26 +231,30 @@
           <!--          [isCollapsed]="false" -->
 
           <ng-container>
-            <div mdbCollapse [isCollapsed]="true"    #test4="bs-collapse">
+            <div mdbCollapse [isCollapsed]="colapse"    #test4="bs-collapse">
               <div *ngIf="subproductCategory$ | async as productSubCategory">
                 <ng-container *ngFor="let psubcategory of productSubCategory">
                   <ng-container *ngIf="pcategory._id === psubcategory.category">
-                    <div (click)="test4.toggle()">
                     <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
                        class="list-group-item list-group-item-action waves-light">
                       <ng-container  *ngIf="this.main.lang == 'ru'">
+                        <div (click)="test4.toggle()">
                         {{psubcategory.name}}
+                        </div>
                       </ng-container>
 
                       <ng-container *ngIf="this.main.lang == 'ro'">
+                        <div (click)="test4.toggle()">
                         {{psubcategory.nameRo}}
+                        </div>
                       </ng-container>
 
                       <ng-container *ngIf="this.main.lang == 'en'">
+                        <div (click)="test4.toggle()">
                         {{psubcategory.nameEn}}
+                        </div>
                       </ng-container>
                     </a>
-                    </div>
                   </ng-container>
                 </ng-container>
               </div>
@@ -256,7 +263,7 @@
         </div>
       </ng-container>
 
-
+</div>
 
 
 
