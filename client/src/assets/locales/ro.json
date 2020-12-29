@@ -1,0 +1,1787 @@
+{
+  "SELECT": {
+    "LANG": {
+      "RU": "Russian",
+      "EN": "English",
+      "RO": "Romanian"
+    }
+  },
+  "MAIN": {
+    "Title": "Echipament comercial și automatizarea sistemelor de comerț și contabilitate",
+    "Desc": "Echipamentul și software pentru comerț și contabilitate de la producător la cele mai accesibile prețuri, în magazinele Alex S&E.",
+    "NAVIGATION": {
+      "Product": "Produse",
+      "Programs": "Programe",
+      "Support": "Suport",
+      "About": "Despre companie",
+      "Contacts": "Contacte",
+      "News": "Știri",
+      "Price": "Listă de prețuri"
+    },
+    "FOOTER": {
+      "CHISINAU": {
+        "Name": "MAGAZIN CHIȘINĂU",
+        "Adress": "MD-2005, Republica Moldova, mun. Chișinău,Str. Ion Pruncul, 4/1",
+        "Phone": "tel:(+37322) 244-572"
+      },
+      "BALTI": {
+        "Name": "MAGAZIN BĂLȚI",
+        "Adress": "MD-3121, Republica Moldova,mun. Balti, str. Kiev 145",
+        "Phone": "tel:(+373231) 40-456"
+      },
+      "TIRASPOL": {
+        "Name": "MAGAZIN TIRASPOL",
+        "Adress": "MD-3300, Transnistria, or. Tiraspol,Str. Sindicatele 60, birou 101",
+        "Phone": "tel:(533) 675 40"
+      },
+      "COMRAT": {
+        "Name": "MAGAZIN COMRAT",
+        "Adress": "MD-3805, Republica Moldova,ATU Găgăuzia, mun. Comrat,Str. Victoriei 43",
+        "Phone": "tel:(+373 298) 805-33"
+      },
+      "DROCHIA": {
+        "Name": "MAGAZIN DROCHIA",
+        "Adress": "MD-5202, Republica Moldova,Drochia, str. Gudanov (Piața nouă),Ghereta Nr. 20",
+        "Phone": "tel:(+373) 68650707"
+      }
+    },
+    "INDEX": {
+      "Search": "Căutare",
+      "Support": "Program de lucru: Lu-Vi 08:30 - 17:30 Tel:(+37322) 244-572 E-mail: office@alex-se.com"
+    }
+  },
+  "BUTTONS": {
+    "AboutUs": "DESPRE NOI",
+    "Products": "PRODUSE",
+    "Certificate": "CERTIFICATE",
+    "Support": "SUPPORT",
+    "AllCert": "VEZI TOATE CERTIFICATII",
+    "Question": "CONSULTĂ-TE",
+    "TehSpec": "CARACTERISTICI TEHNICE",
+    "Order": "Comandă",
+    "GoShop": "Merge la magazin",
+    "Call": "APELEAZĂ",
+    "Write": "SCRIE",
+    "Send": "Trimite mesaj",
+    "Detail": "DETALIAT",
+    "AddShop": "Adaugă",
+    "AllVideo": "Vedeți toate videoclipurile"
+  },
+  "HOME": {
+    "INFO_SHORT": {
+      "Title": "PE SCURT DESPRE COMPANIA",
+      "ContentTop": "Compania și-a început activitatea în anul 1993 producînd cântare comerciale,<br> dozatoare și sisteme automate de evidență pentru întreprinderi industriale și comerciale.",
+      "ContentBottom": "Astăzi, Alex S&E este una dintre cele mai mari companii de ingineering din <br> Moldova și țările CSI. Halele de producție și centrul de deservire al societății este <br> situat pe  un teritoriu de peste 1300 de metri pătrați, iar numărul angajaților a depășit 100 de persoane."
+    },
+    "WHY": {
+      "Title": "DE CE NOI",
+      "Text": "Cel mai mare producător și distribuitor din Moldova <br> a echipamentelor de cântărit pentru industrie și comerț."
+    },
+    "QUALITIES": {
+      "ONE": {
+        "Title": "suntem primii",
+        "Text": "27 de ani pe piață"
+      },
+      "TWO": {
+        "Title": "500 000+",
+        "Text": "cântare electronice"
+      },
+      "THREE": {
+        "Title": "150+",
+        "Text": "automatizare HoReCa"
+    },
+      "FOUR": {
+        "Title": "500+",
+        "Text": "automatizare catering"
+      },
+      "FIVE": {
+        "Title": "1500+",
+        "Text": "Întreprinderi industriale"
+      },
+      "LEFT": {
+        "Title": " Doar produse certificate"
+      },
+      "RIGHT": {
+        "Title": "365/7 Asistență tehnică gratuită"
+      }
+    },
+    "SHOP": {
+      "Title": "PRODUSE NOI",
+      "Text": "Toate produsele sunt certificate"
+    },
+    "PARTNERS": {
+      "Title": "SUNTEM DE ÎNCREDERE"
+    },
+    "CERTIFICATE": {
+      "Title": "CERTIFICATE"
+    },
+    "QUESTIONS": {
+      "Title": "Aveți întrebări?",
+      "Text": "Lasăți o solicitare pentru a primi o consultație gratuită pentru afacerea dvs.",
+      "Name": "Nume:",
+      "Email": "Email:",
+      "Phone": "+(__) __ _ __"
+    },
+    "NEWS": {
+      "Title": "ȘTIRI",
+      "See": "Citeste mai mult"
+    },
+    "VIDEO": {
+      "Title": "VIDEO",
+      "Close": "Închide"
+    }
+  },
+  "PosAlimentara": {
+    "Header": {
+      "TitleTop": "SOFT PENTRU MAGAZIN",
+      "TitleBottom": "Pos Alimentara",
+      "IconOne": "Buticuri",
+      "IconTwo": "Departamente în centre comerciale",
+      "IconThree": "Magazine",
+      "IconFour": "Magazine mici"
+    },
+    "FullAli": {
+      "TitleTop": "Set pentru automatizarea comerțului",
+      "TitleBottom": "POS-Alimentara",
+      "ComplectTitle": "Componența setului:",
+      "ComplectOne": "Soft Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "ComplectThree": "Cântar comercial BSN 6/15 kg D1.3 T2 230×290 с RS-232",
+      "ComplectFour": "Casă de marcat Datecs DP-150SD battery",
+      "ComplectFive": "Cititor cod de bare laser manual Mindeo MD2000AT 1D",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiabil",
+      "ComplectGiveThree": "Durabil",
+      "ComplectPriceTitle": "Preț:",
+      "ComplectPrice": "20 300 MDL",
+      "ComplectOldPrice": "22 490 MDL"
+    },
+    "MicroPos": {
+      "TitleTop": "MicroPOS elegant",
+      "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "SpecTitleOne": "Panou senzorial",
+      "SpecTextOne": "Ecran tactil cu rezoluție HD 1366 × 768 și răspuns instantaneu al senzorului",
+      "SpecTitleTwo": "Viteză",
+      "SpecTextTwo": "Terminalul este echipat cu un procesor J1900 de nouă generație cu performanțe ridicate și consum redus de energie",
+      "SpecTitleThree": "Stocare rapidă a datelor",
+      "SpecTextThree": "Memorie DDR3 de 4 GB și hard disk SSD modern de 64 GB",
+      "SpecTitleFour": "Set mare de interfețe",
+      "SpecTextFour": "6 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, RS232 și altele"
+    },
+    "ScalesRS": {
+      "TitleTop": "Cântar comercial cu RS",
+      "TitleBottom": "Cântar comercial BSN 6/15 kg D1.3 T2 230x290 с RS-232",
+      "SpecTitleOne": "Ecran LCD cu contrast ridicat",
+      "SpecTextOne": "Afișajele vânzătorului și cumpărătorului sunt dotate cu o lumină de fundal puternică cu citiri clare. Afișează greutatea, prețul, costul",
+      "SpecTitleTwo": "Tastatură - 20 de taste",
+      "SpecTextTwo": "Vă permite utilizarea confortabilă a tuturor funcțiilor cântarului, inclusiv utilizarea calculatorului încorporat",
+      "SpecTitleThree": "Conexiune  PC",
+      "SpecTextThree": "Conexiune la PC printr-o interfață fiabilă RS-232",
+      "SpecTitleFour": "Baterie încorporată",
+      "SpecTextFour": "Bateria încorporată oferă până la 120 de ore de funcționare autonomă a cântarului"
+    },
+    "DatecsDPSD": {
+      "TitleTop": "Casă de marcat",
+      "TitleBottom": "Datecs DP-150 SD battery",
+      "SpecTitleOne": "Număr mare de intefețe",
+      "SpecTextOne": "2 x port RS-232C pentru conectare: 1 x dispozitiv USB de clasă prin mini-USB (opțional) 1 x Box Control",
+      "SpecTitleTwo": "Viteza de lucru",
+      "SpecTextTwo": "până la 12 linii pe secundă",
+      "SpecTitleThree": "Memoria fiscală",
+      "SpecTextThree": "Non-volatilă, poate suporta până la 1825 de rapoarte zilnice",
+      "SpecTitleFour": "Funcționează de la baterie",
+      "SpecTextFour": "Nu necesită priză"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Cititor de bare",
+      "TitleBottom": "Cititor de bare laser manual Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Viteza de lucru",
+      "SpecTextOne": "Scanare la o viteză de 200 scanări / sec.",
+      "SpecTitleTwo": "Ergonomicitate",
+      "SpecTextTwo": "Scanerul are un mâner comod pentru o funcțiobare confortabilă și rapidă",
+      "SpecTitleThree": "Fiabilitate",
+      "SpecTextThree": "Resursa funcționării butonului este de peste 50.000.000 de ori. Lucru stabil în regim intensiv.",
+      "SpecTitleFour": "Durabil",
+      "SpecTextFour": "Rezistă peste 30 de căderi de la 2 metri pe beton"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Instalare și configurare simplă",
+      "SpecTextOne": "Softul de evidență este ușor de instalat și extrem de rapid de implementat",
+      "SpecTitleTwo": "Introducerea articolelor",
+      "SpecTextTwo": "Articolele sunt introduse atât manual folosind un cod, cât și printr-un cititor de coduri de bare",
+      "SpecTitleThree": "Orice articole",
+      "SpecTextThree": "Sistemul este potrivit pentru lucrul cu orice tip de articole: atât la bucată, cât și la greutate",
+      "SpecTitleFour": "Metode de plata",
+      "SpecTextFour": "Primiți plata atât în numerar, cât și cu cardurile de plată",
+      "SpecTitleFive": "Interfață vizuală",
+      "SpecTextFive": "Interfața intuitivă vă permite să plasați vânzările în câteva secunde",
+      "SpecTitleSix": "Imprimarea",
+      "SpecTextSix": "Puteți imprima direct din program o etichetă de preț pe support de hârtie sau o etichetă autoadezivă"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Evidența completă a stocurilor",
+      "SpecTextOne": "Controlul soldurilor stocurilor din depozit în orice moment, precum și rapoartele de depozit pentru orice data",
+      "SpecTitleTwo": "Controlul numerarului",
+      "SpecTextTwo": "Acces online la statistici - controlați-vă afacerea de orice colt as lumii cu acces la Internet",
+      "SpecTitleThree": "Siguranță",
+      "SpecTextThree": "Toate acțiunile utilizatorilor sunt înregistrate și afișate în rapoarte",
+      "SpecTitleFour": "Diferențierea drepturilor",
+      "SpecTextFour": "Setarea drepturilor de acces individual pentru fiecare angajat pentru a evita abuzurile",
+      "SpecTitleFive": "Lucrul cu facturile",
+      "SpecTextFive": "Orice fel de facturi - toate operațiunile cu mărfurile se efectuează rapid și clar",
+      "SpecTitleSix": "Analize",
+      "SpecTextSix": "Rapoarte privind vânzările, circulația mărfurilor, fluctuațiile sezoniere, angajații etc."
+    }
+  },
+  "PosCompact": {
+    "Header": {
+      "TitleTop": "SET PENTRU AUTOMATIZAREA COMERȚULUI",
+      "TitleBottom": "POS-Compact",
+      "IconOne": "Buticuri",
+      "IconTwo": "Departamente în centre comerciale",
+      "IconThree": "Magazine",
+      "IconFour": "Magazine mici"
+    },
+    "Full": {
+      "TitleTop": "Set pentru automatizarea comerțului",
+      "TitleBottom": "POS-Compact",
+      "ComplectTitle": "Componența setului:",
+      "ComplectOne": "Soft Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Mini PC PiPo X10",
+      "ComplectThree": "Casă de marcat Datecs DP-150SD cu baterie",
+      "ComplectFour": "Cititor cod de bare manual Mindeo MD2000AT 1D",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiabil",
+      "ComplectGiveThree": "Durabil",
+      "ComplectPriceTitle": "Preț:",
+      "ComplectPrice": "13 100 MDL",
+      "ComplectOldPrice": "14 579 MDL"
+    },
+    "DivThreeAll": {
+      "TitleOne": "Garanția – 1 an",
+      "TextOne": "Garantăm calitate și oferim numai produse certificate.",
+      "TitleTwo": "Suport on-line",
+      "TextTwo": "Serviciul nostru de asistență activează zilnic, fără zile de odihnă și sărbători."
+    },
+    "MiniPos": {
+      "TitleTop": "Tabletă MicroPOS de nouă generație",
+      "TitleBottom": "Mini-PC PiPo X10",
+      "SpecTitleOne": "Panou senzorial",
+      "SpecTextOne": "Ecran de 10,8 cu rezoluție FHD 1920 * 1280 și răspuns instantaneu al senzorului",
+      "SpecTitleTwo": "Stocare rapidă a datelor",
+      "SpecTextTwo": "Memorie DDR3 de 4 GB și hard disk SSD modern și rapid de 64 GB",
+      "SpecTitleThree": "Set mare de interfețe",
+      "SpecTextThree": "4 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, WiFi și altele",
+      "SpecTitleFour": "Funcționează de la baterie",
+      "SpecTextFour": "10000 mAh"
+    },
+    "DatecsDPSD": {
+      "TitleTop": "Casă de marcat",
+      "TitleBottom": "Datecs DP-150 SD battery",
+      "SpecTitleOne": "Număr mare de intefețe",
+      "SpecTextOne": "2 x port RS-232C pentru conectare: 1 x dispozitiv USB de clasă prin mini-USB (opțional) 1 x Box Control",
+      "SpecTitleTwo": "Viteza de lucru",
+      "SpecTextTwo": "până la 12 linii pe secundă",
+      "SpecTitleThree": "Memoria fiscală",
+      "SpecTextThree": "Non-volatilă, poate suporta până la 1825 de rapoarte zilnice",
+      "SpecTitleFour": "Funcționează de la baterie",
+      "SpecTextFour": "Nu necesită priză"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Cititor de bare",
+      "TitleBottom": "Cititor de bare laser manual Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Viteza de lucru",
+      "SpecTextOne": "Scanare la o viteză de 200 scanări / sec.",
+      "SpecTitleTwo": "Ergonomicitate",
+      "SpecTextTwo": "Scanerul are un mâner comod pentru o funcțiobare confortabilă și rapidă",
+      "SpecTitleThree": "Fiabilitate",
+      "SpecTextThree": "Resursa funcționării butonului este de peste 50.000.000 de ori. Lucru stabil în regim intensiv.",
+      "SpecTitleFour": "Durabil",
+      "SpecTextFour": "Rezistă peste 30 de căderi de la 2 metri pe beton"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Instalare și configurare simplă",
+      "SpecTextOne": "Softul de evidență este ușor de instalat și extrem de rapid de implementat",
+      "SpecTitleTwo": "Introducerea articolelor",
+      "SpecTextTwo": "Articolele sunt introduse atât manual folosind un cod, cât și printr-un cititor de coduri de bare",
+      "SpecTitleThree": "Orice articole",
+      "SpecTextThree": "Sistemul este potrivit pentru lucrul cu orice tip de articole: atât la bucată, cât și la greutate",
+      "SpecTitleFour": "Metode de plata",
+      "SpecTextFour": "Primiți plata atât în numerar, cât și cu cardurile de plată",
+      "SpecTitleFive": "Interfață vizuală",
+      "SpecTextFive": "Interfața intuitivă vă permite să plasați vânzările în câteva secunde",
+      "SpecTitleSix": "Imprimarea",
+      "SpecTextSix": "Puteți imprima direct din program o etichetă de preț pe support de hârtie sau o etichetă autoadezivă"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Evidența completă a stocurilor",
+      "SpecTextOne": "Controlul soldurilor stocurilor din depozit în orice moment, precum și rapoartele de depozit pentru orice data",
+      "SpecTitleTwo": "Controlul numerarului",
+      "SpecTextTwo": "Acces online la statistici - controlați-vă afacerea de orice colt as lumii cu acces la Internet",
+      "SpecTitleThree": "Siguranță",
+      "SpecTextThree": "Toate acțiunile utilizatorilor sunt înregistrate și afișate în rapoarte",
+      "SpecTitleFour": "Diferențierea drepturilor",
+      "SpecTextFour": "Setarea drepturilor de acces individual pentru fiecare angajat pentru a evita abuzurile",
+      "SpecTitleFive": "Lucrul cu facturile",
+      "SpecTextFive": "Orice fel de facturi - toate operațiunile cu mărfurile se efectuează rapid și clar",
+      "SpecTitleSix": "Analize",
+      "SpecTextSix": "Rapoarte privind vânzările, circulația mărfurilor, fluctuațiile sezoniere, angajații etc."
+    },
+    "MorePos": {
+      "TitleOne": "CE COMPUTER ESTE NECESAR PENTRU SOFTWARE ALEX MARKET?",
+      "TextOne": "Orice desktop sau laptop cu SO Windows",
+      "TitleTwo": "ESTE POSIBILĂ SUPLIMENTAREA SETULUI?",
+      "TextTwo": "Desigur, vă vom ajuta să găsiți toate echipamentele POS necesare (ladă pentru bani, registrator fiscal etc.)",
+      "TitleThree": "SOFTUL  ESTE INCLUS ÎN PREȚ?",
+      "TextThree": "Da, prețul pachetului include o achiziție completă a softului pentru totdeauna.",
+      "TitleFour": "OFERIȚI AJUTOR ÎN INSTALARE ȘI CONFIGURARE?",
+      "TextFour": "Da, oferim. Contactați-ne pentru a discuta mai detaliat posibilitatea instalării."
+    },
+    "LastShop": {
+      "Title": "De asemenea, puteți extinde setul cu echipamente suplimentare"
+    }
+  },
+  "Aurora": {
+    "Header": {
+      "TitleTop": "Soluție compactă pentru comerț!",
+      "TitleBottom": "SISTEM POS CU CÂNTAR ÎNCORPORAT",
+      "IconOne": "BUTICURI",
+      "IconTwo": "DEPARTAMENTE ÎN CENTRE COMERCIALE",
+      "IconThree": "MAGAZINE",
+      "IconFour": "MAGAZINE MICI"
+    },
+    "Full": {
+      "TitleTop": "SET PENTRU AUTOMATIZAREA COMERȚULUI",
+      "TitleBottom": "AURORA",
+      "ComplectTitle": "COMPONENȚA SETULUI:",
+      "ComplectOne": "Software Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Sistem POS Aurora S1L cu cântar încorporat și două afișaje de 15",
+      "ComplectThree": "Imprimantă fiscală de bonuri FMP-10",
+      "ComplectFour": "Cititor e coduri de bare Mindeo MP8600 (1D / 2D)",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiabil",
+      "ComplectGiveThree": "Durabil",
+      "ComplectPriceTitle": "Prețul:",
+      "ComplectPrice": "40 800 MDL",
+      "ComplectOldPrice": "43 099 MDL"
+    },
+    "AuroraS1": {
+      "TitleTop": "AURORA S1L",
+      "TitleBottom": "Sistem POS cu cântar încorporat",
+      "SpecTitleOne": "Ecran tactil de 15",
+      "SpecTextOne": "Afișaj cu ecran tactil cu rezoluție HD de 1366x768 și răspuns instant al senzorului",
+      "SpecTitleTwo": "Afișajul clientului de 15",
+      "SpecTextTwo": "Afișaj LCD al cumpărătorului cu rezoluție HD 1366x768",
+      "SpecTitleThree": "Viteză",
+      "SpecTextThree": "Terminalul este echipat cu un procesor INTEL de nouă generație cu performanțe ridicate și consum redus de energie",
+      "SpecTitleFour": "Stocare rapidă a datelor",
+      "SpecTextFour": "Memorie DDR3 de 4 GB și hard disk SSD modern de 64 GB",
+      "SpecTitleFive": "Set mare de interfețe",
+      "SpecTextFive": "1 * RJ11 (casierie), 1 * RS232, 4 * USB Posibilitatea conectării unui cititor de coduri de bare, imprimantă fiscală externă, sertar de numerar."
+    },
+    "FMP": {
+      "TitleTop": "FMP-10",
+      "TitleBottom": "Imprimantă fiscală de bonuri fiabilă",
+      "SpecTitleOne": "Fiabilitate",
+      "SpecTextOne": "MTBF al imprimantei- 50 km de bandă de bonuri",
+      "SpecTitleTwo": "Viteza de lucru",
+      "SpecTextTwo": "Viteza de imprimare 50 m / s",
+      "SpecTitleThree": "Memoria fiscală",
+      "SpecTextThree": "Certificat pentru utilizare în RM",
+      "SpecTitleFour": "Ergonomicitate",
+      "SpecTextFour": "Dimensiune compactă și aspect atractiv"
+    },
+    "MP8600": {
+      "TitleTop": "Mindeo MP8600",
+      "TitleBottom": "Foto cititor de coduri de bare multiplan",
+      "SpecTitleOne": "Viteza de lucru",
+      "SpecTextOne": "Scanare la o viteză de 45 scanări / sec",
+      "SpecTitleTwo": "Versatilitate",
+      "SpecTextTwo": "Scanarea codurilor de bare 1D și 2D",
+      "SpecTitleThree": "Confort",
+      "SpecTextThree": "Semnal sonor și indicație luminoasă",
+      "SpecTitleFour": "Durabilitate",
+      "SpecTextFour": "Lipsa elementelor în mișcare Protecție împotriva prafului și umezelii IP 52 Rezistent la căzături de 1,5 metri înălțime"
+    }
+  },
+  "PosMarket": {
+    "Header": {
+      "TitleTop": "SOFT PENTRU MAGAZIN",
+      "TitleBottom": "Pos Market",
+      "IconOne": "Buticuri",
+      "IconTwo": "Departamente în centre comerciale",
+      "IconThree": "Magazine",
+      "IconFour": "Magazine mici"
+    },
+    "Full": {
+      "TitleTop": "Set pentru automatizarea comerțului",
+      "TitleBottom": "POS-Market",
+      "ComplectTitle": "Componența setului:",
+      "ComplectOne": "Soft Alex-Market",
+      "ComplectOneOne": "(Front Office + Back Office)",
+      "ComplectTwo": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "ComplectThree": "Cititor cod de bare laser manual Mindeo MD2000AT 1D",
+      "ComplectFour": "Printer fiscal FP-700SD",
+      "ComplectFive": "Cântar comercial ALEX PRINT-1 (imprimare etichete)",
+      "ComplectGiveOne": "Compact",
+      "ComplectGiveTwo": "Fiabil",
+      "ComplectGiveThree": "Durabil",
+      "ComplectPriceTitle": "Preț:",
+      "ComplectPrice": "30 100 MDL",
+      "ComplectOldPrice": "33 540 MDL"
+    },
+    "MicroPos": {
+      "TitleTop": "MicroPOS elegant",
+      "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+      "SpecTitleOne": "Panou senzorial",
+      "SpecTextOne": "Ecran tactil cu rezoluție HD 1366 × 768 și răspuns instantaneu al senzorului",
+      "SpecTitleTwo": "Viteză",
+      "SpecTextTwo": "Terminalul este echipat cu un procesor J1900 de nouă generație cu performanțe ridicate și consum redus de energie",
+      "SpecTitleThree": "Stocare rapidă a datelor",
+      "SpecTextThree": "Memorie DDR3 de 4 GB și hard disk SSD modern de 64 GB",
+      "SpecTitleFour": "Set mare de interfețe",
+      "SpecTextFour": "6 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, RS232 și altele"
+    },
+    "ScalesRSPrint": {
+      "TitleTop": "Cântar comercial cu RS",
+      "TitleBottom": "Cântar comercial BSN 6/15 kg D1.3 T2 230x290 с RS-232",
+      "SpecTitleOne": "Ecran luminos dublu",
+      "SpecTextOne": "Afișează greutatea netă, prețul și numele articolului, precum și informația despre regimurile selectate și starea cântarului",
+      "SpecTitleTwo": "Tastatură mare și comodă",
+      "SpecTextTwo": "112 taste de comandă rapidă vă permit să resetați rapid din memorie articolul droit",
+      "SpecTitleThree": "Conexiune  PC",
+      "SpecTime": "Conexiune la PC printr-o interfață fiabilă RS-232",
+      "SpecTitleFour": "Imprimarea etichetelor",
+      "SpecTextFour": "Formatul etichetei ușor se personalizează și permite tipărirea grafică și codurilor de bare 1D"
+    },
+    "FPrint": {
+      "TitleTop": "Registrator fiscal",
+      "TitleBottom": "IMPRIMANTĂ Fiscală FP-700SD",
+      "SpecTitleOne": "Viteză mare de imprimare",
+      "SpecTextOne": "Imprimantă cu imprimare termică directă pe hârtie termică de 80 mm sau 58 mm lățime",
+      "SpecTitleTwo": "O gamă largă de hârtie termică",
+      "SpecTextTwo": "Imprimantă cu imprimare termică directă pe hârtie termică de 80 mm sau 58 mm lățime",
+      "SpecTitleThree": "Conectarea la un PC și sertar de bani",
+      "SpecTextThree": "Imprimanta are o varietate de interfețe RS-232 pentru conectarea la PC. USB. Ethernet. RJ-11",
+      "SpecTitleFour": "Jurnal electronic încorporat",
+      "SpecTextFour": "Stocarea electronică a benzii de control este asigurată de un jurnal electronic încorporat"
+    },
+    "MindeoScannerOneD": {
+      "TitleTop": "USB Cititor de bare",
+      "TitleBottom": "Cititor de bare laser manual Mindeo MD2000AT 1D",
+      "SpecTitleOne": "Viteza de lucru",
+      "SpecTextOne": "Scanare la o viteză de 200 scanări / sec.",
+      "SpecTitleTwo": "Ergonomicitate",
+      "SpecTextTwo": "Scanerul are un mâner comod pentru o funcțiobare confortabilă și rapidă",
+      "SpecTitleThree": "Fiabilitate",
+      "SpecTextThree": "Resursa funcționării butonului este de peste 50.000.000 de ori. Lucru stabil în regim intensiv.",
+      "SpecTitleFour": "Durabil",
+      "SpecTextFour": "Rezistă peste 30 de căderi de la 2 metri pe beton"
+    },
+    "AlexMarketFront": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Instalare și configurare simplă",
+      "SpecTextOne": "Softul de evidență este ușor de instalat și extrem de rapid de implementat",
+      "SpecTitleTwo": "Introducerea articolelor",
+      "SpecTextTwo": "Articolele sunt introduse atât manual folosind un cod, cât și printr-un cititor de coduri de bare",
+      "SpecTitleThree": "Orice articole",
+      "SpecTextThree": "Sistemul este potrivit pentru lucrul cu orice tip de articole: atât la bucată, cât și la greutate",
+      "SpecTitleFour": "Metode de plata",
+      "SpecTextFour": "Primiți plata atât în numerar, cât și cu cardurile de plată",
+      "SpecTitleFive": "Interfață vizuală",
+      "SpecTextFive": "Interfața intuitivă vă permite să plasați vânzările în câteva secunde",
+      "SpecTitleSix": "Imprimarea",
+      "SpecTextSix": "Puteți imprima direct din program o etichetă de preț pe support de hârtie sau o etichetă autoadezivă"
+    },
+    "AlexMarketBack": {
+      "TitleTop": "Software pentru automatizarea comerțului Alex-Market",
+      "TitleBottom": "Interfața softului și principalele sale caracteristici:",
+      "SpecTitleOne": "Evidența completă a stocurilor",
+      "SpecTextOne": "Controlul soldurilor stocurilor din depozit în orice moment, precum și rapoartele de depozit pentru orice data",
+      "SpecTitleTwo": "Controlul numerarului",
+      "SpecTextTwo": "Acces online la statistici - controlați-vă afacerea de orice colt as lumii cu acces la Internet",
+      "SpecTitleThree": "Siguranță",
+      "SpecTextThree": "Toate acțiunile utilizatorilor sunt înregistrate și afișate în rapoarte",
+      "SpecTitleFour": "Diferențierea drepturilor",
+      "SpecTextFour": "Setarea drepturilor de acces individual pentru fiecare angajat pentru a evita abuzurile",
+      "SpecTitleFive": "Lucrul cu facturile",
+      "SpecTextFive": "Orice fel de facturi - toate operațiunile cu mărfurile se efectuează rapid și clar",
+      "SpecTitleSix": "Analize",
+      "SpecTextSix": "Rapoarte privind vânzările, circulația mărfurilor, fluctuațiile sezoniere, angajații etc."
+    }
+  },
+  "AlexMarket": {
+    "Title": "AlexMarket",
+    "Desc": "Soft profesional pentru automatizarea comerțului și evidenței mărfurilor.",
+    "Header": {
+      "TitleTop": "Sistem profesional pentru automatizarea comerțului și evidenței.",
+      "TitleBottom": "Fiecare afacere este individuală și, prin urmare, abordarea alegerii echipamentelor și software-ului este, de asemenea, diferită. Experții noștri vor dezvolta o soluție individuală care va funcționa în beneficiul afacerii dvs."
+    },
+    "Solution": {
+      "Title": "Soluție pentru:",
+      "IconOne": "Magazine alimentare",
+      "IconTwo": "Magazine specializate",
+      "IconThree": "Lanțuri mici de magazine",
+      "IconFour": "Magazine de materiale de construcții"
+    },
+    "Advantage": {
+      "Title": "Beneficii",
+      "IconOne": "Alex-Market este soluția ideală pentru vânzarea cu amănuntul",
+      "IconTwo": "Automatizarea magazinului în decurs de 1 zi",
+      "IconThree": "Pentru funcționare sunt necesare doar cunoștințe de bază despre PC",
+      "IconFour": "Suport tehnic din partea programatorui de software"
+    },
+    "Divert": {
+      "Title": "Simțiți-vă liber să ne puneți întrebări"
+    },
+    "Features": {
+      "TitleTop": "PROGRAM RETAIL PENTRU ",
+      "TitleBottom": "MAGAZIN – FUNCȚIONAL",
+      "SpecTitleOne": "Loc la casă",
+      "SpecTextOne": "Interfața simplă a softului vă permite să procesați vânzarea în câteva secunde, ceea ce oferă o deservire rapidă",
+      "SpecTitleTwo": "Nomenclatură",
+      "SpecTextTwo": "Număr nelimitat de câmpuri - caracteristici ale produsului: adaos comercial, data intrării, data expirării, soldul minim etc.",
+      "SpecTitleThree": "Lucrul cu soldurile",
+      "SpecTextThree": "Control comod și precis al soldurilor pentru a urmări disponibilitatea actuală a produselor în depozit în orice moment și pentru a emite facturile",
+      "SpecTitleFour": "Analize",
+      "SpecTextFour": "Rapoarte de vânzări defalcate pe chitanțe, bunuri, reduceri etc. pentru orice perioadă. Rapoarte privind liderii/intrușii de vânzări, fluctuațiile sezoniere ale cererii și altele",
+      "SpecTitleFive": "Compatibilitate",
+      "SpecTextFive": "Rapoarte de vânzări defalcate pe chitanțe, bunuri, reduceri etc. pentru orice perioadă. Rapoarte privind liderii/intrușii de vânzări, fluctuațiile sezoniere ale cererii și altele",
+      "SpecTitleSix": "Etichete de preț și etichete",
+      "SpecTextSix": "Imprimarea prețurilor și a etichetelor direct din program, precum și prin conectarea la un  software terță",
+      "SpecTitleSeven": "Programe de reduceri",
+      "SpecTextSeven": "Carduri de reducere, reduceri acumulative, sezoniere și temporare pentru bunuri și categorii. Vânzare în datorie",
+      "SpecTitleEight": "Evidența depozitului",
+      "SpecTextEight": "Programul de evidență a mărfurilor din magazin vă permite să urmăriți stocurile din deposit în timp real, să efectuați inventarierea stocurilor, decontările cu furnizorii"
+    },
+    "Complect": {
+      "TitleTop": "AUTOMATIZARE COMPLETĂ LA CHEIE",
+      "TitleBottom": "Seturi POS pentru comerț și evidență - configurate, testate, cu programul instalat",
+      "ComTitleTop": "SET DE AUTOMATIZARE ÎN COMERȚ",
+      "ComTitleBottom": "POS-Compact",
+      "ComText": "Opțiune bugetară pentru ducerea evidenței comerciale în magazine mici și buticuri.",
+      "ComButton": "ALEGE SET POS-COMPACT",
+      "AliTitleTop": "SET DE AUTOMATIZARE ÎN COMERȚ",
+      "AliTitleBottom": "POS-Alimentara",
+      "AliText": "Opțiune bugetară pentru ducerea evidenței comerciale în magazine și puncte de comerț cu cântare.",
+      "AliButton": "ALEGE SET POS-ALIMENTARA",
+      "MarkTitleTop": "SET DE AUTOMATIZARE ÎN COMERȚ",
+      "MarkTitleBottom": "POS-Market",
+      "MarkText": "Opțiune pentru ducerea evidenței comerciale în magazine cu cântare.",
+      "MarkButton": "ALEGE SET POS-MARKET",
+      "AuroraTitleTop": "КОМПЛЕКТ ДЛЯ АВТОМАТИЗАЦИИ ТОРГОВЛИ",
+      "AuroraTitleBottom": "AURORA",
+      "AuroraText": "КОМПАКТНОЕ РЕШЕНИЕ ДЛЯ ТОРГОВЛИ! POS СИСТЕМА СО ВСТРОЕННЫМИ ВЕСАМИ",
+      "AuroraButton": "Выбрать комплект AURORA"
+    }
+  },
+  "About": {
+    "Header": {
+      "Title": "Cel mai mare producător și distribuitor de echipamente de cântărire pentru industrie și comerț din Moldova."
+    },
+    "TextRab": {
+      "Title": "Scurt istoric despre companie",
+      "TextTop": "Compania și-a început activitatea în anul 1993 producând cântare comerciale, dozatoare și sisteme automatizate de evidență pentru întreprinderile industriale și comerciale.",
+      "TextBottom": "În prezent,  „Alex S&E” este una dintre cele mai mari companii de engineering din Moldova și din țările CSI. Zona de producție și centrul de deservire a companiei sunt situate pe o suprafață de peste 1300 de metri pătrați, iar numărul angajaților a depășit 100 de persoane."
+    },
+    "DivAb": {
+      "Title": "Gama de servicii"
+    },
+    "MoreAb": {
+      "IconOne": "Balanțe analitice de un spectru larg",
+      "IconTwo": "Producția de cântare pentru automobile (10t-60t) și vagoane (100t-250t)",
+      "IconThree": "Modernizarea tuturor tipurilor de cântare de la mecanice la electronice, inclusiv pentru automobile și vagoane, cu acces la PC",
+      "IconFour": "Producția de cântare tip platformă de la 1 kg la 5 tone",
+      "IconFive": " Automatizarea complexă a volumului de vânzări și evidența stocurilor în magazine, supermarketuri, cafenele și baruri",
+      "IconSix": "Producerea tuturor tipurilor de dozatoare simple și multi-componente, precum și modernizarea dozatoarelor existente mecanice în electronice",
+      "IconSeven": "Crearea rețelelor APCS și rețelelor locale",
+      "IconEight": "Automatizarea evidenței interne pentru mișcarea materiilor prime, semifabricatelor și a produselor finite prin controlul greutății",
+      "IconNine": "Automatizarea proceselor tehnologice"
+    },
+    "DivTwoAb": {
+      "Title": "Cea mai bună publicitate:",
+      "Text": "Echipamentele care funcționează fiabil și fără probleme pentru clienții noștri!"
+    },
+    "FinalAb": {
+      "TextOne": "<p>Datorită dezvoltării rețelei de reprezentanțe și sucursale, produsele «Alex S&amp;E» au devenit cunoscute nu numai în Moldova, ci și în străinătate.<br>Sediul principal al companiei este situat în mun. Chișinău. În Moscova (Rusia) și Harkov (Ucraina) operează încă două sucursale.</p><p>Pe parcursul a 27 de ani de activitate, clienții noștri au devenit întreprinderi din diverse industrii, cum ar fi întreprinderi metalurgice, rafinarea petrolului și gazele, mineritul și prelucrarea lui, carnea și produsele lactate, precum și panificația, furajele, extracția uleiului, fermentarea tutunului, fabricile de bere, ceramica, fabricile de porțelan și sticlă, întreprinderile comerciale și rețelele de transport.</p><p>Toate produsele companiei sunt certificate și incluse în registrele de stat din Republica Moldova, Belarus, Ucraina, Kazahstan și Federația Rusă.</p>",
+      "TextTwo": "<p>Inginerii și programatorii<strong>„Alex S&amp;E”</strong> Inginerii și programatorii „Alex S&E” urmăresc în mod constant tendințele în dezvoltarea industriei și a comerțului pentru a oferi clienților noștri echipamente de cântărire care îndeplinesc standardele internaționale. Toți specialiștii sunt instruiți în mod regulat în străinătate.</p><p>Compania a stabilit parteneriate fiabile cu cei mai buni producători străini de echipamente metrologice, de cântărire și de măsurare, precum și componente pentru producția de cântare. Lucrăm cu companii din Olanda, Italia, Franța, Marea Britanie, Israel.</p><p><strong>Principiile de bază pe care le utilizăm:</strong><br> • respectarea strictă a intereselor Clientului;<br> • utilizarea componentelor numai de la cei mai buni producători străini;<br> • garanție pentru toate componentele, echipamentele și service-ul pe întreaga durată de viață.</p>"
+    }
+  },
+  "Contact": {
+    "SendMessage": {
+      "Title": "Scrie-ne:",
+      "Text": "Nu ezitați să ne puneți întrebări",
+      "Name": "Nume",
+      "Email": "Email",
+      "Theme": "Subiect",
+      "Content": "Mesaj"
+    },
+    "Header": {
+      "Title": "OFICIUL CENTRAL",
+      "Text": "MD2005, Republica Moldova, mun. Chișinău, Str. Ion Pruncul, 4/1",
+      "TitleIconOne": "EMAIL",
+      "TextIconOne": "office@alex-se.com",
+      "TitleIconTwo": "OFICIU",
+      "TextIconTwo": "(+37322) 244-572",
+      "TitleIconThree": "SUPORT TEHNIC AL ECHIPAMENTELOR INDUSTRIALE",
+      "TextIconThree": "(+373) 69900989",
+      "TitleIconFour": "FAX",
+      "TextIconFour": "(+37322) 29-67-29",
+      "TitleIconFive": "CENTRUL DE DESERVIRE ",
+      "TextIconFive": "(+37322) 24-30-87",
+      "TitleIconSix": "SUPORT TEHNIC AUTOMATIZAREA COMERȚULUI ȘI ALIMENTELOR",
+      "TextIconSix": "(+373) 60001103",
+      "TextBottom": "SUPORT TEHNIC FĂRĂ ZILE DE ODIHNĂ"
+    },
+    "Office": {
+      "Tiraspol": {
+        "Title": "MAGAZIN TIRASPOL",
+        "Adress": "<p>MD-3300, Transnistria, or. Tiraspol<br>str. Sindicatelor 60, of 101<br>",
+        "Contact": "<p>E-mail: office@alex-se.com<br>E-mail: PMR@alex-se.md<br>Telefon: (533) 675 40<br>Mob.: (775) 97 555</p>",
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 9-00 până 18-00<br>Sb – Du  zile libere</p>"
+      },
+      "Balti": {
+        "Title": "MAGAZIN MUN. Bălți",
+        "Adress": "<p>MD-3121, Republica Moldova,<br>mun. Bălți, str. Kiev 145<br>",
+        "Contact": "<p>E-mail: nord@alex-se.com<br>Telefon: (+373231) 40-456<br>Факс: (+373231) 44-345<br>Mob.: (+373) 69966679, (+373) 68160101</p>",
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 17-00<br>Sb – Du  zile libere</p>"
+      },
+      "Comrat": {
+        "Title": "MAGAZIN MUN. COMRAT",
+        "Adress": "<p>MD-3805, Republica Moldova,<br>UTA Gagauzia, mun. Comrat,<br>Str. Victoriei 43</p>",
+        "Contact": "<p>E-mail: sud@alex-se.com<br>Telefon: (+373298)805 33<br>Факс: (+373298) 805 30<br>Mob.: (+373)68988863</p>",
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 17-00<br>Sb – Du  zile libere</p>"
+      },
+      "Drocia": {
+        "Title": "MAGAZIN or. DROCHIA",
+        "Adress": "<p>MD-5202, Republica Moldova,<br>Or. Drochia, str. Gudanov, (Piaţa nouă),but. 20</p>",
+        "Contact": "<p>E-mail: drochia@alex-se.com<br>Mob.: (+373) 68650707<br>",
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 15-00<br>Sb – Du  zile libere</p>"
+      },
+      "Ucraina": {
+        "Title": "Filiala din Ucraina",
+        "Adress": "<p>ДП «АЛЕКС ВЕСЫ И ОБОРУДОВАНИЕ»<br>Adresa: 61058, Ukraina,<br>or. Harikov, str. Romena Rollana, 12.</p>",
+        "Contact": "<p>E-mail: alex_vio@mail.ru<br>Telefon: + 380 (57) 719 48 33<br>Telefon: + 380 (57) 759 11 24</p>"
+      }
+    }
+  },
+  "Certificates": {
+    "BSA": "Cântarele pentru vehicule Alex S&E, tip - BSA, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
+    "BSB": "Cântarele feroviare Alex S&E, tip - BSB, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
+    "BDA": "Cântarele pentru vehicule Alex S&E, tip - BDA, corespund standardului SM STB 1845: 2011 Cântar electronic de presiune pentru cântărirea vehiculelor în dinamică. Sunt certificate și incluse în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova.",
+    "BSN": "Cântarele de buncăr Alex S&E, tip- BSN, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova ",
+    "BXN": "Cântarele de buncăr Alex S&E, tip- BXN, corespund standardului RGML14: 2007 „Cântar pentru cântărire neautomată”. Sunt certificate și înscrise în Registrul de Stat al Instrumentelor de Măsurare din Republica Moldova"
+  },
+  "CarWeights": {
+    "BreadcrumbProduct": "Produse",
+    "Tables": {
+      "Title": "Caracteristici",
+      "First": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "30 /60 / 80",
+        "AutoModernLastOne": "30 /60 / 80",
+        "FarmerLastOne": "10 /20 / 30",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "200 / 400",
+        "AutoModernLastTwo": "200 / 400",
+        "FarmerLastTwo": "100 / 100 / 200",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "10 /20 / 20",
+        "AutoModernLastThree": "10 /20 / 20",
+        "FarmerLastThree": "5 / 5 / 10",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "10 /20 / 20",
+        "AutoModernLastFour": "10 /20 / 20",
+        "FarmerLastFour": "5 / 5 / 10",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "3",
+        "AutoModernLastFive": "1/2",
+        "FarmerLastFive": "1",
+        "FirstSix": "Lungimea platformei de încărcare, m:",
+        "LastSix": "16 / 18",
+        "AutoModernLastSix": "12 / 16 / 18",
+        "FarmerLastSix": "6",
+        "FirstSeven": "Numărul de senzori, piese:",
+        "LastSeven": "8",
+        "AutoModernLastSeven": "4/6",
+        "FarmerLastSeven": "4",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastEight": "IP 68",
+        "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastNine": "IP 67",
+        "FirstTen": "Conectare la calculator:",
+        "LastTen": "RS232",
+        "FirstEleven": "Temperatură de funcționare (platforma), C:",
+        "LastEleven": "De La -30 Pînă +45",
+        "FirstTwelve": "Temperatură de funcționare (indicator), C:",
+        "LastTwelve": "De La -5 Pînă +35",
+        "FirstThirteen": "Tensiunea de alimentare de la reţea:",
+        "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstFourteen": "Clasa de exactitate a balanţei:",
+        "LastFourteen": "Medium (III)"
+      },
+      "Two": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "15 (20)",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "1000",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "20",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "20",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "1",
+        "FirstSix": "Numărul de senzori, piese:",
+        "LastSix": "4",
+        "FirstSeven": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastSeven": "IP 66",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastEight": "IP 54",
+        "FirstNine": "Temperatură de funcționare (platforma), C:",
+        "LastNine": "De La -30 Pînă +45",
+        "FirstTen": "Tensiunea de alimentare de la reţea:",
+        "LastTen": "220V(+10%;-15%); 50 Hz +/-2%"
+      },
+      "Three": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "15",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "100",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "5",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "5",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "2",
+        "FirstSix": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastSix": "IP 66",
+        "FirstSeven": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastSeven": "IP 54",
+        "FirstEight": "Conectare la calculator:",
+        "LastEight": "RS232",
+        "FirstNine": "Temperatură de funcționare (indicator), C:",
+        "LastNine": "De La -5 Pînă +35",
+        "FirstTen": "Tensiunea de alimentare de la reţea:",
+        "LastTen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstEleven": "Clasa de exactitate a balanţei:",
+        "LastEleven": "IB"
+      },
+      "Four": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "120",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "1000",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "50",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "50",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "2 (3)",
+        "FirstSix": "Lungimea platformei de încărcare, m:",
+        "LastSix": "5.5 (4)",
+        "FirstSeven": "Numărul de senzori, piese:",
+        "LastSeven": "8 (12)",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastEight": "IP 68",
+        "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastNine": "IP 67",
+        "FirstTen": "Temperatură de funcționare (platforma), C:",
+        "LastTen": "De La -30 Pînă +45",
+        "FirstEleven": "Temperatură de funcționare (indicator), C:",
+        "LastEleven": "De La -0 Pînă +40",
+        "FirstTwelve": "Tensiunea de alimentare de la reţea:",
+        "LastTwelve": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstThirteen": "Clasa de exactitate a balanţei:",
+        "LastThirteen": "Medium (III)"
+      },
+      "Five": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "120",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "1000",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "50",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "50",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "1",
+        "FirstSix": "Lungimea platformei de încărcare, m:",
+        "LastSix": "15",
+        "FirstSeven": "Numărul de senzori, piese:",
+        "LastSeven": "4",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastEight": "IP 68",
+        "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastNine": "IP 67",
+        "FirstTen": "Temperatură de funcționare (platforma), C:",
+        "LastTen": "De La -30 Pînă +45",
+        "FirstEleven": "Temperatură de funcționare (indicator), C:",
+        "LastEleven": "De La -0 Pînă +40",
+        "FirstTwelve": "Tensiunea de alimentare de la reţea:",
+        "LastTwelve": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstThirteen": "Clasa de exactitate a balanţei:",
+        "LastThirteen": "Medium (III)"
+      },
+      "Six": {
+        "FirstOne": "Performanţa pentru cereale*, t/ora:",
+        "LastOne": "4 / 5",
+        "FirstTwo": "Greutatea dozei, kg:",
+        "LastTwo": "20-50 / 20-50",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "0,05 / 0,05",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "0,05 / 0,05",
+        "FirstFive": "Consumul aerului compresat nu mai mult de, nM3/h:",
+        "LastFive": "- / 2,3",
+        "FirstSix": "Presiunea sistemului, atm:",
+        "LastSix": "- / 4-6",
+        "FirstSeven": "Consumul de energie, nu mai mult, W:",
+        "LastSeven": "45",
+        "FirstEight": "Tensiunea de alimentare de la reţea:",
+        "LastEight": "220В(+10%;-15%); 50 Гц +/-2%",
+        "FirstNine": "Temperatură de funcționare (controler MERAV3001 ), C:",
+        "LastNine": "От 0 До +40",
+        "FirstTen": "Temperatură de funcționare (buncăr), C:",
+        "LastTen": "От -5 До +35",
+        "FirstEleven": "Numărul de senzori, piese:",
+        "LastEleven": "1",
+        "FirstTwelve": "Clasa de exactitate a balanţei:",
+        "LastTwelve": "1 (0,5%)",
+        "FirstThirteen": "Dimensiuni de gabarit, mm:",
+        "LastThirteen": "735 Х 1050 Х 2475 / 850 Х 850 Х 2155",
+        "FirstFourteen": "Gradul de protecție împotriva prafului și a apei (controler MERAV3001):",
+        "LastFourteen": "IP54",
+        "FirstFifteen": "Gradul de protecție împotriva prafului și a apei (senzor):",
+        "LastFifteen": "IP68"
+      }
+    },
+    "Icons": {
+      "DefaultTitle": "Configurație standardă",
+      "IconTemp": "Temperatură de funcționare (senzori) de la -30 pînă +45 °С",
+      "IconSensor": "Operating temperature range of sensors from -30 to +45 ° C",
+      "IconRGML": "Corespund standardului RGML14: 2007",
+      "IconPaint": "Vopsirea specială a recipientului de sarcina pentru a proteja împotriva coroziunii",
+      "IconRS": "Interfaţa RS 232 pentru conectarea la calculator",
+      "IconShock": "Protecția senzorilor împotriva fulgerului",
+      "IconDisplay": "Gradul de protecție împotriva prafului și a apei (indicator) IP67",
+      "IconSoft": "Software special AlexScales pentru lucrul cu cântare, documentație și rapoarte",
+      "IconScales": "Aplicație mobilă pentru controlul de la distanță a rezultatelor cântăririi ScalesControl",
+      "ModernTitle": "Suplimentar pot fi completate:",
+      "IconPlusPlus": "Sistem pentru determinarea centrului de greutate al vagoanelor (în direcția longitudinală)",
+      "IconAddDisplay": "Panou afișare portabil",
+      "IconBorder": "Garduri",
+      "IconDisplayProtect": "Protecția împotriva fulgerului a indicatorului",
+      "IconDigital": "Senzori digitali",
+      "IconLights": "Sistem de control a fluxului - semafoare",
+      "IconBarrier": "Sistem de control a fluxului - bariere",
+      "IconPhoto": "Sistem de înregistrare a imaginii vehiculului cântărit.",
+      "IconRFID": "Sistem de identificare a vehiculului RFID",
+      "IconAutomatic": "Controlul cântarelor și înregistrarea cântăririi fără participarea operatorului",
+      "IconShield": "Scuturi pentru închiderea spațiului căii de rulare",
+      "IconRamp": "Rampe mobile din metal / beton",
+      "IconFrame": "Cadrul de bază de cântărire"
+    },
+    "Category": {
+      "Title": "Cântare pentru vehicule",
+      "CatOne": "CÂNTARE STAȚIONARE PENTRU VECHICULE",
+      "CatTwo": "CÂNTARE PORTABILE «FERMIER»",
+      "CatThree": "PORTABILE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
+      "CatFour": "STAȚIONARE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
+      "CatFive": "SISTEMELE DE CÂNTĂRIRE DE BORD",
+      "CatSix": "MODERNIZAREA CÂNTARELOR AUTO",
+      "Text": "Cântarele pentru vehicule sunt produse de care nu puteți duce lipsă la nicio întreprindere în care transportul este utilizat pentru a primi, elibera sau transporta mărfurile. Cântărirea unei mașini pe cântar practic elimină pierderile din evidența produselor.<br>Alex S&E, de mai bine de 27 de ani, produce cântare pentru vehicule cu platforme de beton și metal, staționare și mobile, pentru cântărire, atât în regim static, cât și în regim dinamic. Dimensiunile, tipul și structura cântarului pot fi diferite în funcție de sarcină, locul de instalare și vehiculul care necesită cântărirea.<br>Software-ul furnizat în set cu cântarul va servi ca un asistent indispensabil operatorului sau va permite cântărirea vehiculului în modul automat, fără participarea operatorului, ceea ce va diminua erorile umane la zero.<br>La proiectarea și producerea cântarelor, se acordă o mare atenție fiabilității și calității produselor. Lipsa defecțiunilor echipamentelor în procesul de funcționare le permite clienților noștri să lucreze profitabil, fără costuri de nefuncționare, reparații sau achiziționarea de cântare noi.<br>Multe întreprinderi din Moldova, Ucraina, Rusia, Kazahstan folosesc cu succes cântarele fabricate de Alex S&E de mai bine de 25 de ani. Produsele noastre sunt folosite în depozite, baze metalice, întreprinderile producătoare de beton armat, uzinele de minerit, elevatoare, cariere, în puncte temporare, cum ar fi, la fabricarea drumurilor, pentru a controla sarcina pe osie și, în consecință, sarcina pe terasamentul de drum.<br>Compania Alex S&E vă oferă cântare pentru cântărirea camioanelor la cel mai bun preț. Experții noștri într-un mod rapid și profesionist vă vor oferi consultații cu privire la alegerea cântarului auto potrivit, vă vor oferi recomandări și vă vor ajuta să determinați locul optim pentru instalarea cântarelor.<br>",
+      "IconTitleOne": "27 ani",
+      "IconTextOne": "Experiență",
+      "IconTitleTwo": "Mai mult de 500",
+      "IconTextTwo": "Cântarelor auto",
+      "IconTitleThree": "Mai mult de  100",
+      "IconTextThree": "Cântarelor feroviare"
+    },
+    "StaticAuto": {
+      "Title": "CÂNTARE STAȚIONARE PENTRU VECHICULE",
+      "SubTitle": "Cântarele sunt destinate pentru cântărirea statică a vehiculelor grele, cu deplasare completă pe platformă, în condiții de trafic intens, inclusiv în condiții dificile de funcționare.",
+      "HeaderText": "Ele pot fi instalate atât în poziția la sol cu rampe de intrare și ieșire, cât și în groapă, pentru a economisi spațiu pe teritoriul întreprinderii.<br>>La fabricarea cântarelor pentru camioane, folosim cele mai fiabile componente testate în timp.<br>>Indicatorul electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. Dacă este necesară instalarea cântarului la o distanță considerabilă de camera operatorului, se utilizează senzori digitali.<br>>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl. <br>>",
+      "Beton": {
+        "Title": "CÂNTARE AUTO BETON",
+        "Text": "Construcția cântarelor de beton armat reprerzintă un cadru metalic cu o plasă de armare, care este turnat cu beton la locul de instalare.<br>>Datorită rezistenței sale ridicate la coroziune, efectelor sărurilor, acizilor și alcalinilor, cântarele au o durată de viață sporită și s-au dovedit fialbilitatea în întreprinderile cu condiții dificile de funcționare.<br>>"
+      },
+      "Metal": {
+        "Title": "CÂNTARE AUTO METALICE",
+        "Text": "Platforma de cântărire este formată în întregime din metal, realizată structural din secțiuni paralele care formează două căi de rulare. Greutatea totală a platformelor nu depășește 8 tone, ceea ce permite ca cântarele să fie transportate către un nou loc de instalare cu ajutorul transportului standard de marfă. Ideal pentru instalare temporară, cum ar fi lucrări sezoniere sau zone temporare / închiriate"
+      }
+    },
+    "MoveFarmer": {
+      "Title": "CÂNTARE PORTABILE «FERMIER»",
+      "SubTitle": "Cântarele sunt destinate pentru cântărirea statică a camioanelor ușoare cu deplasare completă pe platformă.",
+      "Text": "Cântarele mobile Fermier pentru camioane de dimensiuni mici nu necesită un fundament special și pot fi instalate pe o suprafață orizontală a drumului (asfalt, beton) sau plăci de drum. Datorită designului original (greutatea nu depășește 2,5 tone, dimensiunile totale cu rampele îndepărtate de 6x3m), cântarele sunt ușor de transportat cu camioane standard.<br>Indicatorul electronic MERAV 2000 este conectat la un computer sau laptop printr-o interfață RS232. Pentru funcționare autonomă, până la 72 de ore, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Dacă nu este posibilă conectarea cântarului la o linie de alimentare, indicatorul cu o baterie încorporată poate fi ușor deconectat pentru reîncărcare. Indicii de greutate de pe afișaj pot fi ușor citite de la o distanță de câțiva metri.",
+      "TextTwo": "Electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. <br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl<br>"
+    },
+    "StaticOc": {
+      "Breadcrumb": "STAȚIONARE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
+      "Title": "STAȚIONARE PENTRU CÂNTĂRIREA<br> SARCINILOR PE AXII",
+      "SubTitle": "Cântarelele auto staționare BDA-15D1,4S, sunt destinate pentru a determina sarcina pe carosabil creată de o axă separată și pentru a determina greutatea totală a mărfurilor transportate pe drum, prin metoda însumării axelor.",
+      "Text": "Procesul de cântărire poate fi realizat atât static, cât și dinamic. . În timpul cântăririi în dinamică, cântarul determină suplimentar și viteza vehiculului.<br>Instalarea platformei pe un fundament puternic la nivelul suprafeței carosabilului, cu drumuri de acces prevăzute, elimină influența diferenței de înălțime asupra determinării greutății, atinge o precizie mare de măsurare și asigură o perioadă lungă de funcționare fără probleme la sarcini mari. Cântarele auto stationare BDA-15D1.4S au o durată de viață mai mare și s-au doveditfiabilitatea în întreprinderlei cu condiții de funcționare dificile.<br>",
+      "SubText": "Rezultatele măsurărilor sunt stocate într-o zonă de memorie nevolatilă (cel puțin 400 de măsurări). Rezultatele cântăririi pot fi tipărite pe o imprimantă (tipărirea unui talon de greutate / protocol de cântărire) și exportate în sistemul contabil al companiei.<br>Interfața RS232 este utilizată pentru a conecta un computer și a extinde sistemul.<br>",
+      "FuncTitle": "Posibilități funcționale:",
+      "FuncText": "<li><h5>cântărirea în statică și dinamică în timpul mișcării vehiculului</h5></li> <li><h5>selectarea greutății tarei </h5></li>      <li><h5>gimuri automate și manuale de cântărire în dinamică</h5></li>      <li><h5>determinarea greutății totale a vehiculului </h5></li>      <li><h5>determinarea sarcinii pe fiecare osie<h5></li>      <li><h5>determinarea vitezei vehiculului<h5></li>     <li><h5>posibilitatea introducerii numerelor de înmatriculare pentru înregistrarea vehiculului</h5></li>     <li><h5>arhivarea rezultatelor cântăririi - data și ora cântăririi, greutatea totală a vehiculului, valoarea sarcinii pe fiecare osie, viteza vehiculului, numărul de înmatriculare a vehiculului </h5></li>       <li><h5>imprimarea rezultatului de cântărire curent pe o imprimantă termică</h5></li>      <li><h5>capacitatea de a vizualiza arhiva de cântărire<h5></li>     <li><h5>capacitatea de a exporta arhiva de cântărire.</h5></li>"
+    },
+    "MoveOc": {
+      "Breadcrumb": "PORTABILE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
+      "Title": "PORTABILE PENTRU CÂNTĂRIREA<br> SARCINILOR PE AXII",
+      "SubTitle": "Cântarele auto portabile BDA-15D1.4 sunt destinate pentru a determina sarcina pe carosabil creată de o axă separată și pentru a determina greutatea totală a mărfurilor transportate pe șosea, prin metoda însumării axelor. Procesul de cântărire poate fi realizat atât static, cât și dinamic. În timpul cântăririi în dinamică, cântarul determină suplimentar și viteza vehiculului.",
+      "Text": "Platformele de cântărire sunt instalate la același nivel cu suprafața carosabilului, cu drumuri de acces prevăzute, ceea ce elimină influența diferenței de înălțime asupra determinării greutății. Platformele sunt ușoare și compacte, ceea ce le face ușor de transportat și instalat într-o locație nouă.<br>Terminalul de cântărire, imprimanta și bateria sunt instalate într-o valiză confortabilă. Instalarea și conectarea cântarului se face în câteva minute. Bateria încorporată vă oferă funcționare fără surse de alimentare externe timp de cel puțin 16 ore, totodată stocând rezultatele măsurărilor în memoria non-volatilă (cel puțin 400 de măsurări). Rezultatele cântăririi pot fi tipărite pe imprimanta încorporată (tipărirea unui talon de cântărire / protocol de cântărire) și exportate în sistemul contabil al companiei.<br>Interfața RS232 este utilizată pentru a conecta un computer și a extinde sistemul.<br>",
+      "FuncTitle": "Функциональные возможности:",
+      "FuncText": "<li><h5>cântărirea în statică și dinamică în timpul mișcării vehiculului</h5></li><li><h5>selectarea greutății tarei</h5></li><li><h5>regimuri automate și manuale de cântărire în dinamică<h5></li><li><h5>determinarea greutății totale a vehiculului</h5></li><li><h5>determinarea sarcinii pe fiecare osie</h5></li><li><h5>determinarea vitezei vehiculului</h5></li><li><h5>posibilitatea introducerii numerelor de înmatriculare pentru înregistrarea vehiculului<h5></li><li><h5>arhivarea rezultatelor cântăririi - data și ora cântăririi, greutatea totală a vehiculului, valoarea sarcinii pe fiecare osie, viteza vehiculului, numărul de înmatriculare a vehiculului</h5></li><li><h5>imprimarea rezultatului de cântărire curent pe o imprimantă termică<h5></li><li><h5>capacitatea de a vizualiza arhiva de cântărire<h5></li><li><h5>capacitatea de a exporta arhiva de cântărire</h5></li>"
+    },
+    "OnBoard": {
+      "Title": "SISTEMELE DE CÂNTĂRIRE DE BORD",
+      "SubTitle": "Sistemele de cântărire de bord vă permit să determinați sarcina pe o axă sau un grup de oxe și masa totală a sarcinii din caroseria mașinii. În funcție de configurația suspensiei, precizia este de 3-5%.",
+      "Text": "",
+      "ImageTitleOne": "CARACTERISTICILE MODULULUI:",
+      "ImageTextOne": "<li><h6> Instalare și calibrare simplificată</h6></li><li><h6>Afișează sarcina pe o axă sau un grup de axe</h6></li><li><h6>Măsoară greutatea în timpul deplasării</h6></li><li><h6>Posibilitatea de a seta regimul securizat – PIN code, pentru a accesa sistemul</h6></li><li><h6>Posibilitatea instalării la exterior a indicatorului</h6></li><li><h6>Ecranul se stinge automat după 30 de minute de inactivitate, în timp ce datele continuă să se acumuleze</h6></li><li><h6>Transfer de date prin Bluetooth</h6></li>",
+      "ImageTitleTwo": "APLICAȚIA GRATUITĂ RIGHT WEIGH:",
+      "ImageTextTwo": "<li><h6> Regim Demo</h6></li><li><h6>Multi-lingvă</h6></li><li><h6>Notificare despre suprasarcină</h6></li>",
+      "ImageTitleThree": "CARACTERISTICELE TEHNICE:",
+      "ImageTextThree": "<li><h6> Precizia determinării greutății: 3 - 5 %</h6></li><li><h6>Sursă de alimentare de bord 9V... 32V</h6></li><li><h6>Temperatura de operare -30 °С... +60°С</h6></li><li><h6>Transfer de date prin Bluetooth</h6></li>"
+    },
+    "AutoModern": {
+      "Title": "MODERNIZAREA CÂNTARELOR AUTO",
+      "SubTitle": "Modernizarea cântarelor auto mecanice permite reducerea costurilor de operare, prelungirea duratei de viață și îmbunătățirea funcționalității, prin înlocuirea unui sistem mecanic de cântărire cu unul electronic și introducerea contabilității automate.",
+      "ImageTextOne": "La modernizarea cântarului, sistemul de măsurare de pârghie se schimbă pe sistem de senzori.",
+      "ImageTextTwo": "În funcție de starea pardoselii și de lungimea unității de transport care necesită cântărire, platforma de cântărire poate fi înlocuită, prelungită sau lăsată existentă.",
+      "ImageTextThree": "În acest caz, indicatorul cu arcuri este înlocuit cu un indicator electronic, cu posibilitatea de a fi conectat la un computer.",
+      "Text": "Pentru modernizarea cântarelor feroviare, folosim cele mai fiabile componente testate în timp.. <br>Indicatorul electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. Dacă este necesară instalarea cântarului la o distanță considerabilă de camera operatorului, se utilizează senzori digitali.<br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl.<br>",
+      "Table": {
+        "Title": "Evaluați avantajele cântarelor auto",
+        "Old": {
+          "Title": "Old mechanical scales",
+          "One": "Uzura sistemului de pârghii și a prismelor. Consecință - probleme de precizie (rezultatul cântăririi nu corespunde cu greutatea reală).",
+          "Two": "Dependența preciziei cântăririlor în dependență de fluctuațiile de temperatură din mediu.",
+          "Three": "Întreținere tehnică frecventă și reparații complexe ale cântarelor",
+          "Four": "Acțiunea factorilor naturali (apele subterane, îngheț, coroziunea elementelor mecanice)",
+          "Five": "Performanță scăzută de măsurare (mai mult de 2 minute).",
+          "Six": "Erori ale operatorului la cântărire și înregistrare a măsurărilor.",
+          "Seven": "Contabilitatea „manuală” a cântăririi la întreprindere."
+        },
+        "New": {
+          "Title": "Upgraded electronic scales",
+          "One": "Lipsa joncțiunilor mecanice - garantează precizia cântăririi pe toată durata de viață.",
+          "Two": "Precizie ridicată și stabilitate de măsurare, independent de fluctuațiile de temperatură din mediu.",
+          "Three": "Simplitate în întreținere și fiabilitatea sistemului datorită absenței pieselor uzate.",
+          "Four": "Proiectare sigilată și protejată a componentelor electronice - IP68",
+          "Five": "Performanță ridicată a măsurătorilor (de la 3 secunde).",
+          "Six": "Înregistrarea automată și contabilizarea măsurătorilor.",
+          "Seven": "Capacitatea de a organiza automatizarea completă a cântăririi cu exportul ulterior de date către software de contabilitate"
+        }
+      }
+    }
+  },
+  "Rails": {
+    "Index": {
+      "Breadcrumb": "Cântare feroviare",
+      "Cat1": "Cântare feroviare",
+      "Cat2": "MODERNIZAREA CÂNTARELOR FEROVIARE",
+      "IconTitleOne": "27 ani",
+      "IconTextOne": "experiență",
+      "IconTitleTwo": "Mai mult de 500",
+      "IconTextTwo": "Cântarelor auto",
+      "IconTitleThree": "Mai mult de  100",
+      "IconTextThree": "Cântarelor feroviare",
+      "Content": "Cântarele feroviare sunt produse de care nu puteți duce lipsă la nicio întreprindere unde transportul feroviar este utilizat pentru a primi, elibera sau transporta mărfuri. Cântărirea vagoanelor pe cântar elimină practic pierderile la contabilizarea produselor.<br>De mai bine de 27 de ani, Alex S&E produce și modernizează cântare feroviare cu ecartament european, rusesc și combinat, pentru cântărirea tuturor tipurilor de vagoane cu sau fără decuplare. Dimensiunile, tipul și structura cântarului pot diferi în funcție de sarcini, locul de instalare și vagoanele care trebuie cântărite<br>Software-ul furnizat în set cu cântarul va servi ca un asistent indispensabil operatorului sau va permite cântărirea vehiculului în modul automat, fără participarea operatorului, ceea ce va diminua erorile umane la zero.<br>La proiectarea și producerea cântarelor, se acordă o mare atenție fiabilității și calității produselor. Lipsa defecțiunilor echipamentelor în procesul de funcționare le permite clienților noștri să lucreze profitabil, fără costuri de nefuncționare, reparații sau achiziționarea de cântare noi.<br>Multe întreprinderi din Moldova, Ucraina, Rusia, Kazahstan folosesc cu succes cântarele fabricate de Alex S&E de mai bine de 25 de ani. Produsele noastre sunt folosite în depozite, baze metalice, întreprinderile producătoare de beton armat, uzinele de minerit, elevatoare, cariere și etc..<br>Compania Alex S&E vă oferă cântare pentru cântărirea camioanelor la cel mai bun preț. Experții noștri într-un mod rapid și profesionist vă vor oferi consultații cu privire la alegerea cântarului auto potrivit, vă vor oferi recomandări și vă vor ajuta să determinați locul optim pentru instalarea cântarelor<br>"
+    },
+    "Scales": {
+      "Breadcrumb": "Cântare feroviare",
+      "BreadcrumbActive": "Cântare feroviare",
+      "Title": "Cântare feroviare",
+      "SubTitle": "Cântarele feroviare sunt destinate pentru cântărirea statică a transportului feroviar cu sau fără decuplare și pot conține două sau trei platforme pe care sunt instalate șinele.",
+      "ContentTitleOne": "În funcție de tipurile de vagoane utilizate la întreprindere, se determină dimensiunea căii de rulare:",
+      "ContentTextOne": "<li><h5>„Cale de rulare rusească” - 1520 mm.</h5></li>        <li><h5>„Cale de rulare europeană” - 1435 mm.</h5></li>        <li><h5>Este posibilă combinarea a două standarde.</h5></li>",
+      "ContentTitleTwo": "Procesul simplificat de cântărire economisește timp.",
+      "ContentTextTwo": "Cântarul feroviar cu trei platforme, cu capacitatea de a deconecta o platformă, vă permite să cântăriți aproape orice vagon fără decuplare.<br>Platformele de cântărire sunt instalate într-o groapă de adâncime mică, ceea ce permite economisirea lucrărilor de temelie.<br>",
+      "ContentBottom": "Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl."
+    },
+    "Modern": {
+      "Title": "MODERNIZAREA CÂNTARELOR FEROVIARE",
+      "SubTitle": "Modernizarea cântarelor feroviare mecanice permite reducerea costurilor de operare, prelungirea duratei de viață și îmbunătățirea funcționalității, prin înlocuirea unui sistem mecanic de cântărire cu unul electronic și introducerea contabilității automate.",
+      "ImageOne": "La modernizarea cântarului, sistemul de măsurare de pârghie se schimbă pe sistem de senzori.",
+      "ImageTwo": "În acest caz, indicatorul cu arcuri este înlocuit cu un indicator electronic, cu posibilitatea de a fi conectat la un computer.",
+      "Text": "Pentru modernizarea cântarelor feroviare, folosim cele mai fiabile componente testate în timp.<br>. <br>Indicatorul electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. Dacă este necesară instalarea cântarului la o distanță considerabilă de camera operatorului, se utilizează senzori digitali.<br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl.<br>"
+    }
+  },
+  "Bunker": {
+    "Index": {
+      "Breadcrumb": "CÂNTAR DE BUNCĂR",
+      "Title": "SISTEME DE DOZARE",
+      "Cat1": "CÂNTAR DE DOZARE",
+      "Cat2": "CÂNTAR DE BUNCĂR",
+      "Cat3": "MODERNIZAREA CÂNTARELOR DE BUNCĂR ",
+      "Text": "Fără respectarea strictă a rețetei și tehnologiei, este imposibil să se producă un produs de calitate. De regulă, cântarele de buncăr sunt utilizate pentru cântărirea în vrac, a materialelor cu granulație fină și a componentelor lichide (cereale, furaje granulate, grâne, apă, aditivi chimici) care trec prin cântar, în producția de amestecuri și soluții la fabrici de sticlă, elevatoare etc.<br>De mai bine de 27 de ani, Alex S&E produce cântare de buncăr pentru ambalarea și cântărirea produselor în flux, cu capacitatea maximă de cântărire de la 50 kg la 5 tone, cu o productivitate de la 18 la 800 tone / oră. Dimensiunile, tipul și structura cântarului pot diferi în funcție de sarcină, locul de instalare și produsul ce necesită cântărirea.<br>Cântarele de buncăr pentru cântărirea în flux sunt soluția ideală pentru evidența componentelor în vrac sau lichide, indispensabile în întreprinderi unde producția necesită respectarea rețetei de dozare. Acestea sunt concepute pentru a cântări automat porțiuni de materiale și pentru a măsura masa totală a produsului care a trecut prin cântar.<br>Dozatoare de umplere - concepute pentru umplerea ușoară și rapidă a cantității necesare de produs în saci deschise sau cu supape, saci tip big-bag sau alte recipiente.<br>Software-ul furnizat împreună cu cântarul va servi ca un asistent indispensabil operatorului sau va permite cântărirea produselor în modul automat, fără participarea operatorului, ceea ce la rândul său va reduce la zero erorile asociate factorului uman.<br>La proiectarea și producerea cântarelor, se acordă o mare atenție fiabilității și calității produselor. Lipsa defecțiunilor echipamentelor în procesul de funcționare le permite clienților noștri să lucreze profitabil, fără costuri de nefuncționare, reparații sau achiziționarea de cântare noi.<br>Multe întreprinderi din Moldova, Ucraina, Rusia, Kazahstan folosesc cu succes cântarele fabricate de Alex S&E de mai bine de 25 de ani. Produsele noastre sunt folosite în depozite, baze metalice, întreprinderile producătoare de beton armat, uzinele de minerit, elevatoare, cariere, în puncte temporare, cum ar fi, la fabricarea drumurilor, pentru a controla sarcina pe osie și, în consecință, sarcina pe terasamentul de drum.<br>Compania Alex S&E vă oferă cântare pentru cântărirea vagoanelor la cel mai bun preț. Experții noștri într-un mod rapid și profesionist vă vor oferi consultații cu privire la alegerea cântarului auto potrivit, vă vor oferi recomandări și vă vor ajuta să determinați locul optim pentru instalarea cântarelor.",
+      "IconTitleOne": "27 ani",
+      "IconTextOne": "experiență",
+      "IconTitleTwo": "Mai mult de 200",
+      "IconTextTwo": "Cântarelor de buncăr",
+      "IconTitleThree": "Mai mult de  50",
+      "IconTextThree": "Liniilor de dozare-amestecare"
+    },
+    "PackingDispenser": {
+      "Title": "CÂNTAR DE DOZARE",
+      "SubTitle": "Cântarul de dozare pentru umplerea produselor în vrac este utilizat pentru ambalarea cerealelor, furajelor mixte, tărâțelor, granulelor, îngrășămintelor, semințelor, peletelor, zahărului, făinii și altor materiale similare în saci deschise și pachete cu greutatea de la 20 la 50 kg.<br>Cântarul de dozare este extrem de simplu și ușor în exploatare, sacul cu materialul este cântărit în timpul procesului de umplere, când se atinge greutatea setată, umplerea sacului se oprește automat. După umplere, sacul este înlocuit cu unul nou.<br>",
+      "Image": "Terminalul de cântărire al cântarelor de buncăr afișează greutatea curentă a dozei colectate, numărul de cântăriri și greutatea totală a materialului livrat, salvează istoricul cântăririlor cu referire la dată și oră. Dispune de o sistemă de control convenabilă și numeroase oportunități de integrare în liniile tehnologice și integrare în sistemele informaționale. Oferă control automat al sistemelor de încărcare, descărcare și alte mecanisme executive. O interfață industrială RS-232 este utilizată pentru conectarea la un computer.<br>Informațiile de cântărire sunt salvate în memoria indicatorului chiar și în cazul unei întreruperi bruște de curent și nu sunt disponibile pentru modificări manuale.<br>",
+      "IconTitleOne": "CÂNTAR DE DOZARE SEMI-AUTOMAT",
+      "IconTextOne": "<li><h6>Funcționează fără a utiliza aer comprimat</h6></li><li><h6>Clemă manuală a sacilor.</h6></li><li><h6>La necesitate, se completează cu un transportor cu bandă pentru deplasarea sacilor în direcție orizontală. Facilitează semnificativ munca operatorului</h6></li><li><h6>La necesitate, se completează cu o mașină de cusut pentru a coase sacul după umplere - instalată pe un suport special, controlat de o pedală de picior</h6></li><li><h6>Pentru unele produse, cântarul de dozare poate include: un agitator - pentru a compacta produsul în sac</h6></li><li><h6>Pentru ambalarea produselor alimentare, piesele, care intră în contact cu materialul sunt realizate din oțel inoxidabil</h6></li>",
+      "IconTitleTwo": "CÂNTAR DE DOZARE PNEUMATIC ",
+      "IconTextTwo": "<li><h6>Deschiderea comodă a clapei cu ajutorul unei pedale, ce permite creșterea productivității operatorului.<h6></li><li><h6>Clemă manuală sau pneumatică a sacilor.</h6></li><li><h6>La necesitate, se completează cu un transportor cu bandă pentru deplasarea sacilor în direcție orizontală. Facilitează semnificativ munca operatorului</h6></li><li><h6>La necesitate, se completează cu o mașină de cusut pentru a coase sacul după umplere - instalată pe un suport special, controlat de o pedală de picior</h6></li><li><h6>Pentru ambalarea produselor alimentare, piesele, care intră în contact cu materialul sunt realizate din oțel inoxidabil</h6></li><li><h6>Pentru ambalarea produselor alimentare, piesele în contact cu sculele sunt fabricate din oțel inoxidabil.</h6></li>"
+    },
+    "Scales": {
+      "Title": "CÂNTAR DE BUNCĂR",
+      "SubTitle": "Cântarele de buncăr pentru cântărirea în flux sunt soluția ideală pentru evidența materialelor în vrac, indispensabile în întreprinderile în care este necesară dozarea produselor pe bază de recetă tehnologică. Acestea sunt concepute pentru cântărirea automată în flux și pentru evidența totală a produselor în vrac (cereale, tărâțe, grâne, semințe și alte produse).<br>Cântarele sunt utilizate în procesele tehnologice în mod autonom sau ca parte a liniilor de amestecare de dozare în industria agricolă, chimică, metalurgică, din sticlă și în alte industrii.<br>În funcție de condițiile de funcționare, cântarele de buncăr pot fi deschise și închise.<br>Pentru încărcarea și descărcarea buncărului de cântărire se utilizează diverse mecanizme:<br>• Supapă cu acționare pneumatică sau electromagnetică - pentru produsele în vrac cu curgere ușoară.<br>• Alimentatoare cu bulon - pentru produsele în vrac cu curgere dificilă.<br>• Alimentatoare vibrante - pentru produse granulate și cu granulare mare.<br>Structurile metalice ale cântarelor sunt acoperite cu grund acrilic / smalț sau vopsea epoxidică (PEP). În unele cazuri (producție alimentară, chimică etc.), structurile metalice ale cântarelor sunt realizate din oțel inoxidabil.<br>În cazul unei întreruperi bruște a curentului electric sau a unei scăderi a presiunii aerului în sistem, funcționalitatea cântarului va fi blocată pentru a preveni pierderea produsului<br>",
+      "Image": "Terminalul de cântărire al cântarelor de buncăr afișează greutatea curentă a dozei colectate, numărul de cântăriri și greutatea totală a materialului livrat, salvează istoricul cântăririlor cu referire la dată și oră. Dispune de o sistemă de control convenabilă și numeroase oportunități de integrare în liniile tehnologice și integrare în sistemele informaționale. Oferă control automat al sistemelor de încărcare, descărcare și alte mecanisme executive. O interfață industrială RS-232 este utilizată pentru conectarea la un computer.<br>Informațiile de cântărire sunt salvate în memoria indicatorului chiar și în cazul unei întreruperi bruște de curent și nu sunt disponibile pentru modificări manuale.<br>",
+      "FuncTitle": "Funcționalitatea cântarului de buncăr:",
+      "FuncText": "• Afișarea și înregistrarea în memoria nevolatilă a indicatorului a stărilor de încărcare curentă a buncărului, cantitatea de produs neîncărcat cu referire la dată și oră.<br>• Prezența unui ceas încorporat pentru monitorizarea și înregistrarea timpului de funcționare<br>• Transfer de date către PC prin interfața industrială RS232<br>• Posibilitatea de a seta doza / receta folosind indicatorul sau software.<br>• Posibilitatea de a combina mai multe cântare într-o linie de dozare controlată de un PC<br>• Posibilitatea de a conecta mecanizme suplimentare la indicator.<br>• Colectarea și stocarea datelor în indicator și PC.<br>• Formarea și tipărirea rapoartelor pentru o perioadă de timp arbitrară.<br>• Păstrarea unui jurnal de evenimente, inclusiv accidente, situații de urgență.<br>• Atribuirea unui nivel de acces individual și protecție împotriva accesului neautorizat. <br>",
+      "IconTitleOne": "Cântarul de buncăr de tip deschis",
+      "IconTextOne": "•\tUtilizat în halele de producție<br>•\tLucrul cu produse predispuse la lipire<br>•\tAcces ușor la toate joncțiunile și componentele pentru întreținere<br>•\tModel econom datorită consumului redus de metal al produsului<br>",
+      "IconTitleTwo": "Cântar de buncăr de tip închis",
+      "IconTextTwo": "•\tCântarul poate fi utilizat în aer liber<br>•\tJoncțiunile și componentele sunt protejate de precipitațiile atmosferice și de lumina directă a soarelui.<br>•\tPachetul de bază include un supra-buncăr care servește pentru acumularea materialului dozat.<br>"
+    },
+    "Modern": {
+      "Title": "Modernizarea cântarelor de buncăr",
+      "SubTitle": "Modernizarea cântarelor mecanice de buncăr permite reducerea costurilor de funcționare, prelungirea termenului de exploatare și îmbunătățirea funcționalității prin înlocuirea unui sistem mecanic de cântărire cu unul electronic și prin introducerea controlului și contabilității automate.",
+      "Text": "La modernizarea cântarelor, sistemul de măsurare prin pârghie este schimbat într-un sistem de măsurare prin senzori, menținând în același timp buncărul existent, în timp ce pentru umplere și descărcare sunt instalate mecanisme adiționale, care sunt controlate automat de către indicatorul de greutate.",
+      "Image": "Terminalul de cântărire al cântarelor de buncăr afișează greutatea curentă a dozei colectate, numărul de cântăriri și greutatea totală a materialului livrat, salvează istoricul cântăririlor cu referire la dată și oră. Dispune de o sistemă de control convenabilă și numeroase oportunități de integrare în liniile tehnologice și integrare în sistemele informaționale. Oferă control automat al sistemelor de încărcare, descărcare și alte mecanisme executive. O interfață industrială RS-232 este utilizată pentru conectarea la un computer.<br>Informațiile de cântărire sunt salvate în memoria indicatorului chiar și în cazul unei întreruperi bruște de curent și nu sunt disponibile pentru modificări manuale.<br>"
+    }
+  },
+  "BigTable": {
+    "Header": {
+      "Head1": "Model",
+      "Head2": "Tip/Temperatură de funcționare (buncăr)/Temperatură de funcționare (controler MERAV3001)",
+      "Head3": "Performanţa pentru cereale*, t/ora",
+      "Head4": "Capacitatea maximă de cântărire, kg:",
+      "Head5": "Valoarea diviziunii de verificare (е), kg:",
+      "Head6": "Consumul aerului compresat nu mai mult de, nM3/h: ",
+      "Head7": "Dimensiuni de gabarit, mm: ",
+      "Head8": "Masa, kg:",
+      "Head9": "Conectarea la calculator",
+      "Head10": "Clasa de exactitate a balanţei:"
+    },
+    "Data": {
+      "D1": {
+        "One": "BSN-50D1.3",
+        "Two": "Deschis <br> De la -10 pînă +45 °C <br> De la 0 pînă +40 °C",
+        "Three": "18",
+        "Four": "50",
+        "Five": "0,02",
+        "Six": "2,3",
+        "Seven": "1075х983х 1140",
+        "Eight": "128",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D2": {
+        "One": "BXN-100D1.3",
+        "Two": "Deschis <br> De la -10 pînă +45 °C <br> De la 0 pînă +40 °C",
+        "Three": "30",
+        "Four": "100",
+        "Five": "0,05",
+        "Six": "2,3",
+        "Seven": "1075х983х 1430",
+        "Eight": "169",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D3": {
+        "One": "BXN-200D1.3",
+        "Two": "Deschis <br> De la -10 pînă +45 °C <br> De la 0 pînă +40 °C",
+        "Three": "60",
+        "Four": "200",
+        "Five": "0,1",
+        "Six": "3,6",
+        "Seven": "1150х1075х1390",
+        "Eight": "212",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D4": {
+        "One": "BXN-300D1.3",
+        "Two": "Deschis <br> De la -10 pînă +45 °C <br> De la 0 pînă +40 °C",
+        "Three": "90",
+        "Four": "300",
+        "Five": "0,1",
+        "Six": "5,7",
+        "Seven": "1317х1206х1526",
+        "Eight": "260",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D5": {
+        "One": "BXN-200D1.3",
+        "Two": "Închis <br> De la  -10 pînă +45 °C <br> De la  0 pînă  +40 °C",
+        "Three": "60",
+        "Four": "200",
+        "Five": "0,1",
+        "Six": "5,7",
+        "Seven": "1300x1300x2000",
+        "Eight": "520",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D6": {
+        "One": "BXN-300D1.3",
+        "Two": "Închis <br> De la  -10 pînă +45 °C <br> De la  0 pînă  +40 °C",
+        "Three": "90",
+        "Four": "300",
+        "Five": "0,1",
+        "Six": "5,7",
+        "Seven": "1380x1380x2120",
+        "Eight": "620",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      },
+      "D7": {
+        "One": "BXN-500D1.3",
+        "Two": "Închis <br> De la  -10 pînă +45 °C <br> De la  0 pînă  +40 °C",
+        "Three": "120",
+        "Four": "500",
+        "Five": "0,1",
+        "Six": "5,7",
+        "Seven": "1520x1520x 2710",
+        "Eight": "780",
+        "Nine": "RS232",
+        "Ten": "Medium (III)"
+      }
+    }
+  },
+  "Flagman": {
+    "Title":"Flagman",
+    "Desc": "Automatizarea completă a restaurantului sau cafenelei",
+    "Header": {
+      "Title": "Flagman - pachet software pentru hoteluri și restaurante"
+    },
+    "SecondFlag": {
+      "Title": "Datorită software-ului „Flagman” <br> Veți putea:",
+      "IconOne": "Construi evidența și administrarea depozitului în restaurant folosind programul nostru",
+      "IconTwo": "Monitoriza personalul, crește eficiența angajaților și eradica furtul",
+      "IconThree": "Proteja datele evidenței contabile de persoanele din afară",
+      "IconFour": "Construi un program de loialitate și de reîntoarcere a clienților",
+      "IconFive": "Lucra de la distanță (pentru proprietar) cu programul de oriunde din lume",
+      "IconSix": "Crește cecul mediu și profitul instituției"
+    },
+    "ThreeFlag": {
+      "Title": "Noi avem soluția",
+      "Icon1": "Automatizarea restaurantului",
+      "Icon2": "Automatizarea cafenelei",
+      "Icon3": "Automatizarea fast-foodului",
+      "Icon4": "Automatizarea rețelei de restaurante",
+      "Icon5": "Automatizarea cateringului",
+      "Icon6": "Automatizarea cateringului corporative",
+      "Icon7": "Automatizarea barului",
+      "Icon8": "Automatizarea clubului de billiard",
+      "Icon9": "Automatizarea restaurantelor hoteliere",
+      "Icon10": "Automatizarea livrării alimentelor"
+    },
+    "FourFlag": {
+      "Title": "Automatizarea completă a restaurantului sau cafenelei este:",
+      "Icon1": "Îl vom instala în câteva minute, după completarea principalelor directoare puteți începe contabilitatea operațională.",
+      "Icon2": "Configurarea unui bloc de rapoarte pentru proprietar",
+      "Icon3": "Automatizăm toate procesele din bucătărie și deservirea clienților",
+      "Icon4": "Configurăm contabilitatea de gestiune, financiară și de deposit",
+      "Icon5": "Veți obține o situație completă a veniturilor și cheltuielilor și un bilanț contabil",
+      "Icon6": "Configurăm controlul la distanță pentru proprietar de oriunde din lume",
+      "Icon7": "Integrăm rapoartele contabile și cele fiscale",
+      "Icon8": "Configurăm integrarea telefoniei SIP cu site-ul web al instituției",
+      "Icon9": "Asigurăm securitatea datelor și controlul accesului",
+      "Icon10": "Integrare continuu a hotelului, clubului de fitness sau lanțului de instituții"
+    },
+    "DivFlag": {
+      "Title": "Posibilitățile soft-ului"
+    },
+    "SixFlag": {
+      "IconTitle1": "Procesarea rapidă a comenzii",
+      "IconText1": "Interfața este concepută pentru introducerea rapidă a comenzilor. Deja în decurs de o zi, angajații reduc timpul de procesare a comenzii în mediu cu 35%.",
+      "IconTitle2": "Harta convenabilă a sălilor",
+      "IconText2": "O diagramă grafică vizuală a sălii va arăta mesele libere și cele ocupate. Culoarea mesei va corespunde cu statutul comenzii, ceea ce va ajuta la deservirea operativă a clienților.",
+      "IconTitle3": "Modul fast-food",
+      "IconText3": "Toate datele sunt stocate pe computerul dvs. Nu este necesară conexiunea la Internet. Dezactivați harta sălii dacă unitatea funcționează în regim fast-food. De asemenea, puteți atribui butoanelor imagini cu felurile de mâncare pentru procesarea mai rapidă a comenzilor.",
+      "IconTitle4": "STOP lista felurilor de mâncare",
+      "IconText4": "Felurile de mâncare indisponibile temporar sunt înregistrate într-o listă STOP cu posibilitatea activării rapide.",
+      "IconTitle5": "Glisoare la bucătărie, bar, grătar",
+      "IconText5": "Evitați comunicarea personală dintre ospătari, bucătari și barmani. Modificatorii din comandă vă vor propune cum să pregătiți și să serviți felul de mâncare.",
+      "IconTitle6": "Orice metodă de plată",
+      "IconText6": "Numerar, card de credit, fără numerar, barter, card club, certificat. Comanda poate fi achitată în rate.",
+      "IconTitle7": "Împărțirea contului pe clienți",
+      "IconText7": "Puteți împărți cu ușurință și rapid un cont în mai multe între persoanele din companie.",
+      "IconTitle8": "Cec cu sigla instituției",
+      "IconText8": "Pe fiecare cec puteți plasa sigla și adresa restaurantului.",
+      "IconTitle9": "Modulul administratorului - Stop furturi!",
+      "IconText9": "Setați o parolă de administrator pentru acțiunile pentru care securitatea sporită este importantă: ștergerea unui articol după tipărirea facturii, reducere, închiderea unei comenzi fără plată.",
+      "IconTitle10": "Muncă fiabilă fără internet",
+      "IconText10": "Munca în spațiul front nu este legată de munca internetului. Datele nu se pierd atunci când internetul este deconectat și munca nu se oprește niciun minut."
+    },
+    "SevenFlag": {
+      "IconTitle1": "Chelner mobil și e-meniu",
+      "IconText1": "O soluție alternativă pentru chelneri și administratori bazată pe o tabletă sau smartphone. Funcționează în două moduri: chelner mobil și un meniu electronic.",
+      "IconTitle2": "Cum functioneaza?",
+      "IconText2": "În modul de chelner mobil, permite chelnerului să introducă comanda direct în procesul comunicării cu clientul, fără a părăsi masa și ajută la reducerea timpului petrecut alergând sau  stând la coadă la casă (checkout).",
+      "IconTitle3": "Codul cheat",
+      "IconText3": "Mulți dintre clienții noștri își organizează munca în felul următor: împart chelnerii în două grupuri - cei mai experimentați primesc comenzi, trimițându-le instantaneu de pe tabletă în bucătărie, în timp ce alții servesc bucatele clienților."
+    },
+    "Flag": {
+      "IconTitle1": "+ 10% la venituri datorită creșterii cecului mediu",
+      "IconText1": "Cecul mediu se mărește cu 10%, deoarece clientul nu mai trebuie să facă eforturi pentru a comanda o altă ceașcă de cafea sau cocktail.",
+      "IconTitle2": "26% economii",
+      "IconText2": "Proprietarii de restaurante economisesc în medie 26% din salariile de chelner, deoarece mai puțini oameni deservesc aceeași zonă.",
+      "IconTitle3": "De 5 ori mai ieftin la achiziționarea unui loc de muncă staționar",
+      "IconText3": "În plus, costul unui chelner mobil în cumpărare: o tabletă și un program este de 5 ori mai ieftin decât cumpărarea unui alt terminal POS staționar și a unei licențe partea frontală."
+    },
+    "DivTech": {
+      "Title": "Suport tehnic 365/7",
+      "Text": "Probabil una dintre cele mai importante componente pentru buna funcționare a unei unități este un serviciu de asistență de încredere.<br> Înțelegem foarte bine ce este o imprimantă ieșită din funcțiune sâmbătă seara! Vom deveni un partener de încredere al unității dvs., <br> astfel încât să vă puteți servi oaspeții fără întreruperi."
+    },
+    "ComplectFlag": {
+      "Title": "AUTOMATIZARE COMPLETA LA CHEIE",
+      "SubTitle": "Seturi POS pentru restaurant și cafenea - personalizate, testate, cu software instalat",
+      "OneTitle": "SET DE AUTOMATIZARE<p>HoReCa-1",
+      "OneText": "Variantă bugetară pentru automatizarea <br> pizzeriilor mici  și mini cafenelelor",
+      "OneButton": "ALEGE SETUL HORECA-1",
+      "TwoTitle": "SET DE AUTOMATIZARE<p>POS HoReCa-2",
+      "TwoText": "Opțiune pentru ducerea evidenței <br> comerciale în restaurante și baruri",
+      "TwoButton": "ALEGE SETUL POS HORECA-2"
+    },
+    "Horeca1": {
+      "Header": {
+        "Title": "POS - SISTEMĂ SERIA COMPACT",
+        "One": "Cafenele",
+        "Two": "Fast-food",
+        "Three": "Baruri",
+        "Four": "Bufete",
+        "Five": "Mini cafenele"
+      },
+      "Full": {
+        "TitleTop": "SET PENTRU AUTOMATIZAREA COMERȚULUI",
+        "TitleBottom": "HoReCa-1",
+        "ComplectTitle": "Componența setului:",
+        "ComplectOne": "Soft  Flagman",
+        "ComplectOneOne": "(Front Office + Back Office)",
+        "ComplectTwo": "Mini PC PiPo X10",
+        "ComplectThree": "Casă de marcat Datecs DP-150SD cu baterie",
+        "ComplectFour": "Imprimantă termică RP58 USB",
+        "ComplectGiveOne": "Compact",
+        "ComplectGiveTwo": "Fiabil",
+        "ComplectGiveThree": "Durabil",
+        "ComplectPriceTitle": "Prețul:",
+        "ComplectPrice": "18 600 MDL",
+        "ComplectOldPrice": "20 704 MDL"
+      },
+      "MiniPos": {
+        "TitleTop": "Tabletă MicroPOS de nouă generație",
+        "TitleBottom": "Mini-PC PiPo X10",
+        "SpecTitleOne": "Panou senzorial",
+        "SpecTextOne": "Ecran de 10,8 cu rezoluție FHD 1920 * 1280 și răspuns instantaneu al senzorului",
+        "SpecTitleTwo": "Stocare rapidă a datelor",
+        "SpecTextTwo": "Memorie DDR3 de 4 GB și hard disk SSD modern și rapid de 64 GB",
+        "SpecTitleThree": "Set mare de interfețe",
+        "SpecTextThree": "4 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, WiFi și altele",
+        "SpecTitleFour": "Funcționează de la baterie",
+        "SpecTextFour": "10000 mAh"
+      },
+      "DatecsDPSD": {
+        "TitleTop": "Casă de marcat",
+        "TitleBottom": "Datecs DP-150 SD battery",
+        "SpecTitleOne": "Număr mare de intefețe",
+        "SpecTextOne": "2 x port RS-232C pentru conectare: 1 x dispozitiv USB de clasă prin mini-USB (opțional) 1 x Box Control",
+        "SpecTitleTwo": "Viteza de lucru",
+        "SpecTextTwo": "până la 12 linii pe secundă",
+        "SpecTitleThree": "Memoria fiscală",
+        "SpecTextThree": "Non-volatilă, poate suporta până la 1825 de rapoarte zilnice",
+        "SpecTitleFour": "Funcționează de la baterie",
+        "SpecTextFour": "Nu necesită priză"
+      },
+      "RP58": {
+        "TitleTop": "POS Imprimantă termică USB",
+        "TitleBottom": "Imprimantă termică RP58 USB",
+        "SpecTitleOne": "Viteza de lucru",
+        "SpecTextOne": "Imprimare rapidă a cecurilor la 100 mm / s",
+        "SpecTitleTwo": "Claritate înaltă",
+        "SpecTextTwo": "Tipărirea cecurilor de înaltă claritate",
+        "SpecTitleThree": "Bandă de diametru mare",
+        "SpecTextThree": "Se potrivește o rolă cu diametrul de 58 mm, nu trebuie să schimbați banda des",
+        "SpecTitleFour": "Imprimare logouri și coduri de bare",
+        "SpecTextFour": "Imprimanta imprimă logouri și coduri de bare 1D / 2D",
+        "SpecTitleFive": "Durabilitate",
+        "SpecTextFive": "100 km - resursa capului de imprimare al producătorului japonez",
+        "SpecTitleSix": "Compatibilitate",
+        "SpecTextSix": "Cu orice sisteme de operare și programe de evidență"
+      },
+      "Soft": {
+        "TitleTop": "Soft-ul de automatizare a restaurantelor Flagman",
+        "TitleBottom": "Interfața programului pentru restaurante și principalele sale caracteristici:",
+        "SpecTitleOne": "MENIUL ȘI LOCUL CASEI",
+        "SpecTextOne": "Doar transferați meniul standard în program, păstrând categoriile și subcategoriile. Imprimarea instantanee a cecurilor clienților. Sisteme de loialitate și reducere și multe alte oportunități. Lucru rapid cu comenzile și raport de vânzări!",
+        "SpecTitleTwo": "BUCATARIE & BAR",
+        "SpecTextTwo": "Glisorul este imprimat pe imprimanta din bucătărie imediat ce chelnerul plasează o comandă. De la comandă la servirea mesei – doar câteva minute! Clienți mulțumiți și fericiți și mai multe comenzi.",
+        "SpecTitleThree": "RAPOARTE ȘI ANALIZE",
+        "SpecTextThree": "Rapoartele (personalizate) vor fi trimise la e-mailul dvs. în fiecare zi după închiderea schimbului. Diagramele de analiză vizuală pentru orice indicator și pentru orice perioadă de timp. Analiza este calea spre succes!"
+      },
+      "Android": {
+        "TitleTop": "Aplicație Android",
+        "TitleBottom": "Chelner mobil",
+        "SpecTitleOne": "Creșterea profitului cu 20%",
+        "SpecTextOne": "Lipsa agitației fără sens a chelnerilor - mai mulți clienți deserviți - mai mult profit",
+        "SpecTitleTwo": "Feedback",
+        "SpecTextTwo": "Când comanda este gata, bucătarul / barmanul o marchează pe ecranul tactil, iar chelnerul este instantaneu notificat pe smartphone",
+        "SpecTitleThree": "Funcționează pe Android",
+        "SpecTextThree": "Aplicația este instalată pe orice tabletă sau smartphone Android prin Google Play Market",
+        "SpecTitleFour": "Procesare rapidă a comenzilor",
+        "SpecTextFour": "Comenzile plasate în aplicație sunt transferate instantaneu pe un monitor sau o imprimantă instalată în bucătărie / bar"
+      }
+    },
+    "Horeca2": {
+      "Header": {
+        "Title": "POS - SISTEMĂ SERIA COMPACT",
+        "One": "Cafenele",
+        "Two": "Fast-food",
+        "Three": "Baruri",
+        "Four": "Bufete",
+        "Five": "Mini cafenele"
+      },
+      "Full": {
+        "TitleTop": "SET PENTRU AUTOMATIZAREA COMERȚULUI",
+        "TitleBottom": "HoReCa-2",
+        "ComplectTitle": "Componența setului:",
+        "ComplectOne": "Soft  Flagman",
+        "ComplectOneOne": "(Front Office + Back Office)",
+        "ComplectTwo": "TERMINAL POS B15 MicroPOS 5-wire resistive",
+        "ComplectThree": "Imprimantă termică RP328 (RS-232+USB+Ethernet).",
+        "ComplectGiveOne": "Compact",
+        "ComplectGiveTwo": "Fiabil",
+        "ComplectGiveThree": "Durabil",
+        "ComplectPriceTitle": "Prețul:",
+        "ComplectPrice": "21 600 MDL",
+        "ComplectOldPrice": "24 005 MDL"
+      },
+      "MicroPos": {
+        "TitleTop": "MicroPOS elegant",
+        "TitleBottom": "Terminal POS B15 MicroPOS 5-wire resistive",
+        "SpecTitleOne": "Panou senzorial",
+        "SpecTextOne": "Ecran tactil cu rezoluție HD 1366 × 768 și răspuns instantaneu al senzorului",
+        "SpecTitleTwo": "Viteză",
+        "SpecTextTwo": "Terminalul este echipat cu un procesor J1900 de nouă generație cu performanțe ridicate și consum redus de energie",
+        "SpecTitleThree": "Stocare rapidă a datelor",
+        "SpecTextThree": "Memorie DDR3 de 4 GB și hard disk SSD modern de 64 GB",
+        "SpecTitleFour": "Set mare de interfețe",
+        "SpecTextFour": "6 porturi USB pentru echipamente periferice, Ethernet pentru conexiune directă la internet, RS232 și altele"
+      },
+      "RP328": {
+        "TitleTop": "POS Imprimantă termică USB",
+        "TitleBottom": "Imprimantă termică RP328 (RS-232+USB+Ethernet)",
+        "SpecTitleOne": "Viteza de lucru",
+        "SpecTextOne": "Imprimare rapidă a cecurilor la 100 mm / s",
+        "SpecTitleTwo": "Claritate înaltă",
+        "SpecTextTwo": "Tipărirea cecurilor de înaltă claritate",
+        "SpecTitleThree": "Bandă de diametru mare",
+        "SpecTextThree": "Se potrivește o rolă cu diametrul de 58 mm, nu trebuie să schimbați banda des",
+        "SpecTitleFour": "Imprimare logouri și coduri de bare",
+        "SpecTextFour": "Imprimanta imprimă logouri și coduri de bare 1D / 2D",
+        "SpecTitleFive": "Durabilitate",
+        "SpecTextFive": "100 km - resursa capului de imprimare al producătorului japonez",
+        "SpecTitleSix": "Compatibilitate",
+        "SpecTextSix": "Cu orice sisteme de operare și programe de evidență"
+      }
+    }
+  },
+  "B52": {
+    "Title": "B52",
+    "Desc": "Produs software modern pentru gestionarea unui hotel, restaurant, sală de fitness.",
+    "Header": {
+      "Title": "Produs software modern<p>pentru gestionarea unui hotel, restaurant,<br> sală de fitness."
+    },
+    "First": {
+      "One": "Sistem de automatizare pentru hoteluri, hanuri, pensiuni",
+      "Two": "Automatizarea saloanelor de fitness, spa, saloanelor de înfrumusețare",
+      "Three": "Sistem de automatizare a restaurantului",
+      "Four": "Sistem de automatizare a camerei de billiard"
+    },
+    "Second": {
+      "Title": "B52 vă va ajuta",
+      "One": "Îmbunătăți calitatea serviciilor",
+      "Two": "Sistematiza contabilitatea de gestiune",
+      "Three": "Atrage mai mulți clienți",
+      "Four": "Stabili controlul asupra afacerii"
+    },
+    "Div": {
+      "Title": "Vom efectua întreg ciclu de lucrări legate de instalarea proiectului"
+    },
+    "More": {
+      "One": "Vom efectua o analiză al întreprinderii",
+      "Two": "Vom oferi un set optim de echipamente și software",
+      "Three": "Vom instala complexul software și hardware",
+      "Four": "Vom efectua ajustarea conform cerințelor specifice",
+      "Five": "Vom instrui personalul, vom realiza certificarea",
+      "Six": "Vom oferi o opțiune de deservire convenabilă"
+    },
+    "Hotel": {
+      "Header": {
+        "Title": "SISTEM <p> AUTOMATIZARE",
+        "SubTitle": "HOTELURI, HANURI, PENSIUNI"
+      },
+      "First": {
+        "ImageTitleOne": "Eliminați supra-rezervarea",
+        "ImageTextOne": "B52 nu vă va permite să rezervați aceeași cameră de două ori la rezervarea de la ghișeu, de către managerii departamentului de rezervări, prin modulul WEB de pe site, prin zeci de canale de vânzare.",
+        "ImageTitleTwo": "Curățarea camerelor sub control",
+        "ImageTextTwo": "Acum programul va completa camerele pentru femeile de serviciu pentru dvs. Veți afla despre problemele apărute în timpul curățeniei și veți reacționa la timp.",
+        "ImageTitleThree": "Programe promoționale",
+        "ImageTextThree": "Interesați oaspeții cu tot felul de programe de loialitate.",
+        "ImageTitleFour": "Evidență complexă",
+        "ImageTextFour": "Implementarea oricărui serviciu (restaurant, spa, minibar) va apărea automat în contul personal al oaspetelui. B52 este o evidență complexă. Nu există operațiuni de transfer de date între bazele de date. Totul într-un singur sistem de control.",
+        "ImageTitleFive": "Room service",
+        "ImageTextFive": "Oaspeții pot comanda servicii suplimentare de pe smartphone-urile lor. Recepția va vedea imediat și va suna înapoi dacă este necesar pentru a clarifica detaliile.",
+        "ImageTitleSix": "Pentru administratorii companiilor",
+        "ImageTextSix": "Managerii dvs. vor rezerva camere cu ușurință, comutând între „șahurile” hotelurilor."
+      },
+      "Second": {
+        "OneTop": "Recepția hotelului",
+        "OneCenter": "Modul de recepție",
+        "OneBottom": "La recepția hotelului, setul funcțional al modulului repetă complet setul de sarcini al recepționerului pentru lucrul cu oaspeții. Include o analiză a numărului disponibil de camere, înregistrarea oaspetelui în cameră cu introducerea datelor personale în baza de clienți, înregistrarea serviciilor hoteliere standard oferite și a serviciilor suplimentare, evidența mini-barului, emiterea facturilor periodice, tarifarea serviciilor de internet și telefonie, plata periodică și finală a oaspeților.",
+        "TwoTop": "Departamentul rezervări",
+        "TwoCenter": "Modul pentru managerii departamentului de rezervări",
+        "TwoBottom": "Atunci când o cerere este formată de un angajat al serviciului de rezervare, sistemul furnizează informații despre stocul disponibil de camere pentru perioada viitorului sejur al oaspeților și grupurilor turistice. Interfața comenzii presupune alegerea camerelor libere pe baza parametrilor principali: lista etajelor, categorii, trăsăturile caracteristice ale camerei. Comanda înregistrată este vizibilă automat în modulul de recepție ca rezervare de cameră. Documentul de confirmare a rezervării este tipărit.",
+        "ThreeTop": "Serviciu de menaj",
+        "ThreeCenter": "Modul servicii de menaj",
+        "ThreeBottom": "Este menținută introducerea / eliminarea camerelor pentru renovare sau curățenie. Partea materială a evidenței vă permite să înregistrați circulația bunurilor de uz casnic, inventarul lor periodic. Un modul special pentru șeful serviciului de menaj permite organizarea curățeniei, distribuirea în timp, conform listei menajerelor. Posibilitatea de a crea un program de ieșiri la lucru pentru menajere economisește fondul de salarizare."
+      },
+      "Three": {
+        "OneTop": "Restaurant",
+        "OneCenter": "Module hostess, barman, chelner",
+        "OneBottom": "Restaurantul hotelului funcționează în regimul deservirii oaspeților hotelului. Înregistrarea unui vizitator are loc la locul de muncă al hostesului, cu controlul plății alimentelor. Dacă mâncarea nu este inclusă în costul șederii, factura poate fi plătită pe loc prin toate mijloacele disponibile sau pentru a închide datoria către cameră. Restaurantul, pe lângă faptul că servește oaspeții hotelului, poate fi deschis clienților externi.",
+        "TwoTop": "Sistem rezervări",
+        "TwoCenter": "Modul rezervare pentru site",
+        "TwoBottom": "Modulul permite oaspetelui dvs. să aleagă independent o cameră, să rezerve și să plătească pentru aceasta. Sistemul monitorizează ocuparea hotelului și previne supra-rezervarea. Programele promoționale sunt acceptate. Calendarul de disponibilitate îi va ajuta pe oaspeți să aleagă zilele convenabile. Noua rezervare va fi expediată automat la B52 și va fi reflectată în tabla de șah. Confirmarea rezervării poate fi trimisă imediat oaspeților prin e-mail sau pre-procesată de către managerul rezervării."
+      },
+      "Four": {
+        "OneTop": "WEB",
+        "OneCenter": "Interfața WEB pentru comanda de la distanță",
+        "OneBottom": "Serviciul vă permite să efectuați toate funcțiile departamentului de rezervări utilizând un browser de pe orice dispozitiv disponibil: computer personal, tabletă sau smartphone. Acest lucru face posibil ca managerii să rezerve camere fără a fi în hotel, iar proprietarul hotelului poate controla gradul de ocupare și situația financiară.",
+        "TwoTop": "Încuietori electronice",
+        "TwoCenter": "Conexiune la sistemul de chei electronice",
+        "TwoBottom": "Instalarea cheilor electronice face posibilă controlul accesului la camerele hotelului. Conectarea acestui serviciu la B52 face imposibile găszduirile nedeclarate. Fără înregistrarea oaspetelui în program, nu va fi posibilă codificarea cheii electronice, ceea ce reduce pierderile financiare ale hotelului. În programul B 52 sunt integrate mai mult de zece sisteme de control al accesului camerei."
+      },
+      "Five": {
+        "OneTop": "Chanel manager",
+        "OneCenter": "Canalele de vânzări",
+        "OneBottom": "Pentru a maximiza ocuparea stocului de camere ale hotelului, sunt utilizate diferite canale de vânzare, cum ar fi booking.com, Airbnb, Expedia. Pentru a lucra cu ei, este convenabil să conectați Channel manager, care vă va permite să sincronizați toate vânzările într-un punct. Putem conecta B52 la alegere la unul dintre cele două servicii similare: Trevelline sau YieldPlanet. Planurile tarifare vor fi încărcate automat prin intermediul serviciului către toate canalele de vânzare, iar rezervările vor merge automat la table de șah în B52."
+      }
+    },
+    "Restaurant": {
+      "Header": {
+        "Title": "SISTEM DE <p> AUTOMATIZARE<p> RESTAURANTE"
+      },
+      "First": {
+        "ImageTitleOne": "Interfață simplă și сlară",
+        "ImageTextOne": "Chelnerii și barmanii vor începe să lucreze la cinci minute după instalare. Este de dorit ca contabilul să aibă studii  specializate, dar nu neapărat – îl vom instrui.",
+        "ImageTitleTwo": "Imprimarea fiscală",
+        "ImageTextTwo": "Programul este adaptat pentru funcționarea cu toate imprimantele fiscale din registrul serviciilor de decontare și numerar din Republica Moldova. Mai multe persoane juridice? - nici o problemă.",
+        "ImageTitleThree": "Identificare",
+        "ImageTextThree": "Tot felul de opțiuni de identificare a oaspeților la alegere: bandă magnetică, cod de bare, card fără contact, identificare cu amprentă, după ultimele cifre ale numărului de telefon cu confirmare prin SMS.",
+        "ImageTitleFour": "Nu-ți pierde banii",
+        "ImageTextFour": "Vom închide locurile potențiale de pierderi financiare. Personalul dvs. este creativ? - vă vom arăta cum și unde.",
+        "ImageTitleFive": "Imprimante de cecuri",
+        "ImageTextFive": "Vom crea forme frumoase de facturi și încorporări pentru dvs. Programul nu limitează alegerea dispozitivului de imprimare. Bluetooth și WiFi - imprimantele interacționează cu terminalele mobile.",
+        "ImageTitleSix": "Marketing",
+        "ImageTextSix": "Extindeți-vă baza de clienți atrăgând noi oaspeți cu programe de fidelizare."
+      },
+      "Second": {
+        "OneTop": "Sala restaurantului",
+        "OneCenter": "Modul staționar pentru chelneri / barmani",
+        "OneBottom": "Nu suntem susținători ai modulelor universale. Un monitor fix de terminal POS vă permite să creați interfețe convenabile și intuitive fără a fi nevoie să deschideți o fereastră separată pentru fiecare operație.",
+        "TwoTop": "Sala restaurantului",
+        "TwoCenter": "Modul mobil pentru chelneri",
+        "TwoBottom": "Modulul vă permite să lucrați cu o comandă pe un smartphone sau tabletă. Sincronizarea cu baza centrală are loc prin WiFi sau 3 / 4g. Prezența constantă în zona de comunicație nu este necesară, dispozitivul poate funcționa autonom până în momentul trimiterii comenzii la imprimare. Cu ajutorul dispozitivelor mobile, puteți împărți chelnerii în „vorbitori” și cei care servesc masa. Un chelner cu un smartphone nu este legat de sala restaurantului, unde se află stația staționară, și poate deservi oaspeții pe terasa deschisă. Prezența unui modul NFC în smartphone permite oaspeților să fie identificați printr-un card fără contact."
+      },
+      "Three": {
+        "OneTop": "Sala restaurantului",
+        "OneCenter": "Modulul pentru administratorul restaurantului",
+        "OneBottom": "Acesta nu este un modul separat, ci o parte din funcționalitatea modulului chelner / barman. Administratorul obține acces la aceste funcții prin setarea drepturilor pentru poziția „Administrator”. Funcțiile avansate permit administratorului să monitorizeze activitatea restaurantului, examinând toate facturile, controlând astfel calitatea muncii chelnerilor și barmanilor. Drepturile extinse vă permit să re-imprimați facturile, dacă este necesar, cu posibilitatea de a controla în continuare acest fapt din partea conducerii, recalculând factura la cost."
+      },
+      "Four": {
+        "OneTop": "Bucătărie",
+        "OneCenter": "Modulul bucătarului",
+        "OneBottom": "În livrarea standard, o imprimantă este instalată în bucătărie sau în fiecare încăpere al blocului alimentar. Instalarea unui computer cu un modul pentru bucătar extinde semnificativ capacitățile sistemului. Înregistrările comenzilor care sunt tipărite pe imprimanta apar automat pe ecranul computerului. Pentru fiecare intrare, bucătarul poate marca faptul că comanda a fost acceptată pentru preparare și, dacă este necesar, poate crea o cerere de transfer a ingredientelor din depozit. Marcarea faptului de îndeplinire a comenzii se trimite sub forma unui mesaj despre finalizarea comenzii către terminalul POS. Dacă chelnerul care a trimis comanda este echipat cu un smartphone, va primi un mesaj despre aceasta pe telefonul său. Un avantaj suplimentar este capacitatea de a controla viteza de execuție a comenzii."
+      },
+      "Five": {
+        "OneTop": "Livrare",
+        "OneCenter": "Modul pentru call centru",
+        "OneBottom": "Un angajat al call centrului, atunci când primește un apel, identifică automat un client permanent după numărul său de telefon. Este posibil să înlocuiți una dintre adresele de livrare a clienților introduse anterior sau să introduceți o nouă adresă. Programul va calcula automat distanța de la preparare la adresa de livrare și poate genera costuri de expediere. Lista bucatelor comandate merg la bucătărie.",
+        "TwoTop": "Livrare",
+        "TwoCenter": "Modulul de emitere a comenzilor",
+        "TwoBottom": "Comanda finalizată poate fi identificată cu o etichetă de cod de bare pentru a preveni confuzia atunci când este expediată către client, și o factură este tipărită pentru plată.",
+        "ThreeTop": "Livrare",
+        "ThreeCenter": "Modulul de producție",
+        "ThreeBottom": "Modulul de producție vă permite să automatizați contabilitatea tuturor proceselor de producție, să controlați rămășițele ingredientelor și a produselor semifabricate, să decontați conform fișelor de calcul la fiecare etapă a producției. Produsele finite ajung la locul emiterii comenzii.",
+        "FourTop": "Livrare",
+        "FourCenter": "Modulul mobil al agentului-șoferului",
+        "FourBottom": "Șoferul scanează eticheta de pe comanda finalizată, marcând astfel primirea comenzii în modulul mobil. Modulul trasează calea pe hartă. Faptul de plată pentru comandă este, de asemenea, notat în program și transmis prin 3 / 4g la oficiul central."
+      },
+      "Six": {
+        "OneTop": "Contabil",
+        "OneCenter": "Modulul contabilului",
+        "OneBottom": "Sistemul de contabilitate a mărfurilor și financiar implică introducerea documentelor primare. Documentele de primire a mărfurilor în întreprindere sunt împărțite în livrări de la organizații externe și achiziții de către angajații proprii. În documentele de intrări de marfă, sunt introduse prețurile furnizorilor, care formează prețurile de evidență a mărfurilor din întreprindere. Prețul de evidență este calculat ca „medie ponderată” conform schemei FIFO. Costul produselor finite și al semifabricatelor se calculează pe baza prețurilor de evidență pentru ingrediente.",
+        "TwoTop": "Cumpărător",
+        "TwoCenter": "Modulul mobil al cumpărătorului",
+        "TwoBottom": "Pentru eficiența muncii angajatului care face achiziții pe piață sau în magazine, există un modul specializat. Contabilul formează o comandă în modulul său, care este trimis prin mobil către modulul cumpărătorului. Comanda listează sortimentul necesar cu cantitatea și prețul aproximativ. Pe măsură ce achiziția progresează, au loc ajustări de preț și cantitate. La sfârșitul achiziției, documentul merge la baza de date centrală din registrul de documente primite."
+      }
+    },
+    "Fitness": {
+      "Header": {
+        "Title": "Sistem de automatizare  <p> fitness, spa, saloane <p> de frumuseţe"
+      },
+      "First": {
+        "ImageTitleOne": "Interfață simplă și сlară",
+        "ImageTextOne": "Chelnerii și barmanii vor începe să lucreze la cinci minute după instalare. Este de dorit ca contabilul să aibă studii  specializate, dar nu neapărat – îl vom instrui.",
+        "ImageTitleTwo": "Imprimarea fiscală",
+        "ImageTextTwo": "Programul este adaptat pentru funcționarea cu toate imprimantele fiscale din registrul serviciilor de decontare și numerar din Republica Moldova. Mai multe persoane juridice? - nici o problemă.",
+        "ImageTitleThree": "Identificare",
+        "ImageTextThree": "Tot felul de opțiuni de identificare a oaspeților la alegere: bandă magnetică, cod de bare, card fără contact, identificare cu amprentă, după ultimele cifre ale numărului de telefon cu confirmare prin SMS.",
+        "ImageTitleFour": "Nu-ți pierde banii",
+        "ImageTextFour": "Vom închide locurile potențiale de pierderi financiare. Personalul dvs. este creativ? - vă vom arăta cum și unde.",
+        "ImageTitleFive": "Imprimante de cecuri",
+        "ImageTextFive": "Vom crea forme frumoase de facturi și încorporări pentru dvs. Programul nu limitează alegerea dispozitivului de imprimare. Bluetooth și WiFi - imprimantele interacționează cu terminalele mobile.",
+        "ImageTitleSix": "Marketing",
+        "ImageTextSix": "Extindeți-vă baza de clienți atrăgând noi oaspeți cu programe de fidelizare."
+      },
+      "Three": {
+        "OneTop": "Recepția clubului",
+        "OneCenter": "Modulul administratorului recepției",
+        "OneBottom": "Setul funcțional al modulului pentru recepția centrului de fitness repetă setul de atribuții al recepționerului clubului. Se efectuează o înregistrare a vizitei clientului, înregistrarea pentru vizitele de grup și instruire individuală, vânzarea pachetelor de servicii și eliminarea acestora din sold.",
+        "TwoTop": "Departamentul de vanzari",
+        "TwoCenter": "Modul de vânzări și marketing",
+        "TwoBottom": "Managerii de marketing formează pachete de servicii, bonusuri și programe promoționale. Pachetele și certificatele sunt vândute membrilor noi și existenți ai clubului. <br> Sistemul CRM face posibilă extinderea bazei de clienți, avertizează prompt membrii clubului despre expirarea pachetelor de servicii, trimite mesaje prin SMS sau e-mail."
+      },
+      "Second": {
+        "OneTop": "Antrenor",
+        "OneCenter": "Modulul mobil al antrenorului",
+        "OneBottom": "Modulul pentru un dispozitiv mobil permite unui antrenor să marcheze o vizită la o lecție de grup, să înregistreze un client pentru o lecție individuală și să vândă servicii suplimentare.",
+        "TwoTop": "Controlul accesului",
+        "TwoCenter": "Sistemul de control al accesului",
+        "TwoBottom": "Pentru a restricționa accesul la sediul clubului, programul implementează un sistem de control pentru turnicheti și alte dispozitive electronice de control al accesului. Sistemul este capabil să permită accesul membrilor clubului doar la acele spații în care este disponibil serviciul, disponibile prin abonament sau prin programare.",
+        "ThreeTop": "IV. Membrilor clubului",
+        "ThreeCenter": "WEB - service",
+        "ThreeBottom": "Serviciul permite unui membru al clubului să se înscrie independent pentru antrenamente de grup, lecții individuale, să comande servicii suplimentare. Există posibilitatea de a controla decontările cu clubul, de a vedea soldul cursurilor.",
+        "FourTop": "Departamentul de contabilitate",
+        "FourCenter": "Modulul contabilitatea de gestiune",
+        "FourBottom": "Programul face posibilă menținerea unei evidențe de management complet și a unei contabilități financiare. Contabilitatea materială implică întregul ciclu de rulare a mărfurilor: documente pentru livrarea mărfurilor, transfer, decontare și reevaluare. Contabilitatea financiară include mișcarea fondurilor de numerar și non-numerar, un raport de avans. A fost elaborat de asemenea și un mecanism de calcul al salariilor."
+      }
+    },
+    "Billiard": {
+      "Header": {
+        "Title": "SISTEM <p> AUTOMATIZARE <p> BILIARD"
+      },
+      "First": {
+        "ImageTitleOne": "Interfață simplă și сlară",
+        "ImageTextOne": "Chelnerii și barmanii vor începe să lucreze la cinci minute după instalare. Este de dorit ca contabilul să aibă studii  specializate, dar nu neapărat – îl vom instrui.",
+        "ImageTitleTwo": "Imprimarea fiscală",
+        "ImageTextTwo": "Programul este adaptat pentru funcționarea cu toate imprimantele fiscale din registrul serviciilor de decontare și numerar din Republica Moldova. Mai multe persoane juridice? - nici o problemă.",
+        "ImageTitleThree": "Identificare",
+        "ImageTextThree": "Tot felul de opțiuni de identificare a oaspeților la alegere: bandă magnetică, cod de bare, card fără contact, identificare cu amprentă, după ultimele cifre ale numărului de telefon cu confirmare prin SMS.",
+        "ImageTitleFour": "Sistem de numărare a timpului",
+        "ImageTextFour": "Deschiderea mesei pentru o perioadă de timp fix sau nelimitat",
+        "ImageTitleFive": "Nu-ți pierde banii",
+        "ImageTextFive": "Vom închide locurile potențiale de pierderi financiare. Personalul dvs. este creativ? - vă vom arăta cum și unde.",
+        "ImageTitleSix": "Imprimante de cecuri",
+        "ImageTextSix": "Vom crea forme frumoase de facturi și încorporări pentru dvs. Programul nu limitează alegerea dispozitivului de imprimare. Bluetooth și WiFi - imprimantele interacționează cu terminalele mobile.",
+        "ImageTitleSeven": "Marketing",
+        "ImageTextSeven": "Extindeți-vă baza de clienți atrăgând noi oaspeți cu programe de fidelizare.",
+        "ImageTitleEight": "Rezervarea meselor",
+        "ImageTextEight": "Vă permite să măriți eficiența muncii datorită distribuției rapide și optime a comenzilor"
+      },
+      "Second": {
+        "OneTop": "Modul staționar",
+        "OneBottom": "Terminalul POS staționar vă permite să afișați o interfață convenabilă, bine gândită, intuitivă, în care nu este nevoie să deschideți o fereastră separată pentru fiecare operație.",
+        "TwoTop": "Modul mobil pentru chelneri",
+        "TwoBottom": "Modulul vă permite să lucrați cu o comandă pe un smartphone sau tabletă. Sincronizarea cu baza centrală are loc prin WiFi sau 3 / 4g. Prezența constantă în zona de comunicație nu este necesară, dispozitivul poate funcționa autonom. Un chelner cu un smartphone nu este legat de holul în care se află stația staționară"
+      }
+    }
+  },
+  "Programs": {
+    "Title": "Software",
+    "Desc": "Alex S&E dezvoltă și implementează software pentru automatizarea întreprinderilor din diferite domenii de activitate, specialiștii Alex S&E vă vor ajuta să găsiți cea mai bună soluție care se potrivește afacerii voastre.",
+    "Header": {
+      "Title": "SOFTWARE",
+      "SubTitle": "Automatizarea întreprinderii este un proces bine organizat în care funcțiile <br> de management și control sunt transferate echipamentului și softului specializat."
+    },
+    "List": {
+      "AlexTitle": "AlexMarket",
+      "AlexSubTitle": "Soft profesional pentru automatizarea<br> comerțului și evidenței mărfurilor. ",
+      "B52Title": "B52",
+      "B52SubTitle": "Un produs software modern cu multe configurații pentru automatizarea întreprinderilor din diferite domenii de activitate.",
+      "FlagTitle": "Flagman",
+      "FlagSubTitle": "Soft pentru automatizarea cantinelor,<br> cafenelelor, restaurantelor și hotelurilor.",
+      "Button": "FAMILIARIZA",
+      "Info": "AUTOMATIZAREA AFACERII VOASTRE ÎMPREUNĂ CU ALEX S&E"
+    },
+    "InfoList": {
+      "IconTitleOne": "27 de ani",
+      "IconTextOne": "Experiență profesională",
+      "IconTitleTwo": "Peste 500",
+      "IconTextTwo": "De întreprinderi comercială",
+      "IconTitleThree": "Peste 500",
+      "IconTextThree": "Atomatizarea alimentației publice",
+      "IconTitleFour": "Peste 150",
+      "IconTextFour": "De întreprinderi industriale",
+      "Text": "În lumea modernă, sistemele de automatizare sunt folosite pretutindeni. Activitățile întreprinderilor și organizațiilor din diferite sectoare este dificil de imaginat fără acestea. În fiecare zi, tot mai mulți manageri înțeleg că automatizarea este cheia dezvoltării cu succes a unei companii. Alex S&E dezvoltă și implementează software pentru automatizarea întreprinderilor din diferite domenii de activitate. Softul oferit de Alex S&E este fiabil și multifuncțional. De mai bine de 27 de ani, produsele software create și implementate de specialiștii companiei sunt utilizate la întreprinderi comerciale și industriale, la centre medicale și spitale, centre spa, cluburi de fitness, hoteluri, restaurante, baruri, cantine, pentru evidența depozitelor și gestionarea stocurilor. Automatizarea oricărei întreprinderi este un sistem care funcționează împreună cu hardware și software. În cazul automatizării întregului proces tehnologic, persoana îndeplinește doar funcția de supraveghere și, prin urmare, riscurile legate de factorul uman sunt excluse la maxim. Automatizarea face posibilă unirea tuturor departamentelor întreprinderii într-un singur mecanism bine coordonat. Gestionarea personalului, controlul stocurilor de produse rămase în sala de vânzare, la depozit sau la diferite etape de producție, gestionarea reducerilor, planificarea, rezervarea, raportarea și analiza sunt puținele lucruri pe care le oferă automatizarea întreprinderii.<br>Astăzi, automatizarea oricărei întreprinderi nu mai este un lux, ci o garanție a activității productive a companiei. Alegerea corectă a software-ului și hardware-ului va maximiza rezultatele și va minimiza costurile implementării sistemelor de automatizare. Datorită experienței lor, specialiștii Alex S&E vă vor ajuta să găsiți cea mai bună soluție care se potrivește afacerii voastre.<br>"
+    },
+    "Tech": {
+      "Title": "Suport tehnic 365/7",
+      "SubTitle": "Odată cu introducerea sistemelor de automatizare, beneficiați nu doar de echipamente și software avansate, <br> ci și de asistență tehnică constantă. Specialiștii noștri lucrează în fiecare zi, șapte zile în săptămână și la sărbători",
+      "BottomTitle": "SERVICIU ZILNIC DISPONIBIL, INCLUSIV LA SĂRBĂTORI ȘI ÎN ZILELE DE ODIHNĂ DE LA 9:00 PÂNĂ LA 19:00"
+    }
+  },
+  "Shop": {
+    "Breadcrumbs": {
+      "Home": "Acasă",
+      "Products": "Produse",
+      "Market": "Scor"
+    },
+    "Select": {
+      "Date": "Sosiri noi",
+      "CostLow": "Preț (crescător)",
+      "CostHigh": "Preț (descrescător)",
+      "NameA": "Numele A-Z",
+      "NameZ": "Numele Z-А",
+      "Sale": "Sale!",
+      "New": "New!",
+      "Indicator": "Selectați Indicator",
+      "Ramp": "Selectați Ramp",
+      "Option": "Selectati optiunile"
+    },
+    "Category": {
+      "All": "Toate mărfurile",
+      "Industrial": "Industrial",
+      "AutoScales": "Cântare auto",
+      "WagonScales": "Cântare de vagon",
+      "HopperScales": "Cântare de buncăr",
+      "Search": "Găsiți un produs ..."
+    },
+    "Index": {
+      "Number": "Cantitatea :",
+      "Code": "Codul produsului:",
+      "Tech": "Specificatii tehnice",
+      "Func": "Funcționalitate",
+      "Cert": "Certificate"
+    }
+  },
+  "PriceList": {
+    "Button": "Imprimați lista de prețuri",
+    "Id": "ID",
+    "Image": "Imagine",
+    "Name": "Nume",
+    "Price": "Preț",
+      "Spec": "Descriere"
+  },
+  "Support": {
+    "Title": "Suport tenic",
+    "Desc": "Odată cu instalarea sistemelor de automatizare comerciale, HoReCa, veți obține nu numai echipamente avansate, dar și suport tehnic permanent.",
+    "Header": {
+      "Title": "SUPORT TEHNIC",
+      "Subtitle":"Odată cu instalarea sistemelor de automatizare comerciale, HoReCa, veți obține nu numai echipamente avansate, dar și suport tehnic permanent.",
+      "Text": "Specialistii nostri lucreaza in fiecare zi, inclusiv în weekend și de sărbători.",
+      "TradeTitle": "SISTEMELOR DE AUTOMATIZARE COMERȚ ȘI HORECA",
+      "TradeSubtitle": "+37360001103",
+      "PromTitle": "ECHIPAMENTUL INDUSRIAL",
+      "PromSubtitle": "+37369900989"
+    },
+    "DivSupport": {
+      "Title": "DESERVIREA TEHNICĂ"
+    },
+    "Text": {
+      "Left": "Deservirea si suportul tehnic este oferit de către specialiști calificaţi şi cu experiență al companiei noastre.<br>În cazul unor defecțiuni al echipamentelor, veţi primi o consultaţie la telefon, și vi se va oferi o soluție optimă a problemei. În cazul în care, soluționarea la distanță nu este posibilă, personalul nostru va prelua cererea Dumneavoastră, și în scurt timp va veni echipa de deservire, pentru efectuarea lucrărilor la locul de faţă. <br>",
+      "Right": "Specialiştii - tehnicieni oferă lucrări de întreținere și reparații al diferitor grade de dificultăţi, iar atunci când este necesar, sunt atraşi şi ingineri de software al companiei. În aceste lucrări, sunt folosite piese de schimb originale si materiale consumabile.<br>Noi garantăm clienților noștri asistență tehnică operativă și consultanţă profesională, la orice întrebare şi în cele mai dificile cazuri.<br>"
+    }
+  },
+  "AutomaticSystem": {
+    "Header": {
+      "Title": "Sistem automat de control al greutății și dimensiunilor",
+      "SubTitle": "Sistemul automat de control al greutății și al dimensiunii (SACGD) a fost dezvoltat pentru cântărirea rapidă și măsurarea dimensiunilor vehiculelor în timpul deplasării lor pe șosea, fără a reduce viteza de mișcare. Destinația principală al sistemei  este detectarea preliminară a fluxului de trafic al vehiculelor care se deplasează peste limitele de greutate și dimensiune stabilite de legislația și reglementările actuale.",
+      "FuncTitle": "Sistemul oferă:",
+      "FuncText": "<li>Identificarea încălcărilor legislației actuale în domeniul traficului rutier, a încălcărilor transportului de mărfuri voluminoase și / sau grele în transportul de marfă.</li><li>Păstrarea autostrăzilor și îmbunătățirea siguranței transportului pe autostrăzile naționale.</li><li>Eliminarea influenței factorului uman asupra selecției preliminare a transportului de marfă în exces de mărfuri voluminoase și / sau grele.</li><li>Căutarea de fonduri suplimentare care suplinează bugetul național pentru finanțarea întreținerii și construcției de autostrăzi din colectarea amenzilor pentru încălcarea regulilor pentru transportul mărfurilor voluminoase și grele.</li>"
+    },
+    "TableOne": {
+      "TitleOne": "Schema procesului de măsurare a greutății și dimensiunilor autovehiculelor cu un punct staționar de verificare a greutății și dimensiunilor vehiculelor.",
+      "TitleTwo": "Schema procesului de măsurare a greutății și dimensiunilor autovehiculelor cu două puncte staționare de verificare a greutății și dimensiunilor vehiculelor.",
+      "DescOne": "Camioanele cu greutate excesivă și sarcină pe osie sunt indicate cu roșu.",
+      "DescTwo": "Camioanele cu exces de dimensiuni sunt indicate cu galben."
+    },
+    "ImageList": {
+      "One": "În fereastra deschisă a tabletei inspectorului rutier, puteți vedea imaginea camionului infractorului.",
+      "Two": "Inspectorul rutier primește informații de la punctul automat de control al greutății SACGD pe tabletă. În fereastra deschisă, vehiculele care circulă sunt afișate pe rânduri.",
+      "TwoTwo": "Contravenientul este evidențiat în galben. În font roșu este înscris cu cât depășește sarcina pe osie sau dimensiunile.",
+      "Three": "Inspectorul rutier are posibilitatea de a vedea distribuția sarcinii pe osie în fereastra extinsă.",
+      "FuncTitle": "Unicitatea sistemului constă în faptul, că vă permite să determinați fără a reduce viteza de mișcare:",
+      "FuncText": "<li>Greutatea vehiculului.</li><li>Sarcina terasamentului pentru fiecare axă.</li><li>Dimensiunile vehiculului.</li><li>Numărul de axe și distanța dintre ele.</li><li>Viteza vehiculului.</li><li>Fixarea plăcuțelor de înmatriculare de stat.</li>",
+      "FuncTwoTitle": "Posibilități opționale:",
+      "FuncTwoText": "<li>Colectarea informațiilor privind intensitatea traficului pe drumuri și clasificarea transportului.</li><li>Protecția datelor la toate etapele procesării (colectare, stocare, transfer).</li><li>Sistem de autodiagnostic pentru toate componentele.</li>"
+    },
+    "Set": {
+      "Title": "Componentele sistemului:",
+      "Text": "<li>Senzori piezocristalici - determină greutatea camioanelor fără a reduce viteza.</li>",
+      "TextTwo": "<li>Senzori optici - determină dimensiunile camioanelor.</li>",
+      "TextThree": "<li>Aparate foto și fixare video - capturează imaginea camionului și îl identifică după numărul de înmatriculare de stat.</li>",
+      "TextFour": "<li>Dulap de control (cu protecție antivandal) - Controlul echipamentelor periferice, criptarea și transmiterea de date.</li>",
+      "TextFive": "<li>Senzori inductivi - înregistrează acțiunea de trecere și viteza de deplasare acamioanelor.</li>",
+      "ImageTitle": "Punctul staționar de verificare a greutății și dimensiunilor vehiculelor (PSVMD) ",
+      "ImageSpec": "1. Amplasament -1000m² pentru instalarea unui punct de control al greutății și măsurarea dimensiunilor camioanelor, 150m² - cântar și căi de acces la acesta, 850m² - parcare.<br><br>2. Cântar - pentru cântărirea camioanelor pe axe și determinarea greutății totale.<br><br>3. Bariere - pentru a restricționa intrarea vehiculelor pe cântar.<br><br>4. Camere foto și video - pentru fixarea camioanelor în momentul cântăririi.<br><br>5. Panou la distanță - indicarea încărcăturilor pe osie a camioanelor, greutatea totală a camioanelor, numărul de înregistrare de stat al camionului.<br><br>6. Camera de control - loc de muncă pentru operator și inspectorul rutier. Operator, un lucrător autorizat pentru măsurarea greutății și dimensiunilor camionului.<br><br>7. Panou informativ - informații despre metoda legală de cântărire publicate în Monitorul Oficial al Republicii Moldova, precum și informații despre toate normele legale privind încălcările.<br><br>8. Mijloace standardizate pentru măsurarea dimensiunilor camioanelor.<br><br>"
+    },
+    "Table2": {
+      "Title": "Descrierea procesului de control al greutății și dimensiunilor",
+      "One1": "Trecerea camionului prin SACGD",
+      "One2": "Camionul trece prin zona de monitorizare",
+      "Two1": "Obținerea parametrilor camionului",
+      "Two2": "Echipamentul punctului automat de control al greutății SACGD determină dimensiunile, parametrii greutății, numărul de înregistrare al mijlocului de transport, măsoară viteza și face fotografierea.",
+      "Three1": "Transferul datelor către PSVMD",
+      "Three2": "Datele primite sunt transmise la punctul staționar de control automat al greutății și măsurarea dimensiunilor SACGD.",
+      "Four1": "Transferul datelor contravenientului pe tableta inspectorului rutier nr. 1",
+      "Four2": "Datele procesate sunt transferate pe tabletă inspectorului rutier nr. 1, care obligă contravenientul să treacă verificarea pe PSVMD.",
+      "Five1": "Camionul este direcționat de inspectorul rutier nr. 2.",
+      "Five2": "Datele procesate sunt transferate pe tabletă inspectorului rutier nr. 1, care obligă contravenientul să treacă un control pe PSVMD.",
+      "Six1": "Trecerea camionului prin PSVMD",
+      "Six2": "Inspectorul rutier direcționează camionul contravenientului pentru cântărire și / sau pentru măsurarea dimensiunilor, în funcție de infracțiune. Cântărirea automată a camioanelor și măsurarea dimensiunilor. Traversarea camionului pe cântar cu o viteză de 5 km / h.",
+      "Seven1": "Obținerea parametrilor camionului și eliberarea unui certificat de cântărire sau de măsurare",
+      "Seven2": "Operatorul, după primirea datelor privind cântărirea automată a camionului și / sau măsurarea dimensiunilor camionului, eliberează un certificat de măsurare.",
+      "Eight1": "Transmiterea certificatului cu datele de măsurare ale contravenientului către inspector pentru întocmirea unui protocol",
+      "Eight2": "Inspectorul de trafic nr. 2 primește un certificat de măsurare a camionului. Pe baza acestui document, el redactează un protocol privind încălcarea Regulilor privind transportarea mărfurilor pe teritoriul Republicii Moldova."
+    },
+    "Schema": {
+      "Title": "Descrierea procesului de control al greutății și dimensiunii. Transferul de date și siguranța acestora pe server."
+    },
+    "Document": {
+      "Title": "Exemplu de certificat de cântărire și măsurare a dimensiunilor camionului"
+    },
+    "CertInfo": {
+      "Title": "Certificatul de măsurare este emis de o organizație acreditată pentru măsurare",
+      "Text": "<li>Tipărit pe formulare stricte de strictă evidență.</li><li>Inspectorul rutier scanează certificatul pentru a introduce automat datele de măsurare, precum și seria și numărul acestui document.</li>"
+    },
+    "Last": {
+      "Title": "Avantajele sistemului automat de control al greutății și dimensiunilor",
+      "Text1": "The advantages of the automatic weight and dimension control system",
+      "Text2": "Crearea unei baze de date cu contravenienți pentru a interzice în continuare circulația acestor  mijloace de transport pe drumurile Republicii Moldova sau revocarea licenței de activitate a agenților economici.",
+      "Text3": "Preselecția mijloacelor de transport de marfă se efectuează automat.",
+      "Text4": "Date codificate (criptate).",
+      "Text5": "Funcționarea continuă și neîntreruptă a sistemului.",
+      "Text6": "Măsurarea greutății mijloacelor de transport de marfă pe cântarul auto în regim automat se efectuează cu o eroare de cel mult 1%.",
+      "Text7": "Un certificat de cântărire a transportului de mărfuri este emis cu un număr de serie, care este atașat la protocol.",
+      "Text8": "Mijloace standardizate pentru măsurarea dimensiunilor mijloacelor de transport de marfă.",
+      "Text9": "Informațiile despre excesul detectat al parametrilor admisibili ai mijloacelor de transport de marfă sunt transmise online către punctele "
+    }
+  }
+
+}

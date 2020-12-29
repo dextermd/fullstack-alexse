@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {Injectable, Injector, NgModule, PLATFORM_ID} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import {AppRoutingModule, routes} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -134,8 +134,8 @@ import { SecondbilliardComponent } from './components/auto-billiard-page/secondb
 import { NewsPageComponent } from './components/news-page/news-page.component';
 import { PostComponent } from './components/news-page/post/post.component';
 import { PostPageComponent } from './components/news-page/post-page/post-page.component';
-import {SharedModule} from './shared.module';
-import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import { SharedModule} from './shared.module';
+import {HTTP_INTERCEPTORS, HttpBackend, HttpClient, HttpClientModule} from '@angular/common/http';
 
 import {registerLocaleData} from '@angular/common';
 import ruLocale from '@angular/common/locales/ru';
@@ -157,7 +157,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import {SearchProductPipe} from './admin/shared/pipes/searchProduct.pipe';
 import {SortPipe} from './admin/shared/pipes/sort.pipe';
 import {NgPipesModule} from 'ngx-pipes';
-import {TranslateModule} from '@ngx-translate/core';
+import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
 import {FERootModule, FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 import { IndustrialComponent } from './components/industrial/industrial.component';
 import { CategoryPageComponent } from './components/industrial/category-page/category-page.component';
@@ -194,6 +194,29 @@ import { SixauroraComponent } from './components/aurora/sixaurora/sixaurora.comp
 import { SevenauroraComponent } from './components/aurora/sevenaurora/sevenaurora.component';
 import { EightauroraComponent } from './components/aurora/eightaurora/eightaurora.component';
 import { AuroraComponent } from './components/aurora/aurora.component';
+import {LocalizeParser, LocalizeRouterModule, LocalizeRouterSettings, ManualParserLoader} from 'localize-router';
+import {LocalizeRouterHttpLoader} from 'localize-router-http-loader';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {RouterModule} from '@angular/router';
+import {AbstractParser, HttpLoader, LightLocalizeRouterModule} from '@elham-oss/light-localize-router';
+import { Location } from '@angular/common';
+
+
+// export function HttpLoaderFactory(http: HttpClient) {
+//   return new TranslateHttpLoader(http);
+//
+// }
+
+@Injectable({providedIn: 'root'})
+export class HttpClientTrans extends HttpClient {
+  constructor(handler: HttpBackend) {
+    super(handler);
+  }
+}
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, '/assets/locales/', '.json');
+}
 
 registerLocaleData( ruLocale, 'ru');
 registerLocaleData( roLocale, 'ro');
@@ -397,6 +420,24 @@ registerLocaleData( roLocale, 'ro');
     FroalaViewModule,
     FroalaEditorModule,
     FERootModule,
+
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClientTrans]
+      }
+    }),
+    RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'}),
+    LightLocalizeRouterModule.forRoot({
+      parser: {
+        provide: AbstractParser,
+        useFactory: (translate, location, injector, platformId, http) => {
+          return new HttpLoader(translate, location, http, injector, platformId);
+        },
+        deps: [TranslateService, Location, Injector, PLATFORM_ID, HttpClient]
+      }
+    })
   ],
   // providers: [INTERCEPTOR_PROVIDER],
   providers: [
@@ -406,6 +447,7 @@ registerLocaleData( roLocale, 'ro');
       useClass: TokenInterceptor
     }
   ],
+
   exports: [
     LoaderComponent,
     AlertingComponent,

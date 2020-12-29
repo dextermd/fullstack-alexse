@@ -4,7 +4,7 @@ import {NavigationEnd, Router} from '@angular/router';
 import {filter} from 'rxjs/operators';
 import {LocalService} from './shared/local.service';
 import {TranslateService} from '@ngx-translate/core';
-import {isPlatformBrowser, isPlatformServer} from '@angular/common';
+
 
 declare var gtag;
 
@@ -39,10 +39,11 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.localService.getJsonValue('lang') === null) {
-      this.localService.setJsonValue('lang', 'ru');
-      this.translate.setDefaultLang('ru');
-    }
+    // if (this.localService.getJsonValue('lang') === null) {
+    //   this.localService.setJsonValue('lang', 'ru');
+    //   this.translate.setDefaultLang('ru');
+    // }
+
     const potentialToken = this.localService.getJsonValue('auth-token');
     if (potentialToken !== null) {
       this.auth.setToken(potentialToken);

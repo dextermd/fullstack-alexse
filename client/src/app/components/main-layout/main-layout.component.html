@@ -116,6 +116,7 @@
         <!--                 aria-label="Search">-->
         <!--        </form>-->
         <ul class="navbar-nav ml-auto d-none d-md-block">
+
           <ng-container *ngIf="lang == 'ru'">
             <li class="nav-item  navbar-brand">
               <img src="assets/support/060.png" alt="" class="pr-5">
@@ -129,25 +130,25 @@
           </ng-container>
 
           <ng-container *ngIf="lang == 'en'">
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item  navbar-brand">
               <img src="assets/support/060_en.png" alt="" class="pr-5">
             </li>
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item  navbar-brand">
               <a href="tel:+373060001103"> <img src="assets/support/060001103-1NEW_en.png" alt="" class="pr-3"></a>
             </li>
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item  navbar-brand">
               <a href="tel:+373069900989"> <img src="assets/support/069900989-1NEW_en.png" alt="" class="pr-5"></a>
             </li>
           </ng-container>
 
           <ng-container *ngIf="lang == 'ro'">
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item  navbar-brand">
               <img src="assets/support/060_ro.png" alt="" class="pr-5">
             </li>
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item  navbar-brand">
               <a href="tel:+373060001103"> <img src="assets/support/060001103-1NEW_ro.png" alt="" class="pr-3"></a>
             </li>
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item  navbar-brand">
               <a href="tel:+373069900989"> <img src="assets/support/069900989-1NEW_ro.png" alt="" class="pr-5"></a>
             </li>
           </ng-container>
@@ -226,11 +227,11 @@
 
               <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-5">
 
-                <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
+                <a (click)="changeLang('ru')" routerLink="/ru" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
                   Russian</a>
-                <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
+                <a (click)="changeLang('en')" routerLink="/en"class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
                   English</a>
-                <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
+                <a (click)="changeLang('ro')" routerLink="/ro" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
                   Romanian</a>
               </div>
 
@@ -338,11 +339,11 @@
 
                 <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
 
-                  <a (click)="changeLang('ru')" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
+                  <a (click)="changeLang('ru')" routerLink="/ru" class="dropdown-item"> <img height="30px" src="assets/lang/russia.png">
                     Russian</a>
-                  <a (click)="changeLang('en')" class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
+                  <a (click)="changeLang('en')" routerLink="/en"class="dropdown-item"> <img height="30px" src="assets/lang/en.png">
                     English</a>
-                  <a (click)="changeLang('ro')" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
+                  <a (click)="changeLang('ro')" routerLink="/ro" class="dropdown-item"> <img height="30px" src="assets/lang/romania.png">
                     Romanian</a>
                 </div>
 
