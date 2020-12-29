@@ -180,21 +180,15 @@
                       <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
                          class="list-group-item list-group-item-action waves-light">
                         <ng-container *ngIf="this.main.lang == 'ru'">
-                          <div (click)="goToProduct()">
                           {{psubcategory.name}}
-                          </div>
                         </ng-container>
 
                         <ng-container *ngIf="this.main.lang == 'ro'">
-                          <div (click)="goToProduct()">
                           {{psubcategory.nameRo}}
-                          </div>
                         </ng-container>
 
                         <ng-container *ngIf="this.main.lang == 'en'">
-                          <div (click)="goToProduct()">
                           {{psubcategory.nameEn}}
-                          </div>
                         </ng-container>
                       </a>
                     </ng-container>
@@ -237,26 +231,20 @@
                       <a (click)="defaultPage()" [routerLink]="['/products/subcategory', psubcategory._id]"
                          class="list-group-item list-group-item-action waves-light">
                         <ng-container *ngIf="this.main.lang == 'ru'">
-                          <div (click)="goToProduct()">
                           <div (click)="test4.toggle()">
                             {{psubcategory.name}}
-                          </div>
                           </div>
                         </ng-container>
 
                         <ng-container *ngIf="this.main.lang == 'ro'">
-                          <div (click)="goToProduct()">
                           <div (click)="test4.toggle()">
                             {{psubcategory.nameRo}}
-                          </div>
                           </div>
                         </ng-container>
 
                         <ng-container *ngIf="this.main.lang == 'en'">
-                          <div (click)="goToProduct()">
                           <div (click)="test4.toggle()">
                             {{psubcategory.nameEn}}
-                          </div>
                           </div>
                         </ng-container>
                       </a>
