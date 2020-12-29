@@ -46,7 +46,6 @@ import {DozatorModernPageComponent} from './components/bunker/dozator-modern-pag
 // tslint:disable-next-line:max-line-length
 import {AutomaticWeightControlSystemComponent} from './components/automatic-weight-control-system/automatic-weight-control-system.component';
 import {AuroraComponent} from './components/aurora/aurora.component';
-import {LocalizeRouterModule} from 'localize-router';
 
 
 
