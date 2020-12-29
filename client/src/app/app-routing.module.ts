@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {Routes, RouterModule, PreloadAllModules} from '@angular/router';
+import {Routes, RouterModule} from '@angular/router';
 import {MainLayoutComponent} from './components/main-layout/main-layout.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
 import {ProgrammesPageComponent} from './components/programmes-page/programmes-page.component';
@@ -43,17 +43,20 @@ import {DozatorOpenPageComponent} from './components/bunker/dozator-open-page/do
 import {DozatorViboiPageComponent} from './components/bunker/dozator-viboi-page/dozator-viboi-page.component';
 import {DozatorTablePageComponent} from './components/bunker/dozator-table-page/dozator-table-page.component';
 import {DozatorModernPageComponent} from './components/bunker/dozator-modern-page/dozator-modern-page.component';
+// tslint:disable-next-line:max-line-length
 import {AutomaticWeightControlSystemComponent} from './components/automatic-weight-control-system/automatic-weight-control-system.component';
 import {AuroraComponent} from './components/aurora/aurora.component';
+import {LocalizeRouterModule} from 'localize-router';
 
 
 
 
-const routes: Routes = [
+
+export const routes: Routes = [
   {
-    path: '', component: MainLayoutComponent, children: [
+    path: '',  component: MainLayoutComponent,  children: [
       {path: '', redirectTo: '/', pathMatch: 'full'},
-      {path: '', component: HomePageComponent},
+      {path: '', component: HomePageComponent },
       // tslint:disable-next-line:max-line-length
       {path: 'ro/price/trade-equipment/itemlist/category/3-kassovye-apparaty', redirectTo: '/products/subcategory/5f1e87661c902614531f7ece'},
       {path: 'ro/industrial-scales', redirectTo: '/auto-index'},
@@ -556,8 +559,9 @@ const routes: Routes = [
     // preloadingStrategy: PreloadAllModules,
     enableTracing: false,
     scrollPositionRestoration: 'top',
-    initialNavigation: 'enabled'
+    initialNavigation: 'enabled',
 }),
+
   ],
   exports: [RouterModule]
 })

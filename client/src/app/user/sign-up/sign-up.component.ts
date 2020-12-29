@@ -3,7 +3,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {AuthService} from '../../shared/auth.service';
 import {Route, Router} from '@angular/router';
 import {Subscription} from 'rxjs';
-import {AlertService} from "../../admin/shared/services/alert.service";
+import {AlertService} from '../../admin/shared/services/alert.service';
 
 @Component({
   selector: 'app-sign-up',
