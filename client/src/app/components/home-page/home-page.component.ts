@@ -17,9 +17,11 @@ export class HomePageComponent implements OnInit {
     private titleService: Title,
     private meta: Meta,
   ) {
+    this.translate.use(this.localService.getJsonValue('lang'));
     this.translate.get('MAIN.Title').subscribe(res => {
       this.titleService.setTitle(res);
     });
+    this.translate.use(this.localService.getJsonValue('lang'));
     this.translate.get('MAIN.Desc').subscribe(res => {
       this.meta.addTag({name: 'description', content: res});
     });
