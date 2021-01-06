@@ -14,7 +14,7 @@ import {LocalService} from './shared/local.service';
 import {LocalizeRouterModule, LocalizeRouterSettings} from 'localize-router';
 import {routes} from './app-routing.module';
 import {LocalizeRouterHttpLoader} from 'localize-router-http-loader';
-import {MainLayoutComponent} from "./components/main-layout/main-layout.component";
+import {MainLayoutComponent} from './components/main-layout/main-layout.component';
 
 
 
