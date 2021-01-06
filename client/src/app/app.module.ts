@@ -428,7 +428,10 @@ registerLocaleData( roLocale, 'ro');
         deps: [HttpClientTrans]
       }
     }),
-    RouterModule.forRoot(routes, {onSameUrlNavigation: 'reload'}),
+    RouterModule.forRoot(routes, {
+      onSameUrlNavigation: 'reload',
+      scrollPositionRestoration: 'top',
+    }),
     LightLocalizeRouterModule.forRoot({
       parser: {
         provide: AbstractParser,
