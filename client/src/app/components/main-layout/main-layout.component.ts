@@ -37,10 +37,20 @@ export class MainLayoutComponent implements OnInit {
     this.cartService.cart$.subscribe((data) => {
       this.card = data;
     });
+
+    if (this.translate.currentLang) {
+      this.test = this.translate.currentLang;
+
+      console.log(this.test);
+
+      this.localService.setJsonValue('lang', this.translate.currentLang);
+    }
   }
 
 
   ngOnInit(): void {
+    this.test = this.localService.getJsonValue('lang');
+    console.log(this.test);
 
     if (this.localService.getJsonValue('lang') === null)
     {
@@ -55,6 +65,14 @@ export class MainLayoutComponent implements OnInit {
     // // this.lang = this.translate.getBrowserLang();
     // this.lang = this.localService.getJsonValue('lang');
     if (this.translate.currentLang){
+      this.test = this.translate.currentLang;
+
+      console.log(this.test);
+
+      this.localService.setJsonValue('lang', this.translate.currentLang );
+
+      console.log(this.localService.getJsonValue('lang'));
+
       this.translate.setDefaultLang(this.translate.currentLang);
       this.lang = this.translate.currentLang;
     } else {
@@ -62,9 +80,7 @@ export class MainLayoutComponent implements OnInit {
       this.lang = this.localService.getJsonValue('lang');
 
     }
-    this.test = this.translate.currentLang;
 
-    console.log(this.test);
     // this.order.cartItems = JSON.parse(localStorage.getItem('cartItems'));
     this.order.cartItems = this.localService.getJsonValue('cartItems');
   }
