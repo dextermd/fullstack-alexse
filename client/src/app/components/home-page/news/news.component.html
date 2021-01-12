@@ -24,7 +24,17 @@
           <div class="card-body">
 
             <!-- Title -->
-            <a [routerLink]="['news/post', post._id]" class="black-text font-weight-bold">{{post.title}}</a>
+            <a [routerLink]="['news/post', post._id]" class="black-text font-weight-bold">
+              <ng-container *ngIf="this.main.lang == 'ru'">
+                {{post.title}}
+              </ng-container>
+              <ng-container *ngIf="this.main.lang == 'en'">
+                {{post.titleEn}}
+              </ng-container>
+              <ng-container *ngIf="this.main.lang == 'ro'">
+                {{post.titleRo}}
+              </ng-container>
+            </a>
             <!-- Text -->
             <p class="card-title text-muted font-small mt-3 mb-2">
               <ng-container *ngIf="this.main.lang == 'ru'">
