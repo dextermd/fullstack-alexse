@@ -5,19 +5,33 @@
 
     <div class="text-center ">
     <h2>
-      <a class="font-weight-bold">{{post.title}}</a>
+      <a class="font-weight-bold">
+        <ng-container *ngIf="this.main.lang == 'ru'">
+          {{post.title}}
+        </ng-container>
+        <ng-container *ngIf="this.main.lang == 'en'">
+          {{post.titleEn}}
+        </ng-container>
+        <ng-container *ngIf="this.main.lang == 'ro'">
+          {{post.titleRo}}
+        </ng-container>
+      </a>
     </h2>
     <p>{{post.date | date: 'medium':null:'ru'}}</p>
       <hr>
     </div>
-<!--    <div class="flex-center">-->
-<!--    <div class=" col-md-8">-->
-<!--    <img class="card-img-top img-fluid" src="{{post.img}}" alt="Card image cap">-->
-<!--    </div>-->
-<!--    </div>-->
+
+
     <div>
-      <quill-view-html [content]="post.content"></quill-view-html>
-<!--      <quill-view [content]="post.text" format="image" theme="snow"></quill-view>-->
+      <ng-container *ngIf="this.main.lang == 'ru'">
+        <quill-view-html [content]="post.content"></quill-view-html>
+      </ng-container>
+      <ng-container *ngIf="this.main.lang == 'en'">
+        <quill-view-html [content]="post.contentEn"></quill-view-html>
+      </ng-container>
+      <ng-container *ngIf="this.main.lang == 'ro'">
+        <quill-view-html [content]="post.contentRo"></quill-view-html>
+      </ng-container>
 
     </div>
 

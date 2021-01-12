@@ -6,7 +6,16 @@
       <select  [(ngModel)]="selected" (change)="onSelect(selected)"  class="browser-default custom-select" style="width: 300px">
         <option  value="Все">Все</option>
         <option *ngFor="let categor of category" [value]="categor._id ">
-          {{categor.name}}
+          <ng-container *ngIf="this.main.lang == 'ru'">
+            {{categor.name}}
+          </ng-container>
+          <ng-container *ngIf="this.main.lang == 'en'">
+            {{categor.nameEn}}
+          </ng-container>
+          <ng-container *ngIf="this.main.lang == 'ro'">
+            {{categor.nameRo}}
+          </ng-container>
+
         </option>
       </select>
 
@@ -38,18 +47,37 @@
           <div class="card-body">
 
             <!-- Title -->
-            <a class="black-text font-weight-bold ">{{post.title}} </a>
+            <a class="black-text font-weight-bold ">
+              <ng-container *ngIf="this.main.lang == 'ru'">
+                {{post.title}}
+              </ng-container>
+              <ng-container *ngIf="this.main.lang == 'en'">
+                {{post.titleEn}}
+              </ng-container>
+              <ng-container *ngIf="this.main.lang == 'ro'">
+                {{post.titleRo}}
+              </ng-container>
+
+            </a>
           </div>
 
             <!-- Text -->
             <div class="pl-1 ">
 <!--              {{post.content}}-->
 
-              <quill-view-html [content]="post.preview" ></quill-view-html>
+              <ng-container *ngIf="this.main.lang == 'ru'">
+                <quill-view-html [content]="post.preview" ></quill-view-html>
+              </ng-container>
+              <ng-container *ngIf="this.main.lang == 'en'">
+                <quill-view-html [content]="post.previewEn" ></quill-view-html>
+              </ng-container>
+              <ng-container *ngIf="this.main.lang == 'ro'">
+                <quill-view-html [content]="post.previewRo" ></quill-view-html>
+              </ng-container>
 <!--              <quill-view-html [content]="(post.content.length > 6) ? (post.content | slice:0:150) +'..':(post.content)" format ="text" theme = "snow" ></quill-view-html>-->
             </div>
             <div class="d-flex justify-content-between pt-3 card-body">
-              <a [routerLink]="['post', post._id]"  type="button" class=" text-primary p-0 mx-0">Читать далее<i class="fa fa-angle-right ml-2"></i></a><a class="d-flex justify-content-end red-text font-weight-bold">{{post.date | date:'dd.MM.yyyy'}}</a>
+              <a [routerLink]="['post', post._id]"  type="button" class=" text-primary p-0 mx-0">{{ 'HOME.NEWS.See' | translate}}<i class="fa fa-angle-right ml-2"></i></a><a class="d-flex justify-content-end red-text font-weight-bold">{{post.date | date:'dd.MM.yyyy'}}</a>
             </div>
 
 

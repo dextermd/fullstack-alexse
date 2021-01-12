@@ -3,6 +3,7 @@ import {Post} from '../../../admin/shared/interfaces';
 import {Subscription} from 'rxjs';
 import {PostsService} from '../../../shared/posts.service';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import {MainLayoutComponent} from "../../main-layout/main-layout.component";
 
 @Component({
   selector: 'app-news',
@@ -17,6 +18,7 @@ export class NewsComponent implements OnInit, OnDestroy {
 
   constructor(
     private postService: PostsService,
+    public main: MainLayoutComponent,
     config: NgbCarouselConfig
   ) {
     config.interval = 10000;

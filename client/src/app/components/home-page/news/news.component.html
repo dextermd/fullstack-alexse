@@ -26,7 +26,17 @@
             <!-- Title -->
             <a [routerLink]="['news/post', post._id]" class="black-text font-weight-bold">{{post.title}}</a>
             <!-- Text -->
-            <p class="card-title text-muted font-small mt-3 mb-2">{{post.preview}}</p>
+            <p class="card-title text-muted font-small mt-3 mb-2">
+              <ng-container *ngIf="this.main.lang == 'ru'">
+                {{post.preview}}
+              </ng-container>
+              <ng-container *ngIf="this.main.lang == 'en'">
+                {{post.previewEn}}
+              </ng-container>
+              <ng-container *ngIf="this.main.lang == 'ro'">
+                {{post.previewRo}}
+              </ng-container>
+            </p>
             <div class="d-flex justify-content-between pt-3">
             <p [routerLink]="['news/post', post._id]" type="button" class=" text-primary p-0 mx-0">{{ 'HOME.NEWS.See' | translate}}<i class="fa fa-angle-right ml-2"></i></p><span class="d-flex justify-content-end">{{post.date | date:'dd.MM.yy': null: 'ru'}}</span>
             </div>
