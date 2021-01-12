@@ -4,6 +4,7 @@ import {Post, PostCategory} from '../../../admin/shared/interfaces';
 import {Observable} from 'rxjs';
 import {ActivatedRoute, Params} from '@angular/router';
 import {PostCategoryService} from '../../../shared/postcategory.service';
+import {MainLayoutComponent} from '../../main-layout/main-layout.component';
 
 
 @Component({
@@ -28,6 +29,7 @@ export class PostComponent implements OnInit {
     private postService: PostsService,
     private categoryService: PostCategoryService,
     private route: ActivatedRoute,
+    public main: MainLayoutComponent
   ) {
   }
 
