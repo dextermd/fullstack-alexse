@@ -54,9 +54,11 @@ module.exports.sendMail = async function (order, callback) {
             return log(err);
         }
 
-            const chatId = -450127205;
-            // send a message to the chat acknowledging receipt of their message
-            bot.sendMessage(chatId, `Проверка !!!!${order.body.c_name} , ${order.body.total_cost}, ${order.body.c_address_shipping}`);
+        const chatId = -450127205;
+        // send a message to the chat acknowledging receipt of their message
+        bot.sendMessage(chatId, `Проверка !!!! ${order.body.c_name} , ${order.body.total_cost}, ${order.body.c_address_shipping} <br>
+          ${order.order.body.list} <em>
+`, {parse_mode: 'HTML'});
 
 
         return log('Email sent!!!');
