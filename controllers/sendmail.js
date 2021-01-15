@@ -6,7 +6,7 @@ const log = console.log;
 module.exports.sendMail = async function (order, callback) {
 
     const TelegramBot = require('node-telegram-bot-api');
-    const token = '1532919521:AAHScEwEHnJX3kWgKYmQq7wmYAi-cECpSjE';
+    const token = '1532919521:AAEXnadaQf-lhIr_wVuDC5JafLXmC4aEG6s';
     const bot = new TelegramBot(token, {polling: true});
 
     let transporter = nodemailer.createTransport({
@@ -70,7 +70,7 @@ module.exports.sendMail = async function (order, callback) {
 // Listen for any kind of message. There are different kinds of
 // messages.
         bot.on('message', (msg) => {
-            const chatId = msg.chat.id;
+            const chatId = -450127205;
 
             // send a message to the chat acknowledging receipt of their message
             bot.sendMessage(chatId, `${order.body.c_name} , ${order.body.total_cost}, ${order.body.c_address_shipping}`);
