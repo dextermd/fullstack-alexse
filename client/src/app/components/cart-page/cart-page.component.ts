@@ -55,9 +55,6 @@ export class CartPageComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.ficat = [];
     console.log(this.ficat);
-    if (this.localService.getJsonValue('ship') === 100) {
-      this.typeShip = 'по Кишиневу';
-    }
     this.typeShip = 'Забрать самостоятельно';
     // this.order.list = JSON.parse(localStorage.getItem('list'));
     // this.order.price = JSON.parse(localStorage.getItem('price'));
@@ -97,7 +94,6 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
   register(type: string) {
     this.typeShip = type;
-    this.localService.setJsonValue('ship', this.typeShip);
     console.log(type);
     if (this.typeShip === 'по Кишиневу' || this.typeShip === 'по Молдове') {
       this.form.controls.c_address_shipping.enable();
@@ -109,6 +105,9 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
   onSubmit() {
     this.panding = true;
+    if (this.typeShip === 'по Кишиневу'){
+      this.order.price += 100;
+    }
     const order: Order = {
       c_name: this.form.value.c_name,
       c_phone: this.form.value.c_phone,
@@ -187,14 +186,6 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
   }
 
-  public computePrice(radio) {
-    if (radio === 100) {
-      this.localService.setJsonValue('ship', 100 );
-    } else {
-      this.localService.removeValue('ship');
-    }
-    return this.order.price += this.localService.getJsonValue('ship');
-  }
 
 
 }
