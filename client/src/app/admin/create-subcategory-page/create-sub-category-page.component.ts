@@ -69,9 +69,9 @@ export class CreateSubCategoryPageComponent implements OnInit {
               name: category.name,
               nameRo: category.nameRo,
               nameEn: category.nameEn,
-              desc: category.name,
-              descRo: category.nameRo,
-              descEn: category.nameEn,
+              desc: category.desc,
+              descRo: category.descRo,
+              descEn: category.descEn,
               num: category.num,
               category: category.category,
             });
