@@ -37,6 +37,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
   isDisableAdr = true;
   orderNumber = 'Отсчет заказов';
   orderState = false;
+  deliveryCost;
 
   constructor(
     config: NgbPopoverConfig,
@@ -92,7 +93,6 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
 
   register(type: string) {
-
     this.typeShip = type;
     console.log(type);
     if (this.typeShip === 'по Кишиневу' || this.typeShip === 'по Молдове') {
@@ -101,6 +101,9 @@ export class CartPageComponent implements OnInit, OnDestroy {
       this.form.controls.c_address_shipping.setValue(null);
       this.form.controls.c_address_shipping.disable();
 
+    }
+    if (this.typeShip === 'по Кишиневу') {
+      this.order.price += 100;
     }
 
   }
