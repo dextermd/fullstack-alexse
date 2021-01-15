@@ -1,21 +1,23 @@
 const nodemailer = require("nodemailer");
 const hbs = require('nodemailer-express-handlebars');
 const log = console.log;
-const TelegramBot = require('node-telegram-bot-api');
-const token = '1532919521:AAHScEwEHnJX3kWgKYmQq7wmYAi-cECpSjE';
+
 
 module.exports.sendMail = async function (order, callback) {
+
+    const TelegramBot = require('node-telegram-bot-api');
+    const token = '1532919521:AAHScEwEHnJX3kWgKYmQq7wmYAi-cECpSjE';
     const bot = new TelegramBot(token, {polling: true});
 
-        let transporter = nodemailer.createTransport({
-            host: "smtp.gmail.com",
-            port: 587,
-            secure: false, // true for 465, false for other ports
-            auth: {
-                user: 'alexsetestone@gmail.com', // generated ethereal user
-                pass: 'zulimp33', // generated ethereal password
-            },
-        });
+    let transporter = nodemailer.createTransport({
+        host: "smtp.gmail.com",
+        port: 587,
+        secure: false, // true for 465, false for other ports
+        auth: {
+            user: 'alexsetestone@gmail.com', // generated ethereal user
+            pass: 'zulimp33', // generated ethereal password
+        },
+    });
 
     const handlebarOptions = {
         viewEngine: {
@@ -29,50 +31,57 @@ module.exports.sendMail = async function (order, callback) {
     };
 
     transporter.use('compile', hbs(handlebarOptions));
-        let mailOptions = {
-            from: '"Ваша покупка на Alex S&E SRL" <no-reply@alex-se.com>', // sender address
-            to: `${order.body.c_email}, reception@alex-se.com, liudik_alex@mail.ru, dextermdpay@gmail.com`,
-            subject: "Ваша покупка на AlexSE ✔", // Subject line
-            template: 'index',
-            context: {
-                name: order.body.c_name,
-                order: order.body.order,
-                total_cost: order.body.total_cost,
-                c_address_shipping: order.body.c_address_shipping,
-                date: order.body.date,
-                items: order.body.list,
+    let mailOptions = {
+        from: '"Ваша покупка на Alex S&E SRL" <no-reply@alex-se.com>', // sender address
+        to: `${order.body.c_email}, reception@alex-se.com, liudik_alex@mail.ru, dextermdpay@gmail.com`,
+        subject: "Ваша покупка на AlexSE ✔", // Subject line
+        template: 'index',
+        context: {
+            name: order.body.c_name,
+            order: order.body.order,
+            total_cost: order.body.total_cost,
+            c_address_shipping: order.body.c_address_shipping,
+            date: order.body.date,
+            items: order.body.list,
 
-            }, // send extra values to template
-        };
+        }, // send extra values to template
+    };
 
 
-        // send mail with defined transport object
-        let info = await transporter.sendMail(mailOptions, (err, data) => {
-            if (err) {
-                return log(err);
-            }
-            // Listen for any kind of message. There are different kinds of
+    // send mail with defined transport object
+    let info = await transporter.sendMail(mailOptions, (err, data) => {
+        if (err) {
+            return log(err);
+        }
+
+        // Matches "/echo [whatever]"
+        bot.onText(/\/echo (.+)/, (msg, match) => {
+            // 'msg' is the received Message from Telegram
+            // 'match' is the result of executing the regexp above on the text content
+            // of the message
+
+            const chatId = msg.chat.id;
+            const resp = match[1]; // the captured "whatever"
+
+            // send back the matched "whatever" to the chat
+            bot.sendMessage(chatId, resp);
+        });
+
+// Listen for any kind of message. There are different kinds of
 // messages.
-            bot.on('message', (msg) => {
-                const chatId = msg.chat.id;
+        bot.on('message', (msg) => {
+            const chatId = msg.chat.id;
 
-                console.log(msg);
-                // send a message to the chat acknowledging receipt of their message
-                const text = msg.text;
-                if(text.includes('picture') || text.includes('image')){
-                    const imgUrl = "https://picsum.photos/500/700";
-                    bot.sendPhoto(chatId,imgUrl);
-                }else{
-                    bot.sendMessage(chatId, 'Проверка:'+text);
-                }
-            });
-            return log('Email sent!!!');
+            // send a message to the chat acknowledging receipt of their message
+            bot.sendMessage(chatId, `${order.body.c_name} , ${order.body.total_cost}, ${order.body.c_address_shipping}`);
         });
 
 
+        return log('Email sent!!!');
+    });
+
+
 };
-
-
 
 
 module.exports.sendQuestion = async function (question, callback) {
@@ -100,7 +109,7 @@ module.exports.sendQuestion = async function (question, callback) {
 
     transporter.use('compile', hbs(handlebarOptions));
     let mailOptions = {
-        from: '"[HELP] У Клиента"' + question.body.name +'"есть вопрос!!!"<no-reply@alex-se.com>', // sender address
+        from: '"[HELP] У Клиента"' + question.body.name + '"есть вопрос!!!"<no-reply@alex-se.com>', // sender address
         to: 'reception@alex-se.com, liudik_alex@mail.ru', // list of receivers
         subject: question.body.subject, // Subject line
         template: 'question',
@@ -114,7 +123,6 @@ module.exports.sendQuestion = async function (question, callback) {
     };
 
 
-
     // send mail with defined transport object
     let info = await transporter.sendMail(mailOptions, (err, data) => {
         if (err) {
@@ -125,9 +133,6 @@ module.exports.sendQuestion = async function (question, callback) {
 
 
 };
-
-
-
 
 
 module.exports.sendCallBack = async function (call, callback) {
@@ -155,7 +160,7 @@ module.exports.sendCallBack = async function (call, callback) {
 
     transporter.use('compile', hbs(handlebarOptions));
     let mailOptions = {
-        from: '"[CALLBACK] ОБРАТНЫЙ ЗВОНОК" "на номер"'  + " " + call.body.phone, // sender address
+        from: '"[CALLBACK] ОБРАТНЫЙ ЗВОНОК" "на номер"' + " " + call.body.phone, // sender address
         to: 'reception@alex-se.com, liudik_alex@mail.ru', // list of receivers
         subject: '[CALLBACK] ОБРАТНЫЙ ЗВОНОК' + call.body.phone, // Subject line
         template: 'callback',
@@ -166,7 +171,6 @@ module.exports.sendCallBack = async function (call, callback) {
 
         }, // send extra values to template
     };
-
 
 
     // send mail with defined transport object
