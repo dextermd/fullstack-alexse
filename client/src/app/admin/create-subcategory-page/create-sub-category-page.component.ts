@@ -41,6 +41,9 @@ export class CreateSubCategoryPageComponent implements OnInit {
       name: new FormControl(null, Validators.required),
       nameRo: new FormControl(null, Validators.required),
       nameEn: new FormControl(null, Validators.required),
+      desc: new FormControl(null, Validators.required),
+      descRo: new FormControl(null, Validators.required),
+      descEn: new FormControl(null, Validators.required),
       num: new FormControl(null, Validators.required),
       category: new FormControl(null, Validators.required),
     });
@@ -66,6 +69,9 @@ export class CreateSubCategoryPageComponent implements OnInit {
               name: category.name,
               nameRo: category.nameRo,
               nameEn: category.nameEn,
+              desc: category.name,
+              descRo: category.nameRo,
+              descEn: category.nameEn,
               num: category.num,
               category: category.category,
             });
@@ -102,6 +108,9 @@ export class CreateSubCategoryPageComponent implements OnInit {
         this.form.value.name,
         this.form.value.nameRo,
         this.form.value.nameEn,
+        this.form.value.desc,
+        this.form.value.descRo,
+        this.form.value.descEn,
         this.form.value.num,
         this.form.value.category
       );
@@ -111,6 +120,9 @@ export class CreateSubCategoryPageComponent implements OnInit {
         this.form.value.name,
         this.form.value.nameRo,
         this.form.value.nameEn,
+        this.form.value.desc,
+        this.form.value.descRo,
+        this.form.value.descEn,
         this.form.value.num,
         this.form.value.category
       );

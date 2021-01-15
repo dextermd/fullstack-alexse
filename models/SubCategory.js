@@ -17,6 +17,18 @@ const subcategorySchema = new Schema({
         required: true,
         unique: true,
     },
+    desc: {
+        type: String,
+        unique: true,
+    },
+    descRo: {
+        type: String,
+        unique: true,
+    },
+    descEn: {
+        type: String,
+        unique: true,
+    },
     num: {
         type: Number,
         unique: true,

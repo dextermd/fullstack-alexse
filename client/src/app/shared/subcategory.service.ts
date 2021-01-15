@@ -22,6 +22,9 @@ export class SubcategoryService {
     name: string,
     nameRo: string,
     nameEn: string,
+    desc: string,
+    descRo: string,
+    descEn: string,
     num: any,
     category: string
   ): Observable<SubCategory>  {
@@ -29,6 +32,9 @@ export class SubcategoryService {
     fd.append('name', name);
     fd.append('nameRo', nameRo);
     fd.append('nameEn', nameEn);
+    fd.append('desc', desc);
+    fd.append('descRo', descRo);
+    fd.append('descEn', descEn);
     fd.append('num', num);
     fd.append('category', category);
 
@@ -41,6 +47,9 @@ export class SubcategoryService {
     name: string,
     nameRo: string,
     nameEn: string,
+    desc: string,
+    descRo: string,
+    descEn: string,
     num: any,
     category: string
   ): Observable<SubCategory>  {
@@ -48,6 +57,9 @@ export class SubcategoryService {
     fd.append('name', name);
     fd.append('nameRo', nameRo);
     fd.append('nameEn', nameEn);
+    fd.append('desc', desc);
+    fd.append('descRo', descRo);
+    fd.append('descEn', descEn);
     fd.append('num', num);
     fd.append('category', category);
 

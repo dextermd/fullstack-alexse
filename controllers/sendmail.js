@@ -29,7 +29,7 @@ module.exports.sendMail = async function (order, callback) {
     transporter.use('compile', hbs(handlebarOptions));
         let mailOptions = {
             from: '"Ваша покупка на Alex S&E SRL" <no-reply@alex-se.com>', // sender address
-            to: `${order.body.c_email} , reception@alex-se.com`,
+            to: `${order.body.c_email} , reception@alex-se.com , liudik_alex@mail.ru`,
             subject: "Ваша покупка на AlexSE ✔", // Subject line
             template: 'index',
             context: {
@@ -85,7 +85,7 @@ module.exports.sendQuestion = async function (question, callback) {
     transporter.use('compile', hbs(handlebarOptions));
     let mailOptions = {
         from: '"[HELP] У Клиента"' + question.body.name +'"есть вопрос!!!"<no-reply@alex-se.com>', // sender address
-        to: 'reception@alex-se.com', // list of receivers
+        to: 'reception@alex-se.com , liudik_alex@mail.ru', // list of receivers
         subject: question.body.subject, // Subject line
         template: 'question',
         context: {
@@ -140,7 +140,7 @@ module.exports.sendCallBack = async function (call, callback) {
     transporter.use('compile', hbs(handlebarOptions));
     let mailOptions = {
         from: '"[CALLBACK] ОБРАТНЫЙ ЗВОНОК" "на номер"'  + " " + call.body.phone, // sender address
-        to: 'reception@alex-se.com', // list of receivers
+        to: 'reception@alex-se.com , liudik_alex@mail.ru', // list of receivers
         subject: '[CALLBACK] ОБРАТНЫЙ ЗВОНОК' + call.body.phone, // Subject line
         template: 'callback',
         context: {

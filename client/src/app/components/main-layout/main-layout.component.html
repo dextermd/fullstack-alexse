@@ -255,7 +255,25 @@
           </ul>
         </div>
         <!-- -------------------------------------------------------------------------- -->
+        <div [ngClass]="{'d-none': scroll }" class="">
+          <ng-container *ngIf="lang == 'ru'">
+            <a [routerLink]="'/'">
+              <img src="assets/logo/Blue_ru-min.png" height="50" alt="" class="d-none d-xl-block pr-5">
+            </a>
+          </ng-container>
 
+          <ng-container *ngIf="lang == 'en'">
+            <a [routerLink]="'/'">
+              <img src="assets/logo/Blue_en-min.png" height="50" alt="" class=" d-none d-xl-block pr-5">
+            </a>
+          </ng-container>
+
+          <ng-container *ngIf="lang == 'ro'">
+            <a [routerLink]="'/'">
+              <img src="assets/logo/Blue_ro-min.png" height="50" alt="" class=" d-none d-xl-block pr-5">
+            </a>
+          </ng-container>
+        </div>
 
         <!-- Collapsible content -->
         <links>
