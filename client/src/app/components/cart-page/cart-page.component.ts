@@ -8,7 +8,7 @@ import {AlertService} from '../../admin/shared/services/alert.service';
 import {BehaviorSubject, Subscription} from 'rxjs';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {LocalService} from '../../shared/local.service';
-import { NgbPopoverConfig} from '@ng-bootstrap/ng-bootstrap';
+import {NgbPopoverConfig} from '@ng-bootstrap/ng-bootstrap';
 
 
 @Component({
@@ -62,7 +62,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
     this.order.list = this.localService.getJsonValue('list');
     this.order.price = this.localService.getJsonValue('price');
     console.log(this.order.list);
-    if (this.order.list.length !== 0){
+    if (this.order.list.length !== 0) {
       this.orderState = true;
     } else {
       this.orderState = false;
@@ -70,8 +70,8 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
     this.form = new FormGroup({
       c_name: new FormControl(null, Validators.required),
-      c_phone: new FormControl(null, [Validators.required , Validators.pattern('^[0-9]*$'), Validators.minLength(9)]),
-      c_email: new FormControl(null, [Validators.required , Validators.email]),
+      c_phone: new FormControl(null, [Validators.required, Validators.pattern('^[0-9]*$'), Validators.minLength(9)]),
+      c_email: new FormControl(null, [Validators.required, Validators.email]),
       c_type_shipping: new FormControl(this.typeShip, Validators.required),
       c_address_shipping: new FormControl({value: '', disabled: true}, Validators.required),
       c_company_name: new FormControl({value: '', disabled: true}, Validators.required),
@@ -94,18 +94,14 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
   register(type: string) {
     this.typeShip = type;
+    this.localService.setJsonValue('ship', this.typeShip);
     console.log(type);
     if (this.typeShip === 'по Кишиневу' || this.typeShip === 'по Молдове') {
       this.form.controls.c_address_shipping.enable();
     } else {
       this.form.controls.c_address_shipping.setValue(null);
       this.form.controls.c_address_shipping.disable();
-
     }
-    if (this.typeShip === 'по Кишиневу') {
-      this.order.price += 100;
-    }
-
   }
 
   onSubmit() {
@@ -145,7 +141,6 @@ export class CartPageComponent implements OnInit, OnDestroy {
         this.orderState = false;
 
 
-
         this.panding = false;
 
 
@@ -156,6 +151,12 @@ export class CartPageComponent implements OnInit, OnDestroy {
     );
   }
 
+  onItemChange(value) {
+    console.log(' Value is : ', value);
+    if (value === 'по Кишиневу') {
+
+    }
+  }
 
   triggerSomeEvent() {
     if (this.isDisableAdr) {
@@ -181,6 +182,10 @@ export class CartPageComponent implements OnInit, OnDestroy {
       location.reload();
     }, 1500);
 
+  }
+
+  private computePrice(radio) {
+    return this.order.price += radio;
   }
 
 
