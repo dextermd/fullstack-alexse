@@ -184,7 +184,7 @@ export class CartPageComponent implements OnInit, OnDestroy {
 
   }
 
-  private computePrice(radio) {
+  public computePrice(radio) {
     return this.order.price += radio;
   }
 
