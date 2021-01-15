@@ -18,8 +18,10 @@ export class MainLayoutComponent implements OnInit {
   card = [];
   cartItems = 0;
   hide = false;
+  scroll = false;
   lang;
   test;
+  currentLang = this.localService.getJsonValue('lang');
   private localizeService: any;
 
   constructor(
@@ -40,15 +42,15 @@ export class MainLayoutComponent implements OnInit {
 
     if (this.translate.currentLang) {
       this.test = this.translate.currentLang;
-
       console.log(this.test);
-
       this.localService.setJsonValue('lang', this.translate.currentLang);
     }
+
   }
 
 
   ngOnInit(): void {
+    this.scroll = pageYOffset <= 1;
     this.test = this.localService.getJsonValue('lang');
     console.log(this.test);
 
@@ -87,6 +89,7 @@ export class MainLayoutComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) onScroll($event){
     this.hide = pageYOffset >= 170;
+    this.scroll = pageYOffset <= 170;
   }
 
 

@@ -90,6 +90,19 @@
 
         </div>
         <!--Grid row-->
+        <section *ngIf="currentSubId$ | async  as curSubId" class="text-center">
+          <p class="px-5 mb-5 pb-3">
+            <ng-container *ngIf="this.main.lang == 'ru'">
+              {{curSubId.desc}}
+            </ng-container>
+            <ng-container *ngIf="this.main.lang == 'ro'">
+              {{curSubId.descRo}}
+            </ng-container>
+            <ng-container *ngIf="this.main.lang == 'en'">
+              {{curSubId.descEn}}
+            </ng-container>
+          </p>
+        </section>
 
       </section>
       <!--Section: Products v.3-->

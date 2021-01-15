@@ -71,7 +71,7 @@ import {MainLayoutComponent} from './components/main-layout/main-layout.componen
 
 export class SharedModule {
   constructor(translate: TranslateService, localService: LocalService) {
-    // translate.setDefaultLang(localService.getJsonValue('lang'));
-    // translate.use(localService.getJsonValue('lang'));
+    translate.setDefaultLang(localService.getJsonValue('lang'));
+    translate.use(localService.getJsonValue('lang'));
   }
 }

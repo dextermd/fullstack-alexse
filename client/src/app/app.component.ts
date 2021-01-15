@@ -16,10 +16,12 @@ declare var gtag;
 
 export class AppComponent implements OnInit {
   title = 'Электронные весы для торговли и складского учета';
+  lang;
+  test;
 
   constructor(
     private auth: AuthService,
-    router: Router,
+    private router: Router,
     private localService: LocalService,
     public translate: TranslateService,
   ) {
@@ -36,9 +38,50 @@ export class AppComponent implements OnInit {
         });
       }
     );
+
+    if (this.translate.currentLang) {
+      this.test = this.translate.currentLang;
+      console.log(this.test);
+      this.localService.setJsonValue('lang', this.translate.currentLang);
+    }
+
   }
 
   ngOnInit(): void {
+
+    this.test = this.localService.getJsonValue('lang');
+    console.log(this.test);
+
+    if (this.localService.getJsonValue('lang') === null)
+    {
+      // this.translate.setDefaultLang('ru');
+      this.localService.setJsonValue('lang', 'ru');
+      // this.translate.use(this.localService.getJsonValue('ru'));
+    }
+
+    if (!this.translate.currentLang){
+      this.router.navigate([this.localService.getJsonValue('lang')]);
+    }
+    // // this.lang = this.translate.getBrowserLang();
+    // this.lang = this.localService.getJsonValue('lang');
+    if (this.translate.currentLang){
+      this.test = this.translate.currentLang;
+
+      console.log(this.test);
+
+      this.localService.setJsonValue('lang', this.translate.currentLang );
+
+      console.log(this.localService.getJsonValue('lang'));
+
+      this.translate.setDefaultLang(this.translate.currentLang);
+      this.lang = this.translate.currentLang;
+    } else {
+      this.translate.setDefaultLang(this.lang);
+      this.lang = this.localService.getJsonValue('lang');
+
+    }
+    console.log(window.location.href);
+    console.log(this.router.getCurrentNavigation());
     // if (this.localService.getJsonValue('lang') === null) {
     //   this.localService.setJsonValue('lang', 'ru');
     //   this.translate.setDefaultLang('ru');

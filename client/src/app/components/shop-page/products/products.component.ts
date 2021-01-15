@@ -24,6 +24,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   subproductCategory$: Observable<SubCategory[]>;
   productCategory$: Observable<Category[]>;
   subcategoryId: string;
+  currentSubId$: Observable<SubCategory>;
   sortData: Product[] = [];
   dSub: Subscription;
   i = 0;
@@ -53,6 +54,9 @@ export class ProductsComponent implements OnInit, OnDestroy {
       if (params.id) {
         this.products$ = this.productService.getByCatIdProductAll(params.id);
         this.colapse = false;
+        this.subcategoryId = params.id;
+
+        this.currentSubId$ = this.subcategoryService.getByIdCategory(this.subcategoryId);
 
       } else {
         this.products$ = this.productService.getAllProduct();

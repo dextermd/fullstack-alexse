@@ -49,6 +49,9 @@ export interface SubCategory {
   name: string;
   nameRo: string;
   nameEn: string;
+  desc: string;
+  descRo: string;
+  descEn: string;
   num: number;
   category: string;
   imageSrc?: string;

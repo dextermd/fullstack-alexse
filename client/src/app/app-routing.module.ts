@@ -49,8 +49,6 @@ import {AuroraComponent} from './components/aurora/aurora.component';
 
 
 
-
-
 export const routes: Routes = [
   {
     path: '',  component: MainLayoutComponent, children: [
