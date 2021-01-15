@@ -92,13 +92,13 @@
         <!--Grid row-->
         <section *ngIf="currentSubId$ | async  as curSubId" class="text-center">
             <ng-container *ngIf="this.main.lang == 'ru'">
-              {{curSubId.desc}}
+              <quill-view-html [content]="curSubId.desc"></quill-view-html>
             </ng-container>
             <ng-container *ngIf="this.main.lang == 'ro'">
-              {{curSubId.descRo}}
+              <quill-view-html [content]="curSubId.descRo"></quill-view-html>
             </ng-container>
             <ng-container *ngIf="this.main.lang == 'en'">
-              {{curSubId.descEn}}
+              <quill-view-html [content]="curSubId.descEn"></quill-view-html>
             </ng-container>
         </section>
 
