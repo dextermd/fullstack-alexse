@@ -38,15 +38,16 @@ module.exports.sendMail = async function (order, callback) {
         template: 'index',
         context: {
             name: order.body.c_name,
-            order: order.body.order,
+            order: order.body.order_number,
             total_cost: order.body.total_cost,
             c_address_shipping: order.body.c_address_shipping,
             date: order.body.date,
             items: order.body.list,
+            phone: order.body.c_phone,
+            comment: order.body.c_comment
 
         }, // send extra values to template
     };
-
 
     // send mail with defined transport object
     let info = await transporter.sendMail(mailOptions, (err, data) => {
@@ -55,8 +56,28 @@ module.exports.sendMail = async function (order, callback) {
         }
 
         const chatId = -450127205;
+        // bot.sendMessage(chatId,"<b>!!! **** ПРОВЕРКА !  НОВЫЙ ЗАКАЗ **** !!!</b> \n <i><b>Имя Клиента: </b></i> <pre>order.body.c_name</pre> \n " ,{parse_mode : "HTML"});
+        bot.sendMessage(chatId, "<b>!!! **** ПРОВЕРКА !  НОВЫЙ ЗАКАЗ **** !!!</b> \n" +
+            " <i><b>Имя Клиента: </b></i>" +
+            `<pre>${order.body.c_name}</pre> \n` +
+            " <i><b>Телефон Клиента: </b></i>" +
+            `<pre>${order.body.c_phone}</pre> \n` +
+            " <i><b>Номмер заказа: </b></i>" +
+            `<pre>${order.body.order_number}</pre> \n` +
+            " <i><b>Доставка?: </b></i>" +
+            `<pre>${order.body.c_address_shipping}</pre> \n` +
+            " <i><b>Список Заказа: </b></i>" +
+            `<pre>${order.body.list[0].name}</pre> \n` +
+            " <i><b>Общая сумма: </b></i>" +
+            `<pre>${order.body.total_cost} MDL</pre> \n` +
+            " <i><b>Комментарий к заказу: </b></i>" +
+            `<pre>${order.body.c_comment}</pre> \n` +
+            " <i><b>Просмотреть детали заказа: </b></i>" +
+            "<a href=\"https://www.alex-se.com/ru/admin/history-orders/\">Нажать</a>"
+            , {parse_mode: "HTML"});
+
         // send a message to the chat acknowledging receipt of their message
-        bot.sendMessage(chatId, `Проверка!!!! ${order.body.c_name} , ${order.body.total_cost}, ${order.body.c_address_shipping}`);
+        // bot.sendMessage(chatId, `Проверка!!!! ${order.body.c_name} , ${order.body.total_cost}, ${order.body.c_address_shipping}`, html );
 
 
         return log('Email sent!!!');
