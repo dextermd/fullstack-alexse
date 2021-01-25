@@ -474,17 +474,17 @@
       <ngb-tabset [destroyOnHide]="false">
 
         <ngb-tab title="{{'Shop.Index.Tech' | translate}}">
-          <ng-template class="pt-2" ngbTabContent>
+          <ng-template  ngbTabContent>
             <ng-container *ngIf="this.main.lang == 'ru'">
-              <div [froalaView]="product.spec"></div>
+              <div class="pt-2" [froalaView]="product.spec"></div>
             </ng-container>
 
             <ng-container *ngIf="this.main.lang == 'ro'">
-              <div [froalaView]="product.specRo"></div>
+              <div class="pt-2" [froalaView]="product.specRo"></div>
             </ng-container>
 
             <ng-container *ngIf="this.main.lang == 'en'">
-              <div [froalaView]="product.specEn"></div>
+              <div class="pt-2" [froalaView]="product.specEn"></div>
             </ng-container>
             <!--            <div [froalaView]="product.spec"></div>-->
             <!--            <quill-view-html [content]="product.spec"></quill-view-html>-->
@@ -492,17 +492,23 @@
         </ngb-tab>
 
         <ngb-tab title="{{'Shop.Index.Func' | translate}}">
-          <ng-template class="pt-2" ngbTabContent>
+          <ng-template  ngbTabContent>
             <ng-container *ngIf="this.main.lang == 'ru'">
+              <div class="pt-2">
               <quill-view-html [content]="product.functions"></quill-view-html>
+              </div>
             </ng-container>
 
             <ng-container *ngIf="this.main.lang == 'ro'">
+              <div class="pt-2">
               <quill-view-html [content]="product.functionsRo"></quill-view-html>
+              </div>
             </ng-container>
 
             <ng-container *ngIf="this.main.lang == 'en'">
+              <div class="pt-2">
               <quill-view-html [content]="product.functionsEn"></quill-view-html>
+              </div>
             </ng-container>
 
             <!--            <quill-view-html [content]="product.functions"></quill-view-html>-->
@@ -510,8 +516,10 @@
         </ngb-tab>
 
         <ngb-tab title="{{'Shop.Index.Cert' | translate}}">
-          <ng-template class="pt-2" ngbTabContent>
+          <ng-template  ngbTabContent>
+            <div class="pt-2">
             <quill-view-html [content]="product.certificate"></quill-view-html>
+            </div>
           </ng-template>
         </ngb-tab>
 
