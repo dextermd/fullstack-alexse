@@ -536,6 +536,10 @@
       "IconThree": "Lanțuri mici de magazine",
       "IconFour": "Magazine de materiale de construcții"
     },
+    "Terminal": {
+      "Title": "APLICAȚIE MOBILĂ «ALEX-TERMINAL»",
+      "Text": "Alex-Terminal este un produs conceput de Alex S&E, o aplicație mobilă unică care poate fi instalată pe orice smartphone Android.Un supliment important la programul principal - pentru a lucra în sala de cumpărături. Vă permite să recepționați rapid bunurile, să efectuați inventarierea, iar prin adăugarea unei imprimante portabile, să imprimați etichetele și prețurile – direct pe raftul mărfurilor. O interfață simplă și inteligibilă ce se combină perfect cu versatilitatea. În acest caz, nu mai este necesar să cumpărați un terminal scump de colectare a datelor pentru recepția mărfurilor și inventarierea."
+    },
     "Advantage": {
       "Title": "Beneficii",
       "IconOne": "Alex-Market este soluția ideală pentru vânzarea cu amănuntul",
