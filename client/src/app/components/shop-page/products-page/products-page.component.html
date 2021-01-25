@@ -474,7 +474,7 @@
       <ngb-tabset [destroyOnHide]="false">
 
         <ngb-tab title="{{'Shop.Index.Tech' | translate}}">
-          <ng-template ngbTabContent>
+          <ng-template class="pt-2" ngbTabContent>
             <ng-container *ngIf="this.main.lang == 'ru'">
               <div [froalaView]="product.spec"></div>
             </ng-container>
@@ -492,7 +492,7 @@
         </ngb-tab>
 
         <ngb-tab title="{{'Shop.Index.Func' | translate}}">
-          <ng-template ngbTabContent>
+          <ng-template class="pt-2" ngbTabContent>
             <ng-container *ngIf="this.main.lang == 'ru'">
               <quill-view-html [content]="product.functions"></quill-view-html>
             </ng-container>
@@ -510,7 +510,7 @@
         </ngb-tab>
 
         <ngb-tab title="{{'Shop.Index.Cert' | translate}}">
-          <ng-template ngbTabContent>
+          <ng-template class="pt-2" ngbTabContent>
             <quill-view-html [content]="product.certificate"></quill-view-html>
           </ng-template>
         </ngb-tab>
