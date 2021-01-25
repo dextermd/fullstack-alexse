@@ -200,6 +200,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {RouterModule} from '@angular/router';
 import {AbstractParser, HttpLoader, LightLocalizeRouterModule} from '@elham-oss/light-localize-router';
 import { Location } from '@angular/common';
+import { TerminalComponent } from './components/alex-market-page/terminal/terminal.component';
 
 
 // export function HttpLoaderFactory(http: HttpClient) {
@@ -405,6 +406,7 @@ registerLocaleData( roLocale, 'ro');
     SevenauroraComponent,
     EightauroraComponent,
     AuroraComponent,
+    TerminalComponent,
 
   ],
   imports: [

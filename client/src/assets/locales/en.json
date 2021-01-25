@@ -536,6 +536,10 @@
       "IconThree": "Small store chains",
       "IconFour": "Building materials stores"
     },
+    "Terminal": {
+      "Title": "MOBILE APPLICATION ALEX-TERMINAL",
+      "Text": "Alex-Terminal is an own development of Alex S&E, a unique mobile application that can be installed on any android smartphone. An excellent addition to the main program - for work on the trading floor. It allows you to quickly accept goods, carry out inventory, ideally works in tandem with a mini bluetooth scanner, and when supplemented with a portable label printer, print price tags or labels - right at the rack with goods. A simple and intuitive interface is perfectly combined with a wide range of functionality. At the same time, you no longer need to buy an expensive data collection terminal for goods acceptance and inventory."
+    },
     "Advantage": {
       "Title": "Benefits",
       "IconOne": "Alex-Market is the ideal solution for retial",
