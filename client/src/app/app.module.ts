@@ -194,19 +194,12 @@ import { SixauroraComponent } from './components/aurora/sixaurora/sixaurora.comp
 import { SevenauroraComponent } from './components/aurora/sevenaurora/sevenaurora.component';
 import { EightauroraComponent } from './components/aurora/eightaurora/eightaurora.component';
 import { AuroraComponent } from './components/aurora/aurora.component';
-import {LocalizeParser, LocalizeRouterModule, LocalizeRouterSettings, ManualParserLoader} from 'localize-router';
-import {LocalizeRouterHttpLoader} from 'localize-router-http-loader';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {RouterModule} from '@angular/router';
 import {AbstractParser, HttpLoader, LightLocalizeRouterModule} from '@elham-oss/light-localize-router';
 import { Location } from '@angular/common';
 import { TerminalComponent } from './components/alex-market-page/terminal/terminal.component';
 
-
-// export function HttpLoaderFactory(http: HttpClient) {
-//   return new TranslateHttpLoader(http);
-//
-// }
 
 @Injectable({providedIn: 'root'})
 export class HttpClientTrans extends HttpClient {
@@ -219,8 +212,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/locales/', '.json');
 }
 
-registerLocaleData( ruLocale, 'ru');
-registerLocaleData( roLocale, 'ro');
+// registerLocaleData( ruLocale, 'ru');
+// registerLocaleData( roLocale, 'ro');
 
 
 

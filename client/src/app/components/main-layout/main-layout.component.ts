@@ -5,7 +5,6 @@ import {OrderService} from '../../shared/order.service';
 import {LocalService} from '../../shared/local.service';
 import {AuthService} from '../../shared/auth.service';
 import {TranslateService} from '@ngx-translate/core';
-import {LocalizeRouterService} from 'localize-router';
 import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
@@ -41,9 +40,13 @@ export class MainLayoutComponent implements OnInit {
     });
 
     if (this.translate.currentLang) {
+      this.currentLang = this.translate.currentLang;
       this.test = this.translate.currentLang;
-      console.log(this.test);
+      console.log('Start Main loyaout ' + this.test);
       this.localService.setJsonValue('lang', this.translate.currentLang);
+    } else {
+      this.translate.setDefaultLang(this.localService.getJsonValue('lang'));
+      this.translate.use(this.localService.getJsonValue('lang'));
     }
 
   }
@@ -62,7 +65,11 @@ export class MainLayoutComponent implements OnInit {
     }
 
     if (!this.translate.currentLang){
-      this.router.navigate([this.localService.getJsonValue('lang')]);
+      this.translate.setDefaultLang(this.localService.getJsonValue('lang'));
+      this.translate.use(this.localService.getJsonValue('lang'));
+
+      // this.router.navigate([this.localService.getJsonValue('lang')]);
+
     }
     // // this.lang = this.translate.getBrowserLang();
     // this.lang = this.localService.getJsonValue('lang');
