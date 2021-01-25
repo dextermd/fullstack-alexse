@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 import {QuillModule} from 'ngx-quill';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import {FormsModule} from '@angular/forms';
@@ -46,7 +46,6 @@ import {LocalService} from './shared/local.service';
 
 export class SharedModule {
   constructor(translate: TranslateService, localService: LocalService) {
-
     // translate.setDefaultLang(localService.getJsonValue('lang'));
     // translate.use(localService.getJsonValue('lang'));
   }

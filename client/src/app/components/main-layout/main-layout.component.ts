@@ -5,7 +5,7 @@ import {OrderService} from '../../shared/order.service';
 import {LocalService} from '../../shared/local.service';
 import {AuthService} from '../../shared/auth.service';
 import {TranslateService} from '@ngx-translate/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-main-layout',
@@ -21,7 +21,6 @@ export class MainLayoutComponent implements OnInit {
   lang;
   test;
   currentLang = this.localService.getJsonValue('lang');
-  private localizeService: any;
 
   constructor(
     private auth: AuthService,
@@ -31,7 +30,6 @@ export class MainLayoutComponent implements OnInit {
     private localService: LocalService,
     public translate: TranslateService,
     private router: Router,
-    private rout: ActivatedRoute,
 
 
 ) {
@@ -107,14 +105,13 @@ export class MainLayoutComponent implements OnInit {
   changeLang(lang: string) {
     if (this.translate.currentLang !== lang) {
       console.log('lang ' + lang );
+      this.translate.setDefaultLang(lang);
       this.translate.use(lang);
-    // this.router.navigate([lang]);
       this.lang = lang;
       this.localService.setJsonValue('lang', lang);
       this.translate.currentLang = lang;
+      this.reLoad();
       setTimeout(() => window.location.reload(), 10);
-    // this.reLoad();
-      //  window.location.reload();
     }
   }
 

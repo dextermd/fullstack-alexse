@@ -57,7 +57,7 @@ module.exports.sendMail = async function (order, callback) {
 
         const chatId = -450127205;
         // bot.sendMessage(chatId,"<b>!!! **** ПРОВЕРКА !  НОВЫЙ ЗАКАЗ **** !!!</b> \n <i><b>Имя Клиента: </b></i> <pre>order.body.c_name</pre> \n " ,{parse_mode : "HTML"});
-        bot.sendMessage(chatId, "<b>!!! **** ПРОВЕРКА !  НОВЫЙ ЗАКАЗ **** !!!</b> \n" +
+        bot.sendMessage(chatId, "<b>!!! **** НОВЫЙ ЗАКАЗ **** !!!</b> \n" +
             " <i><b>Имя Клиента: </b></i>" +
             `<pre>${order.body.c_name}</pre> \n` +
             " <i><b>Телефон Клиента: </b></i>" +
@@ -68,6 +68,16 @@ module.exports.sendMail = async function (order, callback) {
             `<pre>${order.body.c_address_shipping}</pre> \n` +
             " <i><b>Список Заказа: </b></i>" +
             `<pre>${order.body.list[0].name}</pre> \n` +
+            `<pre>${order.body.list[1].name}</pre> \n` +
+            `<pre>${order.body.list[2].name}</pre> \n` +
+            `<pre>${order.body.list[3].name}</pre> \n` +
+            `<pre>${order.body.list[4].name}</pre> \n` +
+            `<pre>${order.body.list[5].name}</pre> \n` +
+            `<pre>${order.body.list[6].name}</pre> \n` +
+            `<pre>${order.body.list[7].name}</pre> \n` +
+            `<pre>${order.body.list[8].name}</pre> \n` +
+            `<pre>${order.body.list[9].name}</pre> \n` +
+            `<pre>${order.body.list[10].name}</pre> \n` +
             " <i><b>Общая сумма: </b></i>" +
             `<pre>${order.body.total_cost} MDL</pre> \n` +
             " <i><b>Комментарий к заказу: </b></i>" +
