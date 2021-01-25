@@ -65,8 +65,8 @@ module.exports.sendMail = async function (order, callback) {
             `<pre>${order.body.c_phone}</pre> \n` +
             " <i><b>Доставка?: </b></i>" +
             `<pre>${order.body.c_address_shipping}</pre> \n` +
-            " <i><b>Список Заказа: </b></i>" +
-            "<a href=\"https://www.alex-se.com/ru/admin/history-orders/\">Посмотреть список заказа</a> \n" +
+            " <i><b>Посмотреть список заказа: </b></i>" +
+            `<a href=\"https://www.alex-se.com/ru/admin/history-orders/\">Нажать</a> \n` +
             " <i><b>Общая сумма: </b></i>" +
             `<pre>${order.body.total_cost} MDL</pre> \n` +
             " <i><b>Комментарий к заказу: </b></i>" +
