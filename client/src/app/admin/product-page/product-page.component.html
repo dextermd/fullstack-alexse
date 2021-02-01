@@ -20,7 +20,7 @@
       <tr  *ngFor="let product of products  let idx = index">
         <td>{{idx + 1}}</td>
         <td>{{product.name}}</td>
-        <td>{{product.date  | date:'medium': null: 'ru' }}</td>
+        <td>{{product.date  | date:'medium' }}</td>
         <div *ngFor="let category of categorys">
         <td  *ngIf="category._id == product.subcategory" >{{category.name}}</td>
         </div>
