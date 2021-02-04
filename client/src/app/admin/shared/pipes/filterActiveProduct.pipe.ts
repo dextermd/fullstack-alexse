@@ -7,9 +7,9 @@ import {Product} from '../interfaces';
 
 })
 export class FilterActiveProductPipe implements PipeTransform {
-  transform(product: Product[], active: boolean): Product[] {
+  transform(product: Product[]): Product[] {
     return product.filter(prod => {
-      return prod.active === true;
+      return prod.active.valueOf() === true;
     });
 
 
