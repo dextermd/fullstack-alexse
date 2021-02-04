@@ -56,7 +56,6 @@ const positionSchema = new Schema({
             required: true
 
         },
-
         oldCost: {
             type: String,
             default: ''
@@ -95,7 +94,10 @@ const positionSchema = new Schema({
             type: Boolean,
             default: false
         },
-
+        active: {
+            type: Boolean,
+            default: true
+        },
         sale: {
             type: Boolean,
             default: false
