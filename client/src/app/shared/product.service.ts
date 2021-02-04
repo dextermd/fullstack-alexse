@@ -51,6 +51,7 @@ export class ProductService {
     pandus: any,
     indicator: any,
     option: any,
+    active: any,
     sale: any,
     image?: File,
     imageOne?: File,
@@ -101,6 +102,7 @@ export class ProductService {
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
     fd.append('option', option);
+    fd.append('active', active);
     fd.append('sale', sale);
 
 
@@ -130,6 +132,7 @@ export class ProductService {
          pandus: any,
          indicator: any,
          option: any,
+         active: any,
          sale: any,
          image?: File,
          imageOne?: File,
@@ -175,6 +178,7 @@ export class ProductService {
     fd.append('pandus', pandus);
     fd.append('indicator', indicator);
     fd.append('option', option);
+    fd.append('active', active);
     fd.append('sale', sale);
 
 

@@ -56,12 +56,10 @@ export class CreateProductComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     public order: OrderService
-
   ) {
   }
 
   ngOnInit(): void {
-
 
 
     this.categoryService.getAllCategory().subscribe(categories => {
@@ -102,6 +100,7 @@ export class CreateProductComponent implements OnInit {
       pandus: new FormControl(),
       indicator: new FormControl(),
       option: new FormControl(false),
+      active: new FormControl(true),
       sale: new FormControl(false),
 
 
@@ -144,6 +143,7 @@ export class CreateProductComponent implements OnInit {
               pandus: products.pandus,
               indicator: products.indicator,
               option: products.option,
+              active: products.active,
               sale: products.sale,
               image: products.img,
               imageOne: products.imgOne,
@@ -178,7 +178,6 @@ export class CreateProductComponent implements OnInit {
 
     reader.readAsDataURL(file);
   }
-
 
 
   onFileOneUpload(event: any) {
@@ -257,7 +256,7 @@ export class CreateProductComponent implements OnInit {
 
   onSubmit() {
     let obs$;
-    console.log('lol' , this.form.value.casa);
+    console.log('lol', this.form.value.casa);
 
     obs$ = this.productService
 
@@ -283,6 +282,7 @@ export class CreateProductComponent implements OnInit {
         this.form.value.pandus,
         this.form.value.indicator,
         this.form.value.option,
+        this.form.value.active,
         this.form.value.sale,
         this.image,
         this.imageOne,
@@ -320,6 +320,7 @@ export class CreateProductComponent implements OnInit {
           this.form.value.pandus,
           this.form.value.indicator,
           this.form.value.option,
+          this.form.value.active,
           this.form.value.sale,
           this.image,
           this.imageOne,
@@ -357,7 +358,7 @@ export class CreateProductComponent implements OnInit {
     // console.log(this.image);
 
     let obs$;
-    console.log('lol' , this.form.value.casa);
+    console.log('lol', this.form.value.casa);
 
     if (this.isNew) {
       console.log(this.form.value.casa);
@@ -393,7 +394,7 @@ export class CreateProductComponent implements OnInit {
     // console.log(this.imageOne);
 
     let obs$;
-    console.log('lol' , this.form.value.casa);
+    console.log('lol', this.form.value.casa);
 
     if (this.isNew) {
       console.log(this.form.value.casa);
@@ -420,8 +421,7 @@ export class CreateProductComponent implements OnInit {
       () => this.router.navigate(['/admin/product'])
     );
 
-    }
-
+  }
 
 
   deleteTwoClick() {
@@ -429,7 +429,7 @@ export class CreateProductComponent implements OnInit {
     // this.imageTwo = null;
 
     let obs$;
-    console.log('lol' , this.form.value.casa);
+    console.log('lol', this.form.value.casa);
 
     if (this.isNew) {
       console.log(this.form.value.casa);
@@ -463,7 +463,7 @@ export class CreateProductComponent implements OnInit {
     // this.imageThree = null;
 
     let obs$;
-    console.log('lol' , this.form.value.casa);
+    console.log('lol', this.form.value.casa);
 
     if (this.isNew) {
       console.log(this.form.value.casa);
@@ -497,7 +497,7 @@ export class CreateProductComponent implements OnInit {
     // this.imageFour = null;
 
     let obs$;
-    console.log('lol' , this.form.value.casa);
+    console.log('lol', this.form.value.casa);
 
     if (this.isNew) {
       console.log(this.form.value.casa);

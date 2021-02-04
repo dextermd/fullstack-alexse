@@ -33,7 +33,7 @@
                *ngFor="let prod of products | searchProduct: searchStr | orderBy: sort | paginate: { itemsPerPage: 24, currentPage: page } ">
 
             <!--Card-->
-            <mdb-card class="align-items-center">
+            <mdb-card *ngIf="prod.active === true" class="align-items-center">
 
               <div class="view">
                 <img src="{{prod.img[0].path}}" class="img-fluid " alt="zoom">

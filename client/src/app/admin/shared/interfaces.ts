@@ -82,6 +82,7 @@ export interface Product {
   functionsRo?: string;
   functionsEn?: string;
   option?: boolean;
+  active?: boolean;
   sale?: boolean;
   user?: string;
   date: Date;
