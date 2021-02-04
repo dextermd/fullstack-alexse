@@ -199,6 +199,7 @@ import {RouterModule} from '@angular/router';
 import {AbstractParser, HttpLoader, LightLocalizeRouterModule} from '@elham-oss/light-localize-router';
 import { Location } from '@angular/common';
 import { TerminalComponent } from './components/alex-market-page/terminal/terminal.component';
+import {FilterActiveProductPipe} from './admin/shared/pipes/filterActiveProduct.pipe';
 
 
 @Injectable({providedIn: 'root'})
@@ -364,6 +365,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoaderComponent,
     SearchProductPipe,
     SortPipe,
+    FilterActiveProductPipe,
     IndustrialComponent,
     CategoryPageComponent,
     IconListComponent,
