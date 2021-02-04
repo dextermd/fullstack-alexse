@@ -4,7 +4,7 @@ const errorHandler = require('../utils/errorHandler');
 
 module.exports.getAll = async function (req, res) {
     try {
-        const positions = await  Position.find({ }).sort({date: -1}); // user: req.user.id
+        const positions = await  Position.find({}).sort({date: -1}); // user: req.user.id
         res.status(200).json(positions)
 
     } catch (e) {

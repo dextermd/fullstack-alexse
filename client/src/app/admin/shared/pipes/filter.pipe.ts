@@ -1,5 +1,4 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import {Post} from '../interfaces';
 
 @Pipe({
   name: 'filterPosts',
