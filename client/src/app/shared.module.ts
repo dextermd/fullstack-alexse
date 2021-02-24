@@ -10,7 +10,6 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {TranslateService} from '@ngx-translate/core';
 import {FERootModule, FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 import {LocalService} from './shared/local.service';
-import {AngularEditorModule} from '@kolkov/angular-editor';
 
 
 
@@ -29,7 +28,6 @@ import {AngularEditorModule} from '@kolkov/angular-editor';
     MDBBootstrapModule.forRoot(),
     HttpClientModule,
     FERootModule,
-    AngularEditorModule,
   ],
 
   exports: [
