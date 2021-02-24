@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import { Message, Post} from '../admin/shared/interfaces';
 
@@ -9,6 +9,14 @@ export class PostsService {
   constructor( private http: HttpClient) {
 
   }
+  formDataHeader = {
+    headers: new HttpHeaders({
+      Accept: 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'multipart/form-data',
+    })
+  };
+
   getAllPost(): Observable<Post[]> {
     return this.http.get<Post[]>('/api/post');
   }
@@ -51,7 +59,7 @@ export class PostsService {
     fd.append('previewRo', previewRo);
     fd.append('previewEn', previewEn);
 
-    return this.http.post<Post>('/api/post', fd, {headers: {'Content-Type': 'multipart/form-data'}});
+    return this.http.post<Post>('/api/post', fd, this.formDataHeader);
   }
 
 
@@ -84,7 +92,7 @@ export class PostsService {
     fd.append('previewRo', previewRo);
     fd.append('previewEn', previewEn);
 
-    return this.http.patch<Post>(`/api/post/${id}`, fd, {headers: {'Content-Type': 'multipart/form-data'}});
+    return this.http.patch<Post>(`/api/post/${id}`, fd, this.formDataHeader);
   }
 
 

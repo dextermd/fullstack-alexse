@@ -42,18 +42,21 @@ app.use('/uploads', express.static('uploads'));
 app.use(cors());
 app.use(logger('dev'));
 
-app.use(bodyParser.json({
-  limit: '5000mb'
-}));
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'x-www-form-urlencoded, Origin, X-Requested-With, Content-Type, Accept, Authorization, *');
+  if (req.method === 'OPTIONS'){
+    res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, PATCH, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    return res.status(200).json({});
+  }
+  next();
+});
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
+app.use(bodyParser.json({limit: '50mb', extended: true}));
 
-app.use(bodyParser.urlencoded({
-  limit: '5000mb',
-  parameterLimit: 100000,
-  extended: true
-}));
-
-app.use(express.json({limit: '5000mb'}));
-app.use(express.urlencoded({limit: '5000mb'}));
+app.use(express.json({limit: '50mb'}));
+app.use(express.urlencoded({limit: '50mb'}));
 
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
