@@ -51,7 +51,7 @@ export class PostsService {
     fd.append('previewRo', previewRo);
     fd.append('previewEn', previewEn);
 
-    return this.http.post<Post>('/api/post', fd);
+    return this.http.post<Post>('/api/post', fd, {headers: {'Content-Type': 'multipart/form-data'}});
   }
 
 
@@ -84,7 +84,7 @@ export class PostsService {
     fd.append('previewRo', previewRo);
     fd.append('previewEn', previewEn);
 
-    return this.http.patch<Post>(`/api/post/${id}`, fd);
+    return this.http.patch<Post>(`/api/post/${id}`, fd, {headers: {'Content-Type': 'multipart/form-data'}});
   }
 
 
