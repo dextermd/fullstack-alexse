@@ -7,6 +7,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 
+var restify = require('restify');
 var indexRouter = require('./routes/index');
 var sendmailRouter = require('./routes/sendmail');
 var usersRouter = require('./routes/users');
@@ -43,6 +44,13 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+var server = restify.createServer();
+app.use(restify.bodyParser({
+  mapFiles: true
+}));
+
+
 
 app.use('/', indexRouter);
 app.use('/api/sendmail', sendmailRouter);
