@@ -7,6 +7,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
 
+var bodyParser = require('body-parser');
+
 var indexRouter = require('./routes/index');
 var sendmailRouter = require('./routes/sendmail');
 var usersRouter = require('./routes/users');
@@ -97,5 +99,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
+app.use(bodyParser.json({limit:'5000mb'}));
+app.use(bodyParser.urlencoded({extended:true, limit:'5000mb'}));
 
 module.exports = app;
