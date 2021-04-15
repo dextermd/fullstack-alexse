@@ -373,8 +373,8 @@
       "ComplectGiveTwo": "Fiable",
       "ComplectGiveThree": "Powerful",
       "ComplectPriceTitle": "Price:",
-      "ComplectPrice": "40 800 MDL",
-      "ComplectOldPrice": "43 099 MDL"
+      "ComplectPrice": "41 999 MDL",
+      "ComplectOldPrice": "45 299 MDL"
     },
     "AuroraS1": {
       "TitleTop": "AURORA S1L",
@@ -692,6 +692,14 @@
     "BreadcrumbProduct": "Products",
     "Tables": {
       "Title": "Additional Info",
+      "NewFirst": {
+        "FirstOne": "Number of sensors, pcs:",
+        "LastOne": "1 / 2 / 3",
+        "FirstTwo": "Load weighing platform length, m:",
+        "LastTwo": "6 / 12 / 16 / 18",
+        "FirstThree": "Number of sensors, pcs:",
+        "LastThree": "4 / 6 / 8"
+      },
       "First": {
         "FirstOne": "Maximum capacity, t:",
         "LastOne": "30 /60 / 80",
@@ -923,7 +931,7 @@
       },
       "Metal": {
         "Title": "PITLESS TYPE TRUCK SCALES",
-        "Text": "The weighing platform consists entirely of metal, structurally made of parallel sections that form two tracks. The total weight of the platforms does not exceed 8 tons, which allows the scales to be transported to a new installation site by standard freight transport. Ideal for temporary accommodation such as seasonal work or temporary / rented areas"
+        "Text": "The manufacture of scales on an automated line and robotic assembly are no longer a fantasy. Complex production with a minimum number of manual operations, robots with CNC - allows to manufacture scales in exact accordance with the 3D model, without errors and in the shortest possible time. <br> <br> The weighing platform consists entirely of metal, structurally made of parallel sections, which form two tracks. The use of the latest technologies in metalworking made it possible to reduce the weight of metal structures and ensure high assembly accuracy, which in turn allows the scales to be transported to a new installation site by standard freight transport and significantly simplified the manufacture of the base (foundation). Ideal for temporary placement, for example, when performing seasonal work or in temporary / leased areas, while not inferior in reliability to other models of truck scales."
       }
     },
     "MoveFarmer": {

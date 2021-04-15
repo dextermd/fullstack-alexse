@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {translate} from '@angular/localize/src/translate';
+import {MainLayoutComponent} from '../../../../main-layout/main-layout.component';
 
 @Component({
   selector: 'app-images-first-auto',
@@ -14,7 +14,9 @@ export class ImagesFirstAutoComponent implements OnInit {
   radioModel = 'Left';
   color;
   colorTwo;
-  constructor() { }
+  constructor(
+    public main: MainLayoutComponent,
+  ) { }
 
   ngOnInit(): void {
     this.color = 'danger';

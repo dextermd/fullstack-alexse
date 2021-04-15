@@ -184,60 +184,16 @@
           </thead>
           <tbody>
           <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstOne' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.FirstOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.LastOne' | translate}}</td>
           </tr>
           <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstTwo' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.FirstTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.LastTwo' | translate}}</td>
           </tr>
           <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstThree' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastThree' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstFour' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastFour' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstFive' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastFive' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstSix' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastSix' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstSeven' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastSeven' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstEight' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastEight' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstNine' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastNine' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstTen' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastTen' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstEleven' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastEleven' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstTwelve' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastTwelve' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstThirteen' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastThirteen' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstFourteen' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastFourteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.LastThree' | translate}}</td>
           </tr>
           </tbody>
         </table>
@@ -251,8 +207,22 @@
 
     <div class="pt-0 pb-3" style="font-family: 'Times New Roman'">
       <h5 class="black-text">
-        {{'CarWeights.StaticAuto.Metal.Text' | translate}}
+        <div [innerHTML]="'CarWeights.StaticAuto.Metal.Text'  | translate"></div>
       </h5>
+    </div>
+
+    <div class="col pb-3">
+      <div class="view overlay z-depth-1-half">
+        <ng-container *ngIf="this.main.lang == 'ru'">
+          <img lightbox backgroundColor="white" src="assets/industrial/auto/Автоматизированное_производство_автомобильных_весов-min.jpg" class="img-fluid" alt="">
+        </ng-container>
+        <ng-container *ngIf="this.main.lang == 'ro'">
+          <img lightbox backgroundColor="white" src="assets/industrial/auto/Productia_atomatizata_cantarelor_auto-min.jpg" class="img-fluid" alt="">
+        </ng-container>
+        <ng-container *ngIf="this.main.lang == 'en'">
+          <img lightbox backgroundColor="white" src="assets/industrial/auto/Automated_production_truck_scales-min.jpg" class="img-fluid" alt="">
+        </ng-container>
+      </div>
     </div>
 
     <h1 class="h2 text-center">{{'CarWeights.Icons.ModernTitle' | translate}}</h1>
@@ -389,60 +359,16 @@
           </thead>
           <tbody>
           <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstOne' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.FirstOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.LastOne' | translate}}</td>
           </tr>
           <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstTwo' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.FirstTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.LastTwo' | translate}}</td>
           </tr>
           <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstThree' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastThree' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstFour' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastFour' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstFive' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastFive' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstSix' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastSix' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstSeven' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastSeven' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstEight' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastEight' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstNine' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastNine' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstTen' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastTen' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstEleven' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastEleven' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstTwelve' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastTwelve' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstThirteen' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastThirteen' | translate}}</td>
-          </tr>
-          <tr mdbTableCol>
-            <td class="">{{'CarWeights.Tables.First.FirstFourteen' | translate}}</td>
-            <td class="">{{'CarWeights.Tables.First.LastFourteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.NewFirst.LastThree' | translate}}</td>
           </tr>
           </tbody>
         </table>

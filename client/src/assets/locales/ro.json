@@ -373,8 +373,8 @@
       "ComplectGiveTwo": "Fiabil",
       "ComplectGiveThree": "Durabil",
       "ComplectPriceTitle": "Prețul:",
-      "ComplectPrice": "40 800 MDL",
-      "ComplectOldPrice": "43 099 MDL"
+      "ComplectPrice": "41 999 MDL",
+      "ComplectOldPrice": "45 299 MDL"
     },
     "AuroraS1": {
       "TitleTop": "AURORA S1L",
@@ -692,6 +692,14 @@
     "BreadcrumbProduct": "Produse",
     "Tables": {
       "Title": "Caracteristici",
+      "NewFirst": {
+        "FirstOne": "Numărul platformelor, buc:",
+        "LastOne": "1 / 2 / 3",
+        "FirstTwo": "Lungimea platformei de încărcare, m:",
+        "LastTwo": "6 / 12 / 16 / 18",
+        "FirstThree": "Numărul de senzori, piese:",
+        "LastThree": "4 / 6 / 8"
+      },
       "First": {
         "FirstOne": "Capacitatea maximă de cântărire, t:",
         "LastOne": "30 /60 / 80",
@@ -923,7 +931,7 @@
       },
       "Metal": {
         "Title": "CÂNTARE AUTO METALICE",
-        "Text": "Platforma de cântărire este formată în întregime din metal, realizată structural din secțiuni paralele care formează două căi de rulare. Greutatea totală a platformelor nu depășește 8 tone, ceea ce permite ca cântarele să fie transportate către un nou loc de instalare cu ajutorul transportului standard de marfă. Ideal pentru instalare temporară, cum ar fi lucrări sezoniere sau zone temporare / închiriate"
+        "Text": "Fabricarea cântarelor pe o linie automată și asamblarea lor robotizată nu mai este o fantezie. Producție complexă cu un număr minim de operații manuale, roboți cu CNC - permit fabricarea cântarelor în conformitate exactă cu modelul 3D, fără erori și în cel mai scurt timp posibil. <br> <br> Platforma de cântărire este formată în întregime din metal, realizată structural din secțiuni paralele, care formează două șine. Utilizarea celor mai noi tehnologii în prelucrarea metalelor a făcut posibilă reducerea greutății structurilor metalice și asigurarea unei precizii ridicate a asamblării, ceea ce permite, la rândul său, transportul cântarelor către un nou loc de instalare prin transportul standard de marfă și a simplificat semnificativ fabricarea bazei (fundamentului). Ideal pentru plasarea temporară, de exemplu, atunci când efectuați lucrări sezoniere sau în zone temporare / închiriate, nefiind inferioare în fiabilitate față de alte modele de cântare pentru camioane."
       }
     },
     "MoveFarmer": {
