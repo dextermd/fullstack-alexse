@@ -200,6 +200,7 @@ import {AbstractParser, HttpLoader, LightLocalizeRouterModule} from '@elham-oss/
 import { Location } from '@angular/common';
 import { TerminalComponent } from './components/alex-market-page/terminal/terminal.component';
 import {FilterActiveProductPipe} from './admin/shared/pipes/filterActiveProduct.pipe';
+import { MobileTruckScaleWithContinuousPlatformComponent } from './components/mobile-truck-scale-with-continuous-platform/mobile-truck-scale-with-continuous-platform.component';
 
 
 @Injectable({providedIn: 'root'})
@@ -402,6 +403,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     EightauroraComponent,
     AuroraComponent,
     TerminalComponent,
+    MobileTruckScaleWithContinuousPlatformComponent,
 
   ],
   imports: [

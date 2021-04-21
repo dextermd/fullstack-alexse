@@ -1,0 +1,303 @@
+<div class="">
+  <div class="container pt-2">
+    <mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/products'">{{'CarWeights.BreadcrumbProduct' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/auto-index'">{{'CarWeights.Category.Title' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">{{'CarWeights.MobileTruck.Title' | translate}}</mdb-breadcrumb-item>
+    </mdb-breadcrumb-item>
+
+    <!--Section: Content-->
+    <section>
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-lg-7 mb-3 align-self-center text-center text-lg-left">
+
+          <h1 class="h2 mb-5">{{'CarWeights.MobileTruck.Title' | translate}}</h1>
+          <h5 style="font-family: 'Times New Roman'" class="black-text mb-4">
+            <div [innerHTML]="'CarWeights.MobileTruck.SubTitle'  | translate"></div>
+          </h5>
+
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-4 mb-0">
+
+          <!-- Featured image -->
+          <div class="view overlay">
+            <img class="img-fluid rounded-circle mx-auto" src="assets/industrial/auto/Cantar_Automobil_Mobile_Line-min.png" alt="Sample image">
+
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </section>
+    <!--Section: Content-->
+
+  </div>
+
+  <section class="container">
+    <div style="font-family: 'Times New Roman'">
+      <h5 class="black-text">
+        <div [innerHTML]="'CarWeights.MobileTruck.Text'  | translate"></div>
+
+      </h5>
+    </div>
+
+  </section>
+
+
+
+
+  <!--Radio buttons-->
+  <section class="py-4 my-4">
+
+    <div  class="container">
+
+      <div class="col pb-3">
+        <div class="view overlay z-depth-1-half">
+          <ng-container *ngIf="this.main.lang == 'ru'">
+            <img lightbox backgroundColor="white" src="assets/industrial/auto/Автоматизированное_производство_автомобильных_весов-min.jpg" class="img-fluid" alt="">
+          </ng-container>
+          <ng-container *ngIf="this.main.lang == 'ro'">
+            <img lightbox backgroundColor="white" src="assets/industrial/auto/Productia_atomatizata_cantarelor_auto-min.jpg" class="img-fluid" alt="">
+          </ng-container>
+          <ng-container *ngIf="this.main.lang == 'en'">
+            <img lightbox backgroundColor="white" src="assets/industrial/auto/Automated_production_truck_scales-min.jpg" class="img-fluid" alt="">
+          </ng-container>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!--Radio buttons-->
+
+
+  <section class="container">
+    <div style="font-family: 'Times New Roman'">
+      <h5 class="black-text">
+        <div [innerHTML]="'CarWeights.MobileTruck.TextTwo'  | translate"></div>
+
+      </h5>
+    </div>
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text text-center">
+
+      <div class="row mx-0 nopadding">
+        <div class="col-md-6 mb-4 mx-0" style="padding-top: 21px;">
+
+          <div class="view mb-0">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3FzSHWheosk" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="col-md-6 mb-4 mx-0 pt-2">
+
+          <div class="view mb-0 mx-0">
+            <img src="assets/industrial/ffa.jpg" class="img-fluid" alt="smaple image">
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!--Section: Content-->
+
+
+
+    <h1 class="h2 text-center">{{'CarWeights.Icons.DefaultTitle' | translate}}</h1>
+
+    <div class="flex-center pt-2 pb-2">
+      <div class="row">
+        <div class="col">
+          <img src="assets/industrial/icons/Temp-30+45.png" ngbTooltip="{{'CarWeights.Icons.IconTemp' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/SensorIPsecure.png" ngbTooltip="{{'CarWeights.Icons.IconSensor' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/RGML14.png" ngbTooltip="{{'CarWeights.Icons.IconRGML' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/ramp.png" ngbTooltip="{{'CarWeights.Icons.IconRamp' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Paint.png" ngbTooltip="{{'CarWeights.Icons.IconPaint' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/RS232conection.png" ngbTooltip="{{'CarWeights.Icons.IconRS' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/ShockProtection.png" ngbTooltip="{{'CarWeights.Icons.IconShock' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/DisplayIPsecure.png" ngbTooltip="{{'CarWeights.Icons.IconDisplay' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Soft.png" ngbTooltip="{{'CarWeights.Icons.IconSoft' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/ScalesControl.png" ngbTooltip="{{'CarWeights.Icons.IconScales' | translate}}" container="body"  class="pr-4 pb-4">
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <h1 class="h2 text-center">{{'CarWeights.Icons.ModernTitle' | translate}}</h1>
+
+    <div class="flex-center pt-2 pb-2">
+      <div class="row">
+        <div class="col">
+          <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="{{'CarWeights.Icons.IconAddDisplay' | translate}}" container="body"  class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/DisplayShockProtection.png" ngbTooltip="{{'CarWeights.Icons.IconDisplayProtect' | translate}}" container="body"  class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="{{'CarWeights.Icons.IconDigital' | translate}}" container="body"  class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/lights.png" ngbTooltip="{{'CarWeights.Icons.IconLights' | translate}}" container="body"  class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/barrier.png" ngbTooltip="{{'CarWeights.Icons.IconBarrier' | translate}}" container="body"  class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Photo.png" ngbTooltip="{{'CarWeights.Icons.IconPhoto' | translate}}" container="body"  class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="{{'CarWeights.Icons.IconRFID' | translate}}" container="body"  class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Automatic.png" ngbTooltip="{{'CarWeights.Icons.IconAutomatic' | translate}}" container="body"  class="pr-2 pb-2">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!--Grid row-->
+    <div class="py-2 my-2">
+      <div class="row flex-center">
+
+        <!--Grid column-->
+        <div class="col-md-6 col-lg-2 mb-4 mb-md-0">
+
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img lightbox backgroundColor="white" src="assets/cert/bsaa.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0">
+
+
+          <h6 class="">
+            {{'Certificates.BSA' | translate}}
+          </h6>
+
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+    </div>
+    <h1 class="h2 text-center">{{'CarWeights.Tables.Title' | translate}}</h1>
+    <div class="flex-center pb-2">
+      <div class="col-lg-7">
+        <table mdbTable striped="true" bordered="true">
+          <thead>
+          </thead>
+          <tbody>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstOne' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastOne' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstTwo' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastTwo' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastThree' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstFour' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastFour' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstFive' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastFive' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstSix' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastSix' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstAAA' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastAAA' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstSeven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastSeven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstEight' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastEight' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstNine' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastNine' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstTen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastTen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstEleven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastEleven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstTwelve' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastTwelve' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstThirteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastThirteen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.Seven.FirstFourteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.Seven.LastFourteen' | translate}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+</div>

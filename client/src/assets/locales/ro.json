@@ -877,6 +877,38 @@
         "LastFourteen": "IP54",
         "FirstFifteen": "Gradul de protecție împotriva prafului și a apei (senzor):",
         "LastFifteen": "IP68"
+      },
+      "Seven": {
+        "FirstOne": "Capacitatea maximă de cântărire, t:",
+        "LastOne": "15",
+        "FirstTwo": "Capacitatea minimă de cântărire, kg:",
+        "LastTwo": "100",
+        "FirstThree": "Valoarea diviziunii de verificare (е), kg:",
+        "LastThree": "5",
+        "FirstFour": "Valoarea diviziunii reale (d), kg:",
+        "LastFour": "5",
+        "FirstFive": "Numărul platformelor, buc:",
+        "LastFive": "1",
+        "FirstSix": "Lungimea platformei de încărcare, m:",
+        "LastSix": "6",
+        "FirstAAA": "Lățimea platformei de cântărire, m:",
+        "LastAAA": "2,4",
+        "FirstSeven": "Numărul de senzori, piese:",
+        "LastSeven": "6",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastEight": "IP 68",
+        "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastNine": "IP 67",
+        "FirstTen": "Conectare la calculator:",
+        "LastTen": "RS232",
+        "FirstEleven": "Temperatură de funcționare (platforma), C:",
+        "LastEleven": "De La -30 Pînă +45",
+        "FirstTwelve": "Temperatură de funcționare (indicator), C:",
+        "LastTwelve": "De La -5 Pînă +35",
+        "FirstThirteen": "Tensiunea de alimentare de la reţea:",
+        "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstFourteen": "Clasa de exactitate a balanţei:",
+        "LastFourteen": "Medium (III)"
       }
     },
     "Icons": {
@@ -913,6 +945,8 @@
       "CatFour": "STAȚIONARE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",
       "CatFive": "SISTEMELE DE CÂNTĂRIRE DE BORD",
       "CatSix": "MODERNIZAREA CÂNTARELOR AUTO",
+      "CatSeven": "SISTEM AUTOMAT DE CONTROL AL GREUTĂȚII ȘI DIMENSIUNILOR",
+      "CatEight": "CÂNTAR AUTO MOBIL CU PLATFORMĂ INTEGRĂ",
       "Text": "Cântarele pentru vehicule sunt produse de care nu puteți duce lipsă la nicio întreprindere în care transportul este utilizat pentru a primi, elibera sau transporta mărfurile. Cântărirea unei mașini pe cântar practic elimină pierderile din evidența produselor.<br>Alex S&E, de mai bine de 27 de ani, produce cântare pentru vehicule cu platforme de beton și metal, staționare și mobile, pentru cântărire, atât în regim static, cât și în regim dinamic. Dimensiunile, tipul și structura cântarului pot fi diferite în funcție de sarcină, locul de instalare și vehiculul care necesită cântărirea.<br>Software-ul furnizat în set cu cântarul va servi ca un asistent indispensabil operatorului sau va permite cântărirea vehiculului în modul automat, fără participarea operatorului, ceea ce va diminua erorile umane la zero.<br>La proiectarea și producerea cântarelor, se acordă o mare atenție fiabilității și calității produselor. Lipsa defecțiunilor echipamentelor în procesul de funcționare le permite clienților noștri să lucreze profitabil, fără costuri de nefuncționare, reparații sau achiziționarea de cântare noi.<br>Multe întreprinderi din Moldova, Ucraina, Rusia, Kazahstan folosesc cu succes cântarele fabricate de Alex S&E de mai bine de 25 de ani. Produsele noastre sunt folosite în depozite, baze metalice, întreprinderile producătoare de beton armat, uzinele de minerit, elevatoare, cariere, în puncte temporare, cum ar fi, la fabricarea drumurilor, pentru a controla sarcina pe osie și, în consecință, sarcina pe terasamentul de drum.<br>Compania Alex S&E vă oferă cântare pentru cântărirea camioanelor la cel mai bun preț. Experții noștri într-un mod rapid și profesionist vă vor oferi consultații cu privire la alegerea cântarului auto potrivit, vă vor oferi recomandări și vă vor ajuta să determinați locul optim pentru instalarea cântarelor.<br>",
       "IconTitleOne": "27 ani",
       "IconTextOne": "Experiență",
@@ -939,6 +973,12 @@
       "SubTitle": "Cântarele sunt destinate pentru cântărirea statică a camioanelor ușoare cu deplasare completă pe platformă.",
       "Text": "Cântarele mobile Fermier pentru camioane de dimensiuni mici nu necesită un fundament special și pot fi instalate pe o suprafață orizontală a drumului (asfalt, beton) sau plăci de drum. Datorită designului original (greutatea nu depășește 2,5 tone, dimensiunile totale cu rampele îndepărtate de 6x3m), cântarele sunt ușor de transportat cu camioane standard.<br>Indicatorul electronic MERAV 2000 este conectat la un computer sau laptop printr-o interfață RS232. Pentru funcționare autonomă, până la 72 de ore, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Dacă nu este posibilă conectarea cântarului la o linie de alimentare, indicatorul cu o baterie încorporată poate fi ușor deconectat pentru reîncărcare. Indicii de greutate de pe afișaj pot fi ușor citite de la o distanță de câțiva metri.",
       "TextTwo": "Electronic MERAV 2000 este conectat la un PC printr-o interfață RS232. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. <br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl<br>"
+    },
+    "MobileTruck": {
+      "Title": "Cântar auto mobil cu platformă integră",
+      "SubTitle": "Cântarele auto mobile Mobile Line, de mici dimensiuni, nu necesită o fundație specială și pot fi instalate pe o suprafață orizontală a drumului (asfalt, beton) sau plăci de drum.",
+      "Text": "Platforma de cântărire este realizată pe o linie automatizată cu folosirea sudării robotizate. Precizia asamblării și calitatea tivului de sudură au permis reducerea greutății cântarelor auto, la rândul său, dimensiunea și greutatea redusă facilitează deplasarea cântarelor cu ajutorul unui stivuitor și transportarea acestora cu camioane standard.",
+      "TextTwo": "Platforma metalică integră, pe lângă cântărirea camioanelor, este ideală pentru cântărirea vehiculelor cu o lățime șenilă mica (autoturism, stivuitor, vehicule tractate cu animale) și pentru cântărirea mărfurilor voluminoase în timpul operațiunilor de încărcare cu ajutorul unei macarale, a unui telfer sau stivuitor.<br><br>Indicatorul electronic MERAV 2000 este conectat la un computer sau laptop prin interfața RS232. Pentru funcționare autonomă, până la 72 de ore, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Dacă nu este posibil să conectați o linie de alimentare la cântar, indicatorul cu o baterie încorporată poate fi ușor deconectat pentru reîncărcare. Indicii greutății de pe afișaj pot fi citite de la o distanță de câțiva metri.<br>Senzorii au un grad de protecție împotriva prafului și umezelii IP68, ceea ce le permite de fapt să lucreze chiar și în apă. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С.<br>Software-ul standard pentru computer sau laptop este furnizat gratuit și vă permite să țineți evidența cântăririlor salvând o imagine a momentului cântăririi, să emiteți cupoane de cântărire și facturi. Suportă „cântărirea dublă” (brută, tare) pentru calcularea greutății nete. Dacă este necesar, oferă acces de la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl.<br>"
     },
     "StaticOc": {
       "Breadcrumb": "STAȚIONARE PENTRU CÂNTĂRIREA SARCINILOR PE AXII",

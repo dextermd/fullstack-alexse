@@ -877,6 +877,38 @@
         "LastFourteen": "IP54",
         "FirstFifteen": "Dust and waterproof (sensors):",
         "LastFifteen": "IP68"
+      },
+      "Seven": {
+        "FirstOne": "Maximum capacity, t:",
+        "LastOne": "15",
+        "FirstTwo": "Minimum capacity, kg:",
+        "LastTwo": "100",
+        "FirstThree": "Verification scale interval (е), kg:",
+        "LastThree": "5",
+        "FirstFour": "Actual scale interval (d), kg:",
+        "LastFour": "5",
+        "FirstFive": "Number of sensors, pcs:",
+        "LastFive": "1",
+        "FirstSix": "Platform length, m:",
+        "LastSix": "6",
+        "FirstAAA": "Platform width, m:",
+        "LastAAA": "2,4",
+        "FirstSeven": "Number of sensors, pcs:",
+        "LastSeven": "6",
+        "FirstEight": "Dust and waterproof (platform):",
+        "LastEight": "IP 68",
+        "FirstNine": "Dust and waterproof (indicator) MERAV2000:",
+        "LastNine": "IP 67",
+        "FirstTen": "PC connection:",
+        "LastTen": "RS232",
+        "FirstEleven": "Operation temperature range (platform), С:",
+        "LastEleven": "From -30 To +45",
+        "FirstTwelve": "Operation temperature range (indicator), С:",
+        "LastTwelve": "From -5 To +35",
+        "FirstThirteen": "Power supply:",
+        "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstFourteen": "Accuracy class:",
+        "LastFourteen": "Medium (III)"
       }
     },
     "Icons": {
@@ -913,6 +945,8 @@
       "CatFour": "STATIONARY FOR WEIGHING AXLE LOADS",
       "CatFive": "ON-BOARD WEIGHING SYSTEMS",
       "CatSix": "MODERNIZATION OF VEHICLE SCALES",
+      "CatSeven": "AUTOMATIC WEIGHT AND DIMENSION CONTROL SYSTEM",
+      "CatEight": "MOBILE TRUCK SCALE WITH CONTINUOUS PLATFORM",
       "Text": "Truck scales are something that you cannot do without at any enterprise where transport is used to receive, release or transport goods. Weighing a car on a scale practically eliminates losses in product accounting.<br>Alex S&E, for more than 27 years, has been producing truck scales with concrete and metal platforms, stationary and mobile, for weighing, both in static and in motion. The dimensions, type and equipment of the scales may differ depending on the task, the place of installation and the transport to be weighed.<br>The software supplied with the scales will serve as an irreplaceable assistant to the operator or will allow the vehicle to be weighed in automatic mode, without the operator's participation, which will eliminate human errors.<br>When designing and manufacturing scales, we pay great attention to the reliability and quality of products. The absence of equipment failures allows our customers to work profitably, without the cost of downtime, repairs or the purchase of new scales.<br>Many enterprises in Moldova, Ukraine, Russia, Kazakhstan have been successfully using scales manufactured by Alex S&E for more than 25 years. Our products are used in warehouses, metal warehouses, reinforced concrete products, mining and processing plants, elevators, quarries, at temporary points, for example, in the manufacture of roads, to control the axle load and, accordingly, the load on the roadbed.<br>At Alex S&E you can always buy a scale for weighing trucks at the best price. Our experts will quickly and professionally advise you on the choice of vehicle scales, give recommendations and help determine the optimal place for installing the scales.<br>",
       "IconTitleOne": "27 years",
       "IconTextOne": "Of experience",
@@ -938,7 +972,13 @@
       "Title": "PORTABLE SCALES «FARMER»",
       "SubTitle": "Scales are designed for static weighing of light-duty trucks with full drive onto the platform.",
       "Text": "Portable, small-sized truck scales Farmer do not require a special foundation and can be installed on a horizontal road surface (asphalt, concrete) or road slabs. Thanks to the original design (weight no more than 2.5 tons, overall dimensions with removed ramps 6x3m), the scales are easily transported by standard trucks.",
-      "TextTwo": "The electronic display unit MERAV 2000 is connected to a computer or laptop via an RS232 interface. For autonomous operation, up to 72 hours, the indicator unit has a built-in battery and display backlight. If it is not possible to connect a power line to the balance, the indicator with a built-in battery can be easily disconnected for recharging. Weight readings on the display are readable from a distance of several meters. <br>The sensors in the scales have a degree of protection against dust and moisture IP68, which, in fact, allows them to work even in water, and are protected from lightning discharges. The operating temperature range of the sensors is from -30 ° С to + 45 ° С. If it is necessary to install the scales at a considerable distance from the operator's room, digital sensors are used.<br>Software for a computer or laptop is supplied free of charge and allows you to keep track of plumb lines with saving a photo of the moment of weighing, write out weight coupons and waybills. Supports \"double weighing\" (gross, tare) for calculating net weight. If necessary, provides remote access to weighing data from anywhere in the world using the ScalesControl application.<br>"
+      "TextTwo": "The electronic display unit MERAV 2000 is connected to a computer or laptop via an RS232 interface. For autonomous operation, up to 72 hours, the indicator unit has a built-in battery and display backlight. If it is not possible to connect a power line to the balance, the indicator with a built-in battery can be easily disconnected for recharging. Weight readings on the display are readable from a distance of several meters. <br>The sensors in the scales have a degree of protection against dust and moisture IP68, which, in fact, allows them to work even in water, and are protected from lightning discharges. The operating temperature range of the sensors is from -30 ° С to + 45 ° С. If it is necessary to install the scales at a considerable distance from the operator's room, digital sensors are used.<br>Software for a computer or laptop is supplied free of charge and allows you to keep track of plumb lines with saving a photo of the moment of weighing, write out weight coupons and waybills. Supports double weighing (gross, tare) for calculating net weight. If necessary, provides remote access to weighing data from anywhere in the world using the ScalesControl application.<br>"
+    },
+    "MobileTruck": {
+      "Title": "Mobile Truck Scale with Continuous Platform",
+      "SubTitle": "Mobile, small-sized truck scale Mobile Line do not require a special foundation and can be installed on a horizontal road surface (asphalt, concrete) or road slabs.",
+      "Text": "The weighing platform is made on an automated line using robotic welding. The accuracy of assembly and the quality of the weld seam allowed to reduce the weight of the truck scales, in turn, the small dimensions and weight make it easy to move the scales using a forklift and transport them by standard trucks.",
+      "TextTwo": "An integral one-piece metal platform, in addition to weighing trucks, is ideal for weighing vehicles with a small inter-track width (passenger car, forklift, animal-drawn vehicles) and for weighing bulky goods during loading operations using a crane, hoist or forklift.<br><br>The electronic indicator MERAV 2000 is connected to a computer or laptop via the RS232 interface. For autonomous operation, up to 72 hours, the indicator unit has a built-in battery and display backlight. If it is not possible to connect a power line to the scale, the indicator with a built-in battery can be easily disconnected for recharging. The weight readings on the display are readable from a distance of several meters.<br>The sensors in the scales have a degree of protection against dust and moisture IP68, which in fact allows them to work even in water. The operating temperature range of the sensors is from -30 ° С to + 45 ° С.<br>Standard software for a computer or laptop is supplied free of charge and allows you to keep record of the weighings with saving a picture of the moment of weighing, write out weight coupons and waybills. Supports double weighing (gross, tare) for calculating net weight. If necessary, it provides remote access to weighing data from anywhere in the world using the ScalesControl application<br>"
     },
     "StaticOc": {
       "Breadcrumb": "STATIONARY FOR WEIGHING AXLE LOADS",

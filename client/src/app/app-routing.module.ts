@@ -46,6 +46,7 @@ import {DozatorModernPageComponent} from './components/bunker/dozator-modern-pag
 // tslint:disable-next-line:max-line-length
 import {AutomaticWeightControlSystemComponent} from './components/automatic-weight-control-system/automatic-weight-control-system.component';
 import {AuroraComponent} from './components/aurora/aurora.component';
+import {MobileTruckScaleWithContinuousPlatformComponent} from "./components/mobile-truck-scale-with-continuous-platform/mobile-truck-scale-with-continuous-platform.component";
 
 
 
@@ -536,6 +537,7 @@ export const routes: Routes = [
       {path: 'filling-batcher', component: DozatorViboiPageComponent},
       {path: 'modern-bunker-scales', component: DozatorModernPageComponent},
       {path: 'automatic-weight-and-dimension-control-system', component: AutomaticWeightControlSystemComponent},
+      {path: 'mobile-truck-scale-with-continuous-platform', component: MobileTruckScaleWithContinuousPlatformComponent},
       {path: 'aurora', component: AuroraComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       {path: 'account/login', component: LoginComponent}
