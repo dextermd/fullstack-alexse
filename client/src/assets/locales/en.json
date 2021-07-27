@@ -48,6 +48,13 @@
     "INDEX": {
       "Search": "Search",
       "Support": "Opening hours: Mon-Fri 08:30 - 17:30 Tel:(+37322) 244-572 E-mail: office@alex-se.com"
+    },
+    "CONTACT": {
+      "Filial": "Branches",
+      "Magazin": "Shop/Office",
+      "Tech": "TECHNICAL SUPPORT<br>WITHOUT WEEKEND",
+      "Torg": "+37360001103<br>commercial equipment",
+      "Prom": "+37369900989<br>industrial equipment"
     }
   },
   "BUTTONS": {
@@ -154,8 +161,8 @@
       "ComplectGiveTwo": "Fiable",
       "ComplectGiveThree": "Powerful",
       "ComplectPriceTitle": "Price:",
-      "ComplectPrice": "21 300 MDL",
-      "ComplectOldPrice": "23 490 MDL"
+      "ComplectPrice": "23 300 MDL",
+      "ComplectOldPrice": "25 490 MDL"
     },
     "MicroPos": {
       "TitleTop": "Stylish MicroPOS",
@@ -260,8 +267,8 @@
       "ComplectGiveTwo": "Fiable",
       "ComplectGiveThree": "Powerful",
       "ComplectPriceTitle": "Price:",
-      "ComplectPrice": "14 100 MDL",
-      "ComplectOldPrice": "15 579 MDL"
+      "ComplectPrice": "16 100 MDL",
+      "ComplectOldPrice": "17 579 MDL"
     },
     "DivThreeAll": {
       "TitleOne": "Warranty – 1 year",
@@ -373,8 +380,8 @@
       "ComplectGiveTwo": "Fiable",
       "ComplectGiveThree": "Powerful",
       "ComplectPriceTitle": "Price:",
-      "ComplectPrice": "42 999 MDL",
-      "ComplectOldPrice": "46 299 MDL"
+      "ComplectPrice": "44 999 MDL",
+      "ComplectOldPrice": "48 299 MDL"
     },
     "AuroraS1": {
       "TitleTop": "AURORA S1L",
@@ -438,8 +445,8 @@
       "ComplectGiveTwo": "Fiable",
       "ComplectGiveThree": "Powerful",
       "ComplectPriceTitle": "Price:",
-      "ComplectPrice": "31 100 MDL",
-      "ComplectOldPrice": "34 540 MDL"
+      "ComplectPrice": "33 100 MDL",
+      "ComplectOldPrice": "36 540 MDL"
     },
     "MicroPos": {
       "TitleTop": "Stylish MicroPOS",

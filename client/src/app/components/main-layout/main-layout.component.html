@@ -2,55 +2,9 @@
 
 <header>
   <!--Navbar-->
-
-  <div class="">
-    <div class="">
-      <!--Navbar -->
-      <nav class="navbar navbartop navbar-expand-lg navbar-light white lighten-1">
-        <span class="font-weight-bolder"
-              style="color: #000000; font-size: 10pt;"><strong> <a
-          href="tel:+37322244572">{{ 'MAIN.INDEX.Support' | translate}}</a></strong></span>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-          <ul class="navbar-nav mr-auto">
-
-          </ul>
-          <ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item">
-              <ul class="navbar-nav nav-flex-icons ml-auto">
-                <li class="nav-item d-none d-md-block">
-                  <a href="https://www.facebook.com/alexse.com.md" target="_blank" type="button" mdbBtn floating="true"
-                     size="lg" color="fb" class="waves-light">
-                    <mdb-icon class="indigo-text" fab icon="facebook-f"></mdb-icon>
-                  </a>
-                </li>
-                <li class="nav-item d-none d-md-block">
-                  <a href="https://www.youtube.com/channel/UCZeEuCodwjhQIwugyqWDBAA" target="_blank" type="button"
-                     mdbBtn floating="true" size="lg" color="yt" class="waves-light">
-                    <mdb-icon class="red-text" fab icon="youtube"></mdb-icon>
-                  </a>
-                </li>
-                <li class="nav-item d-none d-md-block">
-                  <a href="https://www.instagram.com/alex.s_e/" target="_blank" type="button" mdbBtn floating="true"
-                     size="lg" color="ins" class="waves-light">
-                    <mdb-icon class="orange-text" fab icon="instagram"></mdb-icon>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!--/.Navbar -->
-
-
-    </div>
-    <!--/.Navbar-->
-
-
+  <div  class="">
     <!--Navbar-->
-    <mdb-navbar SideClass="navbar navbarmidle  navbar-expand-lg d-flex justify-content-center"
-                [containerInside]="false">
+    <mdb-navbar SideClass="navbar navbarmidle  navbar-expand-lg d-flex justify-content-center" [containerInside]="false">
       <!-- Navbar brand -->
 
       <div class="">
@@ -73,87 +27,134 @@
         </ng-container>
       </div>
 
-
-      <ng-container *ngIf="lang == 'ru'">
-        <div class="d-flex flex-row d-block d-md-none pl-3">
-          <li class="nav-item  navbar-brand">
-            <a href="tel:+37360001103"> <img src="assets/support/060001103-1NEW.png" alt="" class="img-fluid"></a>
+        <div class="d-block d-md-none pl-3">
+          <li class="nav-item navbar-brand-my d-flex justify-content-center">
+                      <div style="border: 2px solid;" class="row rounded-pill border-white">
+                        <div class="col">
+                          <div class="row">
+                            <div style="border: 3px solid;" class="col-5 rounded-pill border-white bg-white text-center">
+                              <a routerLink="/contacts">
+                              <h5 class="blue-text flex-center flex-nowrap example-parent">
+                                <mdb-icon class="mr-1" fas icon="map-marker-alt"></mdb-icon> {{'MAIN.CONTACT.Filial' | translate}}
+                              </h5>
+                              </a>
+                            </div>
+                            <div class="col d-flex flex-row-reverse">
+                              <div class="row">
+                                <div class="w-100">
+                                  <a class="text-white" href="tel:+37322244572">
+                                  <div class="col text-white font-weight-bold">{{'MAIN.CONTACT.Magazin' | translate}}</div>
+                                  <div class="col text-white font-weight-bold">+37322244572</div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
           </li>
-          <li class="nav-item  navbar-brand">
-            <a href="tel:+37369900989"> <img src="assets/support/069900989-1NEW.png" alt="" class="img-fluid"></a>
+          <li class="nav-item navbar-brand-my">
+            <div style="border: 2px solid;" class="row rounded-pill border-white">
+              <div class="col">
+                <div class="row">
+                  <button style="border: 3px solid;" class="col rounded-pill border-white bg-white text-center">
+                    <b class="blue-text flex-center flex-nowrap example-parent">
+                      <div [innerHTML]="'MAIN.CONTACT.Tech'  | translate"></div>
+                    </b>
+                  </button>
+                  <div class="col-7 ">
+                    <div class="row">
+                      <div class="col text-white border-bottom border-white font-weight-bold">
+                        <a class="text-white" href="tel:+37360001103">
+                          <b>
+                            <b [innerHTML]="'MAIN.CONTACT.Torg'  | translate"></b>
+                          </b>
+                          <br>
+                        </a>
+                      </div>
+                      <div class="col text-white border-top border-white font-weight-bold">
+                        <a class="text-white" href="tel:+37369900989">
+                          <b>
+                            <b [innerHTML]="'MAIN.CONTACT.Prom'  | translate"></b>
+                          </b>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </li>
         </div>
-      </ng-container>
 
-      <ng-container *ngIf="lang == 'ro'">
-        <div class="d-flex flex-row d-block d-md-none pl-3">
-          <li class="nav-item  navbar-brand">
-            <a href="tel:+37360001103"> <img src="assets/support/060001103-1NEW_ro.png" alt="" class="img-fluid"></a>
-          </li>
-          <li class="nav-item  navbar-brand">
-            <a href="tel:+37369900989"> <img src="assets/support/069900989-1NEW_ro.png" alt="" class="img-fluid"></a>
-          </li>
-        </div>
-      </ng-container>
-
-      <ng-container *ngIf="lang == 'en'">
-        <div class="d-flex flex-row d-block d-md-none pl-3">
-          <li class="nav-item  navbar-brand">
-            <a href="tel:+37360001103"> <img src="assets/support/060001103-1NEW_en.png" alt="" class="img-fluid"></a>
-          </li>
-          <li class="nav-item  navbar-brand">
-            <a href="tel:+37369900989"> <img src="assets/support/069900989-1NEW_en.png" alt="" class="img-fluid"></a>
-          </li>
-        </div>
-      </ng-container>
+<!-- ----------------------------------------------------------------------------------------------------------------------- -->
 
 
-      <!-- Collapsible content -->
       <links>
-        <!--        <form class="form-inline">-->
-        <!--          <input class="form-control d-none d-xl-block" type="text" placeholder="{{ 'MAIN.INDEX.Search' | translate}}"-->
-        <!--                 aria-label="Search">-->
-        <!--        </form>-->
-        <ul class="navbar-nav ml-auto d-none d-md-block">
+        <ul class="navbar-nav ml-auto d-none d-md-block d-flex justify-content-center">
+          <div class="d-flex justify-content-center">
+            <div class="align-self-center">
+            <li class="navbar-brand-my">
+              <div style="border: 2px solid;" class="row rounded-pill border-white mr-4">
+                <div class="col">
+                  <div class="row">
+                    <div style="border: 3px solid;" class="col rounded-pill border-white bg-white text-center">
+                      <a routerLink="/contacts">
+                      <h5 class="blue-text flex-center flex-nowrap example-parent">
+                        <mdb-icon class="mr-1" fas icon="map-marker-alt"></mdb-icon>
+                        {{'MAIN.CONTACT.Filial' | translate}}
+                      </h5>
+                      </a>
+                    </div>
+                    <div class="col">
+                      <a class="text-white" href="tel:+37322244572">
+                      <div class="row">
+                          <div class="col text-white font-weight-bold">{{'MAIN.CONTACT.Magazin' | translate}}</div>
+                        <div class="col font-weight-bold">+37322244572</div>
+                      </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            </div>
 
-          <ng-container *ngIf="lang == 'ru'">
-            <li class="nav-item  navbar-brand">
-              <img src="assets/support/060.png" alt="" class="pr-5">
+            <li class="navbar-brand-my">
+              <div style="border: 2px solid;" class="row rounded-pill border-white">
+                <div class="col">
+                  <div class="row">
+                    <b style="border: 3px solid;" class="col rounded-pill border-white bg-white text-center">
+                      <b class="blue-text flex-center flex-nowrap example-parent">
+                        <div [innerHTML]="'MAIN.CONTACT.Tech'  | translate"></div>
+                      </b>
+                    </b>
+                    <div class="col-6 ">
+                      <div class="row">
+                          <div class="col text-white border-bottom border-white font-weight-bold">
+                            <a class="text-white" href="tel:+37360001103">
+                              <b>
+                                <b [innerHTML]="'MAIN.CONTACT.Torg'  | translate"></b>
+                            </b>
+                              <br>
+                            </a>
+                          </div>
+                        <div class="col text-white border-top border-white font-weight-bold">
+                          <a class="text-white" href="tel:+37369900989">
+                            <b>
+                              <b [innerHTML]="'MAIN.CONTACT.Prom'  | translate"></b>
+                            </b>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item  navbar-brand">
-              <a href="tel:+37360001103"> <img src="assets/support/060001103-1NEW.png" alt="" class="pr-3"></a>
-            </li>
-            <li class="nav-item  navbar-brand">
-              <a href="tel:+37369900989"> <img src="assets/support/069900989-1NEW.png" alt="" class="pr-5"></a>
-            </li>
-          </ng-container>
-
-          <ng-container *ngIf="lang == 'en'">
-            <li class="nav-item  navbar-brand">
-              <img src="assets/support/060_en.png" alt="" class="pr-5">
-            </li>
-            <li class="nav-item  navbar-brand">
-              <a href="tel:+37360001103"> <img src="assets/support/060001103-1NEW_en.png" alt="" class="pr-3"></a>
-            </li>
-            <li class="nav-item  navbar-brand">
-              <a href="tel:+37369900989"> <img src="assets/support/069900989-1NEW_en.png" alt="" class="pr-5"></a>
-            </li>
-          </ng-container>
-
-          <ng-container *ngIf="lang == 'ro'">
-            <li class="nav-item  navbar-brand">
-              <img src="assets/support/060_ro.png" alt="" class="pr-5">
-            </li>
-            <li class="nav-item  navbar-brand">
-              <a href="tel:+37360001103"> <img src="assets/support/060001103-1NEW_ro.png" alt="" class="pr-3"></a>
-            </li>
-            <li class="nav-item  navbar-brand">
-              <a href="tel:+37369900989"> <img src="assets/support/069900989-1NEW_ro.png" alt="" class="pr-5"></a>
-            </li>
-          </ng-container>
-
+          </div>
         </ul>
-
       </links>
 
     </mdb-navbar>
@@ -167,11 +168,8 @@
     <div class="">
       <!--Navbar-->
 
-      <!--      <nav class="navbar navbar-expand-lg navbar-dark secondary-color">-->
       <mdb-navbar SideClass="navbar navbar-expand-lg  navbar-light grey lighten-3   font-weight-bolder"
                   [containerInside]="false">
-        <!-- Navbar brand -->
-        <!--          <mdb-navbar-brand><a class="navbar-brand" href="#"></a></mdb-navbar-brand>-->
 
         <!-- -------------------------------------------------------------------------- -->
         <div style="height: 50px" class="navbar-nav mr-auto">
@@ -209,7 +207,6 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-5" data-toggle="dropdown"
                  aria-haspopup="true" aria-expanded="false">
-
                 <ng-container *ngIf="lang == 'ru'">
                   <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
                 </ng-container>
@@ -331,15 +328,47 @@
           </ul>
           <!-- Links -->
 
+          <!-- Full Nav two -->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+              <li class="nav-item">
+                <ul class="navbar-nav nav-flex-icons ml-auto">
+                  <li class="nav-item d-none d-md-block">
+                    <a href="https://www.facebook.com/alexse.com.md" target="_blank" type="button" mdbBtn floating="true"
+                       size="lg" color="fb" class="waves-light">
+                      <mdb-icon class="indigo-text" fab icon="facebook-f"></mdb-icon>
+                    </a>
+                  </li>
+                  <li class="nav-item d-none d-md-block">
+                    <a href="https://www.youtube.com/channel/UCZeEuCodwjhQIwugyqWDBAA" target="_blank" type="button"
+                       mdbBtn floating="true" size="lg" color="yt" class="waves-light">
+                      <mdb-icon class="red-text" fab icon="youtube"></mdb-icon>
+                    </a>
+                  </li>
+                  <li class="nav-item d-none d-md-block">
+                    <a href="https://www.instagram.com/alex.s_e/" target="_blank" type="button" mdbBtn floating="true"
+                       size="lg" color="ins" class="waves-light">
+                      <mdb-icon class="orange-text" fab icon="instagram"></mdb-icon>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
           <div class="d-none d-lg-block">
             <ul class="navbar-nav ml-auto nav-flex-icons">
 
               <li class="nav-item pr-3">
 
               <li class="nav-item dropdown">
+
                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-
                   <ng-container *ngIf="lang == 'ru'">
                     <img class="pr-1" height="28px" src="assets/lang/russia.png"> <small class="mt-2">RU</small>
                   </ng-container>
