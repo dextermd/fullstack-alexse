@@ -24,7 +24,7 @@ module.exports.sendMail = async function (order, callback) {
             extName: '.hbs',
             partialsDir: 'some/path',
             layoutsDir: './views/',
-            defaultLayout: 'indexContact.hbs',
+            defaultLayout: 'index.hbs',
         },
         viewPath: './views/',
         extName: '.hbs',

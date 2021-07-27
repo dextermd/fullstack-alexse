@@ -13,7 +13,7 @@ import { existsSync } from 'fs';
 export function app() {
   const server = express();
   const distFolder = join(process.cwd(), 'dist/alexse/browser');
-  const indexHtml = existsSync(join(distFolder, 'indexContact.original.html')) ? 'indexContact.original.html' : 'index';
+  const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
 
 
