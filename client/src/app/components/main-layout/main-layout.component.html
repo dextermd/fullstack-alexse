@@ -2,12 +2,12 @@
 
 <header>
   <!--Navbar-->
-  <div  class="">
+  <div style="font-family: Times New Roman;" class="">
     <!--Navbar-->
     <mdb-navbar SideClass="navbar navbarmidle  navbar-expand-lg d-flex justify-content-center" [containerInside]="false">
       <!-- Navbar brand -->
 
-      <div class="">
+      <div class="pl-5">
         <ng-container *ngIf="lang == 'ru'">
           <a [routerLink]="'/'">
             <img src="assets/logo/White_ru-min.png" height="50" alt="" class="pr-5">
@@ -27,12 +27,12 @@
         </ng-container>
       </div>
 
-        <div class="d-block d-md-none pl-3">
-          <li class="nav-item navbar-brand-my d-flex justify-content-center">
-                      <div style="border: 2px solid;" class="row rounded-pill border-white">
+        <div class="d-block d-xl-none pl-3">
+          <li class="nav-item container py-3 my-3 d-flex justify-content-center">
+                      <div style="border: 2px solid;" class="row  border-white">
                         <div class="col">
                           <div class="row">
-                            <div style="border: 3px solid;" class="col-5 rounded-pill border-white bg-white text-center">
+                            <div style="border: 3px solid;" class="col-5  border-white bg-white text-center">
                               <a routerLink="/contacts">
                               <h5 class="blue-text flex-center flex-nowrap example-parent">
                                 <mdb-icon class="mr-1" fas icon="map-marker-alt"></mdb-icon> {{'MAIN.CONTACT.Filial' | translate}}
@@ -53,53 +53,74 @@
                         </div>
                       </div>
           </li>
-          <li class="nav-item navbar-brand-my">
-            <div style="border: 2px solid;" class="row rounded-pill border-white">
-              <div class="col">
-                <div class="row">
-                  <button style="border: 3px solid;" class="col rounded-pill border-white bg-white text-center">
-                    <b class="blue-text flex-center flex-nowrap example-parent">
-                      <div [innerHTML]="'MAIN.CONTACT.Tech'  | translate"></div>
-                    </b>
-                  </button>
-                  <div class="col-7 ">
-                    <div class="row">
-                      <div class="col text-white border-bottom border-white font-weight-bold">
-                        <a class="text-white" href="tel:+37360001103">
-                          <b>
-                            <b [innerHTML]="'MAIN.CONTACT.Torg'  | translate"></b>
-                          </b>
-                          <br>
-                        </a>
-                      </div>
-                      <div class="col text-white border-top border-white font-weight-bold">
-                        <a class="text-white" href="tel:+37369900989">
-                          <b>
-                            <b [innerHTML]="'MAIN.CONTACT.Prom'  | translate"></b>
-                          </b>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <li class="nav-item container">
+            <div style="border: 2px solid;" class="row border-white">
+              <div class="col col-example bg-white text-center">
+                <b class="blue-text flex-center flex-nowrap example-parent">
+                  <b [innerHTML]="'MAIN.CONTACT.Tech'  | translate"></b>
+                </b>
+              </div>
+              <div class="w-100"></div>
+              <div class="col col-example text-center border-right font-weight-bold">
+                <a class="text-white flex-center" href="tel:+37360001103">
+                  <b [innerHTML]="'MAIN.CONTACT.Torg'  | translate"></b>
+                </a>
+              </div>
+              <div class="col col-example text-center border-left font-weight-bold">
+                <a class="text-white flex-center" href="tel:+37369900989">
+                  <b [innerHTML]="'MAIN.CONTACT.Prom'  | translate"></b>
+                </a>
               </div>
             </div>
-
+<!--            <div style="border: 2px solid;" class="row rounded-pill border-white">-->
+<!--              <div class="col">-->
+<!--                <div class="row">-->
+<!--                  <button style="border: 3px solid;" class="col-5 rounded-pill border-white bg-white text-center">-->
+<!--                    <b class="blue-text flex-center flex-nowrap example-parent">-->
+<!--                      <b [innerHTML]="'MAIN.CONTACT.Tech'  | translate"></b>-->
+<!--                    </b>-->
+<!--                  </button>-->
+<!--                  <div class="col-5 ">-->
+<!--                    <div class="row">-->
+<!--                      <div class="col text-white border-bottom border-white font-weight-bold">-->
+<!--                        <a class="text-white" href="tel:+37360001103">-->
+<!--                          <b>-->
+<!--                            <b [innerHTML]="'MAIN.CONTACT.Torg'  | translate"></b>-->
+<!--                          </b>-->
+<!--                          <br>-->
+<!--                        </a>-->
+<!--                      </div>-->
+<!--                      <div class="col text-white border-top border-white font-weight-bold">-->
+<!--                        <a class="text-white" href="tel:+37369900989">-->
+<!--                          <b>-->
+<!--                            <b [innerHTML]="'MAIN.CONTACT.Prom'  | translate"></b>-->
+<!--                          </b>-->
+<!--                        </a>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
           </li>
+
+
+
         </div>
 
 <!-- ----------------------------------------------------------------------------------------------------------------------- -->
 
 
       <links>
-        <ul class="navbar-nav ml-auto d-none d-md-block d-flex justify-content-center">
+        <div class="navbar-nav ml-auto d-none d-xl-block">
+        <ul class="navbar-nav ml-auto d-flex justify-content-center">
           <div class="d-flex justify-content-center">
             <div class="align-self-center">
             <li class="navbar-brand-my">
-              <div style="border: 2px solid;" class="row rounded-pill border-white mr-4">
+              <div style="border: 2px solid;" class="row  border-white mr-4">
                 <div class="col">
                   <div class="row">
-                    <div style="border: 3px solid;" class="col rounded-pill border-white bg-white text-center">
+                    <div style="border: 3px solid;" class="col border-white bg-white text-center">
                       <a routerLink="/contacts">
                       <h5 class="blue-text flex-center flex-nowrap example-parent">
                         <mdb-icon class="mr-1" fas icon="map-marker-alt"></mdb-icon>
@@ -109,9 +130,9 @@
                     </div>
                     <div class="col">
                       <a class="text-white" href="tel:+37322244572">
-                      <div class="row">
-                          <div class="col text-white font-weight-bold">{{'MAIN.CONTACT.Magazin' | translate}}</div>
-                        <div class="col font-weight-bold">+37322244572</div>
+                      <div class="row text-center">
+                        <div class="col text-white font-weight-bold ">{{'MAIN.CONTACT.Magazin' | translate}}</div>
+                        <div class="col font-weight-bold ">+37322244572</div>
                       </div>
                       </a>
                     </div>
@@ -122,39 +143,58 @@
             </div>
 
             <li class="navbar-brand-my">
-              <div style="border: 2px solid;" class="row rounded-pill border-white">
-                <div class="col">
-                  <div class="row">
-                    <b style="border: 3px solid;" class="col rounded-pill border-white bg-white text-center">
-                      <b class="blue-text flex-center flex-nowrap example-parent">
-                        <div [innerHTML]="'MAIN.CONTACT.Tech'  | translate"></div>
-                      </b>
-                    </b>
-                    <div class="col-6 ">
-                      <div class="row">
-                          <div class="col text-white border-bottom border-white font-weight-bold">
-                            <a class="text-white" href="tel:+37360001103">
-                              <b>
-                                <b [innerHTML]="'MAIN.CONTACT.Torg'  | translate"></b>
-                            </b>
-                              <br>
-                            </a>
-                          </div>
-                        <div class="col text-white border-top border-white font-weight-bold">
-                          <a class="text-white" href="tel:+37369900989">
-                            <b>
-                              <b [innerHTML]="'MAIN.CONTACT.Prom'  | translate"></b>
-                            </b>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div style="border: 2px solid;" class="row border-white">
+                <div class="col col-example bg-white text-center">
+                  <b class="blue-text flex-center flex-nowrap example-parent">
+                    <b [innerHTML]="'MAIN.CONTACT.Tech'  | translate"></b>
+                  </b>
+                </div>
+                <div class="w-100"></div>
+                <div class="col col-example text-center border-right font-weight-bold">
+                  <a class="text-white flex-center" href="tel:+37360001103">
+                    <b [innerHTML]="'MAIN.CONTACT.Torg'  | translate"></b>
+                  </a>
+                </div>
+                <div class="col col-example text-center border-left font-weight-bold">
+                  <a class="text-white flex-center" href="tel:+37369900989">
+                    <b [innerHTML]="'MAIN.CONTACT.Prom'  | translate"></b>
+                  </a>
                 </div>
               </div>
+<!--              <div style="border: 2px solid;" class="row  border-white">-->
+<!--                <div class="col">-->
+<!--                  <div class="row">-->
+<!--                    <b style="border: 3px solid;" class="col  border-white bg-white text-center">-->
+<!--                      <b class="blue-text flex-center flex-nowrap example-parent">-->
+<!--                        <div [innerHTML]="'MAIN.CONTACT.Tech'  | translate"></div>-->
+<!--                      </b>-->
+<!--                    </b>-->
+<!--                    <div class="col-6 ">-->
+<!--                      <div class="row">-->
+<!--                          <div class="col text-white border-bottom border-white font-weight-bold text-center">-->
+<!--                            <a class="text-white" href="tel:+37360001103">-->
+<!--                              <b>-->
+<!--                                <b [innerHTML]="'MAIN.CONTACT.Torg'  | translate"></b>-->
+<!--                            </b>-->
+<!--                              <br>-->
+<!--                            </a>-->
+<!--                          </div>-->
+<!--                        <div class="col text-white border-top border-white font-weight-bold text-center">-->
+<!--                          <a class="text-white" href="tel:+37369900989">-->
+<!--                            <b>-->
+<!--                              <b [innerHTML]="'MAIN.CONTACT.Prom'  | translate"></b>-->
+<!--                            </b>-->
+<!--                          </a>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
             </li>
           </div>
         </ul>
+        </div>
       </links>
 
     </mdb-navbar>
