@@ -64,6 +64,7 @@ export interface Product {
   nameRo: string;
   nameEn: string;
   code?: string;
+  video?: string;
   cost: number;
   oldCost?: number;
   img?: any;

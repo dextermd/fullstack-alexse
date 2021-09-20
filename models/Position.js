@@ -22,6 +22,10 @@ const positionSchema = new Schema({
             type: String,
             unique: true,
         },
+        video: {
+            type: String,
+            unique: true,
+        },
 
         img: {
             type: Array,

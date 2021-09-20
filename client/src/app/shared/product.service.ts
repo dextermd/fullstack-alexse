@@ -34,6 +34,7 @@ export class ProductService {
     nameRo: string,
     nameEn: string,
     code: string,
+    video: string,
     subcategory: string,
     cost: any,
     oldCost: any,
@@ -85,6 +86,7 @@ export class ProductService {
     fd.append('nameRo', nameRo);
     fd.append('nameEn', nameEn);
     fd.append('code', code);
+    fd.append('video', video);
     fd.append('subcategory', subcategory);
     fd.append('cost', cost);
     fd.append('oldCost', oldCost);
@@ -115,6 +117,7 @@ export class ProductService {
          nameRo: string,
          nameEn: string,
          code: string,
+         video: string,
          subcategory: string,
          cost: any,
          oldCost: any,
@@ -161,6 +164,7 @@ export class ProductService {
     fd.append('nameRo', nameRo);
     fd.append('nameEn', nameEn);
     fd.append('code', code);
+    fd.append('video', video);
     fd.append('subcategory', subcategory);
     fd.append('cost', cost);
     fd.append('oldCost', oldCost);
