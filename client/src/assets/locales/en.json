@@ -1736,7 +1736,8 @@
       "Code": "Code of product:",
       "Tech": "Technical specifications",
       "Func": "Functionality",
-      "Cert": "Certificates"
+      "Cert": "Certificates",
+      "Video": "Video"
     }
   },
   "PriceList": {

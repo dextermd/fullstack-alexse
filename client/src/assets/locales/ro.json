@@ -1736,7 +1736,8 @@
       "Code": "Codul produsului:",
       "Tech": "Specificatii tehnice",
       "Func": "Funcționalitate",
-      "Cert": "Certificate"
+      "Cert": "Certificate",
+      "Video": "Video"
     }
   },
   "PriceList": {
