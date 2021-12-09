@@ -47,6 +47,12 @@ import {DozatorModernPageComponent} from './components/bunker/dozator-modern-pag
 import {AutomaticWeightControlSystemComponent} from './components/automatic-weight-control-system/automatic-weight-control-system.component';
 import {AuroraComponent} from './components/aurora/aurora.component';
 import {MobileTruckScaleWithContinuousPlatformComponent} from "./components/mobile-truck-scale-with-continuous-platform/mobile-truck-scale-with-continuous-platform.component";
+import {SolutionsComponent} from "./components/solutions/solutions.component";
+import {AgriculturalComponent} from "./components/solutions/agricultural/agricultural.component";
+import {DispensingComponent} from "./components/solutions/dispensing/dispensing.component";
+import {LivestockComponent} from "./components/solutions/livestock/livestock.component";
+import {WeighingComponent} from "./components/solutions/weighing/weighing.component";
+import {ModernizationComponent} from "./components/solutions/modernization/modernization.component";
 
 
 
@@ -538,6 +544,12 @@ export const routes: Routes = [
       {path: 'modern-bunker-scales', component: DozatorModernPageComponent},
       {path: 'automatic-weight-and-dimension-control-system', component: AutomaticWeightControlSystemComponent},
       {path: 'mobile-truck-scale-with-continuous-platform', component: MobileTruckScaleWithContinuousPlatformComponent},
+      {path: 'solutions', component: SolutionsComponent},
+      {path: 'agricultural-industry', component: AgriculturalComponent},
+      {path: 'dispensing-mixing-line-of-a-glass-factory', component: DispensingComponent},
+      {path: 'livestock-industry', component: LivestockComponent},
+      {path: 'modernization-of-concrete-plants', component: ModernizationComponent},
+      {path: 'weighing-of-road-and-rail-transport', component: WeighingComponent},
       {path: 'aurora', component: AuroraComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       {path: 'account/login', component: LoginComponent}

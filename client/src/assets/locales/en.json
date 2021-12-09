@@ -14,6 +14,7 @@
       "Programs": "Programs",
       "Support": "Support",
       "About": "About company",
+      "Solutions": "Solutions",
       "Contacts": "Contacts",
       "News": "News",
       "Price": "Price list"
@@ -1842,6 +1843,97 @@
       "Text8": "Standardized means for measuring the dimensions of the freight transport . ",
       "Text9": "Information about the detected exceeding of the permissible freight transport parameters is transferred in the On-line mode to the weight control and dimension measurement units (CHECKPOINT)."
     }
+  },
+  "SOLUTION": {
+    "Index": {
+      "Title": "Solutions",
+      "SolutionNameOne": "Agricultural industry",
+      "SolutionNameTwo": "Dispensing mixing line of a glass factory",
+      "SolutionNameThree": "Livestock industry",
+      "SolutionNameFour": "Modernization of concrete plants, concrete mixing plants and prefabricated concrete factories",
+      "SolutionNameFive": "Weighing of road and rail transport"
+    },
+    "Agricultural": {
+      "SubTitle": "Alex S&E weighing equipment is in great demand in the agricultural industry. Many peasant farms successfully operate filling dispensers, platform scales, scales for weighing livestock, and truck scales “Farmer”.",
+      "ContentOne": {
+        "Title": "Filling batcher (bagging batcher) ",
+        "SubTitle": "The filling batcher is used for filling in open bags and packages weighing from 20 to 50 kg of grain, compound feed, bran, granules, fertilizers, seeds, pallets, sugar, flour and other similar materials.<br><br>The filling dispenser is extremely simple and convenient in operation, the bag with the material is weighed during the filling process, when the set weight is reached, filling the bag stops automatically. After filling, the bag is replaced with a new one.<br>"
+      },
+      "ContentTwo": {
+        "Title": "Platform scales",
+        "SubTitle": "Platform scales allow to weigh loads up to three tons with high accuracy. Ideal for weighing products in boxes, bags, on pallets, and when installing ramps or in a sump, they are suitable for weighing goods on carts."
+      },
+      "ContentThree": {
+        "Title": "Scales for weighing animals",
+        "SubTitle": "Scales for weighing animals have a special weighing algorithm that averages the data under unstable load and allows you to get more objective and accurate data of live weight."
+      },
+      "ContentFour": {
+        "Title": "Truck scale Farmer",
+        "SubTitle": "The truck scale Farmer allows to weigh vehicles in the field conditions and quickly transport the scales to another weighing place.<br><br><br>The equipment produced by Alex S&E is designed specifically for the Moldovan market and has proven itself perfectly in our climatic conditions. Over the years of operation, our scales have proven their reliability, which is ensured by the high structural strength of the platforms, the build quality, as well as the tightness of the sensors and electronic weighing terminals.<br>"
+      }
+    },
+    "Dispensing": {
+      "PartnerTitle" : "Our clients:",
+      "SubTitle": "The automated batching and mixing line of a glass factory is a set of equipment and software designed to prepare a batch according to a given recipe. ",
+      "SubSubTitle": "Alex S&E production line - ensures high productivity of the complex and quality of finished products due to dosing accuracy and synchronous operation of all equipment. Allows to achieve a high degree of technological flexibility due to the ability to work on various formulations of glass batch.<br>The line consists of dispensers, which are completely autonomous modules that work both under the control of the \"Master controller\" and without it.<br>",
+      "ContentOne": {
+        "Title": "The modular design of the system allows you to change the number and type of dispensers, sensors and mechanisms. <br>The control system software has a friendly user interface. All parameters of the technological process are conveniently displayed on the mnemonic diagram and on the operator's monitor.<br>",
+        "SubTitle" : "An example of the composition of a dosing line for manufacturing the container glass (depending on the recipe, the composition of the line may differ):",
+        "Li" : "⦁ Sand batcher<br>⦁ Soda batcher<br>⦁ Dolomite and chalk batcher (two-component)<br>⦁ Alumina, sulfate, nitrate batcher (three-component)<br>⦁ Microcomponents batcher (premix)<br>⦁ Water batcher<br>⦁ Charge batcher<br>⦁ Cullet batcher.<br>"
+      },
+      "ContentTwo": {
+        "Title": "• Automated control system (ACS) <br>Each batcher is controlled by its own controller, which can set the dose, take hourly totals, enter the setup mode to configure the actuators, adjust the operating parameters of the dispenser, and calibrate the scales. Each controller in the line is connected to a controlling \"Master controller\" or a computer (RS232 / RS485), but at the same time it allows you to work in manual mode. <br>",
+        "SubTitle" : "The automatic control system (ACS) is a fully automated system for the preparation of glass batch and includes a full range of automatic dosing, mixing and loading of the batch into a tube for further transportation to the furnace.",
+        "Li" : "1. Dosing of glass batch components according to a given recipe.<br>2. Collection of glass batch components.<br>3. Mixing (preparation) of glass batch.<br>4. Transportation of charge to storage silos.<br>5. Dosing of glass batch.<br>6. Dosing of cullet (returnable and purchased) according to a given recipe.<br>7. Transportation of the finished batch mixture and cullet to the hoppers for loading the glass furnace.<br>8. Loading the bunkers of the glass furnace.<br>9. Aspiration of the path for collecting the components of the charge, mixing and transporting and storing the charge. Dust collector filters clogging control.<br>"
+      },
+      "ContentThree": {
+        "Title": "Full complex automation of the dosing section and mixer allows you to achieve:",
+        "Li" : "• Management of all mechanisms by a single ACS<br>• Centralized control of the system from a control workstation (personal computer - operator's workstation)<br>• Display on the monitor of all technological equipment in static (mnemonic diagram) and dynamic (on the screen of the operator's workstation).<br>• Full logging of the system operation: both in terms of dosage and actions of the operator and the system, the presence of protocols for any periods of operation (day, week, month, year).<br>"
+      }
+    },
+    "Livestock": {
+      "SubTitle": "Livestock is a very important branch of agriculture, which is characterized by a deep history of development. This industry provides raw materials for the food (meat, milk, eggs, honey, etc.) and light (leather, wool, silkworm cocoons, etc.) industry, organic fertilizers for crop production, etc.<br>Alex S&E weighing equipment is widely used in the livestock industry in the production and packaging of animal feed, to control live weight gain, to weigh finished products at meat processing plants and dairies.<br>",
+      "ContentOne": {
+        "Title": "Filling batcher (bagging batcher) ",
+        "SubTitle": "The filling batcher is used for filling in open bags and packages weighing from 20 to 50 kg of grain, compound feed, bran, granules, fertilizers, seeds, pallets, sugar, flour and other similar materials.<br><br>The filling dispenser is extremely simple and convenient in operation, the bag with the material is weighed during the filling process, when the set weight is reached, filling the bag stops automatically. After filling, the bag is replaced with a new one.<br>"
+      },
+      "ContentTwo": {
+        "Title": "Platform scales",
+        "SubTitle": "Platform scales allow to weigh loads up to three tons with high accuracy. Ideal for weighing products in boxes, bags, on pallets, and when installing ramps or in a sump, they are suitable for weighing goods on carts."
+      },
+      "ContentThree": {
+        "Title": "Scales for weighing animals",
+        "SubTitle": "Scales for weighing animals have a special weighing algorithm that averages the data under unstable load and allows you to get more objective and accurate data of live weight."
+      },
+      "ContentFour": {
+        "Title": "Monorail scales",
+        "SubTitle": "Monorail scales are designed for static weighing of carcasses, half carcasses transported on a monorail. They are used for technological and accounting operations at meat processing plants.<br><br>The equipment manufactured by Alex S&E is designed specifically for the Moldovan market and has proven itself perfectly in our climatic conditions. Over the years of operation, our scales have proven their reliability, which is ensured by the high structural strength of the platforms, the build quality, as well as the tightness of the sensors and electronic weighing terminals.<br>"
+      }
+    },
+    "Modernization": {
+      "SubTitle": "Modern standards for the quality of concrete require strict adherence to the formulation of the concrete mix. At the same time, concrete plants and concrete mixing plants, built according to old standards, operate on outdated batching equipment and are not equipped with automated accounting and control systems for the technological process of concrete production - this does not allow ensuring the required quality and compliance with the concrete mix recipe. Therefore, the modernization of existing concrete mixing plants is currently one of the urgent problems in the construction industry.",
+      "SubSubTitle": "Modernization of a concrete mixing unit consists in the development and commissioning of an automated process control system (APCS). At the same time, the modernization or replacement of the dosage mixing, technological, transport and aspiration equipment is carried out.",
+      "ContentOne": {
+        "Title": "Work carried out during the modernization:",
+        "SubTitle": "• Analysis of the existing concrete mixing plant for the preparation of recommendations for modernization and preparation of technical specifications;<br>• Development of project documentation;<br>• Manufacturing of equipment;<br>•\tInstallation of equipment;<br>• Implementation of automated control systems for technological processes of concrete mixing plants and individual units based on strain gauge weighing batchers and software;<br>• consulting services, personnel training, warranty and post-warranty service.<br>"
+      },
+      "ContentTwo": {
+        "Title": "Modernization of the concrete mixing plant provides",
+        "SubTitle": "⦁ Compliance with the specified recipe and concrete mix production technology with the possibility of documentary confirmation of the recipe for each produced batch of concrete. If necessary, it is possible to issue reports for each dose of the mixture, indicating both the required prescription and the actually consumed raw materials.<br>⦁ Improving the quality of the produced concrete mix due to the high accuracy of dosing of cement, inert filler materials (sand and crushed stone), cement, water and various chemical additives that make up the concrete mix.<br>⦁ Compliance with concrete production technology by the maximum possible exclusion of the human factor.<br>⦁ Rational use of raw materials (cement, sand, crushed stone and additives).<br>⦁ Automated accounting of the consumption of cement, sand, crushed stone, water and chemical additives, as well as concrete produced over a certain period of time.<br>⦁\tOne of the examples of the composition of the equipment during the modernization of the batching and mixing line of the concrete mixing plants:<br>⦁ Cement batcher,<br>⦁ Inert materials batcher<br>⦁ Water batcher<br>⦁ Additives batcher<br>⦁ Automatic control system<br>⦁ Alex S&E software.<br>"
+      }
+    },
+    "Weigh": {
+      "SubTitle": "Today, for any enterprise that transports, sells or accepts products in large volumes, <a href=/auto-index>truck </a>   or <a href=/wagon-index> wagon </a> scales are a mandatory component in the accounting policy of the enterprise. Scales not only solve the problem of accurate weighing of products, but also ensure its accounting, save time and money for the enterprise.<br>Along with the purchase of scales, it is often necessary to draw up accompanying documents, optimize and automate the processes associated with weighing. To do this, all Alex S&E truck and rail scales are supplied with a special software “Alex Scales”, thanks to which the scales become a “smart” assistant in business. <br>",
+      "ContentOne": {
+        "Title": "Alex Scales” Program ",
+        "SubTitle": "• Allows you to keep records of weighing, vehicles, cargo.<br>• Fixes the gross and tare weight, weighing time, vehicle number, cargo, invoice number.<br>• Calculates net weight<br>• Captures pictures of the moment of weighing (when equipped with a video surveillance system)<br>• Able to write out the weight coupons, transport or tax invoices.<br>• At any time in the program, you can generate a complete report on the weighings and registered cargoes, providing the necessary data for analysis.<br>⦁\t• Weighing results can be transferred to the warehouse or account<br>"
+      },
+      "ContentTwo": {
+        "SubTitle": "Automobile and wagon scales can be equipped with a video surveillance system and, for reporting, provide a photographic record of each weighing. To control the order of movement of vehicles on the scales, a system of barriers or traffic lights is installed. The system for recognizing car numbers or reading RFID tags is used when it is necessary to identify the car in automatic mode."
+      },
+      "ContentThree": {
+        "Title": "And to make the control the operation of the scales as convenient as possible, Alex S&E has developed a special mobile application for devices running on IOS and Android. So you can control the scales from a phone with Internet access. In addition, this set of tools can be useful in case of disputes or conflicts regarding the weight of the cargo.<br>But that's not all! The Alex S&E truck scales can fully work in automatic mode and WITHOUT operator participation! For this, the scales are additionally equipped with a vehicle recognition system (these are video cameras with vehicle license plate recognition or an RFID reader) and a flow control system (by means of barriers or traffic lights).<br>Such additional capabilities significantly increase the efficiency of weighing vehicles and accounting for products. At the same time, the risk of the influence of unscrupulous employees on the weighing result is reduced.<br>Alex S&E is the largest manufacturer of weighing equipment in Moldova, produces a wide range of automobile and carriage scales for weighing vehicles transporting large volumes of solid, liquid and bulk cargo.<br>Over 28 years of experience in the market, Alex S&E has gained a reputation as a conscientious manufacturer. This is confirmed by the fact that the company's scales are successfully used by enterprises in the territory of Moldova, Ukraine, Russia and Kazakhstan.<br>All Alex S&E scales are included in the State Register of Mass Measuring Instruments and comply with national and international standards.<br>"
+      }
+    }
   }
-
 }

@@ -201,6 +201,13 @@ import { Location } from '@angular/common';
 import { TerminalComponent } from './components/alex-market-page/terminal/terminal.component';
 import {FilterActiveProductPipe} from './admin/shared/pipes/filterActiveProduct.pipe';
 import { MobileTruckScaleWithContinuousPlatformComponent } from './components/mobile-truck-scale-with-continuous-platform/mobile-truck-scale-with-continuous-platform.component';
+import { SolutionsComponent } from './components/solutions/solutions.component';
+import { IndexComponent } from './components/solutions/index/index.component';
+import { AgriculturalComponent } from './components/solutions/agricultural/agricultural.component';
+import { DispensingComponent } from './components/solutions/dispensing/dispensing.component';
+import { LivestockComponent } from './components/solutions/livestock/livestock.component';
+import { ModernizationComponent } from './components/solutions/modernization/modernization.component';
+import { WeighingComponent } from './components/solutions/weighing/weighing.component';
 
 
 @Injectable({providedIn: 'root'})
@@ -404,6 +411,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     AuroraComponent,
     TerminalComponent,
     MobileTruckScaleWithContinuousPlatformComponent,
+    SolutionsComponent,
+    IndexComponent,
+    AgriculturalComponent,
+    DispensingComponent,
+    LivestockComponent,
+    ModernizationComponent,
+    WeighingComponent,
 
   ],
   imports: [

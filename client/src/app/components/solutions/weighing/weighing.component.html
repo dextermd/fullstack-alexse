@@ -1,0 +1,161 @@
+<div class="">
+  <div class="container pt-0">
+    <mdb-breadcrumb-item>
+      <mdb-breadcrumb-item  [routerLink]="'/solutions'">{{'SOLUTION.Index.Title' | translate}}</mdb-breadcrumb-item>
+      <mdb-breadcrumb-item class="active">{{'SOLUTION.Index.SolutionNameFive' | translate}}</mdb-breadcrumb-item>
+    </mdb-breadcrumb-item>
+
+    <!--Section: Content-->
+    <section>
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-lg-7 mb-3 align-self-center text-center text-lg-left">
+
+          <h1 class="h2 mb-4 pb-5">
+            <div [innerHTML]="'SOLUTION.Index.SolutionNameFive'  | translate"></div>
+          </h1>
+        </div>
+
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-lg-5 mb-3">
+          <!-- Featured image -->
+          <div class="view overlay">
+            <img class="img-fluid " src="assets/solutions/index/image005-min.jpg" alt="Sample image">
+
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+      <div style="font-family: 'Times New Roman'">
+        <h5 class="black-text">
+          <div [innerHTML]="'SOLUTION.Weigh.SubTitle'  | translate"></div>
+        </h5>
+      </div>
+
+    </section>
+    <!--Section: Content-->
+
+
+    <section class="container">
+      <div class="container pt-5">
+        <h4 class="mb-0 d-flex align-items-center justify-content-center">
+          <div [innerHTML]="'SOLUTION.Weigh.ContentOne.Title'  | translate"></div>
+        </h4>
+        <div class="row mb-5 d-flex align-items-center">
+          <div class="col order-2">
+            <div class="">
+              <div class="card-header white">
+              </div>
+              <h6>
+                <div class="card-body ">
+                  <ul class="mb-4">
+                    <div [innerHTML]="'SOLUTION.Weigh.ContentOne.SubTitle'  | translate"></div>
+                  </ul>
+                </div>
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 order-1">
+            <div class="view overlay rounded">
+              <img src="assets/solutions/weigh/image003-min.jpg" class="img-fluid"
+                   alt="Sample project image"/>
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <ng-container *ngIf="this.main.lang == 'ru'">
+        <div class="py-1">
+          <img lightbox class="img-fluid"  src="assets/solutions/weigh/Automation-min.jpg" alt="Sample image">
+        </div>
+      </ng-container>
+      <ng-container *ngIf="this.main.lang == 'en'">
+        <div class="py-1">
+          <img lightbox class="img-fluid"  src="assets/solutions/weigh/Automation_en-min.jpg" alt="Sample image">
+        </div>
+      </ng-container>
+      <ng-container *ngIf="this.main.lang == 'ro'">
+        <div class="py-1">
+          <img lightbox class="img-fluid"  src="assets/solutions/weigh/Automation_ro-min.jpg" alt="Sample image">
+        </div>
+      </ng-container>
+      <div class="container pt-5">
+        <div class="row mb-5 d-flex align-items-center">
+          <div class="col">
+            <div class="">
+              <div class="card-header white">
+              </div>
+              <h5>
+                <div class="card-body ">
+                  <ul class="mb-4">
+                    <div [innerHTML]="'SOLUTION.Weigh.ContentTwo.SubTitle'  | translate"></div>
+                  </ul>
+                </div>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section: Content-->
+    <section class="dark-grey-text text-center">
+
+      <div class="row mx-0 nopadding">
+        <div class="col-md-6 mb-4 mx-0" style="padding-top: 22px;">
+
+          <div class="view mb-0">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3FzSHWheosk" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+
+        </div>
+        <div class="col-md-6 mb-4 mx-0 pt-2">
+
+          <div class="view mb-0 mx-0">
+            <ng-container *ngIf="this.main.lang == 'ru'">
+              <div class="py-1">
+                <img lightbox class="img-fluid" style="max-height: 270px" src="assets/solutions/weigh/ScalesControl-min.jpg" alt="Sample image">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="this.main.lang == 'en'">
+              <div class="py-1">
+                <img lightbox class="img-fluid" style="max-height: 270px" src="assets/solutions/weigh/ScalesControl_en-min.jpg" alt="Sample image">
+              </div>
+            </ng-container>
+            <ng-container *ngIf="this.main.lang == 'ro'">
+              <div class="py-1">
+                <img lightbox class="img-fluid" style="max-height: 270px" src="assets/solutions/weigh/ScalesControl_ro-min.jpg" alt="Sample image">
+              </div>
+            </ng-container>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!--Section: Content-->
+    <h6 class="">
+      <div [innerHTML]="'SOLUTION.Weigh.ContentThree.Title'  | translate"></div>
+    </h6>
+
+  </div>
+
+</div>

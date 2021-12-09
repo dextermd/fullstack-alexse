@@ -14,6 +14,7 @@
       "Programs": "Programe",
       "Support": "Suport",
       "About": "Despre companie",
+      "Solutions": "Solutii",
       "Contacts": "Contacte",
       "News": "Știri",
       "Price": "Listă de prețuri"
@@ -965,10 +966,10 @@
     "StaticAuto": {
       "Title": "CÂNTARE STAȚIONARE PENTRU VECHICULE",
       "SubTitle": "Cântarele sunt destinate pentru cântărirea statică a vehiculelor grele, cu deplasare completă pe platformă, în condiții de trafic intens, inclusiv în condiții dificile de funcționare.",
-      "HeaderText": "Ele pot fi instalate atât în poziția la sol cu rampe de intrare și ieșire, cât și în groapă, pentru a economisi spațiu pe teritoriul întreprinderii.<br>>La fabricarea cântarelor pentru camioane, folosim cele mai fiabile componente testate în timp.<br>Indicatorul electronic MERAV 2000 este dotat cu interfață RS232, ce permite conectare la calculator. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. Dacă este necesară instalarea cântarului la o distanță considerabilă de camera operatorului, se utilizează senzori digitali.<br>>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl. <br>>",
+      "HeaderText": "Ele pot fi instalate atât în poziția la sol cu rampe de intrare și ieșire, cât și în groapă, pentru a economisi spațiu pe teritoriul întreprinderii.<br>La fabricarea cântarelor pentru camioane, folosim cele mai fiabile componente testate în timp.<br>Indicatorul electronic MERAV 2000 este dotat cu interfață RS232, ce permite conectare la calculator. Pentru funcționare autonomă, în cazul întreruperilor de curent, indicatorul are o baterie încorporată și iluminare de fundal a afișajului. Indicii greutății de pe ecran sunt ușor de citit de la o distanță de câțiva metri.<br>Senzorii din cântar au un grad de protecție împotriva prafului și umezelii IP68, care, de fapt, le permite să lucreze chiar și în apă și sunt protejați de fulgeri. Temperatura de funcționare a senzorilor este de la -30 ° С la + 45 ° С. Dacă este necesară instalarea cântarului la o distanță considerabilă de camera operatorului, se utilizează senzori digitali.<br>Software-ul pentru computer sau laptop este furnizat gratuit și vă permite să urmăriți cântăririle  cu salvarea fotografiilor momentului de cântărire, eliberarea cupoanelor de cântărire și facturilor. Suportă „cântărirea dublă” (brută, tare) pentru determinarea greutății nete. Dacă este necesar, oferă acces la distanță la datele de cântărire de oriunde din lume utilizând aplicația ScalesControl. <br>",
       "Beton": {
         "Title": "CÂNTARE AUTO BETON",
-        "Text": "Construcția cântarelor de beton armat reprerzintă un cadru metalic cu o plasă de armare, care este turnat cu beton la locul de instalare.<br>>Datorită rezistenței sale ridicate la coroziune, efectelor sărurilor, acizilor și alcalinilor, cântarele au o durată de viață sporită și s-au dovedit fialbilitatea în întreprinderile cu condiții dificile de funcționare.<br>>"
+        "Text": "Construcția cântarelor de beton armat reprerzintă un cadru metalic cu o plasă de armare, care este turnat cu beton la locul de instalare.<br>Datorită rezistenței sale ridicate la coroziune, efectelor sărurilor, acizilor și alcalinilor, cântarele au o durată de viață sporită și s-au dovedit fialbilitatea în întreprinderile cu condiții dificile de funcționare.<br>"
       },
       "Metal": {
         "Title": "CÂNTARE AUTO METALICE",
@@ -1842,6 +1843,97 @@
       "Text8": "Mijloace standardizate pentru măsurarea dimensiunilor mijloacelor de transport de marfă.",
       "Text9": "Informațiile despre excesul detectat al parametrilor admisibili ai mijloacelor de transport de marfă sunt transmise online către punctele "
     }
+  },
+  "SOLUTION": {
+    "Index": {
+      "Title": "Solutii",
+      "SolutionNameOne": "Industria agricolă",
+      "SolutionNameTwo": "Linia de dozare și amestecare a fabricii de sticlă",
+      "SolutionNameThree": "Industria zootehnică",
+      "SolutionNameFour": "Modernizarea uzinelor de beton, instalațiilor de amestecare a betonului și a fabricilor de beton prefabricat",
+      "SolutionNameFive": "Cântărirea transportului rutier și feroviar"
+    },
+    "Agricultural": {
+      "SubTitle": "Echipamentele de cântărire Alex S&E sunt foarte solicitate în industria agricolă. Multe ferme țărănești operează cu succes dozatoare de umplere, cântare platformă, cântare pentru cântărirea animalelor și cântare auto “Fermier”.",
+      "ContentOne": {
+        "Title": "Dozator de umplere (dozator de ambalare)",
+        "SubTitle": "Dozatorul de umplere este utilizat pentru ambalarea cerealelor, furajelor mixte, tărâțelor, granulelor, îngrășămintelor, semințelor, paletelor, zahărului, făinii și a altor materiale similare în pungi deschise și pachete cu greutatea de la 20 la 50 kg.<br><br>Dozatorul de umplere este extrem de simplu și convenabil în exploatare, punga cu materialul este cântărită în timpul procesului de umplere, când se atinge greutatea setată, umplerea pungii se oprește automat. După umplere, punga este înlocuită cu una nouă.<br>"
+      },
+      "ContentTwo": {
+        "Title": "Cântare platformă",
+        "SubTitle": "Cântarele platformă vă permit să cântăriți marfă de până la trei tone cu o precizie ridicată. Ideal pentru cântărirea produselor în cutii, pungi, pe paleți, iar atunci când se instalează rampe sau în groapă, acestea sunt potrivite pentru cântărirea mărfurilor pe cărucioare."
+      },
+      "ContentThree": {
+        "Title": "Cântare pentru cântărirea animalelor",
+        "SubTitle": "Cântarele pentru cântărirea animalelor au un algoritm special de cântărire care calculează în medie datele sub sarcină instabilă și vă permite să obțineți date mai obiective și precise despre greutatea „vie”."
+      },
+      "ContentFour": {
+        "Title": "Cântarul auto Fermier",
+        "SubTitle": "Cântarul auto „Fermier” vă permite să cântăriți vehiculele în condiții „de câmp” și să transportați rapid cântarul dintr-un loc de cântărire în altul.<br><br><br>Echipamentele produse de Alex S&E sunt concepute special pentru piața Republicii Moldova și s-au dovedit perfect funcționabile în condițiile noastre climatice. De-a lungul anilor de funcționare, cântarele noastre și-au dovedit fiabilitatea, care este asigurată de rezistența structurală ridicată a platformelor, calitatea construcției, precum și etanșeitatea senzorilor și a terminalelor electronice de cântărire.<br>"
+      }
+    },
+    "Dispensing": {
+      "PartnerTitle" : "Сlienții noștri:",
+      "SubTitle": "Linia automată de dozare și amestecare a unei fabrici de sticlă este un set de echipamente și software concepute pentru a pregăti un lot conform unei rețete date. ",
+      "SubSubTitle": "Linia de producție Alex S&E - asigură o productivitate ridicată a complexului și a calității produselor finite datorită preciziei de dozare și funcționării sincrone a tuturor echipamentelor. Permite obținerea unui grad ridicat de flexibilitate tehnologică datorită capacității de a lucra pe diferite rețete a lotului de sticlă.<br>Linia este formată din dozatoare, care sunt module complet autonome care funcționează atât sub controlul „Controlorului principal”, cât și fără acesta.<br>",
+      "ContentOne": {
+        "Title": "Funcționalitatea modulară a sistemului vă permite să schimbați numărul și tipul dozatoarelor, senzorilor și mecanismelor.<br>Software-ul sistemului de control are o interfață de utilizator prietenoasă. Toți parametrii procesului tehnologic sunt afișați în mod convenabil pe diagrama mnemonică și pe monitorul operatorului.<br>",
+        "SubTitle" : "Exemplu de compoziție a unei linii de dozare în fabricarea ambalajelor de sticlă (în funcție de rețetă, compoziția liniei poate diferi):",
+        "Li" : "• Dozator pentru nisip<br>• Dozator pentru carbonat de sodiu<br>• Dozator pentru dolomit și cretă (bicomponent)<br>• Dozator pentru alumină, sulfat, salpetru (cu trei componente)<br>• Dozator pentru microcomponenți (premix)<br>• Dozator pentru apa<br>• Dozator pentru amestecuri<br>• Dozator pentru deșeuri de sticlă<br>• Sistem automat de control (ACS)<br>"
+      },
+      "ContentTwo": {
+        "Title": "Fiecare dozator este controlat de propriul său controler, care poate seta doza, poate lua totalurile orare, poate intra în modulul de configurare pentru a configura dispozitivele de acționare, regla parametrii de funcționare ai dozatorului și calibra cântarul. Fiecare controler din linie este conectat la un „controler master” sau la un computer (RS232 / RS485), dar în același timp vă permite să lucrați în modul manual.",
+        "SubTitle" : "Sistemul de control automat (ACS) este un sistem complet automatizat pentru prepararea lotului de sticlă și include un sistem complet de dozare automată, amestecare și încărcare a lotului în kubel pentru transportarea ulterioară în cuptor.",
+        "Li" : "1. Dozarea componentelor lotului de sticlă conform unei rețete prestabilite.<br>2. Colectarea componentelor lotului de sticlă.<br>3. Amestecarea (prepararea) lotului de sticlă.<br>4. Transportul lotului la silozurile de depozitare.<br>5. Dozarea lotului de sticlă.<br>6. Dozarea deșeurilor de sticlă (returnabile și achiziționate) conform unei rețete prestabilite.<br>7. Transportul amestecului finit și deșeurilor la buncărele de încărcare în cuptor. <br>8. Încărcarea buncarurilor cuptorului de sticlă.<br>9. Aspirarea căii de colectare a componentelor încărăcăturii, amestecarea și transportul și stocarea încărcăturii. Controlul blocajului filtrelor colectorului de praf.<br>"
+      },
+      "ContentThree": {
+        "Title": "Automatizarea completă și complexă a secțorului de dozare și a mixare vă permite să realizați:",
+        "Li" : "• Managementul tuturor mecanismelor unui singur APCS<br>• Controlul centralizat al sistemului de la o stație de lucru de control (computer personal - stația de lucru a operatorului)<br>• Afișarea pe monitor a tuturor echipamentelor tehnologice în regim static (diagramă mnemonică) și dinamic (pe ecranul stației de lucru a operatorului).<br>• Înregistrarea completă a funcționării sistemului: atât în \u200B\u200Bceea ce privește dozarea și acțiunile operatorului, cât și ale sistemului, prezența protocoalelor pentru orice perioadă de funcționare (zi, săptămână, lună, an).<br>"
+      }
+    },
+    "Livestock": {
+      "SubTitle": "Creșterea animalelor este o ramură foarte importantă a agriculturii, care se caracterizează printr-o istorie profundă de dezvoltare. Această industrie furnizează materii prime pentru industria alimentară (carne, lapte, ouă, miere etc.) și industria ușoară (piele, lână, coconi de viermi de mătase etc.), îngrășăminte organice pentru producția de culturi etc.<br>Echipamentele de cântărire Alex S&E sunt utilizate pe scară largă în industria zootehnică, în producția și ambalarea hranei pentru animale, pentru a controla creșterea greutății vii, pentru a cântări produsele finite la fabricile de prelucrare a cărnii și laptelui.<br>",
+      "ContentOne": {
+        "Title": "Dozator de umplere (dozator de ambalare)",
+        "SubTitle": "Dozatorul de umplere este utilizat pentru umplerea sacilor deschise și a pungilor cu greutatea de la 20 la 50 kg de cereale, furaje compuse, tărâțe, granule, îngrășăminte, semințe, paleți, zahăr, făină și alte materiale similare.<br>Dozatorul de umplere este extrem de simplu și convenabil în exploatare, sacul cu materialul este cântărit în timpul procesului de umplere, când se atinge greutatea specificată, umplerea sacului se oprește automat. După umplere, sacul este înlocuit cu unul nou.<br>"
+      },
+      "ContentTwo": {
+        "Title": "Cântare platformă",
+        "SubTitle": "Platform scales allow to weigh loads up to three tons with high accuracy. Ideal for weighing products in boxes, bags, on pallets, and when installing ramps or in a sump, they are suitable for weighing goods on carts."
+      },
+      "ContentThree": {
+        "Title": "Cântare pentru cântărirea animalelor",
+        "SubTitle": "Cântarele platformă vă permit să cântăriți marfă de până la trei tone cu o precizie ridicată. Sunt ideale pentru cântărirea produselor în cutii, pungi, pe paleți, iar instalând rampe sau instalate în groapă, acestea sunt potrivite pentru cântărirea mărfurilor pe cărucioare."
+      },
+      "ContentFour": {
+        "Title": "Cântare monorail",
+        "SubTitle": "Cântarele monorail sunt concepute pentru cântărirea statică a carcaselor, jumătăți de carcase transportate pe un monorail. Acestea sunt utilizate în operațiuni tehnologice și contabile la fabricile de procesare a cărnii.<br><br>Echipamentele produse de Alex S&E sunt concepute special pentru piața Republicii Moldova și s-au dovedit perfect funcționabile în condițiile noastre climatice. De-a lungul anilor de funcționare, cântarele noastre și-au dovedit fiabilitatea, care este asigurată de rezistența structurală ridicată a platformelor, calitatea construcției, precum și etanșeitatea senzorilor și a terminalelor electronice de cântărire.<br>"
+      }
+    },
+    "Modernization": {
+      "SubTitle": "Standardele modern înaintate calității betonului necesită respectarea strictă a rețetei amestecului de beton. În același timp, iuzinele de beton și instalațiile de beton, construite conform vechilor standarde, funcționează pe echipamente de dozare învechite și nu sunt echipate cu sisteme automate de contabilitate și control pentru procesul tehnologic de producție a betonului - acest lucru nu permite asigurarea calității cerute și respectarea rețetei amestecului de beton. Prin urmare, modernizarea instalațiilor existente de amestecare a betonului este în prezent una dintre problemele urgente din industria construcțiilor.",
+      "SubSubTitle": "Modernizarea unei instalații de amestecare a betonului constă în dezvoltarea și punerea în funcțiune a unui sistem automatizat de control al proceselor (APCS). În același timp, se efectuează modernizarea sau înlocuirea echipamentelor de amestecare a dozelor, tehnologice, de transport și aspirație.",
+      "ContentOne": {
+        "Title": "Lucrări efectuate în procesul modernizării:",
+        "SubTitle": "• Analiza instalației existențe de amestecare a betonului pentru pregătirea recomandărilor pentru modernizarea și pregătirea specificațiilor tehnice;<br>• Elaborarea documentației de proiect;<br>• Fabricarea echipamentului;<br>• Instalarea echipamentului;<br>• Implementarea sistemelor de control automatizate pentru procesele tehnologice ale instalațiilor de amestecare a betonului și a unităților individuale bazate pe dozatoare tenzometrice de cântărire și software;<br>• servicii de consultanță, instruire a personalului, servicii de garanție și post-garanție.<br>"
+      },
+      "ContentTwo": {
+        "Title": "Modernizarea instalației de amestecare a betonului asigură",
+        "SubTitle": "⦁ Respectarea rețetei specificate și a tehnologiei de producere a amestecului de beton cu posibilitatea confirmării documentare a rețetei pentru fiecare lot produs de beton. Dacă este necesar, este posibil să se emită rapoarte pentru fiecare doză de amestec, indicând atât prescripția necesară, cât și materiile prime consumate efectiv.<br>⦁ Îmbunătățirea calității amestecului de beton produs datorită preciziei ridicate de dozare a cimentului, a materialelor de umplutură inerte (nisip și piatră zdrobită), a cimentului, a apei și a diferiților aditivi chimici care alcătuiesc amestecul de beton.<br>⦁ Respectarea tehnologiei de producție a betonului prin excluderea maximă posibilă a factorului uman.<br>"
+      }
+    },
+    "Weigh": {
+      "SubTitle": "Astăzi, pentru orice întreprindere care transportă, vinde sau recepționează produse în volume mari, cântarele <a href=/auto-index> auto </a>  sau <a href=/wagon-index> feroviare </a> sunt o componentă obligatorie în politica de evidență a întreprinderii. Cântarele nu numai că rezolvă problema cântăririi exacte a produselor, dar asigură și contabilitatea acesteia, economisind timp și bani pentru întreprindere.<br>Odată cu achiziționarea de cântare, deseori este necesară întocmirea documentelor însoțitoare, optimizarea și automatizarea proceselor asociate cântăririi. Pentru a face acest lucru, toate cântarele auto și feroviare Alex S&E sunt livrate cu un software special „Alex Scales”, datorită căruia cântarele devin un asistent „inteligent” în afaceri.<br>",
+      "ContentOne": {
+        "Title": "Programul “Alex Scales”",
+        "SubTitle": "⦁ Vă permite să urmăriți cântărirea, vehiculele, încărcăturile.<br>⦁ Fixează greutatea “brută” și “tare”, timpul de cântărire, numărul vehiculului, încărcătura, numărul facturii.<br>⦁ Calculează greutatea netă<br>⦁ Captează fotografii ale momentului cântăririi (atunci când este echipat cu un sistem de supraveghere video)<br>⦁ Permite emiterea cupoanelor de greutate, facturi de transport sau fiscale.<br>⦁ În orice moment puteți genera ]n program un raport complet privind cântăririle și încărcăturile înregistrate, oferind datele necesare pentru analiză.<br>⦁ Rezultatele cântăririi pot fi transmise în baza de date contabilă sau a depozitului (de exemplu, generând un fișier pentru import în 1C).<br>"
+      },
+      "ContentTwo": {
+        "SubTitle": "Cântarele auto și feroviare pot fi echipate cu un sistem de supraveghere video și, pentru raportare, să asigure o înregistrare fotografică a fiecărei cântăriri. Pentru a controla ordinea mișcării vehiculelor pe cântar, este instalat un sistem de bariere sau semafoare. Sistemul pentru recunoașterea numerelor de mașini sau citirea etichetelor RFID este utilizat atunci când este necesar să se identifice vehiculul în modul automat."
+      },
+      "ContentThree": {
+        "Title": "Și pentru a controla funcționarea cântarelor într-un mod cât mai comod, Alex S&E a dezvoltat o aplicație mobilă specială pentru dispozitivele care rulează pe IOS și Android. Deci, puteți controla balanțele de pe un telefon cu acces la Internet. În plus, acest set de instrumente poate fi util în caz de litigii sau conflicte cu privire la greutatea încărcăturii.<br>Dar asta nu este tot! Cântarele auto Alex S&E pot funcționa complet în modul automat și FĂRĂ participarea operatorului! Pentru aceasta, cântarele sunt echipate suplimentar cu un sistem de recunoaștere a vehiculului (acestea sunt camere video cu recunoaștere a plăcuței de înmatriculare a vehiculului sau un cititor RFID) și un sistem de control al debitului (prin intermediul barierelor sau semafoarelor).<br>Astfel de caracteristici suplimentare măresc semnificativ eficiența cântăririi vehiculelor și contabilitatea produselor. În același timp, riscul influenței angajaților asupra rezultatului cântăririi este redus.<br>Alex S&E este cel mai mare producător de echipamente de cântărire din Moldova, produce o gamă largă de cântare pentru camioane și feroviare pentru cântărirea vehiculelor care transportă volume mari de mărfuri solide, lichide și vrac.<br>Având o experiență de peste 28 de ani pe piață, Alex S&E și-a câștigat imaginea unui producător conștiincios. Acest lucru este confirmat de faptul că balanțele companiei sunt utilizate cu succes de întreprinderile de pe teritoriul Moldovei, Ucrainei, Rusiei și Kazahstanului.<br>Toate cântarele Alex S&E sunt incluse în Registrul de Stat al Instrumentelor de Măsurare a Masei și sunt conforme cu standardele naționale și internaționale.<br>"
+      }
+    }
   }
-
 }
