@@ -139,7 +139,7 @@ import {HTTP_INTERCEPTORS, HttpBackend, HttpClient, HttpClientModule} from '@ang
 
 import {registerLocaleData} from '@angular/common';
 import ruLocale from '@angular/common/locales/ru';
-import roLocale from '@angular/common/locales/ro';
+
 import {FilterPipe} from './admin/shared/pipes/filter.pipe';
 import { ShopPageComponent } from './components/shop-page/shop-page.component';
 import { ProductsComponent } from './components/shop-page/products/products.component';
@@ -221,8 +221,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/locales/', '.json');
 }
 
-// registerLocaleData( ruLocale, 'ru');
-// registerLocaleData( roLocale, 'ro');
+registerLocaleData( ruLocale, 'ru');
+
 
 
 

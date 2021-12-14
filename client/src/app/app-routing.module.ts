@@ -46,13 +46,13 @@ import {DozatorModernPageComponent} from './components/bunker/dozator-modern-pag
 // tslint:disable-next-line:max-line-length
 import {AutomaticWeightControlSystemComponent} from './components/automatic-weight-control-system/automatic-weight-control-system.component';
 import {AuroraComponent} from './components/aurora/aurora.component';
-import {MobileTruckScaleWithContinuousPlatformComponent} from "./components/mobile-truck-scale-with-continuous-platform/mobile-truck-scale-with-continuous-platform.component";
-import {SolutionsComponent} from "./components/solutions/solutions.component";
-import {AgriculturalComponent} from "./components/solutions/agricultural/agricultural.component";
-import {DispensingComponent} from "./components/solutions/dispensing/dispensing.component";
-import {LivestockComponent} from "./components/solutions/livestock/livestock.component";
-import {WeighingComponent} from "./components/solutions/weighing/weighing.component";
-import {ModernizationComponent} from "./components/solutions/modernization/modernization.component";
+import {MobileTruckScaleWithContinuousPlatformComponent} from './components/mobile-truck-scale-with-continuous-platform/mobile-truck-scale-with-continuous-platform.component';
+import {SolutionsComponent} from './components/solutions/solutions.component';
+import {AgriculturalComponent} from './components/solutions/agricultural/agricultural.component';
+import {DispensingComponent} from './components/solutions/dispensing/dispensing.component';
+import {LivestockComponent} from './components/solutions/livestock/livestock.component';
+import {WeighingComponent} from './components/solutions/weighing/weighing.component';
+import {ModernizationComponent} from './components/solutions/modernization/modernization.component';
 
 
 
