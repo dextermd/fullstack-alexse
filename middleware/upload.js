@@ -23,7 +23,6 @@ const limits = {
     fileSize: 200 * 1024 * 1024
 };
 
-let upload = multer({ storage: storage, limits: limits, fileFilter: fileFilter,});
 
-export default upload.single('image')
 
+module.exports = multer({storage: storage, limits: limits, fileFilter: fileFilter});
