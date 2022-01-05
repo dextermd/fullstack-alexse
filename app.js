@@ -27,6 +27,9 @@ const keys = require('./config/keys');
 const bodyParser = require("express");
 var app = express();
 
+app.use(bodyParser.json({limit: '200mb', extended: true}))
+app.use(bodyParser.urlencoded({limit: '200mb', extended: true}))
+
 mongoose.connect(keys.mongoURI)
     .then( () => console.log('MongoDB connected.'))
     .catch(error => console.log(error));
@@ -43,14 +46,7 @@ app.use(cors());
 app.use(logger('dev'));
 
 
-app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
-app.use(bodyParser.json({limit: '50mb', extended: true}));
 
-app.use(express.json({limit: '50mb'}));
-app.use(express.urlencoded({limit: '50mb'}));
-
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 
