@@ -11,14 +11,14 @@ const storage = multer.diskStorage({
         cb(null, `${date}-${file.originalname}`);
 
     },
-    limits: { fieldSize: 200 * 1024 * 1024 }
+    limit: { fieldSize: 200 * 1024 * 1024 }
 });
 
 
 
 module.exports = multer({
     storage: storage,
-    limits: {
+    limit: {
         fileSize: 200 * 1024 * 1024, 
     }
 });
