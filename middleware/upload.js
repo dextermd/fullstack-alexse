@@ -19,6 +19,4 @@ const limits = {
 
 
 
-let upload = multer({ storage: storage, limits, fileFilter: fileFilter,});
-
-export default upload.single('index')
+module.exports = multer({storage: storage,  limits,});
