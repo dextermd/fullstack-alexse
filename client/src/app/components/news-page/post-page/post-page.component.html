@@ -23,7 +23,7 @@
 
 
     <div>
-      <ng-container *ngIf="this.main.lang == 'ru'">
+      <!-- <ng-container *ngIf="this.main.lang == 'ru'">
         <quill-view-html [content]="post.content"></quill-view-html>
       </ng-container>
       <ng-container *ngIf="this.main.lang == 'en'">
@@ -31,6 +31,17 @@
       </ng-container>
       <ng-container *ngIf="this.main.lang == 'ro'">
         <quill-view-html [content]="post.contentRo"></quill-view-html>
+      </ng-container> -->
+      <ng-container *ngIf="this.main.lang == 'ru'">
+        <div [froalaView]="post.content"></div>
+      </ng-container>
+
+      <ng-container *ngIf="this.main.lang == 'ro'">
+        <div  [froalaView]="post.contentRo"></div>
+      </ng-container>
+
+      <ng-container *ngIf="this.main.lang == 'en'">
+        <div  [froalaView]="post.contentEn"></div>
       </ng-container>
 
     </div>
