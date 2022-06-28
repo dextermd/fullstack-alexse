@@ -917,6 +917,40 @@
         "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
         "FirstFourteen": "Accuracy class:",
         "LastFourteen": "Medium (III)"
+      },
+      "New": {
+        "FirstOne": "Maximum capacity, kg:",
+        "LastOne": "30/60/80",
+        "FirstTwo": "Verification scale interval (е), kg:",
+        "LastTwo": "10 /20 / 50",
+        "FirstThree": "Actual scale interval (d), kg:",
+        "LastThree": "10 /20 / 50",
+        "FirstFour": "Number of platforms, pcs:",
+        "LastFour": "3",
+        "FirstFive": "Track gauge, m:",
+        "LastFive": "1.2",
+        "FirstSix": "Permissible axle load, t:",
+        "LastSix": "12 / 15 /20",
+        "FirstAAA": "Throughput, vehicles per day:",
+        "LastAAA": "Up to 250",
+        "FirstAAAA": "Length of loading platforms, m:",
+        "LastAAAA": "13,5/ 15  / 16 / 18",
+        "FirstSeven": "Number of sensors, pcs:",
+        "LastSeven": "8",
+        "FirstEight": "Dust and waterproof (platform):",
+        "LastEight": "IP 68",
+        "FirstNine": "Dust and waterproof (indicator) MERAV2000:",
+        "LastNine": "IP 67",
+        "FirstTen": "PC connection:",
+        "LastTen": "RS232",
+        "FirstEleven": "Operation temperature range (platform), С:",
+        "LastEleven": "From -30 To +45",
+        "FirstTwelve": "Operation temperature range (indicator), С:",
+        "LastTwelve": "From -5 To +35",
+        "FirstThirteen": "Power supply:",
+        "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstFourteen": "Accuracy class:",
+        "LastFourteen": "Medium (III)"
       }
     },
     "Icons": {
@@ -974,6 +1008,11 @@
       "Metal": {
         "Title": "PITLESS TYPE TRUCK SCALES",
         "Text": "The manufacture of scales on an automated line and robotic assembly are no longer a fantasy. Complex production with a minimum number of manual operations, robots with CNC - allows to manufacture scales in exact accordance with the 3D model, without errors and in the shortest possible time. <br> <br> The weighing platform consists entirely of metal, structurally made of parallel sections, which form two tracks. The use of the latest technologies in metalworking made it possible to reduce the weight of metal structures and ensure high assembly accuracy, which in turn allows the scales to be transported to a new installation site by standard freight transport and significantly simplified the manufacture of the base (foundation). Ideal for temporary placement, for example, when performing seasonal work or in temporary / leased areas, while not inferior in reliability to other models of truck scales."
+      },
+      "BetonNew": {
+        "Title": "Concrete gauge truck scales",
+        "Text": "Automobile scales with track type concrete platform combine the advantages of truck scales with a solid concrete platform and a metal track.<li> Production of scales and foundation - only 20 working days.</li><li> Platforms are easily transported by standard road transport.</li><li> Increased platform warranty - 5 years </li><li> Ideal corrugated concrete surface </li><li> Side fences on the platform – standard configuration.</li><br> To achieve the best performance allows:<li> The process of assembly and concreting in the factory (ideal for this) conditions;</li><li> Use of advanced materials and technologies in production;</li><li> Construction of scales - guarantees long service life.</li><br> Alex S&E offers a platform warranty of 5 years. Our specialists are confident in the new product.",
+        "TextTwo": "<b> Learn more about how Alex S&E manufactures automobile scales of an innovative construction.</b><br></br> Concreting platforms in field conditions is associated with risks that can subsequently lead to complex and costly repairs:<li> Delivery of concrete of inadequate quality;</li><li> Loss of quality of concrete during its delivery to the place of installation of scales;</li><li> Weather conditions;</li><li> Human factor</li><br></br> Modern technologies for concreting platforms in the factory make it possible to provide optimal conditions for concrete solidification, achieve increased strength indicators and significantly reduce the time of the work performance.<br></br> In the production of truck scale platforms, the technology of prestressing of the fittings is used, the platforms are filled with high-strength concrete (grade B40 (M500)) using surface and deep vibration. A special concrete laying technology is used, which increases the concentration of additives on the upper surface, which significantly increases its wear resistance. The strength pressure of concrete takes place in the steam chamber.<br></br> For transportation, truck scales are disassembled into 6 modules with a length of 4.5 to 6 meters and a width of 1.5 meters and easily fit into the body of a standard truck, while the total weight of concreted platforms does not exceed 20 tons.<br></br> And without a doubt, a pleasant bonus for our customers will be an increased guarantee for the platform - 5 years and side fences on the platform - in the standard configuration.<br></br> This model is made in just 20 days and will serve you for many years.  "
       }
     },
     "MoveFarmer": {

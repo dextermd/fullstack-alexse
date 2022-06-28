@@ -11,6 +11,10 @@
              mdbWavesEffect>
         {{'CarWeights.StaticAuto.Metal.Title' | translate}}
       </label>
+      <label mdbBtn color="{{this.colorNew}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="New"
+        mdbWavesEffect>
+        {{'CarWeights.StaticAuto.BetonNew.Title' | translate}}
+      </label>
     </div>
   </div>
 
@@ -247,6 +251,241 @@
   </div>
 
 
+
+
+
+  <div *ngIf="radioModel == 'New'" class="container">
+
+    <div class="pt-0 pb-3" style="font-family: 'Times New Roman'">
+      <h5 class="black-text">
+        <div [innerHTML]="'CarWeights.StaticAuto.BetonNew.Text'  | translate"></div>
+      </h5>
+    </div>
+
+    <div class="col pb-3">
+      <div class="view overlay z-depth-1-half">
+        <ng-container *ngIf="this.main.lang == 'ru'">
+          <img lightbox backgroundColor="white" src="assets/industrial/auto/new/RU-preference-site-min.jpg" class="img-fluid" alt="">
+        </ng-container>
+        <ng-container *ngIf="this.main.lang == 'ro'">
+          <img lightbox backgroundColor="white" src="assets/industrial/auto/new/RO-preference-site-min.jpg" class="img-fluid" alt="">
+        </ng-container>
+        <ng-container *ngIf="this.main.lang == 'en'">
+          <img lightbox backgroundColor="white" src="assets/industrial/auto/new/EN-preference-site-min.jpg" class="img-fluid" alt="">
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="pt-0 pb-3" style="font-family: 'Times New Roman'">
+      <h5 class="black-text">
+        <div [innerHTML]="'CarWeights.StaticAuto.BetonNew.TextTwo'  | translate"></div>
+      </h5>
+    </div>
+
+    <h1 class="h2 text-center">{{'CarWeights.Icons.ModernTitle' | translate}}</h1>
+
+    <div class="flex-center pt-2 pb-2">
+      <div class="row">
+        <div class="col">
+          <img src="assets/industrial/icons/AddDisplay.png" ngbTooltip="{{'CarWeights.Icons.IconAddDisplay' | translate}}" container="body"
+               class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Sheld.png" ngbTooltip="{{'CarWeights.Icons.IconShield' | translate}}"
+               container="body" class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/ramp.png" ngbTooltip="{{'CarWeights.Icons.IconRamp' | translate}}"
+               container="body" class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/frame.png" ngbTooltip="{{'CarWeights.Icons.IconFrame' | translate}}" container="body"
+               class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/DisplayShockProtection.png"
+               ngbTooltip="{{'CarWeights.Icons.IconDisplayProtect' | translate}}" container="body" class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/DigitalSensors.png" ngbTooltip="{{'CarWeights.Icons.IconDigital' | translate}}" container="body"
+               class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/lights.png" ngbTooltip="{{'CarWeights.Icons.IconLights' | translate}}"
+               container="body" class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/barrier.png" ngbTooltip="{{'CarWeights.Icons.IconBarrier' | translate}}"
+               container="body" class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Photo.png"
+               ngbTooltip="{{'CarWeights.Icons.IconPhoto' | translate}}" container="body" class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/RFIDidentification.png" ngbTooltip="{{'CarWeights.Icons.IconRFID' | translate}}"
+               container="body" class="pr-2 pb-2">
+        </div>
+        <div class="col">
+          <img src="assets/industrial/icons/Automatic.png"
+               ngbTooltip="{{'CarWeights.Icons.IconAutomatic' | translate}}" container="body"
+               class="pr-2 pb-2">
+        </div>
+      </div>
+    </div>
+
+    <div lightbox-group class=" ">
+      <div class="row ">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/1 2-min.jpg" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/1 3-min.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/1 4-min.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/1 5-min.jpg" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/2 2-min.jpg" alt="">
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/surface-min.jpg" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/2-min.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/3 2-min.jpg" alt="">
+
+        </div>
+        <div class="col-4 py-1 my-1">
+          <img lightbox class="img-fluid" src="assets/industrial/auto/new/2 6-min.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+
+    <!--Grid row-->
+    <div class="py-2 my-2">
+      <div class="row flex-center">
+
+        <!--Grid column-->
+        <div class="col-md-6 col-lg-2 mb-4 mb-md-0">
+
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img lightbox backgroundColor="white" src="assets/cert/bsaa.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4 mb-md-0">
+
+
+          <h6 class="">
+            {{'Certificates.BSA' | translate}}
+          </h6>
+
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+    </div>
+    <h1 class="h2 text-center">{{'CarWeights.Tables.Title' | translate}}</h1>
+    <div class="flex-center pb-2">
+      <div class="col-lg-7">
+        <table mdbTable striped="true" bordered="true">
+          <thead>
+          </thead>
+          <tbody>
+            <tr mdbTableCol>
+              <td class="">{{'CarWeights.Tables.New.FirstOne' | translate}}</td>
+              <td class="">{{'CarWeights.Tables.New.LastOne' | translate}}</td>
+            </tr>
+            <tr mdbTableCol>
+              <td class="">{{'CarWeights.Tables.New.FirstTwo' | translate}}</td>
+              <td class="">{{'CarWeights.Tables.New.LastTwo' | translate}}</td>
+            </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstThree' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastThree' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstFour' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastFour' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstFive' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastFive' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstSix' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastSix' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstAAA' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastAAA' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstAAAA' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastAAAA' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstSeven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastSeven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstEight' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastEight' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstNine' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastNine' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstTen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastTen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstEleven' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastEleven' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstTwelve' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastTwelve' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstThirteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastThirteen' | translate}}</td>
+          </tr>
+          <tr mdbTableCol>
+            <td class="">{{'CarWeights.Tables.New.FirstFourteen' | translate}}</td>
+            <td class="">{{'CarWeights.Tables.New.LastFourteen' | translate}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
   <div *ngIf="radioModel == 'Right'" class="container">
 
     <div class="pt-0 pb-3" style="font-family: 'Times New Roman'">
@@ -479,7 +718,6 @@
 
 
   </div>
-
 
 </section>
 <!--Radio buttons-->

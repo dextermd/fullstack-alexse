@@ -917,6 +917,40 @@
         "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
         "FirstFourteen": "Clasa de exactitate a balanţei:",
         "LastFourteen": "Medium (III)"
+      },
+      "New": {
+        "FirstOne": "Capacitatea maximă de cântărire, kg:",
+        "LastOne": "30/60/80",
+        "FirstTwo": "Valoarea diviziunii de verificare (е), kg:",
+        "LastTwo": "10 /20 / 50",
+        "FirstThree": "Valoarea diviziunii reale (d), kg:",
+        "LastThree": "10 /20 / 50",
+        "FirstFour": "Număr de platforme, buc:",
+        "LastFour": "3",
+        "FirstFive": "latimea benzii, m:",
+        "LastFive": "1.2",
+        "FirstSix": "Sarcina admisă pe osie, t:",
+        "LastSix": "12 / 15 /20",
+        "FirstAAA": "Lățimea de bandă, vehicule pe zi:",
+        "LastAAA": "Până la 250",
+        "FirstAAAA": "Lungimea platformelor de încărcare, m:",
+        "LastAAAA": "13,5/ 15  / 16 / 18",
+        "FirstSeven": "Număr de senzori, buc:",
+        "LastSeven": "8",
+        "FirstEight": "Gradul de protecție împotriva prafului și a apei (platforma):",
+        "LastEight": "IP 68",
+        "FirstNine": "Gradul de protecție împotriva prafului și a apei (indicator MERAV2000):",
+        "LastNine": "IP 67",
+        "FirstTen": "Conectare la calculator:",
+        "LastTen": "RS232",
+        "FirstEleven": "Temperatură de funcționare (platforma), C:",
+        "LastEleven": "De La -30 Pînă +45",
+        "FirstTwelve": "Temperatură de funcționare (indicator), C:",
+        "LastTwelve": "De La -5 Pînă +35",
+        "FirstThirteen": "Tensiunea de alimentare de la reţea:",
+        "LastThirteen": "220V(+10%;-15%); 50 Hz +/-2%",
+        "FirstFourteen": "Clasa de exactitate a balanţei:",
+        "LastFourteen": "Medium (III)"
       }
     },
     "Icons": {
@@ -974,6 +1008,11 @@
       "Metal": {
         "Title": "CÂNTARE AUTO METALICE",
         "Text": "Fabricarea cântarelor pe o linie automată și asamblarea lor robotizată nu mai este o fantezie. Producție complexă cu un număr minim de operații manuale, roboți cu CNC - permit fabricarea cântarelor în conformitate exactă cu modelul 3D, fără erori și în cel mai scurt timp posibil. <br> <br> Platforma de cântărire este formată în întregime din metal, realizată structural din secțiuni paralele, care formează două șine. Utilizarea celor mai noi tehnologii în prelucrarea metalelor a făcut posibilă reducerea greutății structurilor metalice și asigurarea unei precizii ridicate a asamblării, ceea ce permite, la rândul său, transportul cântarelor către un nou loc de instalare prin transportul standard de marfă și a simplificat semnificativ fabricarea bazei (fundamentului). Ideal pentru plasarea temporară, de exemplu, atunci când efectuați lucrări sezoniere sau în zone temporare / închiriate, nefiind inferioare în fiabilitate față de alte modele de cântare pentru camioane."
+      },
+      "BetonNew": {
+        "Title": "Concrete gauge truck scales",
+        "Text": "Cântarele auto cu platforma de beton de tip șenile combină avantajele cântarelor auto cu platforma întreagă din beton și cele pe șenile metalice.<li> Productia cântarului și fundamentului – în doar 20 de zile lucratoare.</li><li> Platformele sunt ușor de transportat cu mijloacele de transport standard.</li><li> Garanția extinsă a platformei - 5 ani </li><li> Suprafața ideală ondulată a betonului </li><li> Garduri laterale pe platformă – configurație standard.</li><br> Obținerea celor mai bune performanțe este posibilă:<li> Procesul de asamblare şi betonare în condiții de fabrică (ideal pentru aceasta);</li><li> Utilizarea materialelor și tehnologiilor avansate în producție;</li><li> Construcția cântarelor – garantează o durată lungă de viață.</li><br> Alex S&E oferă o garanție a platformei de 5 ani. Specialiștii noștri sunt siguri în noul produs.",
+        "TextTwo": "<b>Aflați mai multe despre cum Alex S&E produce cântare auto de construcție inovatoare.</b><br></br> Betonarea platformelor în condiții de teren este asociată cu riscuri care pot duce ulterior la reparații complexe și costisitoare:<li> Livrare de beton de calitate necorespunzătoare;</li><li> Pierderea calității betonului în timpul transportării acestuia la locul de instalare a cântarului;</li><li> Conditiile meteo;</li><li> Factorul uman </li><br></br> Tehnologiile moderne de betonare a platformelor în condiții de fabrică fac posibilă asigurarea condițiilor optime pentru solidificarea betonului, obținerea unor indicatori de rezistență sporiți și reducerea semnificativă a timpului de executare a lucrărilor.<br></br> În producția de platforme pentru cântarele auto se utilizează tehnologia de precomprimare a oțelului beton, platformele sunt umplute cu beton de înaltă rezistență (grad B40 (M500)) folosind vibrații de suprafață și profunde. Se folosește o tehnologie specială de așezare a betonului, care crește concentrația de aditivi pe suprafața superioară, ceea ce îi crește semnificativ rezistența la uzură. Presiunea de rezistență a betonului are loc în camera de abur.<br></br> Pentru a fi transportate, cântarele auto sunt dezasamblate în 6 module cu o lungime de la 4,5 până la 6 metri și o lățime de 1,5 metri și se aranjază cu ușurință în caroseria unui camion standard, în timp ce greutatea totală a platformelor betonate nu depășește 20 de tone.<br></br> Și fără îndoială, un bonus plăcut pentru clienții noștri va fi termenul de garanție extins pentru platformă - 5 ani și gardurile laterale pe platformă - configurația standard.<br></br>Acest model este realizat în doar 20 de zile și vă va servi mulți ani. "
       }
     },
     "MoveFarmer": {
