@@ -919,7 +919,7 @@
         "LastFourteen": "Medium (III)"
       },
       "New": {
-        "FirstOne": "Maximum capacity, kg:",
+        "FirstOne": "Maximum capacity, t (т):",
         "LastOne": "30/60/80",
         "FirstTwo": "Verification scale interval (е), kg:",
         "LastTwo": "10 /20 / 50",
