@@ -3,6 +3,10 @@
   <div class="flex-center">
 
     <div class="btn-group pb-4">
+      <label mdbBtn color="{{this.colorNew}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="New"
+        mdbWavesEffect>
+        {{'CarWeights.StaticAuto.BetonNew.Title' | translate}}
+      </label>
       <label mdbBtn color="{{this.color}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="Left"
              mdbWavesEffect>
         {{'CarWeights.StaticAuto.Beton.Title' | translate}}
@@ -10,10 +14,6 @@
       <label mdbBtn color="{{this.colorTwo}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="Right"
              mdbWavesEffect>
         {{'CarWeights.StaticAuto.Metal.Title' | translate}}
-      </label>
-      <label mdbBtn color="{{this.colorNew}}" (click)="changeColor()" [(ngModel)]="radioModel" mdbRadio="New"
-        mdbWavesEffect>
-        {{'CarWeights.StaticAuto.BetonNew.Title' | translate}}
       </label>
     </div>
   </div>

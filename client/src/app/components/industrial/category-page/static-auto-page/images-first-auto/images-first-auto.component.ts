@@ -11,7 +11,7 @@ export class ImagesFirstAutoComponent implements OnInit {
 
 
 
-  radioModel = 'Left';
+  radioModel = 'New';
   color;
   colorTwo;
   colorNew;
@@ -20,9 +20,9 @@ export class ImagesFirstAutoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.color = 'danger';
+    this.color = 'primary';
     this.colorTwo = 'primary';
-    this.colorNew = 'primary';
+    this.colorNew = 'danger';
   }
 
 
