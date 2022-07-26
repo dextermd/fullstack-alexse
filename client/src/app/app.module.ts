@@ -208,6 +208,7 @@ import { DispensingComponent } from './components/solutions/dispensing/dispensin
 import { LivestockComponent } from './components/solutions/livestock/livestock.component';
 import { ModernizationComponent } from './components/solutions/modernization/modernization.component';
 import { WeighingComponent } from './components/solutions/weighing/weighing.component';
+import { PagePolicyComponent } from './page-policy/page-policy.component';
 
 
 @Injectable({providedIn: 'root'})
@@ -418,6 +419,7 @@ registerLocaleData( ruLocale, 'ru');
     LivestockComponent,
     ModernizationComponent,
     WeighingComponent,
+    PagePolicyComponent,
 
   ],
   imports: [

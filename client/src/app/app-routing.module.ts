@@ -53,6 +53,7 @@ import {DispensingComponent} from './components/solutions/dispensing/dispensing.
 import {LivestockComponent} from './components/solutions/livestock/livestock.component';
 import {WeighingComponent} from './components/solutions/weighing/weighing.component';
 import {ModernizationComponent} from './components/solutions/modernization/modernization.component';
+import { PagePolicyComponent } from './page-policy/page-policy.component';
 
 
 
@@ -552,8 +553,8 @@ export const routes: Routes = [
       {path: 'weighing-of-road-and-rail-transport', component: WeighingComponent},
       {path: 'aurora', component: AuroraComponent},
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
-      {path: 'account/login', component: LoginComponent}
-
+      {path: 'account/login', component: LoginComponent},
+      {path: 'aboutcompany/scales-control-polzovatelskoe-soglashenie', component: PagePolicyComponent},
     ]
   },
   {
