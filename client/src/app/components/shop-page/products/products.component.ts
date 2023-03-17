@@ -76,9 +76,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
     }
   }
 
-
-
-
   pageChanged(page: number) {
     this.localService.setJsonValue('productPage', page);
   }
