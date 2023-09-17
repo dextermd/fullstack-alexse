@@ -10,12 +10,10 @@ module.exports.sendMail = async function (order, callback) {
     const bot = new TelegramBot(token, {polling: true});
 
     let transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false, // true for 465, false for other ports
+        service: 'gmail',
         auth: {
-            user: 'alexsetestone@gmail.com', // generated ethereal user
-            pass: 'zulimp33', // generated ethereal password
+            user: 'alexsesales@gmail.com', // generated ethereal user
+            pass: 'xnpqqmwsolhqwilp', // generated ethereal password
         },
     });
 
@@ -55,7 +53,7 @@ module.exports.sendMail = async function (order, callback) {
             return log(err);
         }
 
-        const chatId = -450127205;
+        const chatId = -4048324158;
         // bot.sendMessage(chatId,"<b>!!! **** ПРОВЕРКА !  НОВЫЙ ЗАКАЗ **** !!!</b> \n <i><b>Имя Клиента: </b></i> <pre>order.body.c_name</pre> \n " ,{parse_mode : "HTML"});
 
         bot.sendMessage(chatId, "<b>!!! **** НОВЫЙ ЗАКАЗ **** !!!</b> \n" +
@@ -85,12 +83,10 @@ module.exports.sendMail = async function (order, callback) {
 module.exports.sendQuestion = async function (question, callback) {
 
     let transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false, // true for 465, false for other ports
+        service: 'gmail',
         auth: {
-            user: 'alexsetestone@gmail.com', // generated ethereal user
-            pass: 'zulimp33', // generated ethereal password
+            user: 'alexsesales@gmail.com', // generated ethereal user
+            pass: 'xnpqqmwsolhqwilp', // generated ethereal password
         },
     });
 
@@ -136,12 +132,10 @@ module.exports.sendQuestion = async function (question, callback) {
 module.exports.sendCallBack = async function (call, callback) {
 
     let transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false, // true for 465, false for other ports
+        service: 'gmail',
         auth: {
-            user: 'alexsetestone@gmail.com', // generated ethereal user
-            pass: 'zulimp33', // generated ethereal password
+            user: 'alexsesales@gmail.com', // generated ethereal user
+            pass: 'xnpqqmwsolhqwilp', // generated ethereal password
         },
     });
 
