@@ -53,7 +53,7 @@
     "CONTACT": {
       "Filial": "Filiale",
       "Magazin": "Magazin/Office",
-      "Tech": "SUPORT TEHNIC <br> FĂRĂ ZILE DE ODIHNĂ",
+      "Tech": "SUPORT TEHNIC",
       "Torg": "+37360001103<br>echipament comercial",
       "Prom": "+37369900989<br>echipament industrial"
     }
@@ -655,7 +655,7 @@
       "TextIconFive": "(+37322) 24-30-87",
       "TitleIconSix": "SUPORT TEHNIC AUTOMATIZAREA COMERȚULUI ȘI ALIMENTELOR",
       "TextIconSix": "(+373) 60001103",
-      "TextBottom": "SUPORT TEHNIC FĂRĂ ZILE DE ODIHNĂ"
+      "TextBottom": "SUPORT TEHNIC (LUNI - VINERI)"
     },
     "Office": {
       "Tiraspol": {
@@ -674,7 +674,7 @@
         "Title": "MAGAZIN MUN. COMRAT",
         "Adress": "<p>MD-3805, Republica Moldova,<br>UTA Gagauzia, mun. Comrat,<br>Str. Victoriei 43</p>",
         "Contact": "<p>E-mail: sud@alex-se.com<br>Telefon: (+373298)805 33<br>Факс: (+373298) 805 30<br>Mob.: (+373)68988863</p>",
-        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-00 până 17-00<br>Sb – Du  zile libere</p>"
+        "Time": "<p>Program de lucru:<br>Lu-Vi de la 8-30 până 17-00<br>Sb – Du  zile libere</p>"
       },
       "Drocia": {
         "Title": "MAGAZIN or. DROCHIA",

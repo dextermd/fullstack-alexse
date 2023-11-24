@@ -15,7 +15,7 @@ declare var gtag;
 })
 
 export class AppComponent implements OnInit {
-  title = 'Электронные весы для торговли и складского учета';
+  title = '';
   lang;
   test;
 
