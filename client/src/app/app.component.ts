@@ -5,7 +5,6 @@ import {filter} from 'rxjs/operators';
 import {LocalService} from './shared/local.service';
 import {TranslateService} from '@ngx-translate/core';
 
-
 declare var gtag;
 
 @Component({
@@ -18,7 +17,6 @@ export class AppComponent implements OnInit {
   title = '';
   lang;
   test;
-
   constructor(
     private auth: AuthService,
     private router: Router,
@@ -30,7 +28,6 @@ export class AppComponent implements OnInit {
         event => event instanceof NavigationEnd
       )
     );
-
     navEndEvents.subscribe(
       (event: NavigationEnd) => {
         gtag('config', 'G-D2DN67SM8M', {
@@ -39,15 +36,7 @@ export class AppComponent implements OnInit {
       }
     );
   }
-
   ngOnInit(): void {
-
-    // this.test = this.translate.currentLang;
-    // console.log('Current lang ' + this.test);
-    console.log('Current lang ' + this.translate.getBrowserLang());
-
-
-
     const potentialToken = this.localService.getJsonValue('auth-token');
     if (potentialToken !== null) {
       this.auth.setToken(potentialToken);

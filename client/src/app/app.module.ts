@@ -208,7 +208,8 @@ import { DispensingComponent } from './components/solutions/dispensing/dispensin
 import { LivestockComponent } from './components/solutions/livestock/livestock.component';
 import { ModernizationComponent } from './components/solutions/modernization/modernization.component';
 import { WeighingComponent } from './components/solutions/weighing/weighing.component';
-import { PagePolicyComponent } from './page-policy/page-policy.component';
+import {NgcCookieConsentConfig, NgcCookieConsentModule} from 'ngx-cookieconsent';
+import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
 
 
 @Injectable({providedIn: 'root'})
@@ -224,7 +225,34 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 registerLocaleData( ruLocale, 'ru');
 
-
+const cookieConfig: NgcCookieConsentConfig = {
+    cookie: {
+    domain: 'alex-se.com'
+  },
+    position: 'bottom',
+    theme: 'block',
+    palette: {
+    popup: {
+      background: '#2891d6',
+        text: '#ffffff',
+        link: '#ffffff'
+    },
+    button: {
+      background: '#ffffff',
+        text: '#6c5b5b',
+        border: 'transparent'
+    }
+  },
+    type: 'info',
+    content: {
+    message: 'This website uses cookies to ensure you get the best experience on our website.',
+      dismiss: 'Got it!',
+      deny: 'Refuse cookies',
+      link: 'Learn more',
+      href: '/cookie-policy',
+      policy: 'Cookie Policy'
+  }
+};
 
 
 @NgModule({
@@ -419,7 +447,7 @@ registerLocaleData( ruLocale, 'ru');
     LivestockComponent,
     ModernizationComponent,
     WeighingComponent,
-    PagePolicyComponent,
+    CookiePolicyComponent,
 
   ],
   imports: [
@@ -435,7 +463,8 @@ registerLocaleData( ruLocale, 'ru');
     FroalaViewModule,
     FroalaEditorModule,
     FERootModule,
-
+    NgcCookieConsentModule,
+    NgcCookieConsentModule.forRoot(cookieConfig),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

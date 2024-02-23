@@ -20,29 +20,34 @@
       "Price": "Listă de prețuri"
     },
     "FOOTER": {
+      "UNGHENI": {
+        "Name": "MAGAZIN UNGHENI",
+        "Adress": "str. Vlad Țepeș, nr. 1",
+        "Phone": "tel:(+373) 601-777-12"
+      },
       "CHISINAU": {
         "Name": "MAGAZIN CHIȘINĂU",
-        "Adress": "MD-2005, Republica Moldova, mun. Chișinău,Str. Ion Pruncul, 4/1",
+        "Adress": "Str. Ion Pruncul, 4/1",
         "Phone": "tel:(+37322) 244-572"
       },
       "BALTI": {
         "Name": "MAGAZIN BĂLȚI",
-        "Adress": "MD-3121, Republica Moldova,mun. Balti, str. Kiev 145",
+        "Adress": "Balti, str. Kiev 145",
         "Phone": "tel:(+373231) 40-456"
       },
       "TIRASPOL": {
         "Name": "MAGAZIN TIRASPOL",
-        "Adress": "MD-3300, Transnistria, or. Tiraspol,Str. Sindicatele 60, birou 101",
+        "Adress": "Sindicatele 60, birou 101",
         "Phone": "tel:(533) 675 40"
       },
       "COMRAT": {
         "Name": "MAGAZIN COMRAT",
-        "Adress": "MD-3805, Republica Moldova,ATU Găgăuzia, mun. Comrat,Str. Victoriei 43",
+        "Adress": "MStr. Victoriei 43",
         "Phone": "tel:(+373 298) 805-33"
       },
       "DROCHIA": {
         "Name": "MAGAZIN DROCHIA",
-        "Adress": "MD-5202, Republica Moldova,Drochia, str. Gudanov (Piața nouă),Ghereta Nr. 20",
+        "Adress": "Gudanov (Piața nouă),Ghereta Nr. 20",
         "Phone": "tel:(+373) 68650707"
       }
     },
@@ -658,6 +663,12 @@
       "TextBottom": "SUPORT TEHNIC (LUNI - VINERI)"
     },
     "Office": {
+      "Ungheni": {
+        "Title": "MAGAZIN ÎN UNGHENI",
+        "Adress": "<p>MD-3600, Republica Moldova,<br>Ungheni, str. Vlad Țepeș, nr. 1<br>",
+        "Contact": "<p>E-mail: ungheni@alex-se.com<br>Mobil: (+373) 601 777 12</p>",
+        "Time": "<p>Program de lucru:<br>Luni – Vineri de la 8:30 la 17:30<br>Sâmbătă – închis<br>Duminică de la 8:30 la 13:30</p>"
+      },
       "Tiraspol": {
         "Title": "MAGAZIN TIRASPOL",
         "Adress": "<p>MD-3300, Transnistria, or. Tiraspol<br>str. Sindicatelor 60, of 101<br>",
@@ -1975,5 +1986,10 @@
         "Title": "Și pentru a controla funcționarea cântarelor într-un mod cât mai comod, Alex S&E a dezvoltat o aplicație mobilă specială pentru dispozitivele care rulează pe IOS și Android. Deci, puteți controla balanțele de pe un telefon cu acces la Internet. În plus, acest set de instrumente poate fi util în caz de litigii sau conflicte cu privire la greutatea încărcăturii.<br>Dar asta nu este tot! Cântarele auto Alex S&E pot funcționa complet în modul automat și FĂRĂ participarea operatorului! Pentru aceasta, cântarele sunt echipate suplimentar cu un sistem de recunoaștere a vehiculului (acestea sunt camere video cu recunoaștere a plăcuței de înmatriculare a vehiculului sau un cititor RFID) și un sistem de control al debitului (prin intermediul barierelor sau semafoarelor).<br>Astfel de caracteristici suplimentare măresc semnificativ eficiența cântăririi vehiculelor și contabilitatea produselor. În același timp, riscul influenței angajaților asupra rezultatului cântăririi este redus.<br>Alex S&E este cel mai mare producător de echipamente de cântărire din Moldova, produce o gamă largă de cântare pentru camioane și feroviare pentru cântărirea vehiculelor care transportă volume mari de mărfuri solide, lichide și vrac.<br>Având o experiență de peste 28 de ani pe piață, Alex S&E și-a câștigat imaginea unui producător conștiincios. Acest lucru este confirmat de faptul că balanțele companiei sunt utilizate cu succes de întreprinderile de pe teritoriul Moldovei, Ucrainei, Rusiei și Kazahstanului.<br>Toate cântarele Alex S&E sunt incluse în Registrul de Stat al Instrumentelor de Măsurare a Masei și sunt conforme cu standardele naționale și internaționale.<br>"
       }
     }
+  },
+  "cookie": {
+    "message": "Acest site folosește cookie-uri pentru a vă asigura cea mai bună experiență pe site-ul nostru, pentru a personaliza conținutul și reclamele și pentru a analiza traficul nostru. Continuând să folosiți site-ul nostru, vă exprimați consimțământul conform Politicii noastre de Cookie-uri.",
+    "dismiss": "Am înțeles!",
+    "link": "Aflați mai multe despre cookie-uri"
   }
 }

@@ -20,29 +20,34 @@
       "Price": "Price list"
     },
     "FOOTER": {
+      "UNGHENI": {
+        "Name": "UNGHENI STORE",
+        "Adress": "Vlad Tepes Street, 1",
+        "Phone": "tel:(+373) 601-777-12"
+      },
       "CHISINAU": {
         "Name": "CHISINAU SHOP",
-        "Adress": "MD-2005, Republic of Moldova, Kishinev Municipality, 4/1, Ion Pruncul Str.",
+        "Adress": "4/1, Ion Pruncul Str.",
         "Phone": "tel:(+37322) 244-572"
       },
       "BALTI": {
         "Name": "BALTI SHOP",
-        "Adress": "MD-3121, Republic of Moldova, Balti Municipality, 145, Kiev Str.",
+        "Adress": "145, Kiev Str.",
         "Phone": "tel:(+373231) 40-456"
       },
       "TIRASPOL": {
         "Name": "TIRASPOL SHOP",
-        "Adress": "MD-3300, TMR, Tiraspol City, 60, Profsoyuzov Str., office 101 ",
+        "Adress": "Profsoyuzov Str., office 101 ",
         "Phone": "tel:(533) 675 40"
       },
       "COMRAT": {
         "Name": "COMRAT SHOP",
-        "Adress": "MD-3805, Republic of Moldova, ATU Gagauzia, Comrat Municipality, 43, Victory Str.",
+        "Adress": "Victory Str. 43",
         "Phone": "tel:(+373 298) 805-33"
       },
       "DROCHIA": {
         "Name": "DROCHIA SHOP",
-        "Adress": "MD-5202, Republic of Moldova, Drochia City,  Gudanov Str., (New Market), Boutique No. 20",
+        "Adress": "Boutique No. 20",
         "Phone": "tel:(+373) 68650707"
       }
     },
@@ -658,6 +663,12 @@
       "TextBottom": "TECHNICAL SUPPORT (MONDAY - FRIDAY)"
     },
     "Office": {
+      "Ungheni": {
+        "Title": "SHOP IN UNGHENI",
+        "Adress": "<p>MD-3600, Republic of Moldova,<br>Ungheni, Vlad Tepes Street, 1<br>",
+        "Contact": "<p>E-mail: ungheni@alex-se.com<br>Mobile: (+373) 601 777 12</p>",
+        "Time": "<p>Working hours:<br>Mon – Fri from 8:30 to 17:30<br>Sat – closed<br>Sun from 8:30 to 13:30</p>"
+      },
       "Tiraspol": {
         "Title": "SHOP TIRASPOL",
         "Adress": "<p>MD-3300, PMR, Tiraspol,<br>60, Trade Union Str., Office 101,<br>",
@@ -683,7 +694,7 @@
         "Time": "<p>Working hours:<br>Tue - Fri from 8-00 A.M. to 15-00<br>Mon - day off</p>"
       },
       "Ucraina": {
-        "Title": "BRANCH UKRAINE",
+        "Title": "SHOP UKRAINE",
         "Adress": "<p>ДП «АЛЕКС ВЕСЫ И ОБОРУДОВАНИЕ»<br>61058, 12  Romen Rollan Str., Kharkov, Ukraine<br>",
         "Contact": "<p>E-mail: alex_vio@mail.ru<br>Phone: + 380 (57) 719 48 33<br>Phone: + 380 (57) 759 11 24</p>"
       }
@@ -1975,5 +1986,10 @@
         "Title": "And to make the control the operation of the scales as convenient as possible, Alex S&E has developed a special mobile application for devices running on IOS and Android. So you can control the scales from a phone with Internet access. In addition, this set of tools can be useful in case of disputes or conflicts regarding the weight of the cargo.<br>But that's not all! The Alex S&E truck scales can fully work in automatic mode and WITHOUT operator participation! For this, the scales are additionally equipped with a vehicle recognition system (these are video cameras with vehicle license plate recognition or an RFID reader) and a flow control system (by means of barriers or traffic lights).<br>Such additional capabilities significantly increase the efficiency of weighing vehicles and accounting for products. At the same time, the risk of the influence of unscrupulous employees on the weighing result is reduced.<br>Alex S&E is the largest manufacturer of weighing equipment in Moldova, produces a wide range of automobile and carriage scales for weighing vehicles transporting large volumes of solid, liquid and bulk cargo.<br>Over 28 years of experience in the market, Alex S&E has gained a reputation as a conscientious manufacturer. This is confirmed by the fact that the company's scales are successfully used by enterprises in the territory of Moldova, Ukraine, Russia and Kazakhstan.<br>All Alex S&E scales are included in the State Register of Mass Measuring Instruments and comply with national and international standards.<br>"
       }
     }
+  },
+  "cookie": {
+    "message": "This website uses cookies to ensure you get the best experience on our website, to personalize content and ads, and to analyze our traffic. By continuing to use our site, you consent to our Cookie Policy.",
+    "dismiss": "Got it!",
+    "link": "Learn more about cookies"
   }
 }

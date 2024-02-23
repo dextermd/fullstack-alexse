@@ -42,12 +42,14 @@
               "./node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
               "./node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
               "./node_modules/froala-editor/css/froala_editor.pkgd.min.css",
-              "./node_modules/froala-editor/css/froala_style.min.css"
+              "./node_modules/froala-editor/css/froala_style.min.css",
+              "./node_modules/cookieconsent/build/cookieconsent.min.css"
             ],
             "scripts": [
               "./node_modules/chart.js/dist/Chart.js",
               "./node_modules/hammerjs/hammer.min.js",
-              "./node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+              "./node_modules/froala-editor/js/froala_editor.pkgd.min.js",
+              "./node_modules/cookieconsent/build/cookieconsent.min.js"
             ]
           },
           "configurations": {

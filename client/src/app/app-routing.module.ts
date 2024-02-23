@@ -54,6 +54,7 @@ import {LivestockComponent} from './components/solutions/livestock/livestock.com
 import {WeighingComponent} from './components/solutions/weighing/weighing.component';
 import {ModernizationComponent} from './components/solutions/modernization/modernization.component';
 import { PagePolicyComponent } from './page-policy/page-policy.component';
+import {CookiePolicyComponent} from './components/cookie-policy/cookie-policy.component';
 
 
 
@@ -555,6 +556,7 @@ export const routes: Routes = [
       {path: 'account/signup', component: SignUpComponent, canActivate: [AuthGuard]},
       {path: 'account/login', component: LoginComponent},
       {path: 'aboutcompany/scales-control-polzovatelskoe-soglashenie', component: PagePolicyComponent},
+      {path: 'cookie-policy', component: CookiePolicyComponent},
     ]
   },
   {

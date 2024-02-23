@@ -3,7 +3,7 @@ import {Post} from '../../../admin/shared/interfaces';
 import {Subscription} from 'rxjs';
 import {PostsService} from '../../../shared/posts.service';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
-import {MainLayoutComponent} from "../../main-layout/main-layout.component";
+import {MainLayoutComponent} from '../../main-layout/main-layout.component';
 
 @Component({
   selector: 'app-news',

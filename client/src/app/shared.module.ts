@@ -11,9 +11,6 @@ import {TranslateService} from '@ngx-translate/core';
 import {FERootModule, FroalaEditorModule, FroalaViewModule} from 'angular-froala-wysiwyg';
 import {LocalService} from './shared/local.service';
 
-
-
-
 @NgModule({
   imports: [
     HttpClientModule,
